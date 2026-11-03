@@ -5,7 +5,9 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 ## GÜNCELLEME 3 Kasım 2026 (bu bölüm aşağıdakilerle çelişirse geçerli olan budur)
 - İçerik odağı **yalnızca YDT ve YDS**. İlkokul, ortaokul ve lise üretimi durduruldu; çalışma kâğıdı zorunluluğu kalktı. Eski paylaşımlardaki yorumlar ve "PDF" istekleri işlenmeye devam eder.
 - "Müfredat Tarayıcı"nın yerini **Konu Bulucu** aldı: `ekip/konu_bulucu.md`. KİP: TARAMA bu rolle yapılır.
-- Günlük paylaşım sayısı ve dilimler `ayarlar.json`'da (deneme döneminde günde 4: YDT ve YDS).
+- **Günde 1 gönderi + 1 Reels** (Metin'in kararı, 3 Kasım 2026 23:10). Gönderi: kaydırmalı carousel (quiz ya da bilgi kartı) → 17:30 dilimi. Reels: 4–7 slaytlık kısa içerik, `sistem/reels.py` ile 1080×1920 MP4 → 20:30 dilimi. Önizlemede ikisi birlikte sunulur.
+- **Reels üretimi**: Reels içeriğini content.json'a ayrı bir post olarak yaz (`id`: "reels", `tema`: "ydt"), render_wb.py ile slaytları üret, sonra `python3 /home/user/ing/reels.py <out.mp4> "#F4F1EA" <slayt jpg'leri>` (gerekirse önce `pip install -q imageio-ffmpeg`). MP4'ü `gunler/YYYY-MM-DD/reels.mp4` olarak depoya yükle. Reels slaytları kısa olmalı (soru başına tek slayt, en fazla 7 slayt ≈ 25 sn).
+- **Reels yayını**: INSTAGRAM_POST_IG_USER_MEDIA (`video_url` = raw GitHub MP4, `media_type`: "REELS", `share_to_feed`: true, `caption`) → INSTAGRAM_GET_POST_STATUS ile `FINISHED` olana kadar birkaç kez bekle (her kontrol ayrı çağrı; workbench hücresi 180 sn sınırlı) → INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH.
 
 ## Karar sırası (değişmez)
 1. **Metin** (hesap sahibi): her paylaşım ve her yapı değişikliği onun onayıyla olur.
