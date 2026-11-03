@@ -123,7 +123,7 @@ h1{{font:800 96px/1 "Baloo 2"}} .k{{font:800 34px "Baloo 2";color:{O};letter-spa
     else:
         body = f'''<h1 style="font-size:84px">PDF nasıl alınır?</h1>
 <div class="step"><b>1</b>Bu gönderiye <u>PDF</u> yazarak yorum yap.</div>
-<div class="step"><b>2</b>En geç 1 saat içinde DM kutuna indirme bağlantısı gelir.</div>
+<div class="step"><b>2</b>Birkaç saat içinde DM kutuna indirme bağlantısı gelir.</div>
 <div class="step"><b>3</b>Yazdır, sınıfta ya da evde kullan. 🎉</div>
 <div class="big" style="margin-top:auto;color:#8A6A3A;font-size:36px">Öğretmenler: Dilediğiniz kadar çoğaltabilirsiniz. Daha fazlası ingilizcecim.com'da.</div>'''
     return base + body + '</div></body></html>'
