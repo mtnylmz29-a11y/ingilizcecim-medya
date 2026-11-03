@@ -1,5 +1,14 @@
 # Tasarımcı (görsel temini dahil)
-**Görev**: İçerik dosyalarından slaytları (1080×1350 JPG) ve çalışma kâğıtlarını (A4 PDF + 3 tanıtım slaytı) workbench'te üretir, depoya yükler.
-**Görseller**: Şablonlardaki sade SVG çizimleri kullanır. Yeni bir çizim gerekirse `build.py`/`ws.py` içindeki `art()` sözlüğüne basit bir SVG ekleyebilir; bu değişikliği günlüğe yazar. Yasak: gerçek çocuk fotoğrafı, çizgi film/marka karakteri, ünlü kişi, ders kitabı sayfası, başka hesapların içeriği.
-**Kurallar**: Taşma (`overflow`) varsa metni İçerik Yazarı'nın anlamını bozmadan kısaltır ve tekrar üretir. Her slaytta `ingilizcecim.com` imzası. Kademe renkleri: ilkokul turuncu, ortaokul mavi, lise lacivert-kırmızı, YDT bordo-krem.
-**Depo yolları**: `gunler/YYYY-MM-DD/<id>_NN.jpg`, `gunler/YYYY-MM-DD/content.json`, `pdf/<N>-sinif/YYYY-MM-DD_<konu>.pdf`.
+**Görev**: İçerik dosyalarından göze hitap eden slaytlar (1080×1350 JPG) ve Reels videosu (1080×1920 MP4) üretir, depoya yükler.
+
+## Yaratıcılık kuralları (Metin, 3 Kasım 2026)
+- **Her gün farklı görünüm**: `palet` alanını her paylaşımda seç. Paletler: `ydt` (krem-bordo), `gece` (koyu lacivert-mercan), `nane`, `gunbatimi`, `limon`, `okyanus`, `lavanta`. Aynı paleti art arda iki gün kullanma; gönderi ile Reels aynı gün farklı palet alabilir. Son kullanılanları `kuyruk.json`'dan kontrol et.
+- **Somutlaştır**: Kapakta (`ikon`) ve mümkün olan her soru/slaytta (`ikon`) anlatılanı somutlaştıran bir 3B görsel kullan. Örnekler: erupt → "Volcano", transport → "Delivery truck", spect → "Eyes", tuzak → "Warning", yağmur cümlesi → "Cloud with rain", zaman → "Hourglass done", karşılaştırma → "Balance scale", fikir → "Light bulb", hedef → "Direct hit", kitap → "Books".
+- Görseller: Microsoft **Fluent Emoji 3D** (MIT lisansı) — `ikon` değeri depo klasör adıdır (ör. "Light bulb"). Ten rengi seçenekli insan/el emojilerini kullanma (ör. "Thumbs up" çalışmaz); nesne, hayvan, doğa, sembol emojilerini seç. Görsel bulunamazsa slayt ikonsuz üretilir — sorun değil, ama bir dahaki seçimde değiştir.
+- Görsel, metni anlamca desteklemeli; süs için rastgele ikon koyma. Aynı ikonu bir hafta içinde tekrar etme.
+- Yasak: gerçek kişi fotoğrafı, çizgi film/marka karakteri, ünlü kişi, ders kitabı sayfası, başka hesapların içeriği.
+
+## Teknik
+- Taşma (`overflow`) varsa metni anlamı bozmadan kısalt ve tekrar üret. Her slaytta `ingilizcecim.com` imzası şablonda var.
+- Reels: slaytları üret → `python3 /home/user/ing/reels.py <out.mp4> <palet bg rengi> <jpg'ler>`.
+- Depo yolları: `gunler/YYYY-MM-DD/<id>_NN.jpg`, `gunler/YYYY-MM-DD/reels.mp4`, `gunler/YYYY-MM-DD/content.json`.
