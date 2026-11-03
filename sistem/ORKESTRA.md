@@ -2,6 +2,11 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 3 Kasım 2026 (bu bölüm aşağıdakilerle çelişirse geçerli olan budur)
+- İçerik odağı **yalnızca YDT ve YDS**. İlkokul, ortaokul ve lise üretimi durduruldu; çalışma kâğıdı zorunluluğu kalktı. Eski paylaşımlardaki yorumlar ve "PDF" istekleri işlenmeye devam eder.
+- "Müfredat Tarayıcı"nın yerini **Konu Bulucu** aldı: `ekip/konu_bulucu.md`. KİP: TARAMA bu rolle yapılır.
+- Günlük paylaşım sayısı ve dilimler `ayarlar.json`'da (deneme döneminde günde 4: YDT ve YDS).
+
 ## Karar sırası (değişmez)
 1. **Metin** (hesap sahibi): her paylaşım ve her yapı değişikliği onun onayıyla olur.
 2. **Değişmez kurallar**: cevabın doğruluğu; çocuk güvenliği; çoktan seçmelide aynı cevap harfi art arda en fazla 3 kez; kelime havuzu soru/liste sırasını izlemez (karıştır ya da alfabetik); telif (marka/karakter/ünlü/ders kitabı/gerçek çocuk fotoğrafı yok).
@@ -54,7 +59,7 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 ## KİP: PDF_TEKRAR <yorum_id>
 Sadece o isteği tekrar dene (TOPLULUK 2. adımın tek-istek hali). Başarılıysa `gonderildi`, değilse kurala göre yeni deneme ya da `basarisiz`.
 
-## KİP: TARAMA (cumartesi 10:15) — Rol: `ekip/mufredat_tarayici.md`
+## KİP: TARAMA (cumartesi 10:15) — Rol: `ekip/konu_bulucu.md`
 Gelecek haftanın haritasını `harita/YYYY-MM-DD.json` (haftanın pazartesisi) olarak yaz. Bitince Metin'e 3–4 satırlık özet.
 
 ## KİP: IDARECI (pazar 10:20) — Rol: `ekip/idareci.md`
