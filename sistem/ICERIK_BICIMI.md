@@ -4,7 +4,7 @@
 ```json
 {"date": "2026-11-04", "posts": [ POST, ... ]}
 ```
-POST ortak alanlar: `id` (dosya adı öneki, benzersiz: ör. "ortaokul", "ydt"), `tema` (renk teması: ilkokul | ortaokul | lise | ydt), `badge` (rozetteki ikinci kelime: QUIZ, KELİME, GRAMMAR…), `grade` ("7. sınıf", "YDT"), `theme` (ünite/tema adı), `title`, `subtitle`, `level` (CEFR), `art` (robot, cat, dog, fish, turtle, heart, leaf), `caption`.
+POST ortak alanlar: `palet` (ydt | gece | nane | gunbatimi | limon | okyanus | lavanta — renk paleti; yoksa `tema` kullanılır), `ikon` (kapak için Fluent Emoji 3D klasör adı, ör. "Volcano"; soru ve bilgi slaytlarında da `ikon` verilebilir), `id` (dosya adı öneki, benzersiz: ör. "ortaokul", "ydt"), `tema` (renk teması: ilkokul | ortaokul | lise | ydt), `badge` (rozetteki ikinci kelime: QUIZ, KELİME, GRAMMAR…), `grade` ("7. sınıf", "YDT"), `theme` (ünite/tema adı), `title`, `subtitle`, `level` (CEFR), `art` (robot, cat, dog, fish, turtle, heart, leaf), `caption`.
 
 **Quiz** (varsayılan): `questions: [{q, o: [şıklar], a: "A".."E", why, art?}]` → kapak + soru başına slayt + cevap anahtarı. İlkokul 3 şık, ortaokul 4, lise 4–5, YDT 5.
 
