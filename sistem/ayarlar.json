@@ -4,22 +4,20 @@
   "bitis": "2026-11-17",
   "ilk_karar": "2026-11-15"
  },
- "gunluk_paylasim": 4,
+ "gunluk_paylasim": 2,
  "kademeler": [
   "ydt",
   "yds"
  ],
  "yayin_dilimleri": {
   "17:30": [
-   "ydt",
-   "yds"
+   "gonderi"
   ],
   "20:30": [
-   "ydt",
-   "yds"
+   "reels"
   ]
  },
- "dilim_basina": 2,
+ "dilim_basina": 1,
  "onay_bekleme_gun": 3,
  "kuyruk_sinir": 8,
  "pdf_tekrar": {
@@ -35,5 +33,9 @@
  ],
  "takip_sarti": false,
  "notlar": "Saatler ve dağılım İdareci önerisi + Metin onayıyla değişir.",
- "icerik_odagi": "Yalnızca YDT ve YDS (3 Kasım 2026, Metin'in kararı). İlkokul/ortaokul/lise üretimi durduruldu; eski paylaşımlara gelen yorum ve PDF istekleri işlenmeye devam eder."
+ "icerik_odagi": "Yalnızca YDT ve YDS. Günde 1 kaydırmalı gönderi + 1 Reels (3 Kasım 2026, Metin'in kararı).",
+ "gunluk_plan": {
+  "gonderi": 1,
+  "reels": 1
+ }
 }
