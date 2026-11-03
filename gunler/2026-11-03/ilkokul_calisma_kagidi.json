@@ -1,0 +1,99 @@
+{
+ "slug": "2026-11-04_4sinif_cartoon-characters",
+ "grade": "4. sınıf",
+ "level": "A1",
+ "theme": "Cartoon Characters",
+ "focus": "can / can't",
+ "title": "What Can They Do?",
+ "activities": [
+  {
+   "kind": "look_write",
+   "title": "Look and write can or can't.",
+   "tr": "Resme bak, can ya da can't yaz.",
+   "items": [
+    {
+     "art": "robot",
+     "ok": true,
+     "text": "The robot ______ fly."
+    },
+    {
+     "art": "cat",
+     "ok": true,
+     "text": "The cat ______ climb."
+    },
+    {
+     "art": "fish",
+     "ok": false,
+     "text": "The fish ______ walk."
+    },
+    {
+     "art": "dog",
+     "ok": true,
+     "text": "The dog ______ swim."
+    }
+   ],
+   "key": "1. can  2. can  3. can't  4. can"
+  },
+  {
+   "kind": "match",
+   "title": "Match the pictures with the actions.",
+   "tr": "Resimleri eylemlerle eşleştir.",
+   "items": [
+    {
+     "art": "fish"
+    },
+    {
+     "art": "cat"
+    },
+    {
+     "art": "bird"
+    },
+    {
+     "art": "dog"
+    }
+   ],
+   "pool": [
+    "climb",
+    "fly",
+    "run",
+    "swim"
+   ],
+   "key": "fish → swim, cat → climb, bird → fly, dog → run"
+  },
+  {
+   "kind": "circle",
+   "title": "Circle the correct word.",
+   "tr": "Doğru kelimeyi yuvarlak içine al.",
+   "items": [
+    {
+     "text": "Birds (can / can't) fly."
+    },
+    {
+     "text": "Penguins (can / can't) fly."
+    },
+    {
+     "text": "Monkeys (can / can't) climb trees."
+    },
+    {
+     "text": "Fish (can / can't) ride a bike."
+    },
+    {
+     "text": "A turtle (can / can't) run fast."
+    }
+   ],
+   "key": "1. can  2. can't  3. can  4. can't  5. can't"
+  },
+  {
+   "kind": "write",
+   "title": "Write about you.",
+   "tr": "Kendin hakkında yaz.",
+   "lines": [
+    "I can ______ .",
+    "I can't ______ .",
+    "My best friend can ______ ."
+   ],
+   "key": "Kişisel cevaplar. Örnek: I can swim. I can't fly. My best friend can dance."
+  }
+ ],
+ "caption": "📄 4. sınıflar için ÜCRETSİZ çalışma kâğıdı: What Can They Do?\n\nCartoon Characters ünitesi · can / can't\n✏️ 4 etkinlik · A4 · cevap anahtarlı\n\n👇 PDF'i almak için bu gönderiye \"PDF\" yazarak yorum yap, indirme bağlantısını DM'den gönderelim! (birkaç saat içinde)\n\nÖğretmenler ve veliler, dilediğiniz kadar çoğaltabilirsiniz. Daha fazla materyal: ingilizcecim.com\n\n#ingilizce #4sınıfingilizce #çalışmakağıdı #worksheet #cartooncharacters #canandcant #ilkokulingilizce #ingilizceöğretmeni #ingilizcecim #maarifmodeli"
+}
