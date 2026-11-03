@@ -1,1 +1,94 @@
-[]
+[
+ {
+  "id": "2026-11-03-ilkokul",
+  "tarih": "2026-11-03",
+  "kademe": "ilkokul",
+  "sinif": "4. sınıf",
+  "bicim": "calisma_kagidi",
+  "baslik": "What Can They Do? (can/can't)",
+  "durum": "yayinlandi",
+  "onay": "Metin, sohbette 22:38",
+  "yayin_saati": "22:39-22:44",
+  "media_id": "18011532551776443",
+  "permalink": "https://www.instagram.com/p/DfSp1e4nRCn/",
+  "jpg": [
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ilkokul_01.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ilkokul_02.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ilkokul_03.jpg"
+  ],
+  "pdf": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/main/pdf/4-sinif/2026-11-04_cartoon-characters.pdf",
+  "not": "Plan dışı ilk yayın (Metin'in isteğiyle)"
+ },
+ {
+  "id": "2026-11-03-ortaokul",
+  "tarih": "2026-11-03",
+  "kademe": "ortaokul",
+  "sinif": "7. sınıf",
+  "bicim": "quiz",
+  "baslik": "Healthy Habits Quiz",
+  "durum": "yayinlandi",
+  "onay": "Metin, sohbette 22:38",
+  "yayin_saati": "22:39-22:44",
+  "media_id": "17933246457162971",
+  "permalink": "https://www.instagram.com/p/DfSp7jYHZBu/",
+  "jpg": [
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ortaokul_01.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ortaokul_02.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ortaokul_03.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ortaokul_04.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ortaokul_05.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ortaokul_06.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ortaokul_07.jpg"
+  ],
+  "pdf": null,
+  "not": "Plan dışı ilk yayın (Metin'in isteğiyle)"
+ },
+ {
+  "id": "2026-11-03-lise",
+  "tarih": "2026-11-03",
+  "kademe": "lise",
+  "sinif": "11. sınıf",
+  "bicim": "quiz",
+  "baslik": "Mind & Body Quiz",
+  "durum": "yayinlandi",
+  "onay": "Metin, sohbette 22:38",
+  "yayin_saati": "22:39-22:44",
+  "media_id": "18102712415655842",
+  "permalink": "https://www.instagram.com/p/DfSqBbdiepf/",
+  "jpg": [
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_lise_01.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_lise_02.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_lise_03.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_lise_04.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_lise_05.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_lise_06.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_lise_07.jpg"
+  ],
+  "pdf": null,
+  "not": "Plan dışı ilk yayın (Metin'in isteğiyle)"
+ },
+ {
+  "id": "2026-11-03-ydt",
+  "tarih": "2026-11-03",
+  "kademe": "ydt",
+  "sinif": "YDT",
+  "bicim": "quiz",
+  "baslik": "YDT Warm-Up",
+  "durum": "yayinlandi",
+  "onay": "Metin, sohbette 22:38",
+  "yayin_saati": "22:39-22:44",
+  "media_id": "18647794117033055",
+  "permalink": "https://www.instagram.com/p/DfSqHNoiYh7/",
+  "jpg": [
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ydt_01.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ydt_02.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ydt_03.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ydt_04.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ydt_05.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ydt_06.jpg",
+   "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/main/gunler/2026-11-03/2026-11-03_ydt_07.jpg"
+  ],
+  "pdf": null,
+  "not": "Plan dışı ilk yayın (Metin'in isteğiyle)"
+ }
+]
