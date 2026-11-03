@@ -1,0 +1,219 @@
+{
+  "date": "2026-11-04",
+  "day": "Çarşamba",
+  "format": "Quiz",
+  "posts": [
+    {
+      "id": "ilkokul",
+      "band": "İlkokul",
+      "time": "16:30",
+      "grade": "4. sınıf",
+      "theme": "Cartoon Characters",
+      "title": "Who Can Do It?",
+      "subtitle": "can / can't",
+      "level": "A1",
+      "art": "robot",
+      "questions": [
+        {
+          "q": "Zippy is a robot. He has got rockets. He ___ fly.",
+          "o": [
+            "can",
+            "can't",
+            "is"
+          ],
+          "a": "A",
+          "art": "robot",
+          "why": "Roketleri var, yani uçabilir: can fly."
+        },
+        {
+          "q": "– Can Mira swim?\n– No, she ___ .",
+          "o": [
+            "can",
+            "isn't",
+            "can't"
+          ],
+          "a": "C",
+          "art": "cat",
+          "why": "Olumsuz kısa cevap: No, she can't."
+        },
+        {
+          "q": "Choose the correct sentence.",
+          "o": [
+            "He can runs fast.",
+            "He can run fast.",
+            "He cans run fast."
+          ],
+          "a": "B",
+          "art": "dog",
+          "why": "can'den sonra fiil yalın gelir: can run."
+        },
+        {
+          "q": "Bubbles is a fish. “I can ___, but I can't walk.”",
+          "o": [
+            "swim",
+            "climb",
+            "ride a bike"
+          ],
+          "a": "A",
+          "art": "fish",
+          "why": "Balıklar yüzebilir: I can swim."
+        },
+        {
+          "q": "Tiko the turtle is very slow. Tiko can't ___ fast.",
+          "o": [
+            "eat",
+            "sleep",
+            "run"
+          ],
+          "a": "C",
+          "art": "turtle",
+          "why": "Yavaş olan kaplumbağa hızlı koşamaz: can't run fast."
+        }
+      ],
+      "caption": "🧠 4. sınıflar için mini quiz: Who Can Do It?\n\nCartoon Characters ünitesinde \"can / can't\" çalışıyoruz. Karakterler neler yapabilir, neler yapamaz? 🚀🐱🐟🐢\n\n✍️ Cevaplarını yorumlara yaz (örnek: 1C 2A …), sonra son slayttan kontrol et!\n\nWhat can YOU do? \"I can …\" diye yorumlara İngilizce yaz! 👇\n\n📚 Daha fazla materyal: ingilizcecim.com\n\n#ingilizce #4sınıfingilizce #cartooncharacters #canandcant #ingilizceöğreniyorum #ilkokulingilizce #englishquiz #ingilizceöğretmeni #ingilizcecim #maarifmodeli"
+    },
+    {
+      "id": "ortaokul",
+      "band": "Ortaokul",
+      "time": "18:30",
+      "grade": "7. sınıf",
+      "theme": "Personal Life & Well-Being",
+      "title": "Healthy Habits Quiz",
+      "subtitle": "should · frequency · healthy habits",
+      "level": "A2.3",
+      "art": "heart",
+      "questions": [
+        {
+          "q": "Emre feels tired every morning because he goes to bed at 1 a.m.\nWhat is the best advice for him?",
+          "o": [
+            "He should drink more coffee.",
+            "He should go to bed earlier.",
+            "He shouldn't eat breakfast.",
+            "He should play games at night."
+          ],
+          "a": "B",
+          "why": "Yorgunluğun sebebi geç yatmak; en iyi tavsiye erken yatmak."
+        },
+        {
+          "q": "“I ___ eat fast food. Maybe once a year.”",
+          "o": [
+            "always",
+            "usually",
+            "often",
+            "rarely"
+          ],
+          "a": "D",
+          "why": "Yılda bir kez = nadiren: rarely."
+        },
+        {
+          "q": "Selin walks for 30 minutes, drinks a lot of water and sleeps 8 hours every day.\nWhat can we say about Selin?",
+          "o": [
+            "She has an unhealthy lifestyle.",
+            "She never does exercise.",
+            "She takes care of her health.",
+            "She sleeps too little."
+          ],
+          "a": "C",
+          "why": "Yürüyüş, su ve düzenli uyku: sağlığına dikkat ediyor."
+        },
+        {
+          "q": "“When I feel stressed, I ___ to music. It helps me relax.”",
+          "o": [
+            "listen",
+            "watch",
+            "look",
+            "see"
+          ],
+          "a": "A",
+          "why": "Müzik dinlemek: listen to music."
+        },
+        {
+          "q": "Which one is a healthy habit?",
+          "o": [
+            "skipping breakfast",
+            "eating fruit and vegetables",
+            "staying up late",
+            "spending all day on the phone"
+          ],
+          "a": "B",
+          "why": "Meyve ve sebze yemek sağlıklı bir alışkanlıktır."
+        }
+      ],
+      "caption": "💪 7. sınıflar için quiz: Healthy Habits!\n\nPersonal Life & Well-Being temasında sağlıklı alışkanlıklar, \"should / shouldn't\" ve sıklık zarfları (always, usually, often, rarely…) üzerine 5 soru.\n\n✍️ Cevaplarını yorumlara yaz (örnek: 1A 2C …), sonra son slayttan kontrol et!\n\n💬 Sen bir arkadaşına sağlıklı yaşam için hangi tavsiyeyi verirdin? \"You should…\" diye başlayarak yorumlara yaz! 👇\n\n📚 Daha fazla materyal: ingilizcecim.com\n\n#ingilizce #7sınıfingilizce #healthyhabits #wellbeing #ingilizceöğreniyorum #ortaokulingilizce #englishquiz #ingilizceöğretmeni #ingilizcecim #maarifmodeli"
+    },
+    {
+      "id": "lise",
+      "band": "Lise",
+      "time": "20:30",
+      "grade": "11. sınıf",
+      "theme": "Personal Life & Well-Being",
+      "title": "Mind & Body Quiz",
+      "subtitle": "modals · phrasal verbs · vocabulary",
+      "level": "B1.3",
+      "art": "leaf",
+      "questions": [
+        {
+          "q": "If you feel overwhelmed by exams, you ___ take short breaks while studying; otherwise, you may burn out.",
+          "o": [
+            "had better",
+            "must not",
+            "would rather",
+            "don't have to",
+            "used to"
+          ],
+          "a": "A",
+          "why": "Tavsiye: had better + V1 (take). Diğerleri anlamca uymuyor."
+        },
+        {
+          "q": "Regular exercise can ___ your mood and reduce anxiety.",
+          "o": [
+            "delay",
+            "ignore",
+            "blame",
+            "boost",
+            "waste"
+          ],
+          "a": "D",
+          "why": "boost your mood = ruh halini yükseltmek."
+        },
+        {
+          "q": "I've been trying to ___ sugar for a month, and I feel much more energetic.",
+          "o": [
+            "look after",
+            "cut down on",
+            "run out of",
+            "put up with",
+            "come across"
+          ],
+          "a": "B",
+          "why": "cut down on = (bir şeyi) azaltmak."
+        },
+        {
+          "q": "A: I can't sleep well before exams.\nB: ___ Maybe you should try a breathing exercise.",
+          "o": [
+            "Congratulations on your success!",
+            "I'm glad you enjoyed it.",
+            "Never mind, it was my fault.",
+            "Let's celebrate tonight.",
+            "That sounds really tough."
+          ],
+          "a": "E",
+          "why": "Bir sıkıntıya empatiyle karşılık: That sounds really tough."
+        },
+        {
+          "q": "“Well-being is not only about physical health. It also includes how we manage our emotions, build relationships and find meaning in daily life.”\nAccording to the text, well-being ___ .",
+          "o": [
+            "is only about exercise",
+            "depends on money",
+            "has emotional and social sides",
+            "is impossible to improve",
+            "means avoiding other people"
+          ],
+          "a": "C",
+          "why": "Metin duyguları ve ilişkileri de kapsadığını söylüyor."
+        }
+      ],
+      "caption": "🧘 11. sınıflar için quiz: Mind & Body\n\nPersonal Life & Well-Being temasında 5 soru: tavsiye kipleri, phrasal verbs, kelime ve diyalog tamamlama. YDT'ye de hazırlık! 🎯\n\n✍️ Cevaplarını yorumlara yaz (örnek: 1B 2C …), sonra son slayttan kontrol et!\n\n💬 Sınav stresiyle nasıl başa çıkıyorsun? İngilizce bir cümleyle yorumlara yaz! 👇\n\n📚 Daha fazla materyal ve YDT soruları: ingilizcecim.com\n\n#ingilizce #11sınıfingilizce #wellbeing #phrasalverbs #ydt #ydthazırlık #ingilizceöğreniyorum #liseingilizce #englishquiz #ingilizcecim"
+    }
+  ]
+}
