@@ -12,6 +12,30 @@ THEMES = {
     "lise": dict(bg="#0E1A33", card="#17284A", ink="#F2F5FB", muted="#9FB0CF", primary="#E63946", soft="#2A1B33", accent="#7DD3FC", line="#2A3D66"),
 }
 
+THEMES.update({
+    "gece": dict(bg="#141B2D", card="#1E2840", ink="#F5F2EA", muted="#A9B4CC", primary="#FF6B57", soft="#2A2F45", accent="#FFD166", line="#2E3A57"),
+    "nane": dict(bg="#E6F6F0", card="#FFFFFF", ink="#0B2E28", muted="#4E7068", primary="#0F766E", soft="#CDEDE3", accent="#F59E0B", line="#BFE3D6"),
+    "gunbatimi": dict(bg="#FFF0E6", card="#FFFFFF", ink="#3B1F12", muted="#8A5A44", primary="#C2410C", soft="#FFDCC7", accent="#7C3AED", line="#F6CDB4"),
+    "limon": dict(bg="#FFF6C7", card="#FFFFFF", ink="#1D1B16", muted="#6A6450", primary="#1D1B16", soft="#FFE98A", accent="#E11D48", line="#F0E08F"),
+    "okyanus": dict(bg="#E6F2FF", card="#FFFFFF", ink="#082F57", muted="#4A6A8C", primary="#0B4F8A", soft="#CFE4FA", accent="#00A6A6", line="#BCD7F2"),
+    "lavanta": dict(bg="#F1EDFF", card="#FFFFFF", ink="#24124F", muted="#6D5F99", primary="#5B21B6", soft="#E1D8FF", accent="#DB2777", line="#D6CCF7"),
+})
+
+IKON_DIR = os.environ.get("IKON_DIR", "/home/user/ing/ikon")
+def ikon(name, size=220):
+    """Microsoft Fluent Emoji 3D (MIT lisanslı) görseli: ad, depo klasör adıdır (ör. "Volcano")."""
+    os.makedirs(IKON_DIR, exist_ok=True)
+    fn = name.lower().replace(" ", "_").replace("-", "_") + "_3d.png"
+    p = os.path.join(IKON_DIR, fn)
+    if not os.path.exists(p):
+        import urllib.request, urllib.parse
+        u = "https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/" + urllib.parse.quote(name) + "/3D/" + fn
+        try:
+            urllib.request.urlretrieve(u, p)
+        except Exception:
+            return ""
+    return f'<img src="file://{p}" width="{size}" height="{size}" style="flex:none;filter:drop-shadow(0 14px 22px rgba(0,0,0,.18))">'
+
 def art(name, size=360, t=None):
     p, a, ink = t["primary"], t["accent"], t["ink"]
     s = {
@@ -40,11 +64,16 @@ def esc(s):
     return html.escape(s).replace("\n", "<br>")
 
 def page(post, t, inner, idx, total):
+    pos = [("right:-170px;top:-150px;width:560px;height:560px", "left:-140px;bottom:90px;width:300px;height:300px"),
+           ("left:-200px;top:180px;width:520px;height:520px", "right:-90px;bottom:-60px;width:360px;height:360px"),
+           ("right:-120px;bottom:160px;width:480px;height:480px", "left:60%;top:-120px;width:260px;height:260px")][idx % 3]
+    deco = (f'<div class="deco" style="{pos[0]};background:{t["accent"]};opacity:.14"></div>'
+            f'<div class="deco" style="{pos[1]};background:{t["primary"]};opacity:.10"></div>')
     dots = "".join(f'<i class="{"on" if i == idx else ""}"></i>' for i in range(total))
     return f'''<!DOCTYPE html><html><head><meta charset="utf-8">{CSS_FONTS}<style>
 *{{box-sizing:border-box;margin:0}}
 body{{width:1080px;height:1350px;background:{t["bg"]};color:{t["ink"]};font-family:"Nunito",sans-serif;overflow:hidden}}
-.s{{width:1080px;height:1350px;padding:64px 72px 56px;display:flex;flex-direction:column;gap:36px;position:relative}}
+.s{{width:1080px;height:1350px;padding:64px 72px 56px;display:flex;flex-direction:column;gap:36px;position:relative;overflow:hidden}}\n.top,.main,.foot{{position:relative;z-index:1}}\n.deco{{position:absolute;border-radius:50%;z-index:0}}\n.ihead{{display:flex;align-items:center;gap:30px}}
 .top{{display:flex;justify-content:space-between;align-items:center}}
 .logo{{font:800 44px "Baloo 2";letter-spacing:-.5px}} .logo b{{color:{t["primary"]}}}
 .badge{{font:800 28px "Baloo 2";background:{t["primary"]};color:#fff;padding:8px 26px;border-radius:999px;letter-spacing:.5px}}
@@ -68,7 +97,7 @@ h1{{font:800 128px/0.98 "Baloo 2";letter-spacing:-2px}}
 .ex{{font:700 34px/1.35 "Nunito";background:{t["soft"]};border-radius:22px;padding:18px 24px;font-style:italic}}
 .k b{{font:800 36px "Nunito";display:block}} .k span{{font:600 30px/1.3 "Nunito";color:{t["muted"]}}}
 </style></head><body><div class="s">
-<div class="top"><div class="logo">ingilizcecim<b>.</b>com</div><div class="badge">{post["grade"].upper()} · {post.get("badge","QUIZ")}</div></div>
+{deco}<div class="top"><div class="logo">ingilizcecim<b>.</b>com</div><div class="badge">{post["grade"].upper()} · {post.get("badge","QUIZ")}</div></div>
 <div class="main">{inner}</div>
 <div class="foot"><span>{esc(post["theme"])}</span><div class="dots">{dots}</div></div>
 </div></body></html>'''
@@ -76,18 +105,19 @@ h1{{font:800 128px/0.98 "Baloo 2";letter-spacing:-2px}}
 def build_bilgi(post, t):
     sl = post["slides"]; total = len(sl) + 2; pages = []
     pages.append(f'''<div class="kicker">{esc(post["theme"])}</div>
-<div style="display:flex;align-items:center;justify-content:space-between;gap:20px"><h1>{esc(post["title"])}</h1>{art(post["art"], 300, t)}</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:20px"><h1>{esc(post["title"])}</h1>{ikon(post["ikon"], 330) if post.get("ikon") else art(post["art"], 300, t)}</div>
 <div class="sub">{esc(post["subtitle"])}</div><div class="meta"><span>{post["grade"]}</span><span>{post["level"]}</span></div>
 <div class="cta">Kaydır, kaydet, tekrar et →</div>''')
     for i, s_ in enumerate(sl):
         lines = "".join(f'<div class="o"><span class="L">{j+1}</span>{esc(l)}</div>' for j, l in enumerate(s_.get("lines", [])))
         ex = "".join(f'<div class="ex">{esc(e)}</div>' for e in s_.get("ex", []))
-        pages.append(f'<div class="qn">{i+1} / {len(sl)}</div><div class="q">{esc(s_["h"])}</div><div class="opts">{lines}</div>{ex}')
+        hd = f'<div class="ihead">{ikon(s_["ikon"], 170)}<div class="q">{esc(s_["h"])}</div></div>' if s_.get("ikon") else f'<div class="q">{esc(s_["h"])}</div>'
+        pages.append(f'<div class="qn">{i+1} / {len(sl)}</div>{hd}<div class="opts">{lines}</div>{ex}')
     pages.append(f'<div class="kicker">Hatırla</div><div class="q">{esc(post.get("ozet",""))}</div><div class="cta">{esc(post.get("cta","Kaydet ve arkadaşına gönder!"))} 👇</div>')
     return pages
 
 def build(post):
-    t = THEMES[post.get("tema", post["id"])]
+    t = THEMES[post.get("palet", post.get("tema", post["id"]))]
     if post.get("format") == "bilgi":
         pages = build_bilgi(post, t); total = len(pages); files = []
         for i, inner in enumerate(pages):
@@ -99,7 +129,7 @@ def build(post):
     pages = []
     cover = f'''<div class="kicker">{esc(post["theme"])}</div>
 <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
-<h1>{esc(post["title"])}</h1>{art(post["art"], 330, t)}</div>
+<h1>{esc(post["title"])}</h1>{ikon(post["ikon"], 340) if post.get("ikon") else art(post["art"], 330, t)}</div>
 <div class="sub">{esc(post["subtitle"])}</div>
 <div class="meta"><span>{post["grade"]}</span><span>{post["level"]}</span><span>{len(qs)} soru</span></div>
 <div class="cta">Cevapların son slaytta · Kaydır →</div>'''
@@ -108,7 +138,9 @@ def build(post):
         letters = "ABCDE"
         opts = "".join(f'<div class="o"><span class="L">{letters[j]}</span>{esc(o)}</div>' for j, o in enumerate(q["o"]))
         qtext = f'<div class="q" style="{"font-size:44px" if len(q["q"])>150 else ""}">{esc(q["q"])}</div>'
-        if q.get("art"):
+        if q.get("ikon"):
+            qtext = f'<div class="qrow">{qtext}{ikon(q["ikon"], 200)}</div>'
+        elif q.get("art"):
             qtext = f'<div class="qrow">{qtext}{art(q["art"], 250, t)}</div>'
         pages.append(f'<div class="qn">SORU {i+1} / {len(qs)}</div>{qtext}<div class="opts">{opts}</div>')
     keys = "".join(
