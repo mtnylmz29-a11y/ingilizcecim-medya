@@ -8,6 +8,7 @@ OUT.mkdir(exist_ok=True)
 THEMES = {
     "ilkokul": dict(bg="#FFF3D1", card="#FFFFFF", ink="#3A2A10", muted="#8A6A3A", primary="#FF7A00", soft="#FFE2B8", accent="#22A55B", line="#F3D9A8"),
     "ortaokul": dict(bg="#E9F0FF", card="#FFFFFF", ink="#0E1E45", muted="#51628A", primary="#1D4ED8", soft="#D3E0FF", accent="#F59E0B", line="#C8D6F5"),
+    "ydt": dict(bg="#F4F1EA", card="#FFFFFF", ink="#1E1B16", muted="#6B6357", primary="#7A1F2B", soft="#EADFD2", accent="#B8862B", line="#DDD3C3"),
     "lise": dict(bg="#0E1A33", card="#17284A", ink="#F2F5FB", muted="#9FB0CF", primary="#E63946", soft="#2A1B33", accent="#7DD3FC", line="#2A3D66"),
 }
 
@@ -56,23 +57,43 @@ h1{{font:800 128px/0.98 "Baloo 2";letter-spacing:-2px}}
 .meta{{display:flex;gap:16px;flex-wrap:wrap}} .meta span{{font:800 32px "Nunito";background:{t["card"]};border:3px solid {t["line"]};padding:10px 24px;border-radius:18px}}
 .cta{{font:800 40px "Baloo 2";color:{t["primary"]}}}
 .qn{{font:800 34px "Baloo 2";color:{t["primary"]}}}
-.q{{font:800 {"58" if post["id"]!="lise" else "50"}px/1.22 "Nunito"}}
+.q{{font:800 {"58" if post.get("tema",post["id"]) not in ("lise","ydt") else "50"}px/1.22 "Nunito"}}
 .opts{{display:flex;flex-direction:column;gap:20px}}
-.o{{display:flex;align-items:center;gap:26px;background:{t["card"]};border:4px solid {t["line"]};border-radius:28px;padding:{"26px 30px" if post["id"]=="ilkokul" else "18px 26px"};font:700 {"48" if post["id"]=="ilkokul" else ("40" if post["id"]=="ortaokul" else "36")}px/1.2 "Nunito"}}
-.L{{flex:none;width:{"72" if post["id"]=="ilkokul" else "62"}px;height:{"72" if post["id"]=="ilkokul" else "62"}px;border-radius:50%;background:{t["primary"]};color:#fff;display:grid;place-items:center;font:800 36px "Baloo 2"}}
+.o{{display:flex;align-items:center;gap:26px;background:{t["card"]};border:4px solid {t["line"]};border-radius:28px;padding:{"26px 30px" if post.get("tema",post["id"])=="ilkokul" else "18px 26px"};font:700 {"48" if post.get("tema",post["id"])=="ilkokul" else ("40" if post.get("tema",post["id"])=="ortaokul" else "36")}px/1.2 "Nunito"}}
+.L{{flex:none;width:{"72" if post.get("tema",post["id"])=="ilkokul" else "62"}px;height:{"72" if post.get("tema",post["id"])=="ilkokul" else "62"}px;border-radius:50%;background:{t["primary"]};color:#fff;display:grid;place-items:center;font:800 36px "Baloo 2"}}
 .qrow{{display:flex;gap:30px;align-items:center}} .qrow .q{{flex:1}}
 .key{{display:flex;flex-direction:column;gap:18px}}
 .k{{display:grid;grid-template-columns:70px 1fr;gap:22px;align-items:start;background:{t["card"]};border-radius:24px;padding:20px 26px;border:3px solid {t["line"]}}}
-.k .L{{width:62px;height:62px;background:{t["accent"]};color:{"#0E1A33" if post["id"]=="lise" else "#fff"}}}
+.k .L{{width:62px;height:62px;background:{t["accent"]};color:{"#0E1A33" if post.get("tema",post["id"])=="lise" else "#fff"}}}
+.ex{{font:700 34px/1.35 "Nunito";background:{t["soft"]};border-radius:22px;padding:18px 24px;font-style:italic}}
 .k b{{font:800 36px "Nunito";display:block}} .k span{{font:600 30px/1.3 "Nunito";color:{t["muted"]}}}
 </style></head><body><div class="s">
-<div class="top"><div class="logo">ingilizcecim<b>.</b>com</div><div class="badge">{post["grade"].upper()} · QUIZ</div></div>
+<div class="top"><div class="logo">ingilizcecim<b>.</b>com</div><div class="badge">{post["grade"].upper()} · {post.get("badge","QUIZ")}</div></div>
 <div class="main">{inner}</div>
 <div class="foot"><span>{esc(post["theme"])}</span><div class="dots">{dots}</div></div>
 </div></body></html>'''
 
+def build_bilgi(post, t):
+    sl = post["slides"]; total = len(sl) + 2; pages = []
+    pages.append(f'''<div class="kicker">{esc(post["theme"])}</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:20px"><h1>{esc(post["title"])}</h1>{art(post["art"], 300, t)}</div>
+<div class="sub">{esc(post["subtitle"])}</div><div class="meta"><span>{post["grade"]}</span><span>{post["level"]}</span></div>
+<div class="cta">Kaydır, kaydet, tekrar et →</div>''')
+    for i, s_ in enumerate(sl):
+        lines = "".join(f'<div class="o"><span class="L">{j+1}</span>{esc(l)}</div>' for j, l in enumerate(s_.get("lines", [])))
+        ex = "".join(f'<div class="ex">{esc(e)}</div>' for e in s_.get("ex", []))
+        pages.append(f'<div class="qn">{i+1} / {len(sl)}</div><div class="q">{esc(s_["h"])}</div><div class="opts">{lines}</div>{ex}')
+    pages.append(f'<div class="kicker">Hatırla</div><div class="q">{esc(post.get("ozet",""))}</div><div class="cta">{esc(post.get("cta","Kaydet ve arkadaşına gönder!"))} 👇</div>')
+    return pages
+
 def build(post):
-    t = THEMES[post["id"]]
+    t = THEMES[post.get("tema", post["id"])]
+    if post.get("format") == "bilgi":
+        pages = build_bilgi(post, t); total = len(pages); files = []
+        for i, inner in enumerate(pages):
+            f = OUT / f'{data["date"]}_{post["id"]}_{i+1:02d}.html'
+            f.write_text(page(post, t, inner, i, total)); files.append(str(f))
+        return files
     qs = post["questions"]
     total = len(qs) + 2
     pages = []
@@ -80,7 +101,7 @@ def build(post):
 <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
 <h1>{esc(post["title"])}</h1>{art(post["art"], 330, t)}</div>
 <div class="sub">{esc(post["subtitle"])}</div>
-<div class="meta"><span>{post["grade"]}</span><span>{post["level"]}</span><span>5 soru</span></div>
+<div class="meta"><span>{post["grade"]}</span><span>{post["level"]}</span><span>{len(qs)} soru</span></div>
 <div class="cta">Cevapların son slaytta · Kaydır →</div>'''
     pages.append(cover)
     for i, q in enumerate(qs):
