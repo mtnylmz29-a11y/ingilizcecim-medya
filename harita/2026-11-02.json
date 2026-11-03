@@ -1,15 +1,105 @@
-{"hafta": "2026-11-02/06 (8. hafta)", "tatil": false, "not": "İlk harita sohbette tahminle hazırlandı; cumartesi taramasıyla doğrulanacak.",
- "siniflar": {
-  "2": {"tema": "Classroom Life", "alt_konu": "classroom objects, colours, numbers", "kelimeler": ["bag","book","chair","desk","eraser","pen","pencil","ruler"], "yapi": "What is this? It's a ...", "kalip": "Open/close your book.", "kaynak": "tahmini"},
-  "3": {"tema": "Classroom Life", "alt_konu": "classroom rules, school things", "kelimeler": ["board","listen","quiet","raise","sit","stand","teacher","write"], "yapi": "Imperatives: Sit down. Don't run.", "kalip": "Can I go out, please?", "kaynak": "tahmini"},
-  "4": {"tema": "Cartoon Characters", "alt_konu": "abilities", "kelimeler": ["climb","dance","fly","jump","ride","run","sing","swim"], "yapi": "can / can't", "kalip": "Can you swim? Yes, I can.", "kaynak": "önceki program, tahmini"},
-  "5": {"tema": "Personal Life", "alt_konu": "appearance, likes", "kelimeler": ["curly","eyes","hair","short","straight","tall","young","old"], "yapi": "have got / be", "kalip": "She has got long hair.", "kaynak": "tahmini"},
-  "6": {"tema": "Personal Life", "alt_konu": "daily routines, personality", "kelimeler": ["always","friendly","funny","generous","lazy","never","often","usually"], "yapi": "present simple + frequency adverbs", "kalip": "I usually get up at seven.", "kaynak": "tahmini"},
-  "7": {"tema": "Personal Life & Well-Being", "alt_konu": "healthy habits", "kelimeler": ["balanced","diet","exercise","habit","healthy","junk food","sleep","stress"], "yapi": "should / shouldn't", "kalip": "You should drink more water.", "kaynak": "tahmini"},
-  "8": {"tema": "In the Kitchen", "alt_konu": "recipes, cooking verbs", "kelimeler": ["boil","chop","fry","ingredient","mix","pour","recipe","slice"], "yapi": "sequencers: first, then, after that, finally", "kalip": "First, chop the onions.", "kaynak": "önceki program, tahmini (LGS)"},
-  "9": {"tema": "Personal Life: Appearance & Personality", "alt_konu": "describing people", "kelimeler": ["ambitious","confident","curious","generous","honest","patient","reliable","shy"], "yapi": "comparatives / superlatives", "kalip": "He is more patient than his brother.", "kaynak": "tahmini"},
-  "10": {"tema": "Personal Life & Well-Being", "alt_konu": "emotions, coping", "kelimeler": ["anxious","calm","cope","exhausted","grateful","overwhelmed","relieved","support"], "yapi": "present perfect", "kalip": "I've been feeling ...", "kaynak": "tahmini"},
-  "11": {"tema": "Personal Life & Well-Being", "alt_konu": "stress, lifestyle", "kelimeler": ["boost","burn out","cope with","cut down on","mindful","resilience","routine","well-being"], "yapi": "advice: had better, ought to; phrasal verbs", "kalip": "You'd better take a break.", "kaynak": "tahmini"},
-  "12": {"tema": "Human Rights", "alt_konu": "rights, equality", "kelimeler": ["discrimination","equality","freedom","justice","protect","right","violate","volunteer"], "yapi": "passive voice", "kalip": "Everyone should be treated equally.", "kaynak": "önceki program, tahmini"},
-  "ydt": {"grammar": "Tenses (perfect aspect)", "kelime_odak": "phrasal verbs + academic verbs", "soru_turleri": ["kelime","dilbilgisi","cloze","cümle tamamlama","diyalog"]}
- }}
+{
+ "hafta": "2026-11-02/08 (ilk YDT/YDS haftası)",
+ "not": "İlk liste sohbette hazırlandı; cumartesi Konu Bulucu yenisini çıkarır. İstatistik maddeleri kaynakla doğrulanmadan paylaşılmaz.",
+ "konular": [
+  {
+   "tur": "kok",
+   "baslik": "Latince kökler: bene, dict, spect, rupt, port",
+   "hedef": "ikisi",
+   "ozet": "Kökten anlam tahmini",
+   "ornekler": [
+    "benevolent",
+    "verdict",
+    "conspicuous",
+    "abrupt",
+    "deport"
+   ],
+   "kaynak": "genel etimoloji"
+  },
+  {
+   "tur": "grammar",
+   "baslik": "Hardly/Scarcely ... when · No sooner ... than",
+   "hedef": "ikisi",
+   "ozet": "Devrik yapı ve zaman uyumu (had + V3)",
+   "ornekler": [
+    "No sooner had she arrived than it started to rain."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "tuzak",
+   "baslik": "Although / Despite / However farkı",
+   "hedef": "ikisi",
+   "ozet": "Cümle mi isim mi alıyor; noktalama",
+   "ornekler": [
+    "Despite the rain, ...",
+    "Although it rained, ..."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "grammar",
+   "baslik": "Past perfect vs. past perfect continuous",
+   "hedef": "ydt",
+   "ozet": "by the time / before / for + süre",
+   "ornekler": [],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "kelime",
+   "baslik": "Akademik fiiller: undermine, enhance, mitigate, sustain",
+   "hedef": "yds",
+   "ozet": "Okuma parçalarında sık fiiller",
+   "ornekler": [],
+   "kaynak": "genel"
+  },
+  {
+   "tur": "tuzak",
+   "baslik": "Relative clauses: which / that / whose / where",
+   "hedef": "ikisi",
+   "ozet": "Virgülle that kullanılmaz; preposition + which",
+   "ornekler": [],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "kok",
+   "baslik": "Önekler: mis-, dis-, un-, in-/im-/ir-/il-",
+   "hedef": "ikisi",
+   "ozet": "Olumsuzluk önekleri ve anlam farkları",
+   "ornekler": [
+    "irrelevant",
+    "misinterpret",
+    "disregard"
+   ],
+   "kaynak": "genel"
+  },
+  {
+   "tur": "kelime",
+   "baslik": "Collocations: make vs. do, take vs. have",
+   "hedef": "ikisi",
+   "ozet": "Sık kalıplar",
+   "ornekler": [
+    "make an effort",
+    "do research",
+    "take precautions"
+   ],
+   "kaynak": "genel"
+  },
+  {
+   "tur": "grammar",
+   "baslik": "Modals in the past: should have / must have / could have",
+   "hedef": "ikisi",
+   "ozet": "Geçmişe dair çıkarım ve pişmanlık",
+   "ornekler": [],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "istatistik",
+   "baslik": "YDT ve YDS soru sayıları ve bölümleri",
+   "hedef": "ikisi",
+   "ozet": "ÖSYM kılavuzundan doğrulanarak verilecek",
+   "ornekler": [],
+   "kaynak": "osym.gov.tr — DOĞRULANMADI, Konu Bulucu doğrulamadan kullanılmaz"
+  }
+ ]
+}
