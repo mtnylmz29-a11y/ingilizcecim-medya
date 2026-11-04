@@ -9,6 +9,8 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 - **Reels üretimi**: Reels içeriğini content.json'a ayrı bir post olarak yaz (`id`: "reels", `tema`: "ydt"), render_wb.py ile slaytları üret, sonra `python3 /home/user/ing/reels.py <out.mp4> "#F4F1EA" <slayt jpg'leri>` (gerekirse önce `pip install -q imageio-ffmpeg`). MP4'ü `gunler/YYYY-MM-DD/reels.mp4` olarak depoya yükle. Reels slaytları kısa olmalı (soru başına tek slayt, en fazla 7 slayt ≈ 25 sn).
 - **Topluluk Sorumlusu kaldırıldı** (Metin, 3 Kasım 2026 23:34: boşta kalıyordu). Ayrı yorum turu yok. Görevleri dağıtıldı: **Yayıncı** 20:30 Reels yayınından sonra aynı oturumda `KİP: TOPLULUK` adımlarını kısa biçimde uygular (yorum yanıtları, eski paylaşımlardaki PDF istekleri, metrikler, Metin'e günlük özet); `ekip/topluluk_sorumlusu.md` artık bu adımlar için kural dosyasıdır. Yorum yoksa hiçbir şey yapmadan geçer.
 - **Tasarım**: her gün farklı palet ve konuyu somutlaştıran 3B görseller (`ekip/tasarimci.md`).
+- **Önizleme görselleri** (Metin, 4 Kasım 2026): URETIM önizleme mesajıyla birlikte tüm gönderi slaytlarını ve `reels.mp4`'ü SendUserFile ile sohbete de ekle (raw adres önbellekli olabilir; commit sha'lı raw adresten indir). GitHub bağlantıları yetmez.
+- **Tarz çeşitliliği** (Metin, 4 Kasım 2026): `ekip/tasarimci.md` ve `ekip/icerik_yazari.md`'deki çeşitlilik kuralları zorunludur; aynı görünüm ve soru tarzı art arda gelmez.
 - **Reels yayını**: INSTAGRAM_POST_IG_USER_MEDIA (`video_url` = raw GitHub MP4, `media_type`: "REELS", `share_to_feed`: true, `caption`) → INSTAGRAM_GET_POST_STATUS ile `FINISHED` olana kadar birkaç kez bekle (her kontrol ayrı çağrı; workbench hücresi 180 sn sınırlı) → INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH.
 
 ## Karar sırası (değişmez)
