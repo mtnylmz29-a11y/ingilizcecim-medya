@@ -20,3 +20,15 @@ Toplam slayt 10'u geçmemeli (Instagram sınırı).
 - `write`: `lines: ["I can ______ ."]`
 Her etkinlikte `title` (İngilizce yönerge), `tr` (Türkçe yönerge), `key` (cevap anahtarı). Sayfa 1'e sığmalı (4 etkinlik).
 Kullanılabilir çizimler: robot, cat, dog, fish, turtle, bird, penguin.
+
+## Animasyonlu Reels (anim.py) — anim.json
+`python3 /home/user/ing/anim.py <anim.json> <out.mp4>` (1080×1920, 25–35 sn önerilir; arka planda `subprocess.Popen` ile çalıştır).
+```json
+{"palet": "lavanta", "sahneler": [SAHNE, ...]}
+```
+Her sahnede `tip`, `sure` (sn), isteğe bağlı `ust` (küçük başlık), `ikon`:
+- `kapak`: `baslik`, `alt`, `ikon`
+- `donusum`: `once`, `sonra` (kelimeler ekranda yeni yerine kayar), `vurgu` (öne çıkan kelimeler), `not` (kuralın açıklaması). `sure` en az 7. Her iki cümlede de ortak kelimeler aynı yazılmalı.
+- `maddeler`: `baslik`, `satirlar` (sırayla belirir; en fazla 4, kısa)
+- `kapanis`: `baslik`, `alt`, `ikon`
+Uzun cümle 3 satırı geçmesin. Kontrol için kare klasörü üçüncü bağımsız değişken olarak verilir.
