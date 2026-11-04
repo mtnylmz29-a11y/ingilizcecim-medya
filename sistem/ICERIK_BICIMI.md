@@ -31,4 +31,5 @@ Her sahnede `tip`, `sure` (sn), isteğe bağlı `ust` (küçük başlık), `ikon
 - `donusum`: `once`, `sonra` (kelimeler ekranda yeni yerine kayar), `vurgu` (öne çıkan kelimeler), `not` (kuralın açıklaması). `sure` en az 7. Her iki cümlede de ortak kelimeler aynı yazılmalı.
 - `maddeler`: `baslik`, `satirlar` (sırayla belirir; en fazla 4, kısa)
 - `kapanis`: `baslik`, `alt`, `ikon`
+**Sesli anlatım**: kökte `"ses": true`. Kokoro-82M (Apache-2.0, ücretsiz, workbench'te yerel çalışır; model ilk kullanımda iner) yalnızca **İngilizce** okur. `donusum` sahnesinde `once` ve `sonra` otomatik okunur, süre sese göre uzar, kelimeler okuma arasında kayar. `kapak`, `maddeler`, `kapanis` için okunacak metin `ses` alanına İngilizce yazılır. Türkçe açıklamalar ekranda kalır, okunmaz. Ses `ses_sesi` (varsayılan af_heart) ve `ses_hizi` (0.95) ile ayarlanır.
 Uzun cümle 3 satırı geçmesin. Kontrol için kare klasörü üçüncü bağımsız değişken olarak verilir.
