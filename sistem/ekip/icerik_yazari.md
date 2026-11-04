@@ -4,6 +4,7 @@
 **Girdi**: Haftanın konu listesi, `metrikler.json` özeti, son 14 günün kuyruğu (tekrar etmemek için).
 **Tarz çeşitliliği** (Metin, 4 Kasım 2026: "hep test hazırlıyorsun"): Ana içerik test değil, bilgi ve etkinliktir.
 - Quiz haftada en fazla 2 kez (gönderi + Reels toplamı); art arda iki gün quiz yok.
+- Gönderi de varsayılan olarak animasyonlu ve sesli video olarak yazılır (`ICERIK_BICIMI.md` > Animasyonlu Reels); `ses` metinleri İngilizce. Quiz günlerinde kaydırmalı quiz kullanılır.
 - Gönderi seçenekleri: ince detay bilgi kartı (çoğu kişinin bilmediği kural + örnek), sık yapılan hata (yanlış → doğru), iki yapı arasındaki fark (ör. used to / be used to), kelime kökü ailesi, "bu cümle neden yanlış?", mini okuma notu.
 - Reels varsayılan olarak **animasyonludur** (`sistem/anim.py`): cümle dönüşümü (kelimelerin yer değiştirmesi), kökten kelime türetme, kural adım adım. Slayt videosu (`reels.py`) yalnızca quiz günü kullanılır.
 - Gönderi ile Reels aynı gün farklı konu ya da farklı biçimde olur.
