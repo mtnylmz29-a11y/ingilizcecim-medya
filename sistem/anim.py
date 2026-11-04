@@ -14,13 +14,43 @@ F = os.environ.get("FONT_DIR", str(P / "fonts"))
 ff = "".join(f'@font-face{{font-family:"{fam}";font-weight:{w};src:url("file://{F}/{s}-latin-{w}.woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-2193}}@font-face{{font-family:"{fam}";font-weight:{w};src:url("file://{F}/{s}-latin-ext-{w}.woff2");unicode-range:U+0100-02FF}}' for fam, s in [("Baloo 2", "baloo-2"), ("Nunito", "nunito")] for w in (700, 800))
 e = html.escape
 sc = []
+# Sesli anlatim (istege bagli): spec["ses"] = true. Kokoro-82M (Apache-2.0), yalnizca Ingilizce, ucretsiz, yerel calisir.
+SR = 24000; klip = []
+def tts_hazir():
+    d = pathlib.Path(os.environ.get("TTS_DIR", str(P / "tts"))); d.mkdir(exist_ok=True)
+    try:
+        import kokoro_onnx
+    except ImportError:
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "kokoro-onnx", "soundfile"], check=True)
+        import kokoro_onnx
+    u = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+    import urllib.request
+    for f in ("kokoro-v1.0.int8.onnx", "voices-v1.0.bin"):
+        if not (d / f).exists():
+            urllib.request.urlretrieve(u + f, d / f)
+    return kokoro_onnx.Kokoro(str(d / "kokoro-v1.0.int8.onnx"), str(d / "voices-v1.0.bin"))
+if spec.get("ses"):
+    K = tts_hazir(); VOICE = spec.get("ses_sesi", "af_heart")
+    def say(tx):
+        a, sr = K.create(tx, voice=VOICE, speed=spec.get("ses_hizi", 0.95), lang="en-us"); return a
+    bas = 0.0
+    for s in spec["sahneler"]:
+        if s["tip"] == "donusum":
+            a1, a2 = say(s["once"]), say(s["sonra"])
+            t1 = .4; m0 = t1 + len(a1) / SR + .3; t2 = m0 + 1.2; nt = t2 + len(a2) / SR + .3
+            s["m0"] = round(m0, 2); s["not_at"] = round(nt, 2); s["sure"] = round(nt + 3.2, 2)
+            klip += [(bas + t1, a1), (bas + t2, a2)]
+        elif s.get("ses"):
+            a = say(s["ses"]); s["sure"] = round(max(s.get("sure", 4), .5 + len(a) / SR + .8), 2)
+            klip.append((bas + .5, a))
+        bas += s.get("sure", 7)
 for i, s in enumerate(spec["sahneler"]):
     k = s["tip"]; ust = f'<div class="ust">{e(s.get("ust",""))}</div>' if s.get("ust") else ""
     ik = ikon(s["ikon"], 300) if s.get("ikon") else ""
     if k == "kapak":
         b = f'<div class="pop" data-at=".15">{ik}</div><h1 class="pop" data-at=".5">{e(s["baslik"])}</h1><div class="alt pop" data-at="1.1">{e(s.get("alt",""))}</div>'
     elif k == "donusum":
-        b = f'{ust}<div class="donusum" data-once="{e(s["once"])}" data-sonra="{e(s["sonra"])}" data-vurgu="{e(json.dumps(s.get("vurgu",[])))}"></div><div class="not pop" data-at="{s.get("sure",7)-2.8}">{e(s.get("not",""))}</div>'
+        b = f'{ust}<div class="donusum" data-once="{e(s["once"])}" data-sonra="{e(s["sonra"])}" data-m0="{s.get("m0",1.8)}" data-vurgu="{e(json.dumps(s.get("vurgu",[])))}"></div><div class="not pop" data-at="{s.get("not_at",s.get("sure",7)-2.8)}">{e(s.get("not",""))}</div>'
     elif k == "maddeler":
         step = (s.get("sure", 7) - 2.0) / max(1, len(s["satirlar"]))
         b = f'{ust}<div class="bas">{e(s.get("baslik",""))}</div>' + "".join(f'<div class="sat pop" data-at="{.6+j*step:.2f}">{e(x)}</div>' for j, x in enumerate(s["satirlar"]))
@@ -49,7 +79,7 @@ window.init=()=>S.forEach(s=>{const D=s.el.querySelector('.donusum');if(!D)retur
 window.seek=T=>{document.querySelector('.bar i').style.width=(100*T/tot)+'%';
  S.forEach(s=>{const r=T-s.start;const on=r>=0&&r<s.sure;s.el.style.opacity=on?Math.min(1,r/.25,(s.sure-r)/.2):0;if(!on)return;
   s.pops.forEach(({p,at})=>{const k=ease((r-at)/.45);p.style.opacity=k;p.style.transform=`translateY(${(1-k)*50}px) scale(${.92+.08*k})`});
-  if(s.w){const m0=1.8,m=ease((r-m0)/1.1);s.w.forEach(w=>{const x=w.a.x+(w.b.x-w.a.x)*m,y=w.a.y+(w.b.y-w.a.y)*m;const lift=w.hit?Math.sin(Math.min(1,Math.max(0,(r-m0)/1.1))*Math.PI)*-70:0;
+  if(s.w){const m0=+s.el.querySelector('.donusum').dataset.m0,m=ease((r-m0)/1.1);s.w.forEach(w=>{const x=w.a.x+(w.b.x-w.a.x)*m,y=w.a.y+(w.b.y-w.a.y)*m;const lift=w.hit?Math.sin(Math.min(1,Math.max(0,(r-m0)/1.1))*Math.PI)*-70:0;
     w.e.style.transform=`translate(${x}px,${y+lift}px)`;w.e.textContent=r>m0+.55?w.tx:w.orig;w.e.style.opacity=w.gone?1-m:1;w.e.style.background=(w.hit&&r>m0)?'HL':'transparent';w.e.style.color=(w.hit&&r>m0)?'#fff':''});
    (s.yeni||[]).forEach(w=>{w.e.style.transform=`translate(${w.b.x}px,${w.b.y}px)`;w.e.style.opacity=m})}})};
 """.replace("HL", t["primary"])
@@ -67,8 +97,15 @@ try:
     import imageio_ffmpeg; FF = imageio_ffmpeg.get_ffmpeg_exe()
 except Exception:
     FF = shutil.which("ffmpeg")
-r = subprocess.run([FF, "-y", "-framerate", str(FPS), "-i", f"{tmp}/f%05d.jpg", "-f", "lavfi", "-t", str(T), "-i", "anullsrc=r=44100:cl=stereo",
-  "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-c:a", "aac", "-b:a", "96k", "-t", str(T), "-movflags", "+faststart", out], capture_output=True, text=True)
+ses_giris = ["-f", "lavfi", "-t", str(T), "-i", "anullsrc=r=44100:cl=stereo"]
+if klip:
+    import numpy as np, soundfile as sf
+    m = np.zeros(int(T * SR) + SR, dtype=np.float32)
+    for at, a in klip:
+        i = int(at * SR); m[i:i + len(a)] += a[:len(m) - i]
+    sf.write(f"{tmp}/ses.wav", m, SR); ses_giris = ["-i", f"{tmp}/ses.wav"]
+r = subprocess.run([FF, "-y", "-framerate", str(FPS), "-i", f"{tmp}/f%05d.jpg"] + ses_giris + [
+  "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-c:a", "aac", "-b:a", "96k", "-ar", "44100", "-t", str(T), "-movflags", "+faststart", out], capture_output=True, text=True)
 if r.returncode: print(r.stderr[-1200:]); sys.exit(1)
 print(out, os.path.getsize(out), f"{T}s")
 if len(sys.argv) > 3: shutil.copytree(tmp, sys.argv[3], dirs_exist_ok=True)
