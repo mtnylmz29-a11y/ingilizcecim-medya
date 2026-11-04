@@ -1,1 +1,96 @@
-{"paylasimlar": {}, "haftalik": []}
+{
+ "paylasimlar": {
+  "2026-11-03-ilkokul": {
+   "media_id": "18011532551776443",
+   "olcumler": [
+    {
+     "tarih": "2026-11-04T20:31+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 2
+    }
+   ]
+  },
+  "2026-11-03-ortaokul": {
+   "media_id": "17933246457162971",
+   "olcumler": [
+    {
+     "tarih": "2026-11-04T20:31+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 2
+    }
+   ]
+  },
+  "2026-11-03-lise": {
+   "media_id": "18102712415655842",
+   "olcumler": [
+    {
+     "tarih": "2026-11-04T20:31+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 1
+    }
+   ]
+  },
+  "2026-11-03-ydt": {
+   "media_id": "18647794117033055",
+   "olcumler": [
+    {
+     "tarih": "2026-11-04T20:31+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 3
+    }
+   ]
+  },
+  "2026-11-03-ydtyds-kokler": {
+   "media_id": "18417310018080772",
+   "olcumler": [
+    {
+     "tarih": "2026-11-04T20:31+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 2
+    }
+   ]
+  },
+  "2026-11-04-gonderi": {
+   "media_id": "18121163498007188",
+   "olcumler": [
+    {
+     "tarih": "2026-11-04T20:31+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 2
+    }
+   ]
+  },
+  "2026-11-04-reels": {
+   "media_id": "18099919406649590",
+   "olcumler": [
+    {
+     "tarih": "2026-11-04T20:31+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 0
+    }
+   ]
+  }
+ },
+ "haftalik": []
+}
