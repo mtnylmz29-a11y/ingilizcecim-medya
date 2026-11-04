@@ -63,6 +63,35 @@ CSS_FONTS = "<style>" + "".join(_ff) + "</style>"
 def esc(s):
     return html.escape(s).replace("\n", "<br>")
 
+
+def duzen_css(post, t):
+    """Şablon görünümü: klasik | poster | defter | gazete. `duzen` alanıyla seçilir; renkler paletten gelir."""
+    d = post.get("duzen", "klasik")
+    p, ink, bg, soft, line, acc = t["primary"], t["ink"], t["bg"], t["soft"], t["line"], t["accent"]
+    if d == "poster":
+        return f"""body,.s{{background:{p};color:#fff}} .deco{{display:none}}
+.logo,.logo b,.foot,.sub,.kicker,.cta,.qn{{color:#fff}} .badge{{background:#fff;color:{p}}}
+h1{{font-size:150px}} .q{{font-size:62px;line-height:1.14}}
+.o{{background:transparent;border:0;border-bottom:3px solid rgba(255,255,255,.45);border-radius:0;padding:12px 0;color:#fff}}
+.L{{background:#fff;color:{p}}} .k{{background:rgba(255,255,255,.12);border:0;color:#fff}} .k span{{color:rgba(255,255,255,.85)}}
+.k .L{{background:#fff;color:{p}}} .meta span{{background:transparent;border-color:#fff;color:#fff}} .ex{{background:rgba(255,255,255,.15)}}
+.dots i{{background:rgba(255,255,255,.35)}} .dots i.on{{background:#fff}}"""
+    if d == "defter":
+        return f"""body,.s{{background-color:#FFFEF8;color:#1F2430}} .deco{{display:none}}
+.s{{background-image:repeating-linear-gradient(#FFFEF8 0 62px,{line} 62px 64px);padding-left:150px}}
+.s:before{{content:"";position:absolute;left:112px;top:0;bottom:0;width:4px;background:{p};opacity:.55}}
+.o{{background:transparent;border:0;border-radius:0;padding:6px 0}} .L{{background:transparent;color:{p};border:4px solid {p};border-radius:12px}}
+.k{{background:{soft};border:0;border-radius:4px;transform:rotate(-.5deg);box-shadow:6px 8px 0 rgba(0,0,0,.07)}}
+.meta span{{background:{soft};border:0;border-radius:4px;transform:rotate(-1.5deg)}} h1{{font-size:112px}} .q{{font-size:48px}}"""
+    if d == "gazete":
+        return f"""body,.s{{background:{bg}}} .deco{{display:none}}
+.top{{border-bottom:8px solid {ink};padding-bottom:18px}} .foot{{border-top:4px solid {ink};padding-top:16px}}
+.logo{{text-transform:uppercase;letter-spacing:1px}} .badge{{background:{ink};color:{bg};border-radius:0}}
+h1{{text-transform:uppercase;letter-spacing:-3px}} .kicker{{color:{ink};border-bottom:3px solid {ink};padding-bottom:8px}}
+.o,.k,.meta span{{border:4px solid {ink};border-radius:0;box-shadow:8px 8px 0 {ink}}} .L{{border-radius:0;background:{ink};color:{bg}}}
+.k .L{{background:{p};color:#fff}} .ex{{border-radius:0;border-left:10px solid {p}}} .dots i,.dots i.on{{border-radius:0}}"""
+    return ""
+
 def page(post, t, inner, idx, total):
     pos = [("right:-170px;top:-150px;width:560px;height:560px", "left:-140px;bottom:90px;width:300px;height:300px"),
            ("left:-200px;top:180px;width:520px;height:520px", "right:-90px;bottom:-60px;width:360px;height:360px"),
@@ -96,6 +125,7 @@ h1{{font:800 128px/0.98 "Baloo 2";letter-spacing:-2px}}
 .k .L{{width:62px;height:62px;background:{t["accent"]};color:{"#0E1A33" if post.get("tema",post["id"])=="lise" else "#fff"}}}
 .ex{{font:700 34px/1.35 "Nunito";background:{t["soft"]};border-radius:22px;padding:18px 24px;font-style:italic}}
 .k b{{font:800 36px "Nunito";display:block}} .k span{{font:600 30px/1.3 "Nunito";color:{t["muted"]}}}
+{duzen_css(post, t)}
 </style></head><body><div class="s">
 {deco}<div class="top"><div class="logo">ingilizcecim<b>.</b>com</div><div class="badge">{post["grade"].upper()} · {post.get("badge","QUIZ")}</div></div>
 <div class="main">{inner}</div>
@@ -132,7 +162,7 @@ def build(post):
 <h1>{esc(post["title"])}</h1>{ikon(post["ikon"], 340) if post.get("ikon") else art(post["art"], 330, t)}</div>
 <div class="sub">{esc(post["subtitle"])}</div>
 <div class="meta"><span>{post["grade"]}</span><span>{post["level"]}</span><span>{len(qs)} soru</span></div>
-<div class="cta">Cevapların son slaytta · Kaydır →</div>'''
+<div class="cta">{esc(post.get("kapak_cta") or ("Cevaplar videonun sonunda" if post["id"]=="reels" else "Cevaplar son slaytta · Kaydır →"))}</div>'''
     pages.append(cover)
     for i, q in enumerate(qs):
         letters = "ABCDE"
