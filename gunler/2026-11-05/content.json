@@ -1,0 +1,110 @@
+{
+ "date": "2026-11-05",
+ "gonderi": {
+  "palet": "nane",
+  "ses": true,
+  "sahneler": [
+   {
+    "tip": "kapak",
+    "sure": 5,
+    "baslik": "That After a Comma?",
+    "alt": "Sık yapılan hata · YDT · YDS",
+    "ikon": "Prohibited",
+    "ses": "Can you use that after a comma? Let's fix this common mistake."
+   },
+   {
+    "tip": "donusum",
+    "ust": "Yanlış → Doğru",
+    "once": "My brother, that lives in Izmir, is a doctor.",
+    "sonra": "My brother, who lives in Izmir, is a doctor.",
+    "vurgu": [],
+    "not": "Virgüllü, ek bilgi veren cümlecikte that kullanılmaz."
+   },
+   {
+    "tip": "donusum",
+    "ust": "Edat öne geçince",
+    "once": "This is the city that I told you about.",
+    "sonra": "This is the city about which I told you.",
+    "vurgu": [
+     "about"
+    ],
+    "not": "İkisi de doğru. Ama \"about that\" yanlış: edattan sonra which ya da whom gelir."
+   },
+   {
+    "tip": "maddeler",
+    "ust": "Özet",
+    "baslik": "Üç kural",
+    "sure": 9,
+    "satirlar": [
+     "Virgül varsa: who / which, that yok",
+     "Edat + which / whom",
+     "Edat sonda kalırsa that olur"
+    ],
+    "ses": "After a comma, use who or which, never that. After a preposition, use which or whom. If the preposition stays at the end, that is fine."
+   },
+   {
+    "tip": "kapanis",
+    "sure": 4,
+    "baslik": "Kaydet, sınavda hatırla",
+    "alt": "ingilizcecim.com",
+    "ikon": "Bookmark tabs",
+    "ses": "Save this for your exam."
+   }
+  ]
+ },
+ "reels": {
+  "palet": "limon",
+  "ses": true,
+  "sahneler": [
+   {
+    "tip": "kapak",
+    "sure": 5,
+    "baslik": "Is in- Always Negative?",
+    "alt": "Önek tuzağı · YDT · YDS",
+    "ikon": "Gem stone",
+    "ses": "Does the prefix in always mean not? Not always."
+   },
+   {
+    "tip": "maddeler",
+    "ust": "Yazım kuralı",
+    "baslik": "in- şekil değiştirir",
+    "sure": 11,
+    "satirlar": [
+     "b, m, p önünde im-: impossible",
+     "l önünde il-: illegal",
+     "r önünde ir-: irrelevant"
+    ],
+    "ses": "Before b, m or p, it becomes im, as in impossible. Before l, it becomes il, as in illegal. Before r, it becomes ir, as in irrelevant."
+   },
+   {
+    "tip": "maddeler",
+    "ust": "Tuzak",
+    "baslik": "Bunlar olumsuz değil",
+    "sure": 10,
+    "satirlar": [
+     "invaluable: çok değerli",
+     "inflammable: kolay tutuşan"
+    ],
+    "ses": "But be careful. Invaluable means extremely useful or precious. Inflammable means it burns easily."
+   },
+   {
+    "tip": "donusum",
+    "ust": "Anlam güçlenir",
+    "once": "Her advice was valuable.",
+    "sonra": "Her advice was invaluable.",
+    "vurgu": [],
+    "not": "Değersiz değil, paha biçilmez. \"Değersiz\" için worthless kullanılır."
+   },
+   {
+    "tip": "kapanis",
+    "sure": 4,
+    "baslik": "Hangisi sana yeniydi?",
+    "alt": "ingilizcecim.com",
+    "ikon": "Light bulb",
+    "ses": "Which one was new to you?"
+   }
+  ]
+ },
+ "caption_gonderi": "Virgülden sonra that gelir mi? YDT ve YDS'de sıfat cümleciklerinin en sık düşülen tuzaklarından biri bu. Videoda iki kuralı adım adım gösterdik: virgüllü cümlecikte who / which, edattan sonra which / whom.\n\nKaydet, sınavdan önce bir daha bak. Sence \"The book, ___ I bought yesterday, is great.\" cümlesinde boşluğa ne gelir? Yoruma yaz.\n\ningilizcecim.com\n\n#ydt #yds #ingilizce #ingilizcegramer #relativeclauses #yksingilizce #ydthazırlık #ydshazırlık #ingilizceöğreniyorum",
+ "caption_reels": "Inflammable \"yanmaz\" mı demek? Hayır, tam tersi: kolay tutuşan. Invaluable da \"değersiz\" değil, paha biçilmez. Önekler her zaman \"değil\" anlamı vermez; ayrıca in- öneki sonraki harfe göre im-, il-, ir- olur.\n\nBu ikisinden hangisini yanlış biliyordun? Yoruma yaz.\n\ningilizcecim.com\n\n#ydt #yds #ingilizce #ingilizcekelime #önekler #prefix #yksingilizce #ydthazırlık #ydshazırlık"
+}
