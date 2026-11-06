@@ -15,6 +15,8 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 - **Tarz çeşitliliği** (Metin, 4 Kasım 2026): `ekip/tasarimci.md` ve `ekip/icerik_yazari.md`'deki çeşitlilik kuralları zorunludur; aynı görünüm ve soru tarzı art arda gelmez.
 - **Reels yayını**: INSTAGRAM_POST_IG_USER_MEDIA (`video_url` = raw GitHub MP4, `media_type`: "REELS", `share_to_feed`: true, `caption`) → INSTAGRAM_GET_POST_STATUS ile `FINISHED` olana kadar birkaç kez bekle (her kontrol ayrı çağrı; workbench hücresi 180 sn sınırlı) → INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH.
 
+- **Kalite kapısı** (Metin, 7 Kasım 2026): URETIM'de Editör'den önce `sistem/kalite.py` çalışır; `KALDI` veren paylaşım onaya sunulmaz (ayrıntı `ekip/editor.md` Adım 0). YAYIN kipinde de yayından hemen önce `kalite.json`'un `karar` alanı `GECTI` değilse yayınlanmaz, Metin'e bildirilir (7 Kasım'dan önce üretilmiş, `kalite.json`'u olmayan paylaşımlar bu kuraldan muaf).
+
 ## Karar sırası (değişmez)
 1. **Metin** (hesap sahibi): her paylaşım ve her yapı değişikliği onun onayıyla olur.
 2. **Değişmez kurallar**: cevabın doğruluğu; çocuk güvenliği; çoktan seçmelide aynı cevap harfi art arda en fazla 3 kez; kelime havuzu soru/liste sırasını izlemez (karıştır ya da alfabetik); telif (marka/karakter/ünlü/ders kitabı/gerçek çocuk fotoğrafı yok).
@@ -41,9 +43,9 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 2. **Kuyruk kontrolü**: `onay_bekliyor` olup 3 günden eskiyse → `suresi_doldu`. Bekleyen (`onay_bekliyor` + `onaylandi` yayınlanmamış) sayısı `ayarlar.kuyruk_sinir` (8) ve üstündeyse YENİ ÜRETME; Metin'e bekleyenlerin listesiyle hatırlatma gönder ve bitir.
 3. **İçerik Yazarı** günün paylaşım planını çıkarır (`ayarlar.gunluk_paylasim` adet; deneme döneminde 4: ilkokul, ortaokul, lise, YDT birer tane — dönem bitince İdareci'nin kararı geçerli). Hangi biçim ve sınıf olacağına metriklere ve haritaya bakarak kendisi karar verir. İlkokul paylaşımı her zaman çalışma kâğıdıdır.
 4. **Tasarımcı** dosyaları üretir (workbench), taşma varsa metni kısaltıp tekrar üretir, dosyaları depoya `gunler/YYYY-MM-DD/` altına, PDF'leri `pdf/<sinif>/` altına yükler.
-5. **Editör** (Agent aracıyla ayrı bir alt ajan; üretimi görmemiş olmalı) kontrol listesini uygular. Sorun → ilgili role geri, en fazla 2 tur; çözülmezse paylaşım `duzeltme` notuyla Metin'e sorulur.
+5. **Kalite kapısı** (`sistem/kalite.py`, `ekip/editor.md` Adım 0): `KALDI` varsa ilgili role geri, script tekrar (en fazla 2 tur). Sonra **Editör** (Agent aracıyla ayrı bir alt ajan; üretimi görmemiş olmalı) `kalite.json` ile birlikte kontrol listesini uygular. Sorun → ilgili role geri, en fazla 2 tur; çözülmezse paylaşım `duzeltme` notuyla Metin'e sorulur.
 6. Paylaşımları `kuyruk.json`'a `onay_bekliyor` olarak ekle (id, tarih, kademe, sınıf, biçim, başlık, açıklama, jpg raw URL listesi, varsa pdf blob URL, önerilen yayın dilimi).
-7. **12:00 civarı Metin'e önizleme**: her paylaşım için numara, kademe/sınıf, başlık, soru ve cevaplar ya da kâğıt etkinlikleri, açıklama metni ve slaytların GitHub bağlantısı. Sonda: "Onay için: `onay 1 2 3 4` · düzeltme için: `düzelt 2: …` · ret: `ret 3`". Önceki günlerden bekleyenleri de kısaca hatırlat.
+7. **12:00 civarı Metin'e önizleme**: her paylaşım için numara, kademe/sınıf, başlık, kalite satırı (`kalite.json`: GEÇTİ/KALDI, uyarı sayısı ve kısa nedenleri), soru ve cevaplar ya da kâğıt etkinlikleri, açıklama metni ve slaytların GitHub bağlantısı. Sonda: "Onay için: `onay 1 2 3 4` · düzeltme için: `düzelt 2: …` · ret: `ret 3`". Önceki günlerden bekleyenleri de kısaca hatırlat.
 8. **Metin bu oturumda yanıt verirse (KİP: ONAY'ı uygula).**
 9. Günlüğe yaz.
 
