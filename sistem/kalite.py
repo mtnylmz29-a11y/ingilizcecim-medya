@@ -270,6 +270,10 @@ def ffmpeg_yolu():
 
 def video_kontrol(pid, mp4, sesli):
     ff = ffmpeg_yolu()
+    import shutil
+    if not (os.path.isfile(ff) or shutil.which(ff)):
+        ekle(pid, "video kontrolleri", "UYARI", "ffmpeg bulunamadı (pip install imageio-ffmpeg); video kontrolleri atlandı")
+        return
     r = subprocess.run([ff, "-hide_banner", "-i", mp4,
                         "-vf", f"freezedetect=n=0.001:d={ESIK['donma_sn']},blackdetect=d=0.5:pix_th=0.08",
                         "-af", "astats=metadata=1:reset=0,silencedetect=n=-45dB:d=0.3",
