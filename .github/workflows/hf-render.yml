@@ -1,0 +1,64 @@
+# HyperFrames ile video uretimi. gunler/YYYY-MM-DD/hf_<ad>.json yuklenince calisir,
+# gunler/YYYY-MM-DD/<ad>_hf.mp4 olarak depoya geri yazar. Yayin yapmaz.
+name: HyperFrames render
+on:
+  push:
+    paths: ["gunler/**/hf_*.json"]
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: "Tek bir spec yolu (ornek: gunler/2026-11-06/hf_reels.json)"
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: hf-render
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/kokoro
+          key: kokoro-v1.0
+      - name: Kurulum
+        run: |
+          pip install -q kokoro-onnx soundfile numpy
+          npm i -g hyperframes@0.9.19
+          mkdir -p /tmp/gs && (cd /tmp/gs && npm i -s gsap@3.15.0 >/dev/null) && cp /tmp/gs/node_modules/gsap/dist/gsap.min.js hf/gsap.min.js
+      - name: Spec listesi
+        id: liste
+        run: |
+          if [ -n "${{ github.event.inputs.spec }}" ]; then echo "${{ github.event.inputs.spec }}" > /tmp/specs.txt
+          else git diff --name-only HEAD~1 HEAD | grep -E '^gunler/.+/hf_[^/]+\.json$' > /tmp/specs.txt || true; fi
+          cat /tmp/specs.txt
+      - name: Uret
+        env:
+          HYPERFRAMES_SKIP_SKILLS: "1"
+        run: |
+          export HYPERFRAMES_BROWSER_PATH=$(command -v google-chrome || command -v google-chrome-stable || true)
+          while read -r f; do
+            [ -f "$f" ] || continue
+            d=$(dirname "$f"); b=$(basename "$f" .json); ad=${b#hf_}; p=/tmp/p_$ad
+            python3 hf/gen.py "$f" "$p"
+            (cd "$p" && npx hyperframes check --json > "$GITHUB_WORKSPACE/$d/${ad}_hf_check.json" || true)
+            (cd "$p" && npx hyperframes render -o "$GITHUB_WORKSPACE/$d/${ad}_hf.mp4" --fps 30 --quality delivery)
+          done < /tmp/specs.txt
+      - name: Depoya yaz
+        run: |
+          git config user.name "hf-render"; git config user.email "actions@users.noreply.github.com"
+          git add gunler
+          git diff --cached --quiet && exit 0
+          git commit -m "render: HyperFrames videolari"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
