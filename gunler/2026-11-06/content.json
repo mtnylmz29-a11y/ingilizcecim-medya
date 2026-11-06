@@ -14,20 +14,20 @@
    },
    {
     "tip": "donusum",
-    "ust": "Güçlü tahmin",
-    "once": "He probably forgot the meeting.",
-    "sonra": "He must have forgotten the meeting.",
+    "ust": "GÜÇLÜ TAHMİN",
+    "once": "He probably forgot | the meeting.",
+    "sonra": "He must have forgotten | the meeting.",
     "vurgu": [
      "must",
      "have"
     ],
-    "not": "must have + V3: Geçmişle ilgili güçlü tahmin. Büyük ihtimalle öyle oldu."
+    "not": "must have + V3: Neredeyse kesin tahmin, -mış olmalı."
    },
    {
     "tip": "donusum",
-    "ust": "Pişmanlık, eleştiri",
-    "once": "I didn't study for the exam.",
-    "sonra": "I should have studied for the exam.",
+    "ust": "PİŞMANLIK, ELEŞTİRİ",
+    "once": "I didn't study | for the exam.",
+    "sonra": "I should have studied | for the exam.",
     "vurgu": [
      "should",
      "have"
@@ -36,27 +36,38 @@
    },
    {
     "tip": "donusum",
-    "ust": "Olmayan ihtimal",
-    "once": "We had a chance to win, but we lost.",
-    "sonra": "We could have won, but we lost.",
+    "ust": "GERÇEKLEŞMEYEN İHTİMAL",
+    "once": "We had a chance to win, | but we lost.",
+    "sonra": "We could have won, | but we lost.",
     "vurgu": [
      "could",
      "have"
     ],
-    "not": "could have + V3: Mümkündü ama olmadı."
+    "not": "could have + V3: Mümkündü ama olmadı. Ayrıca: -mış olabilir."
+   },
+   {
+    "tip": "donusum",
+    "ust": "TUZAK",
+    "once": "You brought | an umbrella for nothing.",
+    "sonra": "You needn't have brought | an umbrella.",
+    "vurgu": [
+     "needn't",
+     "have"
+    ],
+    "not": "needn't have + V3: Yapıldı ama gerek yoktu."
    },
    {
     "tip": "maddeler",
-    "ust": "Özet",
-    "baslik": "Bir de tuzak var",
-    "sure": 12,
+    "ust": "ÖZET",
+    "baslik": "Dört yapı, dört anlam",
+    "sure": 11,
     "satirlar": [
      "must have V3: güçlü tahmin",
      "should have V3: yapılmalıydı, yapılmadı",
      "could have V3: mümkündü, olmadı",
      "needn't have V3: yapıldı, gereksizdi"
     ],
-    "ses": "Must have is a strong guess about the past. Should have means it was the right thing, but it didn't happen. Could have means it was possible, but it didn't happen. And here is the trap: needn't have means you did it, but it wasn't necessary."
+    "ses": "Must have is a strong guess about the past. Should have means it was the right thing to do, but it didn't happen. Could have means it was possible, but it didn't happen. Needn't have means you did it, but there was no need."
    },
    {
     "tip": "kapanis",
@@ -75,16 +86,16 @@
    {
     "tip": "kapak",
     "sure": 4,
-    "baslik": "4 Verbs, One Level Up",
+    "baslik": "4 Verbs to Level Up",
     "alt": "Akademik fiiller · YDT · YDS",
     "ikon": "Rocket",
-    "ses": "Four academic verbs to take your English one level up."
+    "ses": "Four academic verbs to take your English up a level."
    },
    {
     "tip": "donusum",
     "ust": "weaken → undermine",
-    "once": "Stress can weaken the immune system.",
-    "sonra": "Stress can undermine the immune system.",
+    "once": "Stress can weaken | the immune system.",
+    "sonra": "Stress can undermine | the immune system.",
     "vurgu": [
      "undermine"
     ],
@@ -93,8 +104,8 @@
    {
     "tip": "donusum",
     "ust": "improve → enhance",
-    "once": "Regular reading can improve your vocabulary.",
-    "sonra": "Regular reading can enhance your vocabulary.",
+    "once": "Regular reading can | improve your vocabulary.",
+    "sonra": "Regular reading can | enhance your vocabulary.",
     "vurgu": [
      "enhance"
     ],
@@ -103,8 +114,8 @@
    {
     "tip": "donusum",
     "ust": "reduce → mitigate",
-    "once": "Trees can reduce the effects of floods.",
-    "sonra": "Trees can mitigate the effects of floods.",
+    "once": "Trees can reduce | the effects of floods.",
+    "sonra": "Trees can mitigate | the effects of floods.",
     "vurgu": [
      "mitigate"
     ],
@@ -113,20 +124,20 @@
    {
     "tip": "donusum",
     "ust": "keep alive → sustain",
-    "once": "Clean rivers keep local wildlife alive.",
-    "sonra": "Clean rivers sustain local wildlife.",
+    "once": "Clean rivers keep | local wildlife alive.",
+    "sonra": "Clean rivers sustain | local wildlife.",
     "vurgu": [
      "sustain"
     ],
-    "not": "sustain: sürdürmek, ayakta tutmak"
+    "not": "sustain: sürdürmek, yaşatmak"
    },
    {
     "tip": "kapanis",
-    "sure": 4,
+    "sure": 5,
     "baslik": "Hangisi sana yeniydi?",
     "alt": "ingilizcecim.com",
     "ikon": "Speech balloon",
-    "ses": "Which verb was new for you?"
+    "ses": "Which verb was new to you?"
    }
   ]
  }
