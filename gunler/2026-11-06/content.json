@@ -1,0 +1,133 @@
+{
+ "date": "2026-11-06",
+ "gonderi": {
+  "palet": "gece",
+  "ses": true,
+  "sahneler": [
+   {
+    "tip": "kapak",
+    "sure": 5,
+    "baslik": "Must Have or Should Have?",
+    "alt": "Geçmiş modallar · YDT · YDS",
+    "ikon": "Magnifying glass tilted left",
+    "ses": "Must have, should have, could have. Three past modals, three different meanings."
+   },
+   {
+    "tip": "donusum",
+    "ust": "Güçlü tahmin",
+    "once": "He probably forgot the meeting.",
+    "sonra": "He must have forgotten the meeting.",
+    "vurgu": [
+     "must",
+     "have"
+    ],
+    "not": "must have + V3: Geçmişle ilgili güçlü tahmin. Büyük ihtimalle öyle oldu."
+   },
+   {
+    "tip": "donusum",
+    "ust": "Pişmanlık, eleştiri",
+    "once": "I didn't study for the exam.",
+    "sonra": "I should have studied for the exam.",
+    "vurgu": [
+     "should",
+     "have"
+    ],
+    "not": "should have + V3: Yapılmalıydı ama yapılmadı."
+   },
+   {
+    "tip": "donusum",
+    "ust": "Olmayan ihtimal",
+    "once": "We had a chance to win, but we lost.",
+    "sonra": "We could have won, but we lost.",
+    "vurgu": [
+     "could",
+     "have"
+    ],
+    "not": "could have + V3: Mümkündü ama olmadı."
+   },
+   {
+    "tip": "maddeler",
+    "ust": "Özet",
+    "baslik": "Bir de tuzak var",
+    "sure": 12,
+    "satirlar": [
+     "must have V3: güçlü tahmin",
+     "should have V3: yapılmalıydı, yapılmadı",
+     "could have V3: mümkündü, olmadı",
+     "needn't have V3: yapıldı, gereksizdi"
+    ],
+    "ses": "Must have is a strong guess about the past. Should have means it was the right thing, but it didn't happen. Could have means it was possible, but it didn't happen. And here is the trap: needn't have means you did it, but it wasn't necessary."
+   },
+   {
+    "tip": "kapanis",
+    "sure": 4,
+    "baslik": "Sen de bir cümle yaz",
+    "alt": "ingilizcecim.com",
+    "ikon": "Pencil",
+    "ses": "Now write your own sentence in the comments."
+   }
+  ]
+ },
+ "reels": {
+  "palet": "lavanta",
+  "ses": true,
+  "sahneler": [
+   {
+    "tip": "kapak",
+    "sure": 4,
+    "baslik": "4 Verbs, One Level Up",
+    "alt": "Akademik fiiller · YDT · YDS",
+    "ikon": "Rocket",
+    "ses": "Four academic verbs to take your English one level up."
+   },
+   {
+    "tip": "donusum",
+    "ust": "weaken → undermine",
+    "once": "Stress can weaken the immune system.",
+    "sonra": "Stress can undermine the immune system.",
+    "vurgu": [
+     "undermine"
+    ],
+    "not": "undermine: zayıflatmak, baltalamak"
+   },
+   {
+    "tip": "donusum",
+    "ust": "improve → enhance",
+    "once": "Regular reading can improve your vocabulary.",
+    "sonra": "Regular reading can enhance your vocabulary.",
+    "vurgu": [
+     "enhance"
+    ],
+    "not": "enhance: geliştirmek, artırmak"
+   },
+   {
+    "tip": "donusum",
+    "ust": "reduce → mitigate",
+    "once": "Trees can reduce the effects of floods.",
+    "sonra": "Trees can mitigate the effects of floods.",
+    "vurgu": [
+     "mitigate"
+    ],
+    "not": "mitigate: hafifletmek, etkisini azaltmak"
+   },
+   {
+    "tip": "donusum",
+    "ust": "keep alive → sustain",
+    "once": "Clean rivers keep local wildlife alive.",
+    "sonra": "Clean rivers sustain local wildlife.",
+    "vurgu": [
+     "sustain"
+    ],
+    "not": "sustain: sürdürmek, ayakta tutmak"
+   },
+   {
+    "tip": "kapanis",
+    "sure": 4,
+    "baslik": "Hangisi sana yeniydi?",
+    "alt": "ingilizcecim.com",
+    "ikon": "Speech balloon",
+    "ses": "Which verb was new for you?"
+   }
+  ]
+ }
+}
