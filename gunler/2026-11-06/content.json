@@ -6,17 +6,17 @@
   "sahneler": [
    {
     "tip": "kapak",
-    "sure": 5,
+    "sure": 6,
     "baslik": "Must Have or Should Have?",
     "alt": "Geçmiş modallar · YDT · YDS",
     "ikon": "Magnifying glass tilted left",
-    "ses": "Must have, should have, could have. Three past modals, three different meanings."
+    "ses": "Must have, should have, could have, needn't have. Four past modals, four different meanings."
    },
    {
     "tip": "donusum",
     "ust": "GÜÇLÜ TAHMİN",
-    "once": "He probably forgot | the meeting.",
-    "sonra": "He must have forgotten | the meeting.",
+    "once": "He probably | forgot | the meeting.",
+    "sonra": "He must have | forgotten | the meeting.",
     "vurgu": [
      "must",
      "have"
@@ -37,8 +37,8 @@
    {
     "tip": "donusum",
     "ust": "GERÇEKLEŞMEYEN İHTİMAL",
-    "once": "We had a chance to win, | but we lost.",
-    "sonra": "We could have won, | but we lost.",
+    "once": "We had a chance | to win, | but we lost.",
+    "sonra": "We could have | won, | but we lost.",
     "vurgu": [
      "could",
      "have"
@@ -48,13 +48,14 @@
    {
     "tip": "donusum",
     "ust": "TUZAK",
-    "once": "You brought | an umbrella for nothing.",
-    "sonra": "You needn't have brought | an umbrella.",
+    "once": "You brought | an umbrella | for nothing.",
+    "sonra": "You needn't have | brought an umbrella.",
     "vurgu": [
      "needn't",
      "have"
     ],
-    "not": "needn't have + V3: Yapıldı ama gerek yoktu."
+    "not": "needn't have + V3: Yapıldı ama gerek yoktu.",
+    "tam_sol": true
    },
    {
     "tip": "maddeler",
