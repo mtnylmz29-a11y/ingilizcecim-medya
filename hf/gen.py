@@ -43,19 +43,50 @@ def ikon(ad):
 
 # ---- ses (Kokoro)
 SR = 24000
-import numpy as np, soundfile as sf, kokoro_onnx
-TD = pathlib.Path(os.environ.get("TTS_DIR", str(pathlib.Path.home() / ".cache/kokoro"))); TD.mkdir(parents=True, exist_ok=True)
-U = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
-for f in ("kokoro-v1.0.int8.onnx", "voices-v1.0.bin"):
-    indir(U + f, TD / f)
-K = kokoro_onnx.Kokoro(str(TD / "kokoro-v1.0.int8.onnx"), str(TD / "voices-v1.0.bin"))
+import numpy as np, soundfile as sf, hashlib, base64, time
+# Ses motoru: GEMINI_API_KEY varsa Gemini TTS (Turkce + Ingilizce, ayni ses), yoksa Kokoro (yalnizca Ingilizce).
+GKEY = os.environ.get("GEMINI_API_KEY", "")
+MOTOR = spec.get("ses_motoru", "gemini" if GKEY else "kokoro")
+GSES = spec.get("gemini_ses", "Kore")
+GMODEL = spec.get("gemini_model", "gemini-2.5-flash-preview-tts")
+USLUP = {"tr": "Sıcak, net ve enerjik bir öğretmen sesiyle Türkçe söyle: ",
+         "en": "Say in clear, natural American English, like a friendly teacher: "}
+_K = []
+def kokoro():
+    if not _K:
+        import kokoro_onnx
+        TD = pathlib.Path(os.environ.get("TTS_DIR", str(pathlib.Path.home() / ".cache/kokoro"))); TD.mkdir(parents=True, exist_ok=True)
+        U = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+        for f in ("kokoro-v1.0.int8.onnx", "voices-v1.0.bin"):
+            indir(U + f, TD / f)
+        _K.append(kokoro_onnx.Kokoro(str(TD / "kokoro-v1.0.int8.onnx"), str(TD / "voices-v1.0.bin")))
+    return _K[0]
+def gemini(text, dil):
+    body = json.dumps({"contents": [{"parts": [{"text": USLUP[dil] + text}]}],
+                       "generationConfig": {"responseModalities": ["AUDIO"],
+                                            "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GSES}}}}}).encode()
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GMODEL}:generateContent"
+    for deneme in range(5):
+        try:
+            req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json", "x-goog-api-key": GKEY})
+            d = json.loads(urllib.request.urlopen(req, timeout=120).read())
+            pcm = base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+            return np.frombuffer(pcm, dtype="<i2").astype(np.float32) / 32768.0
+        except Exception as ex:
+            print("gemini tekrar", deneme + 1, type(ex).__name__, str(ex)[:120]); time.sleep(8 * (deneme + 1))
+    raise SystemExit("Gemini TTS basarisiz: " + text)
 SES = []  # (id, baslangic, sure)
 nses = [0]
-def say(text, at):
-    """Metni seslendirir, verilen anda baslatir, suresini doner."""
+def say(text, at, dil="en"):
+    """Metni seslendirir (dil: en | tr), verilen anda baslatir, suresini doner."""
     if not text: return 0.0
-    a, _ = K.create(text, voice=spec.get("ses_sesi", "af_heart"), speed=spec.get("ses_hizi", 0.95), lang="en-us")
     nses[0] += 1; i = f"ses{nses[0]:02d}"
+    if MOTOR == "gemini":
+        a = gemini(text, dil)
+    elif dil == "en":
+        a, _ = kokoro().create(text, voice=spec.get("ses_sesi", "af_heart"), speed=spec.get("ses_hizi", 0.95), lang="en-us")
+    else:
+        print("Turkce ses icin GEMINI_API_KEY gerekli, atlandi:", text); return 0.0
     sf.write(OUT / f"assets/ses/{i}.wav", a, SR); d = round(len(a) / SR, 2)
     SES.append((i, r(at), d)); return d
 
@@ -71,7 +102,7 @@ for n, s in enumerate(spec["sahneler"]):
     ust = f'<div class="chip" id="c{n}">{e(s["ust"])}</div>' if s.get("ust") else ""
     J = []
     if k in ("kapak", "kapanis"):
-        d = say(s.get("ses"), S + 0.45)
+        d = say(s.get("ses"), S + 0.45, s.get("ses_dil", "tr"))
         dur = max(s.get("sure", 4.0), 0.45 + d + (0.9 if k == "kapak" else 2.4))
         tag = "h1" if k == "kapak" else "h2"
         et = "".join(f"<span>{e(x)}</span>" for x in s.get("etiketler", []))
@@ -91,7 +122,8 @@ for n, s in enumerate(spec["sahneler"]):
         va = 0.55; da = say(s.get("ses_eski", f'{s["once"]} {s["eski"]} {s["sonra"]}'), S + va)
         ra = va + da + 0.15; roll = ra + 0.45; vb = roll + 0.3
         db = say(s.get("ses_yeni", f'{s["once"]} {s["yeni"]} {s["sonra"]}'), S + vb)
-        dur = vb + db + 1.7
+        vt = vb + db + 0.35; dt = say(s.get("ses_tr"), S + vt, "tr")
+        dur = max(vb + db + 1.7, vt + dt + 1.0)
         no = f'<div class="num" id="n{n}" data-layout-allow-overlap data-layout-allow-overflow>{e(str(s["no"]))}</div>' if s.get("no") else ""
         ik2 = f'<img class="ik2" id="k{n}" src="{ik}">' if ik else ""
         clips.append(f'<div id="{sid}" class="clip sc" data-start="{r(S)}" data-duration="{r(dur)}" data-track-index="1">{no}<div class="in">{ust}'
@@ -113,7 +145,8 @@ for n, s in enumerate(spec["sahneler"]):
         if ik: J.append(f'tl.fromTo("#k{n}",{{scale:0,rotation:-40}},{{scale:1,rotation:0,duration:.6,ease:"elastic.out(1,0.55)"}},{r(S+roll+.7)});')
     elif k == "donusum":  # cumle once/sonra: kelimeler bulanip yeni cumle gelir, vurgu kutulari dolar
         va = 0.45; da = say(s["once"], S + va); sw = va + da + 0.35; vb = sw + 0.35
-        db = say(s["sonra"], S + vb); nt = vb + db + 0.2; dur = nt + max(2.6, 0.9 + 0.06 * len(s.get("not", "")))
+        db = say(s["sonra"], S + vb); nt = vb + db + 0.2
+        tt = say(s.get("ses_tr"), S + nt + 0.4, "tr"); nt2 = nt + (tt + 0.6 if tt else 0); dur = max(nt2 + 1.0, nt + max(2.6, 0.9 + 0.06 * len(s.get("not", ""))))
         clips.append(f'<div id="{sid}" class="clip sc" data-start="{r(S)}" data-duration="{r(dur)}" data-track-index="1"><div class="in">{ust}'
                      f'<div class="pair" data-layout-allow-overlap><div class="sent" id="bo{n}">{words(s["once"])}</div>'
                      f'<div class="sent" id="so{n}">{words(s["sonra"], vurgu=s.get("vurgu", []))}</div></div>'
@@ -125,7 +158,7 @@ for n, s in enumerate(spec["sahneler"]):
         J.append(f'tl.fromTo("#so{n} .hl",{{backgroundSize:"0% 100%"}},{{backgroundSize:"100% 100%",duration:.4,stagger:.08,ease:"power3.out"}},{r(S+sw+.7)});')
         if s.get("not"): J.append(f'tl.fromTo("#cd{n}",{{y:220,opacity:0}},{{y:0,opacity:1,duration:.7,ease:"back.out(1.5)"}},{r(S+nt)});')
     elif k == "maddeler":
-        d = say(s.get("ses"), S + 0.5); dur = max(s.get("sure", 6), 0.5 + d + 1.2)
+        d = say(s.get("ses"), S + 0.5, s.get("ses_dil", "tr")); dur = max(s.get("sure", 6), 0.5 + d + 1.2)
         sat = s["satirlar"]; step = max(0.5, (dur - 2.0) / max(1, len(sat)))
         clips.append(f'<div id="{sid}" class="clip sc" data-start="{r(S)}" data-duration="{r(dur)}" data-track-index="1"><div class="in">{ust}'
                      f'<div class="bas" id="h{n}">{words(s.get("baslik", ""))}</div>'
