@@ -1,0 +1,80 @@
+{
+ "palet": "lavanta",
+ "sahneler": [
+  {
+   "tip": "kapak",
+   "baslik": "4 Verbs to Level Up",
+   "vurgu": [
+    "Level",
+    "Up"
+   ],
+   "alt": "Akademik fiiller · YDT · YDS",
+   "ikon": "Rocket",
+   "ses": "İngilizceni bir üst seviyeye taşıyacak dört akademik fiil. Hazırsan başlayalım!"
+  },
+  {
+   "tip": "degis",
+   "ust": "FİİL 1/4",
+   "no": 1,
+   "once": "Stress can",
+   "eski": "weaken",
+   "yeni": "undermine",
+   "sonra": "the immune system.",
+   "anlam": "zayıflatmak, baltalamak",
+   "ikon": "Shield",
+   "ses_tr": "Undermine: zayıflatmak, baltalamak."
+  },
+  {
+   "tip": "degis",
+   "ust": "FİİL 2/4",
+   "no": 2,
+   "once": "Regular reading can",
+   "eski": "improve",
+   "yeni": "enhance",
+   "sonra": "your vocabulary.",
+   "anlam": "geliştirmek, artırmak",
+   "ikon": "Books",
+   "ses_tr": "Enhance: geliştirmek, artırmak."
+  },
+  {
+   "tip": "degis",
+   "ust": "FİİL 3/4",
+   "no": 3,
+   "once": "Trees can",
+   "eski": "reduce",
+   "yeni": "mitigate",
+   "sonra": "the effects of floods.",
+   "anlam": "hafifletmek, etkisini azaltmak",
+   "ikon": "Water wave",
+   "ses_tr": "Mitigate: hafifletmek, etkisini azaltmak."
+  },
+  {
+   "tip": "degis",
+   "ust": "FİİL 4/4",
+   "no": 4,
+   "once": "Clean rivers",
+   "eski": "support",
+   "yeni": "sustain",
+   "sonra": "local wildlife.",
+   "anlam": "sürdürmek, yaşatmak",
+   "ikon": "Seedling",
+   "ses_tr": "Sustain: sürdürmek, yaşatmak."
+  },
+  {
+   "tip": "kapanis",
+   "baslik": "Hangisi sana yeniydi?",
+   "vurgu": [
+    "yeniydi?"
+   ],
+   "etiketler": [
+    "undermine",
+    "enhance",
+    "mitigate",
+    "sustain"
+   ],
+   "alt": "ingilizcecim.com",
+   "ikon": "Speech balloon",
+   "ses": "Hangisi sana yeniydi? Yorumlara yaz!"
+  }
+ ]
+}
