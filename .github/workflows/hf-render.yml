@@ -49,6 +49,7 @@ jobs:
       - name: Uret
         env:
           HYPERFRAMES_SKIP_SKILLS: "1"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           export HYPERFRAMES_BROWSER_PATH=$(command -v google-chrome || command -v google-chrome-stable || true)
           while read -r f; do
