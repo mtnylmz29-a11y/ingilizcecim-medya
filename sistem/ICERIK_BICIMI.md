@@ -33,3 +33,11 @@ Her sahnede `tip`, `sure` (sn), isteğe bağlı `ust` (küçük başlık), `ikon
 - `kapanis`: `baslik`, `alt`, `ikon`
 **Sesli anlatım**: kökte `"ses": true`. Kokoro-82M (Apache-2.0, ücretsiz, workbench'te yerel çalışır; model ilk kullanımda iner) yalnızca **İngilizce** okur. `donusum` sahnesinde `once` ve `sonra` otomatik okunur, süre sese göre uzar, kelimeler okuma arasında kayar. `kapak`, `maddeler`, `kapanis` için okunacak metin `ses` alanına İngilizce yazılır. Türkçe açıklamalar ekranda kalır, okunmaz. Ses `ses_sesi` (varsayılan af_heart) ve `ses_hizi` (0.95) ile ayarlanır.
 Uzun cümle 3 satırı geçmesin. Kontrol için kare klasörü üçüncü bağımsız değişken olarak verilir.
+
+## HyperFrames videosu (7 Kasım 2026'dan itibaren varsayılan) — gunler/YYYY-MM-DD/hf_<ad>.json
+GitHub Actions `hf/gen.py` ile üretir, çıktı `<ad>_hf.mp4` (1080×1920). Kök alanlar: `palet` (ydt | gece | nane | gunbatimi | limon | okyanus | lavanta), isteğe bağlı `gemini_ses` (varsayılan "Kore"). `sahneler` listesi, sahne tipleri:
+- `kapak` / `kapanis`: `baslik`, `vurgu` (kutuya alınacak kelimeler), `alt`, `ikon` (Fluent Emoji 3D klasör adı), `ses` (okunacak metin), `ses_dil` ("tr" varsayılan | "en"), kapanışta isteğe bağlı `etiketler` (küçük kutular).
+- `degis` (bir kelimenin yerine daha iyisi gelir; kelime aileleri, akademik kelime, yanlış→doğru tek kelime): `ust` (rozet, ör. "FİİL 1/4"), `no` (arka planda dev rakam), `once`, `eski`, `yeni`, `sonra`, `anlam` (Türkçe kart), `ikon`, `ses_tr` (kısa Türkçe açıklama). Eski ve yeni cümle İngilizce okunur (`ses_eski`/`ses_yeni` ile değiştirilebilir).
+- `donusum` (cümle önce → sonra; dilbilgisi dönüşümü): `ust`, `once`, `sonra`, `vurgu`, `not` (Türkçe kart), `ses_tr`. Cümleler İngilizce okunur.
+- `maddeler` (özet liste, en fazla 4 madde): `ust`, `baslik`, `satirlar`, `ses`, `ses_dil`.
+Kurallar: cümle başına en fazla ~45 karakter (daha uzunsa iki satıra iner, sorun değil ama 3 satırı geçmesin); Türkçe büyük harfler doğrudan yazılır ("FİİL", "ÖZET"); ses satırı sayısı Reels'te en fazla ~12.
