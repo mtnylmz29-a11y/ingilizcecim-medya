@@ -73,7 +73,12 @@ def gemini(text, dil):
             pcm = base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
             return np.frombuffer(pcm, dtype="<i2").astype(np.float32) / 32768.0
         except Exception as ex:
-            print("gemini tekrar", deneme + 1, type(ex).__name__, str(ex)[:120]); time.sleep(8 * (deneme + 1))
+            ayr = ""
+            try: ayr = ex.read().decode()[:600]
+            except Exception: pass
+            print("gemini tekrar", deneme + 1, type(ex).__name__, str(ex)[:120], ayr)
+            if "PerDay" in ayr: raise SystemExit("Gemini gunluk kota doldu")
+            time.sleep(25 * (deneme + 1))
     raise SystemExit("Gemini TTS basarisiz: " + text)
 SES = []  # (id, baslangic, sure)
 nses = [0]
@@ -82,7 +87,12 @@ def say(text, at, dil="en"):
     if not text: return 0.0
     nses[0] += 1; i = f"ses{nses[0]:02d}"
     if MOTOR == "gemini":
-        a = gemini(text, dil)
+        CD = pathlib.Path(os.environ.get("SES_CACHE", "ses_cache")); CD.mkdir(parents=True, exist_ok=True)
+        cp = CD / (hashlib.md5(f"{GSES}|{dil}|{text}".encode()).hexdigest() + ".wav")
+        if cp.exists():
+            a, _ = sf.read(cp, dtype="float32")
+        else:
+            a = gemini(text, dil); sf.write(cp, a, SR); time.sleep(21)  # ucretsiz katman: dakikada ~3 istek
     elif dil == "en":
         a, _ = kokoro().create(text, voice=spec.get("ses_sesi", "af_heart"), speed=spec.get("ses_hizi", 0.95), lang="en-us")
     else:
