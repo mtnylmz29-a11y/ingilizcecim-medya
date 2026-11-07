@@ -55,6 +55,7 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 
 ## KİP: YAYIN <dilim> (dilimler ayarlar.json'da; başlangıç 17:30 ve 20:30) — Rol: `ekip/yayinci.md`
 1. `kuyruk.json`'da `onaylandi` paylaşımlardan bu dilime düşenleri al (önce o dilime atananlar, sonra en eskiler; dilim başına `ayarlar.dilim_basina` adet).
+1a. **Biriken onaylılar** (Metin, 7 Kasım 2026): Bu dilimin türünde, önceki günlerden kalan `onaylandi` ve yayınlanmamış paylaşım varsa (ör. bir YAYIN görevi çalışmadığı ya da onay dilimden sonra geldiği için), onları da bu dilimde yayınla: en eskiden başla, dilim başına en fazla 2 paylaşım, aralarında en az 10 dakika. Bugünün paylaşımı da sıradaysa ve sınır dolduysa, sonraki dilime kalır. Metin'e hangilerinin yayınlandığını bildir.
 2. Instagram kotasını kontrol et; aynı paylaşım zaten `yayinlandi` ise atla (asla iki kez yayınlama).
 3. Carousel: INSTAGRAM_CREATE_CAROUSEL_CONTAINER (`ig_user_id`, `caption`, `child_image_urls` = raw GitHub JPG adresleri, 2–10 adet) → INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH. INSTAGRAM_GET_IG_MEDIA ile permalink al.
 4. `kuyruk.json` → `yayinlandi` + permalink + media_id + yayın saati. Hata: bir kez tekrar dene, olmazsa `hata` ve Metin'e bildir.
