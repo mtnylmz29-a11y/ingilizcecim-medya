@@ -59,7 +59,9 @@ jobs:
             (cd "$p" && npx hyperframes check --json > "$GITHUB_WORKSPACE/$d/${ad}_hf_check.json" || true)
             (cd "$p" && npx hyperframes render -o "$GITHUB_WORKSPACE/$d/${ad}_hf.mp4" --fps 30 --quality delivery)
           done < /tmp/specs.txt
+          [ -z "$HATA" ] || { echo "::error::Bazı spec dosyaları üretilemedi"; exit 1; }
       - name: Depoya yaz
+        if: always()
         run: |
           git config user.name "hf-render"; git config user.email "actions@users.noreply.github.com"
           git add gunler hf/ses_cache 2>/dev/null || git add gunler
