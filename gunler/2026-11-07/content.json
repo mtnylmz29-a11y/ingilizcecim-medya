@@ -1,0 +1,147 @@
+{
+ "date": "2026-11-07",
+ "gonderi": {
+  "palet": "okyanus",
+  "ses": true,
+  "aciklama": "By the time I arrived, she had cooked mu, had been cooking mi? İkisi de geçmişteki bir andan önceyi anlatır; ama biri sonucu, diğeri süreci vurgular. Videoda iki kuralı ve iki tuzağı adım adım gör.\n\nŞu cümlede boşluğa ne gelir: \"When we finally met, he ___ (wait) for two hours.\" Yoruma yaz.\n\ningilizcecim.com\n\n#ydt #yds #ingilizce #ingilizcegramer #pastperfect #tenses #yksingilizce #ydthazırlık #ydshazırlık",
+  "sahneler": [
+   {
+    "tip": "kapak",
+    "sure": 4,
+    "baslik": "Had Done or Had Been Doing?",
+    "alt": "Past perfect · YDT · YDS",
+    "ikon": "Hourglass done",
+    "ses": "Had done, or had been doing? Here is the difference."
+   },
+   {
+    "tip": "donusum",
+    "ust": "TAMAMLANMIŞ İŞ, SONUÇ",
+    "once": "She wrote the report, then she left.",
+    "sonra": "She had written the report before she left.",
+    "vurgu": [
+     "had",
+     "written"
+    ],
+    "not": "had + V3: Geçmişteki bir olaydan önce bitmiş iş."
+   },
+   {
+    "tip": "donusum",
+    "ust": "SÜREÇ, NE KADAR SÜRDÜ",
+    "once": "He was tired. He ran for an hour.",
+    "sonra": "He was tired because he had been running for an hour.",
+    "vurgu": [
+     "been",
+     "running"
+    ],
+    "not": "had been + V-ing: Önceki ana kadar süren eylem; süre önemli (for, since)."
+   },
+   {
+    "tip": "donusum",
+    "ust": "TUZAK: SAYI VARSA",
+    "once": "I had been reading three books by Monday.",
+    "sonra": "I had read three books by Monday.",
+    "vurgu": [
+     "read"
+    ],
+    "not": "Kaç tane bittiği söyleniyorsa sürekli değil, had + V3 kullanılır."
+   },
+   {
+    "tip": "donusum",
+    "ust": "TUZAK: DURUM FİİLİ",
+    "once": "I had been knowing him for years.",
+    "sonra": "I had known him for years.",
+    "vurgu": [
+     "known"
+    ],
+    "not": "know, believe, own gibi durum fiilleri -ing almaz: had known."
+   },
+   {
+    "tip": "maddeler",
+    "ust": "ÖZET",
+    "baslik": "İki yapı, iki vurgu",
+    "sure": 8,
+    "satirlar": [
+     "had V3: bitmiş iş, sonuç önemli",
+     "had been V-ing: süreç, süre önemli",
+     "Sayı varsa: had V3 (three books)",
+     "know, own, believe: had V3"
+    ],
+    "ses": "Finished result: had done. Ongoing process: had been doing. With a number or a state verb, use had done."
+   },
+   {
+    "tip": "kapanis",
+    "sure": 4,
+    "baslik": "Hangisi? Yoruma yaz",
+    "alt": "ingilizcecim.com",
+    "ikon": "Memo",
+    "ses": "Which one would you use? Tell us in the comments."
+   }
+  ]
+ },
+ "reels": {
+  "palet": "ydt",
+  "ses": true,
+  "aciklama": "\"Do a mistake\" mı, \"make a mistake\" mı? YDT ve YDS'deki kelime sorularında bu kalıplar sık sık karşına çıkar. Videoda en sık yapılan üç hatayı düzelttik, sonra make, do, take ve have kalıplarını bir arada verdik.\n\nSen hangisini yanlış kullanıyordun? Yoruma yaz.\n\ningilizcecim.com\n\n#ydt #yds #ingilizce #ingilizcekelime #collocations #yksingilizce #ydthazırlık #ydshazırlık",
+  "sahneler": [
+   {
+    "tip": "kapak",
+    "sure": 4,
+    "baslik": "Make, Do, Take or Have?",
+    "alt": "Collocations · YDT · YDS",
+    "ikon": "Hammer and wrench",
+    "ses": "Make, do, or take? Three mistakes you should stop making."
+   },
+   {
+    "tip": "donusum",
+    "ust": "YANLIŞ → DOĞRU",
+    "once": "I did a mistake in the exam.",
+    "sonra": "I made a mistake in the exam.",
+    "vurgu": [
+     "made"
+    ],
+    "not": "make a mistake: hata yapmak (do değil)."
+   },
+   {
+    "tip": "donusum",
+    "ust": "YANLIŞ → DOĞRU",
+    "once": "Scientists made research on sleep.",
+    "sonra": "Scientists did research on sleep.",
+    "vurgu": [
+     "did"
+    ],
+    "not": "do research: araştırma yapmak. Daha akademik: conduct research."
+   },
+   {
+    "tip": "donusum",
+    "ust": "YANLIŞ → DOĞRU",
+    "once": "We made precautions against the flood.",
+    "sonra": "We took precautions against the flood.",
+    "vurgu": [
+     "took"
+    ],
+    "not": "take precautions: önlem almak."
+   },
+   {
+    "tip": "maddeler",
+    "ust": "KALIPLAR",
+    "baslik": "Birlikte ezberle",
+    "sure": 8,
+    "satirlar": [
+     "make: a mistake, an effort, a decision",
+     "do: research, homework, your best",
+     "take: precautions, a break, notes",
+     "have: a look, a rest, a word"
+    ],
+    "ses": "Make a mistake. Do research. Take precautions. Have a look."
+   },
+   {
+    "tip": "kapanis",
+    "sure": 4,
+    "baslik": "Hangisini karıştırıyordun?",
+    "alt": "ingilizcecim.com",
+    "ikon": "Bullseye",
+    "ses": "Which one did you mix up? Tell us in the comments."
+   }
+  ]
+ }
+}
