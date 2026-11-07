@@ -1,0 +1,176 @@
+{
+ "tarih": "2026-11-07",
+ "karar": "GECTI",
+ "kaldi": 0,
+ "uyari": 3,
+ "kontroller": [
+  {
+   "paylasim": "gonderi",
+   "kontrol": "metin kontrolleri",
+   "durum": "GECTI",
+   "ayrinti": "7 sahne tarandı"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "açıklama uzunluğu",
+   "durum": "GECTI",
+   "ayrinti": "409/2200 karakter"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "etiket sayısı",
+   "durum": "GECTI",
+   "ayrinti": "9/15"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ingilizcecim.com imzası",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "etkileşim sorusu",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "video süresi",
+   "durum": "UYARI",
+   "ayrinti": "54.1 sn (öneri 20–45)"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "çözünürlük",
+   "durum": "GECTI",
+   "ayrinti": "(1080, 1920)"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ses kanalı",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ses tepe düzeyi",
+   "durum": "GECTI",
+   "ayrinti": "-1.3 dBFS"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ilk ses (kanca)",
+   "durum": "GECTI",
+   "ayrinti": "0.5. saniyede"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "dil bilgisi (LanguageTool)",
+   "durum": "UYARI",
+   "ayrinti": "'I had been knowing him for years.': The verb ‘know’ is usually not used with a continuous form, use the simple form instead."
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "metin kontrolleri",
+   "durum": "GECTI",
+   "ayrinti": "6 sahne tarandı"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "açıklama uzunluğu",
+   "durum": "GECTI",
+   "ayrinti": "372/2200 karakter"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "etiket sayısı",
+   "durum": "GECTI",
+   "ayrinti": "8/15"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ingilizcecim.com imzası",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "etkileşim sorusu",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "video süresi",
+   "durum": "GECTI",
+   "ayrinti": "44.4 sn (öneri 20–45)"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "çözünürlük",
+   "durum": "GECTI",
+   "ayrinti": "(1080, 1920)"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ses kanalı",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ses tepe düzeyi",
+   "durum": "GECTI",
+   "ayrinti": "-2.9 dBFS"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ilk ses (kanca)",
+   "durum": "GECTI",
+   "ayrinti": "0.5. saniyede"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "dil bilgisi (LanguageTool)",
+   "durum": "UYARI",
+   "ayrinti": "'I did a mistake in the exam.': Did you mean “made”?"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "palet çeşitliliği",
+   "durum": "GECTI",
+   "ayrinti": "okyanus"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "palet çeşitliliği",
+   "durum": "GECTI",
+   "ayrinti": "ydt"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ikon tekrarı (7 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "konu tekrarı (14 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ikon tekrarı (7 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "konu tekrarı (14 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  }
+ ]
+}
