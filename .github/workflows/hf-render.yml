@@ -17,7 +17,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -55,14 +55,14 @@ jobs:
           while read -r f; do
             [ -f "$f" ] || continue
             d=$(dirname "$f"); b=$(basename "$f" .json); ad=${b#hf_}; p=/tmp/p_$ad
-            python3 hf/gen.py "$f" "$p"
+            SES_CACHE="$GITHUB_WORKSPACE/hf/ses_cache" python3 hf/gen.py "$f" "$p" || { git add hf/ses_cache 2>/dev/null; echo "gen basarisiz"; HATA=1; continue; }
             (cd "$p" && npx hyperframes check --json > "$GITHUB_WORKSPACE/$d/${ad}_hf_check.json" || true)
             (cd "$p" && npx hyperframes render -o "$GITHUB_WORKSPACE/$d/${ad}_hf.mp4" --fps 30 --quality delivery)
           done < /tmp/specs.txt
       - name: Depoya yaz
         run: |
           git config user.name "hf-render"; git config user.email "actions@users.noreply.github.com"
-          git add gunler
+          git add gunler hf/ses_cache 2>/dev/null || git add gunler
           git diff --cached --quiet && exit 0
           git commit -m "render: HyperFrames videolari"
           for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
