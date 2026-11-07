@@ -1,0 +1,229 @@
+{
+ "hafta": "2026-11-09/15",
+ "olusturan": "Konu Bulucu (KİP: TARAMA, 7 Kasım 2026)",
+ "not": "Geçen haftanın konuları (bene/dict/spect kökleri, no sooner/hardly, although/despite, relative clauses, in-/un- önekleri, past modals, akademik fiiller, make/do) tekrar edilmedi. İstatistik maddelerinde 'dogrulandi': false olanlar teyit edilmeden paylaşılmaz.",
+ "konular": [
+  {
+   "tur": "grammar",
+   "baslik": "Not until / Only after / Only when ile devrik yapı",
+   "hedef": "ikisi",
+   "ozet": "Olumsuz/kısıtlayıcı ifade başa gelince devrik yapı ana cümlede kurulur, yan cümlede değil.",
+   "ornekler": [
+    "Not until he left did I realize the mistake.",
+    "Only after the results were announced did they relax.",
+    "Only when you read the passage twice will you see the point."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "grammar",
+   "baslik": "Devrik koşul: Had I known / Were she / Should you",
+   "hedef": "ikisi",
+   "ozet": "If düşer, yardımcı fiil başa gelir; tip 3, tip 2 ve tip 1 eşleşmeleri.",
+   "ornekler": [
+    "Had I known the truth, I would have acted differently.",
+    "Were she here, she would help us.",
+    "Should you need help, call me."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "grammar",
+   "baslik": "Mixed conditionals: geçmiş koşul, şimdiki sonuç",
+   "hedef": "ydt",
+   "ozet": "If + had V3 → would + V1 (now); if + V2 → would have V3. Zaman uyumu tuzağı.",
+   "ornekler": [
+    "If she had taken the job, she would be living in London now.",
+    "If he were more careful, he wouldn't have made that error."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "grammar",
+   "baslik": "Ettirgen: have/get sth done · have sb do · get sb to do",
+   "hedef": "ikisi",
+   "ozet": "Nesne + V3 (işi başkasına yaptırma) ile kişi + V1 / to V1 farkı.",
+   "ornekler": [
+    "I had my car repaired.",
+    "She had the mechanic check the brakes.",
+    "We got him to sign the form."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "grammar",
+   "baslik": "Noun clauses ve subjunctive: It is essential that he be",
+   "hedef": "yds",
+   "ozet": "essential/vital/insist/recommend that + yalın fiil; whether vs if; the fact that.",
+   "ornekler": [
+    "It is essential that every candidate be on time.",
+    "The committee recommended that the plan be revised.",
+    "Whether he will come is unclear."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "tuzak",
+   "baslik": "so…that / such…that / so that / in order that",
+   "hedef": "ikisi",
+   "ozet": "Sonuç mu amaç mı? so + sıfat, such + (a) sıfat + isim; so that + can/could/will (amaç).",
+   "ornekler": [
+    "It was so cold that we stayed in.",
+    "It was such a cold day that we stayed in.",
+    "She left early so that she could catch the bus."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "tuzak",
+   "baslik": "used to / be used to / get used to",
+   "hedef": "ydt",
+   "ozet": "used to + V1 (geçmiş alışkanlık); be/get used to + V-ing (alışık olmak/alışmak).",
+   "ornekler": [
+    "I used to live in İzmir.",
+    "I am used to getting up early.",
+    "She soon got used to working at night."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "tuzak",
+   "baslik": "Kısaltılmış yapılar: Having finished… / Built in 1890…",
+   "hedef": "ikisi",
+   "ozet": "Participle cümlesinin öznesi ana cümlenin öznesiyle aynı olmalı (dangling participle şıkları elenir); V-ing etken, V3 edilgen, having V3 öncelik.",
+   "ornekler": [
+    "Having finished the report, she went home.",
+    "Built in 1890, the bridge is still in use.",
+    "Hatalı: Walking down the street, the trees looked beautiful."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "tuzak",
+   "baslik": "Yakın anlamlı edat kalıpları: owing to · regardless of · in terms of · contrary to · on behalf of",
+   "hedef": "yds",
+   "ozet": "Hepsi isim/V-ing alır; cloze ve cümle tamamlamada anlam farkı sorulur.",
+   "ornekler": [
+    "Owing to heavy rain, the match was cancelled.",
+    "Regardless of the cost, they continued.",
+    "Contrary to expectations, prices fell."
+   ],
+   "kaynak": "dilbilgisi"
+  },
+  {
+   "tur": "kok",
+   "baslik": "Latince kökler: duc/duct · ced/cess · vert/vers · mit/miss · scrib/script",
+   "hedef": "ikisi",
+   "ozet": "götürmek · gitmek · çevirmek · göndermek · yazmak; kökten anlam tahmini.",
+   "ornekler": [
+    "deduce",
+    "precede",
+    "divert",
+    "transmit",
+    "inscribe",
+    "conductive",
+    "recession",
+    "adverse",
+    "omission",
+    "manuscript"
+   ],
+   "kaynak": "genel etimoloji (Latince)"
+  },
+  {
+   "tur": "kok",
+   "baslik": "Yunanca kökler: chron · path · phil · log · graph",
+   "hedef": "ikisi",
+   "ozet": "zaman · duygu/acı · sevgi · söz/bilim · yazı.",
+   "ornekler": [
+    "chronic",
+    "synchronize",
+    "empathy",
+    "apathy",
+    "philanthropy",
+    "analogy",
+    "biography"
+   ],
+   "kaynak": "genel etimoloji (Yunanca)"
+  },
+  {
+   "tur": "kok",
+   "baslik": "Sonekler: -ize/-ify/-en (fiil) · -ous/-ive/-al (sıfat) · -ment/-ity (isim)",
+   "hedef": "ydt",
+   "ozet": "Kelime türünü sonekten tanıma; boşluğa hangi tür gelir sorusu.",
+   "ornekler": [
+    "modernize",
+    "clarify",
+    "strengthen",
+    "hazardous",
+    "decisive",
+    "enforcement",
+    "scarcity"
+   ],
+   "kaynak": "genel morfoloji"
+  },
+  {
+   "tur": "kelime",
+   "baslik": "Akademik phrasal verb'ler: carry out · bring about · account for · rule out · put forward · set up",
+   "hedef": "yds",
+   "ozet": "Okuma ve cloze bölümlerinde sık; eş anlamlı tek kelimeyle (conduct, cause, explain, exclude, propose, establish).",
+   "ornekler": [
+    "The study was carried out in 2020.",
+    "The reform brought about major changes.",
+    "This accounts for the difference."
+   ],
+   "kaynak": "genel"
+  },
+  {
+   "tur": "kelime",
+   "baslik": "Collocations: pose a threat · draw a conclusion · reach a consensus · conduct a survey · raise awareness",
+   "hedef": "ikisi",
+   "ozet": "Hangi fiil hangi isimle gelir; şıklarda yakın anlamlı fiil tuzağı (make a conclusion ✗).",
+   "ornekler": [
+    "Climate change poses a threat to coastal cities.",
+    "We cannot draw a conclusion yet."
+   ],
+   "kaynak": "genel"
+  },
+  {
+   "tur": "kelime",
+   "baslik": "Eş/zıt anlamlı sıfatlar: abundant↔scarce · crucial=vital · obscure↔evident · inevitable",
+   "hedef": "yds",
+   "ozet": "Kelime sorularında eş anlamlı ve zıt anlamlı çiftler.",
+   "ornekler": [
+    "abundant / plentiful",
+    "scarce / rare",
+    "crucial / vital / essential",
+    "obscure ↔ evident",
+    "inevitable / unavoidable"
+   ],
+   "kaynak": "genel"
+  },
+  {
+   "tur": "istatistik",
+   "baslik": "2026-YDS/2: 22 Kasım 2026, sonuçlar 10 Aralık",
+   "hedef": "yds",
+   "ozet": "Sınav 22 Kasım 2026 Pazar 10.15'te; sonuç 10 Aralık 2026. YDS 80 çoktan seçmeli soru, 180 dakika, yanlış doğruyu götürmez. Sınava 2 hafta kala geri sayım paylaşımı için uygun.",
+   "ornekler": [],
+   "kaynak": "ÖSYM duyurusu (haber: https://www.politikam.com/2026-yds2-sinav-tarihi-belli-oldu-yabanci-dil-sinavi-22-kasimda-yapilacak-sonuclar-10-aralikta-aciklanacak); paylaşımdan önce osym.gov.tr takviminden teyit",
+   "dogrulandi": true
+  },
+  {
+   "tur": "istatistik",
+   "baslik": "2027-YKS: YDT 20 Haziran 2027 Pazar",
+   "hedef": "ydt",
+   "ozet": "TYT 19 Haziran, AYT ve YDT 20 Haziran 2027; başvuru 4 Şubat–2 Mart 2027; sonuç 21 Temmuz 2027. YDT İngilizce 80 soru, 120 dakika.",
+   "ornekler": [],
+   "kaynak": "ÖSYM 2027 sınav takvimi (haber: https://www.timeturk.com/osym-2027-sinav-takvimi-aciklandi-yks-19-20-haziranda-yapilacak , https://www.politikam.com/yks-2027-basvurulari-4-subatta-basliyor-tyt-ayt-ve-ydt-19-20-haziranda-yapilacak-sonuclar-temmuzda-aciklanacak)",
+   "dogrulandi": true
+  },
+  {
+   "tur": "istatistik",
+   "baslik": "YDS ve YDT bölüm bazında soru dağılımı",
+   "hedef": "ikisi",
+   "ozet": "İkincil kaynaklara göre YDS: 6 kelime, 10 dilbilgisi, 10 cloze, 10 cümle tamamlama, 6 çeviri, 20 okuma, 5 diyalog, 4 anlamca yakın, 4 paragraf tamamlama, 5 anlam bütünlüğü. YDT: 5 kelime, 10 dilbilgisi, 5 cloze, 8 cümle tamamlama, 12 çeviri, 15 okuma, 5 diyalog, 5 anlamca yakın, 5 duruma uygun ifade, 5 paragraf tamamlama, 5 anlam bütünlüğü.",
+   "ornekler": [],
+   "kaynak": "ikincil kaynaklar (hazırlık siteleri) — DOĞRULANMADI; ÖSYM'nin yayımladığı son soru kitapçığıyla sayılmadan kullanılmaz",
+   "dogrulandi": false
+  }
+ ]
+}
