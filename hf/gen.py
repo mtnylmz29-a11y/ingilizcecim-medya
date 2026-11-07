@@ -52,6 +52,7 @@ GMODEL = spec.get("gemini_model", "gemini-2.5-flash-preview-tts")
 USLUP = {"tr": "Sıcak, net ve enerjik bir öğretmen sesiyle Türkçe söyle: ",
          "en": "Say in clear, natural American English, like a friendly teacher: "}
 _K = []
+KOTA = [False]  # Gemini kotasi dolduysa ayni calismada tekrar denenmez
 def kokoro():
     if not _K:
         import kokoro_onnx
@@ -77,9 +78,12 @@ def gemini(text, dil):
             try: ayr = ex.read().decode()[:600]
             except Exception: pass
             print("gemini tekrar", deneme + 1, type(ex).__name__, str(ex)[:120], ayr)
-            if "PerDay" in ayr: raise SystemExit("Gemini gunluk kota doldu")
+            if ex.__class__.__name__ == "HTTPError" and getattr(ex, "code", 0) == 429 and deneme >= 1:
+                break  # kota doldu: beklemek bosuna
             time.sleep(25 * (deneme + 1))
-    raise SystemExit("Gemini TTS basarisiz: " + text)
+    print("UYARI: Gemini TTS kullanilamadi (kota?), yedek sese geciliyor:", text)
+    KOTA[0] = True
+    return None
 SES = []  # (id, baslangic, sure)
 nses = [0]
 def say(text, at, dil="en"):
@@ -92,7 +96,13 @@ def say(text, at, dil="en"):
         if cp.exists():
             a, _ = sf.read(cp, dtype="float32")
         else:
-            a = gemini(text, dil); sf.write(cp, a, SR); time.sleep(21)  # ucretsiz katman: dakikada ~3 istek
+            a = None if KOTA[0] else gemini(text, dil)
+            if a is not None:
+                sf.write(cp, a, SR); time.sleep(21)  # ucretsiz katman: dakikada ~3 istek
+            elif dil == "en":
+                a, _ = kokoro().create(text, voice=spec.get("ses_sesi", "af_heart"), speed=spec.get("ses_hizi", 0.95), lang="en-us")
+            else:
+                print("UYARI: Turkce satir sessiz kaldi:", text); return 0.0
     elif dil == "en":
         a, _ = kokoro().create(text, voice=spec.get("ses_sesi", "af_heart"), speed=spec.get("ses_hizi", 0.95), lang="en-us")
     else:
