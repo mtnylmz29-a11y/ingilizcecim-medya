@@ -2,6 +2,15 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 7 Kasım 2026 — HyperFrames + GitHub Actions + Türkçe ses (Metin onayı; aşağıdakilerle çelişirse geçerli olan budur)
+- **Video üretimi** artık workbench'te değil, GitHub Actions'ta HyperFrames ile yapılır (workbench 1 GB bellek yetmiyor). Animasyonlu gönderi ve Reels için `anim.py` yerine bu yol kullanılır; `anim.py` yalnızca Actions çalışmazsa yedektir. Quiz günlerindeki kaydırmalı carousel `render_wb.py` ile aynen devam eder.
+- **Akış**: İçerik Yazarı spec'i `gunler/YYYY-MM-DD/hf_gonderi.json` ve `hf_reels.json` olarak yazar (biçim: `ICERIK_BICIMI.md` > HyperFrames). Dosyayı depoya yüklemek `.github/workflows/hf-render.yml` işini başlatır; 6–12 dakika sonra `gunler/YYYY-MM-DD/<ad>_hf.mp4` ve `<ad>_hf_check.json` depoya gelir. İlerlemeyi `proxy_execute("GET","/repos/mtnylmz29-a11y/ingilizcecim-medya/actions/runs","github")` ile izle (her kontrol ayrı hücre, 180 sn sınırı). Hata olursa iş günlüğünü oku (`/actions/jobs/<id>/logs`), düzelt ve spec'i yeniden yükle ya da `workflow_dispatch` (`inputs.spec`) ile tekrar çalıştır.
+- **Ses**: Gemini TTS (`GEMINI_API_KEY` GitHub secret'ı), ses "Kore". Türkçe açıklamalar Türkçe okunur (`ses`, `ses_tr`), örnek cümleler İngilizce. Ücretsiz katman dakikada ~3 istek: her satır ayrı istek olduğu için video başına satır sayısını düşük tut (Reels'te en fazla ~12 ses satırı). Okunan satırlar `hf/ses_cache/` altında saklanır, tekrar çalıştırmada yeniden istenmez. "Günlük kota doldu" hatasında Metin'e bildir.
+- **Süre**: hedef 35–55 sn. `ses_tr` cümleleri kısa olsun (ör. "Mitigate: hafifletmek.").
+- **Editör**: mp4'ü indirip karelerini çıkarır (workbench'te `imageio_ffmpeg`), en az geçiş anlarına ve son hâllere bakar; ses akışının var olduğunu ve süresini kontrol eder. Sesi dinleyemediğini önizlemede belirt.
+- **Kuyruk**: `mp4` alanına render commit'inin sha'lı raw adresi yazılır (`.../<sha>/gunler/.../<ad>_hf.mp4`). Önizlemede mp4'ler SendUserFile ile gönderilir.
+- **Tasarım**: palet kuralı (art arda aynı palet yok) aynen geçerli; sahne tiplerini çeşitlendir (degis, donusum, maddeler).
+
 ## GÜNCELLEME 3 Kasım 2026 (bu bölüm aşağıdakilerle çelişirse geçerli olan budur)
 - İçerik odağı **yalnızca YDT ve YDS**. İlkokul, ortaokul ve lise üretimi durduruldu; çalışma kâğıdı zorunluluğu kalktı. Eski paylaşımlardaki yorumlar ve "PDF" istekleri işlenmeye devam eder.
 - "Müfredat Tarayıcı"nın yerini **Konu Bulucu** aldı: `ekip/konu_bulucu.md`. KİP: TARAMA bu rolle yapılır.
