@@ -1,0 +1,141 @@
+{
+ "tarih": "2026-11-08",
+ "karar": "GECTI",
+ "kaldi": 0,
+ "uyari": 1,
+ "kontroller": [
+  {
+   "paylasim": "gonderi",
+   "kontrol": "metin kontrolleri",
+   "durum": "GECTI",
+   "ayrinti": "6 sahne tarandı"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "açıklama uzunluğu",
+   "durum": "GECTI",
+   "ayrinti": "517/2200 karakter"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "etiket sayısı",
+   "durum": "GECTI",
+   "ayrinti": "9/15"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ingilizcecim.com imzası",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "etkileşim sorusu",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "video süresi",
+   "durum": "UYARI",
+   "ayrinti": "56.6 sn (öneri 20–45)"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "çözünürlük",
+   "durum": "GECTI",
+   "ayrinti": "(1080, 1920)"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ses tepe düzeyi",
+   "durum": "GECTI",
+   "ayrinti": "-1.8 dBFS"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "metin kontrolleri",
+   "durum": "GECTI",
+   "ayrinti": "6 sahne tarandı"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "açıklama uzunluğu",
+   "durum": "GECTI",
+   "ayrinti": "525/2200 karakter"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "etiket sayısı",
+   "durum": "GECTI",
+   "ayrinti": "9/15"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ingilizcecim.com imzası",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "etkileşim sorusu",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "video süresi",
+   "durum": "GECTI",
+   "ayrinti": "41.8 sn (öneri 20–45)"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "çözünürlük",
+   "durum": "GECTI",
+   "ayrinti": "(1080, 1920)"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ses tepe düzeyi",
+   "durum": "GECTI",
+   "ayrinti": "-3.5 dBFS"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "palet çeşitliliği",
+   "durum": "GECTI",
+   "ayrinti": "gunbatimi"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ikon tekrarı (7 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "konu tekrarı (14 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "palet çeşitliliği",
+   "durum": "GECTI",
+   "ayrinti": "nane"
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ikon tekrarı (7 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "konu tekrarı (14 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  }
+ ],
+ "not": "LanguageTool'a ulaşılamadı; dilbilgisini Editör elle kontrol etti (ONAY). Ses kanalı ffprobe ile doğrulandı."
+}
