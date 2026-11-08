@@ -1,0 +1,18 @@
+{
+ "palet": "gunbatimi",
+ "gemini_ses": "Kore",
+ "sahneler": [
+  {"tip": "kapak", "baslik": "Used to or Be Used to?", "vurgu": ["Be"], "alt": "YDT'nin klasik tuzağı", "ikon": "Alarm clock",
+   "ses": "Used to mı, be used to mı? Üç yapıyı ve bir tuzağı görelim.", "ses_dil": "tr"},
+  {"tip": "donusum", "ust": "1 · ESKİDEN", "once": "I lived in a small town.", "sonra": "I used to live in a small town.",
+   "vurgu": ["used", "to", "live"], "not": "used to + V1: eskiden öyleydi, artık değil.", "ses_tr": "Used to artı yalın fiil: eskiden öyleydi, artık değil."},
+  {"tip": "donusum", "ust": "2 · ALIŞIK OLMAK", "once": "Getting up early is easy for me.", "sonra": "I am used to getting up early.",
+   "vurgu": ["am", "used", "to", "getting"], "not": "be used to + V-ing: bir şeye alışık olmak.", "ses_tr": "Be used to artı ing: bir şeye alışığım."},
+  {"tip": "donusum", "ust": "3 · ALIŞMAK", "once": "Night shifts became normal for her.", "sonra": "She got used to working at night.",
+   "vurgu": ["got", "used", "to", "working"], "not": "get used to + V-ing: zamanla alışmak (süreç).", "ses_tr": "Get used to: zamanla alışmak."},
+  {"tip": "degis", "ust": "TUZAK", "once": "I am used to", "eski": "get up", "yeni": "getting up", "sonra": "early.",
+   "anlam": "Buradaki to bir edat: ardından V-ing gelir.", "ikon": "Warning"},
+  {"tip": "kapanis", "baslik": "Now You Try!", "vurgu": ["Try!"], "etiketler": ["used to + V1", "be used to + V-ing", "get used to + V-ing"],
+   "alt": "ingilizcecim.com", "ikon": "Sunrise", "ses": "Sıra sende: açıklamadaki cümleyi yorumda tamamla.", "ses_dil": "tr"}
+ ]
+}
