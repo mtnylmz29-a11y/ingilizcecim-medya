@@ -38,7 +38,7 @@
           "height": 0
         },
         "time": 0,
-        "fixHint": "Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 15.97s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them."
+        "fixHint": "Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 19.02s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them."
       },
       {
         "code": "gsap_repeated_fromto_without_baseline",
@@ -54,7 +54,7 @@
           "height": 0
         },
         "time": 0,
-        "fixHint": "Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 24.39s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them."
+        "fixHint": "Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 30.68s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them."
       },
       {
         "code": "timeline_track_too_dense",
@@ -187,69 +187,69 @@
       {
         "code": "rotation_pivot_drift",
         "severity": "warning",
-        "time": 41.14,
+        "time": 53.427,
         "selector": "#blob1",
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": 127.54999999999995,
-          "y": -401.36,
-          "width": 1182.72,
-          "height": 1182.72
+          "x": 127.77499999999998,
+          "y": -401.19500000000005,
+          "width": 1182.39,
+          "height": 1182.39
         },
         "rect": {
-          "left": 127.54999999999995,
-          "top": -401.36,
-          "right": 1310.27,
-          "bottom": 781.36,
-          "width": 1182.72,
-          "height": 1182.72
+          "left": 127.77499999999998,
+          "top": -401.19500000000005,
+          "right": 1310.165,
+          "bottom": 781.195,
+          "width": 1182.39,
+          "height": 1182.39
         },
         "message": "Rotating element's bounding-box center drifts 142px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
         "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
-        "firstSeen": 41.14,
-        "lastSeen": 41.14,
+        "firstSeen": 53.427,
+        "lastSeen": 53.427,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          41.14
+          53.427
         ]
       },
       {
         "code": "rotation_pivot_drift",
         "severity": "warning",
-        "time": 41.14,
+        "time": 53.427,
         "selector": "#blob2",
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -331.755,
-          "y": 972.725,
-          "width": 823.51,
-          "height": 823.51
+          "x": -331.935,
+          "y": 972.635,
+          "width": 823.87,
+          "height": 823.87
         },
         "rect": {
-          "left": -331.755,
-          "top": 972.725,
-          "right": 491.755,
-          "bottom": 1796.2350000000001,
-          "width": 823.51,
-          "height": 823.51
+          "left": -331.935,
+          "top": 972.635,
+          "right": 491.935,
+          "bottom": 1796.5049999999999,
+          "width": 823.87,
+          "height": 823.87
         },
         "message": "Rotating element's bounding-box center drifts 231px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
         "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
-        "firstSeen": 41.14,
-        "lastSeen": 41.14,
+        "firstSeen": 53.427,
+        "lastSeen": 53.427,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          41.14
+          53.427
         ]
       },
       {
         "code": "text_box_overflow",
         "severity": "info",
-        "time": 2.42,
+        "time": 3.143,
         "selector": "#h0 > span:nth-of-type(4)",
         "message": "Text extends outside its nearest visual/container box.",
         "rect": {
@@ -283,27 +283,27 @@
           "width": 163.11,
           "height": 224
         },
-        "firstSeen": 2.42,
-        "lastSeen": 2.42,
+        "firstSeen": 3.143,
+        "lastSeen": 3.143,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          2.42
+          3.143
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 2.42,
+        "time": 3.143,
         "selector": "#blob1",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": 362.37,
-          "top": -308.82,
-          "right": 1360,
-          "bottom": 688.82,
-          "width": 997.64,
-          "height": 997.64
+          "left": 362.08,
+          "top": -309.06,
+          "right": 1360.2,
+          "bottom": 689.06,
+          "width": 998.12,
+          "height": 998.12
         },
         "containerSelector": "#bg",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
@@ -316,46 +316,46 @@
           "height": 1920
         },
         "overflow": {
-          "right": 280,
-          "top": 308.82
+          "right": 280.2,
+          "top": 309.06
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": 362.37,
-          "y": -308.82,
-          "width": 997.64,
-          "height": 997.64
+          "x": 362.08,
+          "y": -309.06,
+          "width": 998.12,
+          "height": 998.12
         },
-        "firstSeen": 2.42,
-        "lastSeen": 41.14,
+        "firstSeen": 3.143,
+        "lastSeen": 53.427,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.42,
-          7.26,
-          12.1,
-          16.94,
-          21.78,
-          26.62,
-          31.46,
-          36.3,
-          41.14
+          3.143,
+          9.428,
+          15.714,
+          21.999,
+          28.285,
+          34.571,
+          40.856,
+          47.142,
+          53.427
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 2.42,
+        "time": 3.143,
         "selector": "#blob2",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": -331.42,
-          "top": 1204.25,
-          "right": 491.42,
-          "bottom": 2027.1,
-          "width": 822.85,
-          "height": 822.85
+          "left": -331.58,
+          "top": 1204.02,
+          "right": 491.58,
+          "bottom": 2027.18,
+          "width": 823.17,
+          "height": 823.17
         },
         "containerSelector": "#bg",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
@@ -368,46 +368,46 @@
           "height": 1920
         },
         "overflow": {
-          "left": 331.42,
-          "bottom": 107.1
+          "left": 331.58,
+          "bottom": 107.18
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -331.42,
-          "y": 1204.25,
-          "width": 822.85,
-          "height": 822.85
+          "x": -331.58,
+          "y": 1204.02,
+          "width": 823.17,
+          "height": 823.17
         },
-        "firstSeen": 2.42,
-        "lastSeen": 41.14,
+        "firstSeen": 3.143,
+        "lastSeen": 53.427,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.42,
-          7.26,
-          12.1,
-          16.94,
-          21.78,
-          26.62,
-          31.46,
-          36.3,
-          41.14
+          3.143,
+          9.428,
+          15.714,
+          21.999,
+          28.285,
+          34.571,
+          40.856,
+          47.142,
+          53.427
         ]
       },
       {
         "code": "panel_out_of_canvas",
         "severity": "info",
-        "time": 2.42,
+        "time": 3.143,
         "selector": "#blob1",
         "message": "Painted panel extends outside the composition canvas.",
         "rect": {
-          "left": 362.37,
-          "top": -308.82,
-          "right": 1360,
-          "bottom": 688.82,
-          "width": 997.64,
-          "height": 997.64
+          "left": 362.08,
+          "top": -309.06,
+          "right": 1360.2,
+          "bottom": 689.06,
+          "width": 998.12,
+          "height": 998.12
         },
         "containerSelector": "#root",
         "text": "",
@@ -421,46 +421,46 @@
           "height": 1920
         },
         "overflow": {
-          "right": 280,
-          "top": 308.82
+          "right": 280.2,
+          "top": 309.06
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": 362.37,
-          "y": -308.82,
-          "width": 997.64,
-          "height": 997.64
+          "x": 362.08,
+          "y": -309.06,
+          "width": 998.12,
+          "height": 998.12
         },
-        "firstSeen": 2.42,
-        "lastSeen": 41.14,
+        "firstSeen": 3.143,
+        "lastSeen": 53.427,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.42,
-          7.26,
-          12.1,
-          16.94,
-          21.78,
-          26.62,
-          31.46,
-          36.3,
-          41.14
+          3.143,
+          9.428,
+          15.714,
+          21.999,
+          28.285,
+          34.571,
+          40.856,
+          47.142,
+          53.427
         ]
       },
       {
         "code": "panel_out_of_canvas",
         "severity": "info",
-        "time": 2.42,
+        "time": 3.143,
         "selector": "#blob2",
         "message": "Painted panel extends outside the composition canvas.",
         "rect": {
-          "left": -331.42,
-          "top": 1204.25,
-          "right": 491.42,
-          "bottom": 2027.1,
-          "width": 822.85,
-          "height": 822.85
+          "left": -331.58,
+          "top": 1204.02,
+          "right": 491.58,
+          "bottom": 2027.18,
+          "width": 823.17,
+          "height": 823.17
         },
         "containerSelector": "#root",
         "text": "",
@@ -474,37 +474,37 @@
           "height": 1920
         },
         "overflow": {
-          "left": 331.42,
-          "bottom": 107.1
+          "left": 331.58,
+          "bottom": 107.18
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -331.42,
-          "y": 1204.25,
-          "width": 822.85,
-          "height": 822.85
+          "x": -331.58,
+          "y": 1204.02,
+          "width": 823.17,
+          "height": 823.17
         },
-        "firstSeen": 2.42,
-        "lastSeen": 41.14,
+        "firstSeen": 3.143,
+        "lastSeen": 53.427,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.42,
-          7.26,
-          12.1,
-          16.94,
-          21.78,
-          26.62,
-          31.46,
-          36.3,
-          41.14
+          3.143,
+          9.428,
+          15.714,
+          21.999,
+          28.285,
+          34.571,
+          40.856,
+          47.142,
+          53.427
         ]
       },
       {
         "code": "text_box_overflow",
         "severity": "info",
-        "time": 41.14,
+        "time": 53.427,
         "selector": "#h5 > span:nth-of-type(3)",
         "message": "Text extends outside its nearest visual/container box.",
         "rect": {
@@ -538,26 +538,26 @@
           "width": 207.87,
           "height": 186
         },
-        "firstSeen": 41.14,
-        "lastSeen": 41.14,
+        "firstSeen": 53.427,
+        "lastSeen": 53.427,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          41.14
+          53.427
         ]
       }
     ],
-    "duration": 43.56,
+    "duration": 56.57,
     "samples": [
-      2.42,
-      7.26,
-      12.1,
-      16.94,
-      21.78,
-      26.62,
-      31.46,
-      36.3,
-      41.14
+      3.143,
+      9.428,
+      15.714,
+      21.999,
+      28.285,
+      34.571,
+      40.856,
+      47.142,
+      53.427
     ],
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
@@ -582,14 +582,14 @@
     "findings": [],
     "enabled": true,
     "samples": [
-      2.42,
-      12.1,
-      21.78,
-      31.46,
-      41.14
+      3.143,
+      15.714,
+      28.285,
+      40.856,
+      53.427
     ],
-    "checked": 51,
-    "passed": 51
+    "checked": 52,
+    "passed": 52
   },
   "craft": {
     "ok": true,
@@ -599,7 +599,7 @@
     "findings": [],
     "enabled": true,
     "step": 0.125,
-    "samples": 349
+    "samples": 453
   },
   "audio": {
     "ok": true,
@@ -619,9 +619,9 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "096e823f-c08e-4933-a06c-f798694c71af",
+    "id": "1b4df991-2350-48ce-991a-03b63fa80fc6",
     "revision": null,
-    "report": "/tmp/p_gonderi/.hyperframes/artifacts/checks/096e823f-c08e-4933-a06c-f798694c71af.json",
+    "report": "/tmp/p_gonderi/.hyperframes/artifacts/checks/1b4df991-2350-48ce-991a-03b63fa80fc6.json",
     "attribution": "unversioned"
   },
   "_meta": {
