@@ -1,18 +1,18 @@
 {
  "palet": "nane",
- "gemini_ses": "Kore",
+ "ses_motoru": "kokoro",
  "sahneler": [
   {"tip": "kapak", "baslik": "Make Phrasal Verbs Academic", "vurgu": ["Academic"], "alt": "YDS okuma ve cloze için 6 kalıp", "ikon": "Graduation cap",
-   "ses": "Phrasal verb'ü akademik kelimeye çevir: YDS'nin sevdiği altı kalıp.", "ses_dil": "tr"},
+   "ses": "Turn phrasal verbs into academic words. Here are six the YDS loves.", "ses_dil": "en"},
   {"tip": "degis", "ust": "PHRASAL 1/3", "no": "1", "once": "The study was", "eski": "carried out", "yeni": "conducted", "sonra": "in 2020.",
-   "anlam": "yürütmek, gerçekleştirmek", "ikon": "Test tube", "ses_tr": "Carry out yerine conduct: yürütmek."},
+   "anlam": "yürütmek, gerçekleştirmek", "ikon": "Test tube"},
   {"tip": "degis", "ust": "PHRASAL 2/3", "no": "2", "once": "The doctors", "eski": "ruled out", "yeni": "excluded", "sonra": "an infection.",
-   "anlam": "olasılığı elemek, dışlamak", "ikon": "Stethoscope", "ses_tr": "Rule out yerine exclude: olasılığı elemek."},
+   "anlam": "olasılığı elemek, dışlamak", "ikon": "Stethoscope"},
   {"tip": "degis", "ust": "PHRASAL 3/3", "no": "3", "once": "She", "eski": "put forward", "yeni": "proposed", "sonra": "a new plan.",
-   "anlam": "önermek, ortaya atmak", "ikon": "Clipboard", "ses_tr": "Put forward yerine propose: önermek."},
+   "anlam": "önermek, ortaya atmak", "ikon": "Clipboard"},
   {"tip": "maddeler", "ust": "+3 KALIP", "baslik": "Three more", "satirlar": ["bring about = cause", "account for = explain", "set up = establish"],
    "ses": "Bring about means cause. Account for means explain. Set up means establish.", "ses_dil": "en"},
   {"tip": "kapanis", "baslik": "Save This List", "vurgu": ["Save"], "etiketler": ["carry out", "rule out", "put forward", "bring about", "account for", "set up"],
-   "alt": "ingilizcecim.com", "ikon": "Card file box", "ses": "Kaydet, sınavdan önce tekrar et. Sen hangisini kullanıyorsun?", "ses_dil": "tr"}
+   "alt": "ingilizcecim.com", "ikon": "Card file box", "ses": "Save this list and review it before the exam. Which one do you use?", "ses_dil": "en"}
  ]
 }
