@@ -131,15 +131,77 @@
     "findings": []
   },
   "layout": {
-    "ok": false,
-    "errorCount": 2,
+    "ok": true,
+    "errorCount": 0,
     "warningCount": 2,
-    "infoCount": 6,
+    "infoCount": 8,
     "findings": [
       {
+        "code": "rotation_pivot_drift",
+        "severity": "warning",
+        "time": 39.421,
+        "selector": "#blob1",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 127.78500000000008,
+          "y": -401.18499999999995,
+          "width": 1182.37,
+          "height": 1182.37
+        },
+        "rect": {
+          "left": 127.78500000000008,
+          "top": -401.18499999999995,
+          "right": 1310.155,
+          "bottom": 781.185,
+          "width": 1182.37,
+          "height": 1182.37
+        },
+        "message": "Rotating element's bounding-box center drifts 142px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+        "firstSeen": 39.421,
+        "lastSeen": 39.421,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          39.421
+        ]
+      },
+      {
+        "code": "rotation_pivot_drift",
+        "severity": "warning",
+        "time": 39.421,
+        "selector": "#blob2",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -331.945,
+          "y": 972.635,
+          "width": 823.89,
+          "height": 823.89
+        },
+        "rect": {
+          "left": -331.945,
+          "top": 972.635,
+          "right": 491.945,
+          "bottom": 1796.5249999999999,
+          "width": 823.89,
+          "height": 823.89
+        },
+        "message": "Rotating element's bounding-box center drifts 231px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+        "firstSeen": 39.421,
+        "lastSeen": 39.421,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          39.421
+        ]
+      },
+      {
         "code": "text_box_overflow",
-        "severity": "error",
-        "time": 2.211,
+        "severity": "info",
+        "time": 2.319,
         "selector": "#h0 > span:nth-of-type(4)",
         "message": "Text extends outside its nearest visual/container box.",
         "rect": {
@@ -173,131 +235,27 @@
           "width": 616.7,
           "height": 224
         },
-        "firstSeen": 2.211,
-        "lastSeen": 6.632,
-        "occurrences": 2,
-        "heldMs": 0,
-        "times": [
-          2.211,
-          6.632
-        ]
-      },
-      {
-        "code": "text_occluded",
-        "severity": "error",
-        "time": 19.895,
-        "selector": "#n2",
-        "message": "Text is hidden beneath an opaque element.",
-        "rect": {
-          "left": 651.29,
-          "top": 193,
-          "right": 974.93,
-          "bottom": 1186,
-          "width": 323.64,
-          "height": 993
-        },
-        "containerSelector": "#fl2",
-        "text": "2",
-        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
-        "coveredFraction": 0.11,
-        "lifetime": {
-          "start": 15.67,
-          "end": 23
-        },
-        "dataAttributes": {
-          "data-layout-allow-overlap": "",
-          "data-layout-allow-overflow": ""
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 651.29,
-          "y": 193,
-          "width": 323.64,
-          "height": 993
-        },
-        "firstSeen": 19.895,
-        "lastSeen": 19.895,
+        "firstSeen": 2.319,
+        "lastSeen": 2.319,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          19.895
-        ]
-      },
-      {
-        "code": "rotation_pivot_drift",
-        "severity": "warning",
-        "time": 37.579,
-        "selector": "#blob1",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 127.66500000000008,
-          "y": -401.275,
-          "width": 1182.55,
-          "height": 1182.55
-        },
-        "rect": {
-          "left": 127.66500000000008,
-          "top": -401.275,
-          "right": 1310.2150000000001,
-          "bottom": 781.275,
-          "width": 1182.55,
-          "height": 1182.55
-        },
-        "message": "Rotating element's bounding-box center drifts 142px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
-        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
-        "firstSeen": 37.579,
-        "lastSeen": 37.579,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          37.579
-        ]
-      },
-      {
-        "code": "rotation_pivot_drift",
-        "severity": "warning",
-        "time": 37.579,
-        "selector": "#blob2",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": -331.845,
-          "y": 972.685,
-          "width": 823.69,
-          "height": 823.69
-        },
-        "rect": {
-          "left": -331.845,
-          "top": 972.685,
-          "right": 491.845,
-          "bottom": 1796.375,
-          "width": 823.69,
-          "height": 823.69
-        },
-        "message": "Rotating element's bounding-box center drifts 231px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
-        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
-        "firstSeen": 37.579,
-        "lastSeen": 37.579,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          37.579
+          2.319
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 2.211,
+        "time": 2.319,
         "selector": "#blob1",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": 362.17,
-          "top": -308.98,
-          "right": 1360.13,
-          "bottom": 688.98,
-          "width": 997.96,
-          "height": 997.96
+          "left": 362.36,
+          "top": -308.83,
+          "right": 1360.01,
+          "bottom": 688.83,
+          "width": 997.65,
+          "height": 997.65
         },
         "containerSelector": "#bg",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
@@ -310,46 +268,46 @@
           "height": 1920
         },
         "overflow": {
-          "right": 280.13,
-          "top": 308.98
+          "right": 280.01,
+          "top": 308.83
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": 362.17,
-          "y": -308.98,
-          "width": 997.96,
-          "height": 997.96
+          "x": 362.36,
+          "y": -308.83,
+          "width": 997.65,
+          "height": 997.65
         },
-        "firstSeen": 2.211,
-        "lastSeen": 37.579,
+        "firstSeen": 2.319,
+        "lastSeen": 39.421,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.211,
-          6.632,
-          11.053,
-          15.474,
-          19.895,
-          24.316,
-          28.737,
-          33.158,
-          37.579
+          2.319,
+          6.957,
+          11.594,
+          16.232,
+          20.87,
+          25.508,
+          30.146,
+          34.783,
+          39.421
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 2.211,
+        "time": 2.319,
         "selector": "#blob2",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": -331.53,
-          "top": 1204.1,
-          "right": 491.53,
-          "bottom": 2027.15,
-          "width": 823.06,
-          "height": 823.06
+          "left": -331.43,
+          "top": 1204.25,
+          "right": 491.43,
+          "bottom": 2027.1,
+          "width": 822.86,
+          "height": 822.86
         },
         "containerSelector": "#bg",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
@@ -362,46 +320,46 @@
           "height": 1920
         },
         "overflow": {
-          "left": 331.53,
-          "bottom": 107.15
+          "left": 331.43,
+          "bottom": 107.1
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -331.53,
-          "y": 1204.1,
-          "width": 823.06,
-          "height": 823.06
+          "x": -331.43,
+          "y": 1204.25,
+          "width": 822.86,
+          "height": 822.86
         },
-        "firstSeen": 2.211,
-        "lastSeen": 37.579,
+        "firstSeen": 2.319,
+        "lastSeen": 39.421,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.211,
-          6.632,
-          11.053,
-          15.474,
-          19.895,
-          24.316,
-          28.737,
-          33.158,
-          37.579
+          2.319,
+          6.957,
+          11.594,
+          16.232,
+          20.87,
+          25.508,
+          30.146,
+          34.783,
+          39.421
         ]
       },
       {
         "code": "panel_out_of_canvas",
         "severity": "info",
-        "time": 2.211,
+        "time": 2.319,
         "selector": "#blob1",
         "message": "Painted panel extends outside the composition canvas.",
         "rect": {
-          "left": 362.17,
-          "top": -308.98,
-          "right": 1360.13,
-          "bottom": 688.98,
-          "width": 997.96,
-          "height": 997.96
+          "left": 362.36,
+          "top": -308.83,
+          "right": 1360.01,
+          "bottom": 688.83,
+          "width": 997.65,
+          "height": 997.65
         },
         "containerSelector": "#root",
         "text": "",
@@ -415,46 +373,46 @@
           "height": 1920
         },
         "overflow": {
-          "right": 280.13,
-          "top": 308.98
+          "right": 280.01,
+          "top": 308.83
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": 362.17,
-          "y": -308.98,
-          "width": 997.96,
-          "height": 997.96
+          "x": 362.36,
+          "y": -308.83,
+          "width": 997.65,
+          "height": 997.65
         },
-        "firstSeen": 2.211,
-        "lastSeen": 37.579,
+        "firstSeen": 2.319,
+        "lastSeen": 39.421,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.211,
-          6.632,
-          11.053,
-          15.474,
-          19.895,
-          24.316,
-          28.737,
-          33.158,
-          37.579
+          2.319,
+          6.957,
+          11.594,
+          16.232,
+          20.87,
+          25.508,
+          30.146,
+          34.783,
+          39.421
         ]
       },
       {
         "code": "panel_out_of_canvas",
         "severity": "info",
-        "time": 2.211,
+        "time": 2.319,
         "selector": "#blob2",
         "message": "Painted panel extends outside the composition canvas.",
         "rect": {
-          "left": -331.53,
-          "top": 1204.1,
-          "right": 491.53,
-          "bottom": 2027.15,
-          "width": 823.06,
-          "height": 823.06
+          "left": -331.43,
+          "top": 1204.25,
+          "right": 491.43,
+          "bottom": 2027.1,
+          "width": 822.86,
+          "height": 822.86
         },
         "containerSelector": "#root",
         "text": "",
@@ -468,43 +426,43 @@
           "height": 1920
         },
         "overflow": {
-          "left": 331.53,
-          "bottom": 107.15
+          "left": 331.43,
+          "bottom": 107.1
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -331.53,
-          "y": 1204.1,
-          "width": 823.06,
-          "height": 823.06
+          "x": -331.43,
+          "y": 1204.25,
+          "width": 822.86,
+          "height": 822.86
         },
-        "firstSeen": 2.211,
-        "lastSeen": 37.579,
+        "firstSeen": 2.319,
+        "lastSeen": 39.421,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.211,
-          6.632,
-          11.053,
-          15.474,
-          19.895,
-          24.316,
-          28.737,
-          33.158,
-          37.579
+          2.319,
+          6.957,
+          11.594,
+          16.232,
+          20.87,
+          25.508,
+          30.146,
+          34.783,
+          39.421
         ]
       },
       {
         "code": "text_occluded",
         "severity": "info",
-        "time": 15.474,
+        "time": 11.594,
         "selector": "#n1",
         "message": "Text is hidden beneath an opaque element.",
         "rect": {
-          "left": 672.07,
+          "left": 721.96,
           "top": 193,
-          "right": 915.74,
+          "right": 965.63,
           "bottom": 1186,
           "width": 243.67,
           "height": 993
@@ -512,10 +470,10 @@
         "containerSelector": "#fl1",
         "text": "1",
         "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
-        "coveredFraction": 0.22,
+        "coveredFraction": 0.19,
         "lifetime": {
-          "start": 7.12,
-          "end": 15.670000000000002
+          "start": 6.13,
+          "end": 14.7
         },
         "dataAttributes": {
           "data-layout-allow-overlap": "",
@@ -523,23 +481,64 @@
         },
         "sourceFile": "index.html",
         "bbox": {
-          "x": 672.07,
+          "x": 721.96,
           "y": 193,
           "width": 243.67,
           "height": 993
         },
-        "firstSeen": 15.474,
-        "lastSeen": 15.474,
+        "firstSeen": 11.594,
+        "lastSeen": 11.594,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          15.474
+          11.594
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 20.87,
+        "selector": "#n2",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 612.41,
+          "top": 193,
+          "right": 936.05,
+          "bottom": 1186,
+          "width": 323.64,
+          "height": 993
+        },
+        "containerSelector": "#fl2",
+        "text": "2",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.15,
+        "lifetime": {
+          "start": 14.7,
+          "end": 22.03
+        },
+        "dataAttributes": {
+          "data-layout-allow-overlap": "",
+          "data-layout-allow-overflow": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 612.41,
+          "y": 193,
+          "width": 323.64,
+          "height": 993
+        },
+        "firstSeen": 20.87,
+        "lastSeen": 20.87,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          20.87
         ]
       },
       {
         "code": "text_box_overflow",
         "severity": "info",
-        "time": 37.579,
+        "time": 39.421,
         "selector": "#h5 > span:nth-of-type(1)",
         "message": "Text extends outside its nearest visual/container box.",
         "rect": {
@@ -573,26 +572,26 @@
           "width": 253.13,
           "height": 186
         },
-        "firstSeen": 37.579,
-        "lastSeen": 37.579,
+        "firstSeen": 39.421,
+        "lastSeen": 39.421,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          37.579
+          39.421
         ]
       }
     ],
-    "duration": 39.79,
+    "duration": 41.74,
     "samples": [
-      2.211,
-      6.632,
-      11.053,
-      15.474,
-      19.895,
-      24.316,
-      28.737,
-      33.158,
-      37.579
+      2.319,
+      6.957,
+      11.594,
+      16.232,
+      20.87,
+      25.508,
+      30.146,
+      34.783,
+      39.421
     ],
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
@@ -611,8 +610,8 @@
   },
   "contrast": {
     "ok": false,
-    "errorCount": 2,
-    "warningCount": 6,
+    "errorCount": 1,
+    "warningCount": 5,
     "infoCount": 0,
     "findings": [
       {
@@ -635,37 +634,13 @@
           "width": 10.953125,
           "height": 74
         },
-        "time": 19.895,
+        "time": 20.87,
         "times": [
-          2.211,
-          19.895,
-          37.579
-        ]
-      },
-      {
-        "code": "contrast_aa_failure",
-        "severity": "error",
-        "message": "Contrast is 1.81:1; WCAG AA requires 3:1.",
-        "text": ".",
-        "fg": "rgb(245,158,11)",
-        "bg": "rgb(217,241,233)",
-        "ratio": 1.81,
-        "requiredRatio": 3,
-        "suggestedColor": "rgb(188,121,8)",
-        "large": true,
-        "selector": "canvas:nth-of-type(1) > div > div:nth-of-type(2) > b",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 343.953125,
-          "y": 150,
-          "width": 10.953125,
-          "height": 74
-        },
-        "time": 28.737,
-        "times": [
-          11.053,
-          28.737
+          2.319,
+          11.594,
+          20.87,
+          30.146,
+          39.421
         ]
       },
       {
@@ -688,34 +663,34 @@
           "width": 316,
           "height": 84
         },
-        "time": 11.053,
+        "time": 11.594,
         "times": [
-          11.053
+          11.594
         ]
       },
       {
         "code": "contrast_aa_failure",
         "severity": "warning",
-        "message": "Contrast is 1.12:1; WCAG AA requires 3:1.",
+        "message": "Contrast is 2.15:1; WCAG AA requires 3:1.",
         "text": "conducted",
-        "fg": "rgb(255,255,255)",
-        "bg": "rgb(230,246,240)",
-        "ratio": 1.12,
+        "fg": "rgb(245,158,11)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.15,
         "requiredRatio": 3,
-        "suggestedColor": "rgb(140,140,140)",
+        "suggestedColor": "rgb(206,133,9)",
         "large": true,
-        "selector": "canvas:nth-of-type(1) > div > div:nth-of-type(5) > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(2) > em",
+        "selector": "div > div:nth-of-type(5) > div:nth-of-type(2) > div:nth-of-type(5) > div > small",
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": 122,
-          "y": 954.5,
-          "width": 724.203125,
-          "height": 241
+          "x": 315,
+          "y": 1168.09375,
+          "width": 192.46875,
+          "height": 61
         },
-        "time": 11.053,
+        "time": 11.594,
         "times": [
-          11.053
+          11.594
         ]
       },
       {
@@ -738,9 +713,9 @@
           "width": 320.5625,
           "height": 84
         },
-        "time": 19.895,
+        "time": 20.87,
         "times": [
-          19.895
+          20.87
         ]
       },
       {
@@ -759,76 +734,51 @@
         "sourceFile": "index.html",
         "bbox": {
           "x": 315,
-          "y": 1148.248291015625,
+          "y": 1168.09375,
           "width": 165.296875,
           "height": 61
         },
-        "time": 19.895,
+        "time": 20.87,
         "times": [
-          19.895
+          20.87
         ]
       },
       {
         "code": "contrast_aa_failure",
         "severity": "warning",
         "message": "Contrast is 2.15:1; WCAG AA requires 3:1.",
-        "text": "PHRASAL 3/3",
+        "text": "+3 KALIP",
         "fg": "rgb(255,255,255)",
         "bg": "rgb(245,158,11)",
         "ratio": 2.15,
         "requiredRatio": 3,
         "suggestedColor": "rgb(94,94,94)",
         "large": true,
-        "selector": "#c3",
+        "selector": "#c4",
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
           "x": 96,
-          "y": 550.40625,
-          "width": 320.40625,
+          "y": 601.40625,
+          "width": 235.84375,
           "height": 84
         },
-        "time": 28.737,
+        "time": 30.146,
         "times": [
-          28.737
-        ]
-      },
-      {
-        "code": "contrast_aa_failure",
-        "severity": "warning",
-        "message": "Contrast is 2.15:1; WCAG AA requires 3:1.",
-        "text": "proposed",
-        "fg": "rgb(245,158,11)",
-        "bg": "rgb(255,255,255)",
-        "ratio": 2.15,
-        "requiredRatio": 3,
-        "suggestedColor": "rgb(206,133,9)",
-        "large": true,
-        "selector": "canvas:nth-of-type(1) > div > div:nth-of-type(7) > div:nth-of-type(2) > div:nth-of-type(5) > div > small",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 315,
-          "y": 1201.84375,
-          "width": 173.921875,
-          "height": 61
-        },
-        "time": 28.737,
-        "times": [
-          28.737
+          30.146
         ]
       }
     ],
     "enabled": true,
     "samples": [
-      2.211,
-      11.053,
-      19.895,
-      28.737,
-      37.579
+      2.319,
+      11.594,
+      20.87,
+      30.146,
+      39.421
     ],
-    "checked": 49,
-    "passed": 38
+    "checked": 47,
+    "passed": 37
   },
   "craft": {
     "ok": true,
@@ -838,7 +788,7 @@
     "findings": [],
     "enabled": true,
     "step": 0.125,
-    "samples": 319
+    "samples": 334
   },
   "audio": {
     "ok": true,
@@ -858,9 +808,9 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "23e194f2-e5b1-4253-8aec-630cde7e4b0d",
+    "id": "9ce170aa-58b3-4019-8f37-399029b03984",
     "revision": null,
-    "report": "/tmp/p_reels/.hyperframes/artifacts/checks/23e194f2-e5b1-4253-8aec-630cde7e4b0d.json",
+    "report": "/tmp/p_reels/.hyperframes/artifacts/checks/9ce170aa-58b3-4019-8f37-399029b03984.json",
     "attribution": "unversioned"
   },
   "_meta": {
