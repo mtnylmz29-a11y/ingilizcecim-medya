@@ -84,3 +84,13 @@ Gelecek haftanın haritasını `harita/YYYY-MM-DD.json` (haftanın pazartesisi) 
 
 ## KİP: IDARECI (pazar 10:20) — Rol: `ekip/idareci.md`
 Haftalık değerlendirmeyi yap ve Metin'e raporla. Yapı değişiklikleri (rol ekleme/çıkarma, ayar değişikliği, görev saatleri) yalnızca öneri olarak gider; Metin "uygula" derse aynı oturumda uygula.
+
+## ONAY PANELİ (7 Kasım 2026)
+Metin artık onayı tek bir sayfadan veriyor: **Onay Paneli** — https://claude.ai/artifact/6DUrENrhyw5SgQnUzLJjaG
+- Panel `veri/kuyruk.json`'u doğrudan okur/yazar. Düğmeler: Onayla → `onaylandi`; Reddet → `reddedildi`; Düzelt → `duzeltme_istendi` + `duzeltme_notu` (ve "ingilizcecim · Düzeltme (panelden)" görevini tetikler).
+- `onay` alanı "Metin, Onay Paneli <tarih saat>" biçiminde gelir; YAYIN görevleri bunu geçerli onay sayar.
+- **URETIM 7. adım (önizleme)**: Uzun önizleme yerine Metin'e en fazla 3 satır gönder: bugünün başlıkları + kalite satırı + "Onay Paneli'nden onaylayabilirsin: <link>". Metin oturumda yazarsa KİP: ONAY yine geçerli.
+- **KİP: DUZELTME** (panelden tetiklenir): `duzeltme_istendi` olan her kayıt için Metin'in notunu uygula (İçerik Yazarı/Tasarımcı → Editör ayrı alt ajan), dosyaları yeniden yükle, jpg/mp4 adreslerini güncelle, `duzeltme_notu`'nu `duzeltme_gecmisi` listesine taşı, durumu `onay_bekliyor` yap. Yayınlama yok. Metin'e tek satır: "Düzeltme hazır, Onay Paneli'nden bakabilirsin."
+- **Yedek**: URETIM ve YAYIN görevleri başlarken `duzeltme_istendi` kayıt görürse ve 30 dakikadan eskiyse önce KİP: DUZELTME'yi uygular.
+- **Kuyruk yazımı**: Panel ve görevler aynı dosyayı yazar; her yazımdan hemen önce dosyayı yeniden oku ve güncel sha ile yaz (409 olursa tekrar oku, değişikliği yeniden uygula).
+- **Birikmiş onaylı Reels**: 20:30 YAYIN, `onaylandi` durumundaki en eski Reels'i yayınlar; birden fazla birikmişse en eskisini yayınlayıp kalanları Metin'e günlük özette bildirir.
