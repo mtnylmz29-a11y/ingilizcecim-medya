@@ -267,5 +267,41 @@
   "media_id": "17979407910138845",
   "permalink": "https://www.instagram.com/reel/DfcuL5HoexF/",
   "yayin_saati": "20:30"
+ },
+ {
+  "id": "2026-11-08-gonderi",
+  "tarih": "2026-11-08",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "hyperframes",
+  "baslik": "Used to or Be Used to?",
+  "aciklama": "\"I used to get up early\" ile \"I am used to getting up early\" aynı şey mi? Hayır! Biri eskiden yaptığın ama artık yapmadığın bir alışkanlık, diğeri şu an alışık olduğun bir durum. YDT'de bu üç yapı (used to, be used to, get used to) sık sık birbirine karıştırılır. Videoda üçünü ve en yaygın tuzağı adım adım gör.\n\nŞu cümlede boşluğa ne gelir: \"I'm still not used to ___ (drive) on the left.\" Yoruma yaz.\n\ningilizcecim.com\n\n#ydt #yds #ingilizce #ingilizcegramer #usedto #yksingilizce #ydthazırlık #ydshazırlık #grammar",
+  "durum": "onay_bekliyor",
+  "palet": "gunbatimi",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/3c1a270026413fb18007439831b9cadacaa8c593/gunler/2026-11-08/gonderi_hf.mp4",
+  "pdf": null,
+  "onerilen_dilim": "17:30",
+  "kalite": "GEÇTİ · 0 KALDI · 1 UYARI (süre 56.6 sn, öneri ≤45)",
+  "ses": "Gemini TTS (Kore): Türkçe + İngilizce, 13 satır",
+  "editor": "ONAY (zorunlu düzeltme yok; öneri: süre uzun, kapak başlığı 1.5. sn'de oturuyor)"
+ },
+ {
+  "id": "2026-11-08-reels",
+  "tarih": "2026-11-08",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "hyperframes",
+  "baslik": "Make Phrasal Verbs Academic",
+  "aciklama": "YDS okuma parçalarında \"carry out\" yerine \"conduct\", \"rule out\" yerine \"exclude\" görürsün. Phrasal verb'lerin tek kelimelik akademik karşılıklarını bilmek hem okuma hem cloze sorularında işini kolaylaştırır. Videoda en sık çıkan altı kalıbı topladık.\n\nVideodaki listeye göre \"The new law brought about major changes\" cümlesinde brought about yerine hangi tek kelime gelir? Zamanına dikkat! Yoruma yaz.\n\ningilizcecim.com\n\n#yds #ydt #ingilizce #ingilizcekelime #phrasalverbs #akademikingilizce #ydshazırlık #ydthazırlık #yökdil",
+  "durum": "onay_bekliyor",
+  "palet": "nane",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/d39eef852dafff8743952822e03e8a42e19ab60d/gunler/2026-11-08/reels_hf.mp4",
+  "pdf": null,
+  "onerilen_dilim": "20:30",
+  "kalite": "GEÇTİ · 0 KALDI · 0 UYARI",
+  "ses": "Kokoro, yalnız İngilizce (Gemini günlük 10 istek kotası gönderiye ayrıldı); Türkçe kartlar ekranda",
+  "editor": "ONAY (zorunlu düzeltme yok; öneri: rozetler 1/3 yerine 1/6 olabilirdi)"
  }
 ]
