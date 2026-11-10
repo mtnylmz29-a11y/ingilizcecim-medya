@@ -26,6 +26,15 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 4
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 4,
+     "izlenme": 16
     }
    ]
   },
@@ -55,6 +64,15 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 6
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 6,
+     "izlenme": 12
     }
    ]
   },
@@ -84,6 +102,15 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 4
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 4,
+     "izlenme": 7
     }
    ]
   },
@@ -113,6 +140,15 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 6
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 2,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 6,
+     "izlenme": 14
     }
    ]
   },
@@ -142,6 +178,15 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 4
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 4,
+     "izlenme": 6
     }
    ]
   },
@@ -171,6 +216,15 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 5
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 5,
+     "izlenme": 10
     }
    ]
   },
@@ -200,6 +254,15 @@
      "kaydetme": 1,
      "paylasim": 0,
      "erisim": 103
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 2,
+     "yorum": 0,
+     "kaydetme": 1,
+     "paylasim": 0,
+     "erisim": 103,
+     "izlenme": 112
     }
    ]
   },
@@ -214,7 +277,8 @@
      "paylasim": 0,
      "erisim": 32
     }
-   ]
+   ],
+   "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
   },
   "2026-11-06-reels": {
    "media_id": "18204772804337932",
@@ -227,7 +291,8 @@
      "paylasim": 0,
      "erisim": 37
     }
-   ]
+   ],
+   "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
   },
   "2026-11-05-reels": {
    "media_id": "18132776180495574",
@@ -239,6 +304,15 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 116
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 118,
+     "izlenme": 130
     }
    ]
   },
@@ -252,6 +326,15 @@
      "kaydetme": 2,
      "paylasim": 0,
      "erisim": 108
+    },
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 2,
+     "paylasim": 0,
+     "erisim": 108,
+     "izlenme": 122
     }
    ]
   },
@@ -266,7 +349,8 @@
      "paylasim": 0,
      "erisim": 153
     }
-   ]
+   ],
+   "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
   },
   "2026-11-07-reels": {
    "media_id": "17979407910138845",
@@ -278,6 +362,35 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 0
+    }
+   ],
+   "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
+  },
+  "2026-11-08-gonderi": {
+   "media_id": "18118760077819517",
+   "olcumler": [
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 2,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 74,
+     "izlenme": 94
+    }
+   ]
+  },
+  "2026-11-08-reels": {
+   "media_id": "18114748028334440",
+   "olcumler": [
+    {
+     "tarih": "2026-11-10T20:35+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 0,
+     "izlenme": 0
     }
    ]
   }
