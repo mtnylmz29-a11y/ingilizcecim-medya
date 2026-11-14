@@ -320,19 +320,24 @@
   "kademe": "ydt+yds",
   "sinif": "YDT · YDS",
   "bicim": "animasyon",
-  "uretim": "remotion",
+  "uretim": "hyperframes",
   "baslik": "Word of the Day: Inevitable",
   "aciklama": "Bugünün kelimesi: inevitable (kaçınılmaz). Akademik metinlerde \"almost inevitable\" ve \"an inevitable result\" kalıplarıyla sık karşına çıkar. Eş anlamlıları unavoidable ve bound to happen; zıt anlamlısı avoidable.\n\nHayatında \"inevitable\" olan bir şeyi İngilizce tek cümleyle yoruma yazar mısın?\n\ningilizcecim.com\n\n#yds #ydt #yökdil #ingilizce #ingilizcekelime #wordoftheday #akademikingilizce #ydshazırlık",
-  "durum": "duzeltme_istendi",
+  "durum": "onay_bekliyor",
   "palet": "gece",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e5d1cbe47f492aff14668c1551e1694d34a99f16/gunler/2026-11-14/inevitable_reels.mp4",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/b7c6030ca4cc2975fec0ce219aafe00180bd93ed/gunler/2026-11-14/inevitable_hf.mp4",
   "pdf": null,
   "onerilen_dilim": "17:30",
-  "kalite": "GEÇTİ · 0 KALDI · 0 UYARI",
-  "ses": "edge-tts en-US-AvaNeural, yalnız İngilizce",
-  "editor": "Claude (üretim oturumu; bağımsız alt ajan değil): metin ve kareler kontrol edildi. NOT: kapanışta ekranda eski adres \"@ingilizcecim.ccom\" yazıyor; görsel olarak sade (yalnız yazı).",
-  "duzeltme_notu": "Seslendirmeleri Türkçe yap",
-  "duzeltme_zamani": "14 Kasım 23:14"
+  "kalite": "kalite.py bu düzeltme turunda çalıştırılmadı · Editör: ONAY",
+  "ses": "Gemini TTS (Kore): açıklamalar Türkçe, örnek cümleler İngilizce (6 ses satırı, 45.8 sn)",
+  "editor": "Editör (bağımsız alt ajan, 14 Kasım düzeltme turu): ONAY, 0 zorunlu. Kareler ve metin doğru, kapanışta artık yalnız ingilizcecim.com. Ses akışı var (6 konuşma bloğu) ama dinlenemedi: Türkçe cümlelerdeki İngilizce kelimelerin telaffuzunu Metin dinleyerek kontrol etsin. Öneri: kapak kelimesi ~1.2 sn'de tamamlanıyor.",
+  "duzeltme_gecmisi": [
+   {
+    "not": "Seslendirmeleri Türkçe yap",
+    "zaman": "14 Kasım 23:14",
+    "uygulandi": "14 Kasım 23:28"
+   }
+  ]
  },
  {
   "id": "2026-11-14-reels",
