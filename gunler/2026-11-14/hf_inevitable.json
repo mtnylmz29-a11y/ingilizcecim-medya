@@ -1,0 +1,86 @@
+{
+ "palet": "gece",
+ "gemini_ses": "Kore",
+ "sahneler": [
+  {
+   "tip": "kapak",
+   "baslik": "inevitable",
+   "vurgu": [
+    "inevitable"
+   ],
+   "alt": "Günün kelimesi · YDS · YDT",
+   "ikon": "Hourglass done",
+   "sure": 3.2,
+   "ses": "Günün kelimesi: inevitable.",
+   "ses_dil": "tr"
+  },
+  {
+   "tip": "maddeler",
+   "ust": "ANLAM",
+   "baslik": "Meaning",
+   "satirlar": [
+    "adjective · sıfat",
+    "certain to happen; impossible to avoid",
+    "kaçınılmaz"
+   ],
+   "sure": 6,
+   "ses": "Inevitable bir sıfat. Anlamı: kaçınılmaz, olması kesin.",
+   "ses_dil": "tr"
+  },
+  {
+   "tip": "maddeler",
+   "ust": "ÖRNEK",
+   "baslik": "In a sentence",
+   "satirlar": [
+    "Change is inevitable.",
+    "Rising prices made a recession almost inevitable."
+   ],
+   "sure": 7,
+   "ses": "Change is inevitable. Rising prices made a recession almost inevitable.",
+   "ses_dil": "en"
+  },
+  {
+   "tip": "maddeler",
+   "ust": "ÖRNEĞİN ANLAMI",
+   "baslik": "Türkçesi",
+   "satirlar": [
+    "Değişim kaçınılmazdır.",
+    "Artan fiyatlar resesyonu neredeyse kaçınılmaz kıldı."
+   ],
+   "sure": 6,
+   "ses": "Değişim kaçınılmazdır. Artan fiyatlar, resesyonu neredeyse kaçınılmaz kıldı.",
+   "ses_dil": "tr"
+  },
+  {
+   "tip": "maddeler",
+   "ust": "EŞ / ZIT ANLAM",
+   "baslik": "Similar words",
+   "satirlar": [
+    "≈ unavoidable",
+    "≈ certain",
+    "≈ bound to happen",
+    "≠ avoidable"
+   ],
+   "sure": 7,
+   "ses": "Eş anlamlıları: unavoidable, certain ve bound to happen. Zıt anlamlısı: avoidable.",
+   "ses_dil": "tr"
+  },
+  {
+   "tip": "kapanis",
+   "baslik": "Your turn",
+   "vurgu": [
+    "turn"
+   ],
+   "alt": "ingilizcecim.com",
+   "ikon": "Memo",
+   "etiketler": [
+    "#YDS",
+    "#YDT",
+    "inevitable"
+   ],
+   "sure": 5,
+   "ses": "Sen de inevitable ile bir cümle kur, yorumlara yaz. Her gün yeni bir kelime için takipte kal!",
+   "ses_dil": "tr"
+  }
+ ]
+}
