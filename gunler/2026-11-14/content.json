@@ -1,0 +1,32 @@
+{
+ "date": "2026-11-14",
+ "gonderi": {
+  "baslik": "Word of the Day: Inevitable",
+  "uretim": "remotion",
+  "palet": "gece",
+  "ikon": "Hourglass",
+  "ses": true,
+  "caption": "Bugünün kelimesi: inevitable (kaçınılmaz). Akademik metinlerde \"almost inevitable\" ve \"an inevitable result\" kalıplarıyla sık karşına çıkar. Eş anlamlıları unavoidable ve bound to happen; zıt anlamlısı avoidable.\n\nHayatında \"inevitable\" olan bir şeyi İngilizce tek cümleyle yoruma yazar mısın?\n\ningilizcecim.com\n\n#yds #ydt #yökdil #ingilizce #ingilizcekelime #wordoftheday #akademikingilizce #ydshazırlık",
+  "sahneler": [
+   {"tip": "kapak", "sure": 3.1, "baslik": "inevitable", "ses": "Word of the day. Inevitable."},
+   {"tip": "maddeler", "sure": 6.2, "baslik": "Meaning", "satirlar": ["adjective · sıfat", "certain to happen; impossible to avoid", "kaçınılmaz"], "ses": "Inevitable is an adjective. It means certain to happen, impossible to avoid."},
+   {"tip": "maddeler", "sure": 7.9, "baslik": "In a sentence", "satirlar": ["Change is inevitable.", "Rising prices made a recession almost inevitable."], "ses": "Change is inevitable. And in an academic text: Rising prices made a recession almost inevitable."},
+   {"tip": "maddeler", "sure": 7.4, "baslik": "Similar words", "satirlar": ["unavoidable", "certain", "bound to happen", "opposite: avoidable"], "ses": "Similar words: unavoidable, certain, bound to happen. The opposite? Avoidable."},
+   {"tip": "kapanis", "sure": 5.5, "baslik": "Your turn", "ses": "Write your own sentence in the comments. Follow for a new word every day!"}
+  ]
+ },
+ "reels": {
+  "baslik": "Word of the Day: Thrive",
+  "uretim": "lemo-opuscar paper-popup",
+  "palet": "nane",
+  "ikon": "Seedling",
+  "ses": true,
+  "caption": "Bir tohumun ağaca dönüşmesini anlatan tek kelime: thrive. \"Gelişmek, serpilmek, güçlenerek büyümek\" demek. YDS ve YDT okuma parçalarında ekonomi, doğa ve toplum konularında sık çıkar. Eş anlamlıları flourish ve prosper, zıt anlamlısı decline.\n\nSence insanlar hangi ortamda en çok thrive eder? Tek cümleyle yoruma yaz.\n\ningilizcecim.com\n\n#ydt #yds #yökdil #ingilizce #ingilizcekelime #wordoftheday #akademikingilizce #ydshazırlık #ydthazırlık",
+  "sahneler": [
+   {"tip": "kapak", "sure": 3.7, "baslik": "THRIVE", "ses": "Thrive.", "ses_tr": "Günün kelimesi:"},
+   {"tip": "maddeler", "sure": 10.4, "baslik": "Meaning", "satirlar": ["gelişmek · serpilmek", "Plants thrive in sunlight."], "ses": "Plants thrive in sunlight.", "ses_tr": "Gelişmek, serpilmek; güçlenerek büyümek. Bitkiler güneş ışığında serpilir."},
+   {"tip": "maddeler", "sure": 9.2, "baslik": "Similar / opposite", "satirlar": ["≈ flourish", "≈ prosper", "≠ decline"], "ses": "Flourish, prosper. Decline.", "ses_tr": "Eş anlamlıları: Zıt anlamlısı:"},
+   {"tip": "kapanis", "sure": 6.2, "baslik": "THRIVE", "ses_tr": "Sen de bu kelimeyle bir cümle kur, yorumlara yaz!"}
+  ]
+ }
+}
