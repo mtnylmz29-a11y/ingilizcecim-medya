@@ -358,5 +358,24 @@
   "ses": "edge-tts: Türkçe tr-TR-EmelNeural + İngilizce en-US-AvaNeural, 10 satır, whisper ile doğrulandı",
   "editor": "Claude (üretim oturumu; bağımsız alt ajan değil): Metin'in istediği düzeltmeler yapıldı (anlam kartı, eş anlamlı tabelalar, üst boşluk, @ingilizcecim.com).",
   "onay": "Metin, Onay Paneli 14 Kasım 23:14"
+ },
+ {
+  "id": "2026-11-15-reels-salary",
+  "tarih": "2026-11-15",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "etym (Remotion + edge-tts)",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Salary",
+  "aciklama": "\"Salary\" (maaş) kelimesi Latince \"salarium\"dan gelir ve içinde \"sal\", yani tuz kelimesi saklıdır. Roma'da salarium, askerlere ve memurlara ödenen bir ödenekti; rivayete göre bu para tuz almak içindi, ama bu hikâye kesin değil. Kelime Fransızca üzerinden 1300'lerde İngilizceye geçti ve bugün aylık ya da yıllık düzenli maaş anlamında kullanılıyor. Saatlik ya da günlük ücret için ise \"wage\" deniyor; sen bu farkı biliyor muydun? 🧂💰\n\ningilizcecim.com\n\n#ingilizce #kelimelerintarihçesi #etimoloji #ingilizcekelime #ydt #yds #ingilizceöğren #salary #ingilizcecim #wordorigins",
+  "durum": "onaylandi",
+  "palet": "roma",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/954972371e0100bdda3a1c36aeb02d060b61a02f/gunler/2026-11-15/salary_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/954972371e0100bdda3a1c36aeb02d060b61a02f/gunler/2026-11-15/salary_etym_kareler.jpg",
+  "pdf": null,
+  "onerilen_dilim": "hemen",
+  "kalite": "GECTI (elle kontrol; kalite.py etym biçimini henüz denetlemiyor)",
+  "onay": "Metin, sohbet 15 Kasım 2026 00:40 — 'Bunu da hemen yayınlasınlar'"
  }
 ]
