@@ -2,6 +2,13 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 15 Kasım 2026 — 20:30 REELS = "KELİMELERİN TARİHÇESİ" (Metin; bu bölüm aşağıdakilerin hepsinden önce gelir)
+- Metin `gunler/2026-11-15/salary_etym.mp4`'yi izleyip onayladı: "Scheduled görevler için de aynen böyle videolar istiyorum."
+- **20:30 Reels** artık her gün bir "Kelimelerin Tarihçesi" videosudur: kelimenin kökeni → anlam değişimi → YDT örnek cümle, çizgi film sahneleri, Türkçe ses (edge-tts). Tam talimat, spec biçimi, kataloglar ve doğruluk kuralları: **`sistem/VIDEO_ETIMOLOJI.md`** (önce onu oku). Örnek spec: `gunler/2026-11-15/etym_salary.json`. Kelime sırası: `veri/etimoloji_listesi.json`.
+- Üretim: spec'i `gunler/YYYY-MM-DD/etym_<kelime>.json` olarak yükle → `.github/workflows/etym-render.yml` → `<kelime>_etym.mp4` + `<kelime>_etym_kareler.jpg`. Remotion bu iş akışında kullanılır; 14 Kasım'daki "Remotion yasak" kuralı yalnızca 17:30 gönderisi için geçerli kalır.
+- 17:30 gönderisi değişmedi: HyperFrames `"stil": "cizgi"` (aşağıdaki 14 Kasım bölümü).
+- Kuyrukta Reels kaydı: `bicim`: "animasyon", `uretim`: "etym (Remotion + edge-tts)", `seri`: "kelimelerin-tarihcesi", `mp4` = sha'lı raw adres, `kareler` = kontrol ızgarasının blob adresi.
+
 ## GÜNCELLEME 14 Kasım 2026 — ÇİZGİ FİLM STİLİ ZORUNLU (Metin; aşağıdakilerin hepsinden önce gelir)
 - Metin: "Salak salak düz yazı yazıp gelsin istemiyorum." Bütün videolar (17:30 gönderi videosu ve 20:30 Reels) **çizgi film tarzında** üretilir: gökyüzü, kayan bulutlar, gülen güneş, tepeler, sallanan çiçekler; ipe asılı ahşap tabelalar sallanarak iner; büyük çizim (Fluent Emoji 3D) zıplayarak gelir; altyazılar kelime kelime çıkar. Örnek: 14 Kasım "thrive" Reels'i.
 - Nasıl: HyperFrames spec'ine kökte `"stil": "cizgi"` yaz. Biçim ve sahne tipleri: `ICERIK_BICIMI.md` > "Çizgi film stili". Üretim aynı yol (spec'i `gunler/YYYY-MM-DD/hf_<ad>.json` olarak yükle → Actions → `<ad>_hf.mp4`).

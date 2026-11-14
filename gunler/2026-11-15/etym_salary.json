@@ -1,0 +1,58 @@
+{
+ "kelime": "salary",
+ "giris": {"ikonlar": ["para", "tuz"]},
+ "ses": [
+  {"id": "w",   "dil": "en", "bolum": "giris",   "metin": "Salary.", "altyazi": "Salary", "ara": 0.2},
+  {"id": "q",   "dil": "tr", "bolum": "giris",   "metin": "Bu kelimenin geçmişini biliyor musun?", "ara": 0.5},
+  {"id": "o1",  "dil": "tr", "bolum": "koken",   "metin": "Bu kelime, Latince salarium kelimesinden gelir.", "ara": 0.3},
+  {"id": "o2",  "dil": "tr", "bolum": "koken",   "metin": "İçinde sal, yani tuz kelimesi var.", "ara": 0.4},
+  {"id": "o3",  "dil": "tr", "bolum": "koken",   "metin": "Roma'da salarium, askerlere ve memurlara ödenen bir ödenekti.", "ara": 0.4},
+  {"id": "o4",  "dil": "tr", "bolum": "koken",   "metin": "Rivayete göre bu para tuz almak içindi; ama bu hikâye kesin değil.", "ara": 0.5},
+  {"id": "c1",  "dil": "tr", "bolum": "degisim", "metin": "Kelime, Fransızca üzerinden 1300'lerde İngilizceye geçti.", "ara": 0.4},
+  {"id": "c2a", "dil": "tr", "bolum": "degisim", "metin": "Zamanla tuzla bağı kayboldu ve kelime bugünkü anlamını aldı:", "ara": 0.1},
+  {"id": "c2b", "dil": "en", "bolum": "degisim", "metin": "salary", "ara": 0.1},
+  {"id": "c2c", "dil": "tr", "bolum": "degisim", "metin": "aylık ya da yıllık düzenli maaş.", "ara": 0.4},
+  {"id": "c3a", "dil": "tr", "bolum": "degisim", "metin": "Saatlik ya da günlük ücretin adıysa başka:", "ara": 0.1},
+  {"id": "c3b", "dil": "en", "bolum": "degisim", "metin": "wage.", "altyazi": "wage", "ara": 0.6},
+  {"id": "ex",  "dil": "en", "bolum": "ornek",   "metin": "Despite a significant increase in her salary, she was still unhappy with her long working hours.", "ara": 0.7},
+  {"id": "out", "dil": "tr", "bolum": "kapanis", "metin": "Kelimelerin tarihçesi için ingilizcecim'i takip et!", "altyazi": "Kelimelerin tarihçesi için takip et!", "ara": 0.9}
+ ],
+ "koken": {
+  "zemin": "roma",
+  "etiket": "LATİNCE · ROMA",
+  "kok": "salarium",
+  "parcalar": [{"p": "sal", "anlam": "tuz", "cue": "o2"}, {"p": "-arium", "anlam": "ile ilgili", "cue": "o2"}],
+  "not": {"metin": "salarium = askere ve memura ödenek", "cue": "o3"},
+  "karakter": {"kostum": "roma_askeri"},
+  "dekor": [
+   {"ikon": "tabela", "metin": "VIA SALARIA", "x": 930, "y": 1280, "s": 0.62},
+   {"ikon": "tuz", "x": 740, "y": 1330},
+   {"ikon": "cuval", "metin": "SAL", "x": 570, "y": 1335, "s": 0.8}
+  ],
+  "olaylar": [
+   {"tip": "yagmur", "ikon": "para", "cue": "o3"},
+   {"tip": "dusunce", "ikonlar": ["cuval:SAL", "=", "para"], "cue": "o4"},
+   {"tip": "damga", "metin": "RİVAYETE GÖRE", "renk": "mavi", "cue": "o4", "gecikme": 0.2},
+   {"tip": "damga", "metin": "KESİN DEĞİL", "cue": "o4", "gecikme": 2.4, "y": 1180}
+  ]
+ },
+ "degisim": {
+  "duraklar": [
+   {"donem": "ROMA", "kelime": "salarium", "cue": "c1", "gecikme": -0.1},
+   {"donem": "ESKİ FRANSIZCA", "kelime": "salaire", "cue": "c1", "gecikme": 1.2, "zemin": "orta_cag", "kostum": "katip"},
+   {"donem": "İNGİLİZCE · 1300'ler", "kelime": "salarie", "cue": "c1", "gecikme": 2.6},
+   {"donem": "BUGÜN", "kelime": "salary", "cue": "c2b", "zemin": "sehir", "kostum": "ofis", "sac": "uzun"}
+  ],
+  "eski_ikon": {"ikon": "tuz", "cue": "c2a"},
+  "yeni_anlam": {"metin": "salary = aylık / yıllık maaş", "cue": "c2c"},
+  "karsilastirma": {"cue": "c3a", "kartlar": [
+   {"kelime": "salary", "aciklama": "aylık / yıllık\nsabit maaş", "ikon": "takvim"},
+   {"kelime": "wage", "aciklama": "saatlik / günlük\nücret", "ikon": "saat", "cue": "c3b"}
+  ]}
+ },
+ "ornek": {
+  "en": "Despite a significant increase in her salary, she was still unhappy with her long working hours.",
+  "tr": "Maaşında ciddi bir artış olmasına rağmen, uzun çalışma saatlerinden hâlâ mutsuzdu.",
+  "zemin": "ofis", "ikon": "grafik", "ikon_metin": "SALARY", "kostum": "ofis", "sac": "uzun"
+ }
+}

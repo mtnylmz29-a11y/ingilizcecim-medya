@@ -1,0 +1,33 @@
+{
+ "tarih": "2026-11-15",
+ "karar": "GECTI",
+ "kaldi": 0,
+ "uyari": 0,
+ "kontroller": [
+  {
+   "paylasim": "reels",
+   "kontrol": "Metin onayı",
+   "durum": "GECTI",
+   "ayrinti": "Metin videoyu izleyip onayladı ve hemen yayınlanmasını istedi (15 Kasım 2026, sohbet)."
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "kareler",
+   "durum": "GECTI",
+   "ayrinti": "18 kare elle incelendi; 12 karelik ızgara Actions çıktısında."
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "etimoloji",
+   "durum": "GECTI",
+   "ayrinti": "salarium < sal; tuzla ödeme hikâyesi 'rivayete göre / kesin değil' olarak işaretli."
+  },
+  {
+   "paylasim": "reels",
+   "kontrol": "ses",
+   "durum": "GECTI",
+   "ayrinti": "-14 LUFS, 43 sn, 1080x1920 30 fps H.264"
+  }
+ ],
+ "not": "kalite.py bu biçimi (etym) henüz denetlemiyor; kontrol elle yapıldı."
+}

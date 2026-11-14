@@ -1,0 +1,58 @@
+# "Kelimelerin Tarihçesi" Reels: gunler/YYYY-MM-DD/etym_<kelime>.json yüklenince çalışır,
+# aynı klasöre <kelime>_etym.mp4 ve <kelime>_etym_kareler.jpg yazar. Yayın yapmaz. Biçim: sistem/VIDEO_ETIMOLOJI.md
+name: Etimoloji render
+on:
+  push:
+    paths: ["gunler/**/etym_*.json"]
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: "Tek bir spec yolu (ornek: gunler/2026-11-15/etym_salary.json)"
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: etym-render
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Kurulum
+        run: |
+          sudo rm -f /var/lib/man-db/auto-update
+          command -v ffprobe || (sudo apt-get update -qq && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null)
+          pip install -q edge-tts==7.3.1 numpy scipy soundfile
+          cd video && npm ci --no-audit --no-fund && npx remotion browser ensure
+      - name: Spec listesi
+        run: |
+          if [ -n "${{ github.event.inputs.spec }}" ]; then echo "${{ github.event.inputs.spec }}" > /tmp/specs.txt
+          else git diff --name-only HEAD~1 HEAD | grep -E '^gunler/.+/etym_[^/]+\.json$' > /tmp/specs.txt || true; fi
+          cat /tmp/specs.txt
+      - name: Uret
+        run: |
+          while read -r f; do
+            [ -f "$f" ] || continue
+            sh video/build.sh "$f" || { echo "::error::$f uretilemedi"; HATA=1; }
+          done < /tmp/specs.txt
+          [ -z "$HATA" ] || exit 1
+      - name: Depoya yaz
+        if: always()
+        run: |
+          git config user.name "etym-render"; git config user.email "actions@users.noreply.github.com"
+          git add gunler
+          git diff --cached --quiet && exit 0
+          git commit -m "render: Kelimelerin Tarihcesi videolari"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

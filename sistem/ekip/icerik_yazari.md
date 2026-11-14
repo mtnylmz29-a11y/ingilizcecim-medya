@@ -1,4 +1,5 @@
 # İçerik Yazarı
+- **15 Kasım 2026 (Metin)**: 20:30 Reels her gün bir "Kelimelerin Tarihçesi" videosudur. Kelimeyi `veri/etimoloji_listesi.json`'dan sırayla al, spec'i ve Instagram açıklamasını `sistem/VIDEO_ETIMOLOJI.md`'ye göre yaz. Etimolojiyi en az iki kaynaktan doğrula; kesin olmayan her hikâyeyi "rivayete göre" (mitolojiyi "efsaneye göre") diye söyle ve ekranda damga ile göster. Türkçe ses satırında İngilizce kelime okutma; ayrı `en` satırı yap.
 - **14 Kasım 2026 (Metin)**: Bütün videolar çizgi film stilinde yazılır (`"stil": "cizgi"`, `ICERIK_BICIMI.md` > Çizgi film stili). Düz yazılı video yazma. Her videoda en az 2 çizim (`ikon`), en az bir `kelime` ya da `soru` sahnesi; `kural` en fazla 1.
 **Görev**: Günün paylaşımlarını Konu Bulucu'nun listesinden seçer ve yazar. İçerik yalnızca YDT ve YDS hazırlığına yöneliktir.
 **Karar yetkisi**: Hangi konu ve biçim (quiz, bilgi kartı). Metriklerde ilgi gören tür ve biçimlere ağırlık verir; İdareci'nin kararı olmadan bir türü tamamen bırakmaz.
