@@ -7,6 +7,7 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 - **20:30 Reels** artık her gün bir "Kelimelerin Tarihçesi" videosudur: kelimenin kökeni → anlam değişimi → YDT örnek cümle, çizgi film sahneleri, Türkçe ses (edge-tts). Tam talimat, spec biçimi, kataloglar ve doğruluk kuralları: **`sistem/VIDEO_ETIMOLOJI.md`** (önce onu oku). Örnek spec: `gunler/2026-11-15/etym_salary.json`. Kelime sırası: `veri/etimoloji_listesi.json`.
 - Üretim: spec'i `gunler/YYYY-MM-DD/etym_<kelime>.json` olarak yükle → `.github/workflows/etym-render.yml` → `<kelime>_etym.mp4` + `<kelime>_etym_kareler.jpg`. Remotion bu iş akışında kullanılır; 14 Kasım'daki "Remotion yasak" kuralı yalnızca 17:30 gönderisi için geçerli kalır.
 - 17:30 gönderisi değişmedi: HyperFrames `"stil": "cizgi"` (aşağıdaki 14 Kasım bölümü).
+- **Görev istemleriyle çelişki**: URETIM görevinin isteminde "Reels de yalnızca çizgi film stilinde (hf/gen.py) üretilir; Remotion yasak" yazıyor. Bu cümle 15 Kasım'dan önce yazıldı; Metin'in 15 Kasım kararıyla **20:30 Reels için geçersizdir**. Reels'i bu bölümdeki yolla üret; 17:30 gönderisi için istem aynen geçerlidir.
 - Kuyrukta Reels kaydı: `bicim`: "animasyon", `uretim`: "etym (Remotion + edge-tts)", `seri`: "kelimelerin-tarihcesi", `mp4` = sha'lı raw adres, `kareler` = kontrol ızgarasının blob adresi.
 
 ## GÜNCELLEME 14 Kasım 2026 — ÇİZGİ FİLM STİLİ ZORUNLU (Metin; aşağıdakilerin hepsinden önce gelir)
