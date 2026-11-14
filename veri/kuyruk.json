@@ -313,5 +313,41 @@
   "permalink": "https://www.instagram.com/reel/DfkcgYwFPIX/",
   "yayin_saati": "2026-11-10 20:30 (TR)",
   "yayin_notu": "Biriken onaylı; 10 Kasım 20:30 diliminde yayınlandı"
+ },
+ {
+  "id": "2026-11-14-gonderi",
+  "tarih": "2026-11-14",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "remotion",
+  "baslik": "Word of the Day: Inevitable",
+  "aciklama": "Bugünün kelimesi: inevitable (kaçınılmaz). Akademik metinlerde \"almost inevitable\" ve \"an inevitable result\" kalıplarıyla sık karşına çıkar. Eş anlamlıları unavoidable ve bound to happen; zıt anlamlısı avoidable.\n\nHayatında \"inevitable\" olan bir şeyi İngilizce tek cümleyle yoruma yazar mısın?\n\ningilizcecim.com\n\n#yds #ydt #yökdil #ingilizce #ingilizcekelime #wordoftheday #akademikingilizce #ydshazırlık",
+  "durum": "onay_bekliyor",
+  "palet": "gece",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e5d1cbe47f492aff14668c1551e1694d34a99f16/gunler/2026-11-14/inevitable_reels.mp4",
+  "pdf": null,
+  "onerilen_dilim": "17:30",
+  "kalite": "GEÇTİ · 0 KALDI · 0 UYARI",
+  "ses": "edge-tts en-US-AvaNeural, yalnız İngilizce",
+  "editor": "Claude (üretim oturumu; bağımsız alt ajan değil): metin ve kareler kontrol edildi. NOT: kapanışta ekranda eski adres \"@ingilizcecim.ccom\" yazıyor; görsel olarak sade (yalnız yazı)."
+ },
+ {
+  "id": "2026-11-14-reels",
+  "tarih": "2026-11-14",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "lemo-opuscar paper-popup (three.js)",
+  "baslik": "Word of the Day: Thrive",
+  "aciklama": "Bir tohumun ağaca dönüşmesini anlatan tek kelime: thrive. \"Gelişmek, serpilmek, güçlenerek büyümek\" demek. YDS ve YDT okuma parçalarında ekonomi, doğa ve toplum konularında sık çıkar. Eş anlamlıları flourish ve prosper, zıt anlamlısı decline.\n\nSence insanlar hangi ortamda en çok thrive eder? Tek cümleyle yoruma yaz.\n\ningilizcecim.com\n\n#ydt #yds #yökdil #ingilizce #ingilizcekelime #wordoftheday #akademikingilizce #ydshazırlık #ydthazırlık",
+  "durum": "onay_bekliyor",
+  "palet": "nane",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/1af678a63f344a8aaed4e10071e3d042c2f8c94c/gunler/2026-11-14/thrive_reels.mp4",
+  "pdf": null,
+  "onerilen_dilim": "20:30",
+  "kalite": "GEÇTİ · 0 KALDI · 1 UYARI (kapanış sahnesi Türkçe okunuyor; script yalnız İngilizce ses alanına bakıyor, gerçek sorun değil)",
+  "ses": "edge-tts: Türkçe tr-TR-EmelNeural + İngilizce en-US-AvaNeural, 10 satır, whisper ile doğrulandı",
+  "editor": "Claude (üretim oturumu; bağımsız alt ajan değil): Metin'in istediği düzeltmeler yapıldı (anlam kartı, eş anlamlı tabelalar, üst boşluk, @ingilizcecim.com)."
  }
 ]
