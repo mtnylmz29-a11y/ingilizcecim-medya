@@ -1,0 +1,42 @@
+{
+ "kelime": "companion",
+ "tema": "turuncu",
+ "muzik": "macera",
+ "giris": {"ikonlar": ["ekmek", "kalp"], "stil": "parsomen"},
+ "ses": [
+  {"id": "w", "dil": "en", "bolum": "giris", "metin": "Companion.", "altyazi": "Companion", "ara": 0.2},
+  {"id": "q", "dil": "tr", "bolum": "giris", "metin": "Bu kelimenin geçmişini biliyor musun?", "ara": 0.4},
+  {"id": "o1", "dil": "tr", "bolum": "koken", "metin": "Test: perde açılıyor, handayız.", "ara": 0.3},
+  {"id": "o2", "dil": "tr", "bolum": "koken", "metin": "İki kişi ekmeği ikiye bölüp paylaşıyor.", "ara": 0.3},
+  {"id": "o3", "dil": "tr", "bolum": "koken", "metin": "Ve yer sarsılıyor!", "ara": 0.5},
+  {"id": "c1", "dil": "tr", "bolum": "degisim", "metin": "Test: fabrika, forum, çarşı ve spor salonu.", "ara": 0.3},
+  {"id": "c2", "dil": "tr", "bolum": "degisim", "metin": "Ölçer kötüden iyiye dönüyor.", "ara": 0.5},
+  {"id": "ex", "dil": "en", "bolum": "ornek", "metin": "Her dog has been her loyal companion for more than ten years.", "ara": 0.6},
+  {"id": "out", "dil": "tr", "bolum": "kapanis", "metin": "Kelimelerin tarihçesi için ingilizcecim'i takip et!", "altyazi": "Kelimelerin tarihçesi için takip et!", "ara": 0.8}
+ ],
+ "koken": {
+  "zemin": "han",
+  "etiket": "GEÇ LATİNCE",
+  "kok": "companio",
+  "parcalar": [{"p": "com-", "anlam": "birlikte", "cue": "o2"}, {"p": "panis", "anlam": "ekmek", "cue": "o2"}],
+  "karakter": {"kostum": "katip", "x": 300},
+  "karakter2": {"kostum": "isci", "x": 820},
+  "olaylar": [
+   {"tip": "perde", "cue": "o1", "gecikme": 0.2, "metin": "HAN"},
+   {"tip": "bol", "ikon": "ekmek", "cue": "o2", "gecikme": 1.0, "x": 560, "y": 1250, "aralik": 160},
+   {"tip": "sars", "cue": "o3"}
+  ]
+ },
+ "degisim": {
+  "duraklar": [
+   {"donem": "FABRİKA", "kelime": "a", "cue": "c1", "zemin": "fabrika", "kostum": "isci"},
+   {"donem": "FORUM", "kelime": "b", "cue": "c1", "gecikme": 0.9, "zemin": "forum", "kostum": "toga_candida"},
+   {"donem": "ÇARŞI", "kelime": "c", "cue": "c1", "gecikme": 1.8, "zemin": "carsi", "kostum": "alim"},
+   {"donem": "SPOR", "kelime": "d", "cue": "c2", "zemin": "spor", "kostum": "sporcu"}
+  ],
+  "olaylar": [
+   {"tip": "ziplat", "ikon": "olcer", "metin": "nice", "cue": "c2", "x": 780, "y": 1120, "k_bas": 0, "k_son": 1, "sure": 1.8}
+  ]
+ },
+ "ornek": {"en": "Her dog has been her loyal companion for more than ten years.", "tr": "Köpeği, on yıldan uzun süredir onun sadık yol arkadaşı.", "zemin": "kir", "ikon": "kalp"}
+}

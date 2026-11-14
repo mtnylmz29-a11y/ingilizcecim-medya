@@ -1,0 +1,48 @@
+{
+ "bicim": "dunya",
+ "ad": "good-morning",
+ "tarih": "2026-11-14",
+ "etiket": "DÜNYA TURU",
+ "gunes": true,
+ "muzik": "sakin",
+ "baslik": {"ust": "Good", "vurgu": "morning!", "alt": "24 saatte dünyayı dolaşan selam"},
+ "sehirler": [
+  {"id": "tokyo", "ad": "Tokyo", "lon": 139.69, "lat": 35.69, "dil_adi": "Japonca", "yazi": "おはようございます", "okunus": "Ohayō gozaimasu", "yazi_tipi": "jp"},
+  {"id": "pekin", "ad": "Pekin", "lon": 116.4, "lat": 39.9, "dil_adi": "Çince", "yazi": "早上好", "okunus": "Zǎoshang hǎo", "yazi_tipi": "sc"},
+  {"id": "dubai", "ad": "Dubai", "lon": 55.27, "lat": 25.2, "dil_adi": "Arapça", "yazi": "صباح الخير", "okunus": "Ṣabāḥ al-khayr", "yazi_tipi": "ar", "sag_sol": true},
+  {"id": "ist", "ad": "İstanbul", "lon": 28.98, "lat": 41.01, "dil_adi": "Türkçe", "yazi": "Günaydın!"},
+  {"id": "paris", "ad": "Paris", "lon": 2.35, "lat": 48.86, "dil_adi": "Fransızca", "yazi": "Bonjour !"},
+  {"id": "london", "ad": "Londra", "lon": -0.13, "lat": 51.51, "dil_adi": "İngilizce", "yazi": "Good morning!"},
+  {"id": "ny", "ad": "New York", "lon": -74.0, "lat": 40.71, "dil_adi": "İngilizce", "yazi": "Good morning!"}
+ ],
+ "ses": [
+  {"id": "hook", "dil": "us", "bolum": "giris", "metin": "Good morning!", "ara": 0.25, "hiz": "-4%"},
+  {"id": "intro", "dil": "tr", "bolum": "giris", "metin": "Bu selam her gün, güneşle birlikte bütün dünyayı dolaşır.", "ara": 0.25, "hiz": "-4%"},
+  {"id": "first", "dil": "tr", "bolum": "tur", "metin": "Güneş önce Japonya'da doğar.", "ara": 0.05, "hiz": "-4%"},
+  {"id": "tokyo", "dil": "ja", "bolum": "tur", "sehir": "tokyo", "metin": "おはようございます", "altyazi": "Japonca: Günaydın", "ara": 0.35, "hiz": "-4%"},
+  {"id": "pekin", "dil": "zh", "bolum": "tur", "sehir": "pekin", "metin": "早上好", "altyazi": "Çince: Günaydın", "ara": 0.35, "hiz": "-4%"},
+  {"id": "dubai", "dil": "ar", "bolum": "tur", "sehir": "dubai", "metin": "صباح الخير", "altyazi": "Arapça: Günaydın", "ara": 0.35, "hiz": "-4%"},
+  {"id": "ist", "dil": "tr", "bolum": "tur", "sehir": "ist", "metin": "Günaydın!", "altyazi": "Türkçe: Günaydın", "ara": 0.35, "hiz": "-4%"},
+  {"id": "paris", "dil": "fr", "bolum": "tur", "sehir": "paris", "metin": "Bonjour !", "altyazi": "Fransızca: Günaydın / İyi günler", "ara": 0.3, "hiz": "-4%"},
+  {"id": "london", "dil": "gb", "bolum": "tur", "sehir": "london", "metin": "Good morning!", "altyazi": "İngilizce: Günaydın", "ara": 0.3, "hiz": "-4%"},
+  {"id": "ny1", "dil": "tr", "bolum": "tur", "metin": "Yaklaşık on dört saat sonra sıra New York'ta.", "altyazi": "Yaklaşık 14 saat sonra sıra New York'ta.", "ara": 0.05, "hiz": "-4%"},
+  {"id": "ny", "dil": "us", "bolum": "tur", "sehir": "ny", "metin": "Good morning!", "ara": 0.6, "hiz": "-4%"},
+  {"id": "aft1", "dil": "tr", "bolum": "ders", "metin": "Öğleden sonra:", "ara": 0.05, "hiz": "-4%"},
+  {"id": "aft", "dil": "us", "bolum": "ders", "metin": "Good afternoon.", "altyazi": "Good afternoon. → İyi günler", "ara": 0.3, "hiz": "-4%"},
+  {"id": "eve1", "dil": "tr", "bolum": "ders", "metin": "Akşam:", "ara": 0.05, "hiz": "-4%"},
+  {"id": "eve", "dil": "us", "bolum": "ders", "metin": "Good evening.", "altyazi": "Good evening. → İyi akşamlar", "ara": 0.3, "hiz": "-4%"},
+  {"id": "ngt1", "dil": "tr", "bolum": "ders", "metin": "Vedalaşırken ya da yatarken:", "ara": 0.05, "hiz": "-4%"},
+  {"id": "ngt", "dil": "us", "bolum": "ders", "metin": "Good night.", "altyazi": "Good night. → İyi geceler", "ara": 0.45, "hiz": "-4%"},
+  {"id": "cta", "dil": "tr", "bolum": "kapanis", "metin": "Sen şu an hangisini söylerdin? Yorumlara yaz!", "ara": 0.8, "hiz": "-4%"}
+ ],
+ "ders": {
+  "saat": true,
+  "satirlar": [
+   {"en": "Good morning", "tr": "Günaydın", "not": "sabah · öğlene kadar", "renk": "#FFC94A", "saat": [5, 12]},
+   {"en": "Good afternoon", "tr": "İyi günler", "not": "öğleden sonra · 12–18", "renk": "#FF8A3D", "saat": [12, 18], "cue": "aft1"},
+   {"en": "Good evening", "tr": "İyi akşamlar", "not": "akşam · 18'den sonra", "renk": "#A06BFF", "saat": [18, 22], "cue": "eve1"},
+   {"en": "Good night", "tr": "İyi geceler", "not": "veda ederken · yatarken", "renk": "#4C6FFF", "saat": [22, 29], "cue": "ngt1"}
+  ]
+ },
+ "kapanis": {"soru": "Sen şu an hangisini söylerdin?", "vurgu": "hangisini", "yorum": "Yorumlara yaz!"}
+}

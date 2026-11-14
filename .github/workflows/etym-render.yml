@@ -1,9 +1,9 @@
-# "Kelimelerin Tarihçesi" Reels: gunler/YYYY-MM-DD/etym_<kelime>.json yüklenince çalışır,
-# aynı klasöre <kelime>_etym.mp4 ve <kelime>_etym_kareler.jpg yazar. Yayın yapmaz. Biçim: sistem/VIDEO_ETIMOLOJI.md
+# Reels render: gunler/YYYY-MM-DD/etym_<ad>.json (Kelimelerin Tarihçesi) ya da dunya_<ad>.json (Dünya turu) yüklenince çalışır,
+# aynı klasöre <ad>_<biçim>.mp4 ve <ad>_<biçim>_kareler.jpg yazar. Yayın yapmaz. Biçimler: sistem/VIDEO_ETIMOLOJI.md, sistem/VIDEO_DUNYA.md
 name: Etimoloji render
 on:
   push:
-    paths: ["gunler/**/etym_*.json"]
+    paths: ["gunler/**/etym_*.json", "gunler/**/dunya_*.json"]
   workflow_dispatch:
     inputs:
       spec:
@@ -39,7 +39,7 @@ jobs:
       - name: Spec listesi
         run: |
           if [ -n "${{ github.event.inputs.spec }}" ]; then echo "${{ github.event.inputs.spec }}" > /tmp/specs.txt
-          else git diff --name-only HEAD~1 HEAD | grep -E '^gunler/.+/etym_[^/]+\.json$' > /tmp/specs.txt || true; fi
+          else git diff --name-only HEAD~1 HEAD | grep -E '^gunler/.+/(etym|dunya)_[^/]+\.json$' > /tmp/specs.txt || true; fi
           cat /tmp/specs.txt
       - name: Uret
         run: |
@@ -54,5 +54,5 @@ jobs:
           git config user.name "etym-render"; git config user.email "actions@users.noreply.github.com"
           git add gunler
           git diff --cached --quiet && exit 0
-          git commit -m "render: Kelimelerin Tarihcesi videolari"
+          git commit -m "render: Reels videolari"
           for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

@@ -1,0 +1,45 @@
+{
+ "kelime": "clue",
+ "tema": "mor",
+ "muzik": "gizemli",
+ "giris": {"ikonlar": ["yumak", "soru"], "stil": "harfler"},
+ "ses": [
+  {"id": "w", "dil": "en", "bolum": "giris", "metin": "Clue.", "altyazi": "Clue", "ara": 0.2},
+  {"id": "q", "dil": "tr", "bolum": "giris", "metin": "Bu kelimenin geçmişini biliyor musun?", "ara": 0.4},
+  {"id": "o1", "dil": "tr", "bolum": "koken", "metin": "Eski İngilizcede clew, iplik yumağı demekti.", "ara": 0.3},
+  {"id": "o2", "dil": "tr", "bolum": "koken", "metin": "Efsaneye göre Theseus labirente girdi.", "ara": 0.3},
+  {"id": "o3", "dil": "tr", "bolum": "koken", "metin": "Ariadne'nin ipliğini izleyerek çıkışı buldu.", "ara": 0.5},
+  {"id": "c1", "dil": "tr", "bolum": "degisim", "metin": "Test: kelime şehir şehir dolaşıyor.", "ara": 0.3},
+  {"id": "c2", "dil": "tr", "bolum": "degisim", "metin": "Sayaç kırka kadar sayıyor, yüz gülüyor.", "ara": 0.3},
+  {"id": "c3", "dil": "tr", "bolum": "degisim", "metin": "Gökten yıldızlar kayıyor.", "ara": 0.5},
+  {"id": "ex", "dil": "en", "bolum": "ornek", "metin": "The detective found an important clue that finally explained the mystery.", "ara": 0.6},
+  {"id": "out", "dil": "tr", "bolum": "kapanis", "metin": "Kelimelerin tarihçesi için ingilizcecim'i takip et!", "altyazi": "Kelimelerin tarihçesi için takip et!", "ara": 0.8}
+ ],
+ "koken": {
+  "zemin": "labirent",
+  "etiket": "ESKİ İNGİLİZCE",
+  "kok": "clew",
+  "parcalar": [{"p": "clew", "anlam": "iplik yumağı", "cue": "o1"}],
+  "karakter": {"kostum": "kahraman", "x": 300},
+  "karakter2": {"kostum": "toga", "sac": "uzun", "x": 820, "cue": "o2"},
+  "olaylar": [
+   {"tip": "damga", "metin": "EFSANEYE GÖRE", "renk": "mor", "cue": "o2", "gecikme": 0.3, "y": 1180},
+   {"tip": "iplik", "cue": "o3", "sure": 3.0},
+   {"tip": "parilti", "cue": "o3", "gecikme": 2.6, "x": 900, "y": 560, "sure": 1.5}
+  ]
+ },
+ "degisim": {
+  "duraklar": [
+   {"donem": "ROMA", "kelime": "test-1", "cue": "c1", "yer": {"ad": "Roma", "lon": 12.5, "lat": 41.9}},
+   {"donem": "PARİS", "kelime": "test-2", "cue": "c1", "gecikme": 1.2, "yer": {"ad": "Paris", "lon": 2.35, "lat": 48.86}},
+   {"donem": "LONDRA", "kelime": "test-3", "cue": "c2", "yer": {"ad": "Londra", "lon": -0.13, "lat": 51.51}}
+  ],
+  "olaylar": [
+   {"tip": "sayac", "cue": "c2", "bas": 1, "son": 40, "metin": "GÜN", "x": 800, "y": 820},
+   {"tip": "ziplat", "ikon": "yuz", "cue": "c2", "x": 260, "y": 960, "k_bas": 0, "k_son": 1, "sure": 1.5},
+   {"tip": "kayan", "cue": "c3", "adet": 3, "renk": "kirmizi"}
+  ],
+  "yeni_anlam": {"metin": "clue = ipucu", "cue": "c3"}
+ },
+ "ornek": {"en": "The detective found an important clue that finally explained the mystery.", "tr": "Dedektif, sonunda gizemi açıklayan önemli bir ipucu buldu.", "zemin": "sehir", "ikon": "buyutec", "kostum": "doktor"}
+}
