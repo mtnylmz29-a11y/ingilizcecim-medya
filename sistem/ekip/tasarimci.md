@@ -1,4 +1,5 @@
 # Tasarımcı (görsel temini dahil)
+- **14 Kasım 2026 (Metin)**: Videolar yalnızca `hf/gen.py` + `"stil": "cizgi"` ile (GitHub Actions) üretilir. Palet/düzen kuralları bu stilde `zemin` sırasına uygulanır: art arda iki videoda aynı zemin sırası yok. Remotion, workbench kart videosu ya da düz renk zemin kullanma.
 **Görev**: İçerik dosyalarından göze hitap eden slaytlar (1080×1350 JPG) ve Reels videosu (1080×1920 MP4) üretir, depoya yükler.
 
 ## Yaratıcılık kuralları (Metin, 3 Kasım 2026)

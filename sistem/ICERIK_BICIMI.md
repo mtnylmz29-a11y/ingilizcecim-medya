@@ -34,7 +34,19 @@ Her sahnede `tip`, `sure` (sn), isteğe bağlı `ust` (küçük başlık), `ikon
 **Sesli anlatım**: kökte `"ses": true`. Kokoro-82M (Apache-2.0, ücretsiz, workbench'te yerel çalışır; model ilk kullanımda iner) yalnızca **İngilizce** okur. `donusum` sahnesinde `once` ve `sonra` otomatik okunur, süre sese göre uzar, kelimeler okuma arasında kayar. `kapak`, `maddeler`, `kapanis` için okunacak metin `ses` alanına İngilizce yazılır. Türkçe açıklamalar ekranda kalır, okunmaz. Ses `ses_sesi` (varsayılan af_heart) ve `ses_hizi` (0.95) ile ayarlanır.
 Uzun cümle 3 satırı geçmesin. Kontrol için kare klasörü üçüncü bağımsız değişken olarak verilir.
 
-## HyperFrames videosu (7 Kasım 2026'dan itibaren varsayılan) — gunler/YYYY-MM-DD/hf_<ad>.json
+## Çizgi film stili (14 Kasım 2026'dan itibaren ZORUNLU) — gunler/YYYY-MM-DD/hf_<ad>.json, kökte "stil": "cizgi"
+Üretici `hf/cizgi.py`. Kök alanlar: `"stil": "cizgi"`, `rozet` (üstteki küçük etiket, ör. "WORD OF THE DAY", "YDT GRAMMAR"), `zemin` (varsayılan zemin: `cayir` | `senlik` | `gece` | `deniz`), isteğe bağlı `gemini_ses`. Her sahne kendi `zemin`ini verebilir; zemin değişince arka plan yumuşakça geçer (güneş yalnızca cayir/deniz'de görünür).
+`ikon`: Microsoft Fluent Emoji klasör adı, birebir yazım (ör. "Seedling", "Deciduous tree", "Sparkles", "Thinking face", "Memo", "Books", "Rocket", "Light bulb", "Hourglass done", "Trophy"). Ten rengi olan el/insan ikonlarını (ör. "Writing hand") kullanma, bulunamaz. Klasör adını https://github.com/microsoft/fluentui-emoji/tree/main/assets listesinden doğrula.
+Sahne tipleri:
+- `kapak`: `baslik` (büyük ahşap tabela, kısa, BÜYÜK HARF), `ikon` (büyük çizim), `alt_en` (sarı vurgulu İngilizce altyazı), `alt` (Türkçe altyazı), `ses_tr`, `ses`.
+- `kelime`: `kelime` (tabela), `tur` (kırmızı küçük etiket, ör. "fiil · verb"), `anlam` (krem tabela, Türkçe), `ikon`, `ornek` (İngilizce örnek cümle altyazısı, ≤45 karakter), `ornek_tr`, `vurgu` (sarıya boyanacak kelimeler), `ses_tr` (kısa Türkçe açıklama; ses `ornek`i İngilizce okur).
+- `esanlam`: `kelime` (küçük tabela), `es` (yeşil tabelalar, ≤3), `zit` (kırmızı tabela, üstü çizilir, ≤2), `ikon` (köşe çizimi), `ses_tr`, isteğe bağlı `ses`.
+- `soru` (video içi quiz): `baslik`, `soru` (boşluk `___`), `secenekler` (4 şık), `dogru` (0–3), `aciklama` (Türkçe altyazı), `ikon`, isteğe bağlı `ses_cevap`, `ses_tr`. Akış: soru → 3-2-1 sayaç → yanlış şıklar düşer, doğru yeşile döner.
+- `kural` (= `maddeler`): `baslik`, `satirlar` (≤3 kâğıt not), `ikon`, `ses_tr`. Video başına en fazla 1.
+- `kapanis`: `baslik` ("YOUR TURN" gibi), `ikon`, `alt` (Türkçe çağrı), `etiketler`, `ses_tr`.
+Örnek: `test/hf_cizgi_ornek.json`. Kurallar: 5–7 sahne, 30–50 sn; en az 2 sahnede `ikon`; en az bir `kelime` ya da `soru`; tabelalar kısa (tek satır); ses satırı ≤12.
+
+## HyperFrames videosu (7 Kasım 2026; 14 Kasım'dan beri yalnızca "stil": "cizgi" ile kullanılır, eski düz stil kapalı) — gunler/YYYY-MM-DD/hf_<ad>.json
 GitHub Actions `hf/gen.py` ile üretir, çıktı `<ad>_hf.mp4` (1080×1920). Kök alanlar: `palet` (ydt | gece | nane | gunbatimi | limon | okyanus | lavanta), isteğe bağlı `gemini_ses` (varsayılan "Kore"). `sahneler` listesi, sahne tipleri:
 - `kapak` / `kapanis`: `baslik`, `vurgu` (kutuya alınacak kelimeler), `alt`, `ikon` (Fluent Emoji 3D klasör adı), `ses` (okunacak metin), `ses_dil` ("tr" varsayılan | "en"), kapanışta isteğe bağlı `etiketler` (küçük kutular).
 - `degis` (bir kelimenin yerine daha iyisi gelir; kelime aileleri, akademik kelime, yanlış→doğru tek kelime): `ust` (rozet, ör. "FİİL 1/4"), `no` (arka planda dev rakam), `once`, `eski`, `yeni`, `sonra`, `anlam` (Türkçe kart), `ikon`, `ses_tr` (kısa Türkçe açıklama). Eski ve yeni cümle İngilizce okunur (`ses_eski`/`ses_yeni` ile değiştirilebilir).

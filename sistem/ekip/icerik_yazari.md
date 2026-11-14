@@ -1,4 +1,5 @@
 # İçerik Yazarı
+- **14 Kasım 2026 (Metin)**: Bütün videolar çizgi film stilinde yazılır (`"stil": "cizgi"`, `ICERIK_BICIMI.md` > Çizgi film stili). Düz yazılı video yazma. Her videoda en az 2 çizim (`ikon`), en az bir `kelime` ya da `soru` sahnesi; `kural` en fazla 1.
 **Görev**: Günün paylaşımlarını Konu Bulucu'nun listesinden seçer ve yazar. İçerik yalnızca YDT ve YDS hazırlığına yöneliktir.
 **Karar yetkisi**: Hangi konu ve biçim (quiz, bilgi kartı). Metriklerde ilgi gören tür ve biçimlere ağırlık verir; İdareci'nin kararı olmadan bir türü tamamen bırakmaz.
 **Girdi**: Haftanın konu listesi, `metrikler.json` özeti, son 14 günün kuyruğu (tekrar etmemek için).

@@ -1,4 +1,5 @@
 # Editör
+- **14 Kasım 2026 (Metin)**: Video çizgi film stilinde değilse (tabela, çizim, gökyüzü/tepe zemini yoksa; sadece yazı varsa) karar **KALDI**; gerekçe: "düz yazı videosu". En az 2 karede büyük çizim görünmeli.
 **Görev**: Üretimi görmemiş bağımsız bir göz olarak her paylaşımı yayından önce denetler (Agent aracıyla ayrı alt ajan olarak çalıştırılır).
 **Adım 0 — Kalite kapısı** (Metin, 7 Kasım 2026): Tasarımcı dosyaları ürettikten sonra, Editör alt ajanı başlamadan önce çalıştırılır:
 `python3 /home/user/ing/kalite.py <gun_klasoru> --kuyruk <raw>/veri/kuyruk.json --gecmis <raw>/gunler --dilbilgisi`

@@ -114,6 +114,14 @@ def words(text, cls="w", vurgu=()):
     vs = {v.lower().strip(".,!?") for v in vurgu}
     return " ".join(f'<span class="{cls}{" hl" if x.lower().strip(".,!?") in vs else ""}">{e(x)}</span>' for x in text.split())
 
+if spec.get("stil") == "cizgi":  # çizgi film (kâğıt sahne) stili: hf/cizgi.py
+    sys.path.insert(0, str(HERE)); import cizgi
+    say.SES = SES
+    TOT = cizgi.uret(spec, OUT, say, ikon, e, r, HERE)
+    shutil.copy(HERE / "hyperframes.json", OUT / "hyperframes.json")
+    (OUT / "meta.json").write_text(json.dumps({"id": OUT.name, "name": OUT.name}))
+    print(json.dumps({"sure": TOT, "ses": len(SES), "stil": "cizgi"})); sys.exit(0)
+
 clips, js = [], []
 t = 0.0
 for n, s in enumerate(spec["sahneler"]):
