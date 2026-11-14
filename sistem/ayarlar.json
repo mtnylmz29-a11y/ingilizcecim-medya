@@ -33,9 +33,13 @@
  ],
  "takip_sarti": false,
  "notlar": "Saatler ve dağılım İdareci önerisi + Metin onayıyla değişir.",
- "icerik_odagi": "Yalnızca YDT ve YDS. Günde 1 kaydırmalı gönderi + 1 Reels (3 Kasım 2026, Metin'in kararı).",
+ "icerik_odagi": "Yalnızca YDT ve YDS. Günde 2 paylaşım (15 Kasım 2026, Metin): 17:30 gönderi = ekip (grammar noktası/ayrımı, kelime, sık hata…), 20:30 Reels = Etimoloji görevi (Kelimelerin Tarihçesi).",
  "gunluk_plan": {
   "gonderi": 1,
   "reels": 1
+ },
+ "uretici": {
+  "gonderi": "ekip (KİP: URETIM)",
+  "reels": "Etimoloji görevi (KİP: ETIMOLOJI)"
  }
 }

@@ -2,13 +2,21 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
-## GÜNCELLEME 15 Kasım 2026 — 20:30 REELS = "KELİMELERİN TARİHÇESİ" (Metin; bu bölüm aşağıdakilerin hepsinden önce gelir)
-- Metin `gunler/2026-11-15/salary_etym.mp4`'yi izleyip onayladı: "Scheduled görevler için de aynen böyle videolar istiyorum."
-- **20:30 Reels** artık her gün bir "Kelimelerin Tarihçesi" videosudur: kelimenin kökeni → anlam değişimi → YDT örnek cümle, çizgi film sahneleri, Türkçe ses (edge-tts). Tam talimat, spec biçimi, kataloglar ve doğruluk kuralları: **`sistem/VIDEO_ETIMOLOJI.md`** (önce onu oku). Örnek spec: `gunler/2026-11-15/etym_salary.json`. Kelime sırası: `veri/etimoloji_listesi.json`.
-- Üretim: spec'i `gunler/YYYY-MM-DD/etym_<kelime>.json` olarak yükle → `.github/workflows/etym-render.yml` → `<kelime>_etym.mp4` + `<kelime>_etym_kareler.jpg`. Remotion bu iş akışında kullanılır; 14 Kasım'daki "Remotion yasak" kuralı yalnızca 17:30 gönderisi için geçerli kalır.
-- 17:30 gönderisi değişmedi: HyperFrames `"stil": "cizgi"` (aşağıdaki 14 Kasım bölümü).
-- **Görev istemleriyle çelişki**: URETIM görevinin isteminde "Reels de yalnızca çizgi film stilinde (hf/gen.py) üretilir; Remotion yasak" yazıyor. Bu cümle 15 Kasım'dan önce yazıldı; Metin'in 15 Kasım kararıyla **20:30 Reels için geçersizdir**. Reels'i bu bölümdeki yolla üret; 17:30 gönderisi için istem aynen geçerlidir.
-- Kuyrukta Reels kaydı: `bicim`: "animasyon", `uretim`: "etym (Remotion + edge-tts)", `seri`: "kelimelerin-tarihcesi", `mp4` = sha'lı raw adres, `kareler` = kontrol ızgarasının blob adresi.
+## GÜNCELLEME 15 Kasım 2026 — İŞ BÖLÜMÜ: EKİP 17:30, ETİMOLOJİ 20:30 (Metin; bu bölüm aşağıdakilerin hepsinden önce gelir)
+Metin: "Sadece kelime üzerine olmasına gerek yok. Önemli grammar noktaları ya da ayrımları da olabilir… 2 gönderi yapalım. Birini sen yap birini agent ekibi yapsın."
+- **Günde 2 paylaşım** (salı–pazar; pazartesi yayın yok):
+  - **17:30 gönderi → ekip (KİP: URETIM).** Ekip artık yalnızca bu paylaşımı üretir; **Reels üretmez**. Konu kelimeyle sınırlı değildir: önemli bir dilbilgisi noktası, iki yapı arasındaki ayrım (ör. used to / be used to, since / for, although / despite, will / be going to, which / that), sık yapılan hata, kelime/collocation olabilir. Konu Bulucu'nun haritasından seçilir; haftada en az 3 gün grammar noktası ya da ayrımı olsun. Üretim: HyperFrames `"stil": "cizgi"` (aşağıdaki 14 Kasım bölümü).
+  - **20:30 Reels → Etimoloji görevi (KİP: ETIMOLOJI, ekipten ayrı).** Her gün bir "Kelimelerin Tarihçesi" videosu. Talimat: **`sistem/VIDEO_ETIMOLOJI.md`**; örnek spec `gunler/2026-11-15/etym_salary.json`; kelime sırası `veri/etimoloji_listesi.json`. Üretim: spec → `.github/workflows/etym-render.yml` (Remotion + edge-tts) → `<kelime>_etym.mp4` + `<kelime>_etym_kareler.jpg`.
+- **Görev istemleriyle çelişki**: URETIM görevinin isteminde Reels'ten söz eden cümleler 15 Kasım'dan önce yazıldı ve geçersizdir: URETIM Reels üretmez. 14 Kasım'daki "Remotion yasak" kuralı yalnızca ekibin 17:30 videosu içindir.
+- Kuyruk: Etimoloji kaydı `id` = `YYYY-MM-DD-reels`, `bicim`: "animasyon", `uretim`: "etym (Remotion + edge-tts)", `seri`: "kelimelerin-tarihcesi", `onerilen_dilim`: "20:30", `mp4` = sha'lı raw adres, `kareler` = kontrol ızgarasının blob adresi. 20:30 YAYIN görevi bu kaydı diğer Reels gibi yayınlar.
+
+## KİP: ETIMOLOJI (her gün 11:15, pazartesi hariç) — Etimoloji görevi (ekipten bağımsız)
+1. `kuyruk.json`'u oku. Bugünün `YYYY-MM-DD-reels` kaydı varsa hiçbir şey üretme (iki kez üretme). Onaysız bekleyen etimoloji Reels'i 2 ya da daha fazlaysa üretme; günlüğe not düş.
+2. `veri/etimoloji_listesi.json`'dan `bekliyor` durumundaki ilk kelimeyi al. Etimolojiyi listedeki nota ek olarak en az iki kaynaktan (etymonline, Merriam-Webster, Wiktionary, Oxford) doğrula; çelişki varsa kesin olmayanı "rivayete göre" yap ya da kelimeyi atla ve listeye not yaz.
+3. `sistem/VIDEO_ETIMOLOJI.md`'ye göre spec'i ve açıklamayı yaz (örnek: `gunler/2026-11-15/etym_salary.json`), `gunler/YYYY-MM-DD/etym_<kelime>.json` ve `<kelime>_etym.txt` olarak yükle. Actions'ı izle; SPEC HATASI varsa düzelt, en fazla 3 deneme.
+4. **Editör** (Agent aracıyla ayrı bir alt ajan, üretimi görmemiş): `VIDEO_ETIMOLOJI.md` > Editör kontrolü. KALDI → düzelt, yeniden üret (en fazla 2 tur).
+5. `kalite.json`'a (günün klasörü; varsa ekle) `reels` satırlarını yaz, kuyruğa `onay_bekliyor` olarak ekle, listede kelimeyi `uretildi` + tarih yap. Yayınlama yok; Metin Onay Paneli'nden onaylar.
+6. Listede 7'den az `bekliyor` kalırsa listeyi 7'ye tamamla (YDT/YDS'de geçen, kökeni ilginç kelimeler; `kesin` / `rivayet` / `zemin_onerisi` alanlarıyla, kaynakla doğrulanmış). Günlüğe 1–2 satır yaz.
 
 ## GÜNCELLEME 14 Kasım 2026 — ÇİZGİ FİLM STİLİ ZORUNLU (Metin; aşağıdakilerin hepsinden önce gelir)
 - Metin: "Salak salak düz yazı yazıp gelsin istemiyorum." Bütün videolar (17:30 gönderi videosu ve 20:30 Reels) **çizgi film tarzında** üretilir: gökyüzü, kayan bulutlar, gülen güneş, tepeler, sallanan çiçekler; ipe asılı ahşap tabelalar sallanarak iner; büyük çizim (Fluent Emoji 3D) zıplayarak gelir; altyazılar kelime kelime çıkar. Örnek: 14 Kasım "thrive" Reels'i.

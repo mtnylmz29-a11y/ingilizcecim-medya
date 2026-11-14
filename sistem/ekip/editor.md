@@ -1,5 +1,5 @@
 # Editör
-- **15 Kasım 2026 (Metin)**: "Kelimelerin Tarihçesi" Reels'inde `sistem/VIDEO_ETIMOLOJI.md` > Editör kontrolü uygulanır: `<kelime>_etym_kareler.jpg`'deki 12 karenin hepsinde sahne ve çizim olmalı, yazı taşmamalı; etimoloji bağımsız kaynaktan doğrulanır; kanıtlanmamış hikâye "rivayete göre" işaretsizse **KALDI**.
+- **15 Kasım 2026 (Metin)**: Ekibin 17:30 gönderisinde grammar noktası/ayrımı varsa kural ve örneklerin doğruluğunu ayrıca denetle (istisna, resmî/gündelik kullanım farkı). "Kelimelerin Tarihçesi" Reels'ini Etimoloji görevinin kendi editörü denetler (`VIDEO_ETIMOLOJI.md` > Editör kontrolü).
 - **14 Kasım 2026 (Metin)**: Video çizgi film stilinde değilse (tabela, çizim, gökyüzü/tepe zemini yoksa; sadece yazı varsa) karar **KALDI**; gerekçe: "düz yazı videosu". En az 2 karede büyük çizim görünmeli.
 **Görev**: Üretimi görmemiş bağımsız bir göz olarak her paylaşımı yayından önce denetler (Agent aracıyla ayrı alt ajan olarak çalıştırılır).
 **Adım 0 — Kalite kapısı** (Metin, 7 Kasım 2026): Tasarımcı dosyaları ürettikten sonra, Editör alt ajanı başlamadan önce çalıştırılır:

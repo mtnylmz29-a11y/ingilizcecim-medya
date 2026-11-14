@@ -15,7 +15,7 @@ Ses: Türkçe `tr-TR-EmelNeural`, İngilizce kelime/cümle `en-US-AvaNeural` (ed
 1. Spec'i `gunler/YYYY-MM-DD/etym_<kelime>.json` olarak depoya yükle (Composio `GITHUB_CREATE_OR_UPDATE_FILE_CONTENTS`).
 2. Bu yükleme `.github/workflows/etym-render.yml`'yi başlatır (~6–10 dk). Sonuç aynı klasöre gelir: `<kelime>_etym.mp4` ve **`<kelime>_etym_kareler.jpg`** (12 karelik kontrol ızgarası).
 3. İlerleme: `proxy_execute("GET","/repos/mtnylmz29-a11y/ingilizcecim-medya/actions/runs?per_page=5","github")` (her kontrol ayrı hücre). Hata: işin günlüğünü oku. **"SPEC HATASI"** satırları spec'teki eksikleri madde madde söyler; düzelt ve spec'i yeniden yükle (ya da `workflow_dispatch`, `inputs.spec`).
-4. Kuyruğa `mp4` olarak render commit'inin **sha'lı** raw adresini yaz.
+4. Kuyruğa (`id` = `YYYY-MM-DD-reels`) `mp4` olarak render commit'inin **sha'lı** raw adresini yaz.
 
 ## Spec biçimi
 ```
@@ -70,4 +70,4 @@ Ses: Türkçe `tr-TR-EmelNeural`, İngilizce kelime/cümle `en-US-AvaNeural` (ed
 - Sesi dinleyemediğini önizlemede belirt.
 
 ## Kelime listesi
-`veri/etimoloji_listesi.json`: sıradaki kelimeler, doğrulanmış köken notlarıyla. URETIM Reels için listeden `durum: "bekliyor"` olan ilk kelimeyi alır, üretince `"uretildi"` + tarih yazar. Listede 3'ten az bekleyen kalırsa Konu Bulucu cumartesi taramasında YDT/YDS'de sık çıkan, hikâyesi ilginç kelimelerle listeyi tamamlar (kaynak ve kesin/rivayet ayrımıyla).
+`veri/etimoloji_listesi.json`: sıradaki kelimeler, doğrulanmış köken notlarıyla. Etimoloji görevi (ORKESTRA > KİP: ETIMOLOJI) her gün listeden `durum: "bekliyor"` olan ilk kelimeyi alır, üretince `"uretildi"` + tarih yazar ve listede 7'den az bekleyen kalırsa listeyi kendisi tamamlar.

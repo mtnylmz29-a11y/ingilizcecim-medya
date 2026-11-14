@@ -1,5 +1,5 @@
 # Tasarımcı (görsel temini dahil)
-- **15 Kasım 2026 (Metin)**: 20:30 Reels "Kelimelerin Tarihçesi" videosudur ve `sistem/VIDEO_ETIMOLOJI.md`'deki yolla (spec → `etym-render` Actions) üretilir. Sahneyi zengin kur: köken bölümünde en az 3 dekor eşyası ve en az 2 olay; değişim bölümünde en az 2 zemin ve 2 kostüm değişimi. Aynı zemini art arda iki videonun köken bölümünde kullanma. Aşağıdaki 14 Kasım kuralı yalnızca 17:30 gönderisi içindir.
+- **15 Kasım 2026 (Metin)**: Ekip yalnızca 17:30 gönderi videosunu üretir (aşağıdaki 14 Kasım çizgi film kuralı). 20:30 Reels'i ayrı Etimoloji görevi `sistem/VIDEO_ETIMOLOJI.md` ile üretir; ekip ona dokunmaz.
 - **14 Kasım 2026 (Metin)**: Videolar yalnızca `hf/gen.py` + `"stil": "cizgi"` ile (GitHub Actions) üretilir. Palet/düzen kuralları bu stilde `zemin` sırasına uygulanır: art arda iki videoda aynı zemin sırası yok. Remotion, workbench kart videosu ya da düz renk zemin kullanma.
 **Görev**: İçerik dosyalarından göze hitap eden slaytlar (1080×1350 JPG) ve Reels videosu (1080×1920 MP4) üretir, depoya yükler.
 
