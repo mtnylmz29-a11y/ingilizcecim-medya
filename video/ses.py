@@ -1,4 +1,4 @@
-"""Spec'i doğrular, edge-tts ile sesleri üretir, zaman çizelgesini yazar.
+"""Spec'i doğrular, Gemini TTS (ses Kore) ile sesleri üretir, zaman çizelgesini yazar.
 Kullanım: python ses.py <spec.json> <is_klasoru>   ->  <is>/veri.json ({"veri": {spec, tl}}) + <is>/ses/*.wav
 Biçimler: "bicim": "etym" (varsayılan, Kelimelerin Tarihçesi) ya da "dunya" (Dünya turu)."""
 import json, os, re, subprocess, sys, time
@@ -158,19 +158,58 @@ if hata:
     print("SPEC HATASI:\n- " + "\n- ".join(hata))
     sys.exit(2)
 
-# ---- ses ----
+# ---- ses: Gemini TTS, ses 'Kore' (Metin, 15 Kasım 2026: edge-tts/Kokoro kullanılmaz; kota dolarsa iş durur) ----
+import base64, hashlib, urllib.request, wave
+GKEY = os.environ.get("GEMINI_API_KEY", "")
+if not GKEY:
+    sys.exit("SES HATASI: GEMINI_API_KEY yok (etym-render.yml env)")
+GSES = spec.get("gemini_ses", "Kore")
+GMODEL = spec.get("gemini_model", "gemini-2.5-flash-preview-tts")
+USLUP = {"tr": "Sıcak, net ve enerjik bir öğretmen sesiyle Türkçe söyle: ",
+         "en": "Say in clear, natural American English, like a friendly teacher: ",
+         "us": "Say in clear, natural American English, like a friendly teacher: ",
+         "gb": "Say in clear, natural British English, like a friendly teacher: "}
+DILADI = {"ja": "Japanese", "zh": "Mandarin Chinese", "ar": "Arabic", "fr": "French", "de": "German", "es": "Spanish",
+          "it": "Italian", "ru": "Russian", "ko": "Korean", "pt": "Brazilian Portuguese", "el": "Greek", "hi": "Hindi",
+          "nl": "Dutch", "pl": "Polish", "sv": "Swedish", "he": "Hebrew", "th": "Thai", "fa": "Persian", "cs": "Czech"}
+CD = os.environ.get("SES_CACHE", "hf/ses_cache"); os.makedirs(CD, exist_ok=True)
+
+
+def gemini(text, dil):
+    on = USLUP.get(dil) or f"Say clearly and naturally in {DILADI.get(dil, dil)}, like a friendly teacher: "
+    body = json.dumps({"contents": [{"parts": [{"text": on + text}]}],
+                       "generationConfig": {"responseModalities": ["AUDIO"],
+                                            "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GSES}}}}}).encode()
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GMODEL}:generateContent"
+    for deneme in range(5):
+        try:
+            req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json", "x-goog-api-key": GKEY})
+            d = json.loads(urllib.request.urlopen(req, timeout=120).read())
+            return base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+        except Exception as ex:
+            ayr = ""
+            try: ayr = ex.read().decode()[:600]
+            except Exception: pass
+            print("gemini tekrar", deneme + 1, type(ex).__name__, str(ex)[:120], ayr, flush=True)
+            if getattr(ex, "code", 0) == 429 and deneme >= 2:
+                break
+            time.sleep(25 * (deneme + 1))
+    sys.exit(f"SES HATASI: Gemini TTS kullanilamadi (kota?): {text}")
+
+
 os.makedirs(f"{IS}/ses", exist_ok=True)
 t, out = 0.3, []
 for i, l in enumerate(ses):
-    mp3 = f"{IS}/ses/{i:02d}_{l['id']}.mp3"
-    wav = mp3[:-4] + ".wav"
-    for _ in range(5):  # edge-tts bazen ses döndürmez; tekrar dene
-        r = subprocess.run([sys.executable, "-m", "edge_tts", "--voice", V[l["dil"]], f"--rate={l.get('hiz', '-3%')}", "--text", l["metin"], "--write-media", mp3], capture_output=True)
-        if r.returncode == 0 and os.path.exists(mp3) and os.path.getsize(mp3) > 1000:
-            break
-        time.sleep(3)
-    else:
-        sys.exit(f"edge-tts başarısız: {l['id']}")
+    mp3 = f"{IS}/ses/{i:02d}_{l['id']}.ham.wav"
+    wav = f"{IS}/ses/{i:02d}_{l['id']}.wav"
+    cp = os.path.join(CD, hashlib.md5(f"{GSES}|{l['dil']}|{l['metin']}".encode()).hexdigest() + ".wav")
+    if not os.path.exists(cp):
+        pcm = gemini(l["metin"], l["dil"])
+        with wave.open(cp, "wb") as w:
+            w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(pcm)
+        print("gemini", l["id"], flush=True)
+        time.sleep(21)  # ucretsiz katman: dakikada ~3 istek
+    mp3 = cp
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp3, "-af",
                     "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,apad=pad_dur=0.04",
                     "-ar", "48000", "-ac", "1", wav], check=True)
