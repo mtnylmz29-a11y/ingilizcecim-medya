@@ -2,7 +2,7 @@
  "tarih": "2026-11-15",
  "karar": "GECTI",
  "kaldi": 0,
- "uyari": 0,
+ "uyari": 4,
  "kontroller": [
   {
    "paylasim": "reels",
@@ -27,7 +27,97 @@
    "kontrol": "ses",
    "durum": "GECTI",
    "ayrinti": "-14 LUFS, 43 sn, 1080x1920 30 fps H.264"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "sahne 1 (kapak) ses metni",
+   "durum": "UYARI",
+   "ayrinti": "sesli videoda bu sahne sessiz kalır"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "sahne 6 (kapanis) ses metni",
+   "durum": "UYARI",
+   "ayrinti": "sesli videoda bu sahne sessiz kalır"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "metin kontrolleri",
+   "durum": "GECTI",
+   "ayrinti": "6 sahne tarandı"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "açıklama uzunluğu",
+   "durum": "GECTI",
+   "ayrinti": "336/2200 karakter"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "etiket sayısı",
+   "durum": "GECTI",
+   "ayrinti": "8/15"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ingilizcecim.com imzası",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "etkileşim sorusu",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "video süresi",
+   "durum": "UYARI",
+   "ayrinti": "59.6 sn (öneri 20–45)"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "çözünürlük",
+   "durum": "GECTI",
+   "ayrinti": "(1080, 1920)"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ses kanalı",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ses tepe düzeyi",
+   "durum": "UYARI",
+   "ayrinti": "-1.0 dBFS"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ilk ses (kanca)",
+   "durum": "GECTI",
+   "ayrinti": "1.0. saniyede"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "palet çeşitliliği",
+   "durum": "GECTI",
+   "ayrinti": "deniz-cayir-senlik-gece"
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "ikon tekrarı (7 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
+  },
+  {
+   "paylasim": "gonderi",
+   "kontrol": "konu tekrarı (14 gün)",
+   "durum": "GECTI",
+   "ayrinti": ""
   }
  ],
- "not": "kalite.py bu biçimi (etym) henüz denetlemiyor; kontrol elle yapıldı."
+ "not": "kalite.py bu biçimi (etym) henüz denetlemiyor; kontrol elle yapıldı. | gonderi: kalite.py çıktısı (sothat, cizgi). Kapak/kapanış 'ses metni' uyarıları cizgi biçiminde ses_tr kullanıldığı için yanlış alarm."
 }
