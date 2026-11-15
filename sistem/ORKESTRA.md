@@ -2,6 +2,14 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 15 Kasım 2026 (gece) — VİDEOLARI METİN'İN BİLGİSAYARI YAPAR, DENETİMİ DENETMEN YAPAR (Metin; bu bölüm aşağıdakilerin HEPSİNDEN önce gelir, "(akşam)" bölümüyle çelişirse geçerli olan budur)
+- **Yerel üretim**: Videoları artık Metin'in bilgisayarındaki Claude Code, `lemo-opuscar` kütüphanesiyle üretir ve depoya yükler. Tarif: `sistem/YEREL_URETIM.md`. Yerel kayıtlar kuyrukta `"uretim": "yerel (…)"` ve `"durum": "denetimde"` olarak gelir.
+- **Bulut yedeği (günde en fazla 1 video)**: Sabah Üretimi'nin 10:45 üretim görevi kapatıldı. Akşam Üretimi 11:15'te bakar: o günün tarihini taşıyan **herhangi bir** kuyruk kaydı (`YYYY-MM-DD-gonderi` ya da `YYYY-MM-DD-reels`) varsa hiçbir şey üretmez; yoksa yalnızca **bir** "Kelimelerin Tarihçesi" Reels'i (20:30) üretir. Bulutta üretilen video da "Görsel zenginlik standardı"na uyar.
+- **Denetim artık Denetmen'in işi** (çapraz denetim kaldırıldı): Her üretim (yerel ya da bulut) `denetimde` olarak kuyruğa girer. "ingilizcecim · Denetmen denetimi" görevi (trig_01VBbs1s9v9f7EfTHqN69Noa) gün içinde düzenli çalışır, ayrıca bulut üretimi bitince tetiklenir. **KİP: DENETIM**: `denetimde` her kayıt için mp4'ü indir, en az 8 kare çıkar ve incele; bilgiyi en az 2 kaynakla bağımsız doğrula; yazım, ses, süre (35–60 sn), 1080×1920, dosya boyutu (<50 MB) ve "Görsel zenginlik standardı"nı kontrol et. GECTI → `onay_bekliyor` + `denetim` {denetci: "Denetmen", sonuc, notlar, zaman}. DUZELT → yerel kayıtta `yerel_duzeltme` + `duzeltme_notu` "[Denetmen] …" (Metin'e tek satır: "Bilgisayarındaki Claude Code'a 'düzeltmeleri yap' de."); bulut kaydında `duzeltme_istendi` + not ve Düzeltme görevini (trig_01LU8ENWGrVzqwBA7fh6hrsN) tetikle. 2 turdan sonra hâlâ sorun varsa `onay_bekliyor` yap ve kalan sorunları `denetim.notlar`a yaz.
+- **KİP: DUZELTME**: not "[Denetmen]" (ya da eski "[… denetimi]") ile başlıyorsa düzeltmeden sonra `denetimde` yap ve Denetmen denetimini tekrar tetikle; Metin'in notuysa `onay_bekliyor`. Yerel kayıtların (`uretim` "yerel" ile başlar) videosu bulutta yeniden üretilmez; yalnızca açıklama/başlık gibi metin alanları bulutta düzeltilebilir, video düzeltmesi `yerel_duzeltme` ile Metin'e bırakılır.
+- **YAYIN**: `denetimde` ve `yerel_duzeltme` kayıtlar yayınlanmaz. Yerel kayıtlar da diğerleri gibi yalnızca `onaylandi` iken, `onerilen_dilim` saatinde yayınlanır.
+- Masalar: Sabah Üretimi = 17:30 yayını + düzeltmeler; Akşam Üretimi = bulut yedeği + 20:30 yayını + yorumlar; Denetmen = denetim + konu planı + haftalık rapor.
+
 ## GÜNCELLEME 15 Kasım 2026 (akşam) — 3 MASA, ÇAPRAZ DENETİM, GÖRSEL ZENGİNLİK (Metin; bu bölüm aşağıdakilerin HEPSİNDEN önce gelir)
 
 ### Üç masa
