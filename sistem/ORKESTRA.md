@@ -2,6 +2,34 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 15 Kasım 2026 (akşam) — 3 MASA, ÇAPRAZ DENETİM, GÖRSEL ZENGİNLİK (Metin; bu bölüm aşağıdakilerin HEPSİNDEN önce gelir)
+
+### Üç masa
+Ekip artık Metin'in Ofis sayfasında 3 masa olarak görünür (https://claude.ai/artifact/8Hr6tXMcgJwygX187PRtxM):
+- **Sabah Üretimi**: 17:30 gönderisi — KİP: URETIM, KİP: DUZELTME (gönderi kayıtları), KİP: YAYIN 17:30.
+- **Akşam Üretimi**: 20:30 Kelimelerin Tarihçesi Reels'i — KİP: ETIMOLOJI, KİP: DUZELTME (`-reels` kayıtları), KİP: YAYIN 20:30, KİP: TOPLULUK.
+- **Denetmen**: KİP: TARAMA, KİP: IDARECI, genel istekler.
+Metin masalara Ofis'ten mesaj yazar (`veri/istekler.json`, "ingilizcecim · Ofis mesajları" görevi).
+
+### Çapraz denetim (Metin: "Sabah üretiminin ürünlerini akşam üretimi, akşam üretiminin ürünlerini sabah üretimi kontrol etsin.")
+- Üretim bitince kaydı kuyruğa **`onay_bekliyor` değil `denetimde`** olarak yaz, Metin'e önizleme gönderme, sonra Claude_Code_Remote `fire_trigger` ile **trig_01VBbs1s9v9f7EfTHqN69Noa** ("ingilizcecim · Çapraz denetim") görevini tetikle. Üretim oturumunun kendi "Editör alt ajanı" adımı kalkar; `kalite.py` gibi otomatik kontroller ve kendi kare kontrolün devam eder.
+- Sabah Üretimi'nin işini (gönderi) **Akşam Üretimi**, Akşam Üretimi'nin işini (`-reels`) **Sabah Üretimi** denetler. Denetçi üretimi görmemiş ayrı bir oturumdur.
+- **KİP: CAPRAZ_DENETIM**: `denetimde` her kayıt için mp4'ü indir, en az 8 kare çıkar ve incele; bilgileri (etimoloji, dilbilgisi, örnekler) en az 2 kaynakla bağımsız doğrula; yazım, ses, süre ve aşağıdaki "Görsel zenginlik standardı"nı kontrol et. GECTI → `onay_bekliyor` + `denetim` {denetci, sonuc, notlar, zaman}. DUZELT → `duzeltme_istendi` + `duzeltme_notu` "[<masa> denetimi] …" + `denetim_turu`+1, Düzeltme görevini (trig_01LU8ENWGrVzqwBA7fh6hrsN) tetikle. 2 turdan sonra hâlâ sorun varsa `onay_bekliyor` yap ve kalan sorunları `denetim.notlar`a yaz.
+- **KİP: DUZELTME**: not "[… denetimi]" ile başlıyorsa düzeltmeden sonra durumu yine `denetimde` yap ve Çapraz denetim'i tekrar tetikle; Metin'in notuysa eskisi gibi `onay_bekliyor`.
+- **YAYIN**: `denetimde` kayıt asla yayınlanmaz. Yedek: URETIM/YAYIN başlarken 60 dakikadan eski `denetimde` kayıt görürsen Çapraz denetim'i tekrar tetikle.
+
+### Görsel zenginlik standardı (Metin: "15 Kasım salary gibi görsel yönden zengin olsun"; 14 Kasım "çizgi film stili zorunlu" kuralının yerine geçer)
+Zorunlu olan tek bir stil değil, **zenginliktir**. Her video:
+- Bir **karakter ve hikâye** taşır: konuşan, mimiği değişen karakter(ler); yeri/dönemi belli sahne arka planları; en az 5 farklı sahne; kelime kelime çıkan, vurgulu altyazı; seslendirme. Sadece yazı, düz zemin ya da kart dizisi olan video **KALDI**.
+- **Stil havuzu** (Metin'in örnekleri; aynı stil art arda en fazla 2 gün, haftada en az 3 farklı stil, kuyrukta `stil` alanına yaz):
+  - **A · Resimli hikâye kitabı**: masal/çizgi roman kitabı tarzı, sıcak renkli, kâğıt dokulu çerçeveli kareler; karakter birinci ağızdan anlatır ("1300'lerde Venedik'te doğdum…"); yavaş zoom/kaydırma; serif altyazı. Etimoloji ve tarihî kişiler için ideal.
+  - **B · Düz vektör skeç**: kalın konturlu, düz renkli yerel tipler (köylü, öğretmen, öğrenci, işçi), iki karakter diyaloğu, mimikler; köy evi, sınıf, şantiye gibi sahneler. "Yanlış/doğru" ve dilbilgisi gönderileri için ideal.
+  - **C · Defter / doodle**: bej kâğıt, el yazısı başlık, iple birbirine bağlı "delil" kartları, sevimli maskot; dedektif anlatımı. Soru tuzakları için ideal.
+  - **D · Stickman / minimal karakter**: basit çizgi karakterlerle hızlı, komik anlatım.
+  - **E · HyperFrames `cizgi`** (gökyüzü, tabelalar): havuzdaki seçeneklerden biri.
+- **Araçlar**: mevcut yol (GitHub Actions + HyperFrames/Remotion + TTS) devam eder. Ek olarak görüntü üretim modelleri (Elevenlabs `creative_generate_image`, Canva `generate-image`) ile sahne kareleri üretilebilir; aynı karakter için her karede aynı karakter tarifini kullan (tutarlılık). GitHub'daki açık kaynak animasyon/stickman/2D karakter repoları Actions'ta denenebilir. Yeni bir araç ilk kez kullanıldığında günlüğe not düş; çalışmazsa havuzdaki başka bir stile dön, yayın aksamasın.
+- **Sınırlar**: başka hesapların karakterlerini, logosunu, filigranını, sesini ya da sahnelerini kopyalama — özgün karakterler. Yaşayan gerçek kişi çizilmez; tarihî kişiler serbest. Görüntü üretimi kredi harcar: video başına en fazla ~12 görüntü (tekrarlar dahil).
+
 ## GÜNCELLEME 15 Kasım 2026 — İŞ BÖLÜMÜ: EKİP 17:30, ETİMOLOJİ 20:30 (Metin; bu bölüm aşağıdakilerin hepsinden önce gelir)
 Metin: "Sadece kelime üzerine olmasına gerek yok. Önemli grammar noktaları ya da ayrımları da olabilir… 2 gönderi yapalım. Birini sen yap birini agent ekibi yapsın."
 - **Günde 2 paylaşım** (salı–pazar; pazartesi yayın yok):
