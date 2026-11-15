@@ -7,9 +7,11 @@ Bu dosyayı Metin'in bilgisayarındaki (Windows) Claude Code okur ve uygular. Am
 | Ne | Yer |
 |---|---|
 | Video kütüphanesi (lemo-opuscar) | `C:\Users\Metin\lemo-opuscar` (zaten kurulu; `LIB` budur) |
-| Ekibin GitHub deposu (yerel kopya) | `C:\Users\Metin\ingilizcecim-medya` — yoksa: `git clone https://github.com/mtnylmz29-a11y/ingilizcecim-medya.git C:\Users\Metin\ingilizcecim-medya` |
-| Film çalışma klasörleri | `C:\Users\Metin\ingilizcecim-filmler\<YYYY-MM-DD>-<kisa-ad>\` (her video için ayrı klasör; küçük harf, rakam, tire) |
-| Depoya yüklenecek son dosyalar | `C:\Users\Metin\ingilizcecim-medya\gunler\<YYYY-MM-DD>\` |
+| Ekibin GitHub deposu (yerel kopya) | `E:\ingilizcecim\ingilizcecim-medya` — yoksa: `git clone https://github.com/mtnylmz29-a11y/ingilizcecim-medya.git E:\ingilizcecim\ingilizcecim-medya` |
+| Film çalışma klasörleri | `E:\ingilizcecim\filmler\<YYYY-MM-DD>-<kisa-ad>\` (her video için ayrı klasör; küçük harf, rakam, tire) |
+| Depoya yüklenecek son dosyalar | `E:\ingilizcecim\ingilizcecim-medya\gunler\<YYYY-MM-DD>\` |
+
+C: diskinde yer yok: depo, film klasörleri ve tüm geçici/ara dosyalar (render kareleri, ses parçaları, npm/pip önbellekleri dahil) **E: diskinde** tutulur; C:'ye yeni dosya yazma. Kütüphane `C:\Users\Metin\lemo-opuscar`'da kalır ama çıktıları her zaman E:'deki film klasörüne gider. Gerekirse `TEMP`/`TMP` değişkenlerini `E:\ingilizcecim\tmp` yap.
 
 Her işe başlamadan önce depoda `git pull` yap. Çalışma dosyaları (TREATMENT.md, kareler, ses parçaları) film klasöründe kalır; depoya **yalnızca** aşağıdaki son dosyalar gider.
 
@@ -53,7 +55,7 @@ Her işe başlamadan önce depoda `git pull` yap. Çalışma dosyaları (TREATME
 
 ## 5. Depoya yükleme
 
-1. Dosyaları `C:\Users\Metin\ingilizcecim-medya\gunler\<YYYY-MM-DD>\` içine koy:
+1. Dosyaları `E:\ingilizcecim\ingilizcecim-medya\gunler\<YYYY-MM-DD>\` içine koy:
    - `<ad>.mp4` (ad: küçük harf, ör. `quarantine_etym` ya da `so_such`)
    - `<ad>_kareler.jpg` (8 karelik kontrol tablosu)
    - `<ad>.srt`
