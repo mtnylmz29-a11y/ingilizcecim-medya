@@ -425,7 +425,7 @@
  {
   "id": "2026-11-15-reels",
   "tarih": "2026-11-15",
-  "durum": "onay_bekliyor",
+  "durum": "duzeltme_istendi",
   "kademe": "ydt+yds",
   "sinif": "YDT · YDS",
   "bicim": "animasyon",
@@ -440,7 +440,8 @@
   "sure_sn": 45.5,
   "kalite": "GECTI · 0 KALDI · 2 UYARI (harita etiketleri yakın; editör 1. tur UYARI, düzeltildi)",
   "editor": "UYARI → düzeltildi (v3); ses dinlenemedi",
-  "onerilen_dilim": "20:30"
+  "onerilen_dilim": "20:30",
+  "duzeltme_notu": "Metin: Seslendirmeyi baştan Gemini TTS 'Kore' sesiyle yap (So/Such/So That videosundaki ses). edge-tts kullanma. Seslendirme Gemini TTS ile, ses 'Kore' (Metin, 15 Kasım: edge-tts sesi kötü okuyor, kullanılmayacak). Ayarlar hf/gen.py'deki gemini() ile aynı: model gemini-2.5-flash-preview-tts, voiceName 'Kore', Türkçe satırlar için 'Sıcak, net ve enerjik bir öğretmen sesiyle Türkçe söyle: ', İngilizce satırlar için 'Say in clear, natural American English, like a friendly teacher: ' öneki; 24 kHz 16-bit PCM. Ücretsiz kota dakikada ~3 istek: istekler arasında ~21 sn bekle, her satırı önbelleğe al. Görüntü aynı kalsın; altyazı ve sahne zamanlarını yeni sese göre ayarla. etym-render iş akışına GEMINI_API_KEY secret'ını ekleyerek ya da hf/gen.py'deki gemini() fonksiyonunu kullanarak yap."
  },
  {
   "id": "2026-11-16-reels",
@@ -463,6 +464,6 @@
   "onerilen_dilim": "20:30",
   "durum": "yerel_duzeltme",
   "denetim_turu": 1,
-  "duzeltme_notu": "[Denetmen] Video genel olarak çok iyi (crayon-book, Nino karakteri, 8 sahne, kanca, kelime kelime altyazı, 57 sn, 1080×1920, 40 MB, etimoloji etymonline + Merriam-Webster ile doğru). Düzeltilecekler:\n1) Kapanış kartı (~54–57 sn): 'ingilizcecim.com' yazısında 'c' ile 'e' harfleri üst üste biniyor, telefonda 'ingilizœcim.com' gibi okunuyor. Harf aralığını açın (letter-spacing) ya da bu yazıda başka bir yazı tipi kullanın; marka adı net okunmalı.\n2) Harita sahnesi (~36–41 sn): 'İngiltere' etiketi adanın değil Fransa kıyısının üstünde duruyor ve ada kıtaya yapışık çiziliyor. Ada ile kıta arasına deniz (Manş) boşluğu bırakın, 'İngiltere' etiketini adanın üstüne taşıyın; 'disastro' etiketi kesikli rota çizgisiyle çakışmasın.\n3) (İsteğe bağlı) '1500'lerde İtalya'da doğdum' ifadesi: kaynaklar İtalyanca disastro için kesin bir ilk tarih vermiyor (Fransızca désastre 1560'lar). 'İtalya'da doğdum' demek yeterli; tarih kalacaksa sorun değil.\nSes, süre, boyut, yazım ve altyazının geri kalanında sorun yok; aynı adla yeniden yükleyip mp4/kareler adreslerini yeni sha ile güncelleyin."
+  "duzeltme_notu": "[Denetmen] Video genel olarak çok iyi (crayon-book, Nino karakteri, 8 sahne, kanca, kelime kelime altyazı, 57 sn, 1080×1920, 40 MB, etimoloji etymonline + Merriam-Webster ile doğru). Düzeltilecekler:\n1) Kapanış kartı (~54–57 sn): 'ingilizcecim.com' yazısında 'c' ile 'e' harfleri üst üste biniyor, telefonda 'ingilizœcim.com' gibi okunuyor. Harf aralığını açın (letter-spacing) ya da bu yazıda başka bir yazı tipi kullanın; marka adı net okunmalı.\n2) Harita sahnesi (~36–41 sn): 'İngiltere' etiketi adanın değil Fransa kıyısının üstünde duruyor ve ada kıtaya yapışık çiziliyor. Ada ile kıta arasına deniz (Manş) boşluğu bırakın, 'İngiltere' etiketini adanın üstüne taşıyın; 'disastro' etiketi kesikli rota çizgisiyle çakışmasın.\n3) (İsteğe bağlı) '1500'lerde İtalya'da doğdum' ifadesi: kaynaklar İtalyanca disastro için kesin bir ilk tarih vermiyor (Fransızca désastre 1560'lar). 'İtalya'da doğdum' demek yeterli; tarih kalacaksa sorun değil.\nSes, süre, boyut, yazım ve altyazının geri kalanında sorun yok; aynı adla yeniden yükleyip mp4/kareler adreslerini yeni sha ile güncelleyin.\n[Metin] Ek: seslendirmeyi de Gemini TTS 'Kore' sesiyle baştan yap (edge-tts yok). Seslendirme Gemini TTS ile, ses 'Kore' (Metin, 15 Kasım: edge-tts sesi kötü okuyor, kullanılmayacak). Ayarlar hf/gen.py'deki gemini() ile aynı: model gemini-2.5-flash-preview-tts, voiceName 'Kore', Türkçe satırlar için 'Sıcak, net ve enerjik bir öğretmen sesiyle Türkçe söyle: ', İngilizce satırlar için 'Say in clear, natural American English, like a friendly teacher: ' öneki; 24 kHz 16-bit PCM. Ücretsiz kota dakikada ~3 istek: istekler arasında ~21 sn bekle, her satırı önbelleğe al."
  }
 ]
