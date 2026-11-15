@@ -201,7 +201,7 @@
         "dataAttributes": {
           "data-composition-id": "main",
           "data-start": "0",
-          "data-duration": "43.69",
+          "data-duration": "59.58",
           "data-width": "1080",
           "data-height": "1920"
         },
@@ -213,7 +213,7 @@
           "height": 1920
         },
         "time": 0,
-        "url": "http://127.0.0.1:40593/",
+        "url": "http://127.0.0.1:33843/",
         "line": 68
       },
       {
@@ -224,7 +224,7 @@
         "dataAttributes": {
           "data-composition-id": "main",
           "data-start": "0",
-          "data-duration": "43.69",
+          "data-duration": "59.58",
           "data-width": "1080",
           "data-height": "1920"
         },
@@ -236,7 +236,7 @@
           "height": 1920
         },
         "time": 0,
-        "url": "http://127.0.0.1:40593/",
+        "url": "http://127.0.0.1:33843/",
         "line": 68
       },
       {
@@ -247,7 +247,7 @@
         "dataAttributes": {
           "data-composition-id": "main",
           "data-start": "0",
-          "data-duration": "43.69",
+          "data-duration": "59.58",
           "data-width": "1080",
           "data-height": "1920"
         },
@@ -258,8 +258,8 @@
           "width": 1080,
           "height": 1920
         },
-        "time": 2.427,
-        "url": "http://127.0.0.1:40593/",
+        "time": 3.31,
+        "url": "http://127.0.0.1:33843/",
         "line": 68
       },
       {
@@ -270,7 +270,7 @@
         "dataAttributes": {
           "data-composition-id": "main",
           "data-start": "0",
-          "data-duration": "43.69",
+          "data-duration": "59.58",
           "data-width": "1080",
           "data-height": "1920"
         },
@@ -281,8 +281,8 @@
           "width": 1080,
           "height": 1920
         },
-        "time": 7.282,
-        "url": "http://127.0.0.1:40593/",
+        "time": 9.93,
+        "url": "http://127.0.0.1:33843/",
         "line": 68
       }
     ]
@@ -290,51 +290,20 @@
   "layout": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 7,
-    "infoCount": 12,
+    "warningCount": 6,
+    "infoCount": 13,
     "findings": [
-      {
-        "code": "rotation_pivot_drift",
-        "severity": "warning",
-        "time": 26.699,
-        "selector": "g.isin",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 767.8050000000001,
-          "y": 225.06500000000003,
-          "width": 320.57,
-          "height": 320.57
-        },
-        "rect": {
-          "left": 767.8050000000001,
-          "top": 225.06500000000003,
-          "right": 1088.375,
-          "bottom": 545.635,
-          "width": 320.57,
-          "height": 320.57
-        },
-        "message": "Rotating element's bounding-box center drifts 35px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
-        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
-        "firstSeen": 26.699,
-        "lastSeen": 26.699,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          26.699
-        ]
-      },
       {
         "code": "container_overflow",
         "severity": "warning",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#bayrak > path:nth-of-type(1)",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
           "left": -10,
-          "top": 177.97,
+          "top": 173.31,
           "right": 1090,
-          "bottom": 202.97,
+          "bottom": 198.31,
           "width": 1100,
           "height": 25
         },
@@ -342,9 +311,9 @@
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
           "left": 0,
-          "top": 157.97,
+          "top": 153.31,
           "right": 1080,
-          "bottom": 277.97,
+          "bottom": 273.31,
           "width": 1080,
           "height": 120
         },
@@ -356,30 +325,31 @@
         "sourceFile": "index.html",
         "bbox": {
           "x": -10,
-          "y": 177.97,
+          "y": 173.31,
           "width": 1100,
           "height": 25
         },
-        "firstSeen": 31.554,
-        "lastSeen": 36.408,
-        "occurrences": 2,
+        "firstSeen": 36.41,
+        "lastSeen": 49.65,
+        "occurrences": 3,
         "heldMs": 0,
         "times": [
-          31.554,
-          36.408
+          36.41,
+          43.03,
+          49.65
         ]
       },
       {
         "code": "container_overflow",
         "severity": "warning",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#bayrak > path:nth-of-type(6)",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
           "left": 360,
-          "top": 224.97,
+          "top": 220.31,
           "right": 430,
-          "bottom": 284.97,
+          "bottom": 280.31,
           "width": 70,
           "height": 60
         },
@@ -387,9 +357,9 @@
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
           "left": 0,
-          "top": 157.97,
+          "top": 153.31,
           "right": 1080,
-          "bottom": 277.97,
+          "bottom": 273.31,
           "width": 1080,
           "height": 120
         },
@@ -400,30 +370,31 @@
         "sourceFile": "index.html",
         "bbox": {
           "x": 360,
-          "y": 224.97,
+          "y": 220.31,
           "width": 70,
           "height": 60
         },
-        "firstSeen": 31.554,
-        "lastSeen": 36.408,
-        "occurrences": 2,
+        "firstSeen": 36.41,
+        "lastSeen": 49.65,
+        "occurrences": 3,
         "heldMs": 0,
         "times": [
-          31.554,
-          36.408
+          36.41,
+          43.03,
+          49.65
         ]
       },
       {
         "code": "container_overflow",
         "severity": "warning",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#bayrak > path:nth-of-type(7)",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
           "left": 450,
-          "top": 227.97,
+          "top": 223.31,
           "right": 520,
-          "bottom": 287.97,
+          "bottom": 283.31,
           "width": 70,
           "height": 60
         },
@@ -431,9 +402,9 @@
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
           "left": 0,
-          "top": 157.97,
+          "top": 153.31,
           "right": 1080,
-          "bottom": 277.97,
+          "bottom": 273.31,
           "width": 1080,
           "height": 120
         },
@@ -444,30 +415,31 @@
         "sourceFile": "index.html",
         "bbox": {
           "x": 450,
-          "y": 227.97,
+          "y": 223.31,
           "width": 70,
           "height": 60
         },
-        "firstSeen": 31.554,
-        "lastSeen": 36.408,
-        "occurrences": 2,
+        "firstSeen": 36.41,
+        "lastSeen": 49.65,
+        "occurrences": 3,
         "heldMs": 0,
         "times": [
-          31.554,
-          36.408
+          36.41,
+          43.03,
+          49.65
         ]
       },
       {
         "code": "container_overflow",
         "severity": "warning",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#bayrak > path:nth-of-type(8)",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
           "left": 540,
-          "top": 227.97,
+          "top": 223.31,
           "right": 610,
-          "bottom": 287.97,
+          "bottom": 283.31,
           "width": 70,
           "height": 60
         },
@@ -475,9 +447,9 @@
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
           "left": 0,
-          "top": 157.97,
+          "top": 153.31,
           "right": 1080,
-          "bottom": 277.97,
+          "bottom": 273.31,
           "width": 1080,
           "height": 120
         },
@@ -488,30 +460,31 @@
         "sourceFile": "index.html",
         "bbox": {
           "x": 540,
-          "y": 227.97,
+          "y": 223.31,
           "width": 70,
           "height": 60
         },
-        "firstSeen": 31.554,
-        "lastSeen": 36.408,
-        "occurrences": 2,
+        "firstSeen": 36.41,
+        "lastSeen": 49.65,
+        "occurrences": 3,
         "heldMs": 0,
         "times": [
-          31.554,
-          36.408
+          36.41,
+          43.03,
+          49.65
         ]
       },
       {
         "code": "container_overflow",
         "severity": "warning",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#bayrak > path:nth-of-type(9)",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
           "left": 630,
-          "top": 224.97,
+          "top": 220.31,
           "right": 700,
-          "bottom": 284.97,
+          "bottom": 280.31,
           "width": 70,
           "height": 60
         },
@@ -519,9 +492,9 @@
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
           "left": 0,
-          "top": 157.97,
+          "top": 153.31,
           "right": 1080,
-          "bottom": 277.97,
+          "bottom": 273.31,
           "width": 1080,
           "height": 120
         },
@@ -532,23 +505,24 @@
         "sourceFile": "index.html",
         "bbox": {
           "x": 630,
-          "y": 224.97,
+          "y": 220.31,
           "width": 70,
           "height": 60
         },
-        "firstSeen": 31.554,
-        "lastSeen": 36.408,
-        "occurrences": 2,
+        "firstSeen": 36.41,
+        "lastSeen": 49.65,
+        "occurrences": 3,
         "heldMs": 0,
         "times": [
-          31.554,
-          36.408
+          36.41,
+          43.03,
+          49.65
         ]
       },
       {
         "code": "escaped_container",
         "severity": "warning",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#zp4",
         "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
         "rect": {
@@ -578,25 +552,26 @@
           "width": 620,
           "height": 620
         },
-        "firstSeen": 31.554,
-        "lastSeen": 36.408,
-        "occurrences": 2,
+        "firstSeen": 36.41,
+        "lastSeen": 49.65,
+        "occurrences": 3,
         "heldMs": 0,
         "times": [
-          31.554,
-          36.408
+          36.41,
+          43.03,
+          49.65
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 2.427,
+        "time": 3.31,
         "selector": "#bu0",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": -14.41,
+          "left": -14.6,
           "top": 170,
-          "right": 161.59,
+          "right": 161.4,
           "bottom": 258,
           "width": 176,
           "height": 88
@@ -612,42 +587,42 @@
           "height": 1920
         },
         "overflow": {
-          "left": 14.41
+          "left": 14.6
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -14.41,
+          "x": -14.6,
           "y": 170,
           "width": 176,
           "height": 88
         },
-        "firstSeen": 2.427,
-        "lastSeen": 41.263,
+        "firstSeen": 3.31,
+        "lastSeen": 56.27,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.427,
-          7.282,
-          12.136,
-          16.991,
-          21.845,
-          26.699,
-          31.554,
-          36.408,
-          41.263
+          3.31,
+          9.93,
+          16.55,
+          23.17,
+          29.79,
+          36.41,
+          43.03,
+          49.65,
+          56.27
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 2.427,
+        "time": 3.31,
         "selector": "#bu1",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": -165.62,
+          "left": -165.74,
           "top": 303,
-          "right": 56.58,
+          "right": 56.46,
           "bottom": 414.1,
           "width": 222.2,
           "height": 111.1
@@ -663,89 +638,154 @@
           "height": 1920
         },
         "overflow": {
-          "left": 165.62
+          "left": 165.74
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -165.62,
+          "x": -165.74,
           "y": 303,
           "width": 222.2,
           "height": 111.1
         },
-        "firstSeen": 2.427,
-        "lastSeen": 41.263,
+        "firstSeen": 3.31,
+        "lastSeen": 56.27,
         "occurrences": 9,
         "heldMs": 0,
         "times": [
-          2.427,
-          7.282,
-          12.136,
-          16.991,
-          21.845,
-          26.699,
-          31.554,
-          36.408,
-          41.263
+          3.31,
+          9.93,
+          16.55,
+          23.17,
+          29.79,
+          36.41,
+          43.03,
+          49.65,
+          56.27
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 2.427,
+        "time": 3.31,
         "selector": "g.isin",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": 775.57,
-          "top": 199.94,
-          "right": 1092.91,
-          "bottom": 517.28,
-          "width": 317.34,
-          "height": 317.34
+          "left": 775.94,
+          "top": 207.61,
+          "right": 1095.39,
+          "bottom": 527.05,
+          "width": 319.44,
+          "height": 319.44
         },
         "containerSelector": "#gunes",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
-          "left": 795.05,
-          "top": 225.45,
-          "right": 1064.95,
-          "bottom": 495.36,
-          "width": 269.91,
-          "height": 269.91
+          "left": 810,
+          "top": 250,
+          "right": 1050,
+          "bottom": 490,
+          "width": 240,
+          "height": 240
         },
         "overflow": {
-          "left": 19.48,
-          "right": 27.96,
-          "top": 25.51,
-          "bottom": 21.92
+          "left": 34.06,
+          "right": 45.39,
+          "top": 42.39,
+          "bottom": 37.05
         },
         "dataAttributes": {
           "data-svg-origin": "116 116"
         },
         "sourceFile": "index.html",
         "bbox": {
-          "x": 775.57,
-          "y": 199.94,
-          "width": 317.34,
-          "height": 317.34
+          "x": 775.94,
+          "y": 207.61,
+          "width": 319.44,
+          "height": 319.44
         },
-        "firstSeen": 2.427,
-        "lastSeen": 26.699,
-        "occurrences": 5,
+        "firstSeen": 3.31,
+        "lastSeen": 23.17,
+        "occurrences": 4,
         "heldMs": 0,
         "times": [
-          2.427,
-          12.136,
-          16.991,
-          21.845,
-          26.699
+          3.31,
+          9.93,
+          16.55,
+          23.17
         ]
       },
       {
         "code": "content_overlap",
         "severity": "info",
-        "time": 6.102,
-        "selector": "#rz0",
+        "time": 6.657,
+        "selector": "#rz1",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 396.28,
+          "top": 127.9,
+          "right": 683.72,
+          "bottom": 191.1,
+          "width": 287.44,
+          "height": 63.2
+        },
+        "containerSelector": "#a1 > span:nth-of-type(1)",
+        "text": "YDT GRAMMAR",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 396.28,
+          "y": 127.9,
+          "width": 287.44,
+          "height": 63.2
+        },
+        "firstSeen": 6.657,
+        "lastSeen": 6.657,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          6.657
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 6.657,
+        "selector": "#t1 > i:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 452.21,
+          "top": 174.04,
+          "right": 629.39,
+          "bottom": 213.23,
+          "width": 177.18,
+          "height": 39.19
+        },
+        "containerSelector": "#a1 > span:nth-of-type(1)",
+        "text": "sonuç · result",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 452.21,
+          "y": 174.04,
+          "width": 177.18,
+          "height": 39.19
+        },
+        "firstSeen": 6.657,
+        "lastSeen": 6.657,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          6.657
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 35.948,
+        "selector": "#rz3",
         "message": "Two text blocks overlap and may render unreadable.",
         "rect": {
           "left": 401.3,
@@ -755,7 +795,7 @@
           "width": 277.4,
           "height": 61
         },
-        "containerSelector": "#en0 > span:nth-of-type(8)",
+        "containerSelector": "#a3 > span:nth-of-type(1)",
         "text": "YDT GRAMMAR",
         "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
         "dataAttributes": {},
@@ -766,63 +806,31 @@
           "width": 277.4,
           "height": 61
         },
-        "firstSeen": 6.102,
-        "lastSeen": 6.102,
+        "firstSeen": 35.948,
+        "lastSeen": 35.948,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          6.102
+          35.948
         ]
       },
       {
-        "code": "content_overlap",
+        "code": "canvas_overflow",
         "severity": "info",
-        "time": 25.14,
-        "selector": "#rz2",
-        "message": "Two text blocks overlap and may render unreadable.",
+        "time": 36.41,
+        "selector": "#o4_0 > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
         "rect": {
-          "left": 401.3,
-          "top": 129,
-          "right": 678.7,
-          "bottom": 190,
-          "width": 277.4,
-          "height": 61
+          "left": -426.48,
+          "top": 641.72,
+          "right": -291.59,
+          "bottom": 750.72,
+          "width": 134.89,
+          "height": 109
         },
-        "containerSelector": "#t2 > span:nth-of-type(1)",
-        "text": "YDT GRAMMAR",
-        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 401.3,
-          "y": 129,
-          "width": 277.4,
-          "height": 61
-        },
-        "firstSeen": 25.14,
-        "lastSeen": 25.14,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          25.14
-        ]
-      },
-      {
-        "code": "container_overflow",
-        "severity": "info",
-        "time": 26.699,
-        "selector": "#bu2",
-        "message": "Element extends outside a clipping layout container.",
-        "rect": {
-          "left": -69.59,
-          "top": 456,
-          "right": 126.21,
-          "bottom": 553.9,
-          "width": 195.8,
-          "height": 97.9
-        },
-        "containerSelector": "#bg",
-        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerSelector": "#root",
+        "text": "A) so",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
         "containerRect": {
           "left": 0,
           "top": 0,
@@ -832,40 +840,37 @@
           "height": 1920
         },
         "overflow": {
-          "left": 69.59
+          "left": 426.48
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -69.59,
-          "y": 456,
-          "width": 195.8,
-          "height": 97.9
+          "x": -426.48,
+          "y": 641.72,
+          "width": 134.89,
+          "height": 109
         },
-        "firstSeen": 26.699,
-        "lastSeen": 41.263,
-        "occurrences": 4,
+        "firstSeen": 36.41,
+        "lastSeen": 36.41,
+        "occurrences": 1,
         "heldMs": 0,
         "times": [
-          26.699,
-          31.554,
-          36.408,
-          41.263
+          36.41
         ]
       },
       {
         "code": "canvas_overflow",
         "severity": "info",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#o4_1 > span:nth-of-type(1)",
         "message": "Text extends outside the composition canvas.",
         "rect": {
-          "left": 918.39,
-          "top": 647.87,
-          "right": 1141.47,
-          "bottom": 751.01,
-          "width": 223.08,
-          "height": 103.14
+          "left": 1324.02,
+          "top": 631.61,
+          "right": 1554.04,
+          "bottom": 760.83,
+          "width": 230.02,
+          "height": 129.22
         },
         "containerSelector": "#root",
         "text": "B) such a",
@@ -879,28 +884,28 @@
           "height": 1920
         },
         "overflow": {
-          "right": 61.47
+          "right": 474.04
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": 918.39,
-          "y": 647.87,
-          "width": 223.08,
-          "height": 103.14
+          "x": 1324.02,
+          "y": 631.61,
+          "width": 230.02,
+          "height": 129.22
         },
-        "firstSeen": 31.554,
-        "lastSeen": 31.554,
+        "firstSeen": 36.41,
+        "lastSeen": 36.41,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          31.554
+          36.41
         ]
       },
       {
         "code": "canvas_overflow",
         "severity": "info",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#o4_2 > span:nth-of-type(1)",
         "message": "Text extends outside the composition canvas.",
         "rect": {
@@ -933,18 +938,18 @@
           "width": 244.86,
           "height": 132.36
         },
-        "firstSeen": 31.554,
-        "lastSeen": 31.554,
+        "firstSeen": 36.41,
+        "lastSeen": 36.41,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          31.554
+          36.41
         ]
       },
       {
         "code": "canvas_overflow",
         "severity": "info",
-        "time": 31.554,
+        "time": 36.41,
         "selector": "#o4_3 > span:nth-of-type(1)",
         "message": "Text extends outside the composition canvas.",
         "rect": {
@@ -977,24 +982,70 @@
           "width": 193.2,
           "height": 121.39
         },
-        "firstSeen": 31.554,
-        "lastSeen": 31.554,
+        "firstSeen": 36.41,
+        "lastSeen": 36.41,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          31.554
+          36.41
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 31.554,
+        "time": 36.41,
+        "selector": "#bu2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -70.08,
+          "top": 456,
+          "right": 125.72,
+          "bottom": 553.9,
+          "width": 195.8,
+          "height": 97.9
+        },
+        "containerSelector": "#bg",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 70.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -70.08,
+          "y": 456,
+          "width": 195.8,
+          "height": 97.9
+        },
+        "firstSeen": 36.41,
+        "lastSeen": 56.27,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          36.41,
+          43.03,
+          49.65,
+          56.27
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 43.03,
         "selector": "#bu3",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": -83.08,
+          "left": -83.04,
           "top": 658,
-          "right": 73.12,
+          "right": 73.16,
           "bottom": 736.1,
           "width": 156.2,
           "height": 78.1
@@ -1010,115 +1061,71 @@
           "height": 1920
         },
         "overflow": {
-          "left": 83.08
+          "left": 83.04
         },
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": -83.08,
+          "x": -83.04,
           "y": 658,
           "width": 156.2,
           "height": 78.1
         },
-        "firstSeen": 31.554,
-        "lastSeen": 41.263,
+        "firstSeen": 43.03,
+        "lastSeen": 56.27,
         "occurrences": 3,
         "heldMs": 0,
         "times": [
-          31.554,
-          36.408,
-          41.263
-        ]
-      },
-      {
-        "code": "panel_out_of_canvas",
-        "severity": "info",
-        "time": 31.554,
-        "selector": "#o4_1",
-        "message": "Painted panel extends outside the composition canvas.",
-        "rect": {
-          "left": 806.33,
-          "top": 628.94,
-          "right": 1253.48,
-          "bottom": 770.63,
-          "width": 447.15,
-          "height": 141.7
-        },
-        "containerSelector": "#root",
-        "text": "B) such a",
-        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
-        "containerRect": {
-          "left": 0,
-          "top": 0,
-          "right": 1080,
-          "bottom": 1920,
-          "width": 1080,
-          "height": 1920
-        },
-        "overflow": {
-          "right": 173.48
-        },
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 806.33,
-          "y": 628.94,
-          "width": 447.15,
-          "height": 141.7
-        },
-        "firstSeen": 31.554,
-        "lastSeen": 31.554,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          31.554
+          43.03,
+          49.65,
+          56.27
         ]
       },
       {
         "code": "content_overlap",
         "severity": "info",
-        "time": 39.541,
-        "selector": "#rz4",
+        "time": 53.922,
+        "selector": "#et5 > span:nth-of-type(3)",
         "message": "Two text blocks overlap and may render unreadable.",
         "rect": {
-          "left": 401.3,
-          "top": 129,
-          "right": 678.7,
-          "bottom": 190,
-          "width": 277.4,
-          "height": 61
+          "left": 645.2,
+          "top": 1613.18,
+          "right": 832.66,
+          "bottom": 1687.18,
+          "width": 187.46,
+          "height": 74
         },
-        "containerSelector": "#q4 > span:nth-of-type(4)",
-        "text": "YDT GRAMMAR",
+        "containerSelector": "#tr5",
+        "text": "#YÖKDİL",
         "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
         "dataAttributes": {},
         "sourceFile": "index.html",
         "bbox": {
-          "x": 401.3,
-          "y": 129,
-          "width": 277.4,
-          "height": 61
+          "x": 645.2,
+          "y": 1613.18,
+          "width": 187.46,
+          "height": 74
         },
-        "firstSeen": 39.541,
-        "lastSeen": 39.541,
+        "firstSeen": 53.922,
+        "lastSeen": 53.922,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          39.541
+          53.922
         ]
       }
     ],
-    "duration": 43.69,
+    "duration": 59.58,
     "samples": [
-      2.427,
-      7.282,
-      12.136,
-      16.991,
-      21.845,
-      26.699,
-      31.554,
-      36.408,
-      41.263
+      3.31,
+      9.93,
+      16.55,
+      23.17,
+      29.79,
+      36.41,
+      43.03,
+      49.65,
+      56.27
     ],
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
@@ -1138,100 +1145,29 @@
   "contrast": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 2,
+    "warningCount": 0,
     "infoCount": 0,
-    "findings": [
-      {
-        "code": "contrast_aa_failure",
-        "severity": "warning",
-        "message": "Contrast is 2.57:1; WCAG AA requires 3:1.",
-        "text": "so",
-        "fg": "rgb(107,68,35)",
-        "bg": "rgb(46,149,211)",
-        "ratio": 2.57,
-        "requiredRatio": 3,
-        "suggestedColor": "rgb(93,59,30)",
-        "large": true,
-        "selector": "div > div:nth-of-type(7) > div:nth-of-type(4) > div:nth-of-type(1) > span:nth-of-type(3)",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 390,
-          "y": 1412.1875,
-          "width": 82.3125,
-          "height": 85.109375
-        },
-        "time": 12.136,
-        "times": [
-          12.136
-        ]
-      },
-      {
-        "code": "contrast_aa_failure",
-        "severity": "warning",
-        "message": "Contrast is 2.65:1; WCAG AA requires 3:1.",
-        "text": "that",
-        "fg": "rgb(107,68,35)",
-        "bg": "rgb(78,149,211)",
-        "ratio": 2.65,
-        "requiredRatio": 3,
-        "suggestedColor": "rgb(96,61,31)",
-        "large": true,
-        "selector": "div > div:nth-of-type(7) > div:nth-of-type(4) > div:nth-of-type(1) > span:nth-of-type(5)",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 649.40625,
-          "y": 1412.1875,
-          "width": 146.15625,
-          "height": 85.109375
-        },
-        "time": 12.136,
-        "times": [
-          12.136
-        ]
-      }
-    ],
+    "findings": [],
     "enabled": true,
     "samples": [
-      2.427,
-      12.136,
-      21.845,
-      31.554,
-      41.263
+      3.31,
+      16.55,
+      29.79,
+      43.03,
+      56.27
     ],
-    "checked": 58,
-    "passed": 56
+    "checked": 43,
+    "passed": 43
   },
   "craft": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 1,
+    "warningCount": 0,
     "infoCount": 0,
-    "findings": [
-      {
-        "code": "line_unread",
-        "severity": "warning",
-        "message": "\"Doğru cevap: B) such a · such a + sıfat + tekil isim\" (10 words) is on screen 2.13 s (±0.01 s), under its 2.63 s floor: hold it about 0.5 s + 0.3 s a word (3.50 s here) before it leaves or changes; see references/motion.md.",
-        "text": "Doğru cevap: B) such a · such a + sıfat + tekil isim",
-        "selector": "#tr4",
-        "dataAttributes": {},
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 79.67,
-          "y": 1542.62,
-          "width": 920.64,
-          "height": 123.58999999999992
-        },
-        "time": 37.573,
-        "words": 10,
-        "seconds": 2.13,
-        "floorSeconds": 2.625
-      }
-    ],
+    "findings": [],
     "enabled": true,
     "step": 0.125,
-    "samples": 350
+    "samples": 477
   },
   "audio": {
     "ok": true,
@@ -1251,9 +1187,9 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "a866f13e-fff3-4a61-8af7-130f41d6b44e",
+    "id": "5f29a7f2-32f3-4a1c-9149-10c9751a5435",
     "revision": null,
-    "report": "/tmp/p_sothat/.hyperframes/artifacts/checks/a866f13e-fff3-4a61-8af7-130f41d6b44e.json",
+    "report": "/tmp/p_sothat/.hyperframes/artifacts/checks/5f29a7f2-32f3-4a1c-9149-10c9751a5435.json",
     "attribution": "unversioned"
   },
   "_meta": {
