@@ -8,7 +8,7 @@
    "tip": "kapak",
    "baslik": "SO OR SUCH?",
    "ikon": "Snowflake",
-   "alt_en": "so… that · such… that · so that",
+   "alt_en": "so · such · so that",
    "alt": "Sonuç mu, amaç mı?",
    "ses_tr": "So mu, such mı? Bir de so that var. Farkı görelim.",
    "zemin": "deniz"
@@ -49,7 +49,7 @@
    "kelime": "SO THAT",
    "tur": "amaç · purpose",
    "anlam": "-sın diye · -mek için",
-   "ikon": "Bus",
+   "ikon": "Oncoming bus",
    "ornek": "She ran so that she could catch the bus.",
    "ornek_tr": "Otobüse yetişebilmek için koştu.",
    "vurgu": [
@@ -71,7 +71,7 @@
     "such"
    ],
    "dogru": 1,
-   "aciklama": "Doğru cevap: B) such a · such a + sıfat + tekil isim",
+   "aciklama": "Doğru cevap: B) such a · tekil sayılabilir isim",
    "ikon": "Balance scale",
    "ses_tr": "Doğrusu such a. Tekil isimden önce such a gelir.",
    "zemin": "senlik"
@@ -80,7 +80,7 @@
    "tip": "kapanis",
    "baslik": "YOUR TURN",
    "ikon": "Pencil",
-   "alt": "so ya da such ile bir cümle yaz!",
+   "alt": "so ya da such ile cümle kur!",
    "etiketler": [
     "#YDT",
     "#YDS",
