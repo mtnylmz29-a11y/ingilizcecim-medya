@@ -11,6 +11,8 @@ Bu dosyayı Metin'in bilgisayarındaki (Windows) Claude Code okur ve uygular. Am
 | Film çalışma klasörleri | `E:\ingilizcecim\filmler\<YYYY-MM-DD>-<kisa-ad>\` (her video için ayrı klasör; küçük harf, rakam, tire) |
 | Depoya yüklenecek son dosyalar | `E:\ingilizcecim\ingilizcecim-medya\gunler\<YYYY-MM-DD>\` |
 
+**Klasörleri kendin oluştur**: `E:\ingilizcecim`, `E:\ingilizcecim\filmler`, `E:\ingilizcecim\tmp` yoksa aç (PowerShell: `New-Item -ItemType Directory -Force <yol>`); depo yoksa klonla. Metin'den klasör açmasını isteme.
+
 C: diskinde yer yok: depo, film klasörleri ve tüm geçici/ara dosyalar (render kareleri, ses parçaları, npm/pip önbellekleri dahil) **E: diskinde** tutulur; C:'ye yeni dosya yazma. Kütüphane `C:\Users\Metin\lemo-opuscar`'da kalır ama çıktıları her zaman E:'deki film klasörüne gider. Gerekirse `TEMP`/`TMP` değişkenlerini `E:\ingilizcecim\tmp` yap.
 
 Her işe başlamadan önce depoda `git pull` yap. Çalışma dosyaları (TREATMENT.md, kareler, ses parçaları) film klasöründe kalır; depoya **yalnızca** aşağıdaki son dosyalar gider.
