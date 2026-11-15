@@ -380,5 +380,37 @@
   "permalink": "https://www.instagram.com/reel/DfvMdsyEzs-/",
   "media_id": "18154260964610334",
   "yayin_saati": "2026-11-15 00:42 (TR)"
+ },
+ {
+  "id": "2026-11-15-gonderi",
+  "tarih": "2026-11-15",
+  "durum": "onay_bekliyor",
+  "kademe": "ydt",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "hyperframes cizgi + gemini Kore",
+  "tur": "grammar ayrımı",
+  "baslik": "So, Such or So That?",
+  "aciklama": "So mu, such mı, yoksa so that mi? 🤔\nYDT ve YDS'de sık karıştırılan bu üçlünün farkını 40 saniyede gör: ikisi sonuç bildirir, biri amaç.\n\nVideodaki soruyu cevapla, sonra so ya da such ile kendi cümleni yorumlara yaz! 👇\n\nDaha fazlası için: ingilizcecim.com\n\n#YDT #YDS #YÖKDİL #İngilizce #grammar #ydtingilizce #ydshazırlık #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/67efa42580f45391dcbda361dfc1c712ec34c3ab/gunler/2026-11-15/sothat_hf.mp4",
+  "spec": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/main/gunler/2026-11-15/hf_sothat.json",
+  "zemin": [
+   "deniz",
+   "cayir",
+   "senlik",
+   "gece"
+  ],
+  "ikonlar": [
+   "Snowflake",
+   "Cold face",
+   "Cloud with snow",
+   "Oncoming bus",
+   "Balance scale",
+   "Pencil"
+  ],
+  "sure_sn": 59.6,
+  "kalite": "GECTI · 0 KALDI · 4 UYARI",
+  "editor": "ONAY (2. tur)",
+  "onerilen_dilim": "17:30"
  }
 ]
