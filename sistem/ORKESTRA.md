@@ -2,6 +2,11 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 15 Kasım 2026 (gece 2) — SES: GEMINI 'KORE' (Metin; aşağıdakilerin hepsinden önce gelir)
+- Metin: "Şu anki ses çok kötü, düzgün okumuyor." **Bütün videolar** (yerel, bulut, etimoloji, gönderi) **Gemini TTS, ses 'Kore'** ile seslendirilir. edge-tts ve Kokoro kullanılmaz; Gemini kotası dolarsa yedek sese geçme, işi bekletip Metin'e bildir.
+- Ayarlar `hf/gen.py` → `gemini()` ile aynı. Etimoloji (`etym-render.yml`) iş akışı da `GEMINI_API_KEY` secret'ıyla Gemini kullanacak şekilde güncellenir.
+- Denetmen, Gemini 'Kore' dışında bir sesle gelen videoyu DUZELT sayar.
+
 ## GÜNCELLEME 15 Kasım 2026 (gece) — VİDEOLARI METİN'İN BİLGİSAYARI YAPAR, DENETİMİ DENETMEN YAPAR (Metin; bu bölüm aşağıdakilerin HEPSİNDEN önce gelir, "(akşam)" bölümüyle çelişirse geçerli olan budur)
 - **Yerel üretim**: Videoları artık Metin'in bilgisayarındaki Claude Code, `lemo-opuscar` kütüphanesiyle üretir ve depoya yükler. Tarif: `sistem/YEREL_URETIM.md`. Yerel kayıtlar kuyrukta `"uretim": "yerel (…)"` ve `"durum": "denetimde"` olarak gelir.
 - **Bulut yedeği (günde en fazla 1 video)**: Sabah Üretimi'nin 10:45 üretim görevi kapatıldı. Akşam Üretimi 11:15'te bakar: o günün tarihini taşıyan **herhangi bir** kuyruk kaydı (`YYYY-MM-DD-gonderi` ya da `YYYY-MM-DD-reels`) varsa hiçbir şey üretmez; yoksa yalnızca **bir** "Kelimelerin Tarihçesi" Reels'i (20:30) üretir. Bulutta üretilen video da "Görsel zenginlik standardı"na uyar.
