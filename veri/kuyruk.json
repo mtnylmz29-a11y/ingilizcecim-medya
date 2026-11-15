@@ -460,6 +460,8 @@
    "https://www.merriam-webster.com/dictionary/disaster"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde"
+  "durum": "yerel_duzeltme",
+  "denetim_turu": 1,
+  "duzeltme_notu": "[Denetmen] Video genel olarak çok iyi (crayon-book, Nino karakteri, 8 sahne, kanca, kelime kelime altyazı, 57 sn, 1080×1920, 40 MB, etimoloji etymonline + Merriam-Webster ile doğru). Düzeltilecekler:\n1) Kapanış kartı (~54–57 sn): 'ingilizcecim.com' yazısında 'c' ile 'e' harfleri üst üste biniyor, telefonda 'ingilizœcim.com' gibi okunuyor. Harf aralığını açın (letter-spacing) ya da bu yazıda başka bir yazı tipi kullanın; marka adı net okunmalı.\n2) Harita sahnesi (~36–41 sn): 'İngiltere' etiketi adanın değil Fransa kıyısının üstünde duruyor ve ada kıtaya yapışık çiziliyor. Ada ile kıta arasına deniz (Manş) boşluğu bırakın, 'İngiltere' etiketini adanın üstüne taşıyın; 'disastro' etiketi kesikli rota çizgisiyle çakışmasın.\n3) (İsteğe bağlı) '1500'lerde İtalya'da doğdum' ifadesi: kaynaklar İtalyanca disastro için kesin bir ilk tarih vermiyor (Fransızca désastre 1560'lar). 'İtalya'da doğdum' demek yeterli; tarih kalacaksa sorun değil.\nSes, süre, boyut, yazım ve altyazının geri kalanında sorun yok; aynı adla yeniden yükleyip mp4/kareler adreslerini yeni sha ile güncelleyin."
  }
 ]
