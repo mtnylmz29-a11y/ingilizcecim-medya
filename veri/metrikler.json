@@ -35,6 +35,14 @@
      "paylasim": 0,
      "erisim": 4,
      "izlenme": 16
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 5
     }
    ]
   },
@@ -73,6 +81,14 @@
      "paylasim": 0,
      "erisim": 6,
      "izlenme": 12
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 6
     }
    ]
   },
@@ -111,6 +127,14 @@
      "paylasim": 0,
      "erisim": 4,
      "izlenme": 7
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 4
     }
    ]
   },
@@ -149,6 +173,14 @@
      "paylasim": 0,
      "erisim": 6,
      "izlenme": 14
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 2,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 7
     }
    ]
   },
@@ -187,6 +219,14 @@
      "paylasim": 0,
      "erisim": 4,
      "izlenme": 6
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 5
     }
    ]
   },
@@ -225,6 +265,14 @@
      "paylasim": 0,
      "erisim": 5,
      "izlenme": 10
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 6
     }
    ]
   },
@@ -263,6 +311,14 @@
      "paylasim": 0,
      "erisim": 103,
      "izlenme": 112
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 2,
+     "yorum": 0,
+     "kaydetme": 1,
+     "paylasim": 0,
+     "erisim": 103
     }
    ]
   },
@@ -313,6 +369,14 @@
      "paylasim": 0,
      "erisim": 118,
      "izlenme": 130
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 119
     }
    ]
   },
@@ -335,6 +399,14 @@
      "paylasim": 0,
      "erisim": 108,
      "izlenme": 122
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 2,
+     "paylasim": 0,
+     "erisim": 109
     }
    ]
   },
@@ -377,6 +449,14 @@
      "paylasim": 0,
      "erisim": 74,
      "izlenme": 94
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 2,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 88
     }
    ]
   },
@@ -391,6 +471,53 @@
      "paylasim": 0,
      "erisim": 0,
      "izlenme": 0
+    },
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 101
+    }
+   ]
+  },
+  "2026-11-14-gonderi": {
+   "media_id": "18189667207419071",
+   "olcumler": [
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 1,
+     "paylasim": 0,
+     "erisim": 102
+    }
+   ]
+  },
+  "2026-11-14-reels": {
+   "media_id": "17904820227671973",
+   "olcumler": [
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 31
+    }
+   ]
+  },
+  "2026-11-15-reels-salary": {
+   "media_id": "18154260964610334",
+   "olcumler": [
+    {
+     "tarih": "2026-11-15T20:30+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 2,
+     "paylasim": 0,
+     "erisim": 387
     }
    ]
   }
