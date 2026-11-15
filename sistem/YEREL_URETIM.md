@@ -38,8 +38,9 @@ Her işe başlamadan önce depoda `git pull` yap. Çalışma dosyaları (TREATME
    - Hikâye ve karakter: `crayon-book` (pastel boya resimli kitap), `watercolor`, `urban-sketch`, `paper-popup`, `isometric-picture-book`, `shadow-puppet`
    - Çizgi film: `midcentury-toon` (50'ler düz çizgi film), `rubber-hose` (1930'lar çizgi film), `scifi-toon`
    - Anlatım / ders: `stick-explainer` (stickman), `whiteboard`, `chalkboard`, `sketchnote`, `ipad-sketch`, `marker-paper`
+   - Koyu infografik anlatım (Metin'in beğendiği örnek): `dark-keynote` / `swiss-motion` / `iso-infographic` — lacivert zemin, sarı numara rozeti + kalın başlık, telefon/kasa gibi nesneler, altta dolan 1-2-3 adım çipleri, ortada tek kalın altyazı kelimesi. Sayılı konular ("3 kullanım", "3 tuzak") için.
    - ✦ işaretli stiller (`comic-history`, `manga-panels`) bir görüntü üreteci ister; bilgisayarda kurulu ve çalışan bir görüntü aracı yoksa seçme.
-   - Etimoloji için iyi eşleşmeler: `crayon-book`, `watercolor`, `shadow-puppet`, `urban-sketch` (kelime birinci ağızdan anlatır: "Ben *quarantine*. 1300'lerde Venedik limanında doğdum…"). Dilbilgisi için: `stick-explainer`, `midcentury-toon`, `chalkboard`, `whiteboard`.
+   - Etimoloji için iyi eşleşmeler: `crayon-book`, `watercolor`, `shadow-puppet`, `urban-sketch` (kelime birinci ağızdan anlatır: "Ben *quarantine*. 1300'lerde Venedik limanında doğdum…"). Dilbilgisi için: `stick-explainer`, `midcentury-toon`, `chalkboard`, `whiteboard`, `dark-keynote` (koyu infografik).
 3. **Teknik ayarlar** (render araçlarına `--size 1080x1920`):
    - Dikey **1080×1920**, 30 fps (stilin STYLE.md'si başka fps diyorsa o), H.264 video + AAC ses, `.mp4`.
    - Süre **35–60 sn** (etimoloji ~45 sn). Dosya **50 MB'tan küçük** (GitHub ve Instagram için).
