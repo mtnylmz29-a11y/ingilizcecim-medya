@@ -2,7 +2,7 @@
  "tarih": "2026-11-15",
  "karar": "GECTI",
  "kaldi": 0,
- "uyari": 4,
+ "uyari": 6,
  "kontroller": [
   {
    "paylasim": "reels",
@@ -117,6 +117,42 @@
    "kontrol": "konu tekrarı (14 gün)",
    "durum": "GECTI",
    "ayrinti": ""
+  },
+  {
+   "paylasim": "reels (quarantine)",
+   "kontrol": "kareler",
+   "durum": "UYARI",
+   "ayrinti": "12 kare: tüm sahnelerde çizim var; harita bölümünde Ragusa/Venedik/İngiltere etiketleri birbirine yakın, kısmen üst üste (kit kaynaklı)."
+  },
+  {
+   "paylasim": "reels (quarantine)",
+   "kontrol": "etimoloji",
+   "durum": "GECTI",
+   "ayrinti": "Editör bağımsız doğruladı (CDC EID, etymonline, HHS): Ragusa 1377 trentino 30 gün → 40 gün; Venedik quarantena; gemi tecridi anlamı 1600'ler. 40'ın nedeni 'RİVAYETE GÖRE' damgalı."
+  },
+  {
+   "paylasim": "reels (quarantine)",
+   "kontrol": "ses/süre",
+   "durum": "GECTI",
+   "ayrinti": "45,5 sn, 1080x1920 30 fps, ses akışı var (edge-tts). Ses dinlenemedi."
+  },
+  {
+   "paylasim": "reels (quarantine)",
+   "kontrol": "çeşitlilik",
+   "durum": "GECTI",
+   "ayrinti": "mavi/parsomen/gizemli (salary: altin/isik/neseli); liman zemini; yeni olaylar sayac, ziplat(yuz k), parilti; harita."
+  },
+  {
+   "paylasim": "reels (quarantine)",
+   "kontrol": "açıklama",
+   "durum": "GECTI",
+   "ayrinti": "3 cümle + soru, ingilizcecim.com, 10 hashtag."
+  },
+  {
+   "paylasim": "reels (quarantine)",
+   "kontrol": "editör",
+   "durum": "UYARI",
+   "ayrinti": "Ayrı alt ajan: UYARI (1. tur). c1 ifadesi ve kart ikonu düzeltildi (v3); harita etiket çakışması kaldı."
   }
  ],
  "not": "kalite.py bu biçimi (etym) henüz denetlemiyor; kontrol elle yapıldı. | gonderi: kalite.py çıktısı (sothat, cizgi). Kapak/kapanış 'ses metni' uyarıları cizgi biçiminde ses_tr kullanıldığı için yanlış alarm."
