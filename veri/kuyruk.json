@@ -392,7 +392,7 @@
  {
   "id": "2026-11-15-gonderi",
   "tarih": "2026-11-15",
-  "durum": "onay_bekliyor",
+  "durum": "onaylandi",
   "kademe": "ydt",
   "sinif": "YDT · YDS",
   "bicim": "animasyon",
@@ -419,7 +419,8 @@
   "sure_sn": 59.6,
   "kalite": "GECTI · 0 KALDI · 4 UYARI",
   "editor": "ONAY (2. tur)",
-  "onerilen_dilim": "17:30"
+  "onerilen_dilim": "17:30",
+  "onay": "Metin, Onay Paneli 15 Kasım 22:43"
  },
  {
   "id": "2026-11-15-reels",
