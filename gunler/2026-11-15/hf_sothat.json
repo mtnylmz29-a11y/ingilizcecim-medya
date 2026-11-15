@@ -1,0 +1,93 @@
+{
+ "stil": "cizgi",
+ "rozet": "YDT GRAMMAR",
+ "zemin": "deniz",
+ "gemini_ses": "Kore",
+ "sahneler": [
+  {
+   "tip": "kapak",
+   "baslik": "SO OR SUCH?",
+   "ikon": "Snowflake",
+   "alt_en": "so… that · such… that · so that",
+   "alt": "Sonuç mu, amaç mı?",
+   "ses_tr": "So mu, such mı? Bir de so that var. Farkı görelim.",
+   "zemin": "deniz"
+  },
+  {
+   "tip": "kelime",
+   "kelime": "SO + SIFAT",
+   "tur": "sonuç · result",
+   "anlam": "o kadar … ki",
+   "ikon": "Cold face",
+   "ornek": "It was so cold that we stayed in.",
+   "ornek_tr": "O kadar soğuktu ki evde kaldık.",
+   "vurgu": [
+    "so",
+    "that"
+   ],
+   "ses_tr": "So, sıfat ya da zarfla gelir: o kadar ki.",
+   "zemin": "deniz"
+  },
+  {
+   "tip": "kelime",
+   "kelime": "SUCH (A) + İSİM",
+   "tur": "sonuç · result",
+   "anlam": "öyle bir … ki",
+   "ikon": "Cloud with snow",
+   "ornek": "It was such a cold day that we stayed in.",
+   "ornek_tr": "Öyle soğuk bir gündü ki evde kaldık.",
+   "vurgu": [
+    "such",
+    "a",
+    "that"
+   ],
+   "ses_tr": "Such ise isimle gelir: such a cold day.",
+   "zemin": "cayir"
+  },
+  {
+   "tip": "kelime",
+   "kelime": "SO THAT",
+   "tur": "amaç · purpose",
+   "anlam": "-sın diye · -mek için",
+   "ikon": "Bus",
+   "ornek": "She ran so that she could catch the bus.",
+   "ornek_tr": "Otobüse yetişebilmek için koştu.",
+   "vurgu": [
+    "so",
+    "that",
+    "could"
+   ],
+   "ses_tr": "So that amaç bildirir; ardından can, could ya da will gelir.",
+   "zemin": "cayir"
+  },
+  {
+   "tip": "soru",
+   "baslik": "QUIZ",
+   "soru": "It was ___ difficult exam that few passed.",
+   "secenekler": [
+    "so",
+    "such a",
+    "so that",
+    "such"
+   ],
+   "dogru": 1,
+   "aciklama": "Doğru cevap: B) such a · such a + sıfat + tekil isim",
+   "ikon": "Balance scale",
+   "ses_tr": "Doğrusu such a. Tekil isimden önce such a gelir.",
+   "zemin": "senlik"
+  },
+  {
+   "tip": "kapanis",
+   "baslik": "YOUR TURN",
+   "ikon": "Pencil",
+   "alt": "so ya da such ile bir cümle yaz!",
+   "etiketler": [
+    "#YDT",
+    "#YDS",
+    "#YÖKDİL"
+   ],
+   "ses_tr": "Sen de so ya da such ile bir cümle kur, yorumlara yaz!",
+   "zemin": "gece"
+  }
+ ]
+}
