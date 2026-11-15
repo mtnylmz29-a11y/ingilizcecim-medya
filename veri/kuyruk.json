@@ -440,5 +440,26 @@
   "kalite": "GECTI · 0 KALDI · 2 UYARI (harita etiketleri yakın; editör 1. tur UYARI, düzeltildi)",
   "editor": "UYARI → düzeltildi (v3); ses dinlenemedi",
   "onerilen_dilim": "20:30"
+ },
+ {
+  "id": "2026-11-16-reels",
+  "tarih": "2026-11-16",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "yerel (Claude Code + lemo-opuscar)",
+  "stil": "crayon-book",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Disaster",
+  "aciklama": "\"Disaster\" (felaket) kelimesinin içinde bir yıldız saklı! İtalyanca \"disastro\", \"dis-\" (kötü) ve \"astro\" (yıldız) parçalarından oluşur; yani kelime kelime \"kötü yıldız\" demektir. 1500'lerde insanlar kaderi yıldızların yazdığına inanır, gökte uğursuz bir yıldız görünce başa bela geleceğini düşünürdü. Kelime Fransızca \"désastre\" üzerinden 1500'lerin sonunda İngilizceye geçti. Sen \"astro\" kökünü başka hangi İngilizce kelimelerde görüyorsun? ⭐\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #disaster #etimoloji #ingilizcekelime #wordorigins #ingilizceöğren #ydsingilizce",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/c200bac0c67cc4cc8710584dc4575770d3e90008/gunler/2026-11-16/disaster_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/c200bac0c67cc4cc8710584dc4575770d3e90008/gunler/2026-11-16/disaster_etym_kareler.jpg",
+  "sure_sn": 57.0,
+  "kaynaklar": [
+   "https://www.etymonline.com/word/disaster",
+   "https://www.merriam-webster.com/dictionary/disaster"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]
