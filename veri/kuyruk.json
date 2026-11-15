@@ -412,5 +412,25 @@
   "kalite": "GECTI · 0 KALDI · 4 UYARI",
   "editor": "ONAY (2. tur)",
   "onerilen_dilim": "17:30"
+ },
+ {
+  "id": "2026-11-15-reels",
+  "tarih": "2026-11-15",
+  "durum": "onay_bekliyor",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "etym (Remotion + edge-tts)",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Quarantine",
+  "aciklama": "\"Quarantine\" (karantina) kelimesi aslında bir sayıdır: İtalyanca \"quaranta\", yani kırk! 1300'lerde veba korkusuyla Ragusa (bugünkü Dubrovnik) limana gelen gemileri önce 30 gün bekletti, sonra bu süre 40 güne çıktı ve Venedik ağzındaki \"quarantena\" adı buradan doğdu. Kelime 1600'lerde gemilerin tecridi anlamıyla İngilizceye geçti, bugün her türlü salgın tecridi için kullanılıyor; neden tam 40 gün seçildiği ise kesin bilinmiyor. Sen \"quarantine\" ile \"isolation\" arasındaki farkı biliyor muydun? Yorumlara yaz! 🚢⏳\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #quarantine #etimoloji #ingilizcekelime #wordorigins #ingilizceöğren #ydsingilizce",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4ecad6ad9b42274b10040f244d8dfc8cce559381/gunler/2026-11-15/quarantine_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/4ecad6ad9b42274b10040f244d8dfc8cce559381/gunler/2026-11-15/quarantine_etym_kareler.jpg",
+  "spec": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/main/gunler/2026-11-15/etym_quarantine.json",
+  "pdf": null,
+  "sure_sn": 45.5,
+  "kalite": "GECTI · 0 KALDI · 2 UYARI (harita etiketleri yakın; editör 1. tur UYARI, düzeltildi)",
+  "editor": "UYARI → düzeltildi (v3); ses dinlenemedi",
+  "onerilen_dilim": "20:30"
  }
 ]
