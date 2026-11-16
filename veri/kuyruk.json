@@ -495,13 +495,19 @@
    "https://lexundria.com/plut_arist/7/prr"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde",
+  "durum": "onay_bekliyor",
   "denetim_turu": 1,
   "duzeltme_gecmisi": [
    {
     "not": "[Denetmen] 1) SES: Seslendirme VoiceStudio/OmniVoice motoruyla yapılmış (kaynak.md ve uretim alanı). OmniVoice ağırlıkları CC-BY-NC (ticari olmayan kullanım), YEREL_URETIM.md 4. madde açıkça yasaklıyor; ORKESTRA 'gece 2' kuralına göre de Gemini 'Kore' dışı ses DUZELT. Tüm satırları Gemini TTS 'Kore' ile (ya da lisansı ticari kullanıma açık VoxCPM2 / MOSS-TTS v1.5 ile) yeniden seslendir, faster-whisper ile kontrol et, altyazı zamanlamasını ve .srt'yi yeni sese göre güncelle; kaynak.md ve kuyruktaki uretim alanına yeni sesi yaz. 2) Süre 59,4 sn, sınıra çok yakın: yeni seslendirmede 60 sn'yi aşarsa bir cümleyi kısalt (ör. 'Artık kimse çömlek kazımıyor, ama…'). 3) (Küçük) Video 24 fps; crayon-book STYLE.md 24 demiyorsa 30 fps'e çek. Geri kalan her şey iyi: etimoloji (ostrakon → ostrakizein, İngilizcede 1649), 6000 oy / 10 yıl ve Aristides rivayeti Plutarkhos + Merriam-Webster/etymonline ile doğrulandı; 1080×1920, 42 MB, 7 sahne, karakterler ve kelime kelime altyazı tamam; yazımda hata yok. Görüntüyü değiştirme, yalnızca sesi yenile.",
     "yapilan": "1) Tüm satırlar VoxCPM2 (Apache-2.0) ile yeniden seslendirildi, faster-whisper ile kontrol edildi, altyazı ve .srt yeni sese göre zamanlandı; kaynak.md ve uretim güncellendi. 2) Konuşma 57,4 sn'de bitiyor, video 59,4 sn. 3) 24 fps korundu: crayon-book STYLE.md kamerayı 24 fps, çizimi 12 fps tanımlıyor. Görüntü değişmedi."
    }
-  ]
+  ],
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "GECTI",
+   "notlar": "Tur 2 (bağımsız yeniden denetim): 1. turdaki tüm maddeler kapandı. SES: VoxCPM2 (Apache-2.0, ticari kullanıma açık) ile yeniden seslendirilmiş; YEREL_URETIM.md 4. madde (Metin, 16 Kasım) bu motoru açıkça izinli sayıyor, OmniVoice kalktı. Not: ORKESTRA 'gece 2' bölümü hâlâ yalnızca Gemini 'Kore' diyor; iki kural çelişiyor, Metin isterse Kore'ye geçirilebilir. TEKNİK: 1080×1920, H.264+AAC 48 kHz, 59,4 sn (35–60 içinde, sınıra yakın), 42,0 MB (<50), −14,1 LUFS; 24 fps crayon-book STYLE.md gereği kabul. GÖRSEL: 16 kare incelendi; 7 sahne (çömlek kırığı kancası, M.Ö. 5. yy Atina/Akropolis, amfora→ostrakon→ostrakizein, 6000 oy/10 yıl sürgün, 'RİVAYETE GÖRE' damgalı Aristides–çiftçi sahnesi, 1649 sözlük, okul bahçesi), mimikli karakterler, kelime kelime vurgulu altyazı, alt güvenli alanın üstünde; kapanış kartı ingilizcecim.com. BİLGİ: ostrakon→ostrakizein, İngilizcede 1649 (Merriam-Webster; etymonline 1640'lar), 6000 oy yeter sayısı ve 10 yıl sürgün, Aristides rivayeti (Plutarkhos, Aristides 7) Merriam-Webster, etymonline, Perseus/Lexundria ve World History Encyclopedia ile doğrulandı. Türkçe/İngilizce yazımda hata yok; .srt metni ve açıklama tutarlı. SINIR: Bu oturumda Whisper modeli indirilemediği için sesin metni otomatik dinletilemedi (üretici faster-whisper ile kontrol ettiğini yazıyor); ses sürekli ve seviyesi normal. Yayından önce bir kez dinlemen önerilir.",
+   "zaman": "2026-11-16T14:15:06+03:00"
+  }
  }
 ]
