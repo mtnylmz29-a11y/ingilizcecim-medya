@@ -1,7 +1,7 @@
 # Kelimelerin Tarihçesi: Ostracize (2026-11-17, 20:30)
 
 **Seviye:** C1 (YDT/YDS) · **Stil:** crayon-book (pastel boya resimli kitap) · **Süre:** 59,4 sn · **Üretim:** yerel (Claude Code + lemo-opuscar)
-**Seslendirme:** VoiceStudio 0.5.8, OmniVoice motoru (yerel GPU), "ingilizcecim-anlatici" profili. Bu profil, OmniVoice ses tasarımıyla ("female, young adult") üretilmiş bir referans sesten klonlandı; gerçek bir kişinin sesi değildir. Türkçe anlatım ve İngilizce örnek cümle aynı sesle okundu.
+**Seslendirme:** VoiceStudio 0.5.8, VoxCPM2 motoru (openbmb/VoxCPM2, Apache-2.0, ticari kullanıma açık; yerel GPU), "ingilizcecim-anlatici-vox" profili. Profil, VoxCPM2 ses tasarımıyla (yalnızca metin tarifi: "young adult female, warm and clear teacher voice") üretilmiş bir referans sesten klonlandı; gerçek bir kişinin sesi değildir. Satırlar ffmpeg atempo ile %10–20 hızlandırıldı. Türkçe anlatım ve İngilizce örnek cümle aynı sesle okundu.
 
 ## Kurgu (7 sahne)
 1. **Kanca:** Bir çömlek kırığına THEMISTOKLES adı kazınıyor. "Bir çömlek kırığı seni şehrinden sürgün edebilir mi?" Ardından OSTRACIZE = dışlamak başlığı geliyor.
