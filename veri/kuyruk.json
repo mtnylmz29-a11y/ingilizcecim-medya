@@ -473,5 +473,28 @@
   "duzeltme_gecmisi": [
    "[Denetmen] Video genel olarak çok iyi (crayon-book, Nino karakteri, 8 sahne, kanca, kelime kelime altyazı, 57 sn, 1080×1920, 40 MB, etimoloji etymonline + Merriam-Webster ile doğru). Düzeltilecekler:\n1) Kapanış kartı (~54–57 sn): 'ingilizcecim.com' yazısında 'c' ile 'e' harfleri üst üste biniyor, telefonda 'ingilizœcim.com' gibi okunuyor. Harf aralığını açın (letter-spacing) ya da bu yazıda başka bir yazı tipi kullanın; marka adı net okunmalı.\n2) Harita sahnesi (~36–41 sn): 'İngiltere' etiketi adanın değil Fransa kıyısının üstünde duruyor ve ada kıtaya yapışık çiziliyor. Ada ile kıta arasına deniz (Manş) boşluğu bırakın, 'İngiltere' etiketini adanın üstüne taşıyın; 'disastro' etiketi kesikli rota çizgisiyle çakışmasın.\n3) (İsteğe bağlı) '1500'lerde İtalya'da doğdum' ifadesi: kaynaklar İtalyanca disastro için kesin bir ilk tarih vermiyor (Fransızca désastre 1560'lar). 'İtalya'da doğdum' demek yeterli; tarih kalacaksa sorun değil.\nSes, süre, boyut, yazım ve altyazının geri kalanında sorun yok; aynı adla yeniden yükleyip mp4/kareler adreslerini yeni sha ile güncelleyin.\n[Metin] Ek: seslendirmeyi de Gemini TTS 'Kore' sesiyle baştan yap (edge-tts yok). Seslendirme Gemini TTS ile, ses 'Kore' (Metin, 15 Kasım: edge-tts sesi kötü okuyor, kullanılmayacak). Ayarlar hf/gen.py'deki gemini() ile aynı: model gemini-2.5-flash-preview-tts, voiceName 'Kore', Türkçe satırlar için 'Sıcak, net ve enerjik bir öğretmen sesiyle Türkçe söyle: ', İngilizce satırlar için 'Say in clear, natural American English, like a friendly teacher: ' öneki; 24 kHz 16-bit PCM. Ücretsiz kota dakikada ~3 istek: istekler arasında ~21 sn bekle, her satırı önbelleğe al."
   ]
- }
+ },
+{
+ "id": "2026-11-17-reels",
+ "tarih": "2026-11-17",
+ "kademe": "ydt+yds",
+ "sinif": "YDT · YDS",
+ "bicim": "animasyon",
+ "uretim": "yerel (Claude Code + lemo-opuscar, ses: VoiceStudio/OmniVoice)",
+ "stil": "crayon-book",
+ "seri": "kelimelerin-tarihcesi",
+ "baslik": "Kelimelerin Tarihçesi: Ostracize",
+ "aciklama": "\"Ostracize\" (dışlamak) kelimesi bir çömlek kırığından doğdu! Antik Atina'da halk her yıl birini sürgüne gönderip göndermeyeceğine karar verirdi; herkes o kişinin adını bir çömlek kırığına, yani \"ostrakon\"a kazırdı. En çok yazılan kişi 10 yıl şehirden uzaklaştırılırdı. Rivayete göre Aristides, kendisini tanımayan bir çiftçi için kendi adını bile yazmıştı. Sen hiç bir gruptan \"ostracized\" olduğunu hissettin mi? 🏺\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ostracize #etimoloji #ingilizcekelime #wordorigins #antikyunan #ydsingilizce",
+ "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/d185c6593c1298a62d37f2c9c4d1f5d59d0e804a/gunler/2026-11-17/ostracize_etym.mp4",
+ "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/d185c6593c1298a62d37f2c9c4d1f5d59d0e804a/gunler/2026-11-17/ostracize_etym_kareler.jpg",
+ "sure_sn": 59.4,
+ "kaynaklar": [
+  "https://www.merriam-webster.com/dictionary/ostracize",
+  "https://www.etymonline.com/word/ostracize",
+  "https://en.wikipedia.org/wiki/Ostracism",
+  "https://lexundria.com/plut_arist/7/prr"
+ ],
+ "onerilen_dilim": "20:30",
+ "durum": "denetimde"
+}
 ]
