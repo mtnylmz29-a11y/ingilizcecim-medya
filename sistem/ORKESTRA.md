@@ -2,17 +2,17 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
-## GÜNCELLEME 16 Kasım 2026 — SES: KORE VEYA VOICESTUDIO (Metin; aşağıdakilerin hepsinden önce gelir, "gece 2" ses kuralının yerine geçer)
-- Metin: "Gemini Kore ve VoiceStudio ile oluşturulmuş ticari kullanıma açık sesler kabul edilecek."
-- Kabul edilen seslendirme: (1) **Gemini TTS, ses 'Kore'** (bulutta varsayılan; ayarlar `hf/gen.py` → `gemini()`), (2) **VoiceStudio** ile üretilmiş, **modelinin lisansı ticari kullanıma açık** sesler (ör. VoxCPM2 — Apache-2.0; MOSS-TTS — Apache-2.0). Ayrıntı ve anlatıcı profili: `sistem/YEREL_URETIM.md` 4. madde.
-- VoiceStudio'da ticari kullanıma kapalı modeller (ör. **OmniVoice**, CC-BY-NC) kullanılmaz. edge-tts ve Kokoro kullanılmaz.
-- Kullanılan ses motoru ve lisansı `<ad>_kaynak.md`'ye ve kuyruktaki `uretim` alanına yazılır.
-- Denetmen: Gemini 'Kore' ya da VoiceStudio + ticari lisanslı model dışındaki sesi (ya da motoru/lisansı belirtilmemiş sesi) DUZELT sayar.
+## GÜNCELLEME 16 Kasım 2026 — SES: TİCARİ LİSANS ŞARTI (Metin; aşağıdakilerin hepsinden önce gelir, "gece 2" ses kuralının yerine geçer)
+- Metin: "Gemini Kore ve VoiceStudio ile oluşturulmuş ticari kullanıma açık sesler kabul edilecek." / "Bu ikisinin dışındaki ticari lisansı olmayan sesleri düzeltmeye göndersin. Ticari lisansı varsa, kabul edebiliriz."
+- **Üretimde tercih edilen**: (1) **Gemini TTS, ses 'Kore'** (bulutta varsayılan; ayarlar `hf/gen.py` → `gemini()`), (2) **VoiceStudio** + lisansı ticari kullanıma açık model (ör. VoxCPM2 — Apache-2.0). Ayrıntı: `sistem/YEREL_URETIM.md` 4. madde.
+- **Tek şart: ticari lisans.** Bu ikisinin dışındaki bir ses de, model/hizmet lisansı ticari kullanıma açıksa kabul edilir (ör. ücretli ElevenLabs, Google Cloud TTS, Azure AI Speech).
+- Kullanılan ses motoru/modeli ve lisansı `<ad>_kaynak.md`'ye ve kuyruktaki `uretim` alanına yazılır.
+- **Denetmen**: Sesin motorunu ve lisansını kontrol eder. Ticari kullanıma kapalı lisanslı ses (ör. **OmniVoice**, CC-BY-NC ya da başka bir "non-commercial" lisans) veya motoru/lisansı belirtilmemiş ses → DUZELT (yeniden seslendirme istenir). Ticari lisansı varsa ses gerekçesiyle DUZELT verilmez.
 
 ## GÜNCELLEME 15 Kasım 2026 (gece 2) — SES: GEMINI 'KORE' (Metin; aşağıdakilerin hepsinden önce gelir)
-- Metin: "Şu anki ses çok kötü, düzgün okumuyor." **Bütün videolar** (yerel, bulut, etimoloji, gönderi) **Gemini TTS, ses 'Kore'** ile seslendirilir. edge-tts ve Kokoro kullanılmaz; Gemini kotası dolarsa yedek sese geçme, işi bekletip Metin'e bildir. (16 Kasım: yerelde VoiceStudio + ticari lisanslı model de kabul; yukarıya bak.)
+- Metin: "Şu anki ses çok kötü, düzgün okumuyor." **Bütün videolar** (yerel, bulut, etimoloji, gönderi) **Gemini TTS, ses 'Kore'** ile seslendirilir. edge-tts ve Kokoro kullanılmaz; Gemini kotası dolarsa yedek sese geçme, işi bekletip Metin'e bildir. (16 Kasım: ticari lisanslı sesler de kabul; yukarıya bak.)
 - Ayarlar `hf/gen.py` → `gemini()` ile aynı. Etimoloji (`etym-render.yml`) iş akışı da `GEMINI_API_KEY` secret'ıyla Gemini kullanacak şekilde güncellenir.
-- ~~Denetmen, Gemini 'Kore' dışında bir sesle gelen videoyu DUZELT sayar.~~ (16 Kasım güncellemesiyle değişti: VoiceStudio + ticari lisanslı model de kabul.)
+- ~~Denetmen, Gemini 'Kore' dışında bir sesle gelen videoyu DUZELT sayar.~~ (16 Kasım güncellemesiyle değişti: ticari lisanslı her ses kabul; lisansı ticari olmayan ses DUZELT.)
 
 ## GÜNCELLEME 15 Kasım 2026 (gece) — VİDEOLARI METİN'İN BİLGİSAYARI YAPAR, DENETİMİ DENETMEN YAPAR (Metin; bu bölüm aşağıdakilerin HEPSİNDEN önce gelir, "(akşam)" bölümüyle çelişirse geçerli olan budur)
 - **Yerel üretim**: Videoları artık Metin'in bilgisayarındaki Claude Code, `lemo-opuscar` kütüphanesiyle üretir ve depoya yükler. Tarif: `sistem/YEREL_URETIM.md`. Yerel kayıtlar kuyrukta `"uretim": "yerel (…)"` ve `"durum": "denetimde"` olarak gelir.
