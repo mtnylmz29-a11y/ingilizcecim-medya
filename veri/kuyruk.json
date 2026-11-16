@@ -495,7 +495,7 @@
    "https://lexundria.com/plut_arist/7/prr"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "onay_bekliyor",
+  "durum": "onaylandi",
   "denetim_turu": 1,
   "duzeltme_gecmisi": [
    {
@@ -508,6 +508,7 @@
    "sonuc": "GECTI",
    "notlar": "Tur 2 (bağımsız yeniden denetim): 1. turdaki tüm maddeler kapandı. SES: VoxCPM2 (Apache-2.0, ticari kullanıma açık) ile yeniden seslendirilmiş; YEREL_URETIM.md 4. madde (Metin, 16 Kasım) bu motoru açıkça izinli sayıyor, OmniVoice kalktı. Not: ORKESTRA 'gece 2' bölümü hâlâ yalnızca Gemini 'Kore' diyor; iki kural çelişiyor, Metin isterse Kore'ye geçirilebilir. TEKNİK: 1080×1920, H.264+AAC 48 kHz, 59,4 sn (35–60 içinde, sınıra yakın), 42,0 MB (<50), −14,1 LUFS; 24 fps crayon-book STYLE.md gereği kabul. GÖRSEL: 16 kare incelendi; 7 sahne (çömlek kırığı kancası, M.Ö. 5. yy Atina/Akropolis, amfora→ostrakon→ostrakizein, 6000 oy/10 yıl sürgün, 'RİVAYETE GÖRE' damgalı Aristides–çiftçi sahnesi, 1649 sözlük, okul bahçesi), mimikli karakterler, kelime kelime vurgulu altyazı, alt güvenli alanın üstünde; kapanış kartı ingilizcecim.com. BİLGİ: ostrakon→ostrakizein, İngilizcede 1649 (Merriam-Webster; etymonline 1640'lar), 6000 oy yeter sayısı ve 10 yıl sürgün, Aristides rivayeti (Plutarkhos, Aristides 7) Merriam-Webster, etymonline, Perseus/Lexundria ve World History Encyclopedia ile doğrulandı. Türkçe/İngilizce yazımda hata yok; .srt metni ve açıklama tutarlı. SINIR: Bu oturumda Whisper modeli indirilemediği için sesin metni otomatik dinletilemedi (üretici faster-whisper ile kontrol ettiğini yazıyor); ses sürekli ve seviyesi normal. Yayından önce bir kez dinlemen önerilir.",
    "zaman": "2026-11-16T14:15:06+03:00"
-  }
+  },
+  "onay": "Metin, Onay Paneli 16 Kasım 16:04"
  }
 ]
