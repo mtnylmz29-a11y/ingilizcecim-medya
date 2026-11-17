@@ -1,0 +1,52 @@
+# Bulut lemo-opuscar filmi (Metin'in bilgisayari kapaliyken de calisir). Tarif: sistem/BULUT_LEMO.md
+# asama=ses: ses.json -> Gemini Kore sesleri + ses/zaman.json | onizleme: 12 kare -> onizleme.jpg
+# asama=video: render + miks + mux -> gunler/<tarih>/<ad>.mp4 | hepsi: ses + video
+name: Lemo render
+on:
+  workflow_dispatch:
+    inputs:
+      film:
+        description: "Film klasoru (ornek: filmler/2026-11-19-serendipity)"
+        required: true
+      asama:
+        description: "ses | onizleme | video | hepsi"
+        required: true
+        default: hepsi
+permissions:
+  contents: write
+concurrency:
+  group: lemo-render
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      FILM: ${{ github.event.inputs.film }}
+      ASAMA: ${{ github.event.inputs.asama }}
+      LEMO_ANGLE: swiftshader
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Kurulum
+        run: sh sistem/lemo/kurulum.sh
+      - name: Ses
+        if: env.ASAMA == 'ses' || env.ASAMA == 'hepsi'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SES_CACHE: hf/ses_cache
+        run: $PY sistem/lemo/ses.py "$FILM"
+      - name: Onizleme
+        if: env.ASAMA == 'onizleme'
+        run: sh sistem/lemo/teslim.sh "$FILM" onizleme
+      - name: Video
+        if: env.ASAMA == 'video' || env.ASAMA == 'hepsi'
+        run: sh sistem/lemo/teslim.sh "$FILM"
+      - name: Depoya yaz
+        if: always()
+        run: sh sistem/lemo/kaydet.sh
