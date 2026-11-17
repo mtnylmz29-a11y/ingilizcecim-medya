@@ -429,24 +429,30 @@
   {
     "id": "2026-11-15-reels",
     "tarih": "2026-11-15",
-    "durum": "duzeltme_istendi",
+    "durum": "onay_bekliyor",
     "kademe": "ydt+yds",
     "sinif": "YDT · YDS",
     "bicim": "animasyon",
-    "uretim": "etym (Remotion + edge-tts)",
+    "uretim": "etym (Remotion + Gemini TTS 'Kore')",
     "seri": "kelimelerin-tarihcesi",
     "baslik": "Kelimelerin Tarihçesi: Quarantine",
     "aciklama": "\"Quarantine\" (karantina) kelimesi aslında bir sayıdır: İtalyanca \"quaranta\", yani kırk! 1300'lerde veba korkusuyla Ragusa (bugünkü Dubrovnik) limana gelen gemileri önce 30 gün bekletti, sonra bu süre 40 güne çıktı ve Venedik ağzındaki \"quarantena\" adı buradan doğdu. Kelime 1600'lerde gemilerin tecridi anlamıyla İngilizceye geçti, bugün her türlü salgın tecridi için kullanılıyor; neden tam 40 gün seçildiği ise kesin bilinmiyor. Sen \"quarantine\" ile \"isolation\" arasındaki farkı biliyor muydun? Yorumlara yaz! 🚢⏳\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #quarantine #etimoloji #ingilizcekelime #wordorigins #ingilizceöğren #ydsingilizce",
-    "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4ecad6ad9b42274b10040f244d8dfc8cce559381/gunler/2026-11-15/quarantine_etym.mp4",
-    "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/4ecad6ad9b42274b10040f244d8dfc8cce559381/gunler/2026-11-15/quarantine_etym_kareler.jpg",
+    "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/37381737bff57103c8bfab8fb3d0e26df72601dd/gunler/2026-11-15/quarantine_etym.mp4",
+    "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/37381737bff57103c8bfab8fb3d0e26df72601dd/gunler/2026-11-15/quarantine_etym_kareler.jpg",
     "spec": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/main/gunler/2026-11-15/etym_quarantine.json",
     "pdf": null,
-    "sure_sn": 45.5,
+    "sure_sn": 50.1,
     "kalite": "GECTI · 0 KALDI · 2 UYARI (harita etiketleri yakın; editör 1. tur UYARI, düzeltildi)",
     "editor": "UYARI → düzeltildi (v3); ses dinlenemedi",
     "onerilen_dilim": "20:30",
-    "duzeltme_notu": "Metin: Seslendirmeyi baştan Gemini TTS 'Kore' sesiyle yap (So/Such/So That videosundaki ses). edge-tts kullanma. Seslendirme Gemini TTS ile, ses 'Kore' (Metin, 15 Kasım: edge-tts sesi kötü okuyor, kullanılmayacak). Ayarlar hf/gen.py'deki gemini() ile aynı: model gemini-2.5-flash-preview-tts, voiceName 'Kore', Türkçe satırlar için 'Sıcak, net ve enerjik bir öğretmen sesiyle Türkçe söyle: ', İngilizce satırlar için 'Say in clear, natural American English, like a friendly teacher: ' öneki; 24 kHz 16-bit PCM. Ücretsiz kota dakikada ~3 istek: istekler arasında ~21 sn bekle, her satırı önbelleğe al. Görüntü aynı kalsın; altyazı ve sahne zamanlarını yeni sese göre ayarla. etym-render iş akışına GEMINI_API_KEY secret'ını ekleyerek ya da hf/gen.py'deki gemini() fonksiyonunu kullanarak yap.",
-    "duzeltme_durum": "2026-11-15 22:57: Gemini TTS günlük ücretsiz kota (10 istek/gün, gemini-2.5-flash-tts) doldu; 14 satırın 6'sı hf/ses_cache'e kaydedildi. Kota ~12 saat sonra açılınca etym-render workflow_dispatch (spec gunler/2026-11-15/etym_quarantine.json) ile devam edilecek. Yedek ses kullanılmadı."
+    "duzeltme_gecmisi": [
+      {
+        "not": "Metin: Seslendirmeyi baştan Gemini TTS 'Kore' sesiyle yap (So/Such/So That videosundaki ses). edge-tts kullanma. Seslendirme Gemini TTS ile, ses 'Kore' (Metin, 15 Kasım: edge-tts sesi kötü okuyor, kullanılmayacak). Ayarlar hf/gen.py'deki gemini() ile aynı: model gemini-2.5-flash-preview-tts, voiceName 'Kore', Türkçe satırlar için 'Sıcak, net ve enerjik bir öğretmen sesiyle Türkçe söyle: ', İngilizce satırlar için 'Say in clear, natural American English, like a friendly teacher: ' öneki; 24 kHz 16-bit PCM. Ücretsiz kota dakikada ~3 istek: istekler arasında ~21 sn bekle, her satırı önbelleğe al. Görüntü aynı kalsın; altyazı ve sahne zamanlarını yeni sese göre ayarla. etym-render iş akışına GEMINI_API_KEY secret'ını ekleyerek ya da hf/gen.py'deki gemini() fonksiyonunu kullanarak yap.",
+        "durum_notu": "2026-11-15 22:57: Gemini TTS günlük ücretsiz kota (10 istek/gün, gemini-2.5-flash-tts) doldu; 14 satırın 6'sı hf/ses_cache'e kaydedildi. Kota ~12 saat sonra açılınca etym-render workflow_dispatch (spec gunler/2026-11-15/etym_quarantine.json) ile devam edilecek. Yedek ses kullanılmadı.",
+        "uygulandi": "2026-11-17 23:12",
+        "sonuc": "Seslendirme baştan Gemini TTS 'Kore' ile yapıldı (14 satır, yedek ses yok); görüntü aynı, altyazı/sahne zamanları yeni sese göre ayarlandı. Süre 50.1 sn, 1080×1920."
+      }
+    ]
   },
   {
     "id": "2026-11-16-reels",
