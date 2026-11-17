@@ -1,0 +1,696 @@
+{
+ "dur": 69.527,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Hiç aramadığınız bir şeyi bulduğunuz oldu mu?",
+   "t0": 0.5,
+   "t1": 3.591,
+   "kelimeler": [
+    {
+     "w": "Hiç",
+     "t0": 0.5,
+     "t1": 1.4
+    },
+    {
+     "w": "aramadığınız",
+     "t0": 1.4,
+     "t1": 2.64
+    },
+    {
+     "w": "bir",
+     "t0": 2.64,
+     "t1": 2.8
+    },
+    {
+     "w": "şey",
+     "t0": 2.8,
+     "t1": 3.16
+    },
+    {
+     "w": "bulduğunuz",
+     "t0": 3.16,
+     "t1": 4.12
+    },
+    {
+     "w": "oldu.",
+     "t0": 4.12,
+     "t1": 4.58
+    }
+   ],
+   "duyulan": "Hiç aramadığınız bir şey bulduğunuz oldu."
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "İngilizcede bunun tek kelimelik bir adı var: serendipity.",
+   "t0": 3.941,
+   "t1": 8.152,
+   "kelimeler": [
+    {
+     "w": "İngilizce",
+     "t0": 3.941,
+     "t1": 5.161
+    },
+    {
+     "w": "de",
+     "t0": 5.161,
+     "t1": 5.301
+    },
+    {
+     "w": "bunun",
+     "t0": 5.301,
+     "t1": 5.641
+    },
+    {
+     "w": "tek",
+     "t0": 5.641,
+     "t1": 6.121
+    },
+    {
+     "w": "kelimelik",
+     "t0": 6.121,
+     "t1": 6.961
+    },
+    {
+     "w": "bir",
+     "t0": 6.961,
+     "t1": 7.141
+    },
+    {
+     "w": "adı",
+     "t0": 7.141,
+     "t1": 7.601
+    },
+    {
+     "w": "var,",
+     "t0": 7.601,
+     "t1": 7.781
+    },
+    {
+     "w": "Serendipiti.",
+     "t0": 8.361,
+     "t1": 9.481
+    }
+   ],
+   "duyulan": "İngilizce de bunun tek kelimelik bir adı var, Serendipiti."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Hikâye, Serendip adlı bir adada başlıyor.",
+   "t0": 8.852,
+   "t1": 12.452,
+   "kelimeler": [
+    {
+     "w": "Hikaye",
+     "t0": 8.852,
+     "t1": 10.292
+    },
+    {
+     "w": "serendip",
+     "t0": 10.292,
+     "t1": 11.412
+    },
+    {
+     "w": "adlı",
+     "t0": 11.412,
+     "t1": 11.932
+    },
+    {
+     "w": "bir",
+     "t0": 11.932,
+     "t1": 12.092
+    },
+    {
+     "w": "adada",
+     "t0": 12.092,
+     "t1": 12.592
+    },
+    {
+     "w": "başlıyor",
+     "t0": 12.592,
+     "t1": 13.432
+    }
+   ],
+   "duyulan": "Hikaye serendip adlı bir adada başlıyor"
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Serendip, Sri Lanka'nın eski adıdır ve Arapça Serendib yoluyla Sanskritçeden gelir.",
+   "t0": 12.802,
+   "t1": 19.283,
+   "kelimeler": [
+    {
+     "w": "Serendip,",
+     "t0": 12.802,
+     "t1": 14.062
+    },
+    {
+     "w": "Sirlanka",
+     "t0": 14.442,
+     "t1": 15.282
+    },
+    {
+     "w": "'nın",
+     "t0": 15.282,
+     "t1": 15.622
+    },
+    {
+     "w": "eski",
+     "t0": 15.622,
+     "t1": 16.322
+    },
+    {
+     "w": "adıdır",
+     "t0": 16.322,
+     "t1": 16.882
+    },
+    {
+     "w": "ve",
+     "t0": 16.882,
+     "t1": 17.482
+    },
+    {
+     "w": "Arapça",
+     "t0": 17.482,
+     "t1": 18.422
+    },
+    {
+     "w": "Serendip",
+     "t0": 18.422,
+     "t1": 19.342
+    },
+    {
+     "w": "yoluyla",
+     "t0": 19.342,
+     "t1": 20.062
+    },
+    {
+     "w": "Sanskritçadan",
+     "t0": 20.062,
+     "t1": 21.322
+    },
+    {
+     "w": "gelir.",
+     "t0": 21.322,
+     "t1": 21.702
+    }
+   ],
+   "duyulan": "Serendip, Sirlanka 'nın eski adıdır ve Arapça Serendip yoluyla Sanskritçadan gelir."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Bir İran masalına göre bu adanın üç prensi uzun bir yolculuğa çıkar.",
+   "t0": 19.633,
+   "t1": 25.074,
+   "kelimeler": [
+    {
+     "w": "Bir",
+     "t0": 19.633,
+     "t1": 20.253
+    },
+    {
+     "w": "İran",
+     "t0": 20.253,
+     "t1": 20.893
+    },
+    {
+     "w": "masalına",
+     "t0": 20.893,
+     "t1": 21.753
+    },
+    {
+     "w": "göre",
+     "t0": 21.753,
+     "t1": 22.133
+    },
+    {
+     "w": "bu",
+     "t0": 22.133,
+     "t1": 22.773
+    },
+    {
+     "w": "adanın",
+     "t0": 22.773,
+     "t1": 23.413
+    },
+    {
+     "w": "3",
+     "t0": 23.413,
+     "t1": 23.833
+    },
+    {
+     "w": "prensi",
+     "t0": 23.833,
+     "t1": 24.813
+    },
+    {
+     "w": "uzun",
+     "t0": 24.813,
+     "t1": 25.393
+    },
+    {
+     "w": "bir",
+     "t0": 25.393,
+     "t1": 25.593
+    },
+    {
+     "w": "yolculuğa",
+     "t0": 25.593,
+     "t1": 26.473
+    },
+    {
+     "w": "çıkar.",
+     "t0": 26.473,
+     "t1": 26.833
+    }
+   ],
+   "duyulan": "Bir İran masalına göre bu adanın 3 prensi uzun bir yolculuğa çıkar."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Prensler yol boyunca tesadüf ve zekâyla, hiç aramadıkları şeyleri bulur.",
+   "t0": 25.424,
+   "t1": 31.424,
+   "kelimeler": [
+    {
+     "w": "Prensler",
+     "t0": 25.424,
+     "t1": 26.704
+    },
+    {
+     "w": "yol",
+     "t0": 26.704,
+     "t1": 27.104
+    },
+    {
+     "w": "boyunca",
+     "t0": 27.104,
+     "t1": 28.024
+    },
+    {
+     "w": "tesadüf",
+     "t0": 28.024,
+     "t1": 29.224
+    },
+    {
+     "w": "ve",
+     "t0": 29.224,
+     "t1": 29.464
+    },
+    {
+     "w": "zeka",
+     "t0": 29.464,
+     "t1": 30.104
+    },
+    {
+     "w": "ile",
+     "t0": 30.104,
+     "t1": 30.504
+    },
+    {
+     "w": "hiç",
+     "t0": 30.504,
+     "t1": 31.324
+    },
+    {
+     "w": "aramadıkları",
+     "t0": 31.324,
+     "t1": 32.624
+    },
+    {
+     "w": "şeyleri",
+     "t0": 32.624,
+     "t1": 33.244
+    },
+    {
+     "w": "bulur.",
+     "t0": 33.244,
+     "t1": 33.804
+    }
+   ],
+   "duyulan": "Prensler yol boyunca tesadüf ve zeka ile hiç aramadıkları şeyleri bulur."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Yüzyıllar sonra İngiliz yazar Horace Walpole bu masalı okur.",
+   "t0": 32.324,
+   "t1": 37.125,
+   "kelimeler": [
+    {
+     "w": "Yüz",
+     "t0": 32.324,
+     "t1": 33.144
+    },
+    {
+     "w": "yıllar",
+     "t0": 33.144,
+     "t1": 33.744
+    },
+    {
+     "w": "sonra",
+     "t0": 33.744,
+     "t1": 34.104
+    },
+    {
+     "w": "İngiliz",
+     "t0": 34.104,
+     "t1": 35.064
+    },
+    {
+     "w": "yazar",
+     "t0": 35.064,
+     "t1": 35.664
+    },
+    {
+     "w": "Horace",
+     "t0": 35.664,
+     "t1": 36.264
+    },
+    {
+     "w": "Walpole",
+     "t0": 36.264,
+     "t1": 36.984
+    },
+    {
+     "w": "bu",
+     "t0": 36.984,
+     "t1": 37.604
+    },
+    {
+     "w": "masalı",
+     "t0": 37.604,
+     "t1": 38.164
+    },
+    {
+     "w": "okur.",
+     "t0": 38.164,
+     "t1": 38.804
+    }
+   ],
+   "duyulan": "Yüz yıllar sonra İngiliz yazar Horace Walpole bu masalı okur."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "28 Ocak 1754'te arkadaşı Horace Mann'e yazdığı mektupta yeni bir kelime uydurur.",
+   "t0": 37.475,
+   "t1": 43.635,
+   "kelimeler": [
+    {
+     "w": "28",
+     "t0": 37.475,
+     "t1": 38.415
+    },
+    {
+     "w": "Ocak",
+     "t0": 38.415,
+     "t1": 39.075
+    },
+    {
+     "w": "1754'de",
+     "t0": 39.075,
+     "t1": 41.035
+    },
+    {
+     "w": "arkadaşı",
+     "t0": 41.035,
+     "t1": 42.035
+    },
+    {
+     "w": "Horas",
+     "t0": 42.035,
+     "t1": 42.575
+    },
+    {
+     "w": "Mene",
+     "t0": 42.575,
+     "t1": 42.955
+    },
+    {
+     "w": "yazdığı",
+     "t0": 42.955,
+     "t1": 43.515
+    },
+    {
+     "w": "mektupta",
+     "t0": 43.515,
+     "t1": 44.255
+    },
+    {
+     "w": "yeni",
+     "t0": 44.255,
+     "t1": 44.615
+    },
+    {
+     "w": "bir",
+     "t0": 44.615,
+     "t1": 44.895
+    },
+    {
+     "w": "kelime",
+     "t0": 44.895,
+     "t1": 45.415
+    },
+    {
+     "w": "uydurur.",
+     "t0": 45.415,
+     "t1": 46.055
+    }
+   ],
+   "duyulan": "28 Ocak 1754'de arkadaşı Horas Mene yazdığı mektupta yeni bir kelime uydurur."
+  },
+  {
+   "id": "s09",
+   "dil": "en",
+   "metin": "Serendipity.",
+   "t0": 44.235,
+   "t1": 45.916,
+   "kelimeler": [
+    {
+     "w": "Serendipity",
+     "t0": 44.235,
+     "t1": 45.995
+    }
+   ],
+   "duyulan": "Serendipity"
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Anlamı, aranmayan güzel bir şeyi tesadüfen bulmaktır.",
+   "t0": 46.516,
+   "t1": 50.997,
+   "kelimeler": [
+    {
+     "w": "Anlamı",
+     "t0": 46.516,
+     "t1": 47.716
+    },
+    {
+     "w": "aranmayan",
+     "t0": 47.716,
+     "t1": 49.056
+    },
+    {
+     "w": "güzel",
+     "t0": 49.056,
+     "t1": 49.476
+    },
+    {
+     "w": "bir",
+     "t0": 49.476,
+     "t1": 49.936
+    },
+    {
+     "w": "şeyi",
+     "t0": 49.936,
+     "t1": 50.276
+    },
+    {
+     "w": "tesadüfen",
+     "t0": 50.276,
+     "t1": 51.496
+    },
+    {
+     "w": "bulmaktır.",
+     "t0": 51.496,
+     "t1": 52.476
+    }
+   ],
+   "duyulan": "Anlamı aranmayan güzel bir şeyi tesadüfen bulmaktır."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Kelime uzun süre az kullanıldı, yirminci yüzyılda yaygınlaştı.",
+   "t0": 51.347,
+   "t1": 56.347,
+   "kelimeler": [
+    {
+     "w": "Kelime",
+     "t0": 51.347,
+     "t1": 52.367
+    },
+    {
+     "w": "uzun",
+     "t0": 52.367,
+     "t1": 53.127
+    },
+    {
+     "w": "süre",
+     "t0": 53.127,
+     "t1": 53.607
+    },
+    {
+     "w": "az",
+     "t0": 53.607,
+     "t1": 53.967
+    },
+    {
+     "w": "kullanıldı.",
+     "t0": 53.967,
+     "t1": 54.887
+    },
+    {
+     "w": "Yirminci",
+     "t0": 55.467,
+     "t1": 56.267
+    },
+    {
+     "w": "yüzyılda",
+     "t0": 56.267,
+     "t1": 57.087
+    },
+    {
+     "w": "yaygınlaştı.",
+     "t0": 57.087,
+     "t1": 58.207
+    }
+   ],
+   "duyulan": "Kelime uzun süre az kullanıldı. Yirminci yüzyılda yaygınlaştı."
+  },
+  {
+   "id": "s12",
+   "dil": "en",
+   "metin": "Finding my favorite book in a box of old magazines was pure serendipity.",
+   "t0": 57.047,
+   "t1": 62.567,
+   "kelimeler": [
+    {
+     "w": "Finding",
+     "t0": 57.047,
+     "t1": 57.987
+    },
+    {
+     "w": "my",
+     "t0": 57.987,
+     "t1": 58.427
+    },
+    {
+     "w": "favorite",
+     "t0": 58.427,
+     "t1": 59.087
+    },
+    {
+     "w": "book",
+     "t0": 59.087,
+     "t1": 59.687
+    },
+    {
+     "w": "in",
+     "t0": 59.687,
+     "t1": 60.047
+    },
+    {
+     "w": "a",
+     "t0": 60.047,
+     "t1": 60.167
+    },
+    {
+     "w": "box",
+     "t0": 60.167,
+     "t1": 60.647
+    },
+    {
+     "w": "of",
+     "t0": 60.647,
+     "t1": 60.887
+    },
+    {
+     "w": "old",
+     "t0": 60.887,
+     "t1": 61.107
+    },
+    {
+     "w": "magazines",
+     "t0": 61.107,
+     "t1": 61.887
+    },
+    {
+     "w": "was",
+     "t0": 61.887,
+     "t1": 62.527
+    },
+    {
+     "w": "pure",
+     "t0": 62.527,
+     "t1": 63.247
+    },
+    {
+     "w": "serendipity.",
+     "t0": 63.247,
+     "t1": 64.687
+    }
+   ],
+   "duyulan": "Finding my favorite book in a box of old magazines was pure serendipity."
+  },
+  {
+   "id": "s13",
+   "dil": "tr",
+   "metin": "Siz en son neyi tesadüfen buldunuz?",
+   "t0": 63.167,
+   "t1": 66.527,
+   "kelimeler": [
+    {
+     "w": "Siz",
+     "t0": 63.167,
+     "t1": 64.107
+    },
+    {
+     "w": "en",
+     "t0": 64.107,
+     "t1": 64.727
+    },
+    {
+     "w": "son",
+     "t0": 64.727,
+     "t1": 65.107
+    },
+    {
+     "w": "neyi",
+     "t0": 65.107,
+     "t1": 65.667
+    },
+    {
+     "w": "tesadüfen",
+     "t0": 65.667,
+     "t1": 66.607
+    },
+    {
+     "w": "buldunuz?",
+     "t0": 66.607,
+     "t1": 67.307
+    }
+   ],
+   "duyulan": "Siz en son neyi tesadüfen buldunuz?"
+  }
+ ],
+ "uyarilar": []
+}
