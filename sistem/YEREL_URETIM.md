@@ -59,6 +59,11 @@ Her işe başlamadan önce depoda `git pull` yap. Çalışma dosyaları (TREATME
    - **Altyazı** ekrana gömülü, kelime kelime ya da kısa öbekler halinde; anahtar İngilizce kelime vurgulu renkte. Ayrıca `.srt` çıkar.
    - Ekranda tek dil Türkçe; öğretilen İngilizce kelime/cümleler İngilizce. Stilin demo'sundaki Çince satırlar kullanılmaz.
    - Sonda kısa kapanış kartı: **ingilizcecim.com**.
+   - **Kapak görseli** (Metin, 18 Kasım 2026: profil ızgarası çirkin görünüyordu; Instagram ilk kareyi kapak yapıyor). Her videonun ayrı bir `<ad>_kapak.jpg`'si olur (1080×1920, JPEG) ve yayında `cover_url` olarak verilir:
+     - Filmin **en güzel anı**: karakter ve sahne dolu, renkli bir kare (boş açılış karesi, geçiş, kapanış kartı değil).
+     - Üstüne **her videoda aynı düzende başlık**: küçük seri etiketi (ör. "KELİMELERİN TARİHÇESİ" ya da konu etiketi) + büyük ana kelime/başlık (ör. "Serendipity"), en az 140 px, yüksek kontrast, filmin stilinin renk ve yazı tipiyle.
+     - Önemli her şey **ortadaki 1080×1350 alanda** (y = 285–1635) kalır: profil ızgarası dikey kapağın yalnızca ortasını gösterir.
+     - Yapım: sayfa `?kapak=1` parametresiyle açılınca (`location.search`) o karenin üstüne başlığı çizer; `film.json`'a `"kapak_t": <saniye>` yazılır. Bulutta `teslim.sh` kapağı kendisi çıkarır; bilgisayarda `node core/render/still.mjs <film> <kapak_t> --size 1080x1920 --q kapak=1`.
    - **Yasak**: sadece yazı, düz zemin ya da kart dizisi olan video; başka hesapların karakteri, logosu, filigranı, sesi ya da sahnesi; yaşayan gerçek kişilerin çizimi (tarihî kişiler serbest); lisansı belirsiz müzik (kütüphanenin kendi müzik/ses araçlarını ya da müziksiz anlatımı kullan).
 5. Kendi kontrolün: kütüphanenin `readcheck` / `asr_check.py` adımlarını çalıştır, sonra videodan **8 kare** içeren bir kontrol tablosu (`core\render\sheet.py`) çıkar ve kendin bak: yazı taşması, kesik karakter, boş sahne, yanlış yazım, ses-altyazı kayması yok.
 
@@ -67,6 +72,7 @@ Her işe başlamadan önce depoda `git pull` yap. Çalışma dosyaları (TREATME
 1. Dosyaları `E:\ingilizcecim\ingilizcecim-medya\gunler\<YYYY-MM-DD>\` içine koy:
    - `<ad>.mp4` (ad: küçük harf, ör. `quarantine_etym` ya da `so_such`)
    - `<ad>_kareler.jpg` (8 karelik kontrol tablosu)
+   - `<ad>_kapak.jpg` (kapak görseli, §4.4)
    - `<ad>.srt`
    - `<ad>_kaynak.md` (TREATMENT özeti, seslendirme metni, etimoloji kaynakları)
 2. `git add` + `git commit -m "Yerel üretim: <tarih> <ad>"` + `git push`. Commit'in **sha**'sını al.
@@ -86,6 +92,7 @@ Her işe başlamadan önce depoda `git pull` yap. Çalışma dosyaları (TREATME
  "aciklama": "<Instagram açıklaması: 3–5 cümle Türkçe, bir soru ile biter, boş satır, ingilizcecim.com, boş satır, 8–10 hashtag (#ingilizce #ydt #yds #ingilizcecim ...)>",
  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/<commit-sha>/gunler/YYYY-MM-DD/<ad>.mp4",
  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/<commit-sha>/gunler/YYYY-MM-DD/<ad>_kareler.jpg",
+ "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/<commit-sha>/gunler/YYYY-MM-DD/<ad>_kapak.jpg",
  "sure_sn": 45.0,
  "kaynaklar": ["https://www.etymonline.com/word/...", "..."],
  "onerilen_dilim": "20:30",
