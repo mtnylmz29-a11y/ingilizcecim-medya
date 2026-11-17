@@ -4,6 +4,7 @@ import json, sys
 k = sys.argv[1]
 if k == "bilgi":
     f = sys.argv[2]; F = json.load(open(f"{f}/film.json", encoding="utf-8")); d = json.load(open(f"{f}/ses/zaman.json", encoding="utf-8"))["dur"]
+    print(f"KAPAK_T='{F.get('kapak_t', round(d * 0.45, 2))}'")
     print(f"AD='{F['ad']}'\nTARIH='{F['tarih']}'\nGRAIN='{F.get('grain', 0)}'\nDUR='{d}'")
     print("TS='" + " ".join(f"{d * i / 11:.2f}" for i in range(12)).replace("0.00", "0.30", 1) + "'")
     print("KARE='" + " ".join(f"{d * p:.2f}" for p in (0.06, 0.18, 0.30, 0.42, 0.54, 0.66, 0.78, 0.92)) + "'")

@@ -20,7 +20,9 @@ node core/render/events.mjs "$FILM" --size $SIZE --out "$FILM/events.json" || ec
 node core/render/video.mjs "$FILM" --fps 24 --workers 4 --size $SIZE --out /tmp/video.mp4
 if [ -f "$FILM/mix.py" ]; then $PY "$FILM/mix.py" "$FILM" /tmp/mix.wav; else $PY "$REPO/sistem/lemo/mix.py" "$FILM" /tmp/mix.wav; fi
 sh core/render/mux.sh /tmp/video.mp4 /tmp/mix.wav /tmp/film.mp4 24 "$GRAIN"
+node core/render/still.mjs "$FILM" "$KAPAK_T" --size $SIZE --q kapak=1 --out /tmp/kapak
 cd "$REPO"
+cp /tmp/kapak/*.jpg "$FILM/out/kapak.jpg"
 $PY sistem/lemo/yardim.py srt "$FILM" "$FILM/out/film.srt"
 i=0
 for T in $KARE; do
@@ -33,4 +35,5 @@ mkdir -p "gunler/$TARIH"
 cp /tmp/film.mp4 "gunler/$TARIH/$AD.mp4"
 cp "$FILM/out/film.srt" "gunler/$TARIH/$AD.srt"
 cp "$FILM/out/kareler.jpg" "gunler/$TARIH/${AD}_kareler.jpg"
+cp "$FILM/out/kapak.jpg" "gunler/$TARIH/${AD}_kapak.jpg"
 echo "TESLIM: gunler/$TARIH/$AD.mp4"
