@@ -60,7 +60,7 @@ Her işe başlamadan önce depoda `git pull` yap. Çalışma dosyaları (TREATME
    - Ekranda tek dil Türkçe; öğretilen İngilizce kelime/cümleler İngilizce. Stilin demo'sundaki Çince satırlar kullanılmaz.
    - Sonda kısa kapanış kartı: **ingilizcecim.com**.
    - **Kapak görseli** (Metin, 18 Kasım 2026: profil ızgarası çirkin görünüyordu; Instagram ilk kareyi kapak yapıyor). Her videonun ayrı bir `<ad>_kapak.jpg`'si olur (1080×1920, JPEG) ve yayında `cover_url` olarak verilir:
-     - Filmin **en güzel anı**: karakter ve sahne dolu, renkli bir kare (boş açılış karesi, geçiş, kapanış kartı değil).
+     - Filmin **konusunu en iyi anlatan ve en dolu karesi** (Metin): kelimenin/konunun özünü tek bakışta gösteren an; karakter, sahne ve nesnelerle dolu, renkli. Boş açılış karesi, geçiş, yazı kartı ya da kapanış kartı olmaz. Birkaç aday kareyi (`still.mjs`) karşılaştırıp en iyisini seç.
      - Üstüne **her videoda aynı düzende başlık**: küçük seri etiketi (ör. "KELİMELERİN TARİHÇESİ" ya da konu etiketi) + büyük ana kelime/başlık (ör. "Serendipity"), en az 140 px, yüksek kontrast, filmin stilinin renk ve yazı tipiyle.
      - Önemli her şey **ortadaki 1080×1350 alanda** (y = 285–1635) kalır: profil ızgarası dikey kapağın yalnızca ortasını gösterir.
      - Yapım: sayfa `?kapak=1` parametresiyle açılınca (`location.search`) o karenin üstüne başlığı çizer; `film.json`'a `"kapak_t": <saniye>` yazılır. Bulutta `teslim.sh` kapağı kendisi çıkarır; bilgisayarda `node core/render/still.mjs <film> <kapak_t> --size 1080x1920 --q kapak=1`.
