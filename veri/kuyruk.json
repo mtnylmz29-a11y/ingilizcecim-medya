@@ -524,5 +524,26 @@
   "media_id": "17996357148060439",
   "permalink": "https://www.instagram.com/reel/Df2d7nLk-TJ/",
   "yayin_saati": "2026-11-17T17:29:10+0000"
+ },
+ {
+  "id": "2026-11-18-reels",
+  "tarih": "2026-11-18",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "yerel (Claude Code + lemo-opuscar); ses VoxCPM2 (Apache-2.0, yerel, profil a5cfa1a1)",
+  "stil": "pixel-rpg (pixel-art)",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Assassin",
+  "aciklama": "\"Assassin\" bugün suikastçı demek, ama adı bin yıl önce düşmanların taktığı bir lakaptan doğdu. 1090'da Alamut Kalesi'nde güçlenen Nizari İsmailileri düşmanları küçümseyerek \"haşşaşin\" diye çağırdı; esrar hikâyesi ise yalnızca bir rivayet. Haçlılar ve Marco Polo adı Avrupa'ya taşıdı, İtalyancada assassino oldu, 1600'lerin başında da İngilizceye geçti. Sen bu kelimeyi ilk nerede duymuştun?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #kelimelerintarihcesi #etimoloji #ingilizcekelime #assassin #yks #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e6b6a92c7c90778374a4c113d1bcea8a4b60a2e4/gunler/2026-11-18/assassin_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/e6b6a92c7c90778374a4c113d1bcea8a4b60a2e4/gunler/2026-11-18/assassin_etym_kareler.jpg",
+  "sure_sn": 54.0,
+  "kaynaklar": [
+   "https://en.wikipedia.org/wiki/Order_of_Assassins",
+   "https://en.wiktionary.org/wiki/assassin"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]
