@@ -1,0 +1,66 @@
+{
+ "dur": 6.342,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Bu bir deneme videosudur.",
+   "t0": 0.6,
+   "t1": 2.571,
+   "kelimeler": [
+    {
+     "w": "Bu",
+     "t0": 0.6,
+     "t1": 1.16
+    },
+    {
+     "w": "bir",
+     "t0": 1.16,
+     "t1": 1.52
+    },
+    {
+     "w": "deneme",
+     "t0": 1.52,
+     "t1": 2.2
+    },
+    {
+     "w": "videosudur.",
+     "t0": 2.2,
+     "t1": 3.18
+    }
+   ],
+   "duyulan": "Bu bir deneme videosudur."
+  },
+  {
+   "id": "s02",
+   "dil": "en",
+   "metin": "This is a test.",
+   "t0": 2.971,
+   "t1": 4.342,
+   "kelimeler": [
+    {
+     "w": "This",
+     "t0": 2.971,
+     "t1": 3.611
+    },
+    {
+     "w": "is",
+     "t0": 3.611,
+     "t1": 3.771
+    },
+    {
+     "w": "a",
+     "t0": 3.771,
+     "t1": 3.931
+    },
+    {
+     "w": "test.",
+     "t0": 3.931,
+     "t1": 4.251
+    }
+   ],
+   "duyulan": "This is a test."
+  }
+ ],
+ "uyarilar": []
+}
