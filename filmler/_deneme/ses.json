@@ -1,0 +1,4 @@
+{"satirlar": [
+ {"id": "s01", "dil": "tr", "metin": "Bu bir deneme videosudur."},
+ {"id": "s02", "dil": "en", "metin": "This is a test."}
+], "bas": 0.6, "ara": 0.4, "son": 2.0}
