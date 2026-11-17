@@ -1,0 +1,15 @@
+{"satirlar": [
+ {"id": "s01", "dil": "tr", "metin": "Hiç aramadığınız bir şeyi bulduğunuz oldu mu?"},
+ {"id": "s02", "dil": "tr", "metin": "İngilizcede bunun tek kelimelik bir adı var: serendipity.", "okunus": "İngilizcede bunun tek kelimelik bir adı var: serendipiti."},
+ {"id": "s03", "dil": "tr", "metin": "Hikâye, Serendip adlı bir adada başlıyor.", "okunus": "Hikâye, Serendip adlı bir adada başlıyor."},
+ {"id": "s04", "dil": "tr", "metin": "Serendip, Sri Lanka'nın eski adıdır ve Arapça Serendib yoluyla Sanskritçeden gelir."},
+ {"id": "s05", "dil": "tr", "metin": "Bir İran masalına göre bu adanın üç prensi uzun bir yolculuğa çıkar."},
+ {"id": "s06", "dil": "tr", "metin": "Prensler yol boyunca tesadüf ve zekâyla, hiç aramadıkları şeyleri bulur."},
+ {"id": "s07", "dil": "tr", "metin": "Yüzyıllar sonra İngiliz yazar Horace Walpole bu masalı okur.", "okunus": "Yüzyıllar sonra İngiliz yazar Horas Volpol bu masalı okur."},
+ {"id": "s08", "dil": "tr", "metin": "28 Ocak 1754'te arkadaşı Horace Mann'e yazdığı mektupta yeni bir kelime uydurur.", "okunus": "Yirmi sekiz Ocak bin yedi yüz elli dörtte arkadaşı Horas Men'e yazdığı mektupta yeni bir kelime uydurur."},
+ {"id": "s09", "dil": "en", "metin": "Serendipity."},
+ {"id": "s10", "dil": "tr", "metin": "Anlamı, aranmayan güzel bir şeyi tesadüfen bulmaktır."},
+ {"id": "s11", "dil": "tr", "metin": "Kelime uzun süre az kullanıldı, yirminci yüzyılda yaygınlaştı."},
+ {"id": "s12", "dil": "en", "metin": "Finding my favorite book in a box of old magazines was pure serendipity."},
+ {"id": "s13", "dil": "tr", "metin": "Siz en son neyi tesadüfen buldunuz?"}
+], "bas": 0.5, "ara": 0.35, "son": 3.0, "araliklar": {"s03": 0.7, "s07": 0.9, "s09": 0.6, "s10": 0.6, "s12": 0.7, "s13": 0.6}}
