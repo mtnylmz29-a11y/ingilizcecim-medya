@@ -520,8 +520,20 @@ window.render = t => {
   X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.filter = 'none';
   // warm bloom
   X.globalCompositeOperation = 'screen'; X.globalAlpha = .12; X.filter = 'blur(18px)'; X.drawImage(C, 0, 0); X.filter = 'none'; X.globalAlpha = 1;
-  frame(t); placard(t);
+  frame(t);
+  if (KAPAK) cover(); else placard(t);
 };
+const KAPAK = /kapak=1/.test(location.search);
+function cover() { // same layout on every cover: small series label + big word, inside y 285-1635
+  X.setTransform(1, 0, 0, 1, 0, 0); X.globalCompositeOperation = 'source-over'; X.globalAlpha = 1;
+  X.fillStyle = 'rgba(30,14,7,.9)'; X.beginPath(); X.roundRect(70, 330, 940, 330, 26); X.fill();
+  X.strokeStyle = '#c99a45'; X.lineWidth = 4; X.beginPath(); X.roundRect(84, 344, 912, 302, 18); X.stroke();
+  X.textAlign = 'center'; X.textBaseline = 'middle';
+  X.fillStyle = '#e8c48a'; X.font = '600 46px Fredoka'; X.fillText('KELİMELERİN TARİHÇESİ', 540, 410);
+  X.fillStyle = '#f5b942'; let sz = 170; X.font = `${sz}px "Lilita One"`; while (X.measureText('Serendipity').width > 860) { sz -= 4; X.font = `${sz}px "Lilita One"`; }
+  X.fillText('Serendipity', 540, 540);
+  X.fillStyle = '#e8c48a'; X.font = '600 38px Fredoka'; X.fillText('“mutlu tesadüf”', 540, 1580);
+}
 
 (async () => {
   Z = await (await fetch('ses/zaman.json')).json(); Z.satirlar.forEach(l => L[l.id] = l);
