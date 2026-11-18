@@ -60,3 +60,4 @@ Kayıtta `"film"` alanı varsa: film klasöründe istenen değişikliği yap (me
 - İlk denemede (18 Kasım, Serendipity) video Actions'ta çıktı ama üretim oturumu kuyruk kaydını yazmadan kapandı. Video biter bitmez **ilk iş** kuyruk kaydını yaz; görevler başlarken kaydı olmayan bitmiş filmleri tamamlar.
 - Hedef gün: her gün bir video üretilir; yedekte video varsa sıradaki boş güne yazılır (Metin, 18 Kasım: "biriksin"). Yayın görevleri her dilimde yalnızca bir paylaşım yayınlar, gelecek tarihli kayıtlara dokunmaz.
 - Actions çalışması aynı anda bir tane (`concurrency: lemo-render`); sıradakini bekler.
+- **Satır sonu paraziti** (18 Kasım): Gemini bazı satırların sonuna ~160 ms'lik bir patlama ekliyor. `ses.py` bunu susturur. Render'dan sonra `python3 sistem/lemo/ses_kontrol.py <film>` ile kontrol et. Eski önbellekli filmler `asama=hepsi` ile düzelir.
