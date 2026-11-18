@@ -14,6 +14,8 @@ Metin 18 Kasım'da "responsible for / from" videosunu beğendi ve bunu biçim ol
 **Örnek spec:** `video/ornekler/sinav_responsible-for.json`.
 
 ## Ne zaman kullanılır
+- **Ses kotası yedeği** (Metin, 18 Kasım gece): Gemini kotası dolduğunda o günün videosu yerine bu biçimde seslendirmesiz bir soru videosu üretilir (`ORKESTRA.md`).
+- **Denetim**: Bu biçim görsel zenginlik standardından (karakter + 5 sahne) muaftır; aşağıdaki "Kontrol (Editör)" maddeleriyle denetlenir.
 - **Ekip 17:30 gönderisinde haftada 2–3 gün** (art arda değil) bu biçimi kendiliğinden seçer; HyperFrames çizgi film zorunluluğu o günler için geçerli değildir (`ORKESTRA.md`).
 - Konu: sık karıştırılan edat, bağlaç ya da zaman ayrımları; YDS/YDT tipi tek boşluklu dilbilgisi ya da kelime sorusu.
 - Soru tek bir "tuzağı" öğretmeli: Türkçeden geçen yanlış kalıp, iki yapının karıştırılması gibi. Gerekçeler kısa ve gerçek olmalı. Uydurma kural yazılmaz; kalıp sözlükten (Cambridge, Oxford, Merriam-Webster) doğrulanır.

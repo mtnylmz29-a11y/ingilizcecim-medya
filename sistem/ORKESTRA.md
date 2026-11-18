@@ -2,6 +2,12 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 18 Kasım 2026 (gece) — SINAV SORUSU BİÇİMİ: DENETİM İSTİSNASI VE SES KOTASI YEDEĞİ (Metin; aşağıdakilerin hepsinden önce gelir)
+- Metin: "Bu videoyu yeni bir biçim olarak yüklemesini söylemiştim. Ses kotamızın dolduğu yerde ses kullanmadan bu biçimde olduğu gibi seslendirmesiz soru videoları hazırlayabilirsin."
+- **Denetmen istisnası**: `"stil": "sinav-sorusu (remotion)"` olan kayıtlar "Görsel zenginlik standardı"ndan (karakter + hikâye + en az 5 sahne) **muaftır**. Bu biçim `sistem/VIDEO_SINAV.md` > "Kontrol (Editör)" maddelerine göre denetlenir: soru en fazla üç satır, balonlar tek satır, doğru şık ve gerekçeler doğru (en az 2 sözlükle), kapak başlığı okunaklı ve ortadaki 1080×1350 alanda, 1080×1920, 25–60 sn, <50 MB. Seslendirme yoktur ve beklenmez (müzik ve tik tak var mı, ona bakılır). Bu biçimde bir videoyu "karakter yok" gerekçesiyle KALDI saymak yanlıştır.
+- **Ses kotası yedeği**: Gemini kotası dolunca (`SES KOTASI`) ya da seslendirme üretilemeyince, o günün videosu bekletilmez. Aynı slota bir Sınav sorusu videosu üretilir (spec `gunler/<tarih>/sinav_<ad>.json` → `etym-render.yml`, TTS çağrılmaz). Konu Konu Bulucu haritasından seçilir. Bu yedek günler haftalık "2–3 gün" sayısına dahil değildir, ama art arda iki gün aynı slotta sınav sorusu olmaz (kota iki gün üst üste dolarsa ikinci gün Metin'e bildirilir). Günlüğe 'SES KOTASI → sınav sorusu yedeği' yazılır.
+- 18 Kasım "Responsible For or From?" (2026-11-18-gonderi) bu biçimin kendi şablonuyla, seslendirmesiz olarak bulutta yeniden üretildi.
+
 ## GÜNCELLEME 18 Kasım 2026 (akşam) — SATIR SONU SES PARAZİTİ (Metin; aşağıdakilerin hepsinden önce gelir)
 - Metin, Serendipity videosu için: "her cümlenin sonundaki o çirkin ses nedir?" Neden: Gemini TTS bazı satırların sonuna ~160 ms'lik, tam seviyede bir patlama ekliyor. Whisper son kelimeyi bu patlamaya kadar uzattığı için kırpma onu kaçırıyordu.
 - Düzeltme: `sistem/lemo/ses.py` artık her satırın sonunda bu parazit varsa susturuyor (satırın uzunluğu ve zaman çizelgesi değişmiyor). Eski bir filmi düzeltmek için `Lemo render` iş akışını `asama=hepsi` ile çalıştır. Ses önbellekten gelir, kota harcamaz.
