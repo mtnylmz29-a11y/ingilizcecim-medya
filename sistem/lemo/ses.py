@@ -84,6 +84,30 @@ def oku(yol):
         return np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
 
 
+# 18 Kasım 2026 (Metin: "her cümlenin sonundaki o çirkin ses"): Gemini satır sonuna ~160 ms tam seviyede patlama ekliyor.
+# Whisper son kelimeyi bu patlamaya uzattığı için kırpma onu kaçırıyordu; burada sessize çevrilir (uzunluk değişmez).
+def _db(x): return 20*np.log10(np.sqrt(np.mean(x**2))+1e-9) if len(x) else -200.0
+def parazit_sustur(y, sr=24000):
+    """Satır sonundaki TTS parazitini (konuşma bittikten sonra >=60 ms sessizlik, ardından kısa yüksek patlama) sessize çevirir.
+    Uzunluk aynı kalır, zaman çizelgesi bozulmaz. Döner: (yeni_dizi, susturulan_sn)."""
+    y = np.array(y, dtype=np.float32, copy=True); n = int(.01 * sr); L = len(y)
+    bas = max(0, L - int(.6 * sr))
+    env = np.array([_db(y[i:i + n]) for i in range(bas, L - n + 1, n)])
+    sess = env < -45
+    k = 0; aday = None
+    while k < len(env):
+        if sess[k]:
+            j = k
+            while j < len(env) and sess[j]: j += 1
+            if j - k >= 6 and j < len(env) and len(env) - j <= 25 and env[j:].max() > -30: aday = k  # parazit <=250 ms; daha uzunsa gerçek kelimedir
+            k = j
+        else: k += 1
+    if aday is None: return y, 0.0
+    cut = bas + (aday + 1) * n
+    y[cut:] = 0.0
+    return y, (L - cut) / sr
+
+
 uyari = []
 for l in SAT:
     x = oku(l["_cache"])
@@ -97,6 +121,8 @@ for l in SAT:
         son = min(len(x) / 24000, kel[-1]["t1"] + (0.22 if os.path.exists(l["_cache"] + ".kirp") else 0.35))
     y = x[int(bas * 24000):int(son * 24000)]
     n = min(len(y), 240); y[:n] *= np.linspace(0, 1, n); y[len(y) - n:] *= np.linspace(1, 0, n)
+    y, sus = parazit_sustur(y)
+    if sus: print(f"  {l['id']}: satır sonu paraziti susturuldu ({sus*1000:.0f} ms)", flush=True)
     l["_x"] = y
     l["kelimeler"] = [{"w": k["w"], "t0": round(k["t0"] - bas, 3), "t1": round(k["t1"] - bas, 3)} for k in kel]
     duyulan = " ".join(k["w"] for k in kel)
