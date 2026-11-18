@@ -492,6 +492,15 @@
      "kaydetme": 1,
      "paylasim": 0,
      "erisim": 102
+    },
+    {
+     "tarih": "2026-11-18T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 1,
+     "paylasim": 0,
+     "erisim": 107,
+     "izlenme": 120
     }
    ]
   },
@@ -505,6 +514,15 @@
      "kaydetme": 0,
      "paylasim": 0,
      "erisim": 31
+    },
+    {
+     "tarih": "2026-11-18T20:35+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 97,
+     "izlenme": 109
     }
    ]
   },
@@ -518,6 +536,85 @@
      "kaydetme": 2,
      "paylasim": 0,
      "erisim": 387
+    },
+    {
+     "tarih": "2026-11-18T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 2,
+     "paylasim": 0,
+     "erisim": 394,
+     "izlenme": 429
+    }
+   ]
+  },
+  "2026-11-15-gonderi": {
+   "media_id": "18019546814748426",
+   "olcumler": [
+    {
+     "tarih": "2026-11-18T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 1,
+     "paylasim": 1,
+     "erisim": 277,
+     "izlenme": 319
+    }
+   ]
+  },
+  "2026-11-15-reels": {
+   "media_id": "18351299719270850",
+   "olcumler": [
+    {
+     "tarih": "2026-11-18T20:35+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 140,
+     "izlenme": 151
+    }
+   ]
+  },
+  "2026-11-16-reels": {
+   "media_id": "18232272133336065",
+   "olcumler": [
+    {
+     "tarih": "2026-11-18T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 120,
+     "izlenme": 133
+    }
+   ]
+  },
+  "2026-11-17-reels": {
+   "media_id": "17996357148060439",
+   "olcumler": [
+    {
+     "tarih": "2026-11-18T20:35+03:00",
+     "begeni": 1,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 153,
+     "izlenme": 173
+    }
+   ]
+  },
+  "2026-11-19-reels": {
+   "media_id": "18115116974239833",
+   "olcumler": [
+    {
+     "tarih": "2026-11-18T20:35+03:00",
+     "begeni": 0,
+     "yorum": 0,
+     "kaydetme": 0,
+     "paylasim": 0,
+     "erisim": 86,
+     "izlenme": 121
     }
    ]
   }
