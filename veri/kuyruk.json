@@ -644,8 +644,8 @@
   "seri": "kelimelerin-tarihcesi",
   "baslik": "Kelimelerin Tarihçesi: Muscle",
   "aciklama": "Muscle (kas) kelimesinin içinde küçük bir fare saklanıyor! Latincede mus \"fare\" demekti; küçültme ekiyle musculus \"küçük fare\" oldu ve aynı kelime \"kas\" anlamında da kullanıldı. Muhtemelen kas oynadığında deri altında kıpırdayan bir fareye benzetildiği için. Kelime 1300'lerde İngilizceye geçti. Sizce başka hangi kelimenin içinde bir hayvan saklanıyor?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #etimoloji #kelimelerintarihçesi #ingilizcekelime #muscle #yks #ingilizceöğren",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/883288c1377de31e3cbfe937a74ee39e02db84a6/gunler/2026-11-20/muscle_etym.mp4",
-  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/883288c1377de31e3cbfe937a74ee39e02db84a6/gunler/2026-11-20/muscle_etym_kareler.jpg",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e32ba687dd8fb960f3957aac6ede7008125dc160/gunler/2026-11-20/muscle_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/e32ba687dd8fb960f3957aac6ede7008125dc160/gunler/2026-11-20/muscle_etym_kareler.jpg",
   "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/883288c1377de31e3cbfe937a74ee39e02db84a6/gunler/2026-11-20/muscle_etym_kapak.jpg",
   "sure_sn": 54.1,
   "kaynaklar": [
@@ -653,7 +653,7 @@
    "https://en.wiktionary.org/wiki/musculus"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "onay_bekliyor",
+  "durum": "onaylandi",
   "onay": "otomatik (Denetmen, 2026-11-18T11:54+03:00)",
   "denetim": {
    "denetci": "Denetmen",
@@ -661,6 +661,8 @@
    "notlar": "Bilgi doğru: Latince mus 'fare', küçültme musculus 'küçük fare' ve 'kas'; benzetme (kasın, özellikle pazının fare gibi kıpırdaması) Etymonline'da 'were thought to resemble mice' diye geçiyor — videodaki 'muhtemelen' uygun; İngilizceye 14. yy sonu (Etymonline 'late 14c.', Merriam-Webster 14. yy). Teknik: 1080×1920, 54,1 sn, 31,3 MB, H.264+AAC 48 kHz, ses Gemini Kore (ticari kullanım uygun), Whisper satırları metinle örtüşüyor (s06 'kas olur' ulanarak 'kasolur' duyuluyor, doğal). İngilizce örnek ve Türkçe çevirisi doğru; yazım hatası yok. Görsel: midcentury-toon, Romalı senatör + modern sporcu karakter, mimikli; ≥8 sahne (spor salonu kancası, MUSCLE başlığı, Antik Roma kemeri, mus=fare, mus+culus, deri altında fare büyüteci, küçük fare=kas ayrımı, Roma→İngiltere 1300'ler haritası, bugün spor salonu örnek cümle, soru, ingilizcecim.com kapanışı); ilk 3 sn soru kancası. Kapak iyi: 'deri altındaki fare' sahnesi, 'KELİMELERİN TARİHÇESİ / Muscle' başlığı okunaklı ve ortadaki 1080×1350 alanda. Küçük not (düzeltme gerektirmez): kelime İngilizceye büyük olasılıkla Fransızca muscle üzerinden geçti; videoda Fransızca ara aşama anılmıyor.",
    "zaman": "2026-11-18T11:54+03:00"
   },
-  "bekletme_notu": "[Claude, Metin isteği 18 Kasım 18:58] Satır sonu ses paraziti (s11, s12) düzeltiliyor; yeniden render bitince onaylandi yapılacak. Yayınlama."
+  "duzeltme_gecmisi": [
+   "[Metin, 18 Kasım] Satır sonu ses paraziti (s11, s12) → asama=hepsi ile yeniden render (e32ba68); ses_kontrol temiz, süre 54,1 sn, 31,2 MB, görüntü aynı. Metin: \"ne zaman yayınlayacaksan yayınla\" → onaylandi, dilimi 20:30."
+  ]
  }
 ]
