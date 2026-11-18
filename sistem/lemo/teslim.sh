@@ -31,6 +31,7 @@ done
 ffmpeg -loglevel error -y -i "/tmp/k/%d.jpg" -vf tile=4x2 "$FILM/out/kareler.jpg"
 ffprobe -v error -show_entries stream=width,height,codec_type -show_entries format=duration,size -of json /tmp/film.mp4 > /tmp/probe.json
 $PY sistem/lemo/yardim.py kontrol /tmp/probe.json
+$PY sistem/lemo/ses_kontrol.py "$FILM" || echo "UYARI: SES PARAZITI (ses.py ile susturulmus olmaliydi)"
 mkdir -p "gunler/$TARIH"
 cp /tmp/film.mp4 "gunler/$TARIH/$AD.mp4"
 cp "$FILM/out/film.srt" "gunler/$TARIH/$AD.srt"
