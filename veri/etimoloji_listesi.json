@@ -1,15 +1,152 @@
 [
- {"kelime": "salary", "durum": "uretildi", "tarih": "2026-11-15", "kesin": "Latince salarium < sal 'tuz'; Roma'da askere/memura ödenek; Eski Fransızca salaire / Anglo-Fransızca salarie üzerinden 1300'lerde İngilizce.", "rivayet": "Paranın tuz almak için verildiği / askerlere tuzla ödeme yapıldığı hikâyesi kanıtlanmamış.", "gorsel": {"tema": "altin", "stil": "isik", "muzik": "neseli", "zeminler": ["roma", "orta_cag", "sehir", "ofis"], "olaylar": ["yagmur", "dusunce", "damga"], "harita": false}},
- {"kelime": "quarantine", "durum": "uretildi", "zemin_onerisi": "liman", "kesin": "İtalyanca (Venedik ağzı) quarantena / quaranta giorni '40 gün'. Veba döneminde gemiler limana girmeden önce bekletilirdi. Ragusa Cumhuriyeti (bugünkü Dubrovnik) 1377'de 30 günlük (trentino) bekleme koydu, süre sonra 40 güne çıktı. İngilizcede 'gemi tecridi' anlamı 1660'lar; bugün her türlü salgın tecridi.", "rivayet": "40 sayısının neden seçildiği (dinî/tıbbi açıklamalar) kesin değil.", "gorsel_oneri": "Köken: liman zemini, denizci; demirli gemi (dekor capa), sarı bayrak; 'sayac' 30→40 GÜN (Ragusa'nın 30 günü sonra 40'a çıktı). Değişim: HARİTA — Ragusa (Dubrovnik, 42.65/18.09) → Venedik (45.44/12.33) → Londra; eski_ikon gemi. tema mavi, stil harfler, muzik gizemli. 40 sayısının sebebi için damga KESİN DEĞİL.", "tarih": "2026-11-15", "gorsel": {"tema": "mavi", "stil": "parsomen", "muzik": "gizemli", "zeminler": ["liman", "sehir"], "olaylar": ["sayac", "ziplat", "damga", "parilti"], "harita": true}, "not": "Kaynak: CDC EID Etymologia (PMC3559069), etymonline. Kelime İngilizcede daha önce başka anlamlarla vardı (1400'ler, 1520'ler); gemi tecridi anlamı 1660'lar."},
- {"kelime": "disaster", "durum": "uretildi", "tarih": "2026-11-16", "uretim": "yerel", "zemin_onerisi": "gece", "kesin": "İtalyanca disastro / Orta Fransızca désastre; dis- 'kötü' + astro 'yıldız' (Latince astrum, Yunanca astron). 'Kötü yıldızın etkisi', astrolojik bir kavram. İngilizcede 1590'lar.", "rivayet": "", "gorsel_oneri": "Köken: gece zemini, astrolog; dekor teleskop + gezegen; parcalar dis- (kötü) + astro (yıldız); 'kayan' kırmızı yıldızlar ('kötü yıldız'); 'sars'. Değişim: duraklar İtalyanca disastro → Fransızca désastre → İngilizce 1590'lar; ziplat simsek; tema gece, stil isik, muzik gizemli."},
- {"kelime": "ostracize", "durum": "uretildi", "tarih": "2026-11-17", "uretim": "yerel", "seviye": "C1", "zemin_onerisi": "yunan", "kesin": "Yunanca ostrakizein 'çömlek kırığıyla oylayıp sürgüne göndermek' < ostrakon 'çömlek kırığı'. Atina'da her yıl sürgün oylaması yapılıp yapılmayacağı sorulur; 6000 oy (yeter sayı, Plutarkhos) toplanırsa en çok yazılan kişi 10 yıl sürgüne giderdi. İngilizcede 1649 (MW).", "rivayet": "Aristides'in okuma yazma bilmeyen çiftçi için kendi adını yazması (Plutarkhos, Aristides 7): 'rivayete göre'."},
- {"kelime": "assassin", "durum": "uretildi", "uretim_tarihi": "2026-11-18", "uretim": "yerel", "seviye": "C1", "sira_notu": "Metin 2026-11-16: ostracize'dan sonra", "zemin_onerisi": "kale", "kesin": "Arapça ḥaššāšīn (çoğul), 11-12. yüzyılda Alamut merkezli Nizari İsmailileri için kullanılan ad; Haçlı kaynakları ve Orta Çağ Latincesi assassinus üzerinden Avrupa dillerine; İngilizcede 1530'lar civarı (iki kaynaktan doğrula).", "rivayet": "Esrar içerek saldırdıkları anlatısı düşmanlarının yakıştırmasıdır: 'rivayete göre' diye anlat.", "gorsel_oneri": "Alamut kalesi, Haçlı kronikleri, harita (Alamut → Akdeniz → Avrupa). tema mor, stil crayon-book."},
- {"kelime": "serendipity", "durum": "bekliyor", "seviye": "C1/C2", "sira_notu": "Metin 2026-11-16: assassin'den sonra", "zemin_onerisi": "masal", "kesin": "Horace Walpole 1754'te bir mektupta uydurdu; 'The Three Princes of Serendip' masalına dayanır (Serendip = Seylan, bugünkü Sri Lanka); prensler aramadıkları şeyleri tesadüf ve sezgiyle bulur (iki kaynaktan doğrula).", "rivayet": "", "gorsel_oneri": "Masal kitabı, üç prens ve deve, Seylan adası haritası, mektup yazan Walpole (tarihî kişi). tema altin, stil crayon-book."},
- {"kelime": "muscle", "durum": "bekliyor", "zemin_onerisi": "roma", "kesin": "Latince musculus 'küçük fare' (mus 'fare' + küçültme eki). Fransızca üzerinden İngilizcede 1300'lerin sonu.", "rivayet": "Kas hareket edince deri altında koşan bir fareye benzediği için bu adın verildiği açıklaması yaygın ama 'muhtemelen' diye söylenmeli.", "gorsel_oneri": "Köken: roma zemini, doktor ya da toga; dekor fare; ziplat 'kol' (metin: fare) — pazıda kayan fare; damga MUHTEMELEN/RİVAYETE GÖRE (benzetme açıklaması). Değişim: Fransızca muscle → İngilizce 1300'ler sonu; son durak spor zemini + sporcu, dambil. tema turuncu, stil harfler, muzik macera."},
- {"kelime": "companion", "durum": "bekliyor", "zemin_onerisi": "orta_cag", "kesin": "Eski Fransızca compagnon < Geç Latince companio: com- 'birlikte' + panis 'ekmek' = 'ekmeğini paylaşan kişi'. İngilizcede 1200'ler. (Company de aynı kökten.)", "rivayet": "Gotça gahlaiba ('ekmek arkadaşı') kelimesinin çevirisi olduğu düşünülür; kesin değil.", "gorsel_oneri": "Köken: han zemini, katip + karakter2 (isci ya da denizci); parcalar com- (birlikte) + panis (ekmek); 'bol' ekmek ikiye bölünüp iki kişiye gider; Gotça çeviri için damga KESİN DEĞİL. Değişim: Eski Fransızca compagnon → İngilizce 1200'ler; karşılaştırma companion ↔ company. tema altin, stil parsomen, muzik neseli."},
- {"kelime": "alcohol", "durum": "bekliyor", "zemin_onerisi": "laboratuvar", "kesin": "Arapça al-kuhl: göze sürülen ince toz (sürme, antimon). Orta Çağ Latincesinde 'çok ince toz', 1500'lerde simyacılarda 'damıtılarak elde edilen öz'. 'Alcohol of wine' (şarabın özü) üzerinden 1700'lerde bugünkü anlam. İngilizcede 1540'lar.", "rivayet": "", "gorsel_oneri": "Köken: carsi zemini, alim; dekor surme + goz; al-kuhl = göze sürülen ince toz. Değişim: laboratuvar zemini, ziplat imbik (damıtma), 'parilti' öz; duraklar Arapça al-kuhl → Orta Çağ Latincesi (ince toz) → simya 'öz' → İngilizce 1540'lar / bugünkü anlam 1700'ler. Harita isteğe bağlı (yalnızca kaynağın verdiği bölgeler: Arap dünyası → Avrupa). tema mor, stil isik, muzik gizemli."},
- {"kelime": "robot", "durum": "bekliyor", "zemin_onerisi": "tiyatro", "kesin": "Çek yazar Karel Čapek'in 1920'de yazdığı R.U.R. adlı oyun; Çekçe robota 'angarya, zorla çalıştırma'. Kelimeyi ona kardeşi Josef Čapek önerdi. İngilizcede 1923.", "rivayet": "", "gorsel_oneri": "Köken: tiyatro zemini, 'perde' açılışı (metin R.U.R. · 1920); dekor daktilo (metin R.U.R.). Čapek çizilmez, yalnızca adı anılır. robota = angarya: kir zemini + isci. Değişim: fabrika zemini, robot kostüm; Çekçe → İngilizce 1923. tema yesil, stil harfler, muzik macera."},
- {"kelime": "nice", "durum": "bekliyor", "zemin_onerisi": "orta_cag", "kesin": "Latince nescius 'bilmeyen, cahil' (ne- 'değil' + scire 'bilmek'). Eski Fransızca nice 'aptal, saf'. İngilizcede 1300'lerde 'aptal' anlamıyla; zamanla 'titiz, ince', 1700'lerde 'hoş, güzel'.", "rivayet": "", "gorsel_oneri": "Köken: orta_cag zemini, katip; parcalar ne- (değil) + scire (bilmek) = bilmeyen; ziplat yuz k 1→0 (aptal/saf). Değişim: anlam yolculuğu — ziplat olcer k 0→1 (aptal → titiz → hoş), ziplat yuz k 0→1; duraklar Latince nescius → Eski Fransızca nice 'aptal' → İngilizce 1300'ler 'aptal' → 1700'ler 'hoş'. tema turuncu, stil parsomen, muzik neseli."},
- {"kelime": "clue", "durum": "bekliyor", "zemin_onerisi": "yunan", "kesin": "Eski İngilizce cliwen / clew 'iplik yumağı'. Yunan mitolojisinde Theseus, Ariadne'nin ipliğini izleyerek labirentten çıkar; buradan 'çıkış yolunu gösteren şey' anlamı (1590'lar), sonra 'ipucu'. clue yazımı 1400'lerden.", "rivayet": "Theseus hikâyesi mitolojidir: 'efsaneye göre' diye anlat.", "gorsel_oneri": "Köken: labirent zemini, kahraman + karakter2 (toga, uzun saç); dekor yumak; damga EFSANEYE GÖRE; 'iplik' girişten çıkışa. Değişim: clew 'iplik yumağı' → 'yol gösteren şey' (1590'lar) → clue 'ipucu'; son durak sehir + buyutec. tema mor, stil harfler, muzik gizemli."},
- {"kelime": "candidate", "durum": "bekliyor", "zemin_onerisi": "roma", "kesin": "Latince candidatus 'beyazlar giymiş' < candidus 'parlak beyaz'. Roma'da makam adayları tebeşirle beyazlatılmış toga (toga candida) giyerdi. İngilizcede 1600'ler.", "rivayet": "Beyazın 'dürüstlük' simgesi olduğu yorumu kesin değil.", "gorsel_oneri": "Köken: forum zemini, toga_candida; dekor tebesir + kursu; 'parilti' beyaz togada; candidus = parlak beyaz. Beyazın dürüstlük simgesi olduğu yorumu için damga KESİN DEĞİL. Değişim: Latince candidatus → İngilizce 1600'ler; son durak sehir + oy_sandigi. tema altin, stil isik, muzik neseli."}
+ {
+  "kelime": "salary",
+  "durum": "uretildi",
+  "tarih": "2026-11-15",
+  "kesin": "Latince salarium < sal 'tuz'; Roma'da askere/memura ödenek; Eski Fransızca salaire / Anglo-Fransızca salarie üzerinden 1300'lerde İngilizce.",
+  "rivayet": "Paranın tuz almak için verildiği / askerlere tuzla ödeme yapıldığı hikâyesi kanıtlanmamış.",
+  "gorsel": {
+   "tema": "altin",
+   "stil": "isik",
+   "muzik": "neseli",
+   "zeminler": [
+    "roma",
+    "orta_cag",
+    "sehir",
+    "ofis"
+   ],
+   "olaylar": [
+    "yagmur",
+    "dusunce",
+    "damga"
+   ],
+   "harita": false
+  }
+ },
+ {
+  "kelime": "quarantine",
+  "durum": "uretildi",
+  "zemin_onerisi": "liman",
+  "kesin": "İtalyanca (Venedik ağzı) quarantena / quaranta giorni '40 gün'. Veba döneminde gemiler limana girmeden önce bekletilirdi. Ragusa Cumhuriyeti (bugünkü Dubrovnik) 1377'de 30 günlük (trentino) bekleme koydu, süre sonra 40 güne çıktı. İngilizcede 'gemi tecridi' anlamı 1660'lar; bugün her türlü salgın tecridi.",
+  "rivayet": "40 sayısının neden seçildiği (dinî/tıbbi açıklamalar) kesin değil.",
+  "gorsel_oneri": "Köken: liman zemini, denizci; demirli gemi (dekor capa), sarı bayrak; 'sayac' 30→40 GÜN (Ragusa'nın 30 günü sonra 40'a çıktı). Değişim: HARİTA — Ragusa (Dubrovnik, 42.65/18.09) → Venedik (45.44/12.33) → Londra; eski_ikon gemi. tema mavi, stil harfler, muzik gizemli. 40 sayısının sebebi için damga KESİN DEĞİL.",
+  "tarih": "2026-11-15",
+  "gorsel": {
+   "tema": "mavi",
+   "stil": "parsomen",
+   "muzik": "gizemli",
+   "zeminler": [
+    "liman",
+    "sehir"
+   ],
+   "olaylar": [
+    "sayac",
+    "ziplat",
+    "damga",
+    "parilti"
+   ],
+   "harita": true
+  },
+  "not": "Kaynak: CDC EID Etymologia (PMC3559069), etymonline. Kelime İngilizcede daha önce başka anlamlarla vardı (1400'ler, 1520'ler); gemi tecridi anlamı 1660'lar."
+ },
+ {
+  "kelime": "disaster",
+  "durum": "uretildi",
+  "tarih": "2026-11-16",
+  "uretim": "yerel",
+  "zemin_onerisi": "gece",
+  "kesin": "İtalyanca disastro / Orta Fransızca désastre; dis- 'kötü' + astro 'yıldız' (Latince astrum, Yunanca astron). 'Kötü yıldızın etkisi', astrolojik bir kavram. İngilizcede 1590'lar.",
+  "rivayet": "",
+  "gorsel_oneri": "Köken: gece zemini, astrolog; dekor teleskop + gezegen; parcalar dis- (kötü) + astro (yıldız); 'kayan' kırmızı yıldızlar ('kötü yıldız'); 'sars'. Değişim: duraklar İtalyanca disastro → Fransızca désastre → İngilizce 1590'lar; ziplat simsek; tema gece, stil isik, muzik gizemli."
+ },
+ {
+  "kelime": "ostracize",
+  "durum": "uretildi",
+  "tarih": "2026-11-17",
+  "uretim": "yerel",
+  "seviye": "C1",
+  "zemin_onerisi": "yunan",
+  "kesin": "Yunanca ostrakizein 'çömlek kırığıyla oylayıp sürgüne göndermek' < ostrakon 'çömlek kırığı'. Atina'da her yıl sürgün oylaması yapılıp yapılmayacağı sorulur; 6000 oy (yeter sayı, Plutarkhos) toplanırsa en çok yazılan kişi 10 yıl sürgüne giderdi. İngilizcede 1649 (MW).",
+  "rivayet": "Aristides'in okuma yazma bilmeyen çiftçi için kendi adını yazması (Plutarkhos, Aristides 7): 'rivayete göre'."
+ },
+ {
+  "kelime": "assassin",
+  "durum": "uretildi",
+  "uretim_tarihi": "2026-11-18",
+  "uretim": "yerel",
+  "seviye": "C1",
+  "sira_notu": "Metin 2026-11-16: ostracize'dan sonra",
+  "zemin_onerisi": "kale",
+  "kesin": "Arapça ḥaššāšīn (çoğul), 11-12. yüzyılda Alamut merkezli Nizari İsmailileri için kullanılan ad; Haçlı kaynakları ve Orta Çağ Latincesi assassinus üzerinden Avrupa dillerine; İngilizcede 1530'lar civarı (iki kaynaktan doğrula).",
+  "rivayet": "Esrar içerek saldırdıkları anlatısı düşmanlarının yakıştırmasıdır: 'rivayete göre' diye anlat.",
+  "gorsel_oneri": "Alamut kalesi, Haçlı kronikleri, harita (Alamut → Akdeniz → Avrupa). tema mor, stil crayon-book."
+ },
+ {
+  "kelime": "serendipity",
+  "durum": "uretildi",
+  "seviye": "C1/C2",
+  "sira_notu": "Metin 2026-11-16: assassin'den sonra",
+  "zemin_onerisi": "masal",
+  "kesin": "Horace Walpole 1754'te bir mektupta uydurdu; 'The Three Princes of Serendip' masalına dayanır (Serendip = Seylan, bugünkü Sri Lanka); prensler aramadıkları şeyleri tesadüf ve sezgiyle bulur (iki kaynaktan doğrula).",
+  "rivayet": "",
+  "gorsel_oneri": "Masal kitabı, üç prens ve deve, Seylan adası haritası, mektup yazan Walpole (tarihî kişi). tema altin, stil crayon-book.",
+  "uretim_tarihi": "2026-11-19",
+  "uretim": "bulut"
+ },
+ {
+  "kelime": "muscle",
+  "durum": "bekliyor",
+  "zemin_onerisi": "roma",
+  "kesin": "Latince musculus 'küçük fare' (mus 'fare' + küçültme eki). Fransızca üzerinden İngilizcede 1300'lerin sonu.",
+  "rivayet": "Kas hareket edince deri altında koşan bir fareye benzediği için bu adın verildiği açıklaması yaygın ama 'muhtemelen' diye söylenmeli.",
+  "gorsel_oneri": "Köken: roma zemini, doktor ya da toga; dekor fare; ziplat 'kol' (metin: fare) — pazıda kayan fare; damga MUHTEMELEN/RİVAYETE GÖRE (benzetme açıklaması). Değişim: Fransızca muscle → İngilizce 1300'ler sonu; son durak spor zemini + sporcu, dambil. tema turuncu, stil harfler, muzik macera."
+ },
+ {
+  "kelime": "companion",
+  "durum": "bekliyor",
+  "zemin_onerisi": "orta_cag",
+  "kesin": "Eski Fransızca compagnon < Geç Latince companio: com- 'birlikte' + panis 'ekmek' = 'ekmeğini paylaşan kişi'. İngilizcede 1200'ler. (Company de aynı kökten.)",
+  "rivayet": "Gotça gahlaiba ('ekmek arkadaşı') kelimesinin çevirisi olduğu düşünülür; kesin değil.",
+  "gorsel_oneri": "Köken: han zemini, katip + karakter2 (isci ya da denizci); parcalar com- (birlikte) + panis (ekmek); 'bol' ekmek ikiye bölünüp iki kişiye gider; Gotça çeviri için damga KESİN DEĞİL. Değişim: Eski Fransızca compagnon → İngilizce 1200'ler; karşılaştırma companion ↔ company. tema altin, stil parsomen, muzik neseli."
+ },
+ {
+  "kelime": "alcohol",
+  "durum": "bekliyor",
+  "zemin_onerisi": "laboratuvar",
+  "kesin": "Arapça al-kuhl: göze sürülen ince toz (sürme, antimon). Orta Çağ Latincesinde 'çok ince toz', 1500'lerde simyacılarda 'damıtılarak elde edilen öz'. 'Alcohol of wine' (şarabın özü) üzerinden 1700'lerde bugünkü anlam. İngilizcede 1540'lar.",
+  "rivayet": "",
+  "gorsel_oneri": "Köken: carsi zemini, alim; dekor surme + goz; al-kuhl = göze sürülen ince toz. Değişim: laboratuvar zemini, ziplat imbik (damıtma), 'parilti' öz; duraklar Arapça al-kuhl → Orta Çağ Latincesi (ince toz) → simya 'öz' → İngilizce 1540'lar / bugünkü anlam 1700'ler. Harita isteğe bağlı (yalnızca kaynağın verdiği bölgeler: Arap dünyası → Avrupa). tema mor, stil isik, muzik gizemli."
+ },
+ {
+  "kelime": "robot",
+  "durum": "bekliyor",
+  "zemin_onerisi": "tiyatro",
+  "kesin": "Çek yazar Karel Čapek'in 1920'de yazdığı R.U.R. adlı oyun; Çekçe robota 'angarya, zorla çalıştırma'. Kelimeyi ona kardeşi Josef Čapek önerdi. İngilizcede 1923.",
+  "rivayet": "",
+  "gorsel_oneri": "Köken: tiyatro zemini, 'perde' açılışı (metin R.U.R. · 1920); dekor daktilo (metin R.U.R.). Čapek çizilmez, yalnızca adı anılır. robota = angarya: kir zemini + isci. Değişim: fabrika zemini, robot kostüm; Çekçe → İngilizce 1923. tema yesil, stil harfler, muzik macera."
+ },
+ {
+  "kelime": "nice",
+  "durum": "bekliyor",
+  "zemin_onerisi": "orta_cag",
+  "kesin": "Latince nescius 'bilmeyen, cahil' (ne- 'değil' + scire 'bilmek'). Eski Fransızca nice 'aptal, saf'. İngilizcede 1300'lerde 'aptal' anlamıyla; zamanla 'titiz, ince', 1700'lerde 'hoş, güzel'.",
+  "rivayet": "",
+  "gorsel_oneri": "Köken: orta_cag zemini, katip; parcalar ne- (değil) + scire (bilmek) = bilmeyen; ziplat yuz k 1→0 (aptal/saf). Değişim: anlam yolculuğu — ziplat olcer k 0→1 (aptal → titiz → hoş), ziplat yuz k 0→1; duraklar Latince nescius → Eski Fransızca nice 'aptal' → İngilizce 1300'ler 'aptal' → 1700'ler 'hoş'. tema turuncu, stil parsomen, muzik neseli."
+ },
+ {
+  "kelime": "clue",
+  "durum": "bekliyor",
+  "zemin_onerisi": "yunan",
+  "kesin": "Eski İngilizce cliwen / clew 'iplik yumağı'. Yunan mitolojisinde Theseus, Ariadne'nin ipliğini izleyerek labirentten çıkar; buradan 'çıkış yolunu gösteren şey' anlamı (1590'lar), sonra 'ipucu'. clue yazımı 1400'lerden.",
+  "rivayet": "Theseus hikâyesi mitolojidir: 'efsaneye göre' diye anlat.",
+  "gorsel_oneri": "Köken: labirent zemini, kahraman + karakter2 (toga, uzun saç); dekor yumak; damga EFSANEYE GÖRE; 'iplik' girişten çıkışa. Değişim: clew 'iplik yumağı' → 'yol gösteren şey' (1590'lar) → clue 'ipucu'; son durak sehir + buyutec. tema mor, stil harfler, muzik gizemli."
+ },
+ {
+  "kelime": "candidate",
+  "durum": "bekliyor",
+  "zemin_onerisi": "roma",
+  "kesin": "Latince candidatus 'beyazlar giymiş' < candidus 'parlak beyaz'. Roma'da makam adayları tebeşirle beyazlatılmış toga (toga candida) giyerdi. İngilizcede 1600'ler.",
+  "rivayet": "Beyazın 'dürüstlük' simgesi olduğu yorumu kesin değil.",
+  "gorsel_oneri": "Köken: forum zemini, toga_candida; dekor tebesir + kursu; 'parilti' beyaz togada; candidus = parlak beyaz. Beyazın dürüstlük simgesi olduğu yorumu için damga KESİN DEĞİL. Değişim: Latince candidatus → İngilizce 1600'ler; son durak sehir + oy_sandigi. tema altin, stil isik, muzik neseli."
+ }
 ]

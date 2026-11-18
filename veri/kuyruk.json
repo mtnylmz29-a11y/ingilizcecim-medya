@@ -566,5 +566,29 @@
   ],
   "onerilen_dilim": "17:30",
   "durum": "denetimde"
+ },
+ {
+  "id": "2026-11-19-reels",
+  "tarih": "2026-11-19",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, shadow-puppet; ses Gemini Kore)",
+  "film": "filmler/2026-11-19-serendipity",
+  "stil": "shadow-puppet",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Serendipity",
+  "aciklama": "Serendipity, aramadığın güzel bir şeyi tesadüfen bulmak demek. Kelimeyi İngiliz yazar Horace Walpole, 28 Ocak 1754'te bir mektubunda uydurdu. İlham kaynağı, Serendip (bugünkü Sri Lanka) adasının üç prensini anlatan bir İran masalıydı: prensler yol boyunca hiç aramadıkları şeyleri buluyordu. Senin en güzel tesadüfün neydi?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #etimoloji #kelimelerintarihçesi #ingilizcekelime #serendipity #yks #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/35f9f1dbbc74460c18d2196ab85e10bd083d71c5/gunler/2026-11-19/serendipity_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/35f9f1dbbc74460c18d2196ab85e10bd083d71c5/gunler/2026-11-19/serendipity_etym_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/35f9f1dbbc74460c18d2196ab85e10bd083d71c5/gunler/2026-11-19/serendipity_etym_kapak.jpg",
+  "sure_sn": 58.8,
+  "kaynaklar": [
+   "https://www.etymonline.com/word/serendipity",
+   "https://www.merriam-webster.com/wordplay/happy-birthday-serendipity",
+   "https://www.britannica.com/place/Serendib"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]
