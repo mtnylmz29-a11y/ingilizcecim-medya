@@ -1,0 +1,573 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="/core/fonts/fonts.css">
+<style>html,body{margin:0;background:#f1e6cf;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script type="module">
+// Kelimelerin Tarihçesi: Muscle — 1950'ler düz renkli çizgi film (midcentury-toon) — ingilizcecim.com
+import { clamp, lerp, seg, ss, eio, eo, back, mulberry, hash, TAU } from '/core/lib.js';
+const W = 1080, H = 1920;
+const C = document.getElementById('c'), X = C.getContext('2d');
+const KAPAK = /kapak=1/.test(location.search);
+
+// ---------- palette: tomato / mustard / turquoise / plum on cream ----------
+const K = { paper: '#f1e6cf', paper2: '#e6d6b4', ink: '#2b211b', tomato: '#d9573b', mustard: '#e0a93a', turq: '#3f9c94',
+  powder: '#9cc3c9', olive: '#8c9441', plum: '#7b4a6b', sand: '#d8b98a', coral: '#e9876a', grey: '#a9a39a', greyD: '#7d776f',
+  pink: '#e8a3a0', skin: '#e9b98f', skinD: '#c98f66', white: '#fbf4e4', lime: '#b7c25a', navy: '#33465e' };
+
+// ---------- time & register (on twos) ----------
+let T = 0, TW = 0;
+let REG = [4, 3];
+function setClock(t) { T = t; TW = Math.floor(t * 12); REG = [4 + (hash(TW * 1.7) - .5) * 3, 3 + (hash(TW * 2.3 + 5) - .5) * 3]; }
+function jit(id) { return (hash(TW * 0.37 + id * 13.1) - .5) * 2; }
+
+// ---------- camera (world -> screen) ----------
+let CAM = { x: 540, y: 960, z: 1 };
+function cam() { X.setTransform(CAM.z, 0, 0, CAM.z, W / 2 - CAM.x * CAM.z, H / 2 - CAM.y * CAM.z); }
+function scr() { X.setTransform(1, 0, 0, 1, 0, 0); }
+
+// ---------- the style's shape: off-register fill + broken breathing ink ----------
+let SID = 0;
+function shape(path, fill, o = {}) {
+  const id = o.id != null ? o.id : (SID++);
+  if (fill) { X.save(); X.translate(o.noreg ? 0 : REG[0], o.noreg ? 0 : REG[1]); X.beginPath(); path(); X.fillStyle = fill; X.fill(o.rule || 'nonzero'); X.restore(); }
+  if (o.shade) { X.save(); X.translate(REG[0], REG[1]); X.beginPath(); path(); X.clip(); X.beginPath(); o.shade(); X.fillStyle = o.shadeCol || 'rgba(60,30,20,.18)'; X.fill(); X.restore(); }
+  if (o.line !== false) {
+    const lw = o.lw || 4, r = mulberry(id * 97 + 11 + (TW % 3));
+    X.save(); X.beginPath(); path();
+    const d = []; for (let i = 0; i < 6; i++) { d.push(30 + r() * 90, 4 + r() * (o.gap || 14)); }
+    X.setLineDash(d); X.lineDashOffset = r() * 50;
+    X.strokeStyle = o.col || K.ink; X.lineWidth = lw * (0.85 + r() * .3); X.lineJoin = 'round'; X.lineCap = 'round'; X.stroke();
+    X.restore();
+  }
+}
+const E = (x, y, rx, ry, r = 0) => () => X.ellipse(x, y, rx, ry, r, 0, TAU);
+const R = (x, y, w, h, rr = 0) => () => rr ? X.roundRect(x, y, w, h, rr) : X.rect(x, y, w, h);
+const P = pts => () => { pts.forEach((p, i) => i ? X.lineTo(p[0], p[1]) : X.moveTo(p[0], p[1])); X.closePath(); };
+function ink(pts, lw = 4, col = K.ink) { X.save(); X.beginPath(); pts.forEach((p, i) => i ? X.lineTo(p[0], p[1]) : X.moveTo(p[0], p[1])); X.strokeStyle = col; X.lineWidth = lw; X.lineCap = 'round'; X.lineJoin = 'round'; X.stroke(); X.restore(); }
+function curve(x0, y0, cx, cy, x1, y1, lw = 4, col = K.ink) { X.save(); X.beginPath(); X.moveTo(x0, y0); X.quadraticCurveTo(cx, cy, x1, y1); X.strokeStyle = col; X.lineWidth = lw; X.lineCap = 'round'; X.stroke(); X.restore(); }
+
+// ---------- ornaments ----------
+function starburst(x, y, r0, r1, n, col, rot = 0, o = {}) {
+  shape(() => { for (let i = 0; i < n * 2; i++) { const a = rot + i * Math.PI / n, r = i % 2 ? r0 : r1; i ? X.lineTo(x + Math.cos(a) * r, y + Math.sin(a) * r) : X.moveTo(x + Math.cos(a) * r, y + Math.sin(a) * r); } X.closePath(); }, col, o);
+}
+function sparkle(x, y, s, col = K.white, rot = 0) {
+  X.save(); X.translate(x, y); X.rotate(rot); X.beginPath();
+  for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4, r = i % 2 ? s * .22 : s; X.lineTo(Math.cos(a) * r, Math.sin(a) * r); }
+  X.closePath(); X.fillStyle = col; X.fill(); X.restore();
+}
+function rays(x, y, r, col, a = .25, rot = 0) {
+  X.save(); X.globalAlpha *= a; X.fillStyle = col;
+  for (let i = 0; i < 30; i += 2) { const a0 = rot + i * TAU / 30, a1 = rot + (i + 1) * TAU / 30; X.beginPath(); X.moveTo(x, y); X.arc(x, y, r, a0, a1); X.closePath(); X.fill(); }
+  X.restore();
+}
+function boomerang(x, y, s, col, rot) { X.save(); X.translate(x, y); X.rotate(rot); shape(() => { X.moveTo(-s, 0); X.quadraticCurveTo(0, -s * .9, s, 0); X.quadraticCurveTo(0, -s * .35, -s, 0); }, col, { lw: 3 }); X.restore(); }
+function dots(x0, y0, x1, y1, s, col, a = .35) { X.save(); X.globalAlpha *= a; X.fillStyle = col; for (let y = y0; y < y1; y += s) for (let x = x0 + ((y - y0) / s & 1) * s / 2; x < x1; x += s) { X.beginPath(); X.arc(x, y, s * .14, 0, TAU); X.fill(); } X.restore(); }
+
+// ---------- room: one colour plane, floor band, broken horizon ----------
+function room(wall, floor, hy = 1180) {
+  X.fillStyle = wall; X.fillRect(-400, -400, 1900, hy + 400);
+  X.fillStyle = floor; X.fillRect(-400, hy, 1900, 1400);
+  const r = mulberry(hy | 0); let x = -200; X.strokeStyle = K.ink; X.lineWidth = 4;
+  while (x < 1300) { const l = 120 + r() * 260; X.beginPath(); X.moveTo(x, hy); X.lineTo(x + l, hy); X.stroke(); x += l + 20 + r() * 40; }
+}
+
+// ---------- text with two plates ----------
+function ttext(s, x, y, font, col, plate, o = {}) {
+  X.save(); X.font = font; X.textAlign = o.align || 'center'; X.textBaseline = 'middle';
+  if (plate) { X.fillStyle = plate; X.fillText(s, x + REG[0] + 2, y + REG[1] + 2); }
+  X.fillStyle = col; X.fillText(s, x, y);
+  if (o.stroke) { X.lineWidth = o.stroke; X.strokeStyle = K.ink; X.strokeText(s, x, y); }
+  X.restore();
+}
+function fitFont(s, base, family, maxW) { let sz = base; X.font = `${sz}px ${family}`; while (X.measureText(s).width > maxW && sz > 20) { sz -= 2; X.font = `${sz}px ${family}`; } return `${sz}px ${family}`; }
+
+// paper tag with star bullet, pops with back-ease
+function tag(t, t0, x, y, lines, o = {}) {
+  const k = back(seg(t, t0, t0 + .3), 2.2); if (k <= 0) return;
+  X.save(); X.translate(x, y); X.rotate(o.rot || 0); X.scale(k, k);
+  X.font = o.font || '600 50px Fredoka';
+  const w = Math.max(...lines.map(l => X.measureText(l).width)) + 110, lh = o.lh || 62, h = lines.length * lh + 44;
+  shape(R(-w / 2, -h / 2, w, h, 20), o.bg || K.white, { lw: 4, id: 900 + (o.id || 0) });
+  X.fillStyle = o.star || K.tomato; sparkle(-w / 2 + 38, -h / 2 + 22 + lh / 2, 18, o.star || K.tomato, T * .8);
+  lines.forEach((l, i) => { X.fillStyle = (o.cols && o.cols[i]) || K.ink; X.textAlign = 'center'; X.textBaseline = 'middle'; X.font = (o.fonts && o.fonts[i]) || o.font || '600 50px Fredoka'; X.fillText(l, 18, -h / 2 + 22 + lh * (i + .5)); });
+  X.restore();
+}
+// numbered medallion
+function medallion(t, t0, x, y, r, txt, col = K.ink, o = {}) {
+  const k = back(seg(t, t0, t0 + .3), 2.4); if (k <= 0) return;
+  X.save(); X.translate(x, y); X.scale(k, k);
+  starburst(0, 0, r * 1.05, r * 1.25, 14, o.burst || K.mustard, T * .3, { lw: 3 });
+  shape(E(0, 0, r, r), col, { lw: 4 });
+  X.font = o.font || `${Math.round(r * .9)}px "Lilita One"`; X.fillStyle = K.paper; X.textAlign = 'center'; X.textBaseline = 'middle'; X.fillText(txt, 0, 4);
+  X.restore();
+}
+// rubber stamp
+function stamp(t, t0, x, y, txt, col = K.tomato) {
+  const a = seg(t, t0, t0 + .18); if (a <= 0) return; const s = lerp(1.8, 1, eo(a));
+  X.save(); X.translate(x, y); X.rotate(-.12); X.scale(s, s); X.globalAlpha *= clamp(a * 3);
+  X.font = '64px "Lilita One"'; const w = X.measureText(txt).width + 70;
+  X.strokeStyle = col; X.lineWidth = 8; X.setLineDash([60, 8, 30, 6]); X.beginPath(); X.roundRect(-w / 2, -54, w, 108, 14); X.stroke();
+  X.setLineDash([]); X.fillStyle = col; X.textAlign = 'center'; X.textBaseline = 'middle'; X.fillText(txt, 0, 4);
+  X.restore();
+}
+
+// ---------- characters ----------
+// glove hand (4-finger cartoon glove)
+function glove(x, y, s = 1, rot = 0, pose = 'open') {
+  X.save(); X.translate(x, y); X.rotate(rot); X.scale(s, s);
+  if (pose === 'point') {
+    shape(() => { X.ellipse(0, 0, 26, 22, 0, 0, TAU); X.moveTo(14, -8); X.roundRect(10, -10, 46, 16, 8); }, K.white, { lw: 3.5 });
+    ink([[-4, -6], [8, -4]], 2.2);
+  } else if (pose === 'fist') {
+    shape(E(0, 0, 26, 24), K.white, { lw: 3.5 }); ink([[-10, -8], [-10, 6]], 2); ink([[2, -10], [2, 6]], 2); ink([[13, -8], [13, 4]], 2);
+  } else {
+    shape(() => { X.ellipse(0, 0, 24, 22, 0, 0, TAU); for (let i = 0; i < 4; i++) { const a = -1.9 + i * .42; X.moveTo(Math.cos(a) * 18, Math.sin(a) * 18); X.ellipse(Math.cos(a) * 34, Math.sin(a) * 34, 15, 9, a, 0, TAU); } }, K.white, { lw: 3.5 });
+  }
+  X.restore();
+}
+// arm: thick ink ribbon with a colour ribbon on top, shoulder -> elbow -> hand
+function arm(sx, sy, a1, l1, a2, l2, sleeve, o = {}) {
+  const ex = sx + Math.cos(a1) * l1, ey = sy + Math.sin(a1) * l1, hx = ex + Math.cos(a1 + a2) * l2, hy = ey + Math.sin(a1 + a2) * l2;
+  X.save(); X.lineCap = 'round'; X.lineJoin = 'round';
+  X.beginPath(); X.moveTo(sx, sy); X.lineTo(ex, ey); X.lineTo(hx, hy); X.strokeStyle = K.ink; X.lineWidth = (o.w || 26) + 8; X.stroke();
+  X.beginPath(); X.moveTo(sx + REG[0] * .5, sy + REG[1] * .5); X.lineTo(ex + REG[0] * .5, ey + REG[1] * .5); X.lineTo(hx, hy); X.strokeStyle = sleeve; X.lineWidth = o.w || 26; X.stroke();
+  X.restore();
+  glove(hx, hy, o.hs || 1, a1 + a2 + (o.hr || 0), o.pose || 'open');
+  return { ex, ey, hx, hy };
+}
+// head: egg with the nose as part of the outline (facing right unless flip)
+function eggHead(x, y, s, skin, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s * (o.flip ? -1 : 1), s);
+  const path = () => { X.moveTo(0, -95); X.bezierCurveTo(60, -95, 78, -50, 74, -18); X.lineTo(104, 8); X.lineTo(72, 22); X.bezierCurveTo(66, 70, 30, 92, -4, 92); X.bezierCurveTo(-60, 92, -80, 50, -78, 0); X.bezierCurveTo(-76, -60, -48, -95, 0, -95); };
+  shape(path, skin, { lw: 4.2, shade: () => X.rect(-90, 40, 200, 80), shadeCol: 'rgba(120,60,30,.18)', id: o.id || 50 });
+  // ear
+  shape(E(-30, 6, 14, 20), skin, { lw: 3.5, id: (o.id || 50) + 1 });
+  // eye
+  const bl = o.blink ? .15 : 1;
+  X.fillStyle = K.white; X.beginPath(); X.ellipse(36, -22, 14, 17 * bl, 0, 0, TAU); X.fill(); X.strokeStyle = K.ink; X.lineWidth = 3; X.stroke();
+  X.fillStyle = K.ink; X.beginPath(); X.ellipse(40 + (o.look || 0) * 4, -20, 6, 8 * bl, 0, 0, TAU); X.fill();
+  // brow
+  const b = o.brow || 0; ink([[22, -48 - b * 6], [52, -50 + b * 6]], 4.5);
+  // mouth (open by speech)
+  const m = o.mouth || 0;
+  if (m > .1) { shape(() => X.ellipse(52, 46, 14, 4 + m * 14, 0, 0, TAU), '#8a3a2c', { lw: 3.2, noreg: true, id: (o.id || 50) + 2 }); }
+  else ink([[38, 44], [52, 50 + (o.smile || 1) * 2], [64, 44]], 3.5);
+  X.restore();
+}
+
+// the mouse: grey, small round ear, pointed snout, long tail
+function mouse(x, y, s = 1, o = {}) {
+  const run = o.run || 0, bob = Math.abs(Math.sin(run * 6)) * 8 * (o.running ? 1 : 0);
+  X.save(); X.translate(x, y - bob * s); X.scale(s * (o.flip ? -1 : 1), s);
+  // tail
+  curve(-58, 8, -120, -30 + Math.sin(T * 5) * 20, -150, 30, 5, K.ink);
+  // legs
+  const lp = o.running ? Math.sin(run * 12) * 12 : 0;
+  ink([[-28, 26], [-34 - lp, 46]], 6); ink([[24, 26], [30 + lp, 46]], 6);
+  // body
+  shape(() => { X.ellipse(-6, 0, 62, 40, -.05, 0, TAU); }, K.grey, { lw: 4, shade: () => X.rect(-80, 18, 160, 40), shadeCol: 'rgba(40,30,30,.18)', id: 70 });
+  // belly
+  X.fillStyle = 'rgba(251,244,228,.6)'; X.beginPath(); X.ellipse(4, 18, 34, 16, 0, 0, TAU); X.fill();
+  // head + snout
+  shape(() => { X.moveTo(30, -34); X.bezierCurveTo(60, -40, 84, -16, 104, -2); X.bezierCurveTo(84, 14, 58, 22, 36, 16); X.bezierCurveTo(20, 6, 18, -26, 30, -34); }, K.grey, { lw: 4, id: 71 });
+  // ear
+  shape(E(34, -42, 20, 24, -.3), K.grey, { lw: 3.5, id: 72 }); X.fillStyle = K.pink; X.beginPath(); X.ellipse(36, -41, 11, 14, -.3, 0, TAU); X.fill();
+  // nose + whiskers
+  X.fillStyle = K.pink; X.beginPath(); X.arc(105, -2, 7, 0, TAU); X.fill(); X.strokeStyle = K.ink; X.lineWidth = 2.5; X.stroke();
+  ink([[96, 2], [128, -6]], 2); ink([[96, 6], [126, 12]], 2);
+  // eye
+  const bl = o.blink ? .2 : 1; X.fillStyle = K.ink; X.beginPath(); X.ellipse(66, -14, 6, 7 * bl, 0, 0, TAU); X.fill();
+  if (o.wink) ink([[58, -14], [72, -12]], 3);
+  X.restore();
+}
+
+// Roman physician (held body; arms, eyes, mouth animate)
+function medicus(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  // feet / sandals
+  shape(R(-70, -20, 60, 20, 8), K.ink, { line: false }); shape(R(10, -20, 60, 20, 8), K.ink, { line: false });
+  // toga body (trapezoid) + plum stripe sash
+  const body = P([[-110, -20], [-80, -330], [80, -330], [120, -20]]);
+  shape(body, K.white, { lw: 4.5, shade: () => X.rect(10, -340, 140, 330), shadeCol: 'rgba(120,100,80,.15)', id: 30 });
+  shape(P([[-80, -330], [-30, -330], [90, -40], [40, -40]]), K.plum, { lw: 3.5, id: 31 });
+  // back arm (left)
+  const a = o.armL || [1.9, .3];
+  arm(-70, -300, a[0], 110, a[1], 100, K.white, { w: 30, pose: o.poseL || 'open' });
+  // head
+  eggHead(4, -420, .95, K.skin, { mouth: o.mouth, brow: o.brow, look: o.look, blink: o.blink, id: 40 });
+  // bald top + beard + laurel
+  shape(() => { X.moveTo(-70, -380); X.bezierCurveTo(-60, -320, 20, -320, 60, -360); X.bezierCurveTo(40, -330, -20, -310, -50, -330); }, '#6b4a33', { lw: 3, id: 42 });
+  for (let i = 0; i < 6; i++) { const ang = Math.PI + .35 + i * .42; shape(E(4 + Math.cos(ang) * 72, -440 + Math.sin(ang) * 74, 16, 8, ang + 1.4), K.olive, { lw: 2.5, id: 43 + i }); }
+  // front arm (right)
+  const b = o.armR || [1.4, -.2];
+  arm(60, -300, b[0], 110, b[1], 100, K.white, { w: 30, pose: o.poseR || 'open' });
+  X.restore();
+}
+
+// gladiator-athlete: tunic, big flexing arm, a "mouse" bump runs under the skin
+function athlete(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  // legs + sandals
+  shape(R(-62, -200, 44, 190, 14), K.skin, { lw: 4, id: 80 }); shape(R(18, -200, 44, 190, 14), K.skin, { lw: 4, id: 81 });
+  ink([[-62, -60], [-18, -60]], 5, '#6b4a33'); ink([[18, -60], [62, -60]], 5, '#6b4a33');
+  shape(R(-76, -16, 66, 22, 8), '#6b4a33', { lw: 3, id: 82 }); shape(R(10, -16, 66, 22, 8), '#6b4a33', { lw: 3, id: 83 });
+  // tunic
+  shape(P([[-110, -190], [-96, -470], [96, -470], [110, -190]]), K.tomato, { lw: 4.5, shade: () => X.rect(20, -480, 120, 300), id: 84 });
+  shape(R(-112, -250, 224, 34, 6), K.mustard, { lw: 3.5, id: 85 });
+  // left arm resting
+  arm(-96, -440, 1.75, 130, .2, 110, K.skin, { w: 40, pose: 'fist' });
+  // head
+  eggHead(0, -560, .9, K.skin, { mouth: o.mouth, brow: o.brow || -1, look: o.look, blink: o.blink, smile: 1, id: 86 });
+  shape(() => { X.moveTo(-72, -600); X.bezierCurveTo(-50, -680, 40, -690, 66, -620); X.bezierCurveTo(30, -640, -20, -640, -72, -600); }, '#3d2a1f', { lw: 3, id: 87 });
+  // flexing right arm: upper arm out to the right, forearm up
+  const f = o.flex || 0, sx = 96, sy = -440;
+  const a1 = lerp(.45, -0.05, f), a2 = lerp(.3, -1.95, f);
+  const ex = sx + Math.cos(a1) * 170, ey = sy + Math.sin(a1) * 170, hx = ex + Math.cos(a1 + a2) * 150, hy = ey + Math.sin(a1 + a2) * 150;
+  X.save(); X.lineCap = 'round'; X.lineJoin = 'round';
+  X.beginPath(); X.moveTo(sx, sy); X.lineTo(ex, ey); X.lineTo(hx, hy); X.strokeStyle = K.ink; X.lineWidth = 58; X.stroke();
+  X.beginPath(); X.moveTo(sx + 2, sy + 2); X.lineTo(ex + 2, ey + 2); X.lineTo(hx, hy); X.strokeStyle = K.skin; X.lineWidth = 50; X.stroke();
+  X.restore();
+  // biceps bulge (grows with flex) on top of the upper arm
+  const mx = lerp(sx, ex, .55), my = lerp(sy, ey, .55) - 22 * f;
+  if (f > .05) shape(E(mx, my, 62 * f + 10, 34 * f + 6, a1), K.skin, { lw: 4, id: 88, shade: () => X.rect(mx - 80, my + 10, 160, 60), shadeCol: 'rgba(150,80,40,.18)' });
+  // the running bump (a mouse under the skin)
+  if (o.bump != null) {
+    const u = o.bump, bx = lerp(sx + 20, ex - 10, u), by = lerp(sy, ey, u) - 28 * f - 10;
+    shape(E(bx, by, 34, 22, a1), K.skin, { lw: 3.5, id: 89 });
+    ink([[bx - 40, by + 8], [bx - 62, by + 14 + Math.sin(T * 14) * 6]], 3, K.skinD);
+  }
+  glove(hx, hy, 1.2, a1 + a2, 'fist');
+  X.restore();
+  return { mx: x + mx * s, my: y + my * s, ex: x + ex * s, ey: y + ey * s };
+}
+
+// modern student in a turquoise hoodie with a dumbbell
+function student(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  shape(R(-56, -210, 46, 200, 14), K.navy, { lw: 4, id: 100 }); shape(R(10, -210, 46, 200, 14), K.navy, { lw: 4, id: 101 });
+  shape(R(-74, -18, 70, 24, 10), K.white, { lw: 3, id: 102 }); shape(R(4, -18, 70, 24, 10), K.white, { lw: 3, id: 103 });
+  shape(P([[-104, -200], [-92, -470], [92, -470], [104, -200]]), K.turq, { lw: 4.5, shade: () => X.rect(20, -480, 120, 300), id: 104 });
+  shape(R(-50, -300, 100, 50, 12), 'rgba(0,0,0,.0)', { lw: 3, id: 105 });
+  arm(-90, -440, 1.8, 120, .15, 110, K.turq, { w: 40, pose: 'open' });
+  eggHead(0, -560, .9, K.skin, { mouth: o.mouth, brow: o.brow, look: o.look, blink: o.blink, id: 106 });
+  shape(() => { X.moveTo(-76, -590); X.bezierCurveTo(-70, -690, 60, -700, 70, -610); X.bezierCurveTo(40, -650, 0, -620, -20, -650); X.bezierCurveTo(-40, -610, -60, -620, -76, -590); }, '#4a2e22', { lw: 3, id: 107 });
+  // lifting arm (curl) with dumbbell
+  const c = o.curl || 0, sx = 90, sy = -440;
+  const a1 = 1.45, a2 = lerp(.05, -2.3, c);
+  const r = arm(sx, sy, a1, 130, a2, 120, K.turq, { w: 40, pose: 'fist', hs: 1.1 });
+  // dumbbell
+  X.save(); X.translate(r.hx, r.hy); X.rotate(a1 + a2 + Math.PI / 2);
+  shape(R(-70, -8, 140, 16, 6), K.greyD, { lw: 3, id: 108 }); shape(R(-92, -34, 30, 68, 8), K.ink, { lw: 3, id: 109 }); shape(R(62, -34, 30, 68, 8), K.ink, { lw: 3, id: 110 });
+  X.restore();
+  X.restore();
+  return r;
+}
+
+// round call-out with a leader line (drawn at native scale)
+function callout(t, t0, cx, cy, r, tx, ty, draw, o = {}) {
+  const k = back(seg(t, t0, t0 + .35), 1.8); if (k <= 0) return;
+  X.save(); X.strokeStyle = K.ink; X.lineWidth = 4; X.setLineDash([16, 8]); X.beginPath(); X.moveTo(tx, ty); X.lineTo(lerp(tx, cx, k), lerp(ty, cy, k)); X.stroke(); X.restore();
+  X.save(); X.translate(cx, cy); X.scale(k, k);
+  shape(E(0, 0, r + 14, r + 14), o.ring || K.mustard, { lw: 4, id: 120 });
+  X.save(); X.beginPath(); X.arc(0, 0, r, 0, TAU); X.clip(); draw(); X.restore();
+  X.beginPath(); X.arc(0, 0, r, 0, TAU); X.strokeStyle = K.ink; X.lineWidth = 5; X.stroke();
+  X.restore();
+}
+
+// ---------- voice data ----------
+let Z = null; const L = {};
+const T0 = id => L[id] ? L[id].t0 : 0, T1 = id => L[id] ? L[id].t1 : 0;
+function talking(t, ids) { // mouth flap from word timings
+  for (const id of ids) { const l = L[id]; if (!l || t < l.t0 || t > l.t1) continue;
+    for (const k of l.kelimeler || []) if (t >= k.t0 && t <= k.t1) { const u = (t - k.t0) / Math.max(.08, k.t1 - k.t0); return Math.abs(Math.sin(u * Math.PI * Math.max(1, Math.round((k.t1 - k.t0) * 6)))) * .9 + .1; } }
+  return 0;
+}
+
+// ---------- caption card (bottom-centre, above the 380 px safe band) ----------
+const KEY = /^(muscle|muscles|musculus|mus)[.,!?]*$/i;
+const TR = { s11: 'Düzenli egzersiz kaslarınızı güçlendirir ve yaşlandıkça eklemlerinizi korur.' };
+function wrap(words, font, maxW) { X.font = font; const out = [[]]; let w = 0; const sp = X.measureText(' ').width;
+  words.forEach(wd => { const ww = X.measureText(wd).width; if (w + ww > maxW && out[out.length - 1].length) { out.push([]); w = 0; } out[out.length - 1].push(wd); w += ww + sp; }); return out; }
+function caption(t) {
+  if (!Z) return; const l = Z.satirlar.find(l => t >= l.t0 - .15 && t <= l.t1 + .45); if (!l) return;
+  const words = l.metin.split(' '), kel = l.kelimeler || [];
+  const heard = kel.filter(k => k.t0 <= t).length, shown = t > l.t1 ? words.length : Math.max(1, Math.round(heard * words.length / Math.max(1, kel.length)));
+  const font = '600 48px Fredoka', rows = wrap(words, font, 760), tr = TR[l.id], trr = tr ? wrap(tr.split(' '), '500 34px Fredoka', 760) : [];
+  const lh = 60, h = rows.length * lh + 50 + trr.length * 44 + (tr ? 10 : 0), y1 = 1528, y0 = y1 - h, w = 860, x0 = (W - 120 - w) / 2 + 20;
+  const a = ss(seg(t, l.t0 - .15, l.t0 + .08)) * (1 - ss(seg(t, l.t1 + .2, l.t1 + .45))), rise = (1 - eo(seg(t, l.t0 - .15, l.t0 + .2))) * 24;
+  scr(); X.save(); X.translate(0, rise); X.globalAlpha = a;
+  shape(R(x0, y0, w, h, 26), K.paper, { lw: 4, id: 300 });
+  sparkle(x0 + 2, y0 + h / 2, 22, K.tomato, T * 1.5); sparkle(x0 + w - 2, y0 + h / 2, 22, K.tomato, -T * 1.5);
+  X.font = font; X.textAlign = 'left'; X.textBaseline = 'alphabetic'; let n = 0;
+  rows.forEach((r, ri) => { const rw = X.measureText(r.join(' ')).width; let x = x0 + (w - rw) / 2; const y = y0 + 22 + lh * (ri + 1) - 12;
+    r.forEach(wd => { const vis = n < shown; X.globalAlpha = a * (vis ? 1 : .25); X.fillStyle = KEY.test(wd) ? K.tomato : (l.dil === 'en' ? K.navy : K.ink); X.fillText(wd, x, y); x += X.measureText(wd + ' ').width; n++; }); });
+  if (tr) { X.globalAlpha = a * ss(seg(t, l.t0 + .8, l.t0 + 1.2)); X.font = '500 34px Fredoka'; X.fillStyle = K.greyD; X.textAlign = 'center'; trr.forEach((r, i) => X.fillText(r.join(' '), x0 + w / 2, y0 + 22 + lh * rows.length + 30 + i * 44)); }
+  X.restore();
+}
+
+// ---------- scenes ----------
+// each scene draws in world space with its own camera; transitions are irises and colour-block wipes
+function sHook(t, t0, t1) { // 1: a strong arm, and something runs under the skin
+  const u = t - t0; CAM = { x: 600, y: 900 - u * 6, z: 1.18 - u * .015 }; cam();
+  room(K.mustard, '#c48f2c', 1250);
+  rays(700, 640, 900, K.white, .22, T * .05);
+  dots(40, 260, 1040, 1150, 60, K.white, .25);
+  const f = ss(seg(u, .2, .8));
+  const bump = u > 1.0 ? ((u - 1.0) / 1.1) % 1 : null;
+  athlete(420, 1500, 1.25, { flex: f, bump: bump, mouth: 0, brow: lerp(-1, 1, seg(u, 1.0, 1.4)), look: 1, blink: u > 3.0 && u < 3.12 });
+  // the "?" burst when he notices
+  const q = back(seg(u, 1.4, 1.7)); if (q > 0) { X.save(); X.translate(330, 520); X.scale(q, q); starburst(0, 0, 70, 95, 12, K.white, T * .4, { lw: 3 }); ttext('?', 0, 6, '110px "Lilita One"', K.tomato, K.ink); X.restore(); }
+}
+function sTitle(t, t0) { // 2: the word itself, a mouse sits on it
+  const u = t - t0; CAM = { x: 540, y: 900, z: 1 + u * .01 }; cam();
+  room(K.turq, '#2f7f78', 1220);
+  rays(540, 760, 1100, K.white, .18, -T * .06);
+  boomerang(190, 360, 60, K.mustard, .4); boomerang(900, 1080, 50, K.coral, -2.4);
+  for (let i = 0; i < 7; i++) sparkle(120 + i * 150, 330 + (i % 2) * 760, 16 + (i % 3) * 6, K.white, T + i);
+  const k = back(seg(u, .05, .4), 2.0);
+  X.save(); X.translate(540, 760); X.scale(k, k);
+  shape(R(-420, -150, 840, 300, 40), K.paper, { lw: 5, id: 200 });
+  ttext('MUSCLE', 0, -10, fitFont('MUSCLE', 200, '"Lilita One"', 720), K.ink, K.tomato);
+  X.restore();
+  tag(t, t0 + .9, 540, 1010, ['= kas'], { font: '600 58px Fredoka', id: 1, star: K.turq });
+  // mouse peeks over the card, hops on top
+  const h = eo(seg(u, 1.2, 1.7));
+  mouse(lerp(1200, 760, h), 600 - Math.sin(seg(u, 1.2, 1.7) * Math.PI) * 60, .9, { flip: true, running: h < 1, run: u, blink: u > 3 && u < 3.1 });
+}
+function column(x, y, h, col) { shape(R(x - 44, y - h, 88, h), col, { lw: 4, id: 210 + (x | 0) % 7 }); shape(R(x - 64, y - h - 30, 128, 34, 6), col, { lw: 4 }); shape(R(x - 64, y - 26, 128, 26, 6), col, { lw: 4 });
+  for (let i = -1; i <= 1; i++) ink([[x + i * 22, y - h + 14], [x + i * 22, y - 34]], 2.5, 'rgba(43,33,27,.45)'); }
+function romeSet(hy = 1200) {
+  room('#e3a07a', '#b8714f', hy);
+  // big sun disc + arch
+  shape(E(820, 430, 120, 120), K.mustard, { lw: 4, id: 220 });
+  shape(() => { X.moveTo(340, hy); X.lineTo(340, 640); X.arc(540, 640, 200, Math.PI, 0); X.lineTo(740, hy); X.lineTo(660, hy); X.lineTo(660, 650); X.arc(540, 650, 120, 0, Math.PI, true); X.lineTo(420, hy); X.closePath(); }, '#f1d2b0', { lw: 4.5, id: 221 });
+  column(160, hy, 640, '#f3dcc0'); column(930, hy, 640, '#f3dcc0');
+  shape(R(80, 480, 930, 50, 4), '#f3dcc0', { lw: 4, id: 222 });
+  ttext('ROMA', 545, 505, '44px "Lilita One"', K.ink, null);
+}
+function sRome(t, t0) { // 3: Ancient Rome — physician and athlete
+  const u = t - t0; CAM = { x: 540, y: 960, z: lerp(.95, 1.0, eio(seg(u, 0, 2.4))) }; cam();
+  romeSet();
+  const sp = talking(t, ['s03']);
+  athlete(790, 1500, .82, { flex: 0, brow: 0, look: -1 });
+  medicus(330, 1500, .95, { mouth: sp, armR: [lerp(1.4, -.5, ss(seg(u, .3, .6))), -.4], poseR: 'open', look: 1, blink: u > 1.6 && u < 1.72 });
+  tag(t, t0 + .5, 540, 330, ['ANTİK ROMA'], { font: '56px "Lilita One"', id: 2, star: K.plum });
+}
+function sMus(t, t0) { // 4: mus = mouse
+  const u = t - t0; CAM = { x: lerp(500, 560, eio(seg(u, 0, 2))), y: 1200, z: 1.12 }; cam();
+  romeSet();
+  const sp = talking(t, ['s04']);
+  medicus(300, 1560, 1.0, { mouth: sp, armR: [.25, .05], poseR: 'point', brow: .5, look: 1 });
+  const run = seg(u, .1, 1.1);
+  mouse(lerp(1200, 760, eo(run)), 1520, 1.15, { flip: true, running: run < 1, run: u, blink: u > 1.8 && u < 1.9 });
+  medallion(t, t0 + .6, 760, 640, 70, '1', K.tomato);
+  tag(t, t0 + .9, 760, 860, ['mus', '= fare'], { font: '64px "Lilita One"', fonts: ['70px "Lilita One"', '600 52px Fredoka'], cols: [K.tomato, K.ink], lh: 74, id: 3 });
+}
+function sCulus(t, t0) { // 5: mus + -culus = musculus "little mouse"
+  const u = t - t0; CAM = { x: 540, y: 960, z: 1 }; cam();
+  room(K.powder, '#7fa9b0', 1240);
+  dots(40, 260, 1040, 1200, 70, K.white, .35);
+  medallion(t, t0 + .05, 540, 360, 60, '2', K.navy, { burst: K.coral });
+  // word chips
+  const a = back(seg(u, .2, .5)), b = back(seg(u, .9, 1.2)), j = eio(seg(u, 1.6, 2.1));
+  const ax = lerp(330, 405, j), bx = lerp(740, 675, j);
+  if (a > 0) { X.save(); X.translate(ax, 620); X.scale(a, a); shape(R(-150, -70, 300, 140, 26), K.white, { lw: 4.5, id: 230 }); ttext('mus', 0, 4, '92px "Lilita One"', K.tomato, K.ink); X.restore(); }
+  if (b > 0) { X.save(); X.translate(bx, 620); X.scale(b, b); shape(R(-150, -70, 300, 140, 26), K.mustard, { lw: 4.5, id: 231 }); ttext('-culus', 0, 4, '84px "Lilita One"', K.ink, K.white); X.restore(); }
+  if (u < 1.6 && b > 0) ttext('+', 540, 620, '90px "Lilita One"', K.ink, K.white);
+  const m = back(seg(u, 2.1, 2.45));
+  if (m > 0) { X.save(); X.translate(540, 820); X.scale(m, m); ttext('= musculus', 0, 0, fitFont('= musculus', 96, '"Lilita One"', 760), K.navy, K.white); X.restore(); }
+  tag(t, t0 + 2.6, 540, 990, ['“küçük fare”'], { font: '600 54px Fredoka', id: 4, star: K.turq });
+  // the mouse shrinks: big mouse -> small mouse
+  const sh = lerp(1.25, .62, eio(seg(u, 1.6, 2.4)));
+  mouse(540, 1420 - (1 - sh) * 40, sh, { flip: false, blink: u > 2.9 && u < 3.0 });
+  if (u > 2.3) for (let i = 0; i < 4; i++) sparkle(540 + Math.cos(i * 1.6 + T * 2) * 120, 1370 + Math.sin(i * 1.6 + T * 2) * 60, 14, K.white, T * 3);
+}
+function sAsk(t, t0) { // 6: how can a mouse be a muscle? (push in on the puzzled physician)
+  const u = t - t0; CAM = { x: 470, y: lerp(1150, 1080, eio(seg(u, 0, 2))), z: lerp(1.1, 1.35, eio(seg(u, 0, 2))) }; cam();
+  romeSet();
+  const sp = talking(t, ['s06']);
+  medicus(420, 1560, 1.0, { mouth: sp, armR: [-.4, -1.2], armL: [2.6, .9], poseR: 'open', brow: 1.2, look: u > 1 ? 1 : -1, blink: u > .9 && u < 1.0 });
+  mouse(700, 1520, .6, { flip: true });
+  const q = back(seg(u, .3, .6)); if (q > 0) { X.save(); X.translate(640, 760); X.scale(q, q); starburst(0, 0, 60, 84, 12, K.white, T * .4, { lw: 3 }); ttext('?', 0, 6, '100px "Lilita One"', K.tomato, K.ink); X.restore(); }
+}
+function sTurn(t, t0) { // 7: the turn — the flex, the call-out shows a mouse under the skin
+  const u = t - t0; CAM = { x: 560, y: KAPAK ? 700 : 980, z: 1.0 }; cam();
+  room(K.coral, '#c4664c', 1260);
+  rays(560, 900, 1000, K.white, .16, T * .04);
+  const f = ss(seg(u, .1, .5)), bump = u > .5 ? ((u - .5) / 1.25) % 1 : null;
+  const p = athlete(300, 1500, 1.05, { flex: f, bump, brow: -1, look: 1, mouth: 0 });
+  // call-out on the biceps: inside, the mouse running
+  callout(t, t0 + .6, 740, 560, 185, p.mx, p.my, () => {
+    X.fillStyle = K.skin; X.fillRect(-220, -220, 440, 440);
+    X.fillStyle = 'rgba(201,143,102,.45)'; for (let i = -3; i < 4; i++) { X.beginPath(); X.ellipse(0, i * 60, 260, 16, 0, 0, TAU); X.fill(); }
+    mouse(lerp(-150, 150, (u * .7) % 1), 40, .95, { running: true, run: u, flip: false });
+  });
+  stamp(t, t0 + 2.0, KAPAK ? 760 : 540, KAPAK ? 1130 : 330, 'MUHTEMELEN', K.plum);
+}
+function sSplit(t, t0) { // 8: two meanings — split frame in two colour blocks
+  const u = t - t0; CAM = { x: 540, y: 960, z: 1 }; cam();
+  X.fillStyle = K.powder; X.fillRect(-400, -400, 940, 2800); X.fillStyle = K.mustard; X.fillRect(540, -400, 1000, 2800);
+  ink([[540, 200], [540, 1560]], 5);
+  const hd = back(seg(u, .05, .35)); if (hd > 0) { X.save(); X.translate(540, 360); X.scale(hd, hd); shape(R(-300, -70, 600, 140, 30), K.paper, { lw: 4.5, id: 240 }); ttext('musculus', 0, 4, '88px "Lilita One"', K.navy, K.tomato); X.restore(); }
+  mouse(270, 900, .95, { flip: false, blink: u > 2 && u < 2.1 });
+  tag(t, t0 + .7, 270, 1160, ['1. küçük fare'], { font: '600 46px Fredoka', id: 5, star: K.navy });
+  // right: an arm flexing
+  const f = .5 + .5 * Math.sin(u * 3);
+  X.save(); X.translate(810, 900);
+  X.lineCap = 'round'; X.beginPath(); X.moveTo(-170, 90); X.lineTo(10, 60); X.lineTo(lerp(90, 60, f), lerp(-60, -120, f)); X.strokeStyle = K.ink; X.lineWidth = 92; X.stroke(); X.strokeStyle = K.skin; X.lineWidth = 82; X.stroke();
+  shape(E(-70, 40 - f * 20, 66 + f * 20, 34 + f * 14, -.15), K.skin, { lw: 4, id: 241 });
+  glove(lerp(90, 60, f), lerp(-80, -140, f), 1.3, -1.6, 'fist');
+  X.restore();
+  tag(t, t0 + 1.4, 810, 1160, ['2. kas'], { font: '600 46px Fredoka', id: 6, star: K.tomato });
+  ttext('=', 540, 900, '120px "Lilita One"', K.ink, K.white);
+}
+function sJourney(t, t0) { // 9: to English in the 1300s — a road with milestones, the mouse travels
+  const u = t - t0, d = L.s10 ? T0('s10') - t0 : 4;
+  const p = eio(seg(u, .2, d - .3));
+  CAM = { x: 540, y: 960, z: 1 + u * .008 }; cam();
+  X.fillStyle = K.olive; X.fillRect(-400, -400, 1900, 2800);
+  X.fillStyle = '#e4cf9a'; X.fillRect(-400, 1150, 1900, 220);
+  ink([[-400, 1150], [1500, 1150]], 4); ink([[-400, 1370], [1500, 1370]], 4);
+  for (let x = -300; x < 1500; x += 140) ink([[x, 1260], [x + 70, 1260]], 6, K.white);
+  for (let i = 0; i < 6; i++) shape(E(-100 + i * 260, 1150, 170, 100 + (i % 3) * 30), i % 2 ? K.lime : '#a7b04f', { lw: 4, id: 250 + i });
+  // stop 1: Rome (columns)
+  column(110, 1150, 330, '#f3dcc0'); column(290, 1150, 330, '#f3dcc0'); shape(R(50, 790, 300, 36, 6), '#f3dcc0', { lw: 4 });
+  // stop 2: England (tower + house)
+  shape(R(740, 700, 130, 450), '#cfc3ae', { lw: 4.5, id: 260 }); for (let i = 0; i < 3; i++) shape(R(740 + i * 46, 662, 32, 42), '#cfc3ae', { lw: 3.5 });
+  shape(R(780, 760, 50, 80, 25), K.navy, { lw: 3.5 }); shape(R(870, 880, 160, 270), '#e0d6c2', { lw: 4.5 }); shape(P([[855, 890], [950, 790], [1045, 890]]), K.tomato, { lw: 4 });
+  // dotted route arc between the stops
+  const k = seg(u, .3, 1.6); X.save(); X.setLineDash([14, 14]); X.strokeStyle = K.ink; X.lineWidth = 5; X.beginPath();
+  for (let i = 0; i <= 40 * k; i++) { const v = i / 40, x = lerp(200, 800, v), y = 640 - Math.sin(v * Math.PI) * 200; i ? X.lineTo(x, y) : X.moveTo(x, y); } X.stroke(); X.restore();
+  tag(t, t0 + .2, 230, 470, ['Latince', 'musculus'], { font: '600 40px Fredoka', fonts: ['600 40px Fredoka', '56px "Lilita One"'], cols: [K.ink, K.navy], lh: 60, id: 7, star: K.plum });
+  medallion(t, t0 + 1.4, 520, 420, 90, "1300'ler", K.tomato, { font: '42px "Lilita One"' });
+  tag(t, t0 + 2.2, 830, 470, ['İngilizce', 'muscle'], { font: '600 40px Fredoka', fonts: ['600 40px Fredoka', '60px "Lilita One"'], cols: [K.ink, K.tomato], lh: 62, id: 8, star: K.turq });
+  mouse(lerp(200, 720, p), 1240, .8, { running: p > 0 && p < 1, run: u, flip: false });
+}
+function sWord(t, t0) { // 10: "Muscle." — the word lands, the mouse bows
+  const u = t - t0; CAM = { x: 540, y: 960, z: 1 + u * .02 }; cam();
+  room(K.tomato, '#b4442c', 1240);
+  rays(540, 780, 1100, K.white, .2, T * .1);
+  starburst(540, 780, 330, 400, 18, K.mustard, T * .2, { lw: 4 });
+  const k = back(seg(u, 0, .3), 2.6);
+  X.save(); X.translate(540, 780); X.scale(k, k); ttext('Muscle', 0, 0, fitFont('Muscle', 190, '"Lilita One"', 640), K.ink, K.white); X.restore();
+  const bw = Math.sin(seg(u, .6, 1.2) * Math.PI) * .25;
+  X.save(); X.translate(540, 1300); X.rotate(bw); mouse(0, 0, 1.0, { flip: false, blink: bw > .1 }); X.restore();
+}
+function gymSet() {
+  room('#f0c66b', '#c99a3e', 1230);
+  for (let i = 0; i < 8; i++) shape(R(80 + i * 120, 380, 20, 760), '#d38b4a', { lw: 3, id: 270 + i });
+  for (let j = 0; j < 7; j++) ink([[70, 420 + j * 110], [1010, 420 + j * 110]], 4, 'rgba(43,33,27,.5)');
+  shape(E(900, 300, 70, 70), K.white, { lw: 4, id: 280 }); const a = T * .5; ink([[900, 300], [900 + Math.cos(a) * 46, 300 + Math.sin(a) * 46]], 4); ink([[900, 300], [900, 262]], 5);
+}
+function sGym(t, t0) { // 11: today — the example sentence in a gym
+  const u = t - t0; CAM = { x: 540, y: lerp(980, 1000, u / 6), z: lerp(1.0, 1.06, u / 6) }; cam();
+  gymSet();
+  const c = .5 - .5 * Math.cos(u * 2.4);
+  student(470, 1520, 1.0, { curl: c, brow: .3, look: 1, mouth: 0, blink: u > 2.5 && u < 2.6 });
+  shape(R(700, 1200, 300, 30, 6), '#d38b4a', { lw: 4, id: 285 }); mouse(850, 1160, .6, { flip: true, blink: u > 4 && u < 4.1 });
+  tag(t, t0 + .3, 540, 300, ['BUGÜN'], { font: '56px "Lilita One"', id: 9, star: K.tomato });
+}
+function sEnd(t, t0, dur) { // 12: the echo — the mouse pops out of the student's sleeve, then the closing card
+  const u = t - t0; CAM = { x: 540, y: 990, z: 1.05 }; cam();
+  gymSet();
+  const r = student(430, 1540, 1.0, { curl: ss(seg(u, .1, .6)) * .95, brow: 1, look: 1, mouth: 0 });
+  const pk = eo(seg(u, .9, 1.3));
+  if (pk > 0) mouse(320, 1085 - 55 * pk, .55, { flip: false, wink: u > 1.8 && u < 2.4 });
+  for (let i = 0; i < 5; i++) { const a = back(seg(u, 1.2 + i * .1, 1.5 + i * .1)); if (a > 0) sparkle(330 + Math.cos(i * 1.3) * 130, 1000 + Math.sin(i * 1.3) * 80, 18 * a, K.white, T * 2 + i); }
+  // closing card: iris-out on the mouse, then ingilizcecim.com
+  const ce = dur - 3.0, k = seg(t, ce, ce + .45);
+  if (k > 0) {
+    scr(); const rad = lerp(1300, 0, eio(k));
+    X.save(); X.beginPath(); X.rect(0, 0, W, H); X.arc(540, 900, rad, 0, TAU, true); X.fillStyle = K.navy; X.fill('evenodd'); X.restore();
+    if (k >= 1) { X.fillStyle = K.navy; X.fillRect(0, 0, W, H); }
+    const c = back(seg(t, ce + .4, ce + .75), 2);
+    if (c > 0) { X.save(); X.translate(540, 900); X.scale(c, c);
+      starburst(0, 0, 330, 380, 16, K.mustard, T * .2, { lw: 4 });
+      shape(R(-380, -140, 760, 280, 36), K.paper, { lw: 5, id: 290 });
+      ttext('ingilizcecim.com', 0, -24, fitFont('ingilizcecim.com', 92, '"Lilita One"', 680), K.tomato, K.ink);
+      ttext('Kelimelerin Tarihçesi · YDT/YDS', 0, 70, '600 36px Fredoka', K.ink, null);
+      X.restore(); mouse(820, 1210, .55, { flip: true, wink: true }); }
+  }
+}
+
+// scene table: [draw, start(), transition]
+let SC = [];
+function buildScenes() {
+  const d = Z.dur;
+  SC = [
+    [sHook, 0, 'cut'],
+    [sTitle, T0('s02') - .25, 'iris'],
+    [sRome, T0('s03') - .3, 'wipeL'],
+    [sMus, T0('s04') - .2, 'cut'],
+    [sCulus, T0('s05') - .2, 'iris'],
+    [sAsk, T0('s06') - .25, 'wipeU'],
+    [sTurn, T0('s07') - .2, 'iris'],
+    [sSplit, T0('s08') - .2, 'wipeL'],
+    [sJourney, T0('s09') - .25, 'wipeU'],
+    [sWord, T0('s10') - .2, 'iris'],
+    [sGym, T0('s11') - .25, 'wipeL'],
+    [sEnd, T0('s12') - .25, 'cut'],
+  ];
+}
+function drawScene(i, t) { const [f, s] = SC[i]; SID = 0; f(t, s, Z.dur); }
+function sceneAt(t) { let i = 0; for (let j = 0; j < SC.length; j++) if (t >= SC[j][1]) i = j; return i; }
+
+window.render = t => {
+  setClock(t); scr(); X.globalAlpha = 1; X.globalCompositeOperation = 'source-over'; X.setLineDash([]);
+  X.fillStyle = K.paper; X.fillRect(0, 0, W, H);
+  if (!Z) return;
+  const i = sceneAt(t), [, s, tr] = SC[i], k = seg(t, s, s + .45);
+  if (i > 0 && k < 1 && tr !== 'cut') {
+    drawScene(i - 1, Math.min(t, s));
+    scr(); X.save(); X.beginPath();
+    if (tr === 'iris') X.arc(540, 900, lerp(10, 1250, eio(k)), 0, TAU);
+    else if (tr === 'wipeL') X.rect(W - W * eio(k), 0, W, H);
+    else X.rect(0, H - H * eio(k), W, H);
+    X.clip(); drawScene(i, Math.max(t, s + .02)); X.restore();
+    if (tr !== 'iris') { scr(); X.fillStyle = K.ink; if (tr === 'wipeL') X.fillRect(W - W * eio(k) - 6, 0, 6, H); else X.fillRect(0, H - H * eio(k) - 6, W, 6); }
+  } else drawScene(i, t);
+  // paper grain + warm vignette
+  scr(); X.globalCompositeOperation = 'multiply'; X.fillStyle = GR; X.fillRect(0, 0, W, H);
+  const g = X.createRadialGradient(540, 900, 600, 540, 960, 1250); g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(1, 'rgba(200,170,130,1)'); X.fillStyle = g; X.fillRect(0, 0, W, H);
+  X.globalCompositeOperation = 'source-over';
+  if (KAPAK) cover(); else if (t < Z.dur - 3.0) caption(t);
+};
+// grain pattern
+let GR = null;
+function makeGrain() { const c = document.createElement('canvas'); c.width = c.height = 256; const g = c.getContext('2d'), im = g.createImageData(256, 256), r = mulberry(7);
+  for (let i = 0; i < 256 * 256; i++) { const v = 228 + r() * 27; im.data[i * 4] = v; im.data[i * 4 + 1] = v * .985; im.data[i * 4 + 2] = v * .95; im.data[i * 4 + 3] = 255; }
+  g.putImageData(im, 0, 0); GR = X.createPattern(c, 'repeat'); }
+
+function cover() { // same layout every cover: small series label + big word, inside y 285-1635
+  scr(); X.globalAlpha = 1;
+  shape(R(70, 320, 940, 330, 34), K.paper, { lw: 6, id: 500 });
+  sparkle(110, 485, 26, K.tomato, .3); sparkle(970, 485, 26, K.tomato, -.3);
+  ttext('KELİMELERİN TARİHÇESİ', 540, 392, '600 46px Fredoka', K.navy, null);
+  ttext('Muscle', 540, 530, fitFont('Muscle', 190, '"Lilita One"', 800), K.tomato, K.ink);
+  shape(R(250, 1500, 580, 100, 30), K.paper, { lw: 5, id: 501 });
+  ttext('“küçük fare”', 540, 1552, '600 50px Fredoka', K.ink, null);
+}
+
+(async () => {
+  Z = await (await fetch('ses/zaman.json')).json(); Z.satirlar.forEach(l => L[l.id] = l);
+  await document.fonts.load('60px "Lilita One"'); await document.fonts.load('600 50px Fredoka'); await document.fonts.load('500 34px Fredoka');
+  await document.fonts.load('600 50px Fredoka', 'ğşİıçüöÜÇŞĞ'); await document.fonts.ready;
+  makeGrain(); buildScenes();
+  window.DUR = Z.dur;
+  const s = id => T0(id), e = [];
+  e.push({ t: .25, type: 'whoosh' }, { t: .75, type: 'thump' }, { t: 1.45, type: 'pop' }, { t: 1.6, type: 'ding' });
+  e.push({ t: s('s02') - .25, type: 'whoosh' }, { t: s('s02') + .05, type: 'thump' }, { t: s('s02') + .65, type: 'pop' }, { t: s('s02') + .95, type: 'click' });
+  e.push({ t: s('s03') - .3, type: 'whoosh' }, { t: s('s03') + .2, type: 'pop' });
+  e.push({ t: s('s04') + .4, type: 'pop' }, { t: s('s04') + .7, type: 'thump' });
+  e.push({ t: s('s05') - .2, type: 'whoosh' }, { t: s('s05') + 0.0, type: 'pop' }, { t: s('s05') + .7, type: 'pop' }, { t: s('s05') + 1.9, type: 'click' }, { t: s('s05') + 2.4, type: 'ding' });
+  e.push({ t: s('s06') - .25, type: 'whoosh' }, { t: s('s06') + .35, type: 'pop' });
+  e.push({ t: s('s07') - .2, type: 'whoosh' }, { t: s('s07') + .4, type: 'thump' }, { t: s('s07') + .75, type: 'pop' }, { t: s('s07') + 2.0, type: 'thump' });
+  e.push({ t: s('s08') - .2, type: 'whoosh' }, { t: s('s08') + .1, type: 'pop' }, { t: s('s08') + .9, type: 'pop' }, { t: s('s08') + 1.6, type: 'pop' });
+  e.push({ t: s('s09') - .25, type: 'whoosh' }, { t: s('s09') + 1.6, type: 'thump' }, { t: s('s09') + 2.4, type: 'pop' });
+  e.push({ t: s('s10') - .2, type: 'whoosh' }, { t: s('s10') + .05, type: 'thump' }, { t: s('s10') + .3, type: 'ding' });
+  e.push({ t: s('s11') - .25, type: 'whoosh' }, { t: s('s11') + .5, type: 'pop' });
+  e.push({ t: s('s12') - .25, type: 'click' }, { t: s('s12') + 1.0, type: 'pop' }, { t: Z.dur - 3.0, type: 'whoosh' }, { t: Z.dur - 2.55, type: 'thump' }, { t: Z.dur - 2.4, type: 'ding' });
+  window.EV = e.filter(x => x.t > 0).sort((a, b) => a.t - b.t);
+  window.READY = true;
+})();
+</script></body></html>
