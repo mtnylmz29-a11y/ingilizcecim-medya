@@ -576,28 +576,43 @@
   "kademe": "ydt+yds",
   "sinif": "YDT · YDS",
   "bicim": "animasyon",
-  "uretim": "yerel (Claude Code + Remotion şablonu SinavSorusu); ses VoxCPM2 (Apache-2.0, yerel, profil a5cfa1a1)",
+  "uretim": "bulut (etym-render.yml, Sınav sorusu şablonu; seslendirmesiz, müzik/efekt video/sinav.py)",
   "stil": "sinav-sorusu (remotion)",
   "baslik": "Responsible For or From?",
   "aciklama": "Türkçede \"işten sorumlu\" deriz, bu yüzden çoğumuzun aklına önce responsible from gelir. Ama İngilizcede sorumlu olunan iş for ile kullanılır: responsible for training. Hesap verilen kişi ise to ile gelir: responsible to the manager. Sen bu soruyu 5 saniyede çözebildin mi?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #edatlar #prepositions #ingilizcegramer #yks #ingilizceöğren",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for.mp4",
-  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for_kareler.jpg",
-  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for_kapak.jpg",
-  "sure_sn": 38.2,
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/d3eb3e3df87e72043f4e8ef3785b68bd14ac68ec/gunler/2026-11-18/responsible-for_sinav.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/d3eb3e3df87e72043f4e8ef3785b68bd14ac68ec/gunler/2026-11-18/responsible-for_sinav_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/d3eb3e3df87e72043f4e8ef3785b68bd14ac68ec/gunler/2026-11-18/responsible-for_sinav_kapak.jpg",
+  "sure_sn": 29.0,
   "kaynaklar": [
    "https://dictionary.cambridge.org/dictionary/english/responsible",
    "https://www.merriam-webster.com/dictionary/responsible"
   ],
   "onerilen_dilim": "17:30",
-  "durum": "yerel_duzeltme",
-  "duzeltme_notu": "[Denetmen] Görsel zenginlik standardı KALDI: video baştan sona tek bir soru kâğıdı + ahşap zemin + kural kartı + kapanış kartı; karakter yok, hikâye yok, en az 5 farklı sahne yok (ORKESTRA 'Sadece yazı, düz zemin ya da kart dizisi olan video KALDI'). Yapılacak: 1) Soruyu bir karakter ve hikâyeyle anlat (ör. stil B düz vektör skeç ya da stick-explainer/midcentury-toon: yeni proje müdürü Sarah ofiste, yeni çalışanlara eğitim veriyor; Türk öğrenci 'işten sorumlu → from' diye düşünüp tuzağa düşüyor; müdüre hesap veren Sarah = 'responsible to the manager'). 2) En az 5 farklı sahne (ofis, eğitim salonu, müdür odası, sınav masası, kapanış), konuşan/mimiği değişen karakter(ler), kelime kelime vurgulu altyazı. Soru kâğıdı ve şık eleme sahnelerden biri olarak kalabilir. 3) Kapak §4.4: karakterli dolu bir kare + 'YDS · EDAT TUZAĞI' / 'Responsible' başlığı (mevcut kapak düzeni iyi, sadece arkadaki kare dolu bir sahne olsun). Doğru olanlar (koru): dilbilgisi doğru (responsible for + iş, responsible to + kişi; Cambridge/Merriam-Webster/Learner's Dictionary ile doğrulandı), yazım temiz, 1080×1920, 38,2 sn, 2,8 MB, ses VoxCPM2 (Apache-2.0), açıklama iyi.",
-  "denetim_turu": 1,
+  "durum": "onaylandi",
+  "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
-   "sonuc": "DUZELT",
-   "notlar": "[Denetmen] Görsel zenginlik standardı KALDI: video baştan sona tek bir soru kâğıdı + ahşap zemin + kural kartı + kapanış kartı; karakter yok, hikâye yok, en az 5 farklı sahne yok (ORKESTRA 'Sadece yazı, düz zemin ya da kart dizisi olan video KALDI'). Yapılacak: 1) Soruyu bir karakter ve hikâyeyle anlat (ör. stil B düz vektör skeç ya da stick-explainer/midcentury-toon: yeni proje müdürü Sarah ofiste, yeni çalışanlara eğitim veriyor; Türk öğrenci 'işten sorumlu → from' diye düşünüp tuzağa düşüyor; müdüre hesap veren Sarah = 'responsible to the manager'). 2) En az 5 farklı sahne (ofis, eğitim salonu, müdür odası, sınav masası, kapanış), konuşan/mimiği değişen karakter(ler), kelime kelime vurgulu altyazı. Soru kâğıdı ve şık eleme sahnelerden biri olarak kalabilir. 3) Kapak §4.4: karakterli dolu bir kare + 'YDS · EDAT TUZAĞI' / 'Responsible' başlığı (mevcut kapak düzeni iyi, sadece arkadaki kare dolu bir sahne olsun). Doğru olanlar (koru): dilbilgisi doğru (responsible for + iş, responsible to + kişi; Cambridge/Merriam-Webster/Learner's Dictionary ile doğrulandı), yazım temiz, 1080×1920, 38,2 sn, 2,8 MB, ses VoxCPM2 (Apache-2.0), açıklama iyi.",
-   "zaman": "2026-11-18T04:01+03:00"
-  }
+   "sonuc": "GECTI",
+   "zaman": "2026-11-18T21:18+03:00",
+   "notlar": "[Denetmen, 2. tur, Sınav sorusu biçimi ölçütleri] Dilbilgisi doğru: responsible for + iş/doing, responsible to + hesap verilen kişi (Cambridge, Merriam-Webster; 1. turda da doğrulandı); B doğru, gerekçeler doğru ('-den sorumlu' tuzağı, of kalıbı yok, to + kişi, with anlamsız). Soru 3 satır, balonlar tek satır, geri sayım 4→1 ve kırmızı son saniyeler, optik form B kodlanıyor, sarı kural kartı 'for + yapılan iş / to + hesap verilen kişi', kapanış ingilizcecim.com. Teknik: 1080×1920, 29,0 sn (4 eleme = biçimin standart süresi), 1,8 MB, ses var (müzik + tik tak, −14,1 LUFS), seslendirme yok (biçim gereği). Kapak: 'YDS · EDAT TUZAĞI / Responsible / from mu, for mu?' okunaklı, y≈300–725, ortadaki 1080×1350 alanda; küçük not: başlık bandı yarı saydam, arkadaki soru metni hafif görünüyor."
+  },
+  "eski_surum": {
+   "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for.mp4",
+   "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for_kareler.jpg",
+   "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for_kapak.jpg",
+   "uretim": "yerel (Claude Code + Remotion şablonu SinavSorusu); ses VoxCPM2 (Apache-2.0, yerel, profil a5cfa1a1)",
+   "sure_sn": 38.2,
+   "not": "Seslendirmeli yerel ilk sürüm; yerine biçimin seslendirmesiz şablonu kullanıldı."
+  },
+  "duzeltme_gecmisi": [
+   {
+    "not": "[Denetmen 1. tur] görsel zenginlik KALDI (karakter/5 sahne yok)",
+    "yapilan": "Metin (18 Kasım gece): bu video yeni Sınav sorusu biçimidir; biçim görsel zenginlik standardından muaf (ORKESTRA güncellendi). Seslendirmesiz şablonla bulutta yeniden üretildi.",
+    "zaman": "2026-11-18T21:18+03:00"
+   }
+  ],
+  "onay": "otomatik (Denetmen, 2026-11-18T21:18+03:00)"
  },
  {
   "id": "2026-11-19-reels",
