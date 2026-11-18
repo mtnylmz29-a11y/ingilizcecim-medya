@@ -1,0 +1,32 @@
+1
+00:00:00,600 --> 00:00:05,523
+YDS'de çok sık çıkan bir edat tuzağı! Boşluğa hangisi gelir? Beş saniyen var.
+
+2
+00:00:11,023 --> 00:00:15,724
+From olmaz. Türkçede işten sorumlu deriz, ama İngilizcede bu bir tuzak.
+
+3
+00:00:16,224 --> 00:00:18,437
+Of da olmaz; böyle bir kalıp yok.
+
+4
+00:00:18,937 --> 00:00:21,931
+To ise kişiyle gelir: birine karşı sorumlu olmak.
+
+5
+00:00:22,431 --> 00:00:24,696
+With burada hiçbir anlam vermez.
+
+6
+00:00:25,296 --> 00:00:27,440
+Doğru cevap: responsible for!
+
+7
+00:00:28,340 --> 00:00:32,874
+Kural şu: sorumlu olduğun iş için for, hesap verdiğin kişi için to.
+
+8
+00:00:33,974 --> 00:00:36,978
+Her gün bir YDS sorusu için ingilizcecim nokta com.
+
