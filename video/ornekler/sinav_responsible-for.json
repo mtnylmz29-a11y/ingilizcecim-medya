@@ -1,0 +1,19 @@
+{
+ "bicim": "sinav",
+ "ad": "responsible-for",
+ "etiket": "YDS · EDAT TUZAĞI",
+ "soruNo": 7,
+ "soru": "As the new project manager, Sarah is responsible ---- training all the newly hired staff.",
+ "ikon": "canta",
+ "secenekler": ["from", "for", "of", "to", "with"],
+ "dogru": 1,
+ "eleme": [
+  {"sik": 0, "neden": "'-den sorumlu' tuzağı!"},
+  {"sik": 2, "neden": "responsible of diye kalıp yok"},
+  {"sik": 3, "neden": "to + kişi: birine karşı"},
+  {"sik": 4, "neden": "with burada anlamsız"}
+ ],
+ "kural": "for + yapılan iş\nto + hesap verilen kişi",
+ "kuralOrnek": "for training · to the manager",
+ "kapak": {"baslik": "Responsible", "alt": "from mu, for mu?"}
+}
