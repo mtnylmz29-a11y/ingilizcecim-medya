@@ -95,11 +95,13 @@
  },
  {
   "kelime": "muscle",
-  "durum": "bekliyor",
+  "durum": "uretildi",
   "zemin_onerisi": "roma",
   "kesin": "Latince musculus 'küçük fare' (mus 'fare' + küçültme eki). Fransızca üzerinden İngilizcede 1300'lerin sonu.",
   "rivayet": "Kas hareket edince deri altında koşan bir fareye benzediği için bu adın verildiği açıklaması yaygın ama 'muhtemelen' diye söylenmeli.",
-  "gorsel_oneri": "Köken: roma zemini, doktor ya da toga; dekor fare; ziplat 'kol' (metin: fare) — pazıda kayan fare; damga MUHTEMELEN/RİVAYETE GÖRE (benzetme açıklaması). Değişim: Fransızca muscle → İngilizce 1300'ler sonu; son durak spor zemini + sporcu, dambil. tema turuncu, stil harfler, muzik macera."
+  "gorsel_oneri": "Köken: roma zemini, doktor ya da toga; dekor fare; ziplat 'kol' (metin: fare) — pazıda kayan fare; damga MUHTEMELEN/RİVAYETE GÖRE (benzetme açıklaması). Değişim: Fransızca muscle → İngilizce 1300'ler sonu; son durak spor zemini + sporcu, dambil. tema turuncu, stil harfler, muzik macera.",
+  "uretim_tarihi": "2026-11-20",
+  "uretim": "bulut"
  },
  {
   "kelime": "companion",

@@ -613,5 +613,28 @@
    "notlar": "Bilgi doğru (Walpole'un Horace Mann'e 28 Ocak 1754 mektubu; Serendip = Sri Lanka, Sanskritçe kökenli, Arapça/Farsça Serendib; Üç Serendip Prensi Fars masalı; 'tesadüf + zekâ' — Merriam-Webster, Wikipedia, JSTOR Daily ile doğrulandı). Teknik: 1080×1920, 58,8 sn, 35,7 MB, H.264+AAC, ses Gemini Kore (ticari kullanım uygun), Whisper satırları metinle örtüşüyor. Görsel: gölge oyunu stili, 3 prens + Walpole + modern karakter, ≥7 sahne (çöl, ada, yolculuk, İngiltere 1754 masa, tanım, örnek cümle, kapanış), ilk 3 sn soru kancası, ingilizcecim.com kapanışı. Kapak iyi: üç prens sahnesi, 'KELİMELERİN TARİHÇESİ / Serendipity' başlığı okunaklı ve ortadaki 1080×1350 alanda. Küçük not (düzeltme gerektirmez): ada sahnesindeki üçgen yapı Sri Lanka'dan çok piramide benziyor; geçişlerdeki üst etiketler bulanık.",
    "zaman": "2026-11-18T04:01+03:00"
   }
+ },
+ {
+  "id": "2026-11-20-reels",
+  "tarih": "2026-11-20",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, midcentury-toon; ses Gemini Kore)",
+  "film": "filmler/2026-11-20-muscle",
+  "stil": "midcentury-toon",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Muscle",
+  "aciklama": "Muscle (kas) kelimesinin içinde küçük bir fare saklanıyor! Latincede mus \"fare\" demekti; küçültme ekiyle musculus \"küçük fare\" oldu ve aynı kelime \"kas\" anlamında da kullanıldı. Muhtemelen kas oynadığında deri altında kıpırdayan bir fareye benzetildiği için. Kelime 1300'lerde İngilizceye geçti. Sizce başka hangi kelimenin içinde bir hayvan saklanıyor?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #etimoloji #kelimelerintarihçesi #ingilizcekelime #muscle #yks #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/883288c1377de31e3cbfe937a74ee39e02db84a6/gunler/2026-11-20/muscle_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/883288c1377de31e3cbfe937a74ee39e02db84a6/gunler/2026-11-20/muscle_etym_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/883288c1377de31e3cbfe937a74ee39e02db84a6/gunler/2026-11-20/muscle_etym_kapak.jpg",
+  "sure_sn": 54.1,
+  "kaynaklar": [
+   "https://www.merriam-webster.com/dictionary/muscle",
+   "https://en.wiktionary.org/wiki/musculus"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]
