@@ -548,7 +548,7 @@
    "https://en.wiktionary.org/wiki/assassin"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "onaylandi",
+  "durum": "yayinlandi",
   "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
@@ -564,7 +564,11 @@
     "zaman": "2026-11-18T20:30+03:00"
    }
   ],
-  "onay": "otomatik (Denetmen, 2026-11-18T21:05+03:00)"
+  "onay": "otomatik (Denetmen, 2026-11-18T21:05+03:00)",
+  "media_id": "18379749520301022",
+  "permalink": "https://www.instagram.com/reel/Df5HEaugfPS/",
+  "yayin_saati": "2026-11-18 21:08 (TR)",
+  "yayin_notu": "Denetmen onayı 21:05; Metin'in 'Assassin gelince yayınla' isteği"
  },
  {
   "id": "2026-11-18-gonderi",
