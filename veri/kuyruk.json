@@ -545,5 +545,26 @@
   ],
   "onerilen_dilim": "20:30",
   "durum": "denetimde"
+ },
+ {
+  "id": "2026-11-18-gonderi",
+  "tarih": "2026-11-18",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "yerel (Claude Code + Remotion şablonu SinavSorusu); ses VoxCPM2 (Apache-2.0, yerel, profil a5cfa1a1)",
+  "stil": "sinav-sorusu (remotion)",
+  "baslik": "Responsible For or From?",
+  "aciklama": "Türkçede \"işten sorumlu\" deriz, bu yüzden çoğumuzun aklına önce responsible from gelir. Ama İngilizcede sorumlu olunan iş for ile kullanılır: responsible for training. Hesap verilen kişi ise to ile gelir: responsible to the manager. Sen bu soruyu 5 saniyede çözebildin mi?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #edatlar #prepositions #ingilizcegramer #yks #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4c91304e355f2e715d2aaceffcc1b46bcb40fd3e/gunler/2026-11-18/responsible_for_kapak.jpg",
+  "sure_sn": 38.2,
+  "kaynaklar": [
+   "https://dictionary.cambridge.org/dictionary/english/responsible",
+   "https://www.merriam-webster.com/dictionary/responsible"
+  ],
+  "onerilen_dilim": "17:30",
+  "durum": "denetimde"
  }
 ]
