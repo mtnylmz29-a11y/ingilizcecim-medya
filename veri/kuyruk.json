@@ -548,13 +548,13 @@
    "https://en.wiktionary.org/wiki/assassin"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde",
-  "denetim_turu": 1,
+  "durum": "onaylandi",
+  "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
-   "sonuc": "DUZELT",
-   "notlar": "[Denetmen] 1) Bilgi hatası: 'İngilizceye 1600'lerin başında geçtim' yanlış. Merriam-Webster ilk kullanımı 'circa 1520' veriyor, Wiktionary/TIFO 16. yüzyıl (Fransızca/İtalyanca yoluyla). Seslendirme satırını ve altyazıyı '1500'lerde İngilizceye geçtim' (istersen: 'suikastçı anlamı 1600'lerde yaygınlaştı') diye değiştir; 'İNGİLTERE · 1600'LER' etiketi ve 'A DICTIONARIE · 16..' kartı da buna uysun; kuyruktaki açıklamada '1600'lerin başında da İngilizceye geçti' cümlesini '1500'lerde İngilizceye geçti' yap. 2) Kapak yok: §4.4'e göre assassin_etym_kapak.jpg üret (dolu bir sahne, ör. Alamut kalesi/ haşşaşin sahnesi; 'KELİMELERİN TARİHÇESİ' + 'Assassin' başlığı ortadaki 1080×1350 alanda) ve kayda 'kapak' alanını ekle. 3) Küçük: 1–3. saniyede 'TÜR/YAŞ/DOĞUŞ' bilgi kutusu karakterin başını tamamen kapatıyor; kutuyu yukarı al ya da karakteri aşağı kaydır. Geri kalan her şey iyi: 1080×1920, 54 sn, 21,7 MB, ses VoxCPM2 (Apache-2.0), pixel-art karakter + ≥8 sahne, Alamut 1090/Hasan Sabbah/haşşaşin rivayeti/Dante doğru.",
-   "zaman": "2026-11-18T04:01+03:00"
+   "sonuc": "GECTI",
+   "notlar": "[Denetmen, 2. tur] 1. tur düzeltmelerinin hepsi yapılmış: (1) '1500'lerde İngilizceye geçtim' doğru — Merriam-Webster ilk kullanım 'circa 1520', Etymonline '1530s', Fransızca/İtalyanca yoluyla; açıklama da '1500'lerde'. (2) Kapak var ve iyi: haşşaşin kampı sahnesi, 'KELİMELERİN TARİHÇESİ / Assassin' başlığı y≈1300–1590, ortadaki 1080×1350 alanın içinde. (3) Eski bilgi kutusu yeni stilde yok. Bilgi: Hasan Sabbah 1090 Alamut, Nizari İsmaililer, 'haşşaşin' düşmanların küçümseyici adı, esrar hikâyesi 'rivayete göre' (kanıt yok), Haçlı kaynakları + Marco Polo, Dante 'lo perfido assassin' — Wikipedia/Etymonline/Merriam-Webster ile uyumlu. Örnek cümle doğru. Teknik: 1080×1920, 30 fps, 54,0 sn, 41,8 MB, H.264+AAC 48 kHz, −14,2 LUFS, tepe −1,6 dB (kırpılma yok); satır sonlarında sessizlik+kısa patlama deseni yok. Ses VoxCPM2 (Apache-2.0); bu oturumda ASR modeli indirilemedi, metin–ses eşleşmesi üreticinin whisper kontrolüne (12/12) ve altyazıya dayanıyor. Görsel: gilded-illumination minyatür, anlatıcı karakter + Hasan Sabbah + kalabalık, ≥9 sahne (çerçeveli açılış, Alamut, düşman kampı, Haçlı gemisi, Venedik/Dante, Londra matbaası, gazete, panorama kapanış, ingilizcecim.com). Küçük notlar (düzeltme gerektirmez): yazı tipinin eski stil rakamları '1090'/'1500' altyazıda 'o' harfine benziyor; 37–41. sn'de üst yarıda yarım tekne/kule ve havada kalan kırmızı-beyaz çubuklar var (kamera geçişi); 10. sn Alamut sahnesinin altında Haçlı bayraklı gemi erken görünüyor.",
+   "zaman": "2026-11-18T21:05+03:00"
   },
   "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/c4a7870fc314d645f1fbd4ac6254b359bd8574e3/gunler/2026-11-18/assassin_etym_kapak.jpg",
   "duzeltme_gecmisi": [
@@ -563,7 +563,8 @@
     "yapilan": "Kullanıcı isteğiyle stil pixel-rpg → gilded-illumination (yeniden üretim, seslendirme korundu). 1) 'e1' satırı '1500'lerde İngilizceye geçtim' olarak yeniden seslendirildi (VoxCPM2, whisper 1.00), altyazı ve açıklama güncellendi; yeni stilde 1600'ler etiketi/kartı yok. 2) Kapak eklendi (assassin_etym_kapak.jpg, düşman kampı sahnesi, başlık orta 1080×1350 alanda). 3) Bilgi kutusu yeni stilde yok.",
     "zaman": "2026-11-18T20:30+03:00"
    }
-  ]
+  ],
+  "onay": "otomatik (Denetmen, 2026-11-18T21:05+03:00)"
  },
  {
   "id": "2026-11-18-gonderi",
