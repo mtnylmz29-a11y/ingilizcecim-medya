@@ -535,28 +535,35 @@
   "kademe": "ydt+yds",
   "sinif": "YDT · YDS",
   "bicim": "animasyon",
-  "uretim": "yerel (Claude Code + lemo-opuscar); ses VoxCPM2 (Apache-2.0, yerel, profil a5cfa1a1)",
-  "stil": "pixel-rpg (pixel-art)",
+  "uretim": "yerel (Claude Code + lemo-opuscar); ses VoxCPM2 (Apache-2.0, yerel, profil a5cfa1a1); müzik VCSL örnekleri (CC0)",
+  "stil": "gilded-illumination (resimli minyatür)",
   "seri": "kelimelerin-tarihcesi",
   "baslik": "Kelimelerin Tarihçesi: Assassin",
-  "aciklama": "\"Assassin\" bugün suikastçı demek, ama adı bin yıl önce düşmanların taktığı bir lakaptan doğdu. 1090'da Alamut Kalesi'nde güçlenen Nizari İsmailileri düşmanları küçümseyerek \"haşşaşin\" diye çağırdı; esrar hikâyesi ise yalnızca bir rivayet. Haçlılar ve Marco Polo adı Avrupa'ya taşıdı, İtalyancada assassino oldu, 1600'lerin başında da İngilizceye geçti. Sen bu kelimeyi ilk nerede duymuştun?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #kelimelerintarihcesi #etimoloji #ingilizcekelime #assassin #yks #ingilizceöğren",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e6b6a92c7c90778374a4c113d1bcea8a4b60a2e4/gunler/2026-11-18/assassin_etym.mp4",
-  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/e6b6a92c7c90778374a4c113d1bcea8a4b60a2e4/gunler/2026-11-18/assassin_etym_kareler.jpg",
+  "aciklama": "\"Assassin\" bugün suikastçı demek, ama adı bin yıl önce düşmanların taktığı bir lakaptan doğdu. 1090'da Alamut Kalesi'nde güçlenen Nizari İsmailileri düşmanları küçümseyerek \"haşşaşin\" diye çağırdı; esrar hikâyesi ise yalnızca bir rivayet. Haçlılar ve Marco Polo adı Avrupa'ya taşıdı, İtalyancada assassino oldu, 1500'lerde de İngilizceye geçti. Sen bu kelimeyi ilk nerede duymuştun?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #kelimelerintarihcesi #etimoloji #ingilizcekelime #assassin #yks #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/c4a7870fc314d645f1fbd4ac6254b359bd8574e3/gunler/2026-11-18/assassin_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/c4a7870fc314d645f1fbd4ac6254b359bd8574e3/gunler/2026-11-18/assassin_etym_kareler.jpg",
   "sure_sn": 54.0,
   "kaynaklar": [
    "https://en.wikipedia.org/wiki/Order_of_Assassins",
    "https://en.wiktionary.org/wiki/assassin"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "yerel_duzeltme",
-  "duzeltme_notu": "[Denetmen] 1) Bilgi hatası: 'İngilizceye 1600'lerin başında geçtim' yanlış. Merriam-Webster ilk kullanımı 'circa 1520' veriyor, Wiktionary/TIFO 16. yüzyıl (Fransızca/İtalyanca yoluyla). Seslendirme satırını ve altyazıyı '1500'lerde İngilizceye geçtim' (istersen: 'suikastçı anlamı 1600'lerde yaygınlaştı') diye değiştir; 'İNGİLTERE · 1600'LER' etiketi ve 'A DICTIONARIE · 16..' kartı da buna uysun; kuyruktaki açıklamada '1600'lerin başında da İngilizceye geçti' cümlesini '1500'lerde İngilizceye geçti' yap. 2) Kapak yok: §4.4'e göre assassin_etym_kapak.jpg üret (dolu bir sahne, ör. Alamut kalesi/ haşşaşin sahnesi; 'KELİMELERİN TARİHÇESİ' + 'Assassin' başlığı ortadaki 1080×1350 alanda) ve kayda 'kapak' alanını ekle. 3) Küçük: 1–3. saniyede 'TÜR/YAŞ/DOĞUŞ' bilgi kutusu karakterin başını tamamen kapatıyor; kutuyu yukarı al ya da karakteri aşağı kaydır. Geri kalan her şey iyi: 1080×1920, 54 sn, 21,7 MB, ses VoxCPM2 (Apache-2.0), pixel-art karakter + ≥8 sahne, Alamut 1090/Hasan Sabbah/haşşaşin rivayeti/Dante doğru.",
+  "durum": "denetimde",
   "denetim_turu": 1,
   "denetim": {
    "denetci": "Denetmen",
    "sonuc": "DUZELT",
    "notlar": "[Denetmen] 1) Bilgi hatası: 'İngilizceye 1600'lerin başında geçtim' yanlış. Merriam-Webster ilk kullanımı 'circa 1520' veriyor, Wiktionary/TIFO 16. yüzyıl (Fransızca/İtalyanca yoluyla). Seslendirme satırını ve altyazıyı '1500'lerde İngilizceye geçtim' (istersen: 'suikastçı anlamı 1600'lerde yaygınlaştı') diye değiştir; 'İNGİLTERE · 1600'LER' etiketi ve 'A DICTIONARIE · 16..' kartı da buna uysun; kuyruktaki açıklamada '1600'lerin başında da İngilizceye geçti' cümlesini '1500'lerde İngilizceye geçti' yap. 2) Kapak yok: §4.4'e göre assassin_etym_kapak.jpg üret (dolu bir sahne, ör. Alamut kalesi/ haşşaşin sahnesi; 'KELİMELERİN TARİHÇESİ' + 'Assassin' başlığı ortadaki 1080×1350 alanda) ve kayda 'kapak' alanını ekle. 3) Küçük: 1–3. saniyede 'TÜR/YAŞ/DOĞUŞ' bilgi kutusu karakterin başını tamamen kapatıyor; kutuyu yukarı al ya da karakteri aşağı kaydır. Geri kalan her şey iyi: 1080×1920, 54 sn, 21,7 MB, ses VoxCPM2 (Apache-2.0), pixel-art karakter + ≥8 sahne, Alamut 1090/Hasan Sabbah/haşşaşin rivayeti/Dante doğru.",
    "zaman": "2026-11-18T04:01+03:00"
-  }
+  },
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/c4a7870fc314d645f1fbd4ac6254b359bd8574e3/gunler/2026-11-18/assassin_etym_kapak.jpg",
+  "duzeltme_gecmisi": [
+   {
+    "not": "[Denetmen] 1) Bilgi hatası: 'İngilizceye 1600'lerin başında geçtim' yanlış. Merriam-Webster ilk kullanımı 'circa 1520' veriyor, Wiktionary/TIFO 16. yüzyıl (Fransızca/İtalyanca yoluyla). Seslendirme satırını ve altyazıyı '1500'lerde İngilizceye geçtim' (istersen: 'suikastçı anlamı 1600'lerde yaygınlaştı') diye değiştir; 'İNGİLTERE · 1600'LER' etiketi ve 'A DICTIONARIE · 16..' kartı da buna uysun; kuyruktaki açıklamada '1600'lerin başında da İngilizceye geçti' cümlesini '1500'lerde İngilizceye geçti' yap. 2) Kapak yok: §4.4'e göre assassin_etym_kapak.jpg üret (dolu bir sahne, ör. Alamut kalesi/ haşşaşin sahnesi; 'KELİMELERİN TARİHÇESİ' + 'Assassin' başlığı ortadaki 1080×1350 alanda) ve kayda 'kapak' alanını ekle. 3) Küçük: 1–3. saniyede 'TÜR/YAŞ/DOĞUŞ' bilgi kutusu karakterin başını tamamen kapatıyor; kutuyu yukarı al ya da karakteri aşağı kaydır. Geri kalan her şey iyi: 1080×1920, 54 sn, 21,7 MB, ses VoxCPM2 (Apache-2.0), pixel-art karakter + ≥8 sahne, Alamut 1090/Hasan Sabbah/haşşaşin rivayeti/Dante doğru.",
+    "yapilan": "Kullanıcı isteğiyle stil pixel-rpg → gilded-illumination (yeniden üretim, seslendirme korundu). 1) 'e1' satırı '1500'lerde İngilizceye geçtim' olarak yeniden seslendirildi (VoxCPM2, whisper 1.00), altyazı ve açıklama güncellendi; yeni stilde 1600'ler etiketi/kartı yok. 2) Kapak eklendi (assassin_etym_kapak.jpg, düşman kampı sahnesi, başlık orta 1080×1350 alanda). 3) Bilgi kutusu yeni stilde yok.",
+    "zaman": "2026-11-18T20:30+03:00"
+   }
+  ]
  },
  {
   "id": "2026-11-18-gonderi",
