@@ -2,6 +2,12 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 18 Kasım 2026 (akşam) — SATIR SONU SES PARAZİTİ (Metin; aşağıdakilerin hepsinden önce gelir)
+- Metin, Serendipity videosu için: "her cümlenin sonundaki o çirkin ses nedir?" Neden: Gemini TTS bazı satırların sonuna ~160 ms'lik, tam seviyede bir patlama ekliyor. Whisper son kelimeyi bu patlamaya kadar uzattığı için kırpma onu kaçırıyordu.
+- Düzeltme: `sistem/lemo/ses.py` artık her satırın sonunda bu parazit varsa susturuyor (satırın uzunluğu ve zaman çizelgesi değişmiyor). Eski bir filmi düzeltmek için `Lemo render` iş akışını `asama=hepsi` ile çalıştır. Ses önbellekten gelir, kota harcamaz.
+- **Denetmen (KİP: DENETIM), her bulut/lemo kaydı için zorunlu**: depoyu klonla ve `python3 sistem/lemo/ses_kontrol.py <film klasörü>` çalıştır. `SES PARAZITI` çıkarsa sonuç DUZELT olur (not: "satır sonu ses paraziti: sNN…, asama=hepsi ile yeniden render"). Ayrıca mp4'ün sesini dinler gibi incele: her satır sonunda tık, pat, güm, nefes ya da anlamsız hece olmamalı. Yalnızca Whisper metnine bakmak yetmez.
+- Serendipity, 18 Kasım 17:39'da parazitli haliyle yayınlanmıştı. 19:24'te düzeltilmiş haliyle yeniden yayınlandı (media 18115116974239833). Instagram API paylaşım silmeyi desteklemiyor (hata 100/33); eski paylaşımı (17917249569519495) Metin uygulamadan siler. Hiçbir görev paylaşım silmeye çalışmasın. Muscle (20 Kasım) yeniden render edildi.
+
 ## GÜNCELLEME 16 Kasım 2026 — SES: TİCARİ LİSANS ŞARTI (Metin; aşağıdakilerin hepsinden önce gelir, "gece 2" ses kuralının yerine geçer)
 - Metin: "Gemini Kore ve VoiceStudio ile oluşturulmuş ticari kullanıma açık sesler kabul edilecek." / "Bu ikisinin dışındaki ticari lisansı olmayan sesleri düzeltmeye göndersin. Ticari lisansı varsa, kabul edebiliriz."
 - **Üretimde tercih edilen**: (1) **Gemini TTS, ses 'Kore'** (bulutta varsayılan; ayarlar `hf/gen.py` → `gemini()`), (2) **VoiceStudio** + lisansı ticari kullanıma açık model (ör. VoxCPM2 — Apache-2.0). Ayrıntı: `sistem/YEREL_URETIM.md` 4. madde.
