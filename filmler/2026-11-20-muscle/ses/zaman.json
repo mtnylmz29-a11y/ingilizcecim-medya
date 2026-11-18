@@ -1,0 +1,571 @@
+{
+ "dur": 54.131,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Kolunuzun içinde bir fare yaşadığını söyleseler inanır mıydınız?",
+   "t0": 0.5,
+   "t1": 4.431,
+   "kelimeler": [
+    {
+     "w": "Kolunuzun",
+     "t0": 0.5,
+     "t1": 1.6
+    },
+    {
+     "w": "içinde",
+     "t0": 1.6,
+     "t1": 2.02
+    },
+    {
+     "w": "bir",
+     "t0": 2.02,
+     "t1": 2.3
+    },
+    {
+     "w": "fare",
+     "t0": 2.3,
+     "t1": 2.8
+    },
+    {
+     "w": "yaşadığını",
+     "t0": 2.8,
+     "t1": 3.6
+    },
+    {
+     "w": "söyleseler",
+     "t0": 3.6,
+     "t1": 4.56
+    },
+    {
+     "w": "inanır",
+     "t0": 4.56,
+     "t1": 5.2
+    },
+    {
+     "w": "mıydınız?",
+     "t0": 5.2,
+     "t1": 5.76
+    }
+   ],
+   "duyulan": "Kolunuzun içinde bir fare yaşadığını söyleseler inanır mıydınız?"
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "İngilizcede kas demek olan muscle kelimesi tam olarak bunu söylüyor.",
+   "t0": 4.731,
+   "t1": 9.582,
+   "kelimeler": [
+    {
+     "w": "İngilizce'de",
+     "t0": 4.731,
+     "t1": 6.231
+    },
+    {
+     "w": "kas",
+     "t0": 6.231,
+     "t1": 6.591
+    },
+    {
+     "w": "demek",
+     "t0": 6.591,
+     "t1": 7.011
+    },
+    {
+     "w": "olan",
+     "t0": 7.011,
+     "t1": 7.431
+    },
+    {
+     "w": "masıl",
+     "t0": 7.431,
+     "t1": 8.171
+    },
+    {
+     "w": "kelimesi",
+     "t0": 8.171,
+     "t1": 9.171
+    },
+    {
+     "w": "tam",
+     "t0": 9.171,
+     "t1": 9.731
+    },
+    {
+     "w": "olarak",
+     "t0": 9.731,
+     "t1": 10.211
+    },
+    {
+     "w": "bunu",
+     "t0": 10.211,
+     "t1": 10.651
+    },
+    {
+     "w": "söylüyor.",
+     "t0": 10.651,
+     "t1": 11.431
+    }
+   ],
+   "duyulan": "İngilizce'de kas demek olan masıl kelimesi tam olarak bunu söylüyor."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Hikâye Antik Roma'da başlıyor.",
+   "t0": 10.182,
+   "t1": 13.033,
+   "kelimeler": [
+    {
+     "w": "Hikâye",
+     "t0": 10.182,
+     "t1": 11.562
+    },
+    {
+     "w": "Antik",
+     "t0": 11.562,
+     "t1": 12.522
+    },
+    {
+     "w": "Roma'da",
+     "t0": 12.522,
+     "t1": 13.182
+    },
+    {
+     "w": "başlıyor.",
+     "t0": 13.182,
+     "t1": 13.882
+    }
+   ],
+   "duyulan": "Hikâye Antik Roma'da başlıyor."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Latincede mus, fare demekti.",
+   "t0": 13.333,
+   "t1": 16.264,
+   "kelimeler": [
+    {
+     "w": "Letince",
+     "t0": 13.333,
+     "t1": 14.593
+    },
+    {
+     "w": "de",
+     "t0": 14.593,
+     "t1": 14.873
+    },
+    {
+     "w": "mus,",
+     "t0": 14.873,
+     "t1": 15.453
+    },
+    {
+     "w": "fare",
+     "t0": 15.693,
+     "t1": 16.353
+    },
+    {
+     "w": "demekti.",
+     "t0": 16.353,
+     "t1": 17.313
+    }
+   ],
+   "duyulan": "Letince de mus, fare demekti."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Küçültme ekiyle musculus, yani küçük fare oldu.",
+   "t0": 16.564,
+   "t1": 20.455,
+   "kelimeler": [
+    {
+     "w": "Küçültme",
+     "t0": 16.564,
+     "t1": 17.724
+    },
+    {
+     "w": "ekiyle",
+     "t0": 17.724,
+     "t1": 18.504
+    },
+    {
+     "w": "muskulus",
+     "t0": 18.504,
+     "t1": 19.424
+    },
+    {
+     "w": "yani",
+     "t0": 19.424,
+     "t1": 20.224
+    },
+    {
+     "w": "küçük",
+     "t0": 20.224,
+     "t1": 20.784
+    },
+    {
+     "w": "fare",
+     "t0": 20.784,
+     "t1": 21.344
+    },
+    {
+     "w": "oldu.",
+     "t0": 21.344,
+     "t1": 21.844
+    }
+   ],
+   "duyulan": "Küçültme ekiyle muskulus yani küçük fare oldu."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Peki bir fare nasıl kas olur?",
+   "t0": 21.055,
+   "t1": 23.626,
+   "kelimeler": [
+    {
+     "w": "Peki",
+     "t0": 21.055,
+     "t1": 21.775
+    },
+    {
+     "w": "bir",
+     "t0": 21.775,
+     "t1": 22.435
+    },
+    {
+     "w": "fare",
+     "t0": 22.435,
+     "t1": 22.935
+    },
+    {
+     "w": "nasıl",
+     "t0": 22.935,
+     "t1": 23.455
+    },
+    {
+     "w": "kasalır?",
+     "t0": 23.455,
+     "t1": 24.395
+    }
+   ],
+   "duyulan": "Peki bir fare nasıl kasalır?"
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Muhtemelen kas oynadığında deri altında kıpırdayan bir fareye benzetildi.",
+   "t0": 24.126,
+   "t1": 29.217,
+   "kelimeler": [
+    {
+     "w": "Muhtemelen",
+     "t0": 24.126,
+     "t1": 25.466
+    },
+    {
+     "w": "kas",
+     "t0": 25.466,
+     "t1": 25.906
+    },
+    {
+     "w": "oynadığında",
+     "t0": 25.906,
+     "t1": 27.126
+    },
+    {
+     "w": "deri",
+     "t0": 27.126,
+     "t1": 27.686
+    },
+    {
+     "w": "altında",
+     "t0": 27.686,
+     "t1": 28.306
+    },
+    {
+     "w": "kıpırdayan",
+     "t0": 28.306,
+     "t1": 29.346
+    },
+    {
+     "w": "bir",
+     "t0": 29.346,
+     "t1": 29.526
+    },
+    {
+     "w": "fareye",
+     "t0": 29.526,
+     "t1": 30.206
+    },
+    {
+     "w": "benzetildi.",
+     "t0": 30.206,
+     "t1": 31.306
+    }
+   ],
+   "duyulan": "Muhtemelen kas oynadığında deri altında kıpırdayan bir fareye benzetildi."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Böylece musculus hem küçük fare hem de kas anlamına geldi.",
+   "t0": 29.517,
+   "t1": 34.528,
+   "kelimeler": [
+    {
+     "w": "Böylece",
+     "t0": 29.517,
+     "t1": 30.777
+    },
+    {
+     "w": "muskulus",
+     "t0": 30.777,
+     "t1": 31.757
+    },
+    {
+     "w": "hem",
+     "t0": 31.757,
+     "t1": 32.657
+    },
+    {
+     "w": "küçük",
+     "t0": 32.657,
+     "t1": 33.117
+    },
+    {
+     "w": "fare",
+     "t0": 33.117,
+     "t1": 33.837
+    },
+    {
+     "w": "hem",
+     "t0": 33.837,
+     "t1": 34.637
+    },
+    {
+     "w": "de",
+     "t0": 34.637,
+     "t1": 34.877
+    },
+    {
+     "w": "kas",
+     "t0": 34.877,
+     "t1": 35.297
+    },
+    {
+     "w": "anlamına",
+     "t0": 35.297,
+     "t1": 36.037
+    },
+    {
+     "w": "geldi.",
+     "t0": 36.037,
+     "t1": 36.417
+    }
+   ],
+   "duyulan": "Böylece muskulus hem küçük fare hem de kas anlamına geldi."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Kelime 1300'lerde İngilizceye geçti ve muscle oldu.",
+   "t0": 35.128,
+   "t1": 39.459,
+   "kelimeler": [
+    {
+     "w": "kelime",
+     "t0": 35.128,
+     "t1": 36.268
+    },
+    {
+     "w": "1300",
+     "t0": 36.268,
+     "t1": 37.368
+    },
+    {
+     "w": "'lerde",
+     "t0": 37.368,
+     "t1": 37.908
+    },
+    {
+     "w": "İngilizce",
+     "t0": 37.908,
+     "t1": 38.888
+    },
+    {
+     "w": "'ye",
+     "t0": 38.888,
+     "t1": 39.068
+    },
+    {
+     "w": "geçti",
+     "t0": 39.068,
+     "t1": 39.668
+    },
+    {
+     "w": "ve",
+     "t0": 39.668,
+     "t1": 40.188
+    },
+    {
+     "w": "masal",
+     "t0": 40.188,
+     "t1": 40.828
+    },
+    {
+     "w": "oldu.",
+     "t0": 40.828,
+     "t1": 41.188
+    }
+   ],
+   "duyulan": "kelime 1300 'lerde İngilizce 'ye geçti ve masal oldu."
+  },
+  {
+   "id": "s10",
+   "dil": "en",
+   "metin": "Muscle.",
+   "t0": 40.059,
+   "t1": 41.31,
+   "kelimeler": [
+    {
+     "w": "Muscle",
+     "t0": 40.059,
+     "t1": 41.319
+    }
+   ],
+   "duyulan": "Muscle"
+  },
+  {
+   "id": "s11",
+   "dil": "en",
+   "metin": "Regular exercise strengthens your muscles and protects your joints as you get older.",
+   "t0": 41.81,
+   "t1": 46.85,
+   "kelimeler": [
+    {
+     "w": "Regular",
+     "t0": 41.81,
+     "t1": 42.73
+    },
+    {
+     "w": "exercise",
+     "t0": 42.73,
+     "t1": 43.59
+    },
+    {
+     "w": "strengthens",
+     "t0": 43.59,
+     "t1": 44.91
+    },
+    {
+     "w": "your",
+     "t0": 44.91,
+     "t1": 45.05
+    },
+    {
+     "w": "muscles",
+     "t0": 45.05,
+     "t1": 45.59
+    },
+    {
+     "w": "and",
+     "t0": 45.59,
+     "t1": 46.07
+    },
+    {
+     "w": "protects",
+     "t0": 46.07,
+     "t1": 46.57
+    },
+    {
+     "w": "your",
+     "t0": 46.57,
+     "t1": 46.93
+    },
+    {
+     "w": "joints",
+     "t0": 46.93,
+     "t1": 47.41
+    },
+    {
+     "w": "as",
+     "t0": 47.41,
+     "t1": 47.69
+    },
+    {
+     "w": "you",
+     "t0": 47.69,
+     "t1": 47.85
+    },
+    {
+     "w": "get",
+     "t0": 47.85,
+     "t1": 48.07
+    },
+    {
+     "w": "older.",
+     "t0": 48.07,
+     "t1": 48.47
+    }
+   ],
+   "duyulan": "Regular exercise strengthens your muscles and protects your joints as you get older."
+  },
+  {
+   "id": "s12",
+   "dil": "tr",
+   "metin": "Sizce başka hangi kelimenin içinde bir hayvan saklanıyor?",
+   "t0": 47.45,
+   "t1": 51.331,
+   "kelimeler": [
+    {
+     "w": "Sizce",
+     "t0": 47.45,
+     "t1": 48.29
+    },
+    {
+     "w": "başka",
+     "t0": 48.29,
+     "t1": 48.71
+    },
+    {
+     "w": "hangi",
+     "t0": 48.71,
+     "t1": 49.67
+    },
+    {
+     "w": "kelimenin",
+     "t0": 49.67,
+     "t1": 50.23
+    },
+    {
+     "w": "içinde",
+     "t0": 50.23,
+     "t1": 50.69
+    },
+    {
+     "w": "bir",
+     "t0": 50.69,
+     "t1": 51.07
+    },
+    {
+     "w": "hayvan",
+     "t0": 51.07,
+     "t1": 51.63
+    },
+    {
+     "w": "saklanıyor?",
+     "t0": 51.63,
+     "t1": 52.49
+    }
+   ],
+   "duyulan": "Sizce başka hangi kelimenin içinde bir hayvan saklanıyor?"
+  }
+ ],
+ "uyarilar": []
+}
