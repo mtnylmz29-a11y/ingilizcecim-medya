@@ -1,1 +1,20 @@
-PLACEHOLDER
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Kolunuzun içinde bir fare yaşadığını söyleseler inanır mıydınız?"},
+  {"id": "s02", "dil": "tr", "metin": "İngilizcede kas demek olan muscle kelimesi tam olarak bunu söylüyor.", "okunus": "İngilizcede kas demek olan masıl kelimesi tam olarak bunu söylüyor."},
+  {"id": "s03", "dil": "tr", "metin": "Hikâye Antik Roma'da başlıyor."},
+  {"id": "s04", "dil": "tr", "metin": "Latincede mus, fare demekti."},
+  {"id": "s05", "dil": "tr", "metin": "Küçültme ekiyle musculus, yani küçük fare oldu.", "okunus": "Küçültme ekiyle muskulus, yani küçük fare oldu."},
+  {"id": "s06", "dil": "tr", "metin": "Peki bir fare nasıl kas olur?"},
+  {"id": "s07", "dil": "tr", "metin": "Muhtemelen kas oynadığında deri altında kıpırdayan bir fareye benzetildi."},
+  {"id": "s08", "dil": "tr", "metin": "Böylece musculus hem küçük fare hem de kas anlamına geldi.", "okunus": "Böylece muskulus hem küçük fare hem de kas anlamına geldi."},
+  {"id": "s09", "dil": "tr", "metin": "Kelime 1300'lerde İngilizceye geçti ve muscle oldu.", "okunus": "Kelime bin üç yüzlerde İngilizceye geçti ve masıl oldu."},
+  {"id": "s10", "dil": "en", "metin": "Muscle."},
+  {"id": "s11", "dil": "en", "metin": "Regular exercise strengthens your muscles and protects your joints as you get older."},
+  {"id": "s12", "dil": "tr", "metin": "Sizce başka hangi kelimenin içinde bir hayvan saklanıyor?"}
+ ],
+ "bas": 0.5,
+ "ara": 0.3,
+ "son": 2.8,
+ "araliklar": {"s03": 0.6, "s06": 0.6, "s07": 0.5, "s09": 0.6, "s10": 0.6, "s11": 0.5, "s12": 0.6}
+}
