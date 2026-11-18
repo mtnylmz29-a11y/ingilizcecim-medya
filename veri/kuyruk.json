@@ -599,8 +599,8 @@
   "seri": "kelimelerin-tarihcesi",
   "baslik": "Kelimelerin Tarihçesi: Serendipity",
   "aciklama": "Serendipity, aramadığın güzel bir şeyi tesadüfen bulmak demek. Kelimeyi İngiliz yazar Horace Walpole, 28 Ocak 1754'te bir mektubunda uydurdu. İlham kaynağı, Serendip (bugünkü Sri Lanka) adasının üç prensini anlatan bir İran masalıydı: prensler yol boyunca hiç aramadıkları şeyleri buluyordu. Senin en güzel tesadüfün neydi?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #etimoloji #kelimelerintarihçesi #ingilizcekelime #serendipity #yks #ingilizceöğren",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/35f9f1dbbc74460c18d2196ab85e10bd083d71c5/gunler/2026-11-19/serendipity_etym.mp4",
-  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/35f9f1dbbc74460c18d2196ab85e10bd083d71c5/gunler/2026-11-19/serendipity_etym_kareler.jpg",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/a3a4bcdba7d5092d7ecf63ed80cc759d07434dfe/gunler/2026-11-19/serendipity_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/a3a4bcdba7d5092d7ecf63ed80cc759d07434dfe/gunler/2026-11-19/serendipity_etym_kareler.jpg",
   "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/35f9f1dbbc74460c18d2196ab85e10bd083d71c5/gunler/2026-11-19/serendipity_etym_kapak.jpg",
   "sure_sn": 58.8,
   "kaynaklar": [
@@ -617,10 +617,20 @@
    "notlar": "Bilgi doğru (Walpole'un Horace Mann'e 28 Ocak 1754 mektubu; Serendip = Sri Lanka, Sanskritçe kökenli, Arapça/Farsça Serendib; Üç Serendip Prensi Fars masalı; 'tesadüf + zekâ' — Merriam-Webster, Wikipedia, JSTOR Daily ile doğrulandı). Teknik: 1080×1920, 58,8 sn, 35,7 MB, H.264+AAC, ses Gemini Kore (ticari kullanım uygun), Whisper satırları metinle örtüşüyor. Görsel: gölge oyunu stili, 3 prens + Walpole + modern karakter, ≥7 sahne (çöl, ada, yolculuk, İngiltere 1754 masa, tanım, örnek cümle, kapanış), ilk 3 sn soru kancası, ingilizcecim.com kapanışı. Kapak iyi: üç prens sahnesi, 'KELİMELERİN TARİHÇESİ / Serendipity' başlığı okunaklı ve ortadaki 1080×1350 alanda. Küçük not (düzeltme gerektirmez): ada sahnesindeki üçgen yapı Sri Lanka'dan çok piramide benziyor; geçişlerdeki üst etiketler bulanık.",
    "zaman": "2026-11-18T04:01+03:00"
   },
-  "media_id": "17917249569519495",
-  "permalink": "https://www.instagram.com/reel/Df4uSFSie3T/",
-  "yayin_saati": "2026-11-18 17:39 (TR)",
-  "yayin_notu": "Biriken onaylı (Denetmen otomatik onayı); 18 Kasım 17:30 diliminde, öncekinden 10 dk sonra yayınlandı"
+  "media_id": "18115116974239833",
+  "permalink": "https://www.instagram.com/reel/Df47WTMic2P/",
+  "yayin_saati": "2026-11-18 19:24 (TR)",
+  "yayin_notu": "Metin isteğiyle (18 Kasım) satır sonu ses paraziti düzeltilmiş videoyla yeniden yayınlandı.",
+  "eski_yayin": {
+   "media_id": "17917249569519495",
+   "permalink": "https://www.instagram.com/reel/Df4uSFSie3T/",
+   "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/35f9f1dbbc74460c18d2196ab85e10bd083d71c5/gunler/2026-11-19/serendipity_etym.mp4",
+   "yayin_saati": "2026-11-18 17:39 (TR)",
+   "not": "Satır sonu ses paraziti vardı. API silmeyi desteklemiyor, Metin uygulamadan silecek."
+  },
+  "duzeltme_gecmisi": [
+   "[Metin, 18 Kasım] Cümle sonlarındaki çirkin ses → ses.py parazit susturma, asama=hepsi ile yeniden render, yeniden yayın."
+  ]
  },
  {
   "id": "2026-11-20-reels",
