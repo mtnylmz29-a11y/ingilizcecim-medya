@@ -57,4 +57,6 @@ Kayıtta `"film"` alanı varsa: film klasöründe istenen değişikliği yap (me
 - Composio commit'i **403** dönerse (güvenlik duvarı): dosyaları daha küçük commit'lere böl; kabuk betiklerini ve `secrets` geçen YAML'ı tek başına yükle.
 - `zaman.json`'daki `kelimeler`'in son kelimesi satır sonunu birkaç yüz ms aşabilir (Whisper): altyazıyı `t1`'de kapat.
 - Gemini kotası: model başına günde 10 istek, Pasifik gece yarısı (İstanbul 11:00) sıfırlanır; `ses.py` sırayla `gemini-2.5-flash-preview-tts` → `gemini-3.8-flash-tts` → `gemini-3.1-flash-tts-preview` dener. Önbellek `hf/ses_cache/`.
+- İlk denemede (18 Kasım, Serendipity) video Actions'ta çıktı ama üretim oturumu kuyruk kaydını yazmadan kapandı. Video biter bitmez **ilk iş** kuyruk kaydını yaz; görevler başlarken kaydı olmayan bitmiş filmleri tamamlar.
+- Hedef gün: her gün bir video üretilir; yedekte video varsa sıradaki boş güne yazılır (Metin, 18 Kasım: "biriksin"). Yayın görevleri her dilimde yalnızca bir paylaşım yayınlar, gelecek tarihli kayıtlara dokunmaz.
 - Actions çalışması aynı anda bir tane (`concurrency: lemo-render`); sıradakini bekler.
