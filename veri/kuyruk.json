@@ -544,7 +544,15 @@
    "https://en.wiktionary.org/wiki/assassin"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde"
+  "durum": "yerel_duzeltme",
+  "duzeltme_notu": "[Denetmen] 1) Bilgi hatası: 'İngilizceye 1600'lerin başında geçtim' yanlış. Merriam-Webster ilk kullanımı 'circa 1520' veriyor, Wiktionary/TIFO 16. yüzyıl (Fransızca/İtalyanca yoluyla). Seslendirme satırını ve altyazıyı '1500'lerde İngilizceye geçtim' (istersen: 'suikastçı anlamı 1600'lerde yaygınlaştı') diye değiştir; 'İNGİLTERE · 1600'LER' etiketi ve 'A DICTIONARIE · 16..' kartı da buna uysun; kuyruktaki açıklamada '1600'lerin başında da İngilizceye geçti' cümlesini '1500'lerde İngilizceye geçti' yap. 2) Kapak yok: §4.4'e göre assassin_etym_kapak.jpg üret (dolu bir sahne, ör. Alamut kalesi/ haşşaşin sahnesi; 'KELİMELERİN TARİHÇESİ' + 'Assassin' başlığı ortadaki 1080×1350 alanda) ve kayda 'kapak' alanını ekle. 3) Küçük: 1–3. saniyede 'TÜR/YAŞ/DOĞUŞ' bilgi kutusu karakterin başını tamamen kapatıyor; kutuyu yukarı al ya da karakteri aşağı kaydır. Geri kalan her şey iyi: 1080×1920, 54 sn, 21,7 MB, ses VoxCPM2 (Apache-2.0), pixel-art karakter + ≥8 sahne, Alamut 1090/Hasan Sabbah/haşşaşin rivayeti/Dante doğru.",
+  "denetim_turu": 1,
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "DUZELT",
+   "notlar": "[Denetmen] 1) Bilgi hatası: 'İngilizceye 1600'lerin başında geçtim' yanlış. Merriam-Webster ilk kullanımı 'circa 1520' veriyor, Wiktionary/TIFO 16. yüzyıl (Fransızca/İtalyanca yoluyla). Seslendirme satırını ve altyazıyı '1500'lerde İngilizceye geçtim' (istersen: 'suikastçı anlamı 1600'lerde yaygınlaştı') diye değiştir; 'İNGİLTERE · 1600'LER' etiketi ve 'A DICTIONARIE · 16..' kartı da buna uysun; kuyruktaki açıklamada '1600'lerin başında da İngilizceye geçti' cümlesini '1500'lerde İngilizceye geçti' yap. 2) Kapak yok: §4.4'e göre assassin_etym_kapak.jpg üret (dolu bir sahne, ör. Alamut kalesi/ haşşaşin sahnesi; 'KELİMELERİN TARİHÇESİ' + 'Assassin' başlığı ortadaki 1080×1350 alanda) ve kayda 'kapak' alanını ekle. 3) Küçük: 1–3. saniyede 'TÜR/YAŞ/DOĞUŞ' bilgi kutusu karakterin başını tamamen kapatıyor; kutuyu yukarı al ya da karakteri aşağı kaydır. Geri kalan her şey iyi: 1080×1920, 54 sn, 21,7 MB, ses VoxCPM2 (Apache-2.0), pixel-art karakter + ≥8 sahne, Alamut 1090/Hasan Sabbah/haşşaşin rivayeti/Dante doğru.",
+   "zaman": "2026-11-18T04:01+03:00"
+  }
  },
  {
   "id": "2026-11-18-gonderi",
@@ -565,7 +573,15 @@
    "https://www.merriam-webster.com/dictionary/responsible"
   ],
   "onerilen_dilim": "17:30",
-  "durum": "denetimde"
+  "durum": "yerel_duzeltme",
+  "duzeltme_notu": "[Denetmen] Görsel zenginlik standardı KALDI: video baştan sona tek bir soru kâğıdı + ahşap zemin + kural kartı + kapanış kartı; karakter yok, hikâye yok, en az 5 farklı sahne yok (ORKESTRA 'Sadece yazı, düz zemin ya da kart dizisi olan video KALDI'). Yapılacak: 1) Soruyu bir karakter ve hikâyeyle anlat (ör. stil B düz vektör skeç ya da stick-explainer/midcentury-toon: yeni proje müdürü Sarah ofiste, yeni çalışanlara eğitim veriyor; Türk öğrenci 'işten sorumlu → from' diye düşünüp tuzağa düşüyor; müdüre hesap veren Sarah = 'responsible to the manager'). 2) En az 5 farklı sahne (ofis, eğitim salonu, müdür odası, sınav masası, kapanış), konuşan/mimiği değişen karakter(ler), kelime kelime vurgulu altyazı. Soru kâğıdı ve şık eleme sahnelerden biri olarak kalabilir. 3) Kapak §4.4: karakterli dolu bir kare + 'YDS · EDAT TUZAĞI' / 'Responsible' başlığı (mevcut kapak düzeni iyi, sadece arkadaki kare dolu bir sahne olsun). Doğru olanlar (koru): dilbilgisi doğru (responsible for + iş, responsible to + kişi; Cambridge/Merriam-Webster/Learner's Dictionary ile doğrulandı), yazım temiz, 1080×1920, 38,2 sn, 2,8 MB, ses VoxCPM2 (Apache-2.0), açıklama iyi.",
+  "denetim_turu": 1,
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "DUZELT",
+   "notlar": "[Denetmen] Görsel zenginlik standardı KALDI: video baştan sona tek bir soru kâğıdı + ahşap zemin + kural kartı + kapanış kartı; karakter yok, hikâye yok, en az 5 farklı sahne yok (ORKESTRA 'Sadece yazı, düz zemin ya da kart dizisi olan video KALDI'). Yapılacak: 1) Soruyu bir karakter ve hikâyeyle anlat (ör. stil B düz vektör skeç ya da stick-explainer/midcentury-toon: yeni proje müdürü Sarah ofiste, yeni çalışanlara eğitim veriyor; Türk öğrenci 'işten sorumlu → from' diye düşünüp tuzağa düşüyor; müdüre hesap veren Sarah = 'responsible to the manager'). 2) En az 5 farklı sahne (ofis, eğitim salonu, müdür odası, sınav masası, kapanış), konuşan/mimiği değişen karakter(ler), kelime kelime vurgulu altyazı. Soru kâğıdı ve şık eleme sahnelerden biri olarak kalabilir. 3) Kapak §4.4: karakterli dolu bir kare + 'YDS · EDAT TUZAĞI' / 'Responsible' başlığı (mevcut kapak düzeni iyi, sadece arkadaki kare dolu bir sahne olsun). Doğru olanlar (koru): dilbilgisi doğru (responsible for + iş, responsible to + kişi; Cambridge/Merriam-Webster/Learner's Dictionary ile doğrulandı), yazım temiz, 1080×1920, 38,2 sn, 2,8 MB, ses VoxCPM2 (Apache-2.0), açıklama iyi.",
+   "zaman": "2026-11-18T04:01+03:00"
+  }
  },
  {
   "id": "2026-11-19-reels",
@@ -589,6 +605,13 @@
    "https://www.britannica.com/place/Serendib"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde"
+  "durum": "onaylandi",
+  "onay": "otomatik (Denetmen, 2026-11-18T04:01+03:00)",
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "GECTI",
+   "notlar": "Bilgi doğru (Walpole'un Horace Mann'e 28 Ocak 1754 mektubu; Serendip = Sri Lanka, Sanskritçe kökenli, Arapça/Farsça Serendib; Üç Serendip Prensi Fars masalı; 'tesadüf + zekâ' — Merriam-Webster, Wikipedia, JSTOR Daily ile doğrulandı). Teknik: 1080×1920, 58,8 sn, 35,7 MB, H.264+AAC, ses Gemini Kore (ticari kullanım uygun), Whisper satırları metinle örtüşüyor. Görsel: gölge oyunu stili, 3 prens + Walpole + modern karakter, ≥7 sahne (çöl, ada, yolculuk, İngiltere 1754 masa, tanım, örnek cümle, kapanış), ilk 3 sn soru kancası, ingilizcecim.com kapanışı. Kapak iyi: üç prens sahnesi, 'KELİMELERİN TARİHÇESİ / Serendipity' başlığı okunaklı ve ortadaki 1080×1350 alanda. Küçük not (düzeltme gerektirmez): ada sahnesindeki üçgen yapı Sri Lanka'dan çok piramide benziyor; geçişlerdeki üst etiketler bulanık.",
+   "zaman": "2026-11-18T04:01+03:00"
+  }
  }
 ]
