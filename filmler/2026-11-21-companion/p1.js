@@ -195,7 +195,7 @@ function face(hx, hy, r, o) {
     edge([[hx + r * .18, hy - r * .36 - b * 3], [hx + r * .5, hy - r * .3 + b * 4]], K.ink2, 3.2, .8);
     const m = o.mouth || 0;
     if (m > .12) { X.fillStyle = rgba(K.wine, .8); X.beginPath(); X.ellipse(hx + lk * .5, hy + r * .42, r * .16, r * (.05 + m * .14), 0, 0, TAU); X.fill(); }
-    else { const sm = o.smile ?? 1; edge(qcurve(hx - r * .2, hy + r * .38, hx + r * .2, hy + r * .38, -sm * 8, 6), K.wine, 3.5, .8); }
+    else { const sm = o.smile ?? 1; edge(qcurve(hx - r * .2, hy + r * .38, hx + r * .2, hy + r * .38, sm * 8, 6), K.wine, 3.5, .8); }
   });
 }
 // traveller: cloak, hood, staff. o: col, hood, beard, mouth, blink, brow, look, walk (phase), arm (0 down .. 1 offering forward), hold (fn drawn at hand)
