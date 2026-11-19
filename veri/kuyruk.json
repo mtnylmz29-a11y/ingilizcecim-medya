@@ -722,5 +722,28 @@
    "notlar": "Bağımsız denetim: 1080×1920, 24 fps, H.264+AAC, 58,7 sn, 13,4 MB. ses_kontrol.py: temiz (13 satır, parazit yok); ses Gemini Kore (ticari lisanslı). 14+ kare incelendi: watercolor stilinde konuşan/göz kırpan karakterler (yaşlı hacı, genç yolcu, Gotlar, sofra, kız ve köpeği), 12 farklı sahne (akşam yolu, kâtip odası, com- elleri, panis levhası, ekmeğin bölünmesi, gece ateşi + RİVAYETE GÖRE damgası, harita, company sofrası, bugün, günbatımı yankısı, ingilizcecim.com kapanışı); ilk 3 sn kanca soru; kelime kelime vurgulu altyazı; güvenli alanlar korunmuş. Bilgi doğrulandı (Wiktionary, Dictionary.com, Merriam-Webster Wordplay, Grammarphobia): Geç Latince companio = com- 'birlikte' + panis 'ekmek'; Eski Fransızca compaignon; İngilizcede ~1300 / 14. yy; Germen (Gotça gahlaiba) kalkı görüşü 'rivayete göre' ile verilmiş; company aynı Eski Fransızca/Geç Latince kökten. Örnek cümle doğal ve doğru, Türkçe çevirisi doğru. Kapak: dolu ekmek paylaşımı anı, 'KELİMELERİN TARİHÇESİ / Companion' başlığı okunaklı ve ortadaki 1080×1350 alanda. Küçük not (engel değil): CI Whisper s04/s05'te 'demekti'yi 'bilekti/ve mekti' duymuş; satır süreleri normal, parazit yok. company sahnesindeki üç açık mavi pencere biraz boş duruyor.",
    "zaman": "2026-11-19T12:21+03:00"
   }
+ },
+ {
+  "id": "2026-11-19-gonderi",
+  "tarih": "2026-11-19",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, scifi-toon; ses Gemini Kore)",
+  "film": "filmler/2026-11-19-causative",
+  "stil": "scifi-toon",
+  "baslik": "Have / Get Something Done",
+  "aciklama": "Robotunu kendin mi tamir ettin, yoksa tamir mi ettirdin? İşi başkası yaptıysa have + nesne + V3 kullanılır: I had my robot repaired. Kişiyi söylemek istersen have + kişi + V1 (I had the mechanic check the engine), ikna ederek yaptırdıysan get + kişi + to V1 (I got him to paint it). Dikkat: I had repaired my robot dersen, işi yine kendin yapmış olursun! Sen en son neyi yaptırdın?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #causative #havesomethingdone #ingilizcegramer #yks #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/1ee9d509ff8abfa01ff47e1f83d1f33d370d094c/gunler/2026-11-19/causative_have_get.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/1ee9d509ff8abfa01ff47e1f83d1f33d370d094c/gunler/2026-11-19/causative_have_get_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/1ee9d509ff8abfa01ff47e1f83d1f33d370d094c/gunler/2026-11-19/causative_have_get_kapak.jpg",
+  "sure_sn": 59.6,
+  "kaynaklar": [
+   "https://www.oxfordlearnersdictionaries.com/definition/english/have_1",
+   "https://www.merriam-webster.com/dictionary/get",
+   "https://englishonline.britishcouncil.org/blog/mini-english-lessons/how-to-use-get-and-have-in-the-causative/"
+  ],
+  "onerilen_dilim": "17:30",
+  "durum": "denetimde"
  }
 ]
