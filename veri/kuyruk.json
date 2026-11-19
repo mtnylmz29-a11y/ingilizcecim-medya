@@ -714,6 +714,13 @@
    "https://www.etymonline.com/word/companion"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde"
+  "durum": "onaylandi",
+  "onay": "otomatik (Denetmen, 2026-11-19T12:21+03:00)",
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "GECTI",
+   "notlar": "Bağımsız denetim: 1080×1920, 24 fps, H.264+AAC, 58,7 sn, 13,4 MB. ses_kontrol.py: temiz (13 satır, parazit yok); ses Gemini Kore (ticari lisanslı). 14+ kare incelendi: watercolor stilinde konuşan/göz kırpan karakterler (yaşlı hacı, genç yolcu, Gotlar, sofra, kız ve köpeği), 12 farklı sahne (akşam yolu, kâtip odası, com- elleri, panis levhası, ekmeğin bölünmesi, gece ateşi + RİVAYETE GÖRE damgası, harita, company sofrası, bugün, günbatımı yankısı, ingilizcecim.com kapanışı); ilk 3 sn kanca soru; kelime kelime vurgulu altyazı; güvenli alanlar korunmuş. Bilgi doğrulandı (Wiktionary, Dictionary.com, Merriam-Webster Wordplay, Grammarphobia): Geç Latince companio = com- 'birlikte' + panis 'ekmek'; Eski Fransızca compaignon; İngilizcede ~1300 / 14. yy; Germen (Gotça gahlaiba) kalkı görüşü 'rivayete göre' ile verilmiş; company aynı Eski Fransızca/Geç Latince kökten. Örnek cümle doğal ve doğru, Türkçe çevirisi doğru. Kapak: dolu ekmek paylaşımı anı, 'KELİMELERİN TARİHÇESİ / Companion' başlığı okunaklı ve ortadaki 1080×1350 alanda. Küçük not (engel değil): CI Whisper s04/s05'te 'demekti'yi 'bilekti/ve mekti' duymuş; satır süreleri normal, parazit yok. company sahnesindeki üç açık mavi pencere biraz boş duruyor.",
+   "zaman": "2026-11-19T12:21+03:00"
+  }
  }
 ]
