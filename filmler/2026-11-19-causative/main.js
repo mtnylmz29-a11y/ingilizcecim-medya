@@ -1,7 +1,7 @@
 // ingilizcecim.com · 17:30 · Have / Get Something Done — stil: scifi-toon (bilim kurgu sitcom çizgi film)
-// Özgün karakterler: Ece (telaşlı mucit), Zorp (soğukkanlı uzaylı usta), Bip (robot). Motor: lemo-opuscar scifi-toon demosunun toon.js'i (MIT), kütüphaneden doğrudan yüklenir.
+// Özgün karakterler: Ece (telaşlı mucit), Zorp (soğukkanlı uzaylı usta), Bip (robot). Motor: toon.js (lemo-opuscar scifi-toon demosundan, MIT).
 import { clamp, lerp, seg, ss, eo, back, hash, TAU } from '/core/lib.js';
-import { INK, g, init, push, pop, translate, rotate, scale, shape, fillOnly, stroke, ell, arc, spline, rr, rect, noodle, quad, dot, frame, S, bands } from '/styles/scifi-toon/demo/toon.js';
+import { INK, g, init, push, pop, translate, rotate, scale, shape, fillOnly, stroke, ell, arc, spline, rr, rect, noodle, quad, dot, frame, S, bands } from './toon.js';
 const W = 1080, H = 1920;
 function screenRect(col, a = 1) { g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = a; g.fillStyle = col; g.fillRect(0, 0, W, H); g.globalAlpha = 1; }
 
@@ -335,7 +335,7 @@ function sSelf(t, s0) {   // Ece repairs it herself: wrench chaos, soot
   ece(330, GY, 1.1, t, { look: [.9, .3], brow: -1, sm: hit ? -.2 : .3, op: Math.max(talk(t, ['s03']), hit ? .15 : 0), armL: 'down', armR: 'hold', soot: ss(seg(t, s0 + .6, s0 + 1.6)), lean: hit ? -.05 : .04 });
   if (hit) for (let i = 0; i < 6; i++) { const a = i / 6 * TAU + t; star(560 + Math.cos(a) * 90, 900 + Math.sin(a) * 70, 18); }
   pop();
-  note('işi kendin yaptın', 360, '#bfe9ff', seg(t, s0 + .1, s0 + .45));
+  note('İşi kendin yaptın', 360, '#bfe9ff', seg(t, s0 + .1, s0 + .45));
   sentence([['I ', P.white], ['repaired', P.acc], [' my robot.', P.white]], 520, 66, seg(t, T0('s03') - .1, T0('s03') + .25), { mark: 'ok' });
 }
 function sMech(t, s0) {   // portal → Zorp usta fixes it: have + nesne + V3
@@ -349,19 +349,20 @@ function sMech(t, s0) {   // portal → Zorp usta fixes it: have + nesne + V3
   sentence([['I ', P.white], ['had', P.acc], [' my robot ', P.white], ['repaired.', '#b6f23a']], 530, 64, seg(t, T0('s05') - .1, T0('s05') + .25), { mark: 'ok' });
 }
 function sTrap(t, s0) {   // DİKKAT: sıra! — red alert, close-up reactions
-  const close = t > T0('s07') + 1.6;
+  const close = t > T0('s07b') + 1.4;
   push();
   if (close) cam(250, 820, 1.85); else cam(540, 960, 1.0);
   mech(t, 1);
   bip(560, GY + 10, 1.155, t, { broken: 1 });
   zorp(840, GY, 1.045, t, { look: [-.8, 0], crossed: true, lid: .55 });
-  ece(220, GY, 1.012, t, { look: close ? [.2, -.2] : [.9, -.1], brow: 1.3, sm: -.9, op: close ? .55 : .2, armL: 'up', armR: 'up', jit: 6 });
+  ece(220, GY, 1.012, t, { look: close ? [.2, -.2] : [.9, -.1], brow: 1.3, sm: -.9, op: close ? .55 : Math.max(.2, talk(t, ['s07'])), armL: 'up', armR: 'up', jit: 6 });
   pop();
   const a = seg(t, s0 + .05, s0 + .4);
   panel(240, 300, 600, 130, P.bad, a); if (a > .6) txt('DİKKAT: SIRA!', 540, 368, 72, P.white, { ow: 12 });
   const b = seg(t, T0('s07') - .1, T0('s07') + .25);
-  sentence([['I ', P.white], ['had repaired', P.bad], [' my robot.', P.white]], 520, 60, b, { mark: 'bad' });
-  note('= önceden kendin tamir etmiştin', 640, '#ffd0d5', seg(t, T0('s07') + 1.0, T0('s07') + 1.35), 42);
+  sentence([['I ', P.white], ['had repaired', P.bad], [' my robot.', P.white]], 520, 60, b);
+  if (b > .6) { panel(700, 590, 300, 84, P.acc, seg(t, T0('s07') + .5, T0('s07') + .8)); txt('anlam farklı!', 850, 634, 44, INK); }
+  note('= önceden kendin tamir etmiştin', 730, '#ffd0d5', seg(t, T0('s07b') + .6, T0('s07b') + .95), 42);
 }
 function sCheck(t, s0) {   // have + kişi + V1: Zorp checks the engine with a stethoscope
   push(); cam(560, 980, lerp(1.06, 1.0, ss(seg(t, s0, T1('s09'))))); mech(t);
@@ -403,7 +404,7 @@ function sEnd(t, s0) {   // question to the viewer + ingilizcecim.com
   panel(90, 290, 900, 150, '#fff8e8', seg(t, s0 + .05, s0 + .4)); if (t > s0 + .3) txt('Sen en son neyi yaptırdın?', 540, 368, 56, INK);
   sentence([['I ', P.white], ['had', P.acc], [' my hair ', P.white], ['cut.', '#b6f23a']], 540, 58, seg(t, s0 + .9, s0 + 1.25));
   const e = seg(t, T1('s14') + .3, T1('s14') + .7);
-  if (e > 0) { panel(150, 650, 780, 150, '#1d1430', e); if (e > .6) txt('ingilizcecim.com', 540, 728, 84, P.acc, { ow: 0 }); }
+  if (e > 0) { panel(150, 1340, 780, 150, '#1d1430', e); if (e > .6) txt('ingilizcecim.com', 540, 1418, 84, P.acc, { ow: 0 }); }
 }
 function buildScenes() {
   SC = [[sHook, 0], [sSelf, T0('s02') - .15], [sMech, T0('s04') - .3, 'portal'], [sTrap, T0('s06') - .1], [sCheck, T0('s08') - .2],
@@ -427,6 +428,7 @@ window.render = t => {
 function cover() {   // same layout each cover: small label + big title, inside y 285–1635
   g.setTransform(1, 0, 0, 1, 0, 0);
   panel(110, 300, 860, 90, '#1d1430', 1); txt('DİLBİLGİSİ · YDT / YDS', 540, 348, 48, P.acc);
+  g.fillStyle = 'rgba(29,20,48,.82)'; g.beginPath(); g.roundRect(60, 410, 960, 300, 36); g.fill();
   txt('HAVE / GET', 540, 500, 160, P.acc, { ow: 22 });
   txt('something done', 540, 640, 104, P.white, { ow: 18 });
   panel(170, 1440, 740, 110, '#fff8e8', 1); txt('Yaptın mı, yaptırdın mı?', 540, 1497, 54, INK);
@@ -444,7 +446,7 @@ function cover() {   // same layout each cover: small label + big title, inside 
   e.push({ t: T0('s02') - .15, type: 'whoosh' }, { t: T0('s02') + .4, type: 'thump' }, { t: T0('s02') + .9, type: 'thump' }, { t: T0('s03'), type: 'ding' });
   for (const [id, n] of [['s04', 3], ['s08', 3], ['s10', 3], ['s12', 3]]) { const s0 = SC.find(x => x[1] <= T0(id) && x[1] > T0(id) - 1)[1]; for (let i = 0; i < n; i++) e.push({ t: s0 + .5 + i * .35, type: 'pop' }); }
   for (const id of ['s04', 's10', 's12']) e.push({ t: T0(id) - .3, type: 'whoosh' });
-  e.push({ t: T0('s05') + .2, type: 'ding' }, { t: T0('s06') - .1, type: 'thump' }, { t: T0('s07'), type: 'thump' }, { t: T0('s09') + .3, type: 'click' });
+  e.push({ t: T0('s05') + .2, type: 'ding' }, { t: T0('s06') - .1, type: 'thump' }, { t: T0('s07') + .5, type: 'thump' }, { t: T0('s09') + .3, type: 'click' });
   e.push({ t: T0('s11') + .3, type: 'ding' }, { t: T0('s13'), type: 'ding' }, { t: T0('s14') - .2, type: 'whoosh' }, { t: endT - .4, type: 'pop' });
   window.EV = e.filter(x => x.t > 0).sort((a, b) => a.t - b.t);
   window.READY = true;
