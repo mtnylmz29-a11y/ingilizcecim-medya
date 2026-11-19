@@ -1,0 +1,611 @@
+{
+ "dur": 61.292,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Son ekmeğinizi yoldaki bir yabancıyla paylaşır mıydınız?",
+   "t0": 0.5,
+   "t1": 4.591,
+   "kelimeler": [
+    {
+     "w": "Son",
+     "t0": 0.5,
+     "t1": 1.28
+    },
+    {
+     "w": "ekmeğinizi",
+     "t0": 1.28,
+     "t1": 2.34
+    },
+    {
+     "w": "yoldaki",
+     "t0": 2.34,
+     "t1": 3.28
+    },
+    {
+     "w": "bir",
+     "t0": 3.28,
+     "t1": 3.56
+    },
+    {
+     "w": "yabancıyla",
+     "t0": 3.56,
+     "t1": 4.56
+    },
+    {
+     "w": "paylaşır",
+     "t0": 4.56,
+     "t1": 5.44
+    },
+    {
+     "w": "mıydınız?",
+     "t0": 5.44,
+     "t1": 6.02
+    }
+   ],
+   "duyulan": "Son ekmeğinizi yoldaki bir yabancıyla paylaşır mıydınız?"
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "İngilizcede yoldaş demek olan companion kelimesi tam olarak bu paylaşımdan doğdu.",
+   "t0": 4.891,
+   "t1": 10.822,
+   "kelimeler": [
+    {
+     "w": "İngilizce",
+     "t0": 4.891,
+     "t1": 6.111
+    },
+    {
+     "w": "de",
+     "t0": 6.111,
+     "t1": 6.391
+    },
+    {
+     "w": "yoldaş",
+     "t0": 6.391,
+     "t1": 7.311
+    },
+    {
+     "w": "demek",
+     "t0": 7.311,
+     "t1": 7.591
+    },
+    {
+     "w": "olan",
+     "t0": 7.591,
+     "t1": 8.091
+    },
+    {
+     "w": "companion",
+     "t0": 8.091,
+     "t1": 8.991
+    },
+    {
+     "w": "kelimesi",
+     "t0": 8.991,
+     "t1": 10.391
+    },
+    {
+     "w": "tam",
+     "t0": 10.391,
+     "t1": 10.851
+    },
+    {
+     "w": "olarak",
+     "t0": 10.851,
+     "t1": 11.331
+    },
+    {
+     "w": "bu",
+     "t0": 11.331,
+     "t1": 11.691
+    },
+    {
+     "w": "paylaşımdan",
+     "t0": 11.691,
+     "t1": 12.711
+    },
+    {
+     "w": "doğdu.",
+     "t0": 12.711,
+     "t1": 13.251
+    }
+   ],
+   "duyulan": "İngilizce de yoldaş demek olan companion kelimesi tam olarak bu paylaşımdan doğdu."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Hikâye Geç Latincede başlıyor.",
+   "t0": 11.422,
+   "t1": 14.393,
+   "kelimeler": [
+    {
+     "w": "Hikâye",
+     "t0": 11.422,
+     "t1": 12.982
+    },
+    {
+     "w": "geçlatınca",
+     "t0": 12.982,
+     "t1": 14.362
+    },
+    {
+     "w": "da",
+     "t0": 14.362,
+     "t1": 14.562
+    },
+    {
+     "w": "başlıyor.",
+     "t0": 14.562,
+     "t1": 15.302
+    }
+   ],
+   "duyulan": "Hikâye geçlatınca da başlıyor."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Com, birlikte demekti.",
+   "t0": 14.693,
+   "t1": 16.744,
+   "kelimeler": [
+    {
+     "w": "Kom",
+     "t0": 14.693,
+     "t1": 15.433
+    },
+    {
+     "w": "birlikte",
+     "t0": 15.433,
+     "t1": 16.273
+    },
+    {
+     "w": "bilekti.",
+     "t0": 16.273,
+     "t1": 17.353
+    }
+   ],
+   "duyulan": "Kom birlikte bilekti."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Panis ise ekmek demekti.",
+   "t0": 17.044,
+   "t1": 19.655,
+   "kelimeler": [
+    {
+     "w": "Pannis",
+     "t0": 17.044,
+     "t1": 18.424
+    },
+    {
+     "w": "ise",
+     "t0": 18.424,
+     "t1": 18.924
+    },
+    {
+     "w": "ekmek",
+     "t0": 18.924,
+     "t1": 19.944
+    },
+    {
+     "w": "ve",
+     "t0": 19.944,
+     "t1": 20.184
+    },
+    {
+     "w": "mekti.",
+     "t0": 20.184,
+     "t1": 20.764
+    }
+   ],
+   "duyulan": "Pannis ise ekmek ve mekti."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "İkisi birleşince companio doğdu, yani ekmeğini paylaştığın kişi.",
+   "t0": 19.955,
+   "t1": 25.326,
+   "kelimeler": [
+    {
+     "w": "İkisi",
+     "t0": 19.955,
+     "t1": 20.895
+    },
+    {
+     "w": "birleşince",
+     "t0": 20.895,
+     "t1": 21.975
+    },
+    {
+     "w": "kompanyo",
+     "t0": 21.975,
+     "t1": 23.195
+    },
+    {
+     "w": "doğdu,",
+     "t0": 23.195,
+     "t1": 23.715
+    },
+    {
+     "w": "yani",
+     "t0": 24.255,
+     "t1": 24.755
+    },
+    {
+     "w": "ekmeğini",
+     "t0": 24.755,
+     "t1": 25.995
+    },
+    {
+     "w": "paylaştığın",
+     "t0": 25.995,
+     "t1": 27.135
+    },
+    {
+     "w": "kişi.",
+     "t0": 27.135,
+     "t1": 27.475
+    }
+   ],
+   "duyulan": "İkisi birleşince kompanyo doğdu, yani ekmeğini paylaştığın kişi."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Peki bu fikir nereden geldi?",
+   "t0": 25.926,
+   "t1": 28.177,
+   "kelimeler": [
+    {
+     "w": "Peki",
+     "t0": 25.926,
+     "t1": 26.466
+    },
+    {
+     "w": "bu",
+     "t0": 26.466,
+     "t1": 27.026
+    },
+    {
+     "w": "fikir",
+     "t0": 27.026,
+     "t1": 27.606
+    },
+    {
+     "w": "nereden",
+     "t0": 27.606,
+     "t1": 28.346
+    },
+    {
+     "w": "geldi?",
+     "t0": 28.346,
+     "t1": 28.766
+    }
+   ],
+   "duyulan": "Peki bu fikir nereden geldi?"
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Rivayete göre Latince kelime, Gotçadaki ekmek arkadaşı sözünün bir çevirisiydi.",
+   "t0": 28.677,
+   "t1": 34.728,
+   "kelimeler": [
+    {
+     "w": "Rivayete",
+     "t0": 28.677,
+     "t1": 29.977
+    },
+    {
+     "w": "göre",
+     "t0": 29.977,
+     "t1": 30.377
+    },
+    {
+     "w": "Latince",
+     "t0": 30.377,
+     "t1": 31.517
+    },
+    {
+     "w": "kelime,",
+     "t0": 31.517,
+     "t1": 32.197
+    },
+    {
+     "w": "Gotça'daki",
+     "t0": 32.737,
+     "t1": 33.757
+    },
+    {
+     "w": "ekmek",
+     "t0": 33.757,
+     "t1": 34.517
+    },
+    {
+     "w": "arkadaşı",
+     "t0": 34.517,
+     "t1": 35.517
+    },
+    {
+     "w": "sözünün",
+     "t0": 35.517,
+     "t1": 36.277
+    },
+    {
+     "w": "bir",
+     "t0": 36.277,
+     "t1": 36.437
+    },
+    {
+     "w": "çevresiydi.",
+     "t0": 36.437,
+     "t1": 37.437
+    }
+   ],
+   "duyulan": "Rivayete göre Latince kelime, Gotça'daki ekmek arkadaşı sözünün bir çevresiydi."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Kelime Eski Fransızcada compagnon oldu ve 1200'lerde İngilizceye geçti.",
+   "t0": 35.328,
+   "t1": 41.219,
+   "kelimeler": [
+    {
+     "w": "Kelime",
+     "t0": 35.328,
+     "t1": 36.388
+    },
+    {
+     "w": "eski",
+     "t0": 36.388,
+     "t1": 37.248
+    },
+    {
+     "w": "Fransızca'da",
+     "t0": 37.248,
+     "t1": 38.528
+    },
+    {
+     "w": "Kompanyon",
+     "t0": 38.528,
+     "t1": 39.688
+    },
+    {
+     "w": "oldu",
+     "t0": 39.688,
+     "t1": 40.068
+    },
+    {
+     "w": "ve",
+     "t0": 40.068,
+     "t1": 40.808
+    },
+    {
+     "w": "1200",
+     "t0": 40.808,
+     "t1": 41.488
+    },
+    {
+     "w": "'lerde",
+     "t0": 41.488,
+     "t1": 42.228
+    },
+    {
+     "w": "İngilizceye",
+     "t0": 42.228,
+     "t1": 43.208
+    },
+    {
+     "w": "geçti.",
+     "t0": 43.208,
+     "t1": 43.748
+    }
+   ],
+   "duyulan": "Kelime eski Fransızca'da Kompanyon oldu ve 1200 'lerde İngilizceye geçti."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Topluluk ve şirket demek olan company de aynı kökten geliyor.",
+   "t0": 41.719,
+   "t1": 46.29,
+   "kelimeler": [
+    {
+     "w": "Topluluk",
+     "t0": 41.719,
+     "t1": 43.099
+    },
+    {
+     "w": "ve",
+     "t0": 43.099,
+     "t1": 43.319
+    },
+    {
+     "w": "şirket",
+     "t0": 43.319,
+     "t1": 43.959
+    },
+    {
+     "w": "demek",
+     "t0": 43.959,
+     "t1": 44.299
+    },
+    {
+     "w": "olan",
+     "t0": 44.299,
+     "t1": 44.779
+    },
+    {
+     "w": "kampini",
+     "t0": 44.779,
+     "t1": 45.779
+    },
+    {
+     "w": "de",
+     "t0": 45.779,
+     "t1": 46.079
+    },
+    {
+     "w": "aynı",
+     "t0": 46.079,
+     "t1": 46.679
+    },
+    {
+     "w": "kökten",
+     "t0": 46.679,
+     "t1": 47.379
+    },
+    {
+     "w": "geliyor.",
+     "t0": 47.379,
+     "t1": 47.739
+    }
+   ],
+   "duyulan": "Topluluk ve şirket demek olan kampini de aynı kökten geliyor."
+  },
+  {
+   "id": "s11",
+   "dil": "en",
+   "metin": "Companion.",
+   "t0": 46.89,
+   "t1": 48.181,
+   "kelimeler": [
+    {
+     "w": "companion",
+     "t0": 46.89,
+     "t1": 47.85
+    }
+   ],
+   "duyulan": "companion"
+  },
+  {
+   "id": "s12",
+   "dil": "en",
+   "metin": "On the long journey, her dog was her only companion and her greatest comfort.",
+   "t0": 48.681,
+   "t1": 54.651,
+   "kelimeler": [
+    {
+     "w": "On",
+     "t0": 48.681,
+     "t1": 49.301
+    },
+    {
+     "w": "the",
+     "t0": 49.301,
+     "t1": 49.521
+    },
+    {
+     "w": "long",
+     "t0": 49.521,
+     "t1": 50.021
+    },
+    {
+     "w": "journey,",
+     "t0": 50.021,
+     "t1": 50.761
+    },
+    {
+     "w": "her",
+     "t0": 51.241,
+     "t1": 51.461
+    },
+    {
+     "w": "dog",
+     "t0": 51.461,
+     "t1": 52.001
+    },
+    {
+     "w": "was",
+     "t0": 52.001,
+     "t1": 52.481
+    },
+    {
+     "w": "her",
+     "t0": 52.481,
+     "t1": 52.781
+    },
+    {
+     "w": "only",
+     "t0": 52.781,
+     "t1": 53.261
+    },
+    {
+     "w": "companion",
+     "t0": 53.261,
+     "t1": 54.101
+    },
+    {
+     "w": "and",
+     "t0": 54.101,
+     "t1": 55.141
+    },
+    {
+     "w": "her",
+     "t0": 55.141,
+     "t1": 55.481
+    },
+    {
+     "w": "greatest",
+     "t0": 55.481,
+     "t1": 56.121
+    },
+    {
+     "w": "comfort.",
+     "t0": 56.121,
+     "t1": 56.821
+    }
+   ],
+   "duyulan": "On the long journey, her dog was her only companion and her greatest comfort."
+  },
+  {
+   "id": "s13",
+   "dil": "tr",
+   "metin": "Siz ekmeğinizi en çok kiminle paylaşırsınız?",
+   "t0": 55.251,
+   "t1": 58.492,
+   "kelimeler": [
+    {
+     "w": "Siz",
+     "t0": 55.251,
+     "t1": 55.931
+    },
+    {
+     "w": "ekmeğinizi",
+     "t0": 55.931,
+     "t1": 56.871
+    },
+    {
+     "w": "en",
+     "t0": 56.871,
+     "t1": 57.171
+    },
+    {
+     "w": "çok",
+     "t0": 57.171,
+     "t1": 57.471
+    },
+    {
+     "w": "kiminle",
+     "t0": 57.471,
+     "t1": 58.131
+    },
+    {
+     "w": "paylaşırsınız?",
+     "t0": 58.131,
+     "t1": 59.231
+    }
+   ],
+   "duyulan": "Siz ekmeğinizi en çok kiminle paylaşırsınız?"
+  }
+ ],
+ "uyarilar": []
+}
