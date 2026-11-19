@@ -16,7 +16,7 @@
 5. Panis ise ekmek demekti.
 6. İkisi birleşince companio doğdu, yani ekmeğini paylaştığın kişi.
 7. Peki bu fikir nereden geldi?
-8. Rivayete göre Latince kelime, Gotçadaki ekmek arkadaşı sözünün bir çevirisiydi.
+8. Rivayete göre bu kelime, Germen dillerindeki ekmek arkadaşı sözünden çevrilmişti.
 9. Kelime Eski Fransızcada compaignon oldu ve 1300'lerde İngilizceye geçti.
 10. Topluluk ve şirket demek olan company de aynı kökten geliyor.
 11. Companion. (EN)
@@ -26,7 +26,7 @@
 ## Etimoloji ve kaynaklar
 - Geç Latince *companio* (*companionem*) = *com-* "birlikte" + *panis* "ekmek" → "ekmeğini paylaşan kişi, sofra arkadaşı". — Merriam-Webster (companion: "from Late Latin companion-, companio, from Latin com- + panis bread, food"), Wiktionary ("from Late Latin compāniōn- … from com- + pānis (literally, with + bread)"), Etymonline.
 - Eski Fransızca *compaignon* / Anglo-Fransızca *cumpaignun* üzerinden Orta İngilizceye (*compainoun*); İngilizcede ilk kullanım 14. yüzyıl — Merriam-Webster ("Middle English compainoun, from Anglo-French cumpaing, cumpaignun … First Known Use: 14th century"), Wiktionary ("From Middle English companion, from Old French compaignon"). Ekranda "1300'ler". (Etimoloji listesindeki "1200'ler" notu kaynaklarla uyuşmadığı için düzeltildi.)
-- Gotça *gahlaiba* ("ekmek arkadaşı") çevirisi (calque) olduğu görüşü kesin değildir (Wiktionary ve Etymonline bu görüşü anar; kesin değil): seste "rivayete göre", ekranda RİVAYETE GÖRE damgası.
+- Gotça *gahlaiba* ("ekmek arkadaşı") çevirisi (calque) olduğu görüşü kesin değildir (Wiktionary ve Etymonline bu görüşü anar; kesin değil): seste "rivayete göre", ekranda RİVAYETE GÖRE damgası. Etymonline: kelime ilk kez 6. yy Frank yasası Lex Salica'da görülür, muhtemelen bir Germen kelimesinin çevirisidir (karşılaştırın Gotça gahlaiba); Wiktionary de Germen kalkı (Frankça *gahlaibō, Gotça gahlaiba) olarak verir. Bu yüzden seste 'Germen dillerindeki', ekranda 'Germen dilleri · örn. Gotça gahlaiba'. Haritada başlangıç noktası yalnızca 'Geç Latince' diye etiketlendi (İtalya denmedi).
 - *company* aynı kökten: Eski Fransızca *compagnie*, Geç Latince *companio* — Etymonline (company).
 
 Kaynaklar: https://www.etymonline.com/word/companion · https://www.merriam-webster.com/dictionary/companion · https://en.wiktionary.org/wiki/companion · https://www.etymonline.com/word/company

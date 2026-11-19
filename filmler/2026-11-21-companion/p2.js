@@ -111,8 +111,9 @@ function sGoth(t, t0) { // 8: legend — two Goths share bread by a fire
   traveller(840, 1560, .9, { col: '#6a3f3a', dark: '#40241f', hood: true, beard: '#8a5a2b', flip: true, look: -1, arm: .6, blink: blink(u, 1.2), seed: 491 });
   X.save(); withSeed(260, () => wblob(540, 1420, 420, 260, K.fireL, .06)); X.restore();
   stamp(t, t0 + .2, 480, 560, 'RİVAYETE GÖRE', 62);
-  note(t, t0 + 1.2, 'Gotça gahlaiba', 480, 760, 74, null, null, { col: '#f6eedc', halo: 0 });
+  note(t, t0 + 1.2, 'Germen dilleri', 480, 760, 74, null, null, { col: '#f6eedc', halo: 0 });
   note(t, t0 + 1.8, '“ekmek arkadaşı”', 480, 870, 62, null, null, { col: K.fireL, halo: 0 });
+  note(t, t0 + 2.4, 'örn. Gotça gahlaiba', 480, 965, 50, null, null, { col: '#f6eedc', halo: 0 });
 }
 // ---- map ----
 const MP = (lon, lat) => [80 + (lon + 6) * 36, 560 + (58 - lat) * 44];
@@ -131,7 +132,7 @@ function sMap(t, t0) { // 9: the journey Italy -> France -> England
   const r1 = seg(u, .6, 1.7), r2 = seg(u, 1.9, 2.8);
   withSeed(280, () => { br(qcurve(R[0], R[1], Pa[0], Pa[1], -90, 18), 7, K.ver, { prof: 'even', nb: 2, a: .85 }, r1); br(qcurve(Pa[0], Pa[1], Lo[0], Lo[1], -50, 14), 7, K.ver, { prof: 'even', nb: 2, a: .85 }, r2); });
   for (const [P, q] of [[R, 0], [Pa, r1], [Lo, r2]]) if (q >= 1 || P === R) withSeed(290, () => wblob(P[0], P[1], 14, 14, K.ver, .9));
-  note(t, t0 + .4, 'İtalya · Geç Latince', 700, 1200, 46, null, null, { align: 'center' });
+  note(t, t0 + .4, 'Geç Latince', 700, 1200, 46, null, null, { align: 'center' });
   htext('companio', 700, 1256, 54, K.ver, { italic: false, p: eio(seg(u, .6, 1.2)) });
   note(t, t0 + 1.6, 'Fransa · Eski Fransızca', 380, 1090, 46);
   htext('compaignon', 380, 1146, 56, K.ver, { italic: false, p: eio(seg(u, 1.8, 2.4)) });

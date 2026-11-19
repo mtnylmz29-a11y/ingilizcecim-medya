@@ -310,7 +310,7 @@ function caption(t) {
   X.font = `italic 34px ${SERIF}`; const trr = tr ? wrap(tr.split(' '), 820) : [];
   const total = rows.length * lh + trr.length * 44 + (tr ? 14 : 0), yb = 1520 - total;
   // soft paper mist behind the text
-  X.globalAlpha = a * .82; withSeed(950, () => band(50, yb - 28, 990, 1520 + 6, K.paper, .9, { wv: 8, j: 6 }));
+  X.globalAlpha = a * .82; withSeed(950, () => band(50, yb - 28, 935, 1520 + 6, K.paper, .9, { wv: 8, j: 6 }));
   X.globalAlpha = a; X.textBaseline = 'middle'; X.textAlign = 'left'; X.font = `italic 50px ${SERIF}`; let n = 0;
   rows.forEach((r, ri) => { const rw = X.measureText(r.join(' ')).width; let x = 480 - rw / 2; const y = yb + lh * ri + lh / 2;
     r.forEach(wd => { const vis = n < shown; X.globalAlpha = a * (vis ? 1 : .22); X.fillStyle = KEY.test(wd) ? K.ver : (l.dil === 'en' ? K.blueD : K.ink); X.fillText(wd, x, y); x += X.measureText(wd + ' ').width; n++; }); });
