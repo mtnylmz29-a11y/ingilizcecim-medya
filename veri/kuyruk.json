@@ -691,5 +691,29 @@
   "duzeltme_gecmisi": [
    "[Metin, 18 Kasım] Satır sonu ses paraziti (s11, s12) → asama=hepsi ile yeniden render (e32ba68); ses_kontrol temiz, süre 54,1 sn, 31,2 MB, görüntü aynı. Metin: \"ne zaman yayınlayacaksan yayınla\" → onaylandi, dilimi 20:30."
   ]
+ },
+ {
+  "id": "2026-11-21-reels",
+  "tarih": "2026-11-21",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, watercolor; ses Gemini Kore)",
+  "film": "filmler/2026-11-21-companion",
+  "stil": "watercolor",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Companion",
+  "aciklama": "Companion (yoldaş, arkadaş) kelimesinin içinde bir ekmek saklanıyor! Geç Latincede com- \"birlikte\" ile panis \"ekmek\" birleşti ve companio, yani \"ekmeğini paylaştığın kişi\" doğdu. Rivayete göre bu kelime Gotçadaki \"ekmek arkadaşı\" sözünün bir çevirisiydi; Eski Fransızca compaignon üzerinden 1300'lerde İngilizceye geçti. Siz ekmeğinizi en çok kiminle paylaşırsınız?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #companion #company #ingilizcekelime #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/5b967ca5e53d6dfd36c872e382cbdd095fc4c14d/gunler/2026-11-21/companion_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/5b967ca5e53d6dfd36c872e382cbdd095fc4c14d/gunler/2026-11-21/companion_etym_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/5b967ca5e53d6dfd36c872e382cbdd095fc4c14d/gunler/2026-11-21/companion_etym_kapak.jpg",
+  "sure_sn": 59.0,
+  "kaynaklar": [
+   "https://www.merriam-webster.com/dictionary/companion",
+   "https://en.wiktionary.org/wiki/companion",
+   "https://www.etymonline.com/word/companion"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]

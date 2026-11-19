@@ -105,11 +105,31 @@
  },
  {
   "kelime": "companion",
-  "durum": "bekliyor",
+  "durum": "uretildi",
   "zemin_onerisi": "orta_cag",
-  "kesin": "Eski Fransızca compagnon < Geç Latince companio: com- 'birlikte' + panis 'ekmek' = 'ekmeğini paylaşan kişi'. İngilizcede 1200'ler. (Company de aynı kökten.)",
+  "kesin": "Eski Fransızca compaignon (Anglo-Fransızca cumpaignun) < Geç Latince companio: com- 'birlikte' + panis 'ekmek' = 'ekmeğini paylaşan kişi'. İngilizcede 1300'ler (Merriam-Webster: 14. yy; eski not '1200'ler' kaynaklarla uyuşmadığı için düzeltildi). (Company de aynı kökten.)",
   "rivayet": "Gotça gahlaiba ('ekmek arkadaşı') kelimesinin çevirisi olduğu düşünülür; kesin değil.",
-  "gorsel_oneri": "Köken: han zemini, katip + karakter2 (isci ya da denizci); parcalar com- (birlikte) + panis (ekmek); 'bol' ekmek ikiye bölünüp iki kişiye gider; Gotça çeviri için damga KESİN DEĞİL. Değişim: Eski Fransızca compagnon → İngilizce 1200'ler; karşılaştırma companion ↔ company. tema altin, stil parsomen, muzik neseli."
+  "gorsel_oneri": "Köken: han zemini, katip + karakter2 (isci ya da denizci); parcalar com- (birlikte) + panis (ekmek); 'bol' ekmek ikiye bölünüp iki kişiye gider; Gotça çeviri için damga KESİN DEĞİL. Değişim: Eski Fransızca compagnon → İngilizce 1200'ler; karşılaştırma companion ↔ company. tema altin, stil parsomen, muzik neseli.",
+  "uretim_tarihi": "2026-11-21",
+  "uretim": "bulut",
+  "gorsel": {
+   "tema": "suluboya",
+   "stil": "watercolor",
+   "muzik": "yumusak",
+   "zeminler": [
+    "yol",
+    "scriptorium",
+    "ates",
+    "harita",
+    "sofra"
+   ],
+   "olaylar": [
+    "bol",
+    "damga",
+    "harita"
+   ],
+   "harita": true
+  }
  },
  {
   "kelime": "alcohol",
