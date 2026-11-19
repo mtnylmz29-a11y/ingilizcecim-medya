@@ -1,0 +1,20 @@
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Robotunu kendin mi tamir ettin, yoksa tamir mi ettirdin?"},
+  {"id": "s02", "dil": "tr", "metin": "Kendin yaptıysan cümle basit."},
+  {"id": "s03", "dil": "en", "metin": "I repaired my robot."},
+  {"id": "s04", "dil": "tr", "metin": "Ama işi bir usta yaptıysa have, nesne ve fiilin üçüncü hâli gelir.", "okunus": "Ama işi bir usta yaptıysa hev, nesne ve fiilin üçüncü hâli gelir."},
+  {"id": "s05", "dil": "en", "metin": "I had my robot repaired."},
+  {"id": "s06", "dil": "tr", "metin": "Dikkat, sıra bozulursa anlam da bozulur."},
+  {"id": "s07", "dil": "tr", "metin": "Had repaired my robot dersen, robotu yine kendin tamir etmiş olursun.", "okunus": "Hed ripeird may robot dersen, robotu yine kendin tamir etmiş olursun."},
+  {"id": "s08", "dil": "tr", "metin": "İşi yapan kişiyi de söylemek istersen have, kişi ve yalın fiil kullanılır.", "okunus": "İşi yapan kişiyi de söylemek istersen hev, kişi ve yalın fiil kullanılır."},
+  {"id": "s09", "dil": "en", "metin": "I had the mechanic check the engine."},
+  {"id": "s10", "dil": "tr", "metin": "Birini ikna edip yaptırdıysan get, kişi ve to'lu fiil gelir.", "okunus": "Birini ikna edip yaptırdıysan get, kişi ve tu'lu fiil gelir."},
+  {"id": "s11", "dil": "en", "metin": "I finally got him to paint it."},
+  {"id": "s12", "dil": "tr", "metin": "Günlük dilde have yerine get de kullanılır.", "okunus": "Günlük dilde hev yerine get de kullanılır."},
+  {"id": "s13", "dil": "en", "metin": "I got my robot fixed."},
+  {"id": "s14", "dil": "tr", "metin": "Peki sen en son neyi yaptırdın?"}
+ ],
+ "bas": 0.4, "ara": 0.25, "son": 2.6,
+ "araliklar": {"s04": 0.35, "s06": 0.35, "s08": 0.35, "s10": 0.35, "s12": 0.35, "s14": 0.4}
+}
