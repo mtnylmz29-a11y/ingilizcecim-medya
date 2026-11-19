@@ -1,0 +1,43 @@
+{
+ "sablon": "isik-kutusu",
+ "kelime": "quarantine",
+ "ipa": "/ˈkwɒrəntiːn/",
+ "tur": "n.",
+ "anlam": "karantina; salgına karşı tecrit süresi",
+ "zincir": [
+  {
+   "dil": "İt.",
+   "kok": "quaranta",
+   "son": " giorni",
+   "satir": "s07"
+  },
+  {
+   "dil": "Ven.",
+   "kok": "quarant",
+   "son": "ena",
+   "satir": "s08"
+  },
+  {
+   "dil": "İng.",
+   "kok": "quarant",
+   "son": "ine",
+   "satir": "s09"
+  }
+ ],
+ "notlar": [
+  {
+   "metin": "\"kırk gün\"",
+   "sira": 0,
+   "satir": "s07"
+  }
+ ],
+ "akraba": {
+  "dil": "Tr.",
+  "kok": "karant",
+  "son": "ina",
+  "satir": "s10"
+ },
+ "muhur": "s11",
+ "muzik": "gece",
+ "enstruman": "mandolin"
+}

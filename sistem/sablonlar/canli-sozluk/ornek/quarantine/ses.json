@@ -1,0 +1,66 @@
+{
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Kırk gün gemiden inemediğinizi düşünün."
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "İngilizcedeki quarantine kelimesi bu bekleyişten doğdu.",
+   "okunus": "İngilizcedeki kuorantin kelimesi bu bekleyişten doğdu."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "On dördüncü yüzyılda veba Avrupa'yı kasıp kavuruyordu."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Liman şehirleri salgının gemilerle geldiğinden korkuyordu."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Venedik gibi limanlar, gelen gemileri kıyıdan uzakta bekletti."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Bekleme süresi kırk gündü."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "İtalyancada kırk gün, quaranta giorni demekti.",
+   "okunus": "İtalyancada kırk gün, kuaranta corni demekti."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Venedik ağzında bu süreye quarantena dendi.",
+   "okunus": "Venedik ağzında bu süreye kuarantena dendi."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Kelime İngilizceye quarantine olarak geçti.",
+   "okunus": "Kelime İngilizceye kuorantin olarak geçti."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Türkçedeki karantina da aynı kırk günden geliyor."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Kelimelerin tarihçesi için ingilizcecim.com."
+  }
+ ],
+ "bas": 0.6,
+ "ara": 0.35,
+ "son": 2.8
+}

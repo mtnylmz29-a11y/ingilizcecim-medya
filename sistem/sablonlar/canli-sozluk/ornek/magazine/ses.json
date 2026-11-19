@@ -1,0 +1,71 @@
+{
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Elinizdeki derginin adı aslında bir depo demek."
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "İngilizcede dergiye magazine denir.",
+   "okunus": "İngilizcede dergiye megazin denir."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Kelimenin yolculuğu Arap çarşılarında başlıyor."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Arapçada makhāzin, depolar demekti.",
+   "okunus": "Arapçada mehâzin, depolar demekti."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Kervanlar mallarını bu depolarda saklardı."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Akdeniz tüccarları kelimeyi İtalya'ya taşıdı."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "İtalyancada depo, magazzino oldu.",
+   "okunus": "İtalyancada depo, magazino oldu."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Fransızcada ise magasin.",
+   "okunus": "Fransızcada ise magazen."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "İngilizceye önce depo ve cephanelik anlamıyla girdi."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Sonra bir yayıncı, dergisine bilgi deposu diyerek bu adı verdi."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Türkçedeki mağaza da aynı kökten, İtalyancadan gelir."
+  },
+  {
+   "id": "s12",
+   "dil": "tr",
+   "metin": "Bir sonraki kelimede görüşmek üzere, ingilizcecim.com."
+  }
+ ],
+ "bas": 0.6,
+ "ara": 0.35,
+ "son": 2.8
+}

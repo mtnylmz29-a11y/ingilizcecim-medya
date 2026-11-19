@@ -37,6 +37,8 @@ Klasör: `filmler/<YYYY-MM-DD>-<kelime>/` (depoda). İçinde:
 | Kapak | Sayfa `?kapak=1` ile açılınca başlığı çizer; `film.json`'a `"kapak_t"` yaz (YEREL_URETIM.md §4.4 kapak kuralı). Actions `gunler/<tarih>/<ad>_kapak.jpg` çıkarır. |
 | `kaynak.md` | Kısa treatment özeti, seslendirme metni, etimoloji kaynakları (bizim metnimiz; lemo dokümanı kopyalama). |
 
+**Canlı Sözlük şablonları** (`canli-sozluk-isik`, `canli-sozluk-cizgi`): film klasörüne `index.html` yerine `sozluk.json` + `sahne.js` yazılır; motor, `index.html` ve `mix.py`'yi teslim.sh kendisi koyar. Tarif: `sistem/sablonlar/canli-sozluk/SABLON.md`.
+
 ## 3. Akış
 
 1. **Konu ve kontrol**: YEREL_URETIM.md §2–§3 (gün/slot, `veri/etimoloji_listesi.json`'dan sıradaki `bekliyor` kelime, en az 2 kaynak, "rivayete göre"/"efsaneye göre"). Stil: son 3 kayıttan farklı (YEREL_URETIM.md §4.2 listesi); WebGL'li stiller Actions'ta yazılım render'ıyla yavaştır ama çalışır.

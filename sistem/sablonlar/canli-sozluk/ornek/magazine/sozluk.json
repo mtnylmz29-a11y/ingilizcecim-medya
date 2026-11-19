@@ -1,0 +1,49 @@
+{
+ "sablon": "isik-kutusu",
+ "kelime": "magazine",
+ "ipa": "/ˌmæɡəˈziːn/",
+ "tur": "n.",
+ "anlam": "dergi; (eskiden) depo, cephanelik",
+ "zincir": [
+  {
+   "dil": "Ar.",
+   "kok": "makhāz",
+   "son": "in",
+   "satir": "s04"
+  },
+  {
+   "dil": "İt.",
+   "kok": "magazz",
+   "son": "ino",
+   "satir": "s07"
+  },
+  {
+   "dil": "Fr.",
+   "kok": "magas",
+   "son": "in",
+   "satir": "s08"
+  },
+  {
+   "dil": "İng.",
+   "kok": "magaz",
+   "son": "ine",
+   "satir": "s09"
+  }
+ ],
+ "notlar": [
+  {
+   "metin": "\"depolar\"",
+   "sira": 0,
+   "satir": "s04"
+  }
+ ],
+ "akraba": {
+  "dil": "Tr.",
+  "kok": "mağaz",
+  "son": "a",
+  "satir": "s11"
+ },
+ "muhur": "s12",
+ "muzik": "col",
+ "enstruman": "ud"
+}

@@ -4,6 +4,7 @@
 set -e
 FILM=$(cd "$1" && pwd); REPO=$(pwd); PY=${PY:-$LIB/.venv/bin/python}
 [ -f "$LIB/core/render/video.mjs" ] || { echo "LIB yok"; exit 1; }
+[ -f "$FILM/sozluk.json" ] && sh "$REPO/sistem/sablonlar/canli-sozluk/hazirla.sh" "$FILM"   # Canlı Sözlük şablonu: motoru sablon/ içine kopyalar
 [ -f "$FILM/index.html" ] || { echo "FILM HATASI: $FILM/index.html yok"; exit 1; }
 [ -f "$FILM/ses/zaman.json" ] || { echo "FILM HATASI: ses/zaman.json yok, once asama=ses"; exit 1; }
 $PY "$REPO/sistem/lemo/yardim.py" bilgi "$FILM" > /tmp/bilgi.env

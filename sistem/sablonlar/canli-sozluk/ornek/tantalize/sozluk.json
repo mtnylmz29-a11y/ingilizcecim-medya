@@ -1,0 +1,29 @@
+{
+ "sablon": "cizgi-film",
+ "kelime": "tantalize",
+ "ipa": "/ˈtæntəlaɪz/",
+ "tur": "v.",
+ "anlam": "imrendirip ulaştırmamak",
+ "zincir": [
+  {
+   "dil": "Yun.",
+   "kok": "Tantal",
+   "son": "os",
+   "satir": "s03"
+  },
+  {
+   "dil": "Lat.",
+   "kok": "Tantal",
+   "son": "us",
+   "satir": "s08"
+  },
+  {
+   "dil": "İng.",
+   "kok": "tantal",
+   "son": "ize",
+   "satir": "s09"
+  }
+ ],
+ "muhur": "s12",
+ "muzik": "bando"
+}

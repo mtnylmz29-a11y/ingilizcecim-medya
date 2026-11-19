@@ -1,0 +1,2 @@
+Bu klasördeki fontlar SIL Open Font License 1.1 ile dağıtılır (metin: OFL.txt), kaynak github.com/google/fonts:
+IM FELL English (Igino Marini), Merriweather (Sorkin Type), Noto Serif (Google), Courier Prime (Quote-Unquote Apps), Shrikhand (Jonny Pinhorn).

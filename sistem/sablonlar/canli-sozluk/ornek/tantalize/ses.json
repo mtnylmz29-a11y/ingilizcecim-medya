@@ -1,0 +1,69 @@
+{
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Hep istediğiniz bir şey, tam uzanınca kaçtı mı hiç?"
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "İngilizcede bunun tek kelimelik adı var: tantalize.",
+   "okunus": "İngilizcede bunun tek kelimelik adı var: tentılayz."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Yunan mitolojisinde Tantalos adında bir kral vardı."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Efsaneye göre tanrıları kızdırdı ve sonsuz bir cezaya çarptırıldı."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Suyun içinde, meyve dolu dalların altında duruyordu."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Meyveye uzandıkça dallar yukarı kaçıyordu."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Su içmek için eğildikçe su çekiliyordu."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Latincede adı Tantalus olarak yaşadı."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "On altıncı yüzyılda İngilizceye tantalize fiili olarak girdi.",
+   "okunus": "On altıncı yüzyılda İngilizceye tentılayz fiili olarak girdi."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Anlamı, birini imrendirip ona ulaştırmamak."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Bakın, üzümler yine kaçtı."
+  },
+  {
+   "id": "s12",
+   "dil": "tr",
+   "metin": "Kelimelerin hikâyesi ingilizcecim.com'da."
+  }
+ ],
+ "bas": 0.6,
+ "ara": 0.35,
+ "son": 2.8
+}
