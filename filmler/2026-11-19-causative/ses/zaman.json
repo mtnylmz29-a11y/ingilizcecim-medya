@@ -1,5 +1,5 @@
 {
- "dur": 57.53,
+ "dur": 59.34,
  "satirlar": [
   {
    "id": "s01",
@@ -29,13 +29,13 @@
      "t1": 2.84
     },
     {
-     "w": "ettin,",
+     "w": "ettin",
      "t0": 2.84,
-     "t1": 3.38
+     "t1": 3.36
     },
     {
      "w": "yoksa",
-     "t0": 3.68,
+     "t0": 3.36,
      "t1": 4.06
     },
     {
@@ -51,10 +51,10 @@
     {
      "w": "ettirdin?",
      "t0": 4.74,
-     "t1": 5.54
+     "t1": 5.56
     }
    ],
-   "duyulan": "Robotunu kendin mi tamir ettin, yoksa tamir mi ettirdin?"
+   "duyulan": "Robotunu kendin mi tamir ettin yoksa tamir mi ettirdin?"
   },
   {
    "id": "s02",
@@ -79,12 +79,12 @@
      "t1": 7.101
     },
     {
-     "w": "basic",
+     "w": "besik.",
      "t0": 7.101,
-     "t1": 7.461
+     "t1": 7.681
     }
    ],
-   "duyulan": "Kendin yaptıysan cümle basic"
+   "duyulan": "Kendin yaptıysan cümle besik."
   },
   {
    "id": "s03",
@@ -126,11 +126,11 @@
     {
      "w": "Ama",
      "t0": 9.563,
-     "t1": 10.303
+     "t1": 10.283
     },
     {
      "w": "işi",
-     "t0": 10.303,
+     "t0": 10.283,
      "t1": 10.743
     },
     {
@@ -144,18 +144,18 @@
      "t1": 11.583
     },
     {
-     "w": "yaptıysa",
+     "w": "yaptıysa,",
      "t0": 11.583,
      "t1": 12.643
     },
     {
      "w": "hev,",
-     "t0": 12.643,
+     "t0": 12.923,
      "t1": 13.883
     },
     {
      "w": "nesne",
-     "t0": 14.483,
+     "t0": 14.363,
      "t1": 15.243
     },
     {
@@ -181,10 +181,10 @@
     {
      "w": "gelir.",
      "t0": 17.623,
-     "t1": 18.003
+     "t1": 17.983
     }
    ],
-   "duyulan": "Ama işi bir usta yaptıysa hev, nesne ve fiilin üçüncü hali gelir."
+   "duyulan": "Ama işi bir usta yaptıysa, hev, nesne ve fiilin üçüncü hali gelir."
   },
   {
    "id": "s05",
@@ -216,7 +216,7 @@
     {
      "w": "repaired.",
      "t0": 17.844,
-     "t1": 18.584
+     "t1": 18.564
     }
    ],
    "duyulan": "I had my robot repaired."
@@ -229,13 +229,13 @@
    "t1": 22.036,
    "kelimeler": [
     {
-     "w": "Dikkat,",
+     "w": "Dikkat!",
      "t0": 18.465,
      "t1": 19.505
     },
     {
-     "w": "sıra",
-     "t0": 20.085,
+     "w": "Sıra",
+     "t0": 20.045,
      "t1": 20.585
     },
     {
@@ -246,11 +246,11 @@
     {
      "w": "anlam",
      "t0": 21.805,
-     "t1": 22.285
+     "t1": 22.265
     },
     {
      "w": "da",
-     "t0": 22.285,
+     "t0": 22.265,
      "t1": 22.645
     },
     {
@@ -259,184 +259,204 @@
      "t1": 23.385
     }
    ],
-   "duyulan": "Dikkat, sıra bozulursa anlam da bozulur."
+   "duyulan": "Dikkat! Sıra bozulursa anlam da bozulur."
   },
   {
    "id": "s07",
-   "dil": "tr",
-   "metin": "Had repaired my robot dersen, robotu yine kendin tamir etmiş olursun.",
+   "dil": "en",
+   "metin": "I had repaired my robot.",
    "t0": 22.286,
-   "t1": 27.526,
+   "t1": 24.686,
    "kelimeler": [
     {
-     "w": "Hedji",
+     "w": "I",
      "t0": 22.286,
-     "t1": 23.086
+     "t1": 22.946
     },
     {
-     "w": "Paired",
-     "t0": 23.086,
-     "t1": 23.806
+     "w": "had",
+     "t0": 22.946,
+     "t1": 23.226
     },
     {
-     "w": "My",
-     "t0": 23.806,
-     "t1": 24.146
+     "w": "repaired",
+     "t0": 23.226,
+     "t1": 23.846
     },
     {
-     "w": "Robot",
-     "t0": 24.146,
-     "t1": 24.766
+     "w": "my",
+     "t0": 23.846,
+     "t1": 24.206
+    },
+    {
+     "w": "robot.",
+     "t0": 24.206,
+     "t1": 24.726
+    }
+   ],
+   "duyulan": "I had repaired my robot."
+  },
+  {
+   "id": "s07b",
+   "dil": "tr",
+   "metin": "Böyle dersen, robotu yine kendin tamir etmiş olursun.",
+   "t0": 24.936,
+   "t1": 28.817,
+   "kelimeler": [
+    {
+     "w": "Böyle",
+     "t0": 24.936,
+     "t1": 25.596
     },
     {
      "w": "dersen",
-     "t0": 24.766,
-     "t1": 25.906
+     "t0": 25.596,
+     "t1": 26.416
     },
     {
      "w": "robotu",
-     "t0": 25.906,
-     "t1": 26.966
+     "t0": 26.416,
+     "t1": 27.156
     },
     {
      "w": "yine",
-     "t0": 26.966,
-     "t1": 27.186
+     "t0": 27.156,
+     "t1": 27.336
     },
     {
      "w": "kendin",
-     "t0": 27.186,
-     "t1": 27.866
+     "t0": 27.336,
+     "t1": 28.076
     },
     {
      "w": "tamir",
-     "t0": 27.866,
-     "t1": 28.326
+     "t0": 28.076,
+     "t1": 28.636
     },
     {
      "w": "etmiş",
-     "t0": 28.326,
-     "t1": 28.786
+     "t0": 28.636,
+     "t1": 29.076
     },
     {
      "w": "olursun.",
-     "t0": 28.786,
-     "t1": 29.506
+     "t0": 29.076,
+     "t1": 29.916
     }
    ],
-   "duyulan": "Hedji Paired My Robot dersen robotu yine kendin tamir etmiş olursun."
+   "duyulan": "Böyle dersen robotu yine kendin tamir etmiş olursun."
   },
   {
    "id": "s08",
    "dil": "tr",
    "metin": "İşi yapan kişiyi de söylemek istersen have, kişi ve yalın fiil kullanılır.",
-   "t0": 27.876,
-   "t1": 34.037,
+   "t0": 29.167,
+   "t1": 35.328,
    "kelimeler": [
     {
      "w": "İşi",
-     "t0": 27.876,
-     "t1": 28.816
+     "t0": 29.167,
+     "t1": 30.107
     },
     {
      "w": "yapan",
-     "t0": 28.816,
-     "t1": 29.296
+     "t0": 30.107,
+     "t1": 30.587
     },
     {
-     "w": "kişi",
-     "t0": 29.296,
-     "t1": 29.696
+     "w": "kişiyi",
+     "t0": 30.587,
+     "t1": 31.267
     },
     {
      "w": "de",
-     "t0": 29.696,
-     "t1": 30.076
+     "t0": 31.267,
+     "t1": 31.387
     },
     {
      "w": "söylemek",
-     "t0": 30.076,
-     "t1": 30.796
+     "t0": 31.387,
+     "t1": 32.087
     },
     {
      "w": "istersen",
-     "t0": 30.796,
-     "t1": 31.736
+     "t0": 32.087,
+     "t1": 33.027
     },
     {
      "w": "have,",
-     "t0": 31.736,
-     "t1": 32.656
+     "t0": 33.027,
+     "t1": 33.947
     },
     {
      "w": "kişi",
-     "t0": 33.036,
-     "t1": 33.576
+     "t0": 34.327,
+     "t1": 34.847
     },
     {
      "w": "ve",
-     "t0": 33.576,
-     "t1": 34.356
+     "t0": 34.847,
+     "t1": 35.647
     },
     {
      "w": "yalın",
-     "t0": 34.356,
-     "t1": 35.076
+     "t0": 35.647,
+     "t1": 36.367
     },
     {
      "w": "fil",
-     "t0": 35.076,
-     "t1": 35.336
+     "t0": 36.367,
+     "t1": 36.627
     },
     {
      "w": "kullanılır.",
-     "t0": 35.336,
-     "t1": 36.416
+     "t0": 36.627,
+     "t1": 37.707
     }
    ],
-   "duyulan": "İşi yapan kişi de söylemek istersen have, kişi ve yalın fil kullanılır."
+   "duyulan": "İşi yapan kişiyi de söylemek istersen have, kişi ve yalın fil kullanılır."
   },
   {
    "id": "s09",
    "dil": "en",
    "metin": "I had the mechanic check the engine.",
-   "t0": 34.287,
-   "t1": 36.928,
+   "t0": 35.578,
+   "t1": 38.218,
    "kelimeler": [
     {
      "w": "I",
-     "t0": 34.287,
-     "t1": 34.887
+     "t0": 35.578,
+     "t1": 36.178
     },
     {
      "w": "had",
-     "t0": 34.887,
-     "t1": 35.187
+     "t0": 36.178,
+     "t1": 36.498
     },
     {
      "w": "the",
-     "t0": 35.187,
-     "t1": 35.387
+     "t0": 36.498,
+     "t1": 36.678
     },
     {
      "w": "mechanic",
-     "t0": 35.387,
-     "t1": 36.027
+     "t0": 36.678,
+     "t1": 37.318
     },
     {
      "w": "check",
-     "t0": 36.027,
-     "t1": 36.467
+     "t0": 37.318,
+     "t1": 37.758
     },
     {
      "w": "the",
-     "t0": 36.467,
-     "t1": 36.807
+     "t0": 37.758,
+     "t1": 38.098
     },
     {
      "w": "engine.",
-     "t0": 36.807,
-     "t1": 37.247
+     "t0": 38.098,
+     "t1": 38.578
     }
    ],
    "duyulan": "I had the mechanic check the engine."
@@ -445,103 +465,103 @@
    "id": "s10",
    "dil": "tr",
    "metin": "Birini ikna edip yaptırdıysan get, kişi ve to'lu fiil gelir.",
-   "t0": 37.278,
-   "t1": 43.118,
+   "t0": 38.568,
+   "t1": 44.409,
    "kelimeler": [
     {
      "w": "Birini",
-     "t0": 37.278,
-     "t1": 38.178
+     "t0": 38.568,
+     "t1": 39.468
     },
     {
      "w": "ikna",
-     "t0": 38.178,
-     "t1": 38.858
+     "t0": 39.468,
+     "t1": 40.148
     },
     {
      "w": "edip",
-     "t0": 38.858,
-     "t1": 39.318
+     "t0": 40.148,
+     "t1": 40.608
     },
     {
      "w": "yaptırdıysan",
-     "t0": 39.318,
-     "t1": 40.658
+     "t0": 40.608,
+     "t1": 41.948
     },
     {
      "w": "get,",
-     "t0": 40.658,
-     "t1": 41.398
+     "t0": 41.948,
+     "t1": 42.688
     },
     {
      "w": "kişi",
-     "t0": 41.958,
-     "t1": 42.678
+     "t0": 43.308,
+     "t1": 43.968
     },
     {
      "w": "ve",
-     "t0": 42.678,
-     "t1": 43.318
+     "t0": 43.968,
+     "t1": 44.608
     },
     {
      "w": "tuğlu",
-     "t0": 43.318,
-     "t1": 44.198
+     "t0": 44.608,
+     "t1": 45.488
     },
     {
-     "w": "fiil",
-     "t0": 44.198,
-     "t1": 44.678
+     "w": "fil",
+     "t0": 45.488,
+     "t1": 45.788
     },
     {
      "w": "gelir.",
-     "t0": 44.678,
-     "t1": 45.018
+     "t0": 45.788,
+     "t1": 46.328
     }
    ],
-   "duyulan": "Birini ikna edip yaptırdıysan get, kişi ve tuğlu fiil gelir."
+   "duyulan": "Birini ikna edip yaptırdıysan get, kişi ve tuğlu fil gelir."
   },
   {
    "id": "s11",
    "dil": "en",
    "metin": "I finally got him to paint it.",
-   "t0": 43.368,
-   "t1": 45.969,
+   "t0": 44.659,
+   "t1": 47.259,
    "kelimeler": [
     {
      "w": "I",
-     "t0": 43.368,
-     "t1": 43.948
+     "t0": 44.659,
+     "t1": 45.239
     },
     {
      "w": "finally",
-     "t0": 43.948,
-     "t1": 44.748
+     "t0": 45.239,
+     "t1": 46.059
     },
     {
      "w": "got",
-     "t0": 44.748,
-     "t1": 45.288
+     "t0": 46.059,
+     "t1": 46.579
     },
     {
      "w": "him",
-     "t0": 45.288,
-     "t1": 45.548
+     "t0": 46.579,
+     "t1": 46.839
     },
     {
      "w": "to",
-     "t0": 45.548,
-     "t1": 45.728
+     "t0": 46.839,
+     "t1": 47.019
     },
     {
      "w": "paint",
-     "t0": 45.728,
-     "t1": 46.068
+     "t0": 47.019,
+     "t1": 47.359
     },
     {
      "w": "it.",
-     "t0": 46.068,
-     "t1": 46.468
+     "t0": 47.359,
+     "t1": 47.759
     }
    ],
    "duyulan": "I finally got him to paint it."
@@ -549,114 +569,114 @@
   {
    "id": "s12",
    "dil": "tr",
-   "metin": "Günlük dilde have yerine get de kullanılır.",
-   "t0": 46.319,
-   "t1": 49.519,
+   "metin": "Günlük dilde aynı anlamda get de kullanılır.",
+   "t0": 47.609,
+   "t1": 51.329,
    "kelimeler": [
     {
-     "w": "Günlük",
-     "t0": 46.319,
-     "t1": 47.419
+     "w": "günlük",
+     "t0": 47.609,
+     "t1": 48.729
     },
     {
      "w": "dilde",
-     "t0": 47.419,
-     "t1": 47.919
+     "t0": 48.729,
+     "t1": 49.349
     },
     {
-     "w": "her",
-     "t0": 47.919,
-     "t1": 48.319
+     "w": "aynı",
+     "t0": 49.349,
+     "t1": 49.969
     },
     {
-     "w": "yerine",
-     "t0": 48.319,
-     "t1": 48.979
+     "w": "anlamda",
+     "t0": 49.969,
+     "t1": 50.969
     },
     {
      "w": "gette",
-     "t0": 48.979,
-     "t1": 49.599
+     "t0": 50.969,
+     "t1": 51.689
     },
     {
      "w": "kullanılır.",
-     "t0": 49.599,
-     "t1": 50.519
+     "t0": 51.689,
+     "t1": 52.629
     }
    ],
-   "duyulan": "Günlük dilde her yerine gette kullanılır."
+   "duyulan": "günlük dilde aynı anlamda gette kullanılır."
   },
   {
    "id": "s13",
    "dil": "en",
    "metin": "I got my robot fixed.",
-   "t0": 49.769,
-   "t1": 52.21,
+   "t0": 51.579,
+   "t1": 54.02,
    "kelimeler": [
     {
      "w": "I",
-     "t0": 49.769,
-     "t1": 50.309
+     "t0": 51.579,
+     "t1": 52.119
     },
     {
      "w": "got",
-     "t0": 50.309,
-     "t1": 50.649
+     "t0": 52.119,
+     "t1": 52.459
     },
     {
      "w": "my",
-     "t0": 50.649,
-     "t1": 50.989
+     "t0": 52.459,
+     "t1": 52.799
     },
     {
      "w": "robot",
-     "t0": 50.989,
-     "t1": 51.649
+     "t0": 52.799,
+     "t1": 53.459
     },
     {
-     "w": "fixed.",
-     "t0": 51.649,
-     "t1": 52.509
+     "w": "fixed",
+     "t0": 53.459,
+     "t1": 54.319
     }
    ],
-   "duyulan": "I got my robot fixed."
+   "duyulan": "I got my robot fixed"
   },
   {
    "id": "s14",
    "dil": "tr",
    "metin": "Peki sen en son neyi yaptırdın?",
-   "t0": 52.61,
-   "t1": 54.93,
+   "t0": 54.42,
+   "t1": 56.74,
    "kelimeler": [
     {
      "w": "Peki",
-     "t0": 52.61,
-     "t1": 52.99
+     "t0": 54.42,
+     "t1": 54.8
     },
     {
      "w": "sen",
-     "t0": 52.99,
-     "t1": 53.43
+     "t0": 54.8,
+     "t1": 55.24
     },
     {
      "w": "en",
-     "t0": 53.43,
-     "t1": 53.81
+     "t0": 55.24,
+     "t1": 55.62
     },
     {
      "w": "son",
-     "t0": 53.81,
-     "t1": 54.07
+     "t0": 55.62,
+     "t1": 55.88
     },
     {
      "w": "neyi",
-     "t0": 54.07,
-     "t1": 54.53
+     "t0": 55.88,
+     "t1": 56.34
     },
     {
      "w": "yaptırdın?",
-     "t0": 54.53,
-     "t1": 55.37
+     "t0": 56.34,
+     "t1": 57.18
     }
    ],
    "duyulan": "Peki sen en son neyi yaptırdın?"

@@ -1,0 +1,91 @@
+1
+00:00:00,400 --> 00:00:02,914
+Robotunu kendin mi tamir ettin, yoksa
+
+2
+00:00:02,914 --> 00:00:04,171
+tamir mi ettirdin?
+
+3
+00:00:04,421 --> 00:00:06,832
+Kendin yaptıysan cümle basit.
+
+4
+00:00:07,082 --> 00:00:09,213
+I repaired my robot.
+
+5
+00:00:09,563 --> 00:00:12,569
+Ama işi bir usta yaptıysa have,
+
+6
+00:00:12,569 --> 00:00:15,574
+nesne ve fiilin üçüncü hâli gelir.
+
+7
+00:00:15,824 --> 00:00:18,115
+I had my robot repaired.
+
+8
+00:00:18,465 --> 00:00:22,036
+Dikkat, sıra bozulursa anlam da bozulur.
+
+9
+00:00:22,286 --> 00:00:24,686
+I had repaired my robot.
+
+10
+00:00:24,936 --> 00:00:27,847
+Böyle dersen, robotu yine kendin tamir
+
+11
+00:00:27,847 --> 00:00:28,817
+etmiş olursun.
+
+12
+00:00:29,167 --> 00:00:32,248
+İşi yapan kişiyi de söylemek istersen
+
+13
+00:00:32,248 --> 00:00:35,328
+have, kişi ve yalın fiil kullanılır.
+
+14
+00:00:35,578 --> 00:00:37,841
+I had the mechanic check the
+
+15
+00:00:37,841 --> 00:00:38,218
+engine.
+
+16
+00:00:38,568 --> 00:00:42,073
+Birini ikna edip yaptırdıysan get, kişi
+
+17
+00:00:42,073 --> 00:00:44,409
+ve to'lu fiil gelir.
+
+18
+00:00:44,659 --> 00:00:46,888
+I finally got him to paint
+
+19
+00:00:46,888 --> 00:00:47,259
+it.
+
+20
+00:00:47,609 --> 00:00:50,798
+Günlük dilde aynı anlamda get de
+
+21
+00:00:50,798 --> 00:00:51,329
+kullanılır.
+
+22
+00:00:51,579 --> 00:00:54,020
+I got my robot fixed.
+
+23
+00:00:54,420 --> 00:00:56,740
+Peki sen en son neyi yaptırdın?
