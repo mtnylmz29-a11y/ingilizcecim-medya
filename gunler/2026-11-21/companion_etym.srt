@@ -39,45 +39,45 @@ paylaştığın kişi.
 Peki bu fikir nereden geldi?
 
 11
-00:00:27,627 --> 00:00:31,258
-Rivayete göre Latince kelime, Gotçadaki ekmek
+00:00:27,627 --> 00:00:31,066
+Rivayete göre bu kelime, Germen dillerindeki
 
 12
-00:00:31,258 --> 00:00:33,678
-arkadaşı sözünün bir çevirisiydi.
+00:00:31,066 --> 00:00:33,358
+ekmek arkadaşı sözünden çevrilmişti.
 
 13
-00:00:33,978 --> 00:00:38,092
+00:00:33,658 --> 00:00:37,772
 Kelime Eski Fransızcada compaignon oldu ve
 
 14
-00:00:38,092 --> 00:00:40,149
+00:00:37,772 --> 00:00:39,829
 1300'lerde İngilizceye geçti.
 
 15
-00:00:40,399 --> 00:00:43,142
+00:00:40,079 --> 00:00:42,822
 Topluluk ve şirket demek olan company
 
 16
-00:00:43,142 --> 00:00:44,970
+00:00:42,822 --> 00:00:44,650
 de aynı kökten geliyor.
 
 17
-00:00:45,320 --> 00:00:46,610
+00:00:45,000 --> 00:00:46,291
 Companion.
 
 18
-00:00:46,860 --> 00:00:49,419
+00:00:46,541 --> 00:00:49,100
 On the long journey, her dog
 
 19
-00:00:49,419 --> 00:00:51,978
+00:00:49,100 --> 00:00:51,658
 was her only companion and her
 
 20
-00:00:51,978 --> 00:00:52,831
+00:00:51,658 --> 00:00:52,511
 greatest comfort.
 
 21
-00:00:53,181 --> 00:00:56,422
+00:00:52,861 --> 00:00:56,102
 Siz ekmeğinizi en çok kiminle paylaşırsınız?
