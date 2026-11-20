@@ -279,7 +279,7 @@ const KEY_EN = /^(not|until|did|could|only|after)$/i, KEY_TR = /^(not|until|unti
 function caption(t) {
   let cur = null; for (const l of Z.satirlar) if (t >= l.t0 - .05 && t <= l.t1 + .4) cur = l;
   if (!cur) return;
-  const words = cur.metin.replace('Only when da', 'Only when de').split(/ +/), size = 50, maxW = 780, lh = 62;
+  const words = cur.metin.split(/ +/), size = 50, maxW = 780, lh = 62;
   g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.font = `${size}px ${SF}`;
   const lines = []; let line = [];
   for (const w of words) { const test = [...line, w].join(' '); if (g.measureText(test).width > maxW && line.length) { lines.push(line); line = [w]; } else line.push(w); }
