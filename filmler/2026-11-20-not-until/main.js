@@ -279,7 +279,7 @@ const KEY_EN = /^(not|until|did|could|only|after)$/i, KEY_TR = /^(not|until|unti
 function caption(t) {
   let cur = null; for (const l of Z.satirlar) if (t >= l.t0 - .05 && t <= l.t1 + .4) cur = l;
   if (!cur) return;
-  const words = cur.metin.split(/ +/), size = 50, maxW = 780, lh = 62;
+  const words = cur.metin.replace('Only when da', 'Only when de').split(/ +/), size = 50, maxW = 780, lh = 62;
   g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.font = `${size}px ${SF}`;
   const lines = []; let line = [];
   for (const w of words) { const test = [...line, w].join(' '); if (g.measureText(test).width > maxW && line.length) { lines.push(line); line = [w]; } else line.push(w); }
@@ -359,8 +359,8 @@ function sTrap(t, s0) {   // DİKKAT: yakın plan şok
   zipzip(300, GY + 10, .85, t, { wide: 1.3, wavy: true, brow: 1.5, jit: 5, armL: 'up', armR: 'up', look: [.4, -.4] });
   pop();
   plate(220, 290, 640, 120, seg(t, s0 + .05, s0 + .35), P.white); if (t > s0 + .3) txt('DİKKAT!', 540, 352, 80, INK);
-  sentence([['Not until ', 0], ['did', 1], [' the train leave he woke up.', 0]], 560, 40, seg(t, T0('s09') - .3, T0('s09')), { mark: 'bad' });
-  sentence([['Not until the train left ', 0], ['he woke', 1], [' up.', 0]], 720, 40, seg(t, T0('s09') + .4, T0('s09') + .7), { mark: 'bad' });
+  sentence([['Not until ', 0], ['did', 1], [' the train leave he woke up.', 0]], 560, 36, seg(t, T0('s09') - .3, T0('s09')), { mark: 'bad' });
+  sentence([['Not until the train left ', 0], ['he woke', 1], [' up.', 0]], 720, 36, seg(t, T0('s09') + .4, T0('s09') + .7), { mark: 'bad' });
   if (t > T0('s09') + 1.0) { const k = seg(t, T0('s09') + 1.0, T0('s09') + 1.3); push(); translate(760, 1000); rotate(-.18); scale(back(k, .8) * 1.0); shape(rr(-190, -64, 380, 128, 16), { fill: null, lw: 9, line: P.white }); pop(); txt('ELENİR', 760, 1000, 76 * back(k, .8), P.white, { ow: 10 }); }
 }
 function sOnly(t, s0) {   // bilet gişesi, yeni tren, rahatlama
@@ -371,7 +371,7 @@ function sOnly(t, s0) {   // bilet gişesi, yeni tren, rahatlama
   pop();
   chips([{ s: 'Only after', dark: true }, { s: 'Only when', dark: true }], 320, s0 + .5, t);
   note('= aynı kural', 430, seg(t, s0 + 1.4, s0 + 1.7), 46);
-  sentence([['Only after', 1], [' he bought a new ticket ', 0], ['could', 1], [' he relax.', 0]], 545, 38, seg(t, T0('s11') - .1, T0('s11') + .25), { mark: 'ok' });
+  sentence([['Only after', 1], [' he bought a new ticket ', 0], ['could', 1], [' he relax.', 0]], 545, 34, seg(t, T0('s11') - .1, T0('s11') + .25), { mark: 'ok' });
 }
 function sEnd(t, s0) {   // tren gidiyor, Zıpzıp pencereden el sallıyor
   push(); cam(540, 980, 1.0); platform(t);
