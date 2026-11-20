@@ -22,6 +22,7 @@
 - Bir sonraki kelimede görüşmek üzere, ingilizcecim.com.
 
 ## Etimoloji kaynakları
-- Online Etymology Dictionary, "alcohol": https://www.etymonline.com/word/alcohol — 1540s; Medieval Latin alcohol < Arabic al-kuhl "the kohl" (göze sürülen antimon tozu); "çok ince toz" → simyada "arıtılmış öz"; "alcohol of wine" 1670s; bugünkü anlam 1753.
+- Online Etymology Dictionary, "alcohol": https://www.etymonline.com/word/alcohol — 1540s; Medieval Latin alcohol < Arabic al-kuhl "the kohl" (göze sürülen antimon tozu); "çok ince toz" → simyada "arıtılmış öz"; "alcohol of wine" İngilizcede 1590 (OED; "Alcoll of wine"); bugünkü anlam 1753 (etymonline; OED ilk alıntı 1818). İlk İngilizce kullanım (1543) "ince toz", "öz" anlamı 1590.
 - Merriam-Webster, "Alcohol & Algebra: Common Words from Arabic": https://www.merriam-webster.com/wordplay/words-from-arabic — alcohol < Arapça al-kuḥl, göz makyajında kullanılan ince toz.
 - Etymonline, "kohl": https://www.etymonline.com/word/kohl — Arapça kuhl, aynı kök.
+- Grammarphobia (OED ve Ayto alıntılarıyla): https://www.grammarphobia.com/blog/2014/05/alcohol.html
