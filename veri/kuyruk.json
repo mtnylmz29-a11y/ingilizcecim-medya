@@ -779,6 +779,13 @@
    "https://www.etymonline.com/word/kohl"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde"
+  "durum": "onaylandi",
+  "onay": "otomatik (Denetmen, 2026-11-20T12:06+03:00)",
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "GECTI",
+   "notlar": "Bağımsız denetim (bulut lemo, e2f21da). 1080×1920, 24 fps, H.264+AAC, 56,6 sn, 28,6 MB. ses_kontrol.py: temiz (11 satır, parazit yok); ses Gemini Kore (ticari lisanslı). 12 kare incelendi: canli-sozluk-cizgi, maskot Lügat konuşuyor ve mimiği değişiyor (şaşkın, gözlüklü, 'HAPŞU!' gag); 5 sahne bölümü: çarşı/aktar tezgâhı → havanda sürme dövme → simyacı laboratuvarı (damıtma) → şarap/üzüm odası → çarşıya dönüş (başı yankılayan son, mühür). Etimoloji zinciri ekranda dolarak ilerliyor (Ar. al-kuḥl 'sürme' → O.Ç.Lat. alcohol 'ince toz' → İng. alcohol 'öz'→alkol; akraba kohl). Altyazı kelime kelime, ~1525 px, alt güvenli alanın üstünde; Türkçe yazım temiz. Bilgi doğru (Etymonline alcohol/kohl, Grammarphobia, Obs. Paris Etym. Dict.): Arapça al-kuḥl göz sürmesi tozu; O.Ç. Latincede 'ince toz'; simyacılarda 'arıtılmış öz'; İngilizceye 1540'larda; 'alcohol of wine' 1670'ler; bugünkü anlam 18. yy ortası (1753). Kapak: 1080×1920, çarşı sahnesinde Lügat şişe kaldırıyor; 'KELİMELERİN TARİHÇESİ' + büyük 'alcohol' başlığı y≈290–510, ortadaki 1080×1350 alanda ve okunaklı. Küçük not: sahnelerin 4'ü farklı arka plan (çarşı başta ve sonda), alt yarıda tuğla zemin biraz boş; standarda engel değil.",
+   "zaman": "2026-11-20T12:06+03:00"
+  }
  }
 ]
