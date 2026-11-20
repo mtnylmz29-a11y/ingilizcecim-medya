@@ -1,0 +1,19 @@
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Tren kaçtı, ama asıl kaçan şey fiilin yeri!"},
+  {"id": "s02", "dil": "tr", "metin": "Bizim Zıpzıp istasyonda uyuyakaldı."},
+  {"id": "s03", "dil": "tr", "metin": "Uyandığında tren çoktan gitmişti."},
+  {"id": "s04", "dil": "tr", "metin": "Normal cümlede until ortada durur ve devrik yapı yoktur.", "okunus": "Normal cümlede antil ortada durur ve devrik yapı yoktur."},
+  {"id": "s05", "dil": "en", "metin": "He didn't wake up until the train left."},
+  {"id": "s06", "dil": "tr", "metin": "Ama Not until cümlenin başına gelirse, ana cümle devrik olur.", "okunus": "Ama Not antil cümlenin başına gelirse, ana cümle devrik olur."},
+  {"id": "s07", "dil": "en", "metin": "Not until the train left did he wake up."},
+  {"id": "s08", "dil": "tr", "metin": "Dikkat, did until'in yanına değil, ana cümleye gelir.", "okunus": "Dikkat, did antil'in yanına değil, ana cümleye gelir."},
+  {"id": "s09", "dil": "tr", "metin": "Ekrandaki bu iki şık sınavda hep elenir."},
+  {"id": "s10", "dil": "tr", "metin": "Only after ve Only when da aynı kuralla çalışır.", "okunus": "Onli after ve Onli wen da aynı kuralla çalışır."},
+  {"id": "s11", "dil": "en", "metin": "Only after he bought a new ticket could he relax."},
+  {"id": "s12", "dil": "tr", "metin": "Kural kısa: kalıp başta, devrik yapı ana cümlede."},
+  {"id": "s13", "dil": "tr", "metin": "Sen olsan Only when ile nasıl bir cümle kurardın?", "okunus": "Sen olsan Onli wen ile nasıl bir cümle kurardın?"}
+ ],
+ "bas": 0.6, "ara": 0.35, "son": 2.8,
+ "araliklar": {"s02": 0.5, "s04": 0.6, "s06": 0.6, "s08": 0.6, "s10": 0.6, "s12": 0.6}
+}
