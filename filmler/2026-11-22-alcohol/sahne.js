@@ -4,7 +4,10 @@
 
 const SKY = ['#f2b766', '#f6d79a', '#f7e6c0'];
 
+let CARSI = null;
+const duz = (K, pts, fill) => K.shape(pts, { fill, lw: 2.6, line: '#2A2927', boil: 0 });
 function carsiArka(K) {
+  if (CARSI) { const g = K.T.g; g.setTransform(1, 0, 0, 1, 0, 0); g.drawImage(CARSI, 0, 0); return; }
   const { wash, ell, rect, spline, W, H } = K, g = K.T.g;
   const gr = g.createLinearGradient(0, 0, 0, 1150); gr.addColorStop(0, SKY[0]); gr.addColorStop(.55, SKY[1]); gr.addColorStop(1, SKY[2]);
   g.setTransform(1, 0, 0, 1, 0, 0); g.fillStyle = gr; g.fillRect(0, 0, W, H);
@@ -13,22 +16,23 @@ function carsiArka(K) {
   for (const [x, w, h] of [[150, 170, 120], [520, 230, 150], [930, 190, 110]]) {
     wash([[x - w / 2, 900], [x - w / 2, 860], ...spline([[x - w / 2, 860], [x - w * .45, 860 - h * .6], [x, 860 - h], [x + w * .45, 860 - h * .6], [x + w / 2, 860]], false, 8), [x + w / 2, 900]], '#d99a6a', { seed: x, edge: .08, lw: 2.4 });
   }
-  for (const x of [330, 760]) wash(rect(x - 16, 640, 32, 260), '#c98a5c', { seed: x + 1, edge: .08, lw: 2.4 });
+  for (const x of [330, 760]) duz(K, rect(x - 16, 640, 32, 260), '#c98a5c');
   wash(rect(-20, 880, W + 40, 300), '#e2b07c', { seed: 4, edge: .12, lw: 3 });   // çarşı duvarı
   for (let i = 0; i < 4; i++) {   // kemerler
     const x = 120 + i * 280;
     wash([[x - 95, 1180], [x - 95, 1010], ...spline([[x - 95, 1010], [x - 70, 950], [x, 925], [x + 70, 950], [x + 95, 1010]], false, 8), [x + 95, 1180]], '#7a4a32', { seed: 20 + i, edge: .2, lw: 3 });
   }
   // tezgâh tentesi (çizgili)
-  for (let i = 0; i < 9; i++) wash([[560 + i * 60, 700], [620 + i * 60, 700], [630 + i * 60, 790], [570 + i * 60, 790]], i % 2 ? '#f4ead2' : '#c8453a', { seed: 40 + i, edge: .08, lw: 2.6 });
+  for (let i = 0; i < 9; i++) duz(K, [[560 + i * 60, 700], [620 + i * 60, 700], [630 + i * 60, 790], [570 + i * 60, 790]], i % 2 ? '#f4ead2' : '#c8453a');
   wash(rect(600, 930, 470, 60), '#8a5a3a', { seed: 51, edge: .15 });   // tezgâh
   for (const [x, c] of [[640, '#2f5d8a'], [720, '#3c7a5a'], [800, '#2f5d8a'], [880, '#6b3f7a'], [960, '#3c7a5a'], [1030, '#2f5d8a']]) {   // sürme kavanozları
-    wash([[x - 26, 930], [x - 26, 880], [x - 16, 866], [x + 16, 866], [x + 26, 880], [x + 26, 930]], c, { seed: x, edge: .12, lw: 3 });
-    wash(rect(x - 12, 852, 24, 16), '#d8b45a', { seed: x + 3, edge: .1, lw: 2.4 });
+    duz(K, [[x - 26, 930], [x - 26, 880], [x - 16, 866], [x + 16, 866], [x + 26, 880], [x + 26, 930]], c);
+    duz(K, rect(x - 12, 852, 24, 16), '#d8b45a');
   }
   // zemin taşları, çerçevenin altına kadar
   wash(rect(-20, 1170, W + 40, H - 1150), '#c9905e', { seed: 60, edge: .15 });
-  for (let r = 0; r < 6; r++) for (let c = 0; c < 7; c++) { const y = 1200 + r * 120, x = -40 + c * 170 + (r % 2) * 85; wash(rect(x, y, 160, 110), r % 2 ? '#d49c68' : '#bf8656', { seed: r * 9 + c, edge: .1, lw: 2 }); }
+  for (let r = 0; r < 6; r++) for (let c = 0; c < 7; c++) { const y = 1200 + r * 120, x = -40 + c * 170 + (r % 2) * 85; K.shape(rect(x, y, 160, 110), { fill: r % 2 ? '#d49c68' : '#bf8656', lw: 2.4, line: '#2A2927', boil: 0 }); }
+  CARSI = document.createElement('canvas'); CARSI.width = W; CARSI.height = H; CARSI.getContext('2d').drawImage(g.canvas, 0, 0);
 }
 
 // sürme çizgisi: Lügat'ın gözlerinin etrafına (x, y = gövde alt ortası), p 0..1 ilerleme
@@ -88,12 +92,11 @@ function havan(K) {
     const g = K.T.g; g.setTransform(1, 0, 0, 1, 0, 0); g.fillStyle = '#e7c99a'; g.fillRect(0, 0, W, H);
     wash(rect(-20, 560, W + 40, 620), '#d9b07a', { seed: 3, edge: .1, lw: 2.6 });
     for (let i = 0; i < 3; i++) { const x = 180 + i * 360; wash([[x - 120, 1180], [x - 120, 760], ...spline([[x - 120, 760], [x - 80, 680], [x, 650], [x + 80, 680], [x + 120, 760]], false, 8), [x + 120, 1180]], '#efe0bf', { seed: 10 + i, edge: .1, lw: 2.6 }); }
-    for (let r = 0; r < 4; r++) for (let c = 0; c < 6; c++) wash(rect(-30 + c * 190 + (r % 2) * 95, 640 + r * 26, 4, 4), '#b9895a', { seed: r * 7 + c, edge: 0, line: false });
     wash(rect(40, 820, 260, 20), '#7a4a2a', { seed: 30, edge: .15 });   // raf
-    for (const [x, c] of [[80, '#2f5d8a'], [150, '#3c7a5a'], [220, '#6b3f7a'], [270, '#2f5d8a']]) wash([[x - 20, 820], [x - 20, 780], [x + 20, 780], [x + 20, 820]], c, { seed: x, edge: .12, lw: 2.6 });
+    for (const [x, c] of [[80, '#2f5d8a'], [150, '#3c7a5a'], [220, '#6b3f7a'], [270, '#2f5d8a']]) duz(K, [[x - 20, 820], [x - 20, 780], [x + 20, 780], [x + 20, 820]], c);
     wash(rect(-20, 1160, W + 40, H - 1140), '#a8704a', { seed: 40, edge: .15 });
-    for (let c = 0; c < 8; c++) wash(rect(-20 + c * 150, 1180, 140, 90), c % 2 ? '#b77d52' : '#9c6640', { seed: 50 + c, edge: .1, lw: 2 });
-    for (let r = 1; r < 6; r++) for (let c = 0; c < 8; c++) wash(rect(-95 + c * 150 + (r % 2) * 75, 1180 + r * 100, 140, 90), (r + c) % 2 ? '#b77d52' : '#9c6640', { seed: r * 13 + c, edge: .1, lw: 2 });
+    for (let c = 0; c < 8; c++) K.shape(rect(-20 + c * 150, 1180, 140, 90), { fill: c % 2 ? '#b77d52' : '#9c6640', lw: 2.4, line: '#2A2927', boil: 0 });
+    for (let r = 1; r < 6; r++) for (let c = 0; c < 8; c++) K.shape(rect(-95 + c * 150 + (r % 2) * 75, 1180 + r * 100, 140, 90), { fill: (r + c) % 2 ? '#b77d52' : '#9c6640', lw: 2.4, line: '#2A2927', boil: 0 });
   };
   return { bas: 's05', iris: [640, 1000], arka, ciz: (t) => {
     const X = 380, Y = 1180, MX = 700, MY = 1170;
@@ -132,13 +135,13 @@ function simya(K) {
     wash(rect(-20, 560, W + 40, 640), '#4b3d6b', { seed: 3, edge: .2, lw: 2.6 });
     for (const y of [700, 860]) wash(rect(-20, y, 330, 18), '#6a4a2a', { seed: y, edge: .15 });
     for (const [x, y, c] of [[40, 700, '#5aa36a'], [110, 700, '#c8453a'], [190, 700, '#e8b83a'], [260, 700, '#5a8ac8'], [60, 860, '#e8b83a'], [150, 860, '#5aa36a'], [240, 860, '#c8453a']]) {
-      wash([[x - 22, y], [x - 26, y - 34], [x - 8, y - 50], [x - 8, y - 78], [x + 8, y - 78], [x + 8, y - 50], [x + 26, y - 34], [x + 22, y]], c, { seed: x + y, edge: .12, lw: 2.6 });
+      duz(K, [[x - 22, y], [x - 26, y - 34], [x - 8, y - 50], [x - 8, y - 78], [x + 8, y - 78], [x + 8, y - 50], [x + 26, y - 34], [x + 22, y]], c);
     }
     wash(ell(860, 720, 110, 150, 40), '#2a2342', { seed: 9, edge: .15, lw: 3 });   // pencere (gece)
-    for (const [x, y] of [[830, 660], [890, 700], [850, 780]]) wash(ell(x, y, 6, 6, 10), '#f6e7b0', { seed: x, edge: 0, line: false });
+    for (const [x, y] of [[830, 660], [890, 700], [850, 780]]) K.shape(ell(x, y, 6, 6, 10), { fill: '#f6e7b0', stroke: false, boil: 0 });
     wash(rect(-20, 1150, W + 40, 60), '#6a4a2a', { seed: 20, edge: .2 });   // masa
     wash(rect(-20, 1200, W + 40, H - 1180), '#2b2240', { seed: 21, edge: .2 });
-    for (let c = 0; c < 8; c++) wash(rect(-20 + c * 150, 1230, 140, 80), '#352a4f', { seed: 30 + c, edge: .1, lw: 2 });
+    for (let c = 0; c < 8; c++) K.shape(rect(-20 + c * 150, 1230, 140, 80), { fill: '#352a4f', lw: 2.4, line: '#2A2927', boil: 0 });
   };
   return { bas: 's07', iris: [700, 950], arka, ciz: (t) => {
     const X = 260, Y = 1170;
@@ -179,7 +182,7 @@ function calisma(K) {
     wash(rect(640, 600, 340, 380), '#8fc3dc', { seed: 3, edge: .1, lw: 3 });   // gündüz penceresi
     stroke([[810, 600], [810, 980]], 10, { line: '#6a4a2a' }); stroke([[640, 790], [980, 790]], 10, { line: '#6a4a2a' });
     wash(ell(720, 680, 50, 20, 20), '#fbf6ea', { seed: 5, edge: .05, line: false });
-    for (let i = 0; i < 5; i++) wash(rect(60 + i * 60, 640 + (i % 2) * 10, 46, 170 - (i % 2) * 10), ['#8a3a2a', '#2f5d8a', '#3c7a5a', '#a8703a', '#6b3f7a'][i], { seed: 10 + i, edge: .12, lw: 2.6 });   // kitaplar
+    for (let i = 0; i < 5; i++) duz(K, rect(60 + i * 60, 640 + (i % 2) * 10, 46, 170 - (i % 2) * 10), ['#8a3a2a', '#2f5d8a', '#3c7a5a', '#a8703a', '#6b3f7a'][i]);   // kitaplar
     wash(rect(40, 810, 330, 18), '#6a4a2a', { seed: 20, edge: .15 });
     wash(rect(-20, 1140, W + 40, 60), '#8a5a3a', { seed: 21, edge: .2 });   // masa
     wash(rect(-20, 1190, W + 40, H - 1170), '#a77b52', { seed: 22, edge: .15 });
