@@ -1,0 +1,21 @@
+{
+ "sablon": "cizgi-film",
+ "kelime": "alcohol",
+ "ipa": "/ˈælkəhɒl/",
+ "tur": "n.",
+ "anlam": "alkol; kökü: göz sürmesi tozu",
+ "zincir": [
+  {"dil": "Ar.", "on": "al-", "kok": "kuḥl", "satir": "s04"},
+  {"dil": "O.Ç.Lat.", "on": "al", "kok": "cohol", "satir": "s06"},
+  {"dil": "İng.", "on": "al", "kok": "cohol", "satir": "s08"}
+ ],
+ "notlar": [
+  {"metin": "\"sürme\"", "sira": 0, "satir": "s04"},
+  {"metin": "\"ince toz\"", "sira": 1, "satir": "s06"},
+  {"metin": "\"öz\" → alkol", "sira": 2, "satir": "s10"}
+ ],
+ "akraba": {"dil": "İng.", "kok": "kohl", "son": " (göz kalemi)", "satir": "s11"},
+ "muhur": "s13",
+ "muzik": "bando",
+ "enstruman": "ud"
+}

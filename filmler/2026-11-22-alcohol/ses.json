@@ -1,0 +1,20 @@
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Alkol kelimesinin kökünde bir göz makyajı saklı."},
+  {"id": "s02", "dil": "tr", "metin": "İngilizcede alkole alcohol denir.", "okunus": "İngilizcede alkole alkıhol denir."},
+  {"id": "s03", "dil": "tr", "metin": "Hikâye Arap dünyasının çarşılarında başlıyor."},
+  {"id": "s04", "dil": "tr", "metin": "Arapçada al-kuhl, göze sürülen ince siyah tozdu.", "okunus": "Arapçada el-kuhl, göze sürülen ince siyah tozdu."},
+  {"id": "s05", "dil": "tr", "metin": "Bu sürme, havanda dövülerek incecik bir toz hâline getirilirdi."},
+  {"id": "s06", "dil": "tr", "metin": "Orta Çağ Latincesinde alcohol, çok ince toz anlamına geldi.", "okunus": "Orta Çağ Latincesinde alkohol, çok ince toz anlamına geldi."},
+  {"id": "s07", "dil": "tr", "metin": "Simyacılar kelimeyi bir maddenin arıtılmış saf özü için kullandı."},
+  {"id": "s08", "dil": "tr", "metin": "İngilizceye bu anlamla 1500'lerde girdi."},
+  {"id": "s09", "dil": "tr", "metin": "Sonra şarabın özüne alcohol of wine dendi.", "okunus": "Sonra şarabın özüne alkıhol ov vayn dendi."},
+  {"id": "s10", "dil": "tr", "metin": "1700'lerde kelime bugünkü alkol anlamına kavuştu."},
+  {"id": "s11", "dil": "tr", "metin": "Göz kalemi anlamındaki kohl da aynı Arapça kelimeden gelir.", "okunus": "Göz kalemi anlamındaki kol da aynı Arapça kelimeden gelir."},
+  {"id": "s12", "dil": "tr", "metin": "Yani bir göz tozu, kimyanın en bilinen kelimelerinden biri oldu."},
+  {"id": "s13", "dil": "tr", "metin": "Bir sonraki kelimede görüşmek üzere, ingilizcecim.com."}
+ ],
+ "bas": 0.6,
+ "ara": 0.35,
+ "son": 2.8
+}
