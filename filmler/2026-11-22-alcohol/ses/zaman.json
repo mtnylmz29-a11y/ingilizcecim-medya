@@ -1,0 +1,636 @@
+{
+ "dur": 63.522,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Alkol kelimesinin kökünde bir göz makyajı saklı.",
+   "t0": 0.6,
+   "t1": 4.291,
+   "kelimeler": [
+    {
+     "w": "Alkol",
+     "t0": 0.6,
+     "t1": 1.6
+    },
+    {
+     "w": "kelimesinin",
+     "t0": 1.6,
+     "t1": 2.6
+    },
+    {
+     "w": "kökünde",
+     "t0": 2.6,
+     "t1": 3.38
+    },
+    {
+     "w": "bir",
+     "t0": 3.38,
+     "t1": 3.92
+    },
+    {
+     "w": "göz",
+     "t0": 3.92,
+     "t1": 4.42
+    },
+    {
+     "w": "makyajı",
+     "t0": 4.42,
+     "t1": 5.22
+    },
+    {
+     "w": "saklı.",
+     "t0": 5.22,
+     "t1": 5.76
+    }
+   ],
+   "duyulan": "Alkol kelimesinin kökünde bir göz makyajı saklı."
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "İngilizcede alkole alcohol denir.",
+   "t0": 4.641,
+   "t1": 7.652,
+   "kelimeler": [
+    {
+     "w": "İngilizce",
+     "t0": 4.641,
+     "t1": 5.981
+    },
+    {
+     "w": "de",
+     "t0": 5.981,
+     "t1": 6.201
+    },
+    {
+     "w": "alkole,",
+     "t0": 6.201,
+     "t1": 7.141
+    },
+    {
+     "w": "alkohol",
+     "t0": 7.461,
+     "t1": 8.221
+    },
+    {
+     "w": "delir.",
+     "t0": 8.221,
+     "t1": 8.801
+    }
+   ],
+   "duyulan": "İngilizce de alkole, alkohol delir."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Hikâye Arap dünyasının çarşılarında başlıyor.",
+   "t0": 8.002,
+   "t1": 11.653,
+   "kelimeler": [
+    {
+     "w": "Hikâye,",
+     "t0": 8.002,
+     "t1": 9.222
+    },
+    {
+     "w": "Arap",
+     "t0": 9.602,
+     "t1": 10.062
+    },
+    {
+     "w": "dünyasının",
+     "t0": 10.062,
+     "t1": 11.042
+    },
+    {
+     "w": "çarşılarında",
+     "t0": 11.042,
+     "t1": 12.142
+    },
+    {
+     "w": "başlıyor.",
+     "t0": 12.142,
+     "t1": 12.942
+    }
+   ],
+   "duyulan": "Hikâye, Arap dünyasının çarşılarında başlıyor."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Arapçada al-kuhl, göze sürülen ince siyah tozdu.",
+   "t0": 12.003,
+   "t1": 16.814,
+   "kelimeler": [
+    {
+     "w": "Arapça'da",
+     "t0": 12.003,
+     "t1": 13.543
+    },
+    {
+     "w": "el",
+     "t0": 13.543,
+     "t1": 14.123
+    },
+    {
+     "w": "kur,",
+     "t0": 14.123,
+     "t1": 14.583
+    },
+    {
+     "w": "göze",
+     "t0": 15.463,
+     "t1": 15.883
+    },
+    {
+     "w": "sürülen",
+     "t0": 15.883,
+     "t1": 16.563
+    },
+    {
+     "w": "ince",
+     "t0": 16.563,
+     "t1": 17.403
+    },
+    {
+     "w": "siyah",
+     "t0": 17.403,
+     "t1": 18.063
+    },
+    {
+     "w": "tozdu.",
+     "t0": 18.063,
+     "t1": 18.823
+    }
+   ],
+   "duyulan": "Arapça'da el kur, göze sürülen ince siyah tozdu."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Bu sürme, havanda dövülerek incecik bir toz hâline getirilirdi.",
+   "t0": 17.164,
+   "t1": 21.815,
+   "kelimeler": [
+    {
+     "w": "Bu",
+     "t0": 17.164,
+     "t1": 17.824
+    },
+    {
+     "w": "sürme",
+     "t0": 17.824,
+     "t1": 18.624
+    },
+    {
+     "w": "havanda",
+     "t0": 18.624,
+     "t1": 19.724
+    },
+    {
+     "w": "dövülerek",
+     "t0": 19.724,
+     "t1": 20.544
+    },
+    {
+     "w": "incecik",
+     "t0": 20.544,
+     "t1": 21.604
+    },
+    {
+     "w": "bir",
+     "t0": 21.604,
+     "t1": 21.724
+    },
+    {
+     "w": "toz",
+     "t0": 21.724,
+     "t1": 22.124
+    },
+    {
+     "w": "haline",
+     "t0": 22.124,
+     "t1": 22.644
+    },
+    {
+     "w": "getirilirdi.",
+     "t0": 22.644,
+     "t1": 23.604
+    }
+   ],
+   "duyulan": "Bu sürme havanda dövülerek incecik bir toz haline getirilirdi."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Orta Çağ Latincesinde alcohol, çok ince toz anlamına geldi.",
+   "t0": 22.165,
+   "t1": 26.936,
+   "kelimeler": [
+    {
+     "w": "Ortaç",
+     "t0": 22.165,
+     "t1": 23.265
+    },
+    {
+     "w": "alet",
+     "t0": 23.265,
+     "t1": 23.745
+    },
+    {
+     "w": "incesinde",
+     "t0": 23.745,
+     "t1": 24.665
+    },
+    {
+     "w": "alkohol",
+     "t0": 24.665,
+     "t1": 25.765
+    },
+    {
+     "w": "çok",
+     "t0": 25.765,
+     "t1": 26.505
+    },
+    {
+     "w": "ince",
+     "t0": 26.505,
+     "t1": 27.185
+    },
+    {
+     "w": "toz",
+     "t0": 27.185,
+     "t1": 27.605
+    },
+    {
+     "w": "anlamına",
+     "t0": 27.605,
+     "t1": 28.305
+    },
+    {
+     "w": "geldi.",
+     "t0": 28.305,
+     "t1": 28.605
+    }
+   ],
+   "duyulan": "Ortaç alet incesinde alkohol çok ince toz anlamına geldi."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Simyacılar kelimeyi bir maddenin arıtılmış saf özü için kullandı.",
+   "t0": 27.286,
+   "t1": 32.137,
+   "kelimeler": [
+    {
+     "w": "Simyacılar",
+     "t0": 27.286,
+     "t1": 28.626
+    },
+    {
+     "w": "kelimeyi",
+     "t0": 28.626,
+     "t1": 29.826
+    },
+    {
+     "w": "bir",
+     "t0": 29.826,
+     "t1": 30.046
+    },
+    {
+     "w": "maddenin",
+     "t0": 30.046,
+     "t1": 30.906
+    },
+    {
+     "w": "arıtılmış",
+     "t0": 30.906,
+     "t1": 31.906
+    },
+    {
+     "w": "saf",
+     "t0": 31.906,
+     "t1": 32.506
+    },
+    {
+     "w": "özü",
+     "t0": 32.506,
+     "t1": 33.126
+    },
+    {
+     "w": "için",
+     "t0": 33.126,
+     "t1": 33.386
+    },
+    {
+     "w": "kullandı.",
+     "t0": 33.386,
+     "t1": 34.286
+    }
+   ],
+   "duyulan": "Simyacılar kelimeyi bir maddenin arıtılmış saf özü için kullandı."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "İngilizceye bu anlamla 1500'lerde girdi.",
+   "t0": 32.487,
+   "t1": 35.938,
+   "kelimeler": [
+    {
+     "w": "İngilizceye",
+     "t0": 32.487,
+     "t1": 33.987
+    },
+    {
+     "w": "bu",
+     "t0": 33.987,
+     "t1": 34.247
+    },
+    {
+     "w": "anlamla",
+     "t0": 34.247,
+     "t1": 35.107
+    },
+    {
+     "w": "1500",
+     "t0": 35.107,
+     "t1": 35.727
+    },
+    {
+     "w": "'lerde",
+     "t0": 35.727,
+     "t1": 36.567
+    },
+    {
+     "w": "girdi.",
+     "t0": 36.567,
+     "t1": 37.047
+    }
+   ],
+   "duyulan": "İngilizceye bu anlamla 1500 'lerde girdi."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Sonra şarabın özüne alcohol of wine dendi.",
+   "t0": 36.288,
+   "t1": 40.819,
+   "kelimeler": [
+    {
+     "w": "Sonra,",
+     "t0": 36.288,
+     "t1": 37.428
+    },
+    {
+     "w": "şarabın",
+     "t0": 37.888,
+     "t1": 38.788
+    },
+    {
+     "w": "özüne,",
+     "t0": 38.788,
+     "t1": 39.568
+    },
+    {
+     "w": "alkohol",
+     "t0": 40.068,
+     "t1": 41.108
+    },
+    {
+     "w": "of",
+     "t0": 41.108,
+     "t1": 41.388
+    },
+    {
+     "w": "wine",
+     "t0": 41.388,
+     "t1": 41.948
+    },
+    {
+     "w": "dendi.",
+     "t0": 41.948,
+     "t1": 42.608
+    }
+   ],
+   "duyulan": "Sonra, şarabın özüne, alkohol of wine dendi."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "1700'lerde kelime bugünkü alkol anlamına kavuştu.",
+   "t0": 41.169,
+   "t1": 45.66,
+   "kelimeler": [
+    {
+     "w": "1700",
+     "t0": 41.169,
+     "t1": 42.569
+    },
+    {
+     "w": "'lerde",
+     "t0": 42.569,
+     "t1": 43.189
+    },
+    {
+     "w": "kelime,",
+     "t0": 43.189,
+     "t1": 44.069
+    },
+    {
+     "w": "bugünkü",
+     "t0": 44.529,
+     "t1": 45.249
+    },
+    {
+     "w": "alkol",
+     "t0": 45.249,
+     "t1": 46.049
+    },
+    {
+     "w": "anlamına",
+     "t0": 46.049,
+     "t1": 46.769
+    },
+    {
+     "w": "kavuştu.",
+     "t0": 46.769,
+     "t1": 47.529
+    }
+   ],
+   "duyulan": "1700 'lerde kelime, bugünkü alkol anlamına kavuştu."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Göz kalemi anlamındaki kohl da aynı Arapça kelimeden gelir.",
+   "t0": 46.01,
+   "t1": 50.701,
+   "kelimeler": [
+    {
+     "w": "Göz",
+     "t0": 46.01,
+     "t1": 47.01
+    },
+    {
+     "w": "kalimi",
+     "t0": 47.01,
+     "t1": 47.53
+    },
+    {
+     "w": "anlamındaki",
+     "t0": 47.53,
+     "t1": 48.53
+    },
+    {
+     "w": "kol",
+     "t0": 48.53,
+     "t1": 49.15
+    },
+    {
+     "w": "da",
+     "t0": 49.15,
+     "t1": 49.57
+    },
+    {
+     "w": "aynı",
+     "t0": 49.57,
+     "t1": 50.51
+    },
+    {
+     "w": "Arapça",
+     "t0": 50.51,
+     "t1": 51.35
+    },
+    {
+     "w": "kelime",
+     "t0": 51.35,
+     "t1": 51.83
+    },
+    {
+     "w": "den",
+     "t0": 51.83,
+     "t1": 52.09
+    },
+    {
+     "w": "gelir.",
+     "t0": 52.09,
+     "t1": 52.47
+    }
+   ],
+   "duyulan": "Göz kalimi anlamındaki kol da aynı Arapça kelime den gelir."
+  },
+  {
+   "id": "s12",
+   "dil": "tr",
+   "metin": "Yani bir göz tozu, kimyanın en bilinen kelimelerinden biri oldu.",
+   "t0": 51.051,
+   "t1": 56.051,
+   "kelimeler": [
+    {
+     "w": "Yani",
+     "t0": 51.051,
+     "t1": 51.991
+    },
+    {
+     "w": "bir",
+     "t0": 51.991,
+     "t1": 52.271
+    },
+    {
+     "w": "göğs",
+     "t0": 52.271,
+     "t1": 52.811
+    },
+    {
+     "w": "tuzu",
+     "t0": 52.811,
+     "t1": 53.591
+    },
+    {
+     "w": "kimyağının",
+     "t0": 53.591,
+     "t1": 54.571
+    },
+    {
+     "w": "en",
+     "t0": 54.571,
+     "t1": 55.051
+    },
+    {
+     "w": "bilinen",
+     "t0": 55.051,
+     "t1": 55.771
+    },
+    {
+     "w": "kelimelerinden",
+     "t0": 55.771,
+     "t1": 56.871
+    },
+    {
+     "w": "biri",
+     "t0": 56.871,
+     "t1": 57.271
+    },
+    {
+     "w": "oldu.",
+     "t0": 57.271,
+     "t1": 57.691
+    }
+   ],
+   "duyulan": "Yani bir göğs tuzu kimyağının en bilinen kelimelerinden biri oldu."
+  },
+  {
+   "id": "s13",
+   "dil": "tr",
+   "metin": "Bir sonraki kelimede görüşmek üzere, ingilizcecim.com.",
+   "t0": 56.401,
+   "t1": 60.722,
+   "kelimeler": [
+    {
+     "w": "Bir",
+     "t0": 56.401,
+     "t1": 57.001
+    },
+    {
+     "w": "sonraki",
+     "t0": 57.001,
+     "t1": 57.701
+    },
+    {
+     "w": "kelime",
+     "t0": 57.701,
+     "t1": 58.241
+    },
+    {
+     "w": "de",
+     "t0": 58.241,
+     "t1": 58.421
+    },
+    {
+     "w": "görüşmek",
+     "t0": 58.421,
+     "t1": 59.081
+    },
+    {
+     "w": "üzere",
+     "t0": 59.081,
+     "t1": 59.761
+    },
+    {
+     "w": "ingilizcecim",
+     "t0": 59.761,
+     "t1": 61.281
+    },
+    {
+     "w": ".com",
+     "t0": 61.281,
+     "t1": 62.061
+    }
+   ],
+   "duyulan": "Bir sonraki kelime de görüşmek üzere ingilizcecim .com"
+  }
+ ],
+ "uyarilar": []
+}
