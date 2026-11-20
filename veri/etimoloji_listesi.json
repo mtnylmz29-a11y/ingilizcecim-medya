@@ -133,11 +133,32 @@
  },
  {
   "kelime": "alcohol",
-  "durum": "bekliyor",
+  "durum": "uretildi",
   "zemin_onerisi": "laboratuvar",
   "kesin": "Arapça al-kuhl: göze sürülen ince toz (sürme, antimon). Orta Çağ Latincesinde 'çok ince toz', 1500'lerde simyacılarda 'damıtılarak elde edilen öz'. 'Alcohol of wine' (şarabın özü) üzerinden 1700'lerde bugünkü anlam. İngilizcede 1540'lar.",
   "rivayet": "",
-  "gorsel_oneri": "Köken: carsi zemini, alim; dekor surme + goz; al-kuhl = göze sürülen ince toz. Değişim: laboratuvar zemini, ziplat imbik (damıtma), 'parilti' öz; duraklar Arapça al-kuhl → Orta Çağ Latincesi (ince toz) → simya 'öz' → İngilizce 1540'lar / bugünkü anlam 1700'ler. Harita isteğe bağlı (yalnızca kaynağın verdiği bölgeler: Arap dünyası → Avrupa). tema mor, stil isik, muzik gizemli."
+  "gorsel_oneri": "Köken: carsi zemini, alim; dekor surme + goz; al-kuhl = göze sürülen ince toz. Değişim: laboratuvar zemini, ziplat imbik (damıtma), 'parilti' öz; duraklar Arapça al-kuhl → Orta Çağ Latincesi (ince toz) → simya 'öz' → İngilizce 1540'lar / bugünkü anlam 1700'ler. Harita isteğe bağlı (yalnızca kaynağın verdiği bölgeler: Arap dünyası → Avrupa). tema mor, stil isik, muzik gizemli.",
+  "uretim_tarihi": "2026-11-22",
+  "uretim": "bulut",
+  "gorsel": {
+   "tema": "canli-sozluk-cizgi",
+   "stil": "canli-sozluk-cizgi",
+   "muzik": "bando",
+   "zeminler": [
+    "carsi",
+    "havan",
+    "simya",
+    "calisma-odasi",
+    "carsi"
+   ],
+   "olaylar": [
+    "surme",
+    "toz-bulutu",
+    "imbik",
+    "etiket"
+   ],
+   "harita": false
+  }
  },
  {
   "kelime": "robot",

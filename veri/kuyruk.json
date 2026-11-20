@@ -756,5 +756,29 @@
   "permalink": "https://www.instagram.com/reel/Df78RWICaci/",
   "yayin_saati": "2026-11-19 23:30 (TR)",
   "yayin_notu": "17:30 dilimi atlanmıştı; Metin'in isteğiyle (19 Kasım 23:29) elle yayınlandı."
+ },
+ {
+  "id": "2026-11-22-reels",
+  "tarih": "2026-11-22",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, canli-sozluk-cizgi; ses Gemini Kore)",
+  "film": "filmler/2026-11-22-alcohol",
+  "stil": "canli-sozluk-cizgi",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Alcohol",
+  "aciklama": "Alkol kelimesinin kökünde bir göz makyajı saklı! Arapçada al-kuḥl, göze sürülen ince siyah toz, yani sürme demekti. Orta Çağ Latincesinde alcohol \"çok ince toz\" anlamına geldi, simyacılar ise kelimeyi bir maddenin arıtılmış saf özü için kullandı; 1700'lerde bugünkü anlamına kavuştu. Göz kalemi anlamındaki kohl da aynı Arapça kelimeden geliyor. Sence Arapçadan İngilizceye geçen başka hangi kelimeler var?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #alcohol #kohl #ingilizcekelime #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e2f21da3f9581a1cffc20f49c82017c0d4f26b9c/gunler/2026-11-22/alcohol_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/e2f21da3f9581a1cffc20f49c82017c0d4f26b9c/gunler/2026-11-22/alcohol_etym_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e2f21da3f9581a1cffc20f49c82017c0d4f26b9c/gunler/2026-11-22/alcohol_etym_kapak.jpg",
+  "sure_sn": 56.6,
+  "kaynaklar": [
+   "https://www.etymonline.com/word/alcohol",
+   "https://www.merriam-webster.com/wordplay/words-from-arabic",
+   "https://www.etymonline.com/word/kohl"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]
