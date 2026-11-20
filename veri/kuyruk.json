@@ -809,16 +809,17 @@
    "https://test-english.com/explanation/b2/inversion-negative-adverbials/"
   ],
   "onerilen_dilim": "17:30",
-  "durum": "denetimde",
+  "durum": "onaylandi",
   "denetim_turu": 1,
   "denetim": {
    "denetci": "Denetmen",
-   "sonuc": "DUZELT",
-   "notlar": "Tek sorun: s10 'Only when da' → 'Only when de' (altyazı + ses). Bilgi, süre, boyut, görsel zenginlik, kapak, ses paraziti kontrolleri geçti.",
-   "zaman": "2026-11-20T13:52:00+03:00"
+   "sonuc": "GECTI",
+   "notlar": "Tur 2: s10 düzeltmesi doğrulandı — altyazı ≈41–43 sn 'Only after ve Only when de aynı kuralla çalışır.', s10 sesi yeniden üretilmiş (0f83248, okunuş 'wen de'). Dilbilgisi doğru: Not until/Only after/Only when başta → devrik ana cümlede (British Council, books4languages). 58,3 sn, 1080×1920, 42,8 MB, ses Gemini Kore (ticari), ses_kontrol temiz (13 satır). Görsel zenginlik: Zıpzıp + çalar saat karakterleri, istasyon/tren/bilet hikâyesi, ≥6 sahne. Kapak 1080×1920, başlık 'NOT UNTIL … did he?' okunaklı ve ortadaki 1080×1350 alanda. Açıklama yazımı temiz.",
+   "zaman": "2026-11-20T14:29:00+03:00"
   },
   "duzeltme_gecmisi": [
    "[Denetmen] 1) Türkçe ek hatası: s10 'Only after ve Only when da aynı kuralla çalışır.' → 'when' /wen/ diye okunur, son ünlü e: doğrusu 'Only when de'. Videoda altyazıda (≈39–43 sn) hâlâ 'when da' görünüyor (main.js'teki replace render'a yansımamış) ve okunus 'wen da' olduğu için ses de 'da' diyor. Düzeltme: ses.json s10 metin → 'Only after ve Only when de aynı kuralla çalışır.', okunus → 'Onli after ve Onli wen de aynı kuralla çalışır.'; main.js'teki replace satırı gereksizleşir. Lemo render asama=hepsi (yalnız s10 yeniden seslendirilir), sonra mp4/kareler/kapak adreslerini yeni sha ile güncelle. 2) Geri kalan her şey uygun: dilbilgisi doğru (British Council, books4languages), 58,5 sn, 1080×1920, 42,9 MB, ses_kontrol temiz, ≥6 sahne, Zıpzıp + çalar saat karakterleri, kapak iyi ve başlık 1080×1350 alanında; bunlara dokunma. || UYGULANDI 20 Kasım 14:25: ses.json s10 metin/okunus \"when de\"; main.js replace satırı kaldırıldı; Lemo render asama=hepsi (yalnız s10 yeniden seslendirildi, 0f83248). Altyazı ≈39–41,5 sn \"Only when de\", Whisper \"de\" duyuyor; ses_kontrol temiz; 58,3 sn, 1080×1920, 42,8 MB."
-  ]
+  ],
+  "onay": "otomatik (Denetmen, 2026-11-20T14:29:00+03:00)"
  }
 ]
