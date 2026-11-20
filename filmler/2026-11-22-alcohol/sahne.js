@@ -230,4 +230,8 @@ function donus(K) {
   } };
 }
 
-export default K => [carsi(K), havan(K), simya(K), calisma(K), donus(K)];
+// Actions'taki yazılım GPU'sunda (SwiftShader) bulanıklık filtreli suluboya çok yavaş: arka planlar düz guaj boyanır.
+export default K => {
+  K.wash = (pts, col, o = {}) => K.shape(pts, { fill: col, lw: o.lw ?? 3, line: o.line === false ? null : '#2A2927', boil: 0 });
+  return [carsi(K), havan(K), simya(K), calisma(K), donus(K)];
+};
