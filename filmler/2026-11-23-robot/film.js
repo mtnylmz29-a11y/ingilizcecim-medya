@@ -254,8 +254,6 @@ function scChain(t, u, d) { // kök zinciri kartı
     if (i < 3) { ln(300, y + 58, 300, y + 128, 3, P.gold); poly([[288, y + 116], [312, y + 116], [300, y + 134]], P.gold, 0); }
     G.restore();
   });
-  // shackle that breaks on the last row
-  const br = ss(seg(u, .72, .85)); G.save(); G.translate(780, 900); G.rotate(br * .5); ell(-26, 0, 26, 18, null, 6, P.l1); G.restore(); G.save(); G.translate(830, 900); G.rotate(-br * .5); ell(26, 0, 26, 18, null, 6, P.l1); G.restore();
 }
 
 function scPoster(t, u, d) { // Prag sokağı, afiş sütunu: R.U.R. 1921
@@ -506,7 +504,7 @@ window.render = t => {
 };
 
 (async () => {
-  Z = await (await fetch('ses/zaman.json')).json(); Z.satirlar.forEach(l => L[l.id] = l);
+  Z = await (await fetch('ses/zaman.json')).json(); Z.satirlar.forEach(l => { L[l.id] = l; const k = l.kelimeler || []; if (k.length) { const a = k[0].t0, b = k[k.length - 1].t1, f = (l.t1 - l.t0) / Math.max(.01, b - a); k.forEach(w => { w.t0 = l.t0 + (w.t0 - a) * f; w.t1 = l.t0 + (w.t1 - a) * f; }); } }); // kelime zamanlarini satirin ses suresine sigdir
   await document.fonts.load(`60px ${SERIF}`, 'ğşİıçüöÜÇŞĞČáíŭ'); await document.fonts.load(`italic 60px ${SERIF}`, 'ğşİıçüöÜÇŞĞČáíŭ'); await document.fonts.ready;
   makeHouse(); makeGrain(); buildScenes();
   window.DUR = FDUR();
