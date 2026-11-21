@@ -851,6 +851,13 @@
    "https://www.wordorigins.org/big-list-entries/robot"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde"
+  "durum": "onaylandi",
+  "onay": "otomatik (Denetmen, 2026-11-21T12:25:00+03:00)",
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "GECTI",
+   "notlar": "1080x1920, 24 fps, H.264+AAC, 59,6 sn, 22,7 MB. ses_kontrol.py: temiz (11 satır), seviye ortalama -17 dB / tepe -2,8 dB; Gemini Kore (ticari). 13 kare incelendi: silent-film sahne stili, 12+ farklı sahne (robot odası, Prag 1920 daktilo, Josef'in tuvali, robota tarlası, kökün yolculuğu rabŭ→robota→robot, R.U.R. afişi, sahnede yapay işçiler, ayaklanma, Londra 1923 gazetesi, fabrika, kapanış ingilizcecim.com); karakterler ve mimik var, kanca ilk 3 sn'de. Altyazı kelime kelime, yazım doğru, İngilizce örnek cümle + Türkçe çevirisi doğru. Bilgi doğrulandı (etymonline, wordorigins, NPR, Science Friday): Čapek R.U.R. 1920, Josef'in önerisi roboti, Çekçe robota 'angarya', Eski Slavca rabŭ 'köle', İngilizcede 1923; ilk robotlar insansı yapay işçiler. Kapak: ayaklanan robotlar sahnesi, 'KELİMELERİN TARİHÇESİ / Robot' başlığı okunaklı ve 1080x1350 orta alanda. Küçük not: 'Kökün yolculuğu' sahnesi açılışta seyrek, sorun değil.",
+   "zaman": "2026-11-21T12:25:00+03:00"
+  }
  }
 ]
