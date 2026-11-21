@@ -2,6 +2,13 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 21 Kasım 2026 — İÇERİK UYGUNLUĞU: 18 YAŞ ALTI VE EĞİTİM ORTAMI (Metin; değişmez kural, aşağıdakilerin hepsinden önce gelir)
+- Metin: "Alkol videosu eğitim içeriğine uygun değil. 18 yaş altı ve eğitim ortamına uygun olmayacak kelime ve içeriklerden uzak dur."
+- **Yasak konu/kelime/görsel**: alkol ve içki (şarap, bira, kokteyl, sarhoşluk, meyhane), sigara/tütün/vape, uyuşturucu ve keyif verici maddeler, kumar/bahis, cinsellik ve flört imaları, şiddet/cinayet/suikast/işkence/idam, silah, korku-vahşet, intihar/kendine zarar, küfür ve argo, siyasi/dinî tartışma. Kelimenin **kökeni ya da hikâyesi** bunlardan birine dayanıyorsa da (ör. alcohol, assassin, deadline) kelime seçilmez.
+- **Konu Bulucu / üreticiler**: Listeden sıradaki kelime bu kurala takılırsa atla, `etimoloji_listesi.json`'da `"durum": "iptal"` yap ve bir sonrakine geç. Örnek cümle, sahne, dekor ve açıklamada da bu öğeler kullanılmaz.
+- **Denetmen**: Bu kurala takılan her kayıt doğrudan **KALDI** → `"durum": "reddedildi"` (düzeltmeye gönderilmez, yayınlanmaz); Metin'e tek satır bildir.
+- 22 Kasım "Alcohol" Reels'i bu kural gereği iptal edildi (kuyrukta `2026-11-22-reels-iptal-alcohol`, reddedildi); yerine yeni kelimeyle video üretilir.
+
 ## GÜNCELLEME 18 Kasım 2026 (gece) — SINAV SORUSU BİÇİMİ: DENETİM İSTİSNASI VE SES KOTASI YEDEĞİ (Metin; aşağıdakilerin hepsinden önce gelir)
 - Metin: "Bu videoyu yeni bir biçim olarak yüklemesini söylemiştim. Ses kotamızın dolduğu yerde ses kullanmadan bu biçimde olduğu gibi seslendirmesiz soru videoları hazırlayabilirsin."
 - **Denetmen istisnası**: `"stil": "sinav-sorusu (remotion)"` olan kayıtlar "Görsel zenginlik standardı"ndan (karakter + hikâye + en az 5 sahne) **muaftır**. Bu biçim `sistem/VIDEO_SINAV.md` > "Kontrol (Editör)" maddelerine göre denetlenir: soru en fazla üç satır, balonlar tek satır, doğru şık ve gerekçeler doğru (en az 2 sözlükle), kapak başlığı okunaklı ve ortadaki 1080×1350 alanda, 1080×1920, 25–60 sn, <50 MB. Seslendirme yoktur ve beklenmez (müzik ve tik tak var mı, ona bakılır). Bu biçimde bir videoyu "karakter yok" gerekçesiyle KALDI saymak yanlıştır.
