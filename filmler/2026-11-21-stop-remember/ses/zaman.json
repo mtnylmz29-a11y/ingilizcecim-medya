@@ -1,0 +1,611 @@
+{
+ "dur": 55.638,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Kaptan Ece kahveyi mi bıraktı, yoksa kahve içmek için mi durdu?",
+   "t0": 0.4,
+   "t1": 4.971,
+   "kelimeler": [
+    {
+     "w": "Kaptanece",
+     "t0": 0.4,
+     "t1": 1.86
+    },
+    {
+     "w": "kahveyi",
+     "t0": 1.86,
+     "t1": 2.9
+    },
+    {
+     "w": "mi",
+     "t0": 2.9,
+     "t1": 3.02
+    },
+    {
+     "w": "bıraktı",
+     "t0": 3.02,
+     "t1": 3.84
+    },
+    {
+     "w": "yoksa",
+     "t0": 3.84,
+     "t1": 4.64
+    },
+    {
+     "w": "kahve",
+     "t0": 4.64,
+     "t1": 5.24
+    },
+    {
+     "w": "içmek",
+     "t0": 5.24,
+     "t1": 5.72
+    },
+    {
+     "w": "için",
+     "t0": 5.72,
+     "t1": 6.1
+    },
+    {
+     "w": "mi",
+     "t0": 6.1,
+     "t1": 6.38
+    },
+    {
+     "w": "durdu?",
+     "t0": 6.38,
+     "t1": 6.86
+    }
+   ],
+   "duyulan": "Kaptanece kahveyi mi bıraktı yoksa kahve içmek için mi durdu?"
+  },
+  {
+   "id": "s02",
+   "dil": "en",
+   "metin": "She stopped drinking coffee.",
+   "t0": 5.421,
+   "t1": 7.672,
+   "kelimeler": [
+    {
+     "w": "She",
+     "t0": 5.421,
+     "t1": 6.101
+    },
+    {
+     "w": "stopped",
+     "t0": 6.101,
+     "t1": 6.761
+    },
+    {
+     "w": "drinking",
+     "t0": 6.761,
+     "t1": 7.421
+    },
+    {
+     "w": "coffee.",
+     "t0": 7.421,
+     "t1": 8.081
+    }
+   ],
+   "duyulan": "She stopped drinking coffee."
+  },
+  {
+   "id": "s03",
+   "dil": "en",
+   "metin": "She stopped to drink coffee.",
+   "t0": 7.972,
+   "t1": 9.783,
+   "kelimeler": [
+    {
+     "w": "She",
+     "t0": 7.972,
+     "t1": 8.592
+    },
+    {
+     "w": "stopped",
+     "t0": 8.592,
+     "t1": 9.052
+    },
+    {
+     "w": "to",
+     "t0": 9.052,
+     "t1": 9.452
+    },
+    {
+     "w": "drink",
+     "t0": 9.452,
+     "t1": 9.692
+    },
+    {
+     "w": "coffee.",
+     "t0": 9.692,
+     "t1": 10.252
+    }
+   ],
+   "duyulan": "She stopped to drink coffee."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "İlki kahveyi bıraktı demek, ikincisi kahve içmek için durdu demek.",
+   "t0": 10.183,
+   "t1": 15.594,
+   "kelimeler": [
+    {
+     "w": "İlki",
+     "t0": 10.183,
+     "t1": 11.203
+    },
+    {
+     "w": "kahveyi",
+     "t0": 11.203,
+     "t1": 12.143
+    },
+    {
+     "w": "bıraktı",
+     "t0": 12.143,
+     "t1": 12.823
+    },
+    {
+     "w": "demek,",
+     "t0": 12.823,
+     "t1": 13.143
+    },
+    {
+     "w": "ikincisi",
+     "t0": 13.943,
+     "t1": 14.883
+    },
+    {
+     "w": "kahveyi",
+     "t0": 14.883,
+     "t1": 15.983
+    },
+    {
+     "w": "içmek",
+     "t0": 15.983,
+     "t1": 16.363
+    },
+    {
+     "w": "için",
+     "t0": 16.363,
+     "t1": 16.763
+    },
+    {
+     "w": "durdu",
+     "t0": 16.763,
+     "t1": 17.363
+    },
+    {
+     "w": "demek.",
+     "t0": 17.363,
+     "t1": 17.723
+    }
+   ],
+   "duyulan": "İlki kahveyi bıraktı demek, ikincisi kahveyi içmek için durdu demek."
+  },
+  {
+   "id": "s05",
+   "dil": "en",
+   "metin": "I remember locking the door.",
+   "t0": 16.194,
+   "t1": 18.514,
+   "kelimeler": [
+    {
+     "w": "I",
+     "t0": 16.194,
+     "t1": 16.774
+    },
+    {
+     "w": "remember",
+     "t0": 16.774,
+     "t1": 17.374
+    },
+    {
+     "w": "locking",
+     "t0": 17.374,
+     "t1": 18.214
+    },
+    {
+     "w": "the",
+     "t0": 18.214,
+     "t1": 18.554
+    },
+    {
+     "w": "door.",
+     "t0": 18.554,
+     "t1": 18.894
+    }
+   ],
+   "duyulan": "I remember locking the door."
+  },
+  {
+   "id": "s06",
+   "dil": "en",
+   "metin": "Remember to lock the door!",
+   "t0": 18.814,
+   "t1": 20.815,
+   "kelimeler": [
+    {
+     "w": "Remember",
+     "t0": 18.814,
+     "t1": 19.594
+    },
+    {
+     "w": "to",
+     "t0": 19.594,
+     "t1": 19.894
+    },
+    {
+     "w": "lock",
+     "t0": 19.894,
+     "t1": 20.214
+    },
+    {
+     "w": "the",
+     "t0": 20.214,
+     "t1": 20.514
+    },
+    {
+     "w": "door!",
+     "t0": 20.514,
+     "t1": 20.854
+    }
+   ],
+   "duyulan": "Remember to lock the door!"
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Remember ve ing geçmişi hatırlamak, remember ve to ise yapılacak işi unutmamaktır.",
+   "t0": 21.215,
+   "t1": 28.296,
+   "kelimeler": [
+    {
+     "w": "Remember",
+     "t0": 21.215,
+     "t1": 22.275
+    },
+    {
+     "w": "ve",
+     "t0": 22.275,
+     "t1": 22.835
+    },
+    {
+     "w": "INC",
+     "t0": 22.835,
+     "t1": 23.995
+    },
+    {
+     "w": "geçmişi",
+     "t0": 23.995,
+     "t1": 25.075
+    },
+    {
+     "w": "hatırlamak",
+     "t0": 25.075,
+     "t1": 26.415
+    },
+    {
+     "w": "Remember",
+     "t0": 26.415,
+     "t1": 26.955
+    },
+    {
+     "w": "ve",
+     "t0": 26.955,
+     "t1": 27.595
+    },
+    {
+     "w": "2",
+     "t0": 27.595,
+     "t1": 27.995
+    },
+    {
+     "w": "ise",
+     "t0": 27.995,
+     "t1": 28.495
+    },
+    {
+     "w": "yapılacak",
+     "t0": 28.495,
+     "t1": 29.555
+    },
+    {
+     "w": "işi",
+     "t0": 29.555,
+     "t1": 29.875
+    },
+    {
+     "w": "unutmamaktır.",
+     "t0": 29.875,
+     "t1": 31.155
+    }
+   ],
+   "duyulan": "Remember ve INC geçmişi hatırlamak Remember ve 2 ise yapılacak işi unutmamaktır."
+  },
+  {
+   "id": "s08",
+   "dil": "en",
+   "metin": "We regret to inform you that the launch is cancelled.",
+   "t0": 28.896,
+   "t1": 32.696,
+   "kelimeler": [
+    {
+     "w": "We",
+     "t0": 28.896,
+     "t1": 29.476
+    },
+    {
+     "w": "regret",
+     "t0": 29.476,
+     "t1": 30.056
+    },
+    {
+     "w": "to",
+     "t0": 30.056,
+     "t1": 30.476
+    },
+    {
+     "w": "inform",
+     "t0": 30.476,
+     "t1": 31.036
+    },
+    {
+     "w": "you",
+     "t0": 31.036,
+     "t1": 31.416
+    },
+    {
+     "w": "that",
+     "t0": 31.416,
+     "t1": 31.796
+    },
+    {
+     "w": "the",
+     "t0": 31.796,
+     "t1": 31.996
+    },
+    {
+     "w": "launch",
+     "t0": 31.996,
+     "t1": 32.476
+    },
+    {
+     "w": "is",
+     "t0": 32.476,
+     "t1": 32.916
+    },
+    {
+     "w": "cancelled.",
+     "t0": 32.916,
+     "t1": 33.576
+    }
+   ],
+   "duyulan": "We regret to inform you that the launch is cancelled."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Regret ve to üzülerek bildirmek, regret ve ing ise yaptığına pişman olmaktır.",
+   "t0": 33.096,
+   "t1": 39.737,
+   "kelimeler": [
+    {
+     "w": "Regret",
+     "t0": 33.096,
+     "t1": 34.256
+    },
+    {
+     "w": "ve",
+     "t0": 34.256,
+     "t1": 34.516
+    },
+    {
+     "w": "tu,",
+     "t0": 34.516,
+     "t1": 35.016
+    },
+    {
+     "w": "üzülerek",
+     "t0": 35.396,
+     "t1": 36.256
+    },
+    {
+     "w": "bildirmek,",
+     "t0": 36.256,
+     "t1": 37.296
+    },
+    {
+     "w": "Regret",
+     "t0": 37.696,
+     "t1": 38.576
+    },
+    {
+     "w": "ve",
+     "t0": 38.576,
+     "t1": 38.776
+    },
+    {
+     "w": "ayıncı",
+     "t0": 38.776,
+     "t1": 39.556
+    },
+    {
+     "w": "ise",
+     "t0": 39.556,
+     "t1": 39.976
+    },
+    {
+     "w": "yaptığını",
+     "t0": 39.976,
+     "t1": 40.856
+    },
+    {
+     "w": "pişman",
+     "t0": 40.856,
+     "t1": 41.556
+    },
+    {
+     "w": "olmaktır.",
+     "t0": 41.556,
+     "t1": 42.436
+    }
+   ],
+   "duyulan": "Regret ve tu, üzülerek bildirmek, Regret ve ayıncı ise yaptığını pişman olmaktır."
+  },
+  {
+   "id": "s10",
+   "dil": "en",
+   "metin": "Try restarting the engine.",
+   "t0": 40.337,
+   "t1": 42.537,
+   "kelimeler": [
+    {
+     "w": "Try",
+     "t0": 40.337,
+     "t1": 41.157
+    },
+    {
+     "w": "restarting",
+     "t0": 41.157,
+     "t1": 42.097
+    },
+    {
+     "w": "the",
+     "t0": 42.097,
+     "t1": 42.317
+    },
+    {
+     "w": "engine.",
+     "t0": 42.317,
+     "t1": 42.717
+    }
+   ],
+   "duyulan": "Try restarting the engine."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Try ve ing bir çözüm denemek, try ve to ise bir şeyi yapmaya çabalamaktır.",
+   "t0": 42.937,
+   "t1": 49.618,
+   "kelimeler": [
+    {
+     "w": "TRY",
+     "t0": 42.937,
+     "t1": 43.897
+    },
+    {
+     "w": "ve",
+     "t0": 43.897,
+     "t1": 44.057
+    },
+    {
+     "w": "AYNC",
+     "t0": 44.057,
+     "t1": 45.137
+    },
+    {
+     "w": "'i",
+     "t0": 45.137,
+     "t1": 45.337
+    },
+    {
+     "w": "bir",
+     "t0": 45.337,
+     "t1": 45.697
+    },
+    {
+     "w": "çözüm",
+     "t0": 45.697,
+     "t1": 46.337
+    },
+    {
+     "w": "denemek",
+     "t0": 46.337,
+     "t1": 47.157
+    },
+    {
+     "w": "TRY",
+     "t0": 47.887,
+     "t1": 48.417
+    },
+    {
+     "w": "ve",
+     "t0": 48.417,
+     "t1": 48.597
+    },
+    {
+     "w": "Tu",
+     "t0": 48.597,
+     "t1": 49.077
+    },
+    {
+     "w": "ise",
+     "t0": 49.077,
+     "t1": 49.657
+    },
+    {
+     "w": "bir",
+     "t0": 49.657,
+     "t1": 50.057
+    },
+    {
+     "w": "şey",
+     "t0": 50.057,
+     "t1": 50.357
+    },
+    {
+     "w": "yapmaya",
+     "t0": 50.357,
+     "t1": 51.017
+    },
+    {
+     "w": "çabalamaktır.",
+     "t0": 51.017,
+     "t1": 52.217
+    }
+   ],
+   "duyulan": "TRY ve AYNC 'i bir çözüm denemek TRY ve Tu ise bir şey yapmaya çabalamaktır."
+  },
+  {
+   "id": "s12",
+   "dil": "tr",
+   "metin": "Sen bugün neyi yapmayı unutmamalısın?",
+   "t0": 50.118,
+   "t1": 53.038,
+   "kelimeler": [
+    {
+     "w": "Sen",
+     "t0": 50.118,
+     "t1": 50.878
+    },
+    {
+     "w": "bugün",
+     "t0": 50.878,
+     "t1": 51.258
+    },
+    {
+     "w": "neyi",
+     "t0": 51.258,
+     "t1": 51.938
+    },
+    {
+     "w": "yapmayı",
+     "t0": 51.938,
+     "t1": 52.538
+    },
+    {
+     "w": "unutmamalısın?",
+     "t0": 52.538,
+     "t1": 53.858
+    }
+   ],
+   "duyulan": "Sen bugün neyi yapmayı unutmamalısın?"
+  }
+ ],
+ "uyarilar": []
+}
