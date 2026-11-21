@@ -162,11 +162,37 @@
  },
  {
   "kelime": "robot",
-  "durum": "bekliyor",
+  "durum": "uretildi",
   "zemin_onerisi": "tiyatro",
   "kesin": "Çek yazar Karel Čapek'in 1920'de yazdığı R.U.R. adlı oyun; Çekçe robota 'angarya, zorla çalıştırma'. Kelimeyi ona kardeşi Josef Čapek önerdi. İngilizcede 1923.",
   "rivayet": "",
-  "gorsel_oneri": "Köken: tiyatro zemini, 'perde' açılışı (metin R.U.R. · 1920); dekor daktilo (metin R.U.R.). Čapek çizilmez, yalnızca adı anılır. robota = angarya: kir zemini + isci. Değişim: fabrika zemini, robot kostüm; Çekçe → İngilizce 1923. tema yesil, stil harfler, muzik macera."
+  "gorsel_oneri": "Köken: tiyatro zemini, 'perde' açılışı (metin R.U.R. · 1920); dekor daktilo (metin R.U.R.). Čapek çizilmez, yalnızca adı anılır. robota = angarya: kir zemini + isci. Değişim: fabrika zemini, robot kostüm; Çekçe → İngilizce 1923. tema yesil, stil harfler, muzik macera.",
+  "uretim_tarihi": "2026-11-23",
+  "uretim": "bulut",
+  "gorsel": {
+   "tema": "sessiz-film",
+   "stil": "silent-film",
+   "muzik": "sinema-piyanosu",
+   "zeminler": [
+    "oda",
+    "prag-masa",
+    "atolye",
+    "tarla",
+    "tiyatro-sahnesi",
+    "sokak",
+    "fabrika"
+   ],
+   "olaylar": [
+    "daktilo",
+    "firca-yazi",
+    "damga",
+    "kok-zinciri",
+    "perde",
+    "donen-gazete",
+    "harita"
+   ],
+   "harita": true
+  }
  },
  {
   "kelime": "nice",
@@ -191,5 +217,53 @@
   "kesin": "Latince candidatus 'beyazlar giymiş' < candidus 'parlak beyaz'. Roma'da makam adayları tebeşirle beyazlatılmış toga (toga candida) giyerdi. İngilizcede 1600'ler.",
   "rivayet": "Beyazın 'dürüstlük' simgesi olduğu yorumu kesin değil.",
   "gorsel_oneri": "Köken: forum zemini, toga_candida; dekor tebesir + kursu; 'parilti' beyaz togada; candidus = parlak beyaz. Beyazın dürüstlük simgesi olduğu yorumu için damga KESİN DEĞİL. Değişim: Latince candidatus → İngilizce 1600'ler; son durak sehir + oy_sandigi. tema altin, stil isik, muzik neseli."
+ },
+ {
+  "kelime": "panic",
+  "durum": "bekliyor",
+  "zemin_onerisi": "yunan",
+  "kesin": "Yunanca panikos 'Pan'a ait' < Pan, kırların ve çobanların tanrısı; Fransızca panique üzerinden İngilizcede 1600'ler (önce sıfat, 'panic fear'), ad olarak 1700'ler.",
+  "rivayet": "Pan'ın ıssız yerlerde ani sesleriyle sürüleri ve yolcuları korkuttuğu anlatısı mitolojidir: 'efsaneye göre' diye anlat.",
+  "gorsel_oneri": "Köken: Arkadya kırları, çoban + sürü; çalılıktan ani ses, sürü kaçışır (EFSANEYE GÖRE damgası). Pan özgün, sevimli bir çizimle; Değişim: Yunanca panikos → Fransızca panique → İngilizce panic (1600'ler). Son: bugünün sınav salonunda 'panic' anı.",
+  "kaynaklar": [
+   "https://www.etymonline.com/word/panic",
+   "https://www.merriam-webster.com/wordplay/the-mythological-origin-of-panic"
+  ]
+ },
+ {
+  "kelime": "deadline",
+  "durum": "bekliyor",
+  "zemin_onerisi": "hapishane",
+  "kesin": "Amerikan İç Savaşı'nda (1864) Andersonville esir kampında, geçenin vurulacağı sınır çizgisi 'dead-line'. 1920'lerde gazetecilikte 'baskı için son teslim zamanı' anlamı.",
+  "rivayet": "",
+  "gorsel_oneri": "Köken: 1864 esir kampı, yerdeki çizgi (şiddet gösterilmez, yalnızca uyarı tabelası); Değişim: matbaa/gazete bürosu 1920'ler, saat ve baskı makinesi; Son: öğrencinin ödev teslim tarihi. Harita yok.",
+  "kaynaklar": [
+   "https://www.merriam-webster.com/wordplay/your-deadline-wont-kill-you",
+   "https://www.wordorigins.org/big-list-entries/deadline"
+  ]
+ },
+ {
+  "kelime": "tycoon",
+  "durum": "bekliyor",
+  "zemin_onerisi": "japonya",
+  "kesin": "Japonca taikun 'büyük efendi' (< Çince tai 'büyük' + kiun 'efendi'); 1850'lerde yabancılara Japon şogununu anlatan unvan. İngilizcede 1857; 1860'larda Lincoln'ün yardımcıları ona şakayla 'the Tycoon' dedi; 'iş dünyasının büyüğü' anlamı 1920'ler.",
+  "rivayet": "",
+  "gorsel_oneri": "Köken: Edo dönemi Japonya, şogun sarayı ve yabancı gemiler (1850'ler); Değişim: Washington, Lincoln'ün yardımcıları (Lincoln yüzü ayrıntılı çizilmez); Son: 1920'ler New York gökdelenleri, iş insanı. Harita: Japonya → ABD.",
+  "kaynaklar": [
+   "https://www.npr.org/sections/codeswitch/2013/10/14/232119964/the-history-of-how-a-shoguns-boast-made-lincoln-a-tycoon",
+   "https://wordhistories.net/2018/01/28/tycoon-origin/"
+  ]
+ },
+ {
+  "kelime": "sabotage",
+  "durum": "bekliyor",
+  "zemin_onerisi": "fabrika",
+  "kesin": "Fransızca saboter 'tahta takunyayla (sabot) gürültüyle yürümek; işi baştan savma yapmak' < sabot 'tahta ayakkabı'. İngilizcede 1907-1910 civarı, işçi eylemleri bağlamında.",
+  "rivayet": "İşçilerin makinelere takunya fırlatıp onları bozduğu hikâyesi yaygın ama kanıtlanmamış: 'rivayete göre' diye anlat.",
+  "gorsel_oneri": "Köken: Fransa'da arnavut kaldırımı, tahta takunyalı işçi (takırtı); Değişim: 1900'ler fabrikası, iş yavaşlatma; takunya-makine hikâyesi RİVAYETE GÖRE damgasıyla; Son: İngilizce sabotage (1910'lar).",
+  "kaynaklar": [
+   "https://www.etymonline.com/word/sabotage",
+   "https://www.wordorigins.org/big-list-entries/sabotage"
+  ]
  }
 ]
