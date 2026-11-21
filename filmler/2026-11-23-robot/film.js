@@ -410,8 +410,7 @@ function printPass(t, harsh = 0) {
   G.save(); G.globalCompositeOperation = 'multiply'; G.fillStyle = harsh ? '#e9e2d6' : '#f2dfbc'; G.fillRect(0, 0, SW, SH); G.restore();
   // flicker
   const fl = (hash(f * .71) - .5) * (.09 + harsh * .06); G.save(); G.fillStyle = fl > 0 ? `rgba(255,248,230,${fl})` : `rgba(20,12,6,${-fl})`; G.fillRect(0, 0, SW, SH); G.restore();
-  // grain
-  G.save(); G.globalCompositeOperation = 'overlay'; G.globalAlpha = .35 + harsh * .1; G.imageSmoothingEnabled = true; const gi = GRAIN[f % GRAIN.length]; const ox = hash(f * 1.3) * 40, oy = hash(f * 2.1) * 40; G.drawImage(gi, -ox, -oy, SW + 40, SH + 40); G.restore();
+  // grain yok: kare kare gren dosyayı 80 MB'a çıkarıyordu (sınır 50 MB)
   // scratches + dust
   G.save(); const ns = Math.floor(hash(f * .37) * (2.5 + harsh * 2)); for (let i = 0; i < ns; i++) { const x = hash(f * 3.3 + i * 9.1) * SW, y0 = hash(f * 5.1 + i) * SH * .5, len = 200 + hash(f + i * 4.4) * 700; G.strokeStyle = hash(i + f * .5) > .5 ? 'rgba(250,244,230,.55)' : 'rgba(25,16,10,.5)'; G.lineWidth = 1 + hash(i * 7 + f) * 1.5; G.beginPath(); G.moveTo(x, y0); G.lineTo(x + (hash(i + f * 9) - .5) * 6, y0 + len); G.stroke(); }
   for (let i = 0; i < 5; i++) { if (hash(f * 1.7 + i * 3.3) > .45) continue; G.fillStyle = 'rgba(20,12,6,.6)'; G.beginPath(); G.ellipse(hash(f + i * 11) * SW, hash(f * 2 + i * 13) * SH, 1.5 + hash(f + i) * 4, 1 + hash(f * 3 + i) * 3, hash(i + f), 0, TAU); G.fill(); }
