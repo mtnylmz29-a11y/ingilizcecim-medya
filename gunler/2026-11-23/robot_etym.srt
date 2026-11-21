@@ -1,0 +1,87 @@
+1
+00:00:00,400 --> 00:00:03,558
+Robot kelimesinin aslında angarya demek olduğunu
+
+2
+00:00:03,558 --> 00:00:04,611
+biliyor muydunuz?
+
+3
+00:00:04,861 --> 00:00:07,704
+1920'de Prag'da Karel Čapek yeni bir
+
+4
+00:00:07,704 --> 00:00:08,652
+oyun yazıyordu.
+
+5
+00:00:08,902 --> 00:00:12,552
+Kardeşi Josef, oyundaki yapay işçilere Çekçe
+
+6
+00:00:12,552 --> 00:00:15,593
+robota kelimesinden roboti adını önerdi.
+
+7
+00:00:15,893 --> 00:00:20,281
+Robota, köylülerin efendilerine yaptığı karşılıksız işti,
+
+8
+00:00:20,281 --> 00:00:21,744
+yani angarya.
+
+9
+00:00:21,994 --> 00:00:25,121
+Kökü, köle anlamına gelen eski Slav
+
+10
+00:00:25,121 --> 00:00:26,685
+kelimesi rab'a uzanır.
+
+11
+00:00:26,935 --> 00:00:30,903
+Oyunun adı R.U.R. oldu, yani Rossum'un
+
+12
+00:00:30,903 --> 00:00:32,226
+Evrensel Robotları.
+
+13
+00:00:32,476 --> 00:00:35,798
+Şaşırtıcıdır ki bu ilk robotlar metal
+
+14
+00:00:35,798 --> 00:00:38,567
+değil, insana benzeyen yapay işçilerdi.
+
+15
+00:00:38,817 --> 00:00:42,657
+Sonunda robotlar, onları yapan insanlara karşı
+
+16
+00:00:42,657 --> 00:00:43,297
+ayaklanır.
+
+17
+00:00:43,547 --> 00:00:47,688
+Kelime 1923'te İngilizceye geçti ve tüm
+
+18
+00:00:47,688 --> 00:00:49,068
+dünyaya yayıldı.
+
+19
+00:00:49,418 --> 00:00:51,862
+Today, robots do much of the
+
+20
+00:00:51,862 --> 00:00:53,898
+heavy work in modern factories.
+
+21
+00:00:54,248 --> 00:00:57,472
+Sizce bugünün robotları hâlâ angarya mı
+
+22
+00:00:57,472 --> 00:00:58,009
+yapıyor?
