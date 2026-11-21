@@ -897,5 +897,30 @@
       "zaman": "2026-11-21 13:49 (TSİ)",
       "notlar": "mp4 1080×1920, 24 fps, H.264+AAC, 55,96 sn, 15,7 MB, −14,0 LUFS. ses_kontrol.py: temiz (12 satır, parazit yok); ses Gemini Kore (ticari lisans). 13 kare incelendi: Kaptan Ece + robot + Zorp karakterleri, mimik değişimi; uzay üssü/atölye/kapı/mola sahneleri, 6+ farklı sahne ve renk teması; kelime kelime vurgulu altyazı, alt/üst güvenli alanlar temiz, yazı taşması yok (8,5 sn ve 19 sn'deki boş kutular giriş animasyonu, bir sonraki karede doluyor). Dilbilgisi British Council 'Verbs followed by -ing or infinitive to change meaning' ve VOA Learning English 'Verbs That Change with Gerunds and Infinitives' ile doğrulandı: stop+ing=bırakmak / stop+to=…için durmak; remember+ing=geçmişi hatırlamak / remember+to=yapılacak işi unutmamak; regret+to inform=üzülerek bildirmek / regret+ing=pişmanlık; try+ing=çözüm denemek / try+to=çabalamak — hepsi doğru. Türkçe/İngilizce yazım temiz. Kapak: dolu sahne (Ece kahveyle, roket, gezegenler), başlık '–ING mi, TO mu?' okunaklı ve ortadaki 1080×1350 alanda (y≈300–660). Sonda ingilizcecim.com kartı var."
     }
+  },
+  {
+    "id": "2026-11-22-reels",
+    "tarih": "2026-11-22",
+    "kademe": "ydt+yds",
+    "sinif": "YDT · YDS",
+    "bicim": "animasyon",
+    "uretim": "bulut (lemo-opuscar, woodcut; ses Gemini Kore)",
+    "film": "filmler/2026-11-22-nice",
+    "stil": "woodcut",
+    "seri": "kelimelerin-tarihcesi",
+    "baslik": "Kelimelerin Tarihçesi: Nice",
+    "aciklama": "Bugün birine \"nice\" demek iltifat, ama 700 yıl önce hakaret sayılırdı! Kelime Latince nescius'tan gelir: ne (değil) + scire (bilmek), yani \"bilmeyen, cahil\". Eski Fransızcada \"saf, aptal\" anlamıyla 1300'lerde İngilizceye geçti; 1500'lerde \"titiz, ince\" oldu (a nice distinction = ince bir ayrım) ve ancak 1700'lerde \"hoş, güzel\" anlamını kazandı. Sence bugün anlamı değişmekte olan bir kelime var mı?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #nice #ingilizcekelime #ingilizceöğren #latince",
+    "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/61e7ca1075f9ba918fcdf8c49b372d7f24349b98/gunler/2026-11-22/nice_etym.mp4",
+    "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/61e7ca1075f9ba918fcdf8c49b372d7f24349b98/gunler/2026-11-22/nice_etym_kareler.jpg",
+    "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/61e7ca1075f9ba918fcdf8c49b372d7f24349b98/gunler/2026-11-22/nice_etym_kapak.jpg",
+    "sure_sn": 58.4,
+    "kaynaklar": [
+      "https://www.etymonline.com/word/nice",
+      "https://www.merriam-webster.com/wordplay/words-that-used-to-mean-something-different",
+      "https://www.merriam-webster.com/dictionary/nice",
+      "https://www.wordorigins.org/big-list-entries/nice"
+    ],
+    "onerilen_dilim": "20:30",
+    "durum": "denetimde"
   }
 ]
