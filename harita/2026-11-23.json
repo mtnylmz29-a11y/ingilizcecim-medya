@@ -1,0 +1,184 @@
+{
+  "hafta": "2026-11-23/29",
+  "olusturan": "Konu Bulucu (KİP: TARAMA, 21 Kasım 2026)",
+  "not": "Önceki haritalardaki konular (devrik yapılar, mixed/devrik koşul, ettirgen, subjunctive, so/such that, used to, kısaltmalar, relative clauses, although/despite, past modals, kökler bene/dict/spect/duc/ced/vert/mit/scrib/chron/path, akademik fiiller seti 1, phrasal verb seti 1) tekrar edilmedi. Grammar/ayrım: 6 konu. 'dogrulandi': false olan istatistik teyitsiz paylaşılmaz. 16–22 Kasım haftası için harita dosyası yok.",
+  "konular": [
+    {
+      "tur": "ayrim",
+      "baslik": "wish / if only / would rather / it's (high) time",
+      "hedef": "ikisi",
+      "ozet": "Kural: şimdiki istek-pişmanlık → wish/if only + past simple; geçmiş pişmanlık → + past perfect; başkasının davranışı için şikâyet → wish + would. would rather + başka özne + past; it's (high) time + özne + past. Sık hata: 'I wish I know', 'It's time we leave'.",
+      "ornekler": [
+        "I wish I knew the answer. (şu an bilmiyorum)",
+        "If only I had studied harder last year.",
+        "I'd rather you didn't tell her.",
+        "It's high time we left."
+      ],
+      "kaynak": "dilbilgisi"
+    },
+    {
+      "tur": "grammar",
+      "baslik": "Future perfect vs. future continuous",
+      "hedef": "ikisi",
+      "ozet": "Kural: 'by + zaman' / 'by the time' ile o ana kadar tamamlanmış iş → will have V3; belli bir gelecek anda sürmekte olan iş → will be V-ing. 'By the time' yan cümlesinde will kullanılmaz. Sık hata: 'By 2030 they will finish it', 'by the time you will arrive'.",
+      "ornekler": [
+        "By the time you arrive, we will have finished dinner.",
+        "This time tomorrow I will be sitting the exam.",
+        "By the end of the year, she will have been working here for a decade."
+      ],
+      "kaynak": "dilbilgisi"
+    },
+    {
+      "tur": "ayrim",
+      "baslik": "if / in case / unless / provided that",
+      "hedef": "ikisi",
+      "ozet": "Kural: in case = 'olur da… diye' (önlem; olay olmasa da yapılır), if = koşul; unless = if … not (fiili olumlu kalır); provided/providing that = 'şartıyla'. Sık hata: in case'i if sanmak; 'Unless you don't hurry' (çift olumsuz); 'in case it will rain'.",
+      "ornekler": [
+        "Take an umbrella in case it rains.",
+        "Unless you hurry, you'll miss the bus.",
+        "You can borrow my car provided that you return it by Friday."
+      ],
+      "kaynak": "dilbilgisi"
+    },
+    {
+      "tur": "ayrim",
+      "baslik": "Gerund mi, infinitive mi? remember / stop / regret / try",
+      "hedef": "ikisi",
+      "ozet": "Kural: remember/forget + V-ing = geçmişte yapılanı; + to V = yapılacak işi. stop + V-ing = bırakmak; stop + to V = bir şey yapmak için durmak. regret + V-ing = yaptığına pişman; regret to inform/say = üzülerek bildirmek. try + V-ing = deneme/çözüm yolu; try + to V = çabalamak. Sık hata: 'stop to smoke'u 'sigarayı bırakmak' sanmak.",
+      "ornekler": [
+        "I remember locking the door. / Remember to lock the door.",
+        "He stopped smoking. / He stopped to smoke.",
+        "We regret to inform you that the flight is cancelled.",
+        "Try restarting the computer. / I tried to lift the box but couldn't."
+      ],
+      "kaynak": "dilbilgisi"
+    },
+    {
+      "tur": "grammar",
+      "baslik": "Haber fiilleriyle edilgen: It is said that… / He is said to have…",
+      "hedef": "ikisi",
+      "ozet": "Kural: It + be + said/believed/thought + that-cümlesi ↔ Özne + be + said + to V (aynı zaman) / to be V-ing (süren) / to have V3 (önceki zaman). Çeviri ve anlamca yakın sorularının klasiği. Sık hata: önceki zamanı 'to V' ile vermek ('He is said to live there last year').",
+      "ornekler": [
+        "It is believed that the painting was stolen. → The painting is believed to have been stolen.",
+        "He is said to be living abroad now.",
+        "The bridge is thought to have been built in the 12th century."
+      ],
+      "kaynak": "dilbilgisi"
+    },
+    {
+      "tur": "ayrim",
+      "baslik": "as / like",
+      "hedef": "ikisi",
+      "ozet": "Kural: as + isim = 'sıfatıyla, olarak' (gerçek rol); like + isim = 'gibi' (benzetme). Cümleden önce bağlaç olarak resmî dilde as kullanılır. Sık hata: 'As a child' (çocukken) ile 'like a child' (çocuk gibi) karışır.",
+      "ornekler": [
+        "As a teacher, I see this every day. (öğretmenim)",
+        "He talks like a teacher. (öğretmen değil)",
+        "Do as I say, not as I do."
+      ],
+      "kaynak": "dilbilgisi"
+    },
+    {
+      "tur": "tuzak",
+      "baslik": "Niceleyiciler: few / a few · little / a little · the number of / a number of",
+      "hedef": "ikisi",
+      "ozet": "few/a few sayılabilen, little/a little sayılamayan; 'a'sız biçim olumsuz (yetersiz), 'a'lı biçim olumlu (az ama var). The number of + çoğul isim + TEKİL fiil; a number of (= several) + ÇOĞUL fiil. Boşluk sorularında şık eleme için.",
+      "ornekler": [
+        "Few students passed, which was disappointing.",
+        "A few students passed, so not everyone failed.",
+        "The number of applicants has increased.",
+        "A number of applicants have complained."
+      ],
+      "kaynak": "dilbilgisi"
+    },
+    {
+      "tur": "tuzak",
+      "baslik": "Özne-fiil uyumu tuzakları: each · neither of · along with · not only…but also",
+      "hedef": "ikisi",
+      "ozet": "each/every + tekil fiil; neither/either of + çoğul isim → resmî dilde tekil fiil; 'along with / as well as / together with' fiili değiştirmez (asıl özneye bakılır); not only…but also / either…or / neither…nor → fiil yakın özneye uyar.",
+      "ornekler": [
+        "Each of the students has a book.",
+        "The teacher, along with her students, is attending.",
+        "Neither of the answers is correct.",
+        "Not only the students but also the teacher was late."
+      ],
+      "kaynak": "dilbilgisi"
+    },
+    {
+      "tur": "kok",
+      "baslik": "Latince 'güven/doğruluk' kökleri: cred · fid · ver",
+      "hedef": "ikisi",
+      "ozet": "cred = inanmak, fid = güvenmek, ver = doğru. Tuzak: incredible (inanılmaz) ≠ incredulous (inanmayan, şüpheci); diffident = kendine güvenmeyen.",
+      "ornekler": [
+        "cred: credible, credentials, incredulous",
+        "fid: confide, fidelity, diffident, bona fide",
+        "ver: verify, verdict, veracity"
+      ],
+      "kaynak": "etimoloji sözlükleri (Merriam-Webster, Etymonline)"
+    },
+    {
+      "tur": "kok",
+      "baslik": "Önekler: pre- · post- · inter- · trans- · sub- · super-",
+      "hedef": "ikisi",
+      "ozet": "pre = önce, post = sonra, inter = arası, trans = öte/karşıya, sub = alt/ardından, super = üst. Tuzak: subsequent 'sonraki' anlamındadır (sub- 'hemen ardından'); supersede = yerini almak.",
+      "ornekler": [
+        "precede, preliminary · postpone, posterity",
+        "intervene, interact · transmit, transient",
+        "subsequent, subordinate · supersede, superficial"
+      ],
+      "kaynak": "etimoloji sözlükleri (Merriam-Webster, Etymonline)"
+    },
+    {
+      "tur": "kelime",
+      "baslik": "Artırma/azaltma fiilleri: exacerbate ↔ alleviate · impede ↔ facilitate · foster · curb",
+      "hedef": "ikisi",
+      "ozet": "Okuma ve cloze'da yön belirleyen fiiller. exacerbate = aggravate/worsen; alleviate = relieve/ease; impede = hinder/hamper; facilitate = make easier; foster = promote/encourage; curb = restrain/limit. Eş-zıt eşleştirme kartı için uygun.",
+      "ornekler": [
+        "The drought exacerbated food shortages in the region.",
+        "The new drug alleviates pain within minutes.",
+        "Poor roads impede trade, while good ones facilitate it.",
+        "Measures to curb inflation were announced."
+      ],
+      "kaynak": "akademik kelime listeleri (Oxford 5000 / AWL)"
+    },
+    {
+      "tur": "kelime",
+      "baslik": "Phrasal verb'ler 2: come up with · look into · phase out · cut down on · turn down · put off",
+      "hedef": "ikisi",
+      "ozet": "Kelime ve anlamca yakın sorularında tek kelimelik eşleri sorulur: come up with = devise/propose; look into = investigate; phase out = gradually abolish; cut down on = reduce; turn down = reject; put off = postpone.",
+      "ornekler": [
+        "The committee came up with a new proposal.",
+        "The police are looking into the incident.",
+        "Many countries plan to phase out coal power gradually.",
+        "The meeting was put off until next week."
+      ],
+      "kaynak": "Cambridge / Oxford sözlükleri"
+    },
+    {
+      "tur": "istatistik",
+      "baslik": "2027 YDS tarihleri: YDS/1 28 Mart · YDS/2 21 Kasım",
+      "hedef": "yds",
+      "ozet": "ÖSYM 2027 takvimine göre 2027-YDS/1 28 Mart 2027 Pazar (sonuç 21 Nisan 2027), 2027-YDS/2 21 Kasım 2027 Pazar (sonuç 10 Aralık 2027). Not: 2026-YDS/2 22 Kasım 2026'da (bu pazar) yapılıyor; sonuç 10 Aralık 2026 — haftanın başında 'sınav bitti, sıradaki YDS/1' paylaşımı için uygun.",
+      "ornekler": [],
+      "kaynak": "ÖSYM 2027 Yılı Sınav Takvimi (28 Ekim 2026); haber: https://www.milligazete.com.tr/2027-yds-ne-zaman-basvurular-hangi-tarihte-yds1-yds2-yokdil-sinav-gec-basvuru-ve-sonuc-tarihleri — paylaşımdan önce osym.gov.tr takviminden teyit",
+      "dogrulandi": true
+    },
+    {
+      "tur": "istatistik",
+      "baslik": "2027-YKS: TYT 19 Haziran, AYT ve YDT 20 Haziran; başvuru 4 Şubat–2 Mart",
+      "hedef": "ydt",
+      "ozet": "YKS 19–20 Haziran 2027; YDT 20 Haziran 2027 Pazar (AYT ile aynı gün). Başvuru 4 Şubat–2 Mart 2027, geç başvuru 16–18 Mart 2027, sonuçlar 21 Temmuz 2027. 'YDT'ye kaç gün kaldı' geri sayım paylaşımı için uygun.",
+      "ornekler": [],
+      "kaynak": "https://osym.gov.tr/yks-19-20-haziran-2027de-yapilacak ; geç başvuru: https://www.egitim.net.tr/amp/sinav/osym-sinav-takvimi-yks-kpss-msu-ags-dgs-ales-tarihleri-18165h",
+      "dogrulandi": true
+    },
+    {
+      "tur": "istatistik",
+      "baslik": "2027'de 12 e-YDS oturumu; ilk İngilizce e-YDS 16 Ocak 2027",
+      "hedef": "yds",
+      "ozet": "ÖSYM 2027 takviminde 12 e-YDS (tüm diller), 3 e-YÖKDİL, 4 e-TEP oturumu var. İngilizce e-YDS'nin ilk oturumu 16 Ocak 2027; e-YDS 2027/2 İngilizce 6 Şubat 2027 (başvuru 20–28 Ocak). Basılı YDS'yi beklemek istemeyenler için bilgi kartı.",
+      "ornekler": [],
+      "kaynak": "https://osym.gov.tr/yks-19-20-haziran-2027de-yapilacak ; tarih: milligazete.com.tr ve yenibakishaber.com (ÖSYM takvimi haberleri) — tarihler paylaşımdan önce osym.gov.tr'den teyit",
+      "dogrulandi": false
+    }
+  ]
+}
