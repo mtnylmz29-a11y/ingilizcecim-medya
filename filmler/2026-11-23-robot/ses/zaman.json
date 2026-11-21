@@ -1,5 +1,5 @@
 {
- "dur": 74.87,
+ "dur": 60.409,
  "satirlar": [
   {
    "id": "s01",
@@ -16,16 +16,16 @@
     {
      "w": "kelimesinin",
      "t0": 1.04,
-     "t1": 2.22
+     "t1": 2.2
     },
     {
      "w": "aslında",
-     "t0": 2.22,
-     "t1": 2.84
+     "t0": 2.2,
+     "t1": 2.86
     },
     {
      "w": "Angarya",
-     "t0": 2.84,
+     "t0": 2.86,
      "t1": 4.0
     },
     {
@@ -36,11 +36,11 @@
     {
      "w": "olduğunu",
      "t0": 4.34,
-     "t1": 4.94
+     "t1": 4.92
     },
     {
      "w": "biliyor",
-     "t0": 4.94,
+     "t0": 4.92,
      "t1": 5.44
     },
     {
@@ -54,314 +54,219 @@
   {
    "id": "s02",
    "dil": "tr",
-   "metin": "Yıl 1920, Prag'da Karel Čapek adlı bir yazar yeni bir oyun yazıyordu.",
-   "t0": 4.961,
-   "t1": 11.532,
+   "metin": "1920'de Prag'da Karel Čapek yeni bir oyun yazıyordu.",
+   "t0": 4.861,
+   "t1": 8.652,
    "kelimeler": [
     {
-     "w": "Yıl",
-     "t0": 4.961,
-     "t1": 5.961
+     "w": "1920'de",
+     "t0": 4.941,
+     "t1": 6.181
     },
     {
-     "w": "1920,",
-     "t0": 5.961,
+     "w": "Prague'da",
+     "t0": 6.181,
      "t1": 7.361
     },
     {
-     "w": "Prak'da",
-     "t0": 8.501,
-     "t1": 9.461
-    },
-    {
      "w": "Karel",
-     "t0": 9.461,
-     "t1": 10.201
+     "t0": 7.361,
+     "t1": 8.121
     },
     {
      "w": "Çapek",
-     "t0": 10.201,
-     "t1": 10.941
-    },
-    {
-     "w": "adlı",
-     "t0": 10.941,
-     "t1": 11.441
-    },
-    {
-     "w": "bir",
-     "t0": 11.441,
-     "t1": 11.661
-    },
-    {
-     "w": "yazar",
-     "t0": 11.661,
-     "t1": 12.401
+     "t0": 8.121,
+     "t1": 8.741
     },
     {
      "w": "yeni",
-     "t0": 12.401,
-     "t1": 12.701
+     "t0": 8.741,
+     "t1": 9.281
     },
     {
      "w": "bir",
-     "t0": 12.701,
-     "t1": 12.981
+     "t0": 9.281,
+     "t1": 9.581
     },
     {
      "w": "oyun",
-     "t0": 12.981,
-     "t1": 13.281
+     "t0": 9.581,
+     "t1": 9.961
     },
     {
      "w": "yazıyordu.",
-     "t0": 13.281,
-     "t1": 14.321
+     "t0": 9.961,
+     "t1": 10.901
     }
    ],
-   "duyulan": "Yıl 1920, Prak'da Karel Çapek adlı bir yazar yeni bir oyun yazıyordu."
-  },
-  {
-   "id": "s03",
-   "dil": "tr",
-   "metin": "Oyunda fabrikada üretilen yapay işçiler vardı ama onlara bir ad gerekiyordu.",
-   "t0": 11.782,
-   "t1": 17.233,
-   "kelimeler": [
-    {
-     "w": "Oyunda",
-     "t0": 11.782,
-     "t1": 12.922
-    },
-    {
-     "w": "fabrikada",
-     "t0": 12.922,
-     "t1": 13.902
-    },
-    {
-     "w": "üretilen",
-     "t0": 13.902,
-     "t1": 14.662
-    },
-    {
-     "w": "yapay",
-     "t0": 14.662,
-     "t1": 15.222
-    },
-    {
-     "w": "işçiler",
-     "t0": 15.222,
-     "t1": 15.922
-    },
-    {
-     "w": "vardı",
-     "t0": 15.922,
-     "t1": 16.442
-    },
-    {
-     "w": "ama",
-     "t0": 16.442,
-     "t1": 17.262
-    },
-    {
-     "w": "onlara",
-     "t0": 17.262,
-     "t1": 18.002
-    },
-    {
-     "w": "bir",
-     "t0": 18.002,
-     "t1": 18.242
-    },
-    {
-     "w": "at",
-     "t0": 18.242,
-     "t1": 18.542
-    },
-    {
-     "w": "gerekiyordu.",
-     "t0": 18.542,
-     "t1": 19.542
-    }
-   ],
-   "duyulan": "Oyunda fabrikada üretilen yapay işçiler vardı ama onlara bir at gerekiyordu."
+   "duyulan": "1920'de Prague'da Karel Çapek yeni bir oyun yazıyordu."
   },
   {
    "id": "s04",
    "dil": "tr",
-   "metin": "Ressam kardeşi Josef, Çekçedeki robota kelimesinden yola çıkarak roboti adını önerdi.",
-   "t0": 17.483,
-   "t1": 23.934,
+   "metin": "Kardeşi Josef, oyundaki yapay işçilere Çekçe robota kelimesinden roboti adını önerdi.",
+   "t0": 8.902,
+   "t1": 15.593,
    "kelimeler": [
     {
-     "w": "Ressam",
-     "t0": 17.483,
-     "t1": 18.463
+     "w": "Kardeşi",
+     "t0": 8.902,
+     "t1": 10.142
     },
     {
-     "w": "kardeşi",
-     "t0": 18.463,
-     "t1": 19.403
+     "w": "Yozef,",
+     "t0": 10.142,
+     "t1": 11.182
     },
     {
-     "w": "Yosef,",
-     "t0": 19.403,
-     "t1": 20.283
+     "w": "oyundaki",
+     "t0": 11.202,
+     "t1": 12.022
     },
     {
-     "w": "Çekçe'deki",
-     "t0": 20.643,
-     "t1": 21.523
+     "w": "yapay",
+     "t0": 12.022,
+     "t1": 12.642
+    },
+    {
+     "w": "işçilere,",
+     "t0": 12.642,
+     "t1": 13.502
+    },
+    {
+     "w": "çekçe",
+     "t0": 13.882,
+     "t1": 14.422
     },
     {
      "w": "robota",
-     "t0": 21.523,
-     "t1": 22.123
+     "t0": 14.422,
+     "t1": 15.122
     },
     {
      "w": "kelimesinden",
-     "t0": 22.123,
-     "t1": 23.243
+     "t0": 15.122,
+     "t1": 16.262
     },
     {
-     "w": "yola",
-     "t0": 23.243,
-     "t1": 23.723
-    },
-    {
-     "w": "çıkarak",
-     "t0": 23.723,
-     "t1": 24.343
-    },
-    {
-     "w": "robote",
-     "t0": 24.343,
-     "t1": 25.423
+     "w": "roboti",
+     "t0": 16.262,
+     "t1": 17.282
     },
     {
      "w": "adını",
-     "t0": 25.423,
-     "t1": 25.923
+     "t0": 17.282,
+     "t1": 17.782
     },
     {
      "w": "önerdi.",
-     "t0": 25.923,
-     "t1": 26.683
+     "t0": 17.782,
+     "t1": 18.542
     }
    ],
-   "duyulan": "Ressam kardeşi Yosef, Çekçe'deki robota kelimesinden yola çıkarak robote adını önerdi."
+   "duyulan": "Kardeşi Yozef, oyundaki yapay işçilere, çekçe robota kelimesinden roboti adını önerdi."
   },
   {
    "id": "s05",
    "dil": "tr",
-   "metin": "Robota, köylülerin efendileri için karşılıksız yaptığı zorunlu işti, yani angarya.",
-   "t0": 24.234,
-   "t1": 30.525,
+   "metin": "Robota, köylülerin efendilerine yaptığı karşılıksız işti, yani angarya.",
+   "t0": 15.893,
+   "t1": 21.744,
    "kelimeler": [
     {
-     "w": "Robota",
-     "t0": 24.234,
-     "t1": 25.434
+     "w": "Robota,",
+     "t0": 15.893,
+     "t1": 17.013
     },
     {
      "w": "köylülerin",
-     "t0": 25.434,
-     "t1": 26.554
+     "t0": 17.573,
+     "t1": 18.673
     },
     {
-     "w": "efendileri",
-     "t0": 26.554,
-     "t1": 27.574
-    },
-    {
-     "w": "için",
-     "t0": 27.574,
-     "t1": 28.014
-    },
-    {
-     "w": "karşılıksız",
-     "t0": 28.014,
-     "t1": 29.254
+     "w": "efendilerine",
+     "t0": 18.673,
+     "t1": 19.853
     },
     {
      "w": "yaptığı",
-     "t0": 29.254,
-     "t1": 29.934
+     "t0": 19.853,
+     "t1": 20.533
     },
     {
-     "w": "zorunlu",
-     "t0": 29.934,
-     "t1": 30.674
+     "w": "karşılıksız",
+     "t0": 20.533,
+     "t1": 21.733
     },
     {
-     "w": "işti,",
-     "t0": 30.674,
-     "t1": 31.174
+     "w": "işti.",
+     "t0": 21.733,
+     "t1": 22.253
     },
     {
-     "w": "yani",
-     "t0": 31.654,
-     "t1": 32.174
+     "w": "Yani",
+     "t0": 22.713,
+     "t1": 23.233
     },
     {
      "w": "Angarya.",
-     "t0": 32.174,
-     "t1": 33.134
+     "t0": 23.233,
+     "t1": 24.133
     }
    ],
-   "duyulan": "Robota köylülerin efendileri için karşılıksız yaptığı zorunlu işti, yani Angarya."
+   "duyulan": "Robota, köylülerin efendilerine yaptığı karşılıksız işti. Yani Angarya."
   },
   {
    "id": "s06",
    "dil": "tr",
    "metin": "Kökü, köle anlamına gelen eski Slav kelimesi rab'a uzanır.",
-   "t0": 30.775,
-   "t1": 35.466,
+   "t0": 21.994,
+   "t1": 26.685,
    "kelimeler": [
     {
      "w": "Kökü,",
-     "t0": 30.775,
-     "t1": 31.875
+     "t0": 21.994,
+     "t1": 23.094
     },
     {
      "w": "köle",
-     "t0": 32.275,
-     "t1": 32.655
+     "t0": 23.494,
+     "t1": 23.874
     },
     {
      "w": "anlamına",
-     "t0": 32.655,
-     "t1": 33.335
+     "t0": 23.874,
+     "t1": 24.554
     },
     {
      "w": "gelen",
-     "t0": 33.335,
-     "t1": 33.735
+     "t0": 24.554,
+     "t1": 24.954
     },
     {
      "w": "eski",
-     "t0": 33.735,
-     "t1": 34.595
+     "t0": 24.954,
+     "t1": 25.814
     },
     {
      "w": "slav",
-     "t0": 34.595,
-     "t1": 35.195
+     "t0": 25.814,
+     "t1": 26.414
     },
     {
      "w": "kelimesi",
-     "t0": 35.195,
-     "t1": 36.135
+     "t0": 26.414,
+     "t1": 27.354
     },
     {
      "w": "raba",
-     "t0": 36.135,
-     "t1": 36.615
+     "t0": 27.354,
+     "t1": 27.834
     },
     {
      "w": "uzanır.",
-     "t0": 36.615,
-     "t1": 37.355
+     "t0": 27.834,
+     "t1": 28.574
     }
    ],
    "duyulan": "Kökü, köle anlamına gelen eski slav kelimesi raba uzanır."
@@ -370,63 +275,63 @@
    "id": "s07",
    "dil": "tr",
    "metin": "Oyunun adı R.U.R. oldu, yani Rossum'un Evrensel Robotları.",
-   "t0": 35.816,
-   "t1": 41.107,
+   "t0": 26.935,
+   "t1": 32.226,
    "kelimeler": [
     {
      "w": "Oyunun",
-     "t0": 35.816,
-     "t1": 36.796
+     "t0": 26.935,
+     "t1": 27.915
     },
     {
      "w": "adı",
-     "t0": 36.796,
-     "t1": 37.516
+     "t0": 27.915,
+     "t1": 28.635
     },
     {
      "w": "R",
-     "t0": 37.516,
-     "t1": 37.836
+     "t0": 28.635,
+     "t1": 28.955
     },
     {
      "w": "-U",
-     "t0": 37.836,
-     "t1": 38.156
+     "t0": 28.955,
+     "t1": 29.275
     },
     {
      "w": "-R",
-     "t0": 38.156,
-     "t1": 38.596
+     "t0": 29.275,
+     "t1": 29.715
     },
     {
      "w": "oldu.",
-     "t0": 38.596,
-     "t1": 39.116
+     "t0": 29.715,
+     "t1": 30.235
     },
     {
      "w": "Yani",
-     "t0": 39.376,
-     "t1": 39.956
+     "t0": 30.495,
+     "t1": 31.075
     },
     {
      "w": "Rossum",
-     "t0": 39.956,
-     "t1": 41.236
+     "t0": 31.075,
+     "t1": 32.355
     },
     {
      "w": "'un",
-     "t0": 41.236,
-     "t1": 41.436
+     "t0": 32.355,
+     "t1": 32.555
     },
     {
      "w": "evrensel",
-     "t0": 41.436,
-     "t1": 42.396
+     "t0": 32.555,
+     "t1": 33.515
     },
     {
      "w": "robotları.",
-     "t0": 42.396,
-     "t1": 43.296
+     "t0": 33.515,
+     "t1": 34.415
     }
    ],
    "duyulan": "Oyunun adı R -U -R oldu. Yani Rossum 'un evrensel robotları."
@@ -434,274 +339,229 @@
   {
    "id": "s08",
    "dil": "tr",
-   "metin": "Şaşırtıcı olan şu ki, bu ilk robotlar metal değil, yapay maddeden yapılmış, insana benzeyen işçilerdi.",
-   "t0": 41.407,
-   "t1": 49.058,
+   "metin": "Şaşırtıcıdır ki bu ilk robotlar metal değil, insana benzeyen yapay işçilerdi.",
+   "t0": 32.476,
+   "t1": 38.567,
    "kelimeler": [
     {
-     "w": "Şaşırtıcı",
-     "t0": 41.407,
-     "t1": 42.787
-    },
-    {
-     "w": "olan",
-     "t0": 42.787,
-     "t1": 43.227
-    },
-    {
-     "w": "şu",
-     "t0": 43.227,
-     "t1": 43.607
+     "w": "Şaşırtıcıdır",
+     "t0": 32.476,
+     "t1": 34.076
     },
     {
      "w": "ki",
-     "t0": 43.607,
-     "t1": 43.907
+     "t0": 34.076,
+     "t1": 34.396
     },
     {
      "w": "bu",
-     "t0": 43.907,
-     "t1": 44.607
+     "t0": 34.396,
+     "t1": 34.836
     },
     {
      "w": "ilk",
-     "t0": 44.607,
-     "t1": 45.067
+     "t0": 34.836,
+     "t1": 35.396
     },
     {
      "w": "robotlar",
-     "t0": 45.067,
-     "t1": 46.087
+     "t0": 35.396,
+     "t1": 36.436
     },
     {
      "w": "metal",
-     "t0": 46.087,
-     "t1": 46.747
+     "t0": 36.436,
+     "t1": 37.016
     },
     {
-     "w": "değil",
-     "t0": 46.747,
-     "t1": 47.287
-    },
-    {
-     "w": "yapay",
-     "t0": 47.287,
-     "t1": 48.287
-    },
-    {
-     "w": "maddeden",
-     "t0": 48.287,
-     "t1": 49.067
-    },
-    {
-     "w": "yapılmış",
-     "t0": 49.067,
-     "t1": 49.907
+     "w": "değil,",
+     "t0": 37.016,
+     "t1": 37.516
     },
     {
      "w": "insana",
-     "t0": 49.907,
-     "t1": 50.767
+     "t0": 38.056,
+     "t1": 38.796
     },
     {
-     "w": "benziyen",
-     "t0": 50.767,
-     "t1": 51.487
+     "w": "benzeyen",
+     "t0": 38.796,
+     "t1": 39.676
+    },
+    {
+     "w": "yapay",
+     "t0": 39.676,
+     "t1": 40.236
     },
     {
      "w": "işçilerdi.",
-     "t0": 51.487,
-     "t1": 52.507
+     "t0": 40.236,
+     "t1": 41.196
     }
    ],
-   "duyulan": "Şaşırtıcı olan şu ki bu ilk robotlar metal değil yapay maddeden yapılmış insana benziyen işçilerdi."
+   "duyulan": "Şaşırtıcıdır ki bu ilk robotlar metal değil, insana benzeyen yapay işçilerdi."
   },
   {
    "id": "s09",
    "dil": "tr",
-   "metin": "Oyunun sonunda robotlar, onları yapan insanlara karşı ayaklanır.",
-   "t0": 49.308,
-   "t1": 54.879,
+   "metin": "Sonunda robotlar, onları yapan insanlara karşı ayaklanır.",
+   "t0": 38.817,
+   "t1": 43.297,
    "kelimeler": [
     {
-     "w": "Oyunun",
-     "t0": 49.308,
-     "t1": 50.848
-    },
-    {
-     "w": "sonunda",
-     "t0": 50.848,
-     "t1": 51.648
+     "w": "Sonunda",
+     "t0": 38.817,
+     "t1": 39.857
     },
     {
      "w": "robotlar",
-     "t0": 51.648,
-     "t1": 52.868
+     "t0": 39.857,
+     "t1": 40.877
     },
     {
      "w": "onları",
-     "t0": 52.868,
-     "t1": 53.888
+     "t0": 40.877,
+     "t1": 41.797
     },
     {
      "w": "yapan",
-     "t0": 53.888,
-     "t1": 54.408
+     "t0": 41.797,
+     "t1": 42.237
     },
     {
      "w": "insanlara",
-     "t0": 54.408,
-     "t1": 55.508
+     "t0": 42.237,
+     "t1": 43.177
     },
     {
      "w": "karşı",
-     "t0": 55.508,
-     "t1": 56.048
+     "t0": 43.177,
+     "t1": 43.677
     },
     {
      "w": "ayaklanır.",
-     "t0": 56.048,
-     "t1": 57.228
+     "t0": 43.677,
+     "t1": 44.817
     }
    ],
-   "duyulan": "Oyunun sonunda robotlar onları yapan insanlara karşı ayaklanır."
+   "duyulan": "Sonunda robotlar onları yapan insanlara karşı ayaklanır."
   },
   {
    "id": "s10",
    "dil": "tr",
-   "metin": "Oyun 1923'te İngilizceye çevrildi ve robot kelimesi tüm dünyaya yayıldı.",
-   "t0": 55.179,
-   "t1": 61.859,
+   "metin": "Kelime 1923'te İngilizceye geçti ve tüm dünyaya yayıldı.",
+   "t0": 43.547,
+   "t1": 49.068,
    "kelimeler": [
     {
-     "w": "Oyun",
-     "t0": 55.179,
-     "t1": 55.979
+     "w": "Kilime",
+     "t0": 43.547,
+     "t1": 44.567
     },
     {
      "w": "1923'de",
-     "t0": 55.979,
-     "t1": 58.059
+     "t0": 44.567,
+     "t1": 46.767
     },
     {
-     "w": "İngilizceye",
-     "t0": 58.059,
-     "t1": 59.159
+     "w": "İngilizce",
+     "t0": 46.767,
+     "t1": 47.627
     },
     {
-     "w": "çevrildi",
-     "t0": 59.159,
-     "t1": 60.479
+     "w": "'ye",
+     "t0": 47.627,
+     "t1": 47.807
+    },
+    {
+     "w": "geçti",
+     "t0": 47.807,
+     "t1": 48.447
     },
     {
      "w": "ve",
-     "t0": 60.479,
-     "t1": 60.639
-    },
-    {
-     "w": "robot",
-     "t0": 60.639,
-     "t1": 61.119
-    },
-    {
-     "w": "kelimesi",
-     "t0": 61.119,
-     "t1": 62.139
+     "t0": 48.447,
+     "t1": 49.107
     },
     {
      "w": "tüm",
-     "t0": 62.139,
-     "t1": 62.719
+     "t0": 49.107,
+     "t1": 49.687
     },
     {
      "w": "dünyaya",
-     "t0": 62.719,
-     "t1": 63.499
+     "t0": 49.687,
+     "t1": 50.467
     },
     {
      "w": "yayıldı.",
-     "t0": 63.499,
-     "t1": 64.199
+     "t0": 50.467,
+     "t1": 51.047
     }
    ],
-   "duyulan": "Oyun 1923'de İngilizceye çevrildi ve robot kelimesi tüm dünyaya yayıldı."
-  },
-  {
-   "id": "s11",
-   "dil": "en",
-   "metin": "Robot.",
-   "t0": 62.209,
-   "t1": 63.429,
-   "kelimeler": [
-    {
-     "w": "Robot",
-     "t0": 62.209,
-     "t1": 63.209
-    }
-   ],
-   "duyulan": "Robot"
+   "duyulan": "Kilime 1923'de İngilizce 'ye geçti ve tüm dünyaya yayıldı."
   },
   {
    "id": "s12",
    "dil": "en",
    "metin": "Today, robots do much of the heavy work in modern factories.",
-   "t0": 63.679,
-   "t1": 68.16,
+   "t0": 49.418,
+   "t1": 53.898,
    "kelimeler": [
     {
      "w": "Today,",
-     "t0": 63.679,
-     "t1": 64.539
+     "t0": 49.418,
+     "t1": 50.278
     },
     {
      "w": "robots",
-     "t0": 64.899,
-     "t1": 65.479
+     "t0": 50.618,
+     "t1": 51.218
     },
     {
      "w": "do",
-     "t0": 65.479,
-     "t1": 65.979
+     "t0": 51.218,
+     "t1": 51.718
     },
     {
      "w": "much",
-     "t0": 65.979,
-     "t1": 66.419
+     "t0": 51.718,
+     "t1": 52.158
     },
     {
      "w": "of",
-     "t0": 66.419,
-     "t1": 66.719
+     "t0": 52.158,
+     "t1": 52.458
     },
     {
      "w": "the",
-     "t0": 66.719,
-     "t1": 66.859
+     "t0": 52.458,
+     "t1": 52.598
     },
     {
      "w": "heavy",
-     "t0": 66.859,
-     "t1": 67.219
+     "t0": 52.598,
+     "t1": 52.958
     },
     {
      "w": "work",
-     "t0": 67.219,
-     "t1": 67.739
+     "t0": 52.958,
+     "t1": 53.478
     },
     {
      "w": "in",
-     "t0": 67.739,
-     "t1": 68.119
+     "t0": 53.478,
+     "t1": 53.858
     },
     {
      "w": "modern",
-     "t0": 68.119,
-     "t1": 68.579
+     "t0": 53.858,
+     "t1": 54.338
     },
     {
      "w": "factories.",
-     "t0": 68.579,
-     "t1": 69.379
+     "t0": 54.338,
+     "t1": 55.138
     }
    ],
    "duyulan": "Today, robots do much of the heavy work in modern factories."
@@ -710,43 +570,43 @@
    "id": "s13",
    "dil": "tr",
    "metin": "Sizce bugünün robotları hâlâ angarya mı yapıyor?",
-   "t0": 68.51,
-   "t1": 72.27,
+   "t0": 54.248,
+   "t1": 58.009,
    "kelimeler": [
     {
      "w": "Sizce",
-     "t0": 68.51,
-     "t1": 69.49
+     "t0": 54.248,
+     "t1": 55.228
     },
     {
      "w": "bugünün",
-     "t0": 69.49,
-     "t1": 70.17
+     "t0": 55.228,
+     "t1": 55.908
     },
     {
      "w": "robotları",
-     "t0": 70.17,
-     "t1": 71.09
+     "t0": 55.908,
+     "t1": 56.828
     },
     {
      "w": "hala",
-     "t0": 71.09,
-     "t1": 71.89
+     "t0": 56.828,
+     "t1": 57.628
     },
     {
      "w": "Angarya",
-     "t0": 71.89,
-     "t1": 72.63
+     "t0": 57.628,
+     "t1": 58.368
     },
     {
      "w": "mı",
-     "t0": 72.63,
-     "t1": 72.89
+     "t0": 58.368,
+     "t1": 58.628
     },
     {
      "w": "yapıyor?",
-     "t0": 72.89,
-     "t1": 73.35
+     "t0": 58.628,
+     "t1": 59.088
     }
    ],
    "duyulan": "Sizce bugünün robotları hala Angarya mı yapıyor?"
