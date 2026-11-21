@@ -921,7 +921,7 @@
       "https://www.wordorigins.org/big-list-entries/nice"
     ],
     "onerilen_dilim": "20:30",
-    "durum": "denetimde",
+    "durum": "duzeltme_istendi",
     "duzeltme_gecmisi": [
       {
         "not": "[Metin] Görüntü woodcut yerine Canlı Sözlük çizgi film (Alcohol videosunun formatı) ile yeniden yapıldı; ses aynı.",
@@ -937,6 +937,8 @@
           "onay": "otomatik (Denetmen, 2026-11-21T22:15+03:00)"
         }
       }
-    ]
+    ],
+    "denetim_turu": 1,
+    "duzeltme_notu": "[Denetmen] Canlı Sözlük çizgi film sürümü (59,0 sn) — içerik ve ses temiz, tek düzen hatası var:\n- ~14–25 sn arası (s04 'Ne, değil; scire…' ve s05 'Eski Fransızcaya geçen nice…' sahneleri): 'İng. science (bilim)' çipi alttaki köken kartının DIŞINA, kartın altına düşüyor ve kelime kelime altyazının üstüne biniyor; hem çip hem altyazı okunmuyor ('bilmek' ve 'bilim' üst üste). Çip ~28. sn'den sonra kartın içinde doğru yerde. Çözüm: çipi baştan kartın içinde (son satır olarak) göster ya da kart yüksekliği büyüyene kadar gizle; altyazı bandıyla en az ~40 px boşluk kalsın. Tüm sahnelerde kart/çip ile altyazının çakışmadığını kontrol et.\n- Sadece görüntü yeniden render (ses önbellekten, kota harcamaz). Kapak (yol/tabela sahnesi, başlık y≈290–500, 4:5 alan içinde) uygun, değiştirmeye gerek yok."
   }
 ]
