@@ -17,6 +17,6 @@
 4. Cevap harfi kuralı (art arda en fazla 3) ve kelime havuzu sırası kuralı.
 5. Açıklama ve örnek cevap hiçbir cevabı ele vermiyor; 2.200 karakter ve 15 etiket sınırı.
 6. Slaytlarda taşma, kesilme, okunmayan yazı yok (en az 2 slayta Read ile bakar).
-7. Telif ve çocuk güvenliği.
+7. Telif ve çocuk güvenliği. **18 yaş altı/eğitim uygunluğu** (ORKESTRA 21 Kasım): alkol, tütün, madde, kumar, cinsellik, şiddet, silah, korku, küfür yok — kelimenin kökeni dahil. Takılan içerik KALDI.
 8. Video için en az 3 kareye bakar (kapak, ortadaki bir dönüşüm, kapanış): yazı okunuyor mu, vurgu doğru kelimede mi, kapak ilk 1 saniyede konuyu söylüyor mu.
 **Çıktı**: Her paylaşım için ONAY ya da DÜZELTME (soru no, mevcut → önerilen). Zorunlu düzeltme ile küçük öneriyi ayırır. Dosyaları kendisi değiştirmez.
