@@ -1,0 +1,21 @@
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Yedi yüz yıl önce birine nice deseydiniz, ona aptal demiş olurdunuz!", "okunus": "Yedi yüz yıl önce birine nays deseydiniz, ona aptal demiş olurdunuz!"},
+  {"id": "s02", "dil": "tr", "metin": "Bugün hoş ve kibar demek olan nice kelimesinin hikâyesi Roma'da başlıyor.", "okunus": "Bugün hoş ve kibar demek olan nays kelimesinin hikâyesi Roma'da başlıyor."},
+  {"id": "s03", "dil": "tr", "metin": "Latincede nescius, bilmeyen ya da cahil demekti.", "okunus": "Latincede neskiyus, bilmeyen ya da cahil demekti."},
+  {"id": "s04", "dil": "tr", "metin": "Kelime, değil anlamındaki ne ile bilmek anlamındaki scire'den oluşuyordu.", "okunus": "Kelime, değil anlamındaki ne ile, bilmek anlamındaki skire'den oluşuyordu."},
+  {"id": "s05", "dil": "tr", "metin": "Eski Fransızcaya geçen nice, saf ve aptal kişiye denirdi.", "okunus": "Eski Fransızcaya geçen nis, saf ve aptal kişiye denirdi."},
+  {"id": "s06", "dil": "tr", "metin": "Kelime 1300'lerde İngilizceye de aynı anlamla, yani aptal anlamıyla geçti.", "okunus": "Kelime bin üç yüzlerde İngilizceye de aynı anlamla, yani aptal anlamıyla geçti."},
+  {"id": "s07", "dil": "tr", "metin": "Sonra şaşırtıcı bir yolculuk başladı."},
+  {"id": "s08", "dil": "tr", "metin": "1500'lerde nice, titiz ve ince anlamına geliyordu.", "okunus": "Bin beş yüzlerde nays, titiz ve ince anlamına geliyordu."},
+  {"id": "s09", "dil": "tr", "metin": "Bugün bile a nice distinction, ince bir ayrım demektir.", "okunus": "Bugün bile, ey nays distinkşın, ince bir ayrım demektir."},
+  {"id": "s10", "dil": "tr", "metin": "1700'lerde ise nice artık hoş ve güzel demekti.", "okunus": "Bin yedi yüzlerde ise nays artık hoş ve güzel demekti."},
+  {"id": "s11", "dil": "en", "metin": "Nice."},
+  {"id": "s12", "dil": "en", "metin": "It was really nice of you to help me prepare for the exam last weekend."},
+  {"id": "s13", "dil": "tr", "metin": "Sizce bugün anlamı değişen bir kelime var mı?"}
+ ],
+ "bas": 0.4,
+ "ara": 0.3,
+ "son": 2.6,
+ "araliklar": {"s07": 0.5, "s11": 0.5, "s12": 0.4, "s13": 0.45}
+}
