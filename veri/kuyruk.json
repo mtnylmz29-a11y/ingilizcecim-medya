@@ -827,5 +827,30 @@
   "media_id": "18103374971555257",
   "permalink": "https://www.instagram.com/reel/Df936vVAAgA/",
   "yayin_saati": "2026-11-20T17:30:55+03:00"
+ },
+ {
+  "id": "2026-11-23-reels",
+  "tarih": "2026-11-23",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, silent-film; ses Gemini Kore)",
+  "film": "filmler/2026-11-23-robot",
+  "stil": "silent-film",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Robot",
+  "aciklama": "Robot kelimesinin kökünde bir angarya saklı! 1920'de Çek yazar Karel Čapek, R.U.R. oyunundaki yapay işçilere ad ararken kardeşi Josef, Çekçede \"zorunlu iş, angarya\" demek olan robota kelimesinden roboti adını önerdi; kökü Eski Slavcada \"köle\" anlamındaki rab kelimesine uzanır. Şaşırtıcı olan şu: oyundaki ilk robotlar metal değil, insana benzeyen yapay işçilerdi. Kelime 1923'te İngilizceye geçti ve tüm dünyaya yayıldı. Sence bugünün robotları hâlâ angarya mı yapıyor?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #robot #ingilizcekelime #ingilizceöğren #yapayzeka",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/0143b41911495f1f332613d65e8ad0cde7ea56bc/gunler/2026-11-23/robot_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/0143b41911495f1f332613d65e8ad0cde7ea56bc/gunler/2026-11-23/robot_etym_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/0143b41911495f1f332613d65e8ad0cde7ea56bc/gunler/2026-11-23/robot_etym_kapak.jpg",
+  "sure_sn": 59.6,
+  "kaynaklar": [
+   "https://www.etymonline.com/word/robot",
+   "https://thereader.mitpress.mit.edu/origin-word-robot-rur",
+   "https://npr.org/2025/09/11/nx-s1-5532095/where-word-robot-came-from-rur",
+   "https://www.wordorigins.org/big-list-entries/robot"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]
