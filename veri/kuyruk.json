@@ -921,7 +921,7 @@
       "https://www.wordorigins.org/big-list-entries/nice"
     ],
     "onerilen_dilim": "20:30",
-    "durum": "denetimde",
+    "durum": "onaylandi",
     "duzeltme_gecmisi": [
       {
         "not": "[Metin] Görüntü woodcut yerine Canlı Sözlük çizgi film (Alcohol videosunun formatı) ile yeniden yapıldı; ses aynı.",
@@ -944,6 +944,12 @@
       }
     ],
     "denetim_turu": 1,
-    "denetim": null
+    "denetim": {
+      "denetci": "Denetmen",
+      "sonuc": "GECTI",
+      "notlar": "2. tur (Canlı Sözlük çizgi film, yeniden render ee45294): 59,0 sn, 1080×1920, H.264/AAC 24 fps, 30,0 MB. ses_kontrol.py: temiz (12 satır); ses Gemini Kore (ticari lisans). 12 kare incelendi: kitap karakteri + mimik değişimi, 8+ farklı sahne (kasaba, Roma tuğla duvar/NESCIUS tahtası, NE+SCIRE, Fransa 1100'ler, İngiltere 1300'ler gemi, yol/tabela 1300-1500-1700, kütüphane 'titiz·ince', 1700'ler bahçe, bugün masa), kelime kelime altyazı, ingilizcecim.com mührü. Önceki düzeltme doğrulandı: 'İng. science (bilim)' çipi 16/21/26 sn'de kartın içinde son satırda, altyazıyla çakışma yok. Etimoloji etymonline + wordorigins + dictionary.com ile doğrulandı (Lat. nescius ne+scire → Eski Fr. nice 'saf, aptal' → İng. c.1300 'aptal'; 1500'ler 'titiz/ince'; 18. yy 'hoş'). Örnek cümle 'It was really nice of you to help' doğru; Türkçe yazım temiz. Kapak: yol/tabela sahnesi, 'KELİMELERİN TARİHÇESİ / nice' başlığı y≈290–500, ortadaki 1080×1350 alanda, okunaklı. 18 yaş altı/eğitim kuralına uygun.",
+      "zaman": "2026-11-22T00:12+03:00"
+    },
+    "onay": "otomatik (Denetmen, 2026-11-22T00:12+03:00)"
   }
 ]
