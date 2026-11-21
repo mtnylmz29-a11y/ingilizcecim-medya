@@ -88,11 +88,11 @@ function entry(k) {
 const ROWS = [...D.zincir.map((z, i) => ({ ...z, bg: i === D.zincir.length - 1 ? C.yellow : null })), ...(D.akraba ? [{ ...D.akraba, bg: C.news }] : [])];
 const RF = '42px Cour', RFB = 'bold 42px CourB';
 const rowW = q => mw((q.dil ? q.dil + ' ' : '') + (q.on || ''), RF) + mw(q.kok, RFB) + mw(q.son || '', RF);
-const CHW = Math.min(880, Math.max(620, Math.max(...ROWS.map(rowW)) + 260)), CHH = 44 + ROWS.length * 74, CHY = 1460 - CHH;   // zincir kartı: altyazının üstünde biter
+const CHW = Math.min(880, Math.max(620, Math.max(...ROWS.map(rowW)) + 260)), CHH = 44 + ROWS.length * 74, CHB = 1435, CHY = CHB - CHH;   // zincir kartı: altyazının üstünde biter (gölge dahil altyazıyla ≥40 px boşluk)
 const NOT = Object.fromEntries((D.notlar || []).map(n => [n.sira ?? 0, n]));
-function chain(t, slide, sealT) {   // kart, satırlar geldikçe yukarı doğru büyür (altı 1460 px'te sabit)
-  const hh = 44 + 74 * Math.max(1, ROWS.reduce((a, q) => a + ease((t - at(q.satir)) / .35), 0));
-  card(70, 1460 - hh + slide, CHW, hh, .025, 1, C.card, () => {
+function chain(t, slide, sealT) {   // kart, satırlar geldikçe yukarı doğru büyür (altı CHB'de sabit)
+  const hh = 44 + 74 * Math.max(1, ROWS.reduce((a, q, i) => t >= at(q.satir) ? Math.max(a, i + ease((t - at(q.satir)) / .35)) : a, 0));   // satırlar sırasız gelse de (ör. akraba erken) kart en alttaki görünen satırı kapsar
+  card(70, CHB - hh + slide, CHW, hh, .025, 1, C.card, () => {
     ROWS.forEach((q, i) => {
       if (t < at(q.satir) + .1) return;
       const y = 66 + i * 74;

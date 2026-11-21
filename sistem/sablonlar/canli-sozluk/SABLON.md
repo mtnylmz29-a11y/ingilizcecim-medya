@@ -63,7 +63,7 @@ Yeni kelimede çoğu zaman **yeni bir sahne yazarsın** (kelimenin hikâyesini L
 
 ## Ekran düzeni (Instagram güvenli alanları hesaba katıldı)
 
-Işık kutusu: kelime kartı üstte (250 px altı), zincir şeritleri ortada, altyazı 1500 px civarı, sağ 120 px boş. Çizgi film: giriş kartı 250–560 px, zincir kartı ≈1460 px'te biter, altyazı 1525 px. Kapak (`?kapak=1`): "KELİMELERİN TARİHÇESİ" + büyük kelime, sahnenin `kapak_t` anındaki görüntüsü üstünde.
+Işık kutusu: kelime kartı üstte (250 px altı), zincir şeritleri ortada, altyazı 1500 px civarı, sağ 120 px boş. Çizgi film: giriş kartı 250–560 px, zincir kartı 1435 px'te biter (altyazıyla ≥40 px boşluk; akraba gibi erken gelen satırlar da kartın içinde kalır), altyazı 1525 px. Kapak (`?kapak=1`): "KELİMELERİN TARİHÇESİ" + büyük kelime, sahnenin `kapak_t` anındaki görüntüsü üstünde.
 
 ## Akış (BULUT_LEMO.md §3'e göre, farklar)
 
