@@ -1,0 +1,18 @@
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Kaptan Ece kahveyi mi bıraktı, yoksa kahve içmek için mi durdu?"},
+  {"id": "s02", "dil": "en", "metin": "She stopped drinking coffee."},
+  {"id": "s03", "dil": "en", "metin": "She stopped to drink coffee."},
+  {"id": "s04", "dil": "tr", "metin": "İlki kahveyi bıraktı demek, ikincisi kahve içmek için durdu demek."},
+  {"id": "s05", "dil": "en", "metin": "I remember locking the door."},
+  {"id": "s06", "dil": "en", "metin": "Remember to lock the door!"},
+  {"id": "s07", "dil": "tr", "metin": "Remember ve ing geçmişi hatırlamak, remember ve to ise yapılacak işi unutmamaktır.", "okunus": "Rimembır ve ing geçmişi hatırlamak, rimembır ve tu ise yapılacak işi unutmamaktır."},
+  {"id": "s08", "dil": "en", "metin": "We regret to inform you that the launch is cancelled."},
+  {"id": "s09", "dil": "tr", "metin": "Regret ve to üzülerek bildirmek, regret ve ing ise yaptığına pişman olmaktır.", "okunus": "Rigret ve tu üzülerek bildirmek, rigret ve ing ise yaptığına pişman olmaktır."},
+  {"id": "s10", "dil": "en", "metin": "Try restarting the engine."},
+  {"id": "s11", "dil": "tr", "metin": "Try ve ing bir çözüm denemek, try ve to ise bir şeyi yapmaya çabalamaktır.", "okunus": "Tray ve ing bir çözüm denemek, tray ve tu ise bir şeyi yapmaya çabalamaktır."},
+  {"id": "s12", "dil": "tr", "metin": "Sen bugün neyi yapmayı unutmamalısın?"}
+ ],
+ "bas": 0.4, "ara": 0.3, "son": 2.6,
+ "araliklar": {"s02": 0.45, "s04": 0.4, "s05": 0.6, "s07": 0.4, "s08": 0.6, "s09": 0.4, "s10": 0.6, "s11": 0.4, "s12": 0.5}
+}
