@@ -1,0 +1,21 @@
+{
+ "sablon": "cizgi-film",
+ "kelime": "nice",
+ "ipa": "/naɪs/",
+ "tur": "adj.",
+ "anlam": "hoş, kibar; eskiden: aptal, cahil",
+ "zincir": [
+  {"dil": "Lat.", "on": "ne", "kok": "sci", "son": "us", "satir": "s03"},
+  {"dil": "E.Fr.", "kok": "nice", "satir": "s05"},
+  {"dil": "İng.", "kok": "nice", "satir": "s06"}
+ ],
+ "notlar": [
+  {"metin": "\"bilmeyen\"", "sira": 0, "satir": "s03"},
+  {"metin": "\"saf, aptal\"", "sira": 1, "satir": "s05"},
+  {"metin": "aptal → titiz → hoş", "sira": 2, "satir": "s10"}
+ ],
+ "akraba": {"dil": "İng.", "kok": "sci", "son": "ence (bilim)", "satir": "s04"},
+ "muhur": "s13",
+ "muzik": "bando",
+ "enstruman": "ud"
+}
