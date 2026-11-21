@@ -1,859 +1,967 @@
 {
- "paylasimlar": {
-  "2026-11-03-ilkokul": {
-   "media_id": "18011532551776443",
-   "olcumler": [
-    {
-     "tarih": "2026-11-04T20:31+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 2
+  "paylasimlar": {
+    "2026-11-03-ilkokul": {
+      "media_id": "18011532551776443",
+      "olcumler": [
+        {
+          "tarih": "2026-11-04T20:31+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 2
+        },
+        {
+          "tarih": "2026-11-05T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 2
+        },
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 4
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 4,
+          "izlenme": 16
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 5
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 6,
+          "izlenme": 20
+        }
+      ]
     },
-    {
-     "tarih": "2026-11-05T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 2
+    "2026-11-03-ortaokul": {
+      "media_id": "17933246457162971",
+      "olcumler": [
+        {
+          "tarih": "2026-11-04T20:31+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 2
+        },
+        {
+          "tarih": "2026-11-05T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 3
+        },
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 6
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 6,
+          "izlenme": 12
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 6
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 8,
+          "izlenme": 18
+        }
+      ]
     },
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 4
+    "2026-11-03-lise": {
+      "media_id": "18102712415655842",
+      "olcumler": [
+        {
+          "tarih": "2026-11-04T20:31+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 1
+        },
+        {
+          "tarih": "2026-11-05T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 2
+        },
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 4
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 4,
+          "izlenme": 7
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 4
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 5,
+          "izlenme": 9
+        }
+      ]
     },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 4,
-     "izlenme": 16
+    "2026-11-03-ydt": {
+      "media_id": "18647794117033055",
+      "olcumler": [
+        {
+          "tarih": "2026-11-04T20:31+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 3
+        },
+        {
+          "tarih": "2026-11-05T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 4
+        },
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 6
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 6,
+          "izlenme": 14
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 7
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 8,
+          "izlenme": 17
+        }
+      ]
     },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 5
+    "2026-11-03-ydtyds-kokler": {
+      "media_id": "18417310018080772",
+      "olcumler": [
+        {
+          "tarih": "2026-11-04T20:31+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 2
+        },
+        {
+          "tarih": "2026-11-05T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 2
+        },
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 4
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 4,
+          "izlenme": 6
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 5
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 6,
+          "izlenme": 10
+        }
+      ]
     },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 6,
-     "izlenme": 20
+    "2026-11-04-gonderi": {
+      "media_id": "18121163498007188",
+      "olcumler": [
+        {
+          "tarih": "2026-11-04T20:31+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 2
+        },
+        {
+          "tarih": "2026-11-05T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 3
+        },
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 5
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 5,
+          "izlenme": 10
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 6
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 8,
+          "izlenme": 15
+        }
+      ]
+    },
+    "2026-11-04-reels": {
+      "media_id": "18099919406649590",
+      "olcumler": [
+        {
+          "tarih": "2026-11-04T20:31+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 0
+        },
+        {
+          "tarih": "2026-11-05T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 101
+        },
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 103
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 103,
+          "izlenme": 112
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 103
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 105,
+          "izlenme": 114
+        }
+      ]
+    },
+    "2026-11-07-gonderi": {
+      "media_id": "18162117934502566",
+      "olcumler": [
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 32
+        }
+      ],
+      "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
+    },
+    "2026-11-06-reels": {
+      "media_id": "18204772804337932",
+      "olcumler": [
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 37
+        }
+      ],
+      "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
+    },
+    "2026-11-05-reels": {
+      "media_id": "18132776180495574",
+      "olcumler": [
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 116
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 118,
+          "izlenme": 130
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 119
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 121,
+          "izlenme": 134
+        }
+      ]
+    },
+    "2026-11-06-gonderi": {
+      "media_id": "18094237184207629",
+      "olcumler": [
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 2,
+          "paylasim": 0,
+          "erisim": 108
+        },
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 2,
+          "paylasim": 0,
+          "erisim": 108,
+          "izlenme": 122
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 2,
+          "paylasim": 0,
+          "erisim": 109
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 2,
+          "paylasim": 0,
+          "erisim": 110,
+          "izlenme": 125
+        }
+      ]
+    },
+    "2026-11-05-gonderi": {
+      "media_id": "18038266241887080",
+      "olcumler": [
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 153
+        }
+      ],
+      "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
+    },
+    "2026-11-07-reels": {
+      "media_id": "17979407910138845",
+      "olcumler": [
+        {
+          "tarih": "2026-11-07T20:33+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 0
+        }
+      ],
+      "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
+    },
+    "2026-11-08-gonderi": {
+      "media_id": "18118760077819517",
+      "olcumler": [
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 74,
+          "izlenme": 94
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 88
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 91,
+          "izlenme": 114
+        }
+      ]
+    },
+    "2026-11-08-reels": {
+      "media_id": "18114748028334440",
+      "olcumler": [
+        {
+          "tarih": "2026-11-10T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 0,
+          "izlenme": 0
+        },
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 101
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 104,
+          "izlenme": 129
+        }
+      ]
+    },
+    "2026-11-14-gonderi": {
+      "media_id": "18189667207419071",
+      "olcumler": [
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 102
+        },
+        {
+          "tarih": "2026-11-18T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 107,
+          "izlenme": 120
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 108,
+          "izlenme": 121
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 0,
+          "erisim": 112,
+          "izlenme": 125
+        }
+      ]
+    },
+    "2026-11-14-reels": {
+      "media_id": "17904820227671973",
+      "olcumler": [
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 31
+        },
+        {
+          "tarih": "2026-11-18T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 97,
+          "izlenme": 109
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 98,
+          "izlenme": 110
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 101,
+          "izlenme": 112
+        }
+      ]
+    },
+    "2026-11-15-reels-salary": {
+      "media_id": "18154260964610334",
+      "olcumler": [
+        {
+          "tarih": "2026-11-15T20:30+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 2,
+          "paylasim": 0,
+          "erisim": 387
+        },
+        {
+          "tarih": "2026-11-18T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 2,
+          "paylasim": 0,
+          "erisim": 394,
+          "izlenme": 429
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 2,
+          "paylasim": 0,
+          "erisim": 395,
+          "izlenme": 430
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 3,
+          "yorum": 0,
+          "kaydetme": 2,
+          "paylasim": 0,
+          "erisim": 397,
+          "izlenme": 433
+        }
+      ]
+    },
+    "2026-11-15-gonderi": {
+      "media_id": "18019546814748426",
+      "olcumler": [
+        {
+          "tarih": "2026-11-18T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 1,
+          "erisim": 277,
+          "izlenme": 319
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 1,
+          "erisim": 280,
+          "izlenme": 322
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 1,
+          "paylasim": 1,
+          "erisim": 287,
+          "izlenme": 329
+        }
+      ]
+    },
+    "2026-11-15-reels": {
+      "media_id": "18351299719270850",
+      "olcumler": [
+        {
+          "tarih": "2026-11-18T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 140,
+          "izlenme": 151
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 159,
+          "izlenme": 170
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 167,
+          "izlenme": 179
+        }
+      ]
+    },
+    "2026-11-16-reels": {
+      "media_id": "18232272133336065",
+      "olcumler": [
+        {
+          "tarih": "2026-11-18T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 120,
+          "izlenme": 133
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 121,
+          "izlenme": 135
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 1,
+          "erisim": 128,
+          "izlenme": 145
+        }
+      ]
+    },
+    "2026-11-17-reels": {
+      "media_id": "17996357148060439",
+      "olcumler": [
+        {
+          "tarih": "2026-11-18T20:35+03:00",
+          "begeni": 1,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 153,
+          "izlenme": 173
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 156,
+          "izlenme": 176
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 161,
+          "izlenme": 186
+        }
+      ]
+    },
+    "2026-11-19-reels": {
+      "media_id": "18115116974239833",
+      "olcumler": [
+        {
+          "tarih": "2026-11-18T20:35+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 86,
+          "izlenme": 121
+        },
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 2,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 164,
+          "izlenme": 182
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 3,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 172,
+          "izlenme": 192
+        }
+      ]
+    },
+    "2026-11-18-reels": {
+      "media_id": "18379749520301022",
+      "olcumler": [
+        {
+          "tarih": "2026-11-19T20:29+03:00",
+          "begeni": 20,
+          "yorum": 0,
+          "kaydetme": 12,
+          "paylasim": 6,
+          "erisim": 1807,
+          "izlenme": 2000
+        },
+        {
+          "tarih": "2026-11-20T20:31+03:00",
+          "begeni": 20,
+          "yorum": 0,
+          "kaydetme": null,
+          "paylasim": null,
+          "erisim": null,
+          "izlenme": null
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 20,
+          "yorum": 0,
+          "kaydetme": 12,
+          "paylasim": 6,
+          "erisim": 1822,
+          "izlenme": 2017
+        }
+      ]
+    },
+    "2026-11-20-gonderi": {
+      "media_id": "18103374971555257",
+      "olcumler": [
+        {
+          "tarih": "2026-11-20T20:31+03:00",
+          "begeni": 3,
+          "yorum": 0,
+          "kaydetme": null,
+          "paylasim": null,
+          "erisim": null,
+          "izlenme": null
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 3,
+          "yorum": 0,
+          "kaydetme": 0,
+          "paylasim": 0,
+          "erisim": 1265,
+          "izlenme": 1345
+        }
+      ]
+    },
+    "2026-11-20-reels": {
+      "media_id": "18116994646844204",
+      "olcumler": [
+        {
+          "tarih": "2026-11-20T20:31+03:00",
+          "begeni": 0,
+          "yorum": 0,
+          "kaydetme": null,
+          "paylasim": null,
+          "erisim": null,
+          "izlenme": null
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 18,
+          "yorum": 0,
+          "kaydetme": 3,
+          "paylasim": 1,
+          "erisim": 1992,
+          "izlenme": 2179
+        }
+      ]
+    },
+    "2026-11-19-gonderi": {
+      "media_id": "18148340203573943",
+      "olcumler": [
+        {
+          "tarih": "2026-11-20T20:31+03:00",
+          "begeni": 18,
+          "yorum": 0,
+          "kaydetme": null,
+          "paylasim": null,
+          "erisim": null,
+          "izlenme": null
+        },
+        {
+          "tarih": "2026-11-21T20:31+03:00",
+          "begeni": 18,
+          "yorum": 0,
+          "kaydetme": 6,
+          "paylasim": 4,
+          "erisim": 1533,
+          "izlenme": 1719
+        }
+      ]
     }
-   ]
   },
-  "2026-11-03-ortaokul": {
-   "media_id": "17933246457162971",
-   "olcumler": [
-    {
-     "tarih": "2026-11-04T20:31+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 2
-    },
-    {
-     "tarih": "2026-11-05T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 3
-    },
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 6
-    },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 6,
-     "izlenme": 12
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 6
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 8,
-     "izlenme": 18
-    }
-   ]
-  },
-  "2026-11-03-lise": {
-   "media_id": "18102712415655842",
-   "olcumler": [
-    {
-     "tarih": "2026-11-04T20:31+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 1
-    },
-    {
-     "tarih": "2026-11-05T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 2
-    },
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 4
-    },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 4,
-     "izlenme": 7
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 4
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 5,
-     "izlenme": 9
-    }
-   ]
-  },
-  "2026-11-03-ydt": {
-   "media_id": "18647794117033055",
-   "olcumler": [
-    {
-     "tarih": "2026-11-04T20:31+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 3
-    },
-    {
-     "tarih": "2026-11-05T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 4
-    },
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 6
-    },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 6,
-     "izlenme": 14
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 7
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 8,
-     "izlenme": 17
-    }
-   ]
-  },
-  "2026-11-03-ydtyds-kokler": {
-   "media_id": "18417310018080772",
-   "olcumler": [
-    {
-     "tarih": "2026-11-04T20:31+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 2
-    },
-    {
-     "tarih": "2026-11-05T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 2
-    },
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 4
-    },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 4,
-     "izlenme": 6
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 5
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 6,
-     "izlenme": 10
-    }
-   ]
-  },
-  "2026-11-04-gonderi": {
-   "media_id": "18121163498007188",
-   "olcumler": [
-    {
-     "tarih": "2026-11-04T20:31+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 2
-    },
-    {
-     "tarih": "2026-11-05T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 3
-    },
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 5
-    },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 5,
-     "izlenme": 10
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 6
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 8,
-     "izlenme": 15
-    }
-   ]
-  },
-  "2026-11-04-reels": {
-   "media_id": "18099919406649590",
-   "olcumler": [
-    {
-     "tarih": "2026-11-04T20:31+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 0
-    },
-    {
-     "tarih": "2026-11-05T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 101
-    },
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 103
-    },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 103,
-     "izlenme": 112
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 103
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 105,
-     "izlenme": 114
-    }
-   ]
-  },
-  "2026-11-07-gonderi": {
-   "media_id": "18162117934502566",
-   "olcumler": [
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 32
-    }
-   ],
-   "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
-  },
-  "2026-11-06-reels": {
-   "media_id": "18204772804337932",
-   "olcumler": [
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 37
-    }
-   ],
-   "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
-  },
-  "2026-11-05-reels": {
-   "media_id": "18132776180495574",
-   "olcumler": [
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 116
-    },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 118,
-     "izlenme": 130
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 119
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 121,
-     "izlenme": 134
-    }
-   ]
-  },
-  "2026-11-06-gonderi": {
-   "media_id": "18094237184207629",
-   "olcumler": [
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 2,
-     "paylasim": 0,
-     "erisim": 108
-    },
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 2,
-     "paylasim": 0,
-     "erisim": 108,
-     "izlenme": 122
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 2,
-     "paylasim": 0,
-     "erisim": 109
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 2,
-     "paylasim": 0,
-     "erisim": 110,
-     "izlenme": 125
-    }
-   ]
-  },
-  "2026-11-05-gonderi": {
-   "media_id": "18038266241887080",
-   "olcumler": [
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 153
-    }
-   ],
-   "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
-  },
-  "2026-11-07-reels": {
-   "media_id": "17979407910138845",
-   "olcumler": [
-    {
-     "tarih": "2026-11-07T20:33+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 0
-    }
-   ],
-   "durum_notu": "10 Kasım: Instagram'da bulunamadı (silinmiş olabilir)"
-  },
-  "2026-11-08-gonderi": {
-   "media_id": "18118760077819517",
-   "olcumler": [
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 74,
-     "izlenme": 94
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 88
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 91,
-     "izlenme": 114
-    }
-   ]
-  },
-  "2026-11-08-reels": {
-   "media_id": "18114748028334440",
-   "olcumler": [
-    {
-     "tarih": "2026-11-10T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 0,
-     "izlenme": 0
-    },
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 101
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 104,
-     "izlenme": 129
-    }
-   ]
-  },
-  "2026-11-14-gonderi": {
-   "media_id": "18189667207419071",
-   "olcumler": [
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 102
-    },
-    {
-     "tarih": "2026-11-18T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 107,
-     "izlenme": 120
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 0,
-     "erisim": 108,
-     "izlenme": 121
-    }
-   ]
-  },
-  "2026-11-14-reels": {
-   "media_id": "17904820227671973",
-   "olcumler": [
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 31
-    },
-    {
-     "tarih": "2026-11-18T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 97,
-     "izlenme": 109
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 98,
-     "izlenme": 110
-    }
-   ]
-  },
-  "2026-11-15-reels-salary": {
-   "media_id": "18154260964610334",
-   "olcumler": [
-    {
-     "tarih": "2026-11-15T20:30+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 2,
-     "paylasim": 0,
-     "erisim": 387
-    },
-    {
-     "tarih": "2026-11-18T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 2,
-     "paylasim": 0,
-     "erisim": 394,
-     "izlenme": 429
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 2,
-     "paylasim": 0,
-     "erisim": 395,
-     "izlenme": 430
-    }
-   ]
-  },
-  "2026-11-15-gonderi": {
-   "media_id": "18019546814748426",
-   "olcumler": [
-    {
-     "tarih": "2026-11-18T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 1,
-     "erisim": 277,
-     "izlenme": 319
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 1,
-     "paylasim": 1,
-     "erisim": 280,
-     "izlenme": 322
-    }
-   ]
-  },
-  "2026-11-15-reels": {
-   "media_id": "18351299719270850",
-   "olcumler": [
-    {
-     "tarih": "2026-11-18T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 140,
-     "izlenme": 151
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 159,
-     "izlenme": 170
-    }
-   ]
-  },
-  "2026-11-16-reels": {
-   "media_id": "18232272133336065",
-   "olcumler": [
-    {
-     "tarih": "2026-11-18T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 120,
-     "izlenme": 133
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 121,
-     "izlenme": 135
-    }
-   ]
-  },
-  "2026-11-17-reels": {
-   "media_id": "17996357148060439",
-   "olcumler": [
-    {
-     "tarih": "2026-11-18T20:35+03:00",
-     "begeni": 1,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 153,
-     "izlenme": 173
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 156,
-     "izlenme": 176
-    }
-   ]
-  },
-  "2026-11-19-reels": {
-   "media_id": "18115116974239833",
-   "olcumler": [
-    {
-     "tarih": "2026-11-18T20:35+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 86,
-     "izlenme": 121
-    },
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 2,
-     "yorum": 0,
-     "kaydetme": 0,
-     "paylasim": 0,
-     "erisim": 164,
-     "izlenme": 182
-    }
-   ]
-  },
-  "2026-11-18-reels": {
-   "media_id": "18379749520301022",
-   "olcumler": [
-    {
-     "tarih": "2026-11-19T20:29+03:00",
-     "begeni": 20,
-     "yorum": 0,
-     "kaydetme": 12,
-     "paylasim": 6,
-     "erisim": 1807,
-     "izlenme": 2000
-    },
-    {
-     "tarih": "2026-11-20T20:31+03:00",
-     "begeni": 20,
-     "yorum": 0,
-     "kaydetme": null,
-     "paylasim": null,
-     "erisim": null,
-     "izlenme": null
-    }
-   ]
-  },
-  "2026-11-20-gonderi": {
-   "media_id": "18103374971555257",
-   "olcumler": [
-    {
-     "tarih": "2026-11-20T20:31+03:00",
-     "begeni": 3,
-     "yorum": 0,
-     "kaydetme": null,
-     "paylasim": null,
-     "erisim": null,
-     "izlenme": null
-    }
-   ]
-  },
-  "2026-11-20-reels": {
-   "media_id": "18116994646844204",
-   "olcumler": [
-    {
-     "tarih": "2026-11-20T20:31+03:00",
-     "begeni": 0,
-     "yorum": 0,
-     "kaydetme": null,
-     "paylasim": null,
-     "erisim": null,
-     "izlenme": null
-    }
-   ]
-  },
-  "2026-11-19-gonderi": {
-   "media_id": "18148340203573943",
-   "olcumler": [
-    {
-     "tarih": "2026-11-20T20:31+03:00",
-     "begeni": 18,
-     "yorum": 0,
-     "kaydetme": null,
-     "paylasim": null,
-     "erisim": null,
-     "izlenme": null
-    }
-   ]
-  }
- },
- "haftalik": []
+  "haftalik": []
 }
