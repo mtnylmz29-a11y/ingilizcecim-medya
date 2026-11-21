@@ -859,5 +859,28 @@
    "notlar": "1080x1920, 24 fps, H.264+AAC, 59,6 sn, 22,7 MB. ses_kontrol.py: temiz (11 satır), seviye ortalama -17 dB / tepe -2,8 dB; Gemini Kore (ticari). 13 kare incelendi: silent-film sahne stili, 12+ farklı sahne (robot odası, Prag 1920 daktilo, Josef'in tuvali, robota tarlası, kökün yolculuğu rabŭ→robota→robot, R.U.R. afişi, sahnede yapay işçiler, ayaklanma, Londra 1923 gazetesi, fabrika, kapanış ingilizcecim.com); karakterler ve mimik var, kanca ilk 3 sn'de. Altyazı kelime kelime, yazım doğru, İngilizce örnek cümle + Türkçe çevirisi doğru. Bilgi doğrulandı (etymonline, wordorigins, NPR, Science Friday): Čapek R.U.R. 1920, Josef'in önerisi roboti, Çekçe robota 'angarya', Eski Slavca rabŭ 'köle', İngilizcede 1923; ilk robotlar insansı yapay işçiler. Kapak: ayaklanan robotlar sahnesi, 'KELİMELERİN TARİHÇESİ / Robot' başlığı okunaklı ve 1080x1350 orta alanda. Küçük not: 'Kökün yolculuğu' sahnesi açılışta seyrek, sorun değil.",
    "zaman": "2026-11-21T12:25:00+03:00"
   }
+ },
+ {
+  "id": "2026-11-21-gonderi",
+  "tarih": "2026-11-21",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, scifi-toon; ses Gemini Kore)",
+  "film": "filmler/2026-11-21-stop-remember",
+  "stil": "scifi-toon",
+  "baslik": "-ing mi, to mu? Stop, Remember, Regret, Try",
+  "aciklama": "Kaptan Ece kahveyi mi bıraktı, yoksa kahve içmek için mi durdu? stop, remember, regret ve try'dan sonra -ing mi, to mu geldiğine göre anlam tamamen değişir: She stopped drinking coffee (bıraktı) / She stopped to drink coffee (içmek için durdu). I remember locking the door geçmişi hatırlamaktır, Remember to lock the door! ise yapılacak işi unutmamak. We regret to inform you… üzülerek bildirmek, Try restarting the engine ise bir çözüm denemektir. Sen bugün neyi yapmayı unutmamalısın?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #gerund #infinitive #ingilizcegramer #yks #ingilizceöğren",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/9916d66c644ac67093a5cb7c1a11a7a3881ff045/gunler/2026-11-21/stop_remember_ing_to.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/9916d66c644ac67093a5cb7c1a11a7a3881ff045/gunler/2026-11-21/stop_remember_ing_to_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/9916d66c644ac67093a5cb7c1a11a7a3881ff045/gunler/2026-11-21/stop_remember_ing_to_kapak.jpg",
+  "sure_sn": 56.0,
+  "kaynaklar": [
+   "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/verbs-followed-ing-or-infinitive-change-meaning",
+   "https://dictionaryblog.cambridge.org/2024/03/06/avoiding-common-mistakes-with-verb-patterns-2",
+   "https://www.oxfordlearnersdictionaries.com/definition/english/regret_1"
+  ],
+  "onerilen_dilim": "17:30",
+  "durum": "denetimde"
  }
 ]
