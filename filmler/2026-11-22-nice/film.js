@@ -252,7 +252,7 @@ const SC = [
       fillP(g, polyP([[640, 930], [700, 820], [800, 800], [900, 780], [PL.x1, 790], [PL.x1, 930]]), PAP); hatch(g, polyP([[640, 930], [700, 820], [800, 800], [900, 780], [PL.x1, 790], [PL.x1, 930]]), [640, 780, PL.x1, 930], 1.4, 18, 3, { col: INK, l0: 20, l1: 60 });
       fillP(g, polyP([[640, 790], [800, 760], [PL.x1, 740], [PL.x1, 795], [900, 784], [700, 822]]), INK);
       fillP(g, rectP(PL.x0, 925, PL.x1 - PL.x0, PL.y1 - 925), INK);
-      banner(g, 800, 380, 360, 62, 'İNGİLTERE · 1300\'ler', 38);
+      banner(g, 730, 380, 360, 62, 'İNGİLTERE · 1300\'ler', 38);
     }), fg: (g, t, u) => {
       for (let i = 0; i < 12; i++) { const y = 950 + i * 32 + i * i * 1.4; wave(g, y, 6 + i * 1.2, .012 + i * .0006, u * (1.6 + i * .1) + i, 2.5 + i * .45); }
       const x = lerp(200, 520, seg(u, 0, 5)), bob = Math.sin(u * 2.6) * 10, rk = Math.sin(u * 2.6 + 1) * .03;
@@ -410,13 +410,13 @@ function endCard(g, t) { // carved closing block
   g.save(); g.beginPath(); PLATE(g); g.clip(); g.globalAlpha = k; g.fillStyle = INK; g.fillRect(0, 0, W, H);
   seed(990, () => { rays(g, 540, 820, 230, 520, 40, 6, PAP, ss(seg(t, CEND() + .2, CEND() + 1.2))); });
   fillP(g, ellP(540, 820, 210, 210), INK); g.beginPath(); g.arc(540, 820, 210, 0, TAU); g.lineWidth = 6; g.strokeStyle = PAP; g.stroke();
-  carveText(g, 'KELİMELERİN TARİHÇESİ', 540, 760, 34, PAP, {}); carveText(g, 'nice', 540, 840, 110, COL, { it: 1 });
-  carveText(g, 'ingilizcecim.com', 540, 1170, 74, PAP, {}); g.restore();
+  carveText(g, 'KELİMELERİN TARİHÇESİ', 540, 770, 25, PAP, {}); carveText(g, 'nice', 540, 850, 110, COL, { it: 1 });
+  fillP(g, rectP(200, 1110, 680, 120), INK); carveText(g, 'ingilizcecim.com', 540, 1170, 74, PAP, {}); g.restore();
 }
 
 // ---------- captions: letterpress in the margin ----------
 const KEY = /^(nice|nice!|nescius|ne|scire'den|scire|distinction|nice\.)[.,!?'’]*$/i;
-const TR = { s12: 'Geçen hafta sonu sınava hazırlanmama yardım etmen çok incelikliydi / çok naziktin.' };
+const TR = { s12: 'Geçen hafta sonu sınava hazırlanmama yardım etmen çok incelikliydi.' };
 function wrap(g, words, maxW) { const out = [[]]; let w = 0; const sp = g.measureText(' ').width; words.forEach(wd => { const ww = g.measureText(wd).width; if (w + ww > maxW && out[out.length - 1].length) { out.push([]); w = 0; } out[out.length - 1].push(wd); w += ww + sp; }); return out; }
 function caption(t) {
   const l = Z.satirlar.find(l => t >= l.t0 - .1 && t <= l.t1 + .5); if (!l) return;
@@ -424,10 +424,10 @@ function caption(t) {
   const heard = kel.filter(k => k.t0 <= t).length, shown = t > l.t1 ? words.length : Math.max(1, Math.round(heard * words.length / Math.max(1, kel.length)));
   const a = ss(seg(t, l.t0 - .1, l.t0)) * (1 - ss(seg(t, l.t1 + .35, l.t1 + .5)));
   g.save(); g.font = `${l.dil === 'en' ? 'italic ' : ''}46px ${SERIF}`; const rows = wrap(g, words, 880), tr = TR[l.id];
-  const lh = 56, y0 = 1395; g.textBaseline = 'middle'; g.textAlign = 'left'; let n = 0;
+  const lh = 54, y0 = tr ? 1378 : 1395; g.textBaseline = 'middle'; g.textAlign = 'left'; let n = 0;
   rows.forEach((r, ri) => { const rw = g.measureText(r.join(' ')).width; let x = 530 - rw / 2; const y = y0 + lh * ri;
-    r.forEach(wd => { g.globalAlpha = a * (n < shown ? 1 : .18); g.fillStyle = KEY.test(wd) ? COL : INK; const keep = g.font; if (/\d/.test(wd)) g.font = "400 39px 'Fredoka', sans-serif"; g.fillText(wd, x, y + (/\d/.test(wd) ? 2 : 0)); x += g.measureText(wd + ' ').width; g.font = keep; n++; }); });
-  if (tr) { g.globalAlpha = a * ss(seg(t, l.t0 + .8, l.t0 + 1.2)); g.font = `italic 32px ${SERIF}`; g.fillStyle = '#5a4a38'; g.textAlign = 'center'; wrap(g, tr.split(' '), 860).forEach((r, i) => g.fillText(r.join(' '), 530, y0 + rows.length * lh + 6 + i * 40)); }
+    r.forEach(wd => { g.globalAlpha = a * (n < shown ? 1 : .18); g.fillStyle = KEY.test(wd) ? COL : INK; g.fillText(wd, x, y); x += g.measureText(wd + ' ').width; n++; }); });
+  if (tr) { g.globalAlpha = a * ss(seg(t, l.t0 + .8, l.t0 + 1.2)); g.font = `italic 30px ${SERIF}`; g.fillStyle = '#5a4a38'; g.textAlign = 'center'; wrap(g, tr.split(' '), 900).forEach((r, i) => g.fillText(r.join(' '), 530, y0 + rows.length * lh + i * 38)); }
   g.restore();
 }
 function header(g) { g.save(); g.font = `28px ${SERIF}`; g.fillStyle = '#4a3c2e'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('KELİMELERİN TARİHÇESİ  ·  nice', 540, 274); g.restore(); }
