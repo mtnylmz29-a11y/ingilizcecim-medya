@@ -372,7 +372,8 @@ function drawRoad(g, t, u) {
 }
 
 // ---------- compositing ----------
-let PAPER = null, TEX = null, P = null, PG = null, CACHE = [];
+let PAPER = null, TEX = null, P = null, PG = null, CC = null, CCi = -1;
+function cacheFor(i) { if (CCi !== i) { const g = CC.getContext('2d'); g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, W, H); g.save(); g.beginPath(); PLATE(g); g.clip(); SC[i].bg(g); g.restore(); CCi = i; } return CC; }
 function makeTex() {
   const r = mulberry(5);
   PAPER = document.createElement('canvas'); PAPER.width = W; PAPER.height = H; const p = PAPER.getContext('2d');
@@ -387,7 +388,7 @@ function makeTex() {
   P = document.createElement('canvas'); P.width = W; P.height = H; PG = P.getContext('2d');
   const ragged = []; seed(3, () => { for (let x = PL.x0; x <= PL.x1; x += 12) ragged.push([x, PL.y0 + (R() - .5) * 5]); for (let y = PL.y0; y <= PL.y1; y += 12) ragged.push([PL.x1 + (R() - .5) * 5, y]); for (let x = PL.x1; x >= PL.x0; x -= 12) ragged.push([x, PL.y1 + (R() - .5) * 5]); for (let y = PL.y1; y >= PL.y0; y -= 12) ragged.push([PL.x0 + (R() - .5) * 5, y]); });
   PLATE = polyP(ragged);
-  CACHE = SC.map(s => { const c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d'); g.save(); g.beginPath(); PLATE(g); g.clip(); s.bg(g); g.restore(); return c; });
+  CC = document.createElement('canvas'); CC.width = W; CC.height = H;
 }
 let PLATE = null;
 const sceneStart = i => i === 0 ? 0 : T0(SC[i].from) - .15;
@@ -398,9 +399,9 @@ function drawPlate(i, t, reveal) {
   g.save(); g.beginPath(); PLATE(g); g.clip(); g.fillStyle = INK; g.fill();
   if (reveal < 1) { // knife sweep: cuts appear behind a diagonal edge
     g.save(); g.beginPath(); const e = lerp(-500, 1700, reveal); g.moveTo(-100, -100); for (let k = 0; k <= 30; k++) { const y = lerp(PL.y0 - 40, PL.y1 + 40, k / 30); g.lineTo(e - (y - PL.y0) * .5 + Math.sin(k * 2.1) * 26 + Math.sin(k * .7) * 18, y); } g.lineTo(-100, H + 100); g.closePath(); g.clip();
-    g.drawImage(CACHE[i], 0, 0); seed(900 + i, () => SC[i].fg(g, t, t - sceneStart(i))); g.restore();
+    g.drawImage(cacheFor(i), 0, 0); seed(900 + i, () => SC[i].fg(g, t, t - sceneStart(i))); g.restore();
     const e2 = lerp(-500, 1700, reveal); for (let k = 0; k < 8; k++) { const y = lerp(PL.y0, PL.y1, (k + .5) / 8) + Math.sin(t * 40 + k) * 20; cut(g, e2 - (y - PL.y0) * .5 - 40, y, e2 - (y - PL.y0) * .5 + 12, y - 6, 6); }
-  } else { g.drawImage(CACHE[i], 0, 0); seed(900 + i, () => SC[i].fg(g, t, t - sceneStart(i))); }
+  } else { g.drawImage(cacheFor(i), 0, 0); seed(900 + i, () => SC[i].fg(g, t, t - sceneStart(i))); }
   g.globalCompositeOperation = 'source-atop'; g.globalAlpha = .9; g.drawImage(TEX, 0, 0); g.globalAlpha = 1; g.globalCompositeOperation = 'source-over';
   g.restore();
 }
