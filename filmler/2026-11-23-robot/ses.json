@@ -1,15 +1,71 @@
-{"satirlar": [
- {"id": "s01", "dil": "tr", "metin": "Robot kelimesinin aslında angarya demek olduğunu biliyor muydunuz?"},
- {"id": "s02", "dil": "tr", "metin": "Yıl 1920, Prag'da Karel Čapek adlı bir yazar yeni bir oyun yazıyordu.", "okunus": "Yıl bin dokuz yüz yirmi, Prag'da Karel Çapek adlı bir yazar yeni bir oyun yazıyordu."},
- {"id": "s03", "dil": "tr", "metin": "Oyunda fabrikada üretilen yapay işçiler vardı ama onlara bir ad gerekiyordu."},
- {"id": "s04", "dil": "tr", "metin": "Ressam kardeşi Josef, Çekçedeki robota kelimesinden yola çıkarak roboti adını önerdi.", "okunus": "Ressam kardeşi Yozef, Çekçedeki robota kelimesinden yola çıkarak roboti adını önerdi."},
- {"id": "s05", "dil": "tr", "metin": "Robota, köylülerin efendileri için karşılıksız yaptığı zorunlu işti, yani angarya."},
- {"id": "s06", "dil": "tr", "metin": "Kökü, köle anlamına gelen eski Slav kelimesi rab'a uzanır."},
- {"id": "s07", "dil": "tr", "metin": "Oyunun adı R.U.R. oldu, yani Rossum'un Evrensel Robotları.", "okunus": "Oyunun adı Ar Yu Ar oldu, yani Rossum'un Evrensel Robotları."},
- {"id": "s08", "dil": "tr", "metin": "Şaşırtıcı olan şu ki, bu ilk robotlar metal değil, yapay maddeden yapılmış, insana benzeyen işçilerdi."},
- {"id": "s09", "dil": "tr", "metin": "Oyunun sonunda robotlar, onları yapan insanlara karşı ayaklanır."},
- {"id": "s10", "dil": "tr", "metin": "Oyun 1923'te İngilizceye çevrildi ve robot kelimesi tüm dünyaya yayıldı.", "okunus": "Oyun bin dokuz yüz yirmi üçte İngilizceye çevrildi ve robot kelimesi tüm dünyaya yayıldı."},
- {"id": "s11", "dil": "en", "metin": "Robot."},
- {"id": "s12", "dil": "en", "metin": "Today, robots do much of the heavy work in modern factories."},
- {"id": "s13", "dil": "tr", "metin": "Sizce bugünün robotları hâlâ angarya mı yapıyor?"}
-], "bas": 0.4, "ara": 0.25, "son": 2.6, "araliklar": {"s02": 0.35, "s05": 0.3, "s07": 0.35, "s08": 0.3, "s10": 0.3, "s11": 0.35, "s13": 0.35}}
+{
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Robot kelimesinin aslında angarya demek olduğunu biliyor muydunuz?"
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "1920'de Prag'da Karel Čapek yeni bir oyun yazıyordu.",
+   "okunus": "Bin dokuz yüz yirmide Prag'da Karel Çapek yeni bir oyun yazıyordu."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Kardeşi Josef, oyundaki yapay işçilere Çekçe robota kelimesinden roboti adını önerdi.",
+   "okunus": "Kardeşi Yozef, oyundaki yapay işçilere Çekçe robota kelimesinden roboti adını önerdi."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Robota, köylülerin efendilerine yaptığı karşılıksız işti, yani angarya."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Kökü, köle anlamına gelen eski Slav kelimesi rab'a uzanır."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Oyunun adı R.U.R. oldu, yani Rossum'un Evrensel Robotları.",
+   "okunus": "Oyunun adı Ar Yu Ar oldu, yani Rossum'un Evrensel Robotları."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Şaşırtıcıdır ki bu ilk robotlar metal değil, insana benzeyen yapay işçilerdi."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Sonunda robotlar, onları yapan insanlara karşı ayaklanır."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Kelime 1923'te İngilizceye geçti ve tüm dünyaya yayıldı.",
+   "okunus": "Kelime bin dokuz yüz yirmi üçte İngilizceye geçti ve tüm dünyaya yayıldı."
+  },
+  {
+   "id": "s12",
+   "dil": "en",
+   "metin": "Today, robots do much of the heavy work in modern factories."
+  },
+  {
+   "id": "s13",
+   "dil": "tr",
+   "metin": "Sizce bugünün robotları hâlâ angarya mı yapıyor?"
+  }
+ ],
+ "bas": 0.4,
+ "ara": 0.25,
+ "son": 2.4,
+ "araliklar": {
+  "s05": 0.3,
+  "s12": 0.35,
+  "s13": 0.35
+ }
+}
