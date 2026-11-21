@@ -133,7 +133,7 @@
  },
  {
   "kelime": "alcohol",
-  "durum": "uretildi",
+  "durum": "iptal",
   "zemin_onerisi": "laboratuvar",
   "kesin": "Arapça al-kuhl: göze sürülen ince toz (sürme, antimon). Orta Çağ Latincesinde 'çok ince toz', 1500'lerde simyacılarda 'damıtılarak elde edilen öz'. 'Alcohol of wine' (şarabın özü) üzerinden 1700'lerde bugünkü anlam. İngilizcede 1540'lar.",
   "rivayet": "",
@@ -158,7 +158,8 @@
     "etiket"
    ],
    "harita": false
-  }
+  },
+  "iptal_nedeni": "Metin 21.11.2026: alkol 18 yaş altı/eğitim ortamına uygun değil"
  },
  {
   "kelime": "robot",
@@ -232,7 +233,7 @@
  },
  {
   "kelime": "deadline",
-  "durum": "bekliyor",
+  "durum": "iptal",
   "zemin_onerisi": "hapishane",
   "kesin": "Amerikan İç Savaşı'nda (1864) Andersonville esir kampında, geçenin vurulacağı sınır çizgisi 'dead-line'. 1920'lerde gazetecilikte 'baskı için son teslim zamanı' anlamı.",
   "rivayet": "",
@@ -240,7 +241,8 @@
   "kaynaklar": [
    "https://www.merriam-webster.com/wordplay/your-deadline-wont-kill-you",
    "https://www.wordorigins.org/big-list-entries/deadline"
-  ]
+  ],
+  "iptal_nedeni": "Köken hikâyesi (esirlerin vurulduğu çizgi) şiddet içeriyor; 21.11.2026 uygunluk kuralı"
  },
  {
   "kelime": "tycoon",
