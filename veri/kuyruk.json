@@ -904,16 +904,16 @@
     "kademe": "ydt+yds",
     "sinif": "YDT · YDS",
     "bicim": "animasyon",
-    "uretim": "bulut (lemo-opuscar, woodcut; ses Gemini Kore)",
+    "uretim": "bulut (lemo-opuscar, canli-sozluk-cizgi; ses Gemini Kore)",
     "film": "filmler/2026-11-22-nice",
-    "stil": "woodcut",
+    "stil": "canli-sozluk-cizgi",
     "seri": "kelimelerin-tarihcesi",
     "baslik": "Kelimelerin Tarihçesi: Nice",
     "aciklama": "Bugün birine \"nice\" demek iltifat, ama 700 yıl önce hakaret sayılırdı! Kelime Latince nescius'tan gelir: ne (değil) + scire (bilmek), yani \"bilmeyen, cahil\". Eski Fransızcada \"saf, aptal\" anlamıyla 1300'lerde İngilizceye geçti; 1500'lerde \"titiz, ince\" oldu (a nice distinction = ince bir ayrım) ve ancak 1700'lerde \"hoş, güzel\" anlamını kazandı. Sence bugün anlamı değişmekte olan bir kelime var mı?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #nice #ingilizcekelime #ingilizceöğren #latince",
-    "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/5741794ddb42d47d748ba9e7be6dce95a9cde33a/gunler/2026-11-22/nice_etym.mp4",
-    "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/5741794ddb42d47d748ba9e7be6dce95a9cde33a/gunler/2026-11-22/nice_etym_kareler.jpg",
-    "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/5741794ddb42d47d748ba9e7be6dce95a9cde33a/gunler/2026-11-22/nice_etym_kapak.jpg",
-    "sure_sn": 58.4,
+    "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/bf74e274d0e8a52da0f2641587cb9937d7c005ad/gunler/2026-11-22/nice_etym.mp4",
+    "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/bf74e274d0e8a52da0f2641587cb9937d7c005ad/gunler/2026-11-22/nice_etym_kareler.jpg",
+    "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/bf74e274d0e8a52da0f2641587cb9937d7c005ad/gunler/2026-11-22/nice_etym_kapak.jpg",
+    "sure_sn": 59.0,
     "kaynaklar": [
       "https://www.etymonline.com/word/nice",
       "https://www.merriam-webster.com/wordplay/words-that-used-to-mean-something-different",
@@ -921,13 +921,22 @@
       "https://www.wordorigins.org/big-list-entries/nice"
     ],
     "onerilen_dilim": "20:30",
-    "durum": "onaylandi",
-    "onay": "otomatik (Denetmen, 2026-11-21T22:15+03:00)",
-    "denetim": {
-      "denetci": "Denetmen",
-      "sonuc": "GECTI",
-      "notlar": "58,4 sn, 1080×1920, H.264/AAC 24 fps, 10,4 MB, −13,9 LUFS. ses_kontrol.py: temiz (12 satır), ses Gemini Kore (ticari lisans). 11 kare incelendi: woodcut stilinde 2 karakter, mimik değişimi, 8+ farklı sahne (kasaba, Roma tuğla duvar, Fransa 1100'ler, İngiltere 1300'ler gemi, 1500'ler kütüphane/terazi, 1700'ler bahçe, bugün masa), kelime kelime vurgulu altyazı, ingilizcecim.com kapanışı. İlk 3 sn kanca ('Aptal mı?!'). Etimoloji etymonline + wordorigins + dictionary.com ile doğrulandı: Lat. nescius (ne+scire) → Eski Fr. nice 'saf, aptal' (12. yy) → İng. c.1300 'aptal'; 1500'ler 'titiz/ince' (a nice distinction); 'hoş' 18. yy (1769). Türkçe/İngilizce yazım temiz; örnek cümle doğru. Kapak: dolu yol/tabela sahnesi, 'KELİMELERİN TARİHÇESİ / Nice' başlığı okunaklı ve y≈370–670 ile ortadaki 1080×1350 alanda. İçerik 18 yaş altı/eğitim kuralına uygun.",
-      "zaman": "2026-11-21T22:15+03:00"
-    }
+    "durum": "denetimde",
+    "duzeltme_gecmisi": [
+      {
+        "not": "[Metin] Görüntü woodcut yerine Canlı Sözlük çizgi film (Alcohol videosunun formatı) ile yeniden yapıldı; ses aynı.",
+        "zaman": "2026-11-21",
+        "onceki_denetim": {
+          "durum": "onaylandi",
+          "denetim": {
+            "denetci": "Denetmen",
+            "sonuc": "GECTI",
+            "notlar": "58,4 sn, 1080×1920, H.264/AAC 24 fps, 10,4 MB, −13,9 LUFS. ses_kontrol.py: temiz (12 satır), ses Gemini Kore (ticari lisans). 11 kare incelendi: woodcut stilinde 2 karakter, mimik değişimi, 8+ farklı sahne (kasaba, Roma tuğla duvar, Fransa 1100'ler, İngiltere 1300'ler gemi, 1500'ler kütüphane/terazi, 1700'ler bahçe, bugün masa), kelime kelime vurgulu altyazı, ingilizcecim.com kapanışı. İlk 3 sn kanca ('Aptal mı?!'). Etimoloji etymonline + wordorigins + dictionary.com ile doğrulandı: Lat. nescius (ne+scire) → Eski Fr. nice 'saf, aptal' (12. yy) → İng. c.1300 'aptal'; 1500'ler 'titiz/ince' (a nice distinction); 'hoş' 18. yy (1769). Türkçe/İngilizce yazım temiz; örnek cümle doğru. Kapak: dolu yol/tabela sahnesi, 'KELİMELERİN TARİHÇESİ / Nice' başlığı okunaklı ve y≈370–670 ile ortadaki 1080×1350 alanda. İçerik 18 yaş altı/eğitim kuralına uygun.",
+            "zaman": "2026-11-21T22:15+03:00"
+          },
+          "onay": "otomatik (Denetmen, 2026-11-21T22:15+03:00)"
+        }
+      }
+    ]
   }
 ]
