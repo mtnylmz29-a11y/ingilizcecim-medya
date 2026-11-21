@@ -8,7 +8,7 @@ const eo = t => 1 - Math.pow(1 - clamp(t), 3);
 const back = (t, s = 1.7) => { t = clamp(t) - 1; return 1 + t * t * ((s + 1) * t + s); };
 function mulberry(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 const TAU = Math.PI * 2, W = 1080, H = 1920;
-const C = document.getElementById('c'), X = C.getContext('2d');
+const C = document.getElementById('c'), X = C.getContext('2d', { willReadFrequently: true });
 const KAPAK = /kapak=1/.test(location.search);
 const INK = '#1b1612', PAP = '#ece2cc', PAPD = '#d9cba9', COL = '#cf5f27', COLL = '#e9a04a';
 const SERIF = "'IM Fell English', Georgia, serif";
@@ -373,19 +373,19 @@ function drawRoad(g, t, u) {
 
 // ---------- compositing ----------
 let PAPER = null, TEX = null, P = null, PG = null, CC = null, CCi = -1;
-function cacheFor(i) { if (CCi !== i) { const g = CC.getContext('2d'); g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, W, H); g.save(); g.beginPath(); PLATE(g); g.clip(); SC[i].bg(g); g.restore(); CCi = i; } return CC; }
+function cacheFor(i) { if (CCi !== i) { const g = CC.getContext('2d', { willReadFrequently: true }); g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, W, H); g.save(); g.beginPath(); PLATE(g); g.clip(); SC[i].bg(g); g.restore(); CCi = i; } return CC; }
 function makeTex() {
   const r = mulberry(5);
-  PAPER = document.createElement('canvas'); PAPER.width = W; PAPER.height = H; const p = PAPER.getContext('2d');
+  PAPER = document.createElement('canvas'); PAPER.width = W; PAPER.height = H; const p = PAPER.getContext('2d', { willReadFrequently: true });
   p.fillStyle = PAP; p.fillRect(0, 0, W, H);
   for (let y = 0; y < H; y += 7) { p.fillStyle = `rgba(120,95,60,${(.03 + r() * .03).toFixed(3)})`; p.fillRect(0, y, W, 1); } // laid lines
   for (let x = 40; x < W; x += 120) { p.fillStyle = 'rgba(120,95,60,.05)'; p.fillRect(x, 0, 2, H); }
   for (let i = 0; i < 2500; i++) { p.fillStyle = `rgba(110,85,50,${(r() * .12).toFixed(3)})`; p.fillRect(r() * W, r() * H, 1 + r() * 2, 1 + r() * 2); }
   const vg = p.createRadialGradient(W / 2, H / 2, 600, W / 2, H / 2, 1250); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(110,80,40,.16)'); p.fillStyle = vg; p.fillRect(0, 0, W, H);
-  TEX = document.createElement('canvas'); TEX.width = W; TEX.height = H; const tx = TEX.getContext('2d');
+  TEX = document.createElement('canvas'); TEX.width = W; TEX.height = H; const tx = TEX.getContext('2d', { willReadFrequently: true });
   for (let i = 0; i < 520; i++) { const y = r() * H, x = r() * W, l = 80 + r() * 400; tx.strokeStyle = `rgba(70,55,40,${(.12 + r() * .25).toFixed(3)})`; tx.lineWidth = 1 + r() * 2; tx.beginPath(); tx.moveTo(x, y); tx.bezierCurveTo(x + l * .3, y + (r() - .5) * 8, x + l * .7, y + (r() - .5) * 8, x + l, y + (r() - .5) * 6); tx.stroke(); }
   for (let i = 0; i < 4200; i++) { tx.fillStyle = `rgba(236,226,204,${(.25 + r() * .6).toFixed(3)})`; tx.beginPath(); tx.arc(r() * W, r() * H, .6 + r() * 1.6, 0, TAU); tx.fill(); }
-  P = document.createElement('canvas'); P.width = W; P.height = H; PG = P.getContext('2d');
+  P = document.createElement('canvas'); P.width = W; P.height = H; PG = P.getContext('2d', { willReadFrequently: true });
   const ragged = []; seed(3, () => { for (let x = PL.x0; x <= PL.x1; x += 12) ragged.push([x, PL.y0 + (R() - .5) * 5]); for (let y = PL.y0; y <= PL.y1; y += 12) ragged.push([PL.x1 + (R() - .5) * 5, y]); for (let x = PL.x1; x >= PL.x0; x -= 12) ragged.push([x, PL.y1 + (R() - .5) * 5]); for (let y = PL.y1; y >= PL.y0; y -= 12) ragged.push([PL.x0 + (R() - .5) * 5, y]); });
   PLATE = polyP(ragged);
   CC = document.createElement('canvas'); CC.width = W; CC.height = H;
