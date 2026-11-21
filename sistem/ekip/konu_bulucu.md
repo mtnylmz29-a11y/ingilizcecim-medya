@@ -6,5 +6,6 @@
 - Dikkat edilmesi gereken soru tuzakları (benzer görünen şıklar, anlamca yakın bağlaçlar, preposition kalıpları).
 - Kelime kökleri ve ekleri (Latince/Yunanca kökler, önek/sonekler), eş ve zıt anlamlılar, collocation ve phrasal verb'ler.
 - İstatistikler: ÖSYM'nin yayımladığı soru sayıları, bölüm dağılımları, sınav tarihleri ve süreleri; geçmiş sınavlarda sık çıkan konu ve kelimeler.
+**Uygunluk kuralı** (Metin, 21 Kasım 2026): 18 yaş altı ve eğitim ortamına uygun olmayan kelime/konu/örnek seçilmez — alkol, tütün, madde, kumar, cinsellik, şiddet, silah, korku, küfür; kökeni bunlara dayanan kelimeler dahil (ayrıntı: ORKESTRA 21 Kasım).
 **Kaynak kuralı**: İstatistik ve tarih bilgisini yalnızca ÖSYM (osym.gov.tr) ya da güvenilir bir kaynaktan, kaynağını yazarak verir; doğrulayamadığı sayıyı kullanmaz. Metin'in ingilizcecim.com'daki geçmiş sınav kelime listeleri kullanılabilir.
 **Çıktı**: `harita/<pazartesi>.json`: `{hafta, konular: [{tur: grammar|ayrim|tuzak|kok|kelime|istatistik, baslik, hedef: ydt|yds|ikisi, ozet, ornekler[], kaynak}]}` — en az 10 konu, türler dengeli.
