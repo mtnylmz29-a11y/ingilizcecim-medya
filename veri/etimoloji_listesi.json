@@ -232,11 +232,42 @@
   },
   {
     "kelime": "clue",
-    "durum": "bekliyor",
+    "durum": "uretildi",
     "zemin_onerisi": "yunan",
     "kesin": "Eski İngilizce cliwen / clew 'iplik yumağı'. Yunan mitolojisinde Theseus, Ariadne'nin ipliğini izleyerek labirentten çıkar; buradan 'çıkış yolunu gösteren şey' anlamı (1590'lar), sonra 'ipucu'. clue yazımı 1400'lerden.",
     "rivayet": "Theseus hikâyesi mitolojidir: 'efsaneye göre' diye anlat.",
-    "gorsel_oneri": "Köken: labirent zemini, kahraman + karakter2 (toga, uzun saç); dekor yumak; damga EFSANEYE GÖRE; 'iplik' girişten çıkışa. Değişim: clew 'iplik yumağı' → 'yol gösteren şey' (1590'lar) → clue 'ipucu'; son durak sehir + buyutec. tema mor, stil harfler, muzik gizemli."
+    "gorsel_oneri": "Köken: labirent zemini, kahraman + karakter2 (toga, uzun saç); dekor yumak; damga EFSANEYE GÖRE; 'iplik' girişten çıkışa. Değişim: clew 'iplik yumağı' → 'yol gösteren şey' (1590'lar) → clue 'ipucu'; son durak sehir + buyutec. tema mor, stil harfler, muzik gizemli.",
+    "uretim_tarihi": "2026-11-24",
+    "uretim": "bulut",
+    "gorsel": {
+      "tema": "pixel-rpg",
+      "stil": "pixel-rpg",
+      "muzik": "chiptune",
+      "zeminler": [
+        "gece-odasi",
+        "canta-menusu",
+        "girit-haritasi",
+        "labirent-kapisi",
+        "saray",
+        "labirent-koridoru",
+        "labirent-ustten",
+        "1590-calisma-odasi",
+        "koridor-kapi",
+        "kayit-ekrani"
+      ],
+      "olaylar": [
+        "esya-kazanma",
+        "menu-imleci",
+        "harita-kaydirma",
+        "dikey-tilt",
+        "yumak-atma",
+        "iplik-cizme",
+        "palet-daraltma",
+        "renk-geri-gelme",
+        "mozaik-gecis"
+      ],
+      "harita": true
+    }
   },
   {
     "kelime": "candidate",
