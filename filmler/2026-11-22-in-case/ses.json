@@ -1,0 +1,19 @@
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Güneş pırıl pırıl, peki Ayla neden şemsiye alıyor?"},
+  {"id": "s02", "dil": "en", "metin": "Take an umbrella in case it rains."},
+  {"id": "s03", "dil": "tr", "metin": "In case, olur da yağarsa diye demek, yani bir önlem.", "okunus": "İn keys, olur da yağarsa diye demek, yani bir önlem."},
+  {"id": "s04", "dil": "tr", "metin": "Yağmur yağmasa bile şemsiye çantada hazır bekler."},
+  {"id": "s05", "dil": "en", "metin": "Take an umbrella if it rains."},
+  {"id": "s06", "dil": "tr", "metin": "If ise bir koşul, şemsiyeyi ancak yağmur başlarsa alırsın.", "okunus": "İf ise bir koşul, şemsiyeyi ancak yağmur başlarsa alırsın."},
+  {"id": "s07", "dil": "tr", "metin": "Dikkat, in case'ten sonra will gelmez.", "okunus": "Dikkat, in keysten sonra vil gelmez."},
+  {"id": "s08", "dil": "en", "metin": "Unless you hurry, you'll miss the bus."},
+  {"id": "s09", "dil": "tr", "metin": "Unless, if not demektir, bu yüzden arkasından olumsuz fiil gelmez.", "okunus": "Anles, if nat demektir, bu yüzden arkasından olumsuz fiil gelmez."},
+  {"id": "s10", "dil": "en", "metin": "You can borrow my bike provided that you return it by Friday."},
+  {"id": "s11", "dil": "tr", "metin": "Provided that ise şartıyla demek.", "okunus": "Provaydıd det ise şartıyla demek."},
+  {"id": "s12", "dil": "tr", "metin": "Ve yağmur başladı, Ayla ise çoktan hazırdı."},
+  {"id": "s13", "dil": "tr", "metin": "Sen çantana in case neyi koyarsın, yorumlara yaz!", "okunus": "Sen çantana in keys neyi koyarsın, yorumlara yaz!"}
+ ],
+ "bas": 0.4, "ara": 0.3, "son": 2.6,
+ "araliklar": {"s02": 0.45, "s04": 0.4, "s05": 0.6, "s07": 0.5, "s08": 0.6, "s10": 0.6, "s12": 0.6, "s13": 0.5}
+}
