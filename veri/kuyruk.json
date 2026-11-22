@@ -951,5 +951,29 @@
       "zaman": "2026-11-22T00:12+03:00"
     },
     "onay": "otomatik (Denetmen, 2026-11-22T00:12+03:00)"
+  },
+  {
+    "id": "2026-11-22-gonderi",
+    "tarih": "2026-11-22",
+    "kademe": "ydt+yds",
+    "sinif": "YDT · YDS",
+    "bicim": "animasyon",
+    "uretim": "bulut (lemo-opuscar, midcentury-toon; ses Gemini Kore)",
+    "stil": "midcentury-toon",
+    "baslik": "In Case mi, If mi? (+ unless, provided that)",
+    "aciklama": "Güneş pırıl pırıl ama Ayla yine de şemsiye alıyor. Neden? Çünkü in case \"olur da … diye\" bir önlemdir, if ise bir koşul. Unless = if not (arkasından olumsuz fiil gelmez), provided that = şartıyla. Unutma: in case'ten sonra will gelmez! Sen çantana in case neyi koyarsın? İngilizce yaz 👇\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #incase #unless #ingilizcedilbilgisi #yks #ingilizceöğren #englishgrammar",
+    "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4ebaf399581361d4c1e2c2f0316403a763e40d77/gunler/2026-11-22/in_case_if_unless.mp4",
+    "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/4ebaf399581361d4c1e2c2f0316403a763e40d77/gunler/2026-11-22/in_case_if_unless_kareler.jpg",
+    "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/4ebaf399581361d4c1e2c2f0316403a763e40d77/gunler/2026-11-22/in_case_if_unless_kapak.jpg",
+    "film": "filmler/2026-11-22-in-case",
+    "sure_sn": 57.2,
+    "kaynaklar": [
+      "https://www.merriam-webster.com/dictionary/in%20case",
+      "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/conditionals-zero-first-second",
+      "https://www.oxfordlearnersdictionaries.com/definition/english/unless",
+      "https://www.merriam-webster.com/dictionary/provided"
+    ],
+    "onerilen_dilim": "17:30",
+    "durum": "denetimde"
   }
 ]
