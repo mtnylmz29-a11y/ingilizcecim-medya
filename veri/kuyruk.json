@@ -974,6 +974,13 @@
       "https://www.merriam-webster.com/dictionary/provided"
     ],
     "onerilen_dilim": "17:30",
-    "durum": "denetimde"
+    "durum": "onaylandi",
+    "onay": "otomatik (Denetmen, 2026-11-22 13:55 (İstanbul))",
+    "denetim": {
+      "denetci": "Denetmen",
+      "sonuc": "GECTI",
+      "zaman": "2026-11-22 13:55 (İstanbul)",
+      "notlar": "15 kare + kapak incelendi: midcentury-toon, Ayla + yaşlı komşu + konuşan şemsiye karakterleri, 8+ sahne (sokak, bavul/önlem, güneş/yağmur bölünmüş ekran, \"will gelmez\" uyarısı, otobüs durağı, bisiklet/Cuma, yağmur dönüşü, kapanış ingilizcecim.com). Kelime kelime vurgulu altyazı, güvenli alanda. 1080×1920, 57,2 sn, 29,1 MB, H.264+AAC. ses_kontrol.py: temiz (13 satır); ses Gemini Kore (ticari). Dilbilgisi doğrulandı (Cambridge Dictionary blog, GrammarBank, EF, Magoosh): in case + present simple (will yok), in case = önlem / if = koşul, unless = if not (olumsuz fiil almaz), provided that = şartıyla. Örnek cümleler doğru. Kapak: yağmur anı, başlık \"In Case mi, If mi?\" okunaklı ve 1080×1350 alanında. İçerik uygunluğu sorunsuz."
+    }
   }
 ]
