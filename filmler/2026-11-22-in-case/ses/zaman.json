@@ -1,0 +1,621 @@
+{
+ "dur": 57.229,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Güneş pırıl pırıl, peki Ayla neden şemsiye alıyor?",
+   "t0": 0.4,
+   "t1": 4.691,
+   "kelimeler": [
+    {
+     "w": "Güneş",
+     "t0": 0.4,
+     "t1": 1.56
+    },
+    {
+     "w": "pırıl",
+     "t0": 1.56,
+     "t1": 2.1
+    },
+    {
+     "w": "pırıl.",
+     "t0": 2.1,
+     "t1": 2.76
+    },
+    {
+     "w": "Peki",
+     "t0": 3.02,
+     "t1": 3.4
+    },
+    {
+     "w": "aila",
+     "t0": 3.4,
+     "t1": 4.22
+    },
+    {
+     "w": "neden",
+     "t0": 4.22,
+     "t1": 4.72
+    },
+    {
+     "w": "şemsiye",
+     "t0": 4.72,
+     "t1": 5.84
+    },
+    {
+     "w": "alıyor?",
+     "t0": 5.84,
+     "t1": 6.26
+    }
+   ],
+   "duyulan": "Güneş pırıl pırıl. Peki aila neden şemsiye alıyor?"
+  },
+  {
+   "id": "s02",
+   "dil": "en",
+   "metin": "Take an umbrella in case it rains.",
+   "t0": 5.141,
+   "t1": 7.992,
+   "kelimeler": [
+    {
+     "w": "Take",
+     "t0": 5.141,
+     "t1": 5.901
+    },
+    {
+     "w": "an",
+     "t0": 5.901,
+     "t1": 6.161
+    },
+    {
+     "w": "umbrella",
+     "t0": 6.161,
+     "t1": 6.681
+    },
+    {
+     "w": "in",
+     "t0": 6.681,
+     "t1": 7.361
+    },
+    {
+     "w": "case",
+     "t0": 7.361,
+     "t1": 7.781
+    },
+    {
+     "w": "it",
+     "t0": 7.781,
+     "t1": 8.101
+    },
+    {
+     "w": "rains.",
+     "t0": 8.101,
+     "t1": 8.521
+    }
+   ],
+   "duyulan": "Take an umbrella in case it rains."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "In case, olur da yağarsa diye demek, yani bir önlem.",
+   "t0": 8.292,
+   "t1": 12.303,
+   "kelimeler": [
+    {
+     "w": "in",
+     "t0": 8.292,
+     "t1": 8.952
+    },
+    {
+     "w": "case",
+     "t0": 8.952,
+     "t1": 9.392
+    },
+    {
+     "w": "olur",
+     "t0": 9.392,
+     "t1": 10.072
+    },
+    {
+     "w": "da",
+     "t0": 10.072,
+     "t1": 10.432
+    },
+    {
+     "w": "yarsa",
+     "t0": 10.432,
+     "t1": 11.172
+    },
+    {
+     "w": "diye",
+     "t0": 11.172,
+     "t1": 11.532
+    },
+    {
+     "w": "demek,",
+     "t0": 11.532,
+     "t1": 12.032
+    },
+    {
+     "w": "yani",
+     "t0": 12.472,
+     "t1": 12.872
+    },
+    {
+     "w": "bir",
+     "t0": 12.872,
+     "t1": 13.212
+    },
+    {
+     "w": "önlem.",
+     "t0": 13.212,
+     "t1": 13.752
+    }
+   ],
+   "duyulan": "in case olur da yarsa diye demek, yani bir önlem."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Yağmur yağmasa bile şemsiye çantada hazır bekler.",
+   "t0": 12.703,
+   "t1": 16.914,
+   "kelimeler": [
+    {
+     "w": "Yağmur",
+     "t0": 12.703,
+     "t1": 13.863
+    },
+    {
+     "w": "yağmasa",
+     "t0": 13.863,
+     "t1": 14.823
+    },
+    {
+     "w": "bile",
+     "t0": 14.823,
+     "t1": 15.063
+    },
+    {
+     "w": "şemsiye",
+     "t0": 15.063,
+     "t1": 16.383
+    },
+    {
+     "w": "çantada",
+     "t0": 16.383,
+     "t1": 17.183
+    },
+    {
+     "w": "hazır",
+     "t0": 17.183,
+     "t1": 17.663
+    },
+    {
+     "w": "bekler.",
+     "t0": 17.663,
+     "t1": 18.463
+    }
+   ],
+   "duyulan": "Yağmur yağmasa bile şemsiye çantada hazır bekler."
+  },
+  {
+   "id": "s05",
+   "dil": "en",
+   "metin": "Take an umbrella if it rains.",
+   "t0": 17.514,
+   "t1": 19.765,
+   "kelimeler": [
+    {
+     "w": "Take",
+     "t0": 17.514,
+     "t1": 18.254
+    },
+    {
+     "w": "an",
+     "t0": 18.254,
+     "t1": 18.454
+    },
+    {
+     "w": "umbrella",
+     "t0": 18.454,
+     "t1": 18.934
+    },
+    {
+     "w": "if",
+     "t0": 18.934,
+     "t1": 19.634
+    },
+    {
+     "w": "it",
+     "t0": 19.634,
+     "t1": 19.814
+    },
+    {
+     "w": "rains.",
+     "t0": 19.814,
+     "t1": 20.154
+    }
+   ],
+   "duyulan": "Take an umbrella if it rains."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "If ise bir koşul, şemsiyeyi ancak yağmur başlarsa alırsın.",
+   "t0": 20.065,
+   "t1": 24.905,
+   "kelimeler": [
+    {
+     "w": "İfse",
+     "t0": 20.065,
+     "t1": 21.205
+    },
+    {
+     "w": "bir",
+     "t0": 21.205,
+     "t1": 21.465
+    },
+    {
+     "w": "kuşul",
+     "t0": 21.465,
+     "t1": 22.225
+    },
+    {
+     "w": "Şemsiye",
+     "t0": 22.225,
+     "t1": 23.625
+    },
+    {
+     "w": "'yi",
+     "t0": 23.625,
+     "t1": 23.865
+    },
+    {
+     "w": "ancak",
+     "t0": 23.865,
+     "t1": 24.585
+    },
+    {
+     "w": "yağmurbaşlar",
+     "t0": 24.585,
+     "t1": 25.725
+    },
+    {
+     "w": "sağılırsın.",
+     "t0": 25.725,
+     "t1": 26.625
+    }
+   ],
+   "duyulan": "İfse bir kuşul Şemsiye 'yi ancak yağmurbaşlar sağılırsın."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Dikkat, in case'ten sonra will gelmez.",
+   "t0": 25.405,
+   "t1": 28.486,
+   "kelimeler": [
+    {
+     "w": "Dikkat!",
+     "t0": 25.405,
+     "t1": 26.325
+    },
+    {
+     "w": "İnkeistan",
+     "t0": 26.645,
+     "t1": 27.565
+    },
+    {
+     "w": "sonra",
+     "t0": 27.565,
+     "t1": 28.185
+    },
+    {
+     "w": "bir",
+     "t0": 28.185,
+     "t1": 28.385
+    },
+    {
+     "w": "gelmez.",
+     "t0": 28.385,
+     "t1": 29.185
+    }
+   ],
+   "duyulan": "Dikkat! İnkeistan sonra bir gelmez."
+  },
+  {
+   "id": "s08",
+   "dil": "en",
+   "metin": "Unless you hurry, you'll miss the bus.",
+   "t0": 29.086,
+   "t1": 32.006,
+   "kelimeler": [
+    {
+     "w": "Unless",
+     "t0": 29.086,
+     "t1": 29.846
+    },
+    {
+     "w": "you",
+     "t0": 29.846,
+     "t1": 30.286
+    },
+    {
+     "w": "hurry,",
+     "t0": 30.286,
+     "t1": 30.806
+    },
+    {
+     "w": "you'll",
+     "t0": 31.226,
+     "t1": 31.546
+    },
+    {
+     "w": "miss",
+     "t0": 31.546,
+     "t1": 31.826
+    },
+    {
+     "w": "the",
+     "t0": 31.826,
+     "t1": 32.066
+    },
+    {
+     "w": "bus.",
+     "t0": 32.066,
+     "t1": 32.446
+    }
+   ],
+   "duyulan": "Unless you hurry, you'll miss the bus."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Unless, if not demektir, bu yüzden arkasından olumsuz fiil gelmez.",
+   "t0": 32.306,
+   "t1": 37.587,
+   "kelimeler": [
+    {
+     "w": "Anlas",
+     "t0": 32.306,
+     "t1": 33.286
+    },
+    {
+     "w": "ifnap",
+     "t0": 33.286,
+     "t1": 33.966
+    },
+    {
+     "w": "demektir.",
+     "t0": 33.966,
+     "t1": 34.886
+    },
+    {
+     "w": "Bu",
+     "t0": 35.346,
+     "t1": 35.626
+    },
+    {
+     "w": "yüzden",
+     "t0": 35.626,
+     "t1": 36.086
+    },
+    {
+     "w": "arkasından",
+     "t0": 36.086,
+     "t1": 37.206
+    },
+    {
+     "w": "olumsuz",
+     "t0": 37.206,
+     "t1": 38.146
+    },
+    {
+     "w": "fiil",
+     "t0": 38.146,
+     "t1": 38.706
+    },
+    {
+     "w": "gelmez.",
+     "t0": 38.706,
+     "t1": 39.386
+    }
+   ],
+   "duyulan": "Anlas ifnap demektir. Bu yüzden arkasından olumsuz fiil gelmez."
+  },
+  {
+   "id": "s10",
+   "dil": "en",
+   "metin": "You can borrow my bike provided that you return it by Friday.",
+   "t0": 38.187,
+   "t1": 42.548,
+   "kelimeler": [
+    {
+     "w": "You",
+     "t0": 38.187,
+     "t1": 38.767
+    },
+    {
+     "w": "can",
+     "t0": 38.767,
+     "t1": 39.007
+    },
+    {
+     "w": "borrow",
+     "t0": 39.007,
+     "t1": 39.387
+    },
+    {
+     "w": "my",
+     "t0": 39.387,
+     "t1": 39.767
+    },
+    {
+     "w": "bike",
+     "t0": 39.767,
+     "t1": 40.367
+    },
+    {
+     "w": "provided",
+     "t0": 40.367,
+     "t1": 41.407
+    },
+    {
+     "w": "that",
+     "t0": 41.407,
+     "t1": 42.107
+    },
+    {
+     "w": "you",
+     "t0": 42.107,
+     "t1": 42.287
+    },
+    {
+     "w": "return",
+     "t0": 42.287,
+     "t1": 42.867
+    },
+    {
+     "w": "it",
+     "t0": 42.867,
+     "t1": 43.087
+    },
+    {
+     "w": "by",
+     "t0": 43.087,
+     "t1": 43.307
+    },
+    {
+     "w": "Friday",
+     "t0": 43.307,
+     "t1": 43.807
+    }
+   ],
+   "duyulan": "You can borrow my bike provided that you return it by Friday"
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Provided that ise şartıyla demek.",
+   "t0": 42.848,
+   "t1": 45.888,
+   "kelimeler": [
+    {
+     "w": "Provided",
+     "t0": 42.848,
+     "t1": 43.948
+    },
+    {
+     "w": ".ise",
+     "t0": 43.948,
+     "t1": 44.768
+    },
+    {
+     "w": "şartıyla",
+     "t0": 44.768,
+     "t1": 45.968
+    },
+    {
+     "w": "demek",
+     "t0": 45.968,
+     "t1": 46.548
+    }
+   ],
+   "duyulan": "Provided .ise şartıyla demek"
+  },
+  {
+   "id": "s12",
+   "dil": "tr",
+   "metin": "Ve yağmur başladı, Ayla ise çoktan hazırdı.",
+   "t0": 46.488,
+   "t1": 50.209,
+   "kelimeler": [
+    {
+     "w": "Ve",
+     "t0": 46.488,
+     "t1": 47.088
+    },
+    {
+     "w": "yağmur",
+     "t0": 47.088,
+     "t1": 47.668
+    },
+    {
+     "w": "başladı.",
+     "t0": 47.668,
+     "t1": 48.428
+    },
+    {
+     "w": "Aylaysa",
+     "t0": 48.788,
+     "t1": 49.848
+    },
+    {
+     "w": "çoktan",
+     "t0": 49.848,
+     "t1": 50.528
+    },
+    {
+     "w": "hazırdı.",
+     "t0": 50.528,
+     "t1": 51.328
+    }
+   ],
+   "duyulan": "Ve yağmur başladı. Aylaysa çoktan hazırdı."
+  },
+  {
+   "id": "s13",
+   "dil": "tr",
+   "metin": "Sen çantana in case neyi koyarsın, yorumlara yaz!",
+   "t0": 50.709,
+   "t1": 54.629,
+   "kelimeler": [
+    {
+     "w": "Sen",
+     "t0": 50.709,
+     "t1": 51.389
+    },
+    {
+     "w": "çantana",
+     "t0": 51.389,
+     "t1": 52.229
+    },
+    {
+     "w": "in",
+     "t0": 52.229,
+     "t1": 52.529
+    },
+    {
+     "w": "case",
+     "t0": 52.529,
+     "t1": 52.909
+    },
+    {
+     "w": "neyi",
+     "t0": 52.909,
+     "t1": 53.429
+    },
+    {
+     "w": "koyarsın?",
+     "t0": 53.429,
+     "t1": 54.449
+    },
+    {
+     "w": "Yorumlara",
+     "t0": 54.709,
+     "t1": 55.329
+    },
+    {
+     "w": "yaz",
+     "t0": 55.329,
+     "t1": 55.729
+    }
+   ],
+   "duyulan": "Sen çantana in case neyi koyarsın? Yorumlara yaz"
+  }
+ ],
+ "uyarilar": []
+}
