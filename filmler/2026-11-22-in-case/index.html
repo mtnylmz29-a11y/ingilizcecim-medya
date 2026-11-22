@@ -1,0 +1,693 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="/core/fonts/fonts.css">
+<style>html,body{margin:0;background:#f1e6cf;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script type="module">
+// 17:30 · In case mi, If mi? (+ unless, provided that) — 1950'ler düz renkli çizgi film (midcentury-toon) — ingilizcecim.com
+// Özgün karakterler: Ayla (öğrenci), Şemsi (konuşan şemsiye), Ali Amca (komşu). Motor: ingilizcecim 20 Kasım Muscle filminden.
+import { clamp, lerp, seg, ss, eio, eo, back, mulberry, hash, TAU } from '/core/lib.js';
+const W = 1080, H = 1920;
+const C = document.getElementById('c'), X = C.getContext('2d');
+const KAPAK = /kapak=1/.test(location.search);
+
+// ---------- palette: tomato / mustard / turquoise / plum on cream ----------
+const K = { paper: '#f1e6cf', paper2: '#e6d6b4', ink: '#2b211b', tomato: '#d9573b', mustard: '#e0a93a', turq: '#3f9c94',
+  powder: '#9cc3c9', olive: '#8c9441', plum: '#7b4a6b', sand: '#d8b98a', coral: '#e9876a', grey: '#a9a39a', greyD: '#7d776f',
+  pink: '#e8a3a0', skin: '#e9b98f', skinD: '#c98f66', white: '#fbf4e4', lime: '#b7c25a', navy: '#33465e' };
+
+// ---------- time & register (on twos) ----------
+let T = 0, TW = 0;
+let REG = [4, 3];
+function setClock(t) { T = t; TW = Math.floor(t * 12); REG = [4 + (hash(TW * 1.7) - .5) * 3, 3 + (hash(TW * 2.3 + 5) - .5) * 3]; }
+function jit(id) { return (hash(TW * 0.37 + id * 13.1) - .5) * 2; }
+
+// ---------- camera (world -> screen) ----------
+let CAM = { x: 540, y: 960, z: 1 };
+function cam() { X.setTransform(CAM.z, 0, 0, CAM.z, W / 2 - CAM.x * CAM.z, H / 2 - CAM.y * CAM.z); }
+function scr() { X.setTransform(1, 0, 0, 1, 0, 0); }
+
+// ---------- the style's shape: off-register fill + broken breathing ink ----------
+let SID = 0;
+function shape(path, fill, o = {}) {
+  const id = o.id != null ? o.id : (SID++);
+  if (fill) { X.save(); X.translate(o.noreg ? 0 : REG[0], o.noreg ? 0 : REG[1]); X.beginPath(); path(); X.fillStyle = fill; X.fill(o.rule || 'nonzero'); X.restore(); }
+  if (o.shade) { X.save(); X.translate(REG[0], REG[1]); X.beginPath(); path(); X.clip(); X.beginPath(); o.shade(); X.fillStyle = o.shadeCol || 'rgba(60,30,20,.18)'; X.fill(); X.restore(); }
+  if (o.line !== false) {
+    const lw = o.lw || 4, r = mulberry(id * 97 + 11 + (TW % 3));
+    X.save(); X.beginPath(); path();
+    const d = []; for (let i = 0; i < 6; i++) { d.push(30 + r() * 90, 4 + r() * (o.gap || 14)); }
+    X.setLineDash(d); X.lineDashOffset = r() * 50;
+    X.strokeStyle = o.col || K.ink; X.lineWidth = lw * (0.85 + r() * .3); X.lineJoin = 'round'; X.lineCap = 'round'; X.stroke();
+    X.restore();
+  }
+}
+const E = (x, y, rx, ry, r = 0) => () => X.ellipse(x, y, rx, ry, r, 0, TAU);
+const R = (x, y, w, h, rr = 0) => () => rr ? X.roundRect(x, y, w, h, rr) : X.rect(x, y, w, h);
+const P = pts => () => { pts.forEach((p, i) => i ? X.lineTo(p[0], p[1]) : X.moveTo(p[0], p[1])); X.closePath(); };
+function ink(pts, lw = 4, col = K.ink) { X.save(); X.beginPath(); pts.forEach((p, i) => i ? X.lineTo(p[0], p[1]) : X.moveTo(p[0], p[1])); X.strokeStyle = col; X.lineWidth = lw; X.lineCap = 'round'; X.lineJoin = 'round'; X.stroke(); X.restore(); }
+function curve(x0, y0, cx, cy, x1, y1, lw = 4, col = K.ink) { X.save(); X.beginPath(); X.moveTo(x0, y0); X.quadraticCurveTo(cx, cy, x1, y1); X.strokeStyle = col; X.lineWidth = lw; X.lineCap = 'round'; X.stroke(); X.restore(); }
+
+// ---------- ornaments ----------
+function starburst(x, y, r0, r1, n, col, rot = 0, o = {}) {
+  shape(() => { for (let i = 0; i < n * 2; i++) { const a = rot + i * Math.PI / n, r = i % 2 ? r0 : r1; i ? X.lineTo(x + Math.cos(a) * r, y + Math.sin(a) * r) : X.moveTo(x + Math.cos(a) * r, y + Math.sin(a) * r); } X.closePath(); }, col, o);
+}
+function sparkle(x, y, s, col = K.white, rot = 0) {
+  X.save(); X.translate(x, y); X.rotate(rot); X.beginPath();
+  for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4, r = i % 2 ? s * .22 : s; X.lineTo(Math.cos(a) * r, Math.sin(a) * r); }
+  X.closePath(); X.fillStyle = col; X.fill(); X.restore();
+}
+function rays(x, y, r, col, a = .25, rot = 0) {
+  X.save(); X.globalAlpha *= a; X.fillStyle = col;
+  for (let i = 0; i < 30; i += 2) { const a0 = rot + i * TAU / 30, a1 = rot + (i + 1) * TAU / 30; X.beginPath(); X.moveTo(x, y); X.arc(x, y, r, a0, a1); X.closePath(); X.fill(); }
+  X.restore();
+}
+function boomerang(x, y, s, col, rot) { X.save(); X.translate(x, y); X.rotate(rot); shape(() => { X.moveTo(-s, 0); X.quadraticCurveTo(0, -s * .9, s, 0); X.quadraticCurveTo(0, -s * .35, -s, 0); }, col, { lw: 3 }); X.restore(); }
+function dots(x0, y0, x1, y1, s, col, a = .35) { X.save(); X.globalAlpha *= a; X.fillStyle = col; for (let y = y0; y < y1; y += s) for (let x = x0 + ((y - y0) / s & 1) * s / 2; x < x1; x += s) { X.beginPath(); X.arc(x, y, s * .14, 0, TAU); X.fill(); } X.restore(); }
+
+// ---------- room: one colour plane, floor band, broken horizon ----------
+function room(wall, floor, hy = 1180) {
+  X.fillStyle = wall; X.fillRect(-400, -400, 1900, hy + 400);
+  X.fillStyle = floor; X.fillRect(-400, hy, 1900, 1400);
+  const r = mulberry(hy | 0); let x = -200; X.strokeStyle = K.ink; X.lineWidth = 4;
+  while (x < 1300) { const l = 120 + r() * 260; X.beginPath(); X.moveTo(x, hy); X.lineTo(x + l, hy); X.stroke(); x += l + 20 + r() * 40; }
+}
+
+// ---------- text with two plates ----------
+function ttext(s, x, y, font, col, plate, o = {}) {
+  X.save(); X.font = font; X.textAlign = o.align || 'center'; X.textBaseline = 'middle';
+  if (plate) { X.fillStyle = plate; X.fillText(s, x + REG[0] + 2, y + REG[1] + 2); }
+  X.fillStyle = col; X.fillText(s, x, y);
+  if (o.stroke) { X.lineWidth = o.stroke; X.strokeStyle = K.ink; X.strokeText(s, x, y); }
+  X.restore();
+}
+function fitFont(s, base, family, maxW) { let sz = base; X.font = `${sz}px ${family}`; while (X.measureText(s).width > maxW && sz > 20) { sz -= 2; X.font = `${sz}px ${family}`; } return `${sz}px ${family}`; }
+
+// paper tag with star bullet, pops with back-ease
+function tag(t, t0, x, y, lines, o = {}) {
+  const k = back(seg(t, t0, t0 + .3), 2.2); if (k <= 0) return;
+  X.save(); X.translate(x, y); X.rotate(o.rot || 0); X.scale(k, k);
+  X.font = o.font || '600 50px Fredoka';
+  const w = Math.max(...lines.map(l => X.measureText(l).width)) + 110, lh = o.lh || 62, h = lines.length * lh + 44;
+  shape(R(-w / 2, -h / 2, w, h, 20), o.bg || K.white, { lw: 4, id: 900 + (o.id || 0) });
+  X.fillStyle = o.star || K.tomato; sparkle(-w / 2 + 38, -h / 2 + 22 + lh / 2, 18, o.star || K.tomato, T * .8);
+  lines.forEach((l, i) => { X.fillStyle = (o.cols && o.cols[i]) || K.ink; X.textAlign = 'center'; X.textBaseline = 'middle'; X.font = (o.fonts && o.fonts[i]) || o.font || '600 50px Fredoka'; X.fillText(l, 18, -h / 2 + 22 + lh * (i + .5)); });
+  X.restore();
+}
+// numbered medallion
+function medallion(t, t0, x, y, r, txt, col = K.ink, o = {}) {
+  const k = back(seg(t, t0, t0 + .3), 2.4); if (k <= 0) return;
+  X.save(); X.translate(x, y); X.scale(k, k);
+  starburst(0, 0, r * 1.05, r * 1.25, 14, o.burst || K.mustard, T * .3, { lw: 3 });
+  shape(E(0, 0, r, r), col, { lw: 4 });
+  X.font = o.font || `${Math.round(r * .9)}px "Lilita One"`; X.fillStyle = K.paper; X.textAlign = 'center'; X.textBaseline = 'middle'; X.fillText(txt, 0, 4);
+  X.restore();
+}
+// rubber stamp
+function stamp(t, t0, x, y, txt, col = K.tomato) {
+  const a = seg(t, t0, t0 + .18); if (a <= 0) return; const s = lerp(1.8, 1, eo(a));
+  X.save(); X.translate(x, y); X.rotate(-.12); X.scale(s, s); X.globalAlpha *= clamp(a * 3);
+  X.font = '64px "Lilita One"'; const w = X.measureText(txt).width + 70;
+  X.strokeStyle = col; X.lineWidth = 8; X.setLineDash([60, 8, 30, 6]); X.beginPath(); X.roundRect(-w / 2, -54, w, 108, 14); X.stroke();
+  X.setLineDash([]); X.fillStyle = col; X.textAlign = 'center'; X.textBaseline = 'middle'; X.fillText(txt, 0, 4);
+  X.restore();
+}
+
+// ---------- characters ----------
+// glove hand (4-finger cartoon glove)
+function glove(x, y, s = 1, rot = 0, pose = 'open') {
+  X.save(); X.translate(x, y); X.rotate(rot); X.scale(s, s);
+  if (pose === 'point') {
+    shape(() => { X.ellipse(0, 0, 26, 22, 0, 0, TAU); X.moveTo(14, -8); X.roundRect(10, -10, 46, 16, 8); }, K.white, { lw: 3.5 });
+    ink([[-4, -6], [8, -4]], 2.2);
+  } else if (pose === 'fist') {
+    shape(E(0, 0, 26, 24), K.white, { lw: 3.5 }); ink([[-10, -8], [-10, 6]], 2); ink([[2, -10], [2, 6]], 2); ink([[13, -8], [13, 4]], 2);
+  } else {
+    shape(() => { X.ellipse(0, 0, 24, 22, 0, 0, TAU); for (let i = 0; i < 4; i++) { const a = -1.9 + i * .42; X.moveTo(Math.cos(a) * 18, Math.sin(a) * 18); X.ellipse(Math.cos(a) * 34, Math.sin(a) * 34, 15, 9, a, 0, TAU); } }, K.white, { lw: 3.5 });
+  }
+  X.restore();
+}
+// arm: thick ink ribbon with a colour ribbon on top, shoulder -> elbow -> hand
+function arm(sx, sy, a1, l1, a2, l2, sleeve, o = {}) {
+  const ex = sx + Math.cos(a1) * l1, ey = sy + Math.sin(a1) * l1, hx = ex + Math.cos(a1 + a2) * l2, hy = ey + Math.sin(a1 + a2) * l2;
+  X.save(); X.lineCap = 'round'; X.lineJoin = 'round';
+  X.beginPath(); X.moveTo(sx, sy); X.lineTo(ex, ey); X.lineTo(hx, hy); X.strokeStyle = K.ink; X.lineWidth = (o.w || 26) + 8; X.stroke();
+  X.beginPath(); X.moveTo(sx + REG[0] * .5, sy + REG[1] * .5); X.lineTo(ex + REG[0] * .5, ey + REG[1] * .5); X.lineTo(hx, hy); X.strokeStyle = sleeve; X.lineWidth = o.w || 26; X.stroke();
+  X.restore();
+  glove(hx, hy, o.hs || 1, a1 + a2 + (o.hr || 0), o.pose || 'open');
+  return { ex, ey, hx, hy };
+}
+// head: egg with the nose as part of the outline (facing right unless flip)
+function eggHead(x, y, s, skin, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s * (o.flip ? -1 : 1), s);
+  const path = () => { X.moveTo(0, -95); X.bezierCurveTo(60, -95, 78, -50, 74, -18); X.lineTo(104, 8); X.lineTo(72, 22); X.bezierCurveTo(66, 70, 30, 92, -4, 92); X.bezierCurveTo(-60, 92, -80, 50, -78, 0); X.bezierCurveTo(-76, -60, -48, -95, 0, -95); };
+  shape(path, skin, { lw: 4.2, shade: () => X.rect(-90, 40, 200, 80), shadeCol: 'rgba(120,60,30,.18)', id: o.id || 50 });
+  // ear
+  shape(E(-30, 6, 14, 20), skin, { lw: 3.5, id: (o.id || 50) + 1 });
+  // eye
+  const bl = o.blink ? .15 : 1;
+  X.fillStyle = K.white; X.beginPath(); X.ellipse(36, -22, 14, 17 * bl, 0, 0, TAU); X.fill(); X.strokeStyle = K.ink; X.lineWidth = 3; X.stroke();
+  X.fillStyle = K.ink; X.beginPath(); X.ellipse(40 + (o.look || 0) * 4, -20, 6, 8 * bl, 0, 0, TAU); X.fill();
+  // brow
+  const b = o.brow || 0; ink([[22, -48 - b * 6], [52, -50 + b * 6]], 4.5);
+  // mouth (open by speech)
+  const m = o.mouth || 0;
+  if (m > .1) { shape(() => X.ellipse(52, 46, 14, 4 + m * 14, 0, 0, TAU), '#8a3a2c', { lw: 3.2, noreg: true, id: (o.id || 50) + 2 }); }
+  else ink([[38, 44], [52, 50 + (o.smile || 1) * 2], [64, 44]], 3.5);
+  X.restore();
+}
+
+// the mouse: grey, small round ear, pointed snout, long tail
+function mouse(x, y, s = 1, o = {}) {
+  const run = o.run || 0, bob = Math.abs(Math.sin(run * 6)) * 8 * (o.running ? 1 : 0);
+  X.save(); X.translate(x, y - bob * s); X.scale(s * (o.flip ? -1 : 1), s);
+  // tail
+  curve(-58, 8, -120, -30 + Math.sin(T * 5) * 20, -150, 30, 5, K.ink);
+  // legs
+  const lp = o.running ? Math.sin(run * 12) * 12 : 0;
+  ink([[-28, 26], [-34 - lp, 46]], 6); ink([[24, 26], [30 + lp, 46]], 6);
+  // body
+  shape(() => { X.ellipse(-6, 0, 62, 40, -.05, 0, TAU); }, K.grey, { lw: 4, shade: () => X.rect(-80, 18, 160, 40), shadeCol: 'rgba(40,30,30,.18)', id: 70 });
+  // belly
+  X.fillStyle = 'rgba(251,244,228,.6)'; X.beginPath(); X.ellipse(4, 18, 34, 16, 0, 0, TAU); X.fill();
+  // head + snout
+  shape(() => { X.moveTo(30, -34); X.bezierCurveTo(60, -40, 84, -16, 104, -2); X.bezierCurveTo(84, 14, 58, 22, 36, 16); X.bezierCurveTo(20, 6, 18, -26, 30, -34); }, K.grey, { lw: 4, id: 71 });
+  // ear
+  shape(E(34, -42, 20, 24, -.3), K.grey, { lw: 3.5, id: 72 }); X.fillStyle = K.pink; X.beginPath(); X.ellipse(36, -41, 11, 14, -.3, 0, TAU); X.fill();
+  // nose + whiskers
+  X.fillStyle = K.pink; X.beginPath(); X.arc(105, -2, 7, 0, TAU); X.fill(); X.strokeStyle = K.ink; X.lineWidth = 2.5; X.stroke();
+  ink([[96, 2], [128, -6]], 2); ink([[96, 6], [126, 12]], 2);
+  // eye
+  const bl = o.blink ? .2 : 1; X.fillStyle = K.ink; X.beginPath(); X.ellipse(66, -14, 6, 7 * bl, 0, 0, TAU); X.fill();
+  if (o.wink) ink([[58, -14], [72, -12]], 3);
+  X.restore();
+}
+
+// Roman physician (held body; arms, eyes, mouth animate)
+function medicus(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  // feet / sandals
+  shape(R(-70, -20, 60, 20, 8), K.ink, { line: false }); shape(R(10, -20, 60, 20, 8), K.ink, { line: false });
+  // toga body (trapezoid) + plum stripe sash
+  const body = P([[-110, -20], [-80, -330], [80, -330], [120, -20]]);
+  shape(body, K.white, { lw: 4.5, shade: () => X.rect(10, -340, 140, 330), shadeCol: 'rgba(120,100,80,.15)', id: 30 });
+  shape(P([[-80, -330], [-30, -330], [90, -40], [40, -40]]), K.plum, { lw: 3.5, id: 31 });
+  // back arm (left)
+  const a = o.armL || [1.9, .3];
+  arm(-70, -300, a[0], 110, a[1], 100, K.white, { w: 30, pose: o.poseL || 'open' });
+  // head
+  eggHead(4, -420, .95, K.skin, { mouth: o.mouth, brow: o.brow, look: o.look, blink: o.blink, id: 40 });
+  // bald top + beard + laurel
+  shape(() => { X.moveTo(-70, -380); X.bezierCurveTo(-60, -320, 20, -320, 60, -360); X.bezierCurveTo(40, -330, -20, -310, -50, -330); }, '#6b4a33', { lw: 3, id: 42 });
+  for (let i = 0; i < 6; i++) { const ang = Math.PI + .35 + i * .42; shape(E(4 + Math.cos(ang) * 72, -440 + Math.sin(ang) * 74, 16, 8, ang + 1.4), K.olive, { lw: 2.5, id: 43 + i }); }
+  // front arm (right)
+  const b = o.armR || [1.4, -.2];
+  arm(60, -300, b[0], 110, b[1], 100, K.white, { w: 30, pose: o.poseR || 'open' });
+  X.restore();
+}
+
+// gladiator-athlete: tunic, big flexing arm, a "mouse" bump runs under the skin
+function athlete(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  // legs + sandals
+  shape(R(-62, -200, 44, 190, 14), K.skin, { lw: 4, id: 80 }); shape(R(18, -200, 44, 190, 14), K.skin, { lw: 4, id: 81 });
+  ink([[-62, -60], [-18, -60]], 5, '#6b4a33'); ink([[18, -60], [62, -60]], 5, '#6b4a33');
+  shape(R(-76, -16, 66, 22, 8), '#6b4a33', { lw: 3, id: 82 }); shape(R(10, -16, 66, 22, 8), '#6b4a33', { lw: 3, id: 83 });
+  // tunic
+  shape(P([[-110, -190], [-96, -470], [96, -470], [110, -190]]), K.tomato, { lw: 4.5, shade: () => X.rect(20, -480, 120, 300), id: 84 });
+  shape(R(-112, -250, 224, 34, 6), K.mustard, { lw: 3.5, id: 85 });
+  // left arm resting
+  arm(-96, -440, 1.75, 130, .2, 110, K.skin, { w: 40, pose: 'fist' });
+  // head
+  eggHead(0, -560, .9, K.skin, { mouth: o.mouth, brow: o.brow || -1, look: o.look, blink: o.blink, smile: 1, id: 86 });
+  shape(() => { X.moveTo(-72, -600); X.bezierCurveTo(-50, -680, 40, -690, 66, -620); X.bezierCurveTo(30, -640, -20, -640, -72, -600); }, '#3d2a1f', { lw: 3, id: 87 });
+  // flexing right arm: upper arm out to the right, forearm up
+  const f = o.flex || 0, sx = 96, sy = -440;
+  const a1 = lerp(.45, -0.05, f), a2 = lerp(.3, -1.95, f);
+  const ex = sx + Math.cos(a1) * 170, ey = sy + Math.sin(a1) * 170, hx = ex + Math.cos(a1 + a2) * 150, hy = ey + Math.sin(a1 + a2) * 150;
+  X.save(); X.lineCap = 'round'; X.lineJoin = 'round';
+  X.beginPath(); X.moveTo(sx, sy); X.lineTo(ex, ey); X.lineTo(hx, hy); X.strokeStyle = K.ink; X.lineWidth = 58; X.stroke();
+  X.beginPath(); X.moveTo(sx + 2, sy + 2); X.lineTo(ex + 2, ey + 2); X.lineTo(hx, hy); X.strokeStyle = K.skin; X.lineWidth = 50; X.stroke();
+  X.restore();
+  // biceps bulge (grows with flex) on top of the upper arm
+  const mx = lerp(sx, ex, .55), my = lerp(sy, ey, .55) - 22 * f;
+  if (f > .05) shape(E(mx, my, 62 * f + 10, 34 * f + 6, a1), K.skin, { lw: 4, id: 88, shade: () => X.rect(mx - 80, my + 10, 160, 60), shadeCol: 'rgba(150,80,40,.18)' });
+  // the running bump (a mouse under the skin)
+  if (o.bump != null) {
+    const u = o.bump, bx = lerp(sx + 20, ex - 10, u), by = lerp(sy, ey, u) - 28 * f - 10;
+    shape(E(bx, by, 34, 22, a1), K.skin, { lw: 3.5, id: 89 });
+    ink([[bx - 40, by + 8], [bx - 62, by + 14 + Math.sin(T * 14) * 6]], 3, K.skinD);
+  }
+  glove(hx, hy, 1.2, a1 + a2, 'fist');
+  X.restore();
+  return { mx: x + mx * s, my: y + my * s, ex: x + ex * s, ey: y + ey * s };
+}
+
+// modern student in a turquoise hoodie with a dumbbell
+function student(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  shape(R(-56, -210, 46, 200, 14), K.navy, { lw: 4, id: 100 }); shape(R(10, -210, 46, 200, 14), K.navy, { lw: 4, id: 101 });
+  shape(R(-74, -18, 70, 24, 10), K.white, { lw: 3, id: 102 }); shape(R(4, -18, 70, 24, 10), K.white, { lw: 3, id: 103 });
+  shape(P([[-104, -200], [-92, -470], [92, -470], [104, -200]]), K.turq, { lw: 4.5, shade: () => X.rect(20, -480, 120, 300), id: 104 });
+  shape(R(-50, -300, 100, 50, 12), 'rgba(0,0,0,.0)', { lw: 3, id: 105 });
+  arm(-90, -440, 1.8, 120, .15, 110, K.turq, { w: 40, pose: 'open' });
+  eggHead(0, -560, .9, K.skin, { mouth: o.mouth, brow: o.brow, look: o.look, blink: o.blink, id: 106 });
+  shape(() => { X.moveTo(-76, -590); X.bezierCurveTo(-70, -690, 60, -700, 70, -610); X.bezierCurveTo(40, -650, 0, -620, -20, -650); X.bezierCurveTo(-40, -610, -60, -620, -76, -590); }, '#4a2e22', { lw: 3, id: 107 });
+  // lifting arm (curl) with dumbbell
+  const c = o.curl || 0, sx = 90, sy = -440;
+  const a1 = 1.45, a2 = lerp(.05, -2.3, c);
+  const r = arm(sx, sy, a1, 130, a2, 120, K.turq, { w: 40, pose: 'fist', hs: 1.1 });
+  // dumbbell
+  X.save(); X.translate(r.hx, r.hy); X.rotate(a1 + a2 + Math.PI / 2);
+  shape(R(-70, -8, 140, 16, 6), K.greyD, { lw: 3, id: 108 }); shape(R(-92, -34, 30, 68, 8), K.ink, { lw: 3, id: 109 }); shape(R(62, -34, 30, 68, 8), K.ink, { lw: 3, id: 110 });
+  X.restore();
+  X.restore();
+  return r;
+}
+
+// round call-out with a leader line (drawn at native scale)
+function callout(t, t0, cx, cy, r, tx, ty, draw, o = {}) {
+  const k = back(seg(t, t0, t0 + .35), 1.8); if (k <= 0) return;
+  X.save(); X.strokeStyle = K.ink; X.lineWidth = 4; X.setLineDash([16, 8]); X.beginPath(); X.moveTo(tx, ty); X.lineTo(lerp(tx, cx, k), lerp(ty, cy, k)); X.stroke(); X.restore();
+  X.save(); X.translate(cx, cy); X.scale(k, k);
+  shape(E(0, 0, r + 14, r + 14), o.ring || K.mustard, { lw: 4, id: 120 });
+  X.save(); X.beginPath(); X.arc(0, 0, r, 0, TAU); X.clip(); draw(); X.restore();
+  X.beginPath(); X.arc(0, 0, r, 0, TAU); X.strokeStyle = K.ink; X.lineWidth = 5; X.stroke();
+  X.restore();
+}
+
+// ---------- voice data ----------
+let Z = null; const L = {};
+const T0 = id => L[id] ? L[id].t0 : 0, T1 = id => L[id] ? L[id].t1 : 0;
+function talking(t, ids) { // mouth flap from word timings
+  for (const id of ids) { const l = L[id]; if (!l || t < l.t0 || t > l.t1) continue;
+    for (const k of l.kelimeler || []) if (t >= k.t0 && t <= k.t1) { const u = (t - k.t0) / Math.max(.08, k.t1 - k.t0); return Math.abs(Math.sin(u * Math.PI * Math.max(1, Math.round((k.t1 - k.t0) * 6)))) * .9 + .1; } }
+  return 0;
+}
+
+// ---------- caption card (bottom-centre, above the 380 px safe band) ----------
+const KEY = /^(in|case|case'ten|if|unless|provided|that|will)[.,!?]*$/i;
+const TR = { s02: 'Yağmur yağar diye şemsiye al.', s05: 'Yağmur yağarsa şemsiye al.', s08: 'Acele etmezsen otobüsü kaçırırsın.', s10: 'Cumaya kadar geri getirmen şartıyla bisikletimi ödünç alabilirsin.' };
+function wrap(words, font, maxW) { X.font = font; const out = [[]]; let w = 0; const sp = X.measureText(' ').width;
+  words.forEach(wd => { const ww = X.measureText(wd).width; if (w + ww > maxW && out[out.length - 1].length) { out.push([]); w = 0; } out[out.length - 1].push(wd); w += ww + sp; }); return out; }
+function caption(t) {
+  if (!Z) return; const l = Z.satirlar.find(l => t >= l.t0 - .15 && t <= l.t1 + .45); if (!l) return;
+  const words = l.metin.split(' '), kel = l.kelimeler || [];
+  const heard = kel.filter(k => k.t0 <= t).length, shown = t > l.t1 ? words.length : Math.max(1, Math.round(heard * words.length / Math.max(1, kel.length)));
+  const font = '600 48px Fredoka', rows = wrap(words, font, 760), tr = TR[l.id], trr = tr ? wrap(tr.split(' '), '500 34px Fredoka', 760) : [];
+  const lh = 60, h = rows.length * lh + 50 + trr.length * 44 + (tr ? 10 : 0), y1 = 1528, y0 = y1 - h, w = 860, x0 = (W - 120 - w) / 2 + 20;
+  const a = ss(seg(t, l.t0 - .15, l.t0 + .08)) * (1 - ss(seg(t, l.t1 + .2, l.t1 + .45))), rise = (1 - eo(seg(t, l.t0 - .15, l.t0 + .2))) * 24;
+  scr(); X.save(); X.translate(0, rise); X.globalAlpha = a;
+  shape(R(x0, y0, w, h, 26), K.paper, { lw: 4, id: 300 });
+  sparkle(x0 + 2, y0 + h / 2, 22, K.tomato, T * 1.5); sparkle(x0 + w - 2, y0 + h / 2, 22, K.tomato, -T * 1.5);
+  X.font = font; X.textAlign = 'left'; X.textBaseline = 'alphabetic'; let n = 0;
+  rows.forEach((r, ri) => { const rw = X.measureText(r.join(' ')).width; let x = x0 + (w - rw) / 2; const y = y0 + 22 + lh * (ri + 1) - 12;
+    r.forEach(wd => { const vis = n < shown; X.globalAlpha = a * (vis ? 1 : .25); X.fillStyle = KEY.test(wd) ? K.tomato : (l.dil === 'en' ? K.navy : K.ink); X.fillText(wd, x, y); x += X.measureText(wd + ' ').width; n++; }); });
+  if (tr) { X.globalAlpha = a * ss(seg(t, l.t0 + .8, l.t0 + 1.2)); X.font = '500 34px Fredoka'; X.fillStyle = K.greyD; X.textAlign = 'center'; trr.forEach((r, i) => X.fillText(r.join(' '), x0 + w / 2, y0 + 22 + lh * rows.length + 30 + i * 44)); }
+  X.restore();
+}
+
+
+// ---------- extra props & characters for "in case / if / unless / provided that" ----------
+function cross(x, y, s = 1, col = K.tomato) { X.save(); X.translate(x, y); X.scale(s, s); X.lineCap = 'round'; X.strokeStyle = K.ink; X.lineWidth = 26; X.beginPath(); X.moveTo(-34, -34); X.lineTo(34, 34); X.moveTo(34, -34); X.lineTo(-34, 34); X.stroke(); X.strokeStyle = col; X.lineWidth = 16; X.stroke(); X.restore(); }
+function check(x, y, s = 1, col = K.olive) { X.save(); X.translate(x, y); X.scale(s, s); X.lineCap = 'round'; X.lineJoin = 'round'; X.strokeStyle = K.ink; X.lineWidth = 26; X.beginPath(); X.moveTo(-36, 0); X.lineTo(-10, 28); X.lineTo(40, -32); X.stroke(); X.strokeStyle = col; X.lineWidth = 16; X.stroke(); X.restore(); }
+
+// sun with sunglasses
+function sun(x, y, r, o = {}) {
+  rays(x, y, r * 2.6, K.white, .25, T * .15);
+  starburst(x, y, r * 1.08, r * 1.32, 16, '#f2c14e', T * .2, { lw: 3, id: 600 });
+  shape(E(x, y, r, r), K.mustard, { lw: 4, id: 601 });
+  if (o.hide) return;
+  shape(() => { X.roundRect(x - r * .62, y - r * .28, r * .52, r * .34, 14); X.roundRect(x + r * .1, y - r * .28, r * .52, r * .34, 14); }, K.ink, { lw: 3, id: 602, noreg: true });
+  ink([[x - r * .1, y - r * .18], [x + r * .1, y - r * .18]], 4);
+  ink([[x - r * .3, y + r * .32], [x, y + r * .45], [x + r * .3, y + r * .32]], 5);
+}
+function cloud(x, y, s, col = K.white, id = 610) {
+  shape(() => { X.ellipse(x - 90 * s, y + 10 * s, 80 * s, 56 * s, 0, 0, TAU); X.moveTo(x + 60 * s, y - 40 * s); X.ellipse(x, y - 30 * s, 92 * s, 76 * s, 0, 0, TAU); X.moveTo(x + 170 * s, y + 10 * s); X.ellipse(x + 96 * s, y + 12 * s, 78 * s, 54 * s, 0, 0, TAU); X.moveTo(x + 160 * s, y + 50 * s); X.rect(x - 150 * s, y + 10 * s, 310 * s, 56 * s); }, col, { lw: 4, id });
+}
+function rain(x0, x1, y0, y1, u, a = 1) {
+  X.save(); X.globalAlpha *= a; X.strokeStyle = '#5f86a8'; X.lineWidth = 6; X.lineCap = 'round';
+  const r = mulberry(31);
+  for (let i = 0; i < 70; i++) { const x = x0 + r() * (x1 - x0), sp = 900 + r() * 400, y = y0 + ((r() * (y1 - y0) + u * sp) % (y1 - y0)); X.beginPath(); X.moveTo(x, y); X.lineTo(x - 10, y + 44); X.stroke(); }
+  X.restore();
+}
+function puddle(x, y, w) { shape(E(x, y, w, w * .16), '#7fa3bf', { lw: 3, id: 620 }); }
+
+// Şemsi: the talking umbrella (closed: tall cone; open: dome)
+function semsi(x, y, s, o = {}) {
+  const op = o.open || 0;
+  X.save(); X.translate(x, y); X.scale(s, s); X.rotate(o.rot || 0);
+  if (op < .5) {
+    // handle (J) at the bottom, cone up
+    X.save(); X.lineCap = 'round'; X.strokeStyle = K.ink; X.lineWidth = 22; X.beginPath(); X.moveTo(0, -40); X.lineTo(0, 0); X.arc(-26, 0, 26, 0, Math.PI); X.stroke(); X.strokeStyle = '#8a5a3a'; X.lineWidth = 13; X.stroke(); X.restore();
+    shape(P([[-46, -60], [46, -60], [12, -330], [-12, -330]]), K.tomato, { lw: 4.2, shade: () => X.rect(4, -340, 60, 300), id: 630 });
+    ink([[0, -60], [0, -320]], 2.5, 'rgba(43,33,27,.5)');
+    shape(R(-50, -76, 100, 22, 8), K.mustard, { lw: 3, id: 631 });
+    shape(E(0, -350, 10, 16), K.ink, { line: false });
+    // face on the cone
+    const bl = o.blink ? .15 : 1;
+    X.fillStyle = K.white; for (const ex of [-14, 14]) { X.beginPath(); X.ellipse(ex, -230, 10, 13 * bl, 0, 0, TAU); X.fill(); X.strokeStyle = K.ink; X.lineWidth = 2.5; X.stroke(); X.fillStyle = K.ink; X.beginPath(); X.arc(ex + 2, -228, 4.5 * bl, 0, TAU); X.fill(); X.fillStyle = K.white; }
+    if (o.wink) { X.fillStyle = K.tomato; X.fillRect(2, -246, 26, 30); ink([[4, -230], [26, -228]], 3.5); }
+    const m = o.mouth || 0; if (m > .1) shape(E(0, -196, 12, 3 + m * 10), '#6b2a20', { lw: 2.5, noreg: true }); else ink([[-12, -200], [0, -192], [12, -200]], 3.5);
+  } else {
+    // shaft + handle
+    X.save(); X.lineCap = 'round'; X.strokeStyle = K.ink; X.lineWidth = 20; X.beginPath(); X.moveTo(0, -300); X.lineTo(0, 0); X.arc(-26, 0, 26, 0, Math.PI); X.stroke(); X.strokeStyle = '#8a5a3a'; X.lineWidth = 12; X.stroke(); X.restore();
+    const k = (op - .5) * 2, wR = 330 * lerp(.5, 1, k);
+    shape(() => { X.moveTo(-wR, -300); X.bezierCurveTo(-wR, -300 - 260 * k, wR, -300 - 260 * k, wR, -300); for (let i = 5; i >= 0; i--) { const a = -wR + (i + 1) * wR / 3, b = -wR + i * wR / 3; X.quadraticCurveTo((a + b) / 2, -260, b, -300); } X.closePath(); }, K.tomato, { lw: 5, shade: () => X.rect(0, -600, 400, 340), id: 632 });
+    for (let i = 1; i < 6; i++) curve(0, -300 - 230 * k, -wR + i * wR / 3 - (i - 3) * 10, -400, -wR + i * wR / 3, -300, 3, 'rgba(43,33,27,.55)');
+    shape(E(0, -310 - 236 * k, 12, 18), K.ink, { line: false });
+    const bl = o.blink ? .15 : 1, fy = -400 - 40 * k;
+    X.fillStyle = K.white; for (const ex of [-40, 40]) { X.beginPath(); X.ellipse(ex, fy, 18, 22 * bl, 0, 0, TAU); X.fill(); X.strokeStyle = K.ink; X.lineWidth = 3; X.stroke(); X.fillStyle = K.ink; X.beginPath(); X.arc(ex + 4, fy + 4, 8 * bl, 0, TAU); X.fill(); X.fillStyle = K.white; }
+    const m = o.mouth || 0; if (m > .1) shape(E(0, fy + 56, 22, 4 + m * 16), '#6b2a20', { lw: 3, noreg: true }); else ink([[-26, fy + 48], [0, fy + 66], [26, fy + 48]], 5);
+  }
+  X.restore();
+}
+
+// Ayla: student in a mustard raincoat, dark bob with a ponytail, turquoise backpack
+function ayla(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  const wk = o.walk || 0, lp = Math.sin(wk * 9) * (o.walking ? 16 : 0);
+  // legs (tights) + red shoes
+  shape(R(-50 + lp * .5, -200, 40, 196, 14), K.navy, { lw: 4, id: 700 }); shape(R(10 - lp * .5, -200, 40, 196, 14), K.navy, { lw: 4, id: 701 });
+  shape(R(-70 + lp * .5, -18, 66, 24, 10), K.tomato, { lw: 3, id: 702 }); shape(R(4 - lp * .5, -18, 66, 24, 10), K.tomato, { lw: 3, id: 703 });
+  // backpack behind
+  if (o.bag !== false) shape(R(-150, -440, 80, 200, 26), K.turq, { lw: 4, id: 704, shade: () => X.rect(-150, -300, 90, 80) });
+  // raincoat (trapezoid) + buttons + pocket
+  shape(P([[-104, -190], [-84, -470], [84, -470], [104, -190]]), o.coat || K.mustard, { lw: 4.5, shade: () => X.rect(22, -480, 120, 300), id: 705 });
+  for (let i = 0; i < 3; i++) shape(E(0, -420 + i * 70, 9, 9), K.ink, { line: false });
+  shape(R(30, -300, 54, 44, 10), o.coat || K.mustard, { lw: 3, id: 706 });
+  shape(P([[-60, -470], [0, -420], [60, -470]]), K.white, { lw: 3, id: 707 });
+  // back arm
+  const a = o.armL || [1.85, .15];
+  arm(-80, -440, a[0], 120, a[1], 110, o.coat || K.mustard, { w: 36, pose: o.poseL || 'open' });
+  // head + hair
+  eggHead(0, -560, .9, K.skin, { mouth: o.mouth, brow: o.brow, look: o.look, blink: o.blink, id: 708, flip: o.flip });
+  const f = o.flip ? -1 : 1;
+  X.save(); X.scale(f, 1);
+  shape(() => { X.moveTo(-80, -540); X.bezierCurveTo(-90, -690, 70, -700, 74, -590); X.bezierCurveTo(40, -630, 0, -600, -20, -630); X.bezierCurveTo(-30, -580, -50, -560, -80, -540); }, '#3a2418', { lw: 3, id: 709 });
+  const sw = Math.sin(T * 4) * 8;
+  shape(() => { X.ellipse(-104, -580 + sw * .3, 26, 48, .5 + sw * .01, 0, TAU); }, '#3a2418', { lw: 3, id: 710 });
+  shape(E(-82, -606, 14, 14), K.tomato, { lw: 2.5, id: 711 });
+  X.restore();
+  // front arm
+  const b = o.armR || [1.35, -.1];
+  const r = arm(80, -440, b[0], 120, b[1], 110, o.coat || K.mustard, { w: 36, pose: o.poseR || 'open' });
+  X.restore();
+  return { hx: x + r.hx * s, hy: y + r.hy * s };
+}
+
+// Ali Amca: neighbour, olive cardigan, grey hair, moustache, round glasses
+function ali(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  shape(R(-58, -210, 48, 204, 12), '#6a5a4a', { lw: 4, id: 720 }); shape(R(10, -210, 48, 204, 12), '#6a5a4a', { lw: 4, id: 721 });
+  shape(R(-78, -18, 70, 24, 10), K.ink, { lw: 3, id: 722 }); shape(R(8, -18, 70, 24, 10), K.ink, { lw: 3, id: 723 });
+  shape(P([[-116, -200], [-98, -480], [98, -480], [116, -200]]), K.olive, { lw: 4.5, shade: () => X.rect(20, -490, 120, 300), id: 724 });
+  shape(P([[-30, -480], [0, -360], [30, -480]]), K.white, { lw: 3, id: 725 });
+  ink([[0, -360], [0, -205]], 3); for (let i = 0; i < 3; i++) shape(E(-12, -330 + i * 45, 7, 7), K.mustard, { lw: 2 });
+  const a = o.armL || [1.9, .2];
+  arm(-94, -450, a[0], 125, a[1], 110, K.olive, { w: 38, pose: o.poseL || 'open' });
+  eggHead(0, -575, .92, K.skin, { mouth: o.mouth, brow: o.brow, look: o.look, blink: o.blink, id: 726, flip: o.flip });
+  const f = o.flip ? -1 : 1;
+  X.save(); X.scale(f, 1);
+  shape(() => { X.moveTo(-78, -580); X.bezierCurveTo(-80, -660, -30, -680, 10, -668); X.bezierCurveTo(-30, -650, -50, -620, -50, -580); X.closePath(); }, '#d9d3c7', { lw: 3, id: 727 });
+  shape(() => { X.moveTo(40, -536); X.bezierCurveTo(56, -548, 86, -548, 96, -530); X.bezierCurveTo(80, -524, 60, -524, 40, -536); }, '#d9d3c7', { lw: 3, id: 728 });
+  X.strokeStyle = K.ink; X.lineWidth = 4; X.beginPath(); X.arc(34, -596, 22, 0, TAU); X.stroke(); ink([[56, -596], [70, -592]], 4);
+  X.restore();
+  const b = o.armR || [1.3, -.1];
+  const r = arm(94, -450, b[0], 125, b[1], 110, K.olive, { w: 38, pose: o.poseR || 'open' });
+  X.restore();
+  return { hx: x + r.hx * s, hy: y + r.hy * s };
+}
+
+function backpack(x, y, s, open = 0) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  shape(R(-130, -260, 260, 260, 50), K.turq, { lw: 5, shade: () => X.rect(30, -270, 120, 280), id: 740 });
+  shape(R(-90, -110, 180, 90, 20), '#358680', { lw: 4, id: 741 });
+  if (open > 0) shape(() => { X.moveTo(-130, -210); X.quadraticCurveTo(0, -210 - 90 * open, 130, -210); X.lineTo(130, -190); X.lineTo(-130, -190); X.closePath(); }, '#2a6f6a', { lw: 4, id: 742 });
+  X.restore();
+}
+function bus(x, y, s, o = {}) {
+  X.save(); X.translate(x, y); X.scale(s, s);
+  shape(R(-330, -330, 660, 290, 40), K.turq, { lw: 5, shade: () => X.rect(-340, -120, 700, 90), id: 750 });
+  for (let i = 0; i < 4; i++) shape(R(-290 + i * 140, -290, 110, 110, 14), K.powder, { lw: 4, id: 751 + i });
+  shape(R(250, -290, 60, 200, 10), K.paper, { lw: 4, id: 756 });
+  shape(R(-340, -360, 160, 40, 10), K.mustard, { lw: 3, id: 757 }); ttext('42', -260, -340, '32px "Lilita One"', K.ink, null);
+  for (const wx of [-200, 200]) { shape(E(wx, -30, 56, 56), K.ink, { lw: 3, id: 758 }); X.fillStyle = K.grey; X.beginPath(); X.arc(wx, -30, 22, 0, TAU); X.fill(); }
+  X.restore();
+}
+function bike(x, y, s) {
+  X.save(); X.translate(x, y); X.scale(s, s); X.lineCap = 'round'; X.lineJoin = 'round';
+  for (const wx of [-150, 150]) { X.strokeStyle = K.ink; X.lineWidth = 16; X.beginPath(); X.arc(wx, -100, 95, 0, TAU); X.stroke(); X.strokeStyle = K.greyD; X.lineWidth = 3; for (let i = 0; i < 6; i++) { const a = i * Math.PI / 6 + T; X.beginPath(); X.moveTo(wx + Math.cos(a) * 90, -100 + Math.sin(a) * 90); X.lineTo(wx - Math.cos(a) * 90, -100 - Math.sin(a) * 90); X.stroke(); } }
+  const fr = [[-150, -100], [-30, -100], [100, -250], [-60, -250], [-150, -100]];
+  X.strokeStyle = K.ink; X.lineWidth = 22; X.beginPath(); fr.forEach((p, i) => i ? X.lineTo(...p) : X.moveTo(...p)); X.moveTo(-30, -100); X.lineTo(-80, -290); X.moveTo(100, -250); X.lineTo(150, -100); X.moveTo(100, -250); X.lineTo(80, -330); X.stroke();
+  X.strokeStyle = K.coral; X.lineWidth = 13; X.stroke();
+  shape(R(-120, -310, 90, 26, 12), K.ink, { lw: 2, id: 760 }); ink([[50, -335], [120, -330]], 12);
+  X.restore();
+}
+function calendar(t, t0, x, y, txt) {
+  const k = back(seg(t, t0, t0 + .3), 2); if (k <= 0) return;
+  X.save(); X.translate(x, y); X.scale(k, k);
+  shape(R(-120, -130, 240, 260, 20), K.paper, { lw: 4.5, id: 770 }); shape(R(-120, -130, 240, 70, 20), K.tomato, { lw: 4, id: 771 });
+  ink([[-60, -150], [-60, -110]], 8); ink([[60, -150], [60, -110]], 8);
+  ttext(txt, 0, -94, '38px "Lilita One"', K.paper, null);
+  ttext('FRIDAY', 0, 30, fitFont('FRIDAY', 54, '"Lilita One"', 200), K.ink, K.mustard);
+  X.restore();
+}
+function clock(x, y, r, u) {
+  shape(E(x, y, r, r), K.paper, { lw: 5, id: 780 });
+  for (let i = 0; i < 12; i++) { const a = i * TAU / 12; ink([[x + Math.cos(a) * r * .78, y + Math.sin(a) * r * .78], [x + Math.cos(a) * r * .9, y + Math.sin(a) * r * .9]], 4); }
+  const a = -Math.PI / 2 + u * 2.2; ink([[x, y], [x + Math.cos(a) * r * .7, y + Math.sin(a) * r * .7]], 6, K.tomato); ink([[x, y], [x + r * .4, y - r * .2]], 7);
+}
+function windowFrame(x, y, w, h, sky, sunny = true) {
+  shape(R(x, y, w, h, 10), sky, { lw: 5, id: 790 });
+  if (sunny) { X.save(); X.beginPath(); X.rect(x, y, w, h); X.clip(); sun(x + w * .65, y + h * .4, 70, { hide: true }); X.restore(); }
+  ink([[x + w / 2, y], [x + w / 2, y + h]], 6); ink([[x, y + h / 2], [x + w, y + h / 2]], 6);
+}
+function sentenceCard(t, t0, x, y, txt, ok, o = {}) {
+  const k = back(seg(t, t0, t0 + .3), 2); if (k <= 0) return;
+  X.save(); X.translate(x, y); X.scale(k, k); X.rotate(o.rot || 0);
+  const font = fitFont(txt, o.size || 50, '"Lilita One"', o.maxW || 620);
+  X.font = font; const w = X.measureText(txt).width + 170;
+  shape(R(-w / 2, -62, w, 124, 24), ok ? K.white : '#f6d9cf', { lw: 4.5, id: 800 + (o.id || 0) });
+  ttext(txt, 40, 2, font, ok ? K.navy : K.tomato, null);
+  if (ok) check(-w / 2 + 62, 2, .9); else cross(-w / 2 + 62, 2, .8);
+  if (!ok && seg(t, t0 + .35, t0 + .6) > 0) { const s = seg(t, t0 + .35, t0 + .6); ink([[-w / 2 + 120, 2], [lerp(-w / 2 + 120, w / 2 - 20, s), 2]], 4, 'rgba(217,87,59,.75)'); }
+  X.restore();
+}
+
+// ---------- scenes ----------
+function street(hy = 1250) {
+  room('#9cc3c9', '#c9b28a', hy);
+  // houses (colour planes)
+  shape(R(-40, 700, 300, hy - 700), K.coral, { lw: 4.5, id: 810 }); shape(P([[-60, 710], [110, 560], [280, 710]]), K.plum, { lw: 4, id: 811 });
+  shape(R(40, 800, 90, 110, 8), K.paper, { lw: 3.5, id: 812 }); shape(R(150, 1050, 80, hy - 1050), K.ink, { line: false });
+  shape(R(780, 760, 320, hy - 760), K.mustard, { lw: 4.5, id: 813 }); shape(P([[760, 770], [940, 620], [1120, 770]]), K.tomato, { lw: 4, id: 814 });
+  shape(R(830, 860, 100, 110, 8), K.paper, { lw: 3.5, id: 815 });
+  ink([[-100, hy + 120], [1200, hy + 120]], 4, 'rgba(43,33,27,.5)');
+}
+function sHook(t, t0) { // 1: blazing sun, Ayla takes an umbrella anyway
+  const u = t - t0; CAM = { x: 520, y: 960 - u * 5, z: 1.1 - u * .01 }; cam();
+  street();
+  sun(720, 470, 120);
+  dots(40, 260, 1040, 640, 70, K.white, .25);
+  const w = eo(seg(u, 0, 1.6));
+  const p = ayla(lerp(160, 400, w), 1500, 1.0, { walking: w < 1, walk: u, armR: [.9, -1.7], poseR: 'fist', look: 1, brow: .2, blink: u > 2.6 && u < 2.72 });
+  semsi(p.hx + 4, p.hy + 40, .9, { blink: u > 1.8 && u < 1.9 });
+  const q = back(seg(u, 1.1, 1.4)); if (q > 0) { X.save(); X.translate(330, 640); X.scale(q, q); starburst(0, 0, 70, 95, 12, K.white, T * .4, { lw: 3 }); ttext('?', 0, 6, '110px "Lilita One"', K.tomato, K.ink); X.restore(); }
+}
+function roomSet() {
+  room('#e9876a', '#b9664c', 1240);
+  windowFrame(560, 380, 360, 380, '#bfe0e6', true);
+  shape(R(80, 1080, 360, 160, 14), '#d8b98a', { lw: 4, id: 820 }); shape(R(110, 1240, 30, 120), K.ink, { line: false }); shape(R(380, 1240, 30, 120), K.ink, { line: false });
+  for (let i = 0; i < 4; i++) shape(R(110 + i * 70, 960, 50, 120, 6), [K.turq, K.mustard, K.plum, K.white][i], { lw: 3, id: 821 + i });
+}
+function sPack(t, t0) { // 2: in case = precaution — the umbrella goes into the bag
+  const u = t - t0, d4 = T0('s04') - t0;
+  CAM = { x: 520, y: 980, z: lerp(1.0, 1.06, seg(u, 0, 6)) }; cam();
+  roomSet();
+  backpack(700, 1460, 1.0, 1);
+  const into = eio(seg(u, .6, 1.6));
+  const ap = ayla(300, 1520, 1.0, { bag: false, armR: [lerp(.3, .15, into), lerp(-.6, .2, into)], poseR: 'fist', look: 1, mouth: talking(t, []), blink: u > 3 && u < 3.1 });
+  semsi(lerp(ap.hx + 30, 700, into), lerp(ap.hy + 60, 1400, into), .85, { rot: lerp(-.2, 0, into), wink: u > d4 && u < d4 + .6, blink: u > 2.2 && u < 2.3 });
+  backpack(700, 1460, 1.0, 0); // front of bag covers the umbrella
+  shape(R(570, 1260, 260, 60, 20), K.turq, { lw: 4, id: 830 });
+  medallion(t, t0 + .3, 230, 420, 66, '1', K.tomato);
+  tag(t, T0('s03') + .1, 520, 640, ['in case', '= olur da … diye'], { font: '64px "Lilita One"', fonts: ['74px "Lilita One"', '600 50px Fredoka'], cols: [K.tomato, K.ink], lh: 78, id: 1, star: K.turq });
+  stamp(t, T0('s03') + 1.6, 520, 880, 'ÖNLEM', K.plum);
+  if (u > d4) for (let i = 0; i < 5; i++) sparkle(700 + Math.cos(i * 1.3 + T * 2) * 170, 1300 + Math.sin(i * 1.3 + T * 2) * 70, 16, K.white, T * 3);
+}
+function sSplit(t, t0) { // 3: in case vs if — split frame
+  const u = t - t0; CAM = { x: 540, y: 960, z: 1 }; cam();
+  X.fillStyle = '#f0c66b'; X.fillRect(-400, -400, 940, 2800); X.fillStyle = '#9cb3c9'; X.fillRect(540, -400, 1000, 2800);
+  ink([[540, 260], [540, 1540]], 5);
+  // left: sun, bag already packed
+  sun(270, 470, 70);
+  backpack(270, 1250, .75, 0); semsi(300, 1110, .6, {});
+  tag(t, t0 + .1, 270, 760, ['in case'], { font: '64px "Lilita One"', cols: [K.tomato], id: 2, star: K.turq });
+  tag(t, t0 + .45, 270, 900, ['önlem'], { font: '600 48px Fredoka', id: 3, star: K.mustard });
+  // right: if — only when the rain starts
+  const rs = seg(t, T0('s06') - .1, T0('s06') + .4);
+  cloud(760, 450, .8, K.white, 840);
+  if (rs > 0) { X.save(); X.beginPath(); X.rect(546, 480, 540, 1000); X.clip(); rain(560, 1000, 480, 1480, u, rs); X.restore(); }
+  const op = ss(seg(t, T0('s06') + .5, T0('s06') + 1.1));
+  semsi(760, 1330, .6, { open: lerp(.2, 1, op), blink: u > 2 && u < 2.1 });
+  tag(t, T0('s05') + .1, 770, 760, ['if'], { font: '72px "Lilita One"', cols: [K.navy], id: 4, star: K.tomato });
+  tag(t, T0('s06') + .3, 770, 900, ['koşul'], { font: '600 48px Fredoka', id: 5, star: K.navy });
+}
+function sTrap(t, t0) { // 4: no "will" after in case
+  const u = t - t0; CAM = { x: 520, y: 960, z: lerp(1.04, 1.0, eio(seg(u, 0, 2))) }; cam();
+  room(K.plum, '#5e3752', 1250);
+  dots(40, 260, 1040, 1240, 70, K.white, .2);
+  medallion(t, t0 + .05, 480, 360, 62, '!', K.tomato);
+  sentenceCard(t, t0 + .4, 480, 610, 'in case it will rain', false, { id: 1 });
+  sentenceCard(t, t0 + 1.4, 480, 800, 'in case it rains', true, { id: 2 });
+  semsi(800, 1480, .95, { mouth: talking(t, ['s07']), blink: u > 1.2 && u < 1.3 });
+  ayla(310, 1520, .85, { armR: [-.6, -.4], poseR: 'point', brow: 1, look: 1, blink: u > 2 && u < 2.1 });
+}
+function busSet(hy = 1250) {
+  room('#b7c25a', '#8c9441', hy);
+  shape(R(-100, hy, 1300, 120), '#7d776f', { lw: 4, id: 850 });
+  for (let x = -60; x < 1200; x += 160) ink([[x, hy + 60], [x + 80, hy + 60]], 7, K.white);
+  shape(R(90, 700, 20, hy - 700), K.ink, { line: false }); shape(E(100, 680, 60, 60), K.tomato, { lw: 4, id: 851 }); ttext('DURAK', 100, 682, '28px "Lilita One"', K.paper, null);
+}
+function sBus(t, t0) { // 5: unless = if not
+  const u = t - t0, d9 = T0('s09') - t0;
+  CAM = { x: 520, y: 980, z: 1.0 }; cam();
+  busSet();
+  clock(820, 420, 90, u);
+  const bx = lerp(1400, 640, eo(seg(u, .2, 1.4))) - (u > d9 + .2 ? eio(seg(u, d9 + .2, d9 + 2.2)) * 1200 : 0);
+  bus(bx, 1340, .85);
+  const run = seg(u, .8, d9);
+  ayla(lerp(-60, 260, eo(run)), 1520, .95, { walking: run < 1, walk: u * 1.6, armR: [-.3, -.3], poseR: 'open', brow: 1, look: 1, blink: false });
+  sweatDrops(lerp(-60, 260, eo(run)) - 40, 960, u);
+  medallion(t, t0 + .1, 220, 400, 60, '2', K.navy, { burst: K.coral });
+  tag(t, T0('s09') + .1, 480, 620, ['unless', '= if not'], { font: '64px "Lilita One"', fonts: ['74px "Lilita One"', '600 52px Fredoka'], cols: [K.tomato, K.navy], lh: 78, id: 6, star: K.plum });
+  sentenceCard(t, T0('s09') + 2.2, 480, 860, "Unless you don't hurry", false, { id: 3, size: 46 });
+}
+function sweatDrops(x, y, u) { for (let i = 0; i < 2; i++) { const k = (u * 1.5 + i * .5) % 1; X.save(); X.globalAlpha *= 1 - k; shape(() => { const px = x - 30 - i * 30 - k * 30, py = y + k * 60; X.moveTo(px, py - 16); X.quadraticCurveTo(px + 12, py + 6, px, py + 12); X.quadraticCurveTo(px - 12, py + 6, px, py - 16); }, '#bfe9ff', { lw: 2.5, noreg: true }); X.restore(); } }
+function gardenSet(hy = 1240) {
+  room('#e3a07a', '#8c9441', hy);
+  shape(R(560, 640, 520, hy - 640), K.paper, { lw: 4.5, id: 860 }); shape(P([[540, 650], [820, 470], [1100, 650]]), K.navy, { lw: 4, id: 861 });
+  shape(R(640, 920, 120, hy - 920, 8), K.turq, { lw: 4, id: 862 });
+  for (let i = 0; i < 9; i++) shape(R(-20 + i * 70, hy - 140, 40, 140, 6), K.white, { lw: 3, id: 863 + (i % 3) });
+  ink([[-40, hy - 100], [600, hy - 100]], 5);
+}
+function sBike(t, t0) { // 6: provided that = on condition that
+  const u = t - t0; CAM = { x: 520, y: 990, z: lerp(1.0, 1.05, seg(u, 0, 5)) }; cam();
+  gardenSet();
+  bike(500, 1300, .65);
+  const sp = talking(t, ['s10']);
+  ali(870, 1520, .95, { flip: true, mouth: sp, armL: [2.2, .5], armR: [lerp(1.3, 2.9, ss(seg(u, .3, .7))), .2], poseR: 'point', look: 1, blink: u > 2.4 && u < 2.52 });
+  ayla(150, 1520, .9, { armR: [lerp(1.35, .4, ss(seg(u, 2.2, 2.6))), -.2], look: 1, brow: .5, blink: u > 3.5 && u < 3.6 });
+  medallion(t, t0 + .1, 220, 400, 60, '3', K.plum, { burst: K.mustard });
+  calendar(t, t0 + 1.6, 800, 470, 'CUMA');
+  tag(t, T0('s11') + .1, 470, 740, ['provided that', '= şartıyla'], { font: '58px "Lilita One"', fonts: ['64px "Lilita One"', '600 52px Fredoka'], cols: [K.tomato, K.ink], lh: 76, id: 7, star: K.turq });
+}
+function sTurn(t, t0) { // 7: the turn — the rain comes, Ayla is ready
+  const u = t - t0; CAM = { x: 520, y: 960, z: 1.0 }; cam();
+  street(1250);
+  X.save(); X.fillStyle = 'rgba(60,70,95,.30)'; X.fillRect(-400, -400, 1900, 2800); X.restore();
+  cloud(300, 380, 1.0, '#d7dde3', 870); cloud(760, 330, .9, '#c9d1d9', 871);
+  rain(0, 1080, 300, 1560, u + 3, 1);
+  puddle(300, 1560, 160); puddle(820, 1600, 120);
+  const op = ss(seg(u, .3, 1.0));
+  const p = ayla(360, 1520, 1.0, { armR: [-1.2, -.3], poseR: 'fist', look: 1, brow: -.3, mouth: 0, blink: u > 2.2 && u < 2.3 });
+  semsi(p.hx, p.hy + 30, .95, { open: lerp(.2, 1, op), blink: u > 1.6 && u < 1.7, mouth: 0 });
+  // Ali Amca, soaked, newspaper on his head
+  const q = ali(820, 1540, .82, { flip: true, armL: [-1.9, -.4], armR: [-1.4, .4], brow: 1.3, look: -1 });
+  shape(P([[660, 955], [970, 935], [985, 990], [670, 1010]]), K.paper, { lw: 3.5, id: 872 });
+  for (let i = 0; i < 4; i++) ink([[700 + i * 60, 972], [740 + i * 60, 970]], 3, K.greyD);
+  sweatDrops(920, 1000, u);
+  if (u > 1.0) for (let i = 0; i < 5; i++) { const a = back(seg(u, 1.0 + i * .1, 1.3 + i * .1)); if (a > 0) sparkle(360 + Math.cos(i * 1.3) * 300, 720 + Math.sin(i * 1.3) * 100, 20 * a, K.white, T * 2 + i); }
+  tag(t, t0 + 1.2, 800, 560, ['in case'], { font: '64px "Lilita One"', cols: [K.tomato], id: 8, star: K.mustard });
+}
+function sEnd(t, t0, dur) { // 8: the echo — back in the sun, your turn; then the closing card
+  const u = t - t0; CAM = { x: 520, y: 990, z: 1.04 }; cam();
+  roomSet();
+  backpack(700, 1460, 1.0, 1); semsi(700, 1330, .7, { wink: u > .8 && u < 1.6 }); backpack(700, 1460, 1.0, 0); shape(R(570, 1260, 260, 60, 20), K.turq, { lw: 4, id: 830 });
+  ayla(300, 1520, 1.0, { armR: [-.2, -.6], poseR: 'point', look: 1, brow: .4, mouth: 0, blink: u > 1.9 && u < 2.0 });
+  tag(t, t0 + .2, 480, 560, ['in case …?'], { font: '72px "Lilita One"', cols: [K.tomato], id: 9, star: K.turq });
+  const ce = dur - 3.0, k = seg(t, ce, ce + .45);
+  if (k > 0) {
+    scr(); const rad = lerp(1300, 0, eio(k));
+    X.save(); X.beginPath(); X.rect(0, 0, W, H); X.arc(540, 900, rad, 0, TAU, true); X.fillStyle = K.navy; X.fill('evenodd'); X.restore();
+    if (k >= 1) { X.fillStyle = K.navy; X.fillRect(0, 0, W, H); }
+    const c = back(seg(t, ce + .4, ce + .75), 2);
+    if (c > 0) { X.save(); X.translate(500, 900); X.scale(c, c);
+      starburst(0, 0, 330, 380, 16, K.mustard, T * .2, { lw: 4 });
+      shape(R(-380, -140, 760, 280, 36), K.paper, { lw: 5, id: 890 });
+      ttext('ingilizcecim.com', 0, -24, fitFont('ingilizcecim.com', 92, '"Lilita One"', 680), K.tomato, K.ink);
+      ttext('in case · if · unless · YDT/YDS', 0, 70, '600 36px Fredoka', K.ink, null);
+      X.restore(); semsi(800, 1380, .55, { wink: true }); }
+  }
+}
+
+let SC = [];
+function buildScenes() {
+  SC = [
+    [sHook, 0, 'cut'],
+    [sPack, T0('s02') - .25, 'iris'],
+    [sSplit, T0('s05') - .25, 'wipeL'],
+    [sTrap, T0('s07') - .25, 'wipeU'],
+    [sBus, T0('s08') - .25, 'iris'],
+    [sBike, T0('s10') - .25, 'wipeL'],
+    [sTurn, T0('s12') - .25, 'iris'],
+    [sEnd, T0('s13') - .25, 'wipeU'],
+  ];
+}
+function drawScene(i, t) { const [f, s] = SC[i]; SID = 0; f(t, s, Z.dur); }
+function sceneAt(t) { let i = 0; for (let j = 0; j < SC.length; j++) if (t >= SC[j][1]) i = j; return i; }
+
+window.render = t => {
+  setClock(t); scr(); X.globalAlpha = 1; X.globalCompositeOperation = 'source-over'; X.setLineDash([]);
+  X.fillStyle = K.paper; X.fillRect(0, 0, W, H);
+  if (!Z) return;
+  const i = sceneAt(t), [, s, tr] = SC[i], k = seg(t, s, s + .45);
+  if (i > 0 && k < 1 && tr !== 'cut') {
+    drawScene(i - 1, Math.min(t, s));
+    scr(); X.save(); X.beginPath();
+    if (tr === 'iris') X.arc(540, 900, lerp(10, 1250, eio(k)), 0, TAU);
+    else if (tr === 'wipeL') X.rect(W - W * eio(k), 0, W, H);
+    else X.rect(0, H - H * eio(k), W, H);
+    X.clip(); drawScene(i, Math.max(t, s + .02)); X.restore();
+    if (tr !== 'iris') { scr(); X.fillStyle = K.ink; if (tr === 'wipeL') X.fillRect(W - W * eio(k) - 6, 0, 6, H); else X.fillRect(0, H - H * eio(k) - 6, W, 6); }
+  } else drawScene(i, t);
+  scr(); X.globalCompositeOperation = 'multiply'; X.fillStyle = GR; X.fillRect(0, 0, W, H);
+  const g = X.createRadialGradient(540, 900, 600, 540, 960, 1250); g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(1, 'rgba(200,170,130,1)'); X.fillStyle = g; X.fillRect(0, 0, W, H);
+  X.globalCompositeOperation = 'source-over';
+  if (KAPAK) cover(); else if (t < Z.dur - 3.0) caption(t);
+};
+let GR = null;
+function makeGrain() { const c = document.createElement('canvas'); c.width = c.height = 256; const g = c.getContext('2d'), im = g.createImageData(256, 256), r = mulberry(7);
+  for (let i = 0; i < 256 * 256; i++) { const v = 228 + r() * 27; im.data[i * 4] = v; im.data[i * 4 + 1] = v * .985; im.data[i * 4 + 2] = v * .95; im.data[i * 4 + 3] = 255; }
+  g.putImageData(im, 0, 0); GR = X.createPattern(c, 'repeat'); }
+
+function cover() { // series label + big title, inside y 285-1635
+  scr(); X.globalAlpha = 1;
+  shape(R(70, 1150, 900, 330, 34), K.paper, { lw: 6, id: 990 });
+  sparkle(110, 1315, 26, K.tomato, .3); sparkle(930, 1315, 26, K.tomato, -.3);
+  ttext('YDT · YDS DİLBİLGİSİ', 520, 1222, '600 46px Fredoka', K.navy, null);
+  ttext('In Case mi, If mi?', 520, 1360, fitFont('In Case mi, If mi?', 150, '"Lilita One"', 800), K.tomato, K.ink);
+  shape(R(190, 1505, 660, 100, 30), K.paper, { lw: 5, id: 991 });
+  ttext('+ unless · provided that', 520, 1557, '600 46px Fredoka', K.ink, null);
+}
+
+(async () => {
+  Z = await (await fetch('ses/zaman.json')).json(); Z.satirlar.forEach(l => L[l.id] = l);
+  await document.fonts.load('60px "Lilita One"'); await document.fonts.load('600 50px Fredoka'); await document.fonts.load('500 34px Fredoka');
+  await document.fonts.load('600 50px Fredoka', 'ğşİıçüöÜÇŞĞ'); await document.fonts.ready;
+  makeGrain(); buildScenes();
+  window.DUR = Z.dur;
+  const s = id => T0(id), e = [];
+  e.push({ t: .3, type: 'whoosh' }, { t: s('s01') + 1.1, type: 'pop' }, { t: s('s01') + 1.2, type: 'ding' });
+  e.push({ t: s('s02') - .25, type: 'whoosh' }, { t: s('s02') + .3, type: 'pop' }, { t: s('s02') + 1.6, type: 'thump' });
+  e.push({ t: s('s03') + .1, type: 'pop' }, { t: s('s03') + 1.6, type: 'thump' }, { t: s('s04') + .1, type: 'ding' });
+  e.push({ t: s('s05') - .25, type: 'whoosh' }, { t: s('s05') + .1, type: 'pop' }, { t: s('s06') + .3, type: 'pop' }, { t: s('s06') + .6, type: 'whoosh' });
+  e.push({ t: s('s07') - .25, type: 'whoosh' }, { t: s('s07') + .45, type: 'thump' }, { t: s('s07') + 1.45, type: 'ding' });
+  e.push({ t: s('s08') - .25, type: 'whoosh' }, { t: s('s08') + .3, type: 'click' }, { t: s('s09') + .1, type: 'pop' }, { t: s('s09') + 2.25, type: 'thump' });
+  e.push({ t: s('s10') - .25, type: 'whoosh' }, { t: s('s10') + 1.6, type: 'pop' }, { t: s('s11') + .1, type: 'pop' });
+  e.push({ t: s('s12') - .25, type: 'whoosh' }, { t: s('s12') + .5, type: 'thump' }, { t: s('s12') + 1.1, type: 'ding' });
+  e.push({ t: s('s13') - .25, type: 'whoosh' }, { t: s('s13') + .2, type: 'pop' }, { t: Z.dur - 3.0, type: 'whoosh' }, { t: Z.dur - 2.55, type: 'thump' }, { t: Z.dur - 2.4, type: 'ding' });
+  window.EV = e.filter(x => x.t > 0).sort((a, b) => a.t - b.t);
+  window.READY = true;
+})();
+</script></body></html>
