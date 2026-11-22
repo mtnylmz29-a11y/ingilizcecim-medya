@@ -35,16 +35,6 @@
    "okunus": "Tezeus ipin ucunu kapıya bağladı ve yumağı aça aça ilerledi."
   },
   {
-   "id": "s07",
-   "dil": "tr",
-   "metin": "Koridorlar dolandıkça dolandı, yollar hep çıkmaza girdi."
-  },
-  {
-   "id": "s08",
-   "dil": "tr",
-   "metin": "Ama ip, geldiği yolu her an gösteriyordu."
-  },
-  {
    "id": "s09",
    "dil": "tr",
    "metin": "Theseus ipi izledi ve labirentten çıkış yolunu buldu.",
@@ -68,12 +58,6 @@
    "metin": "The detective found a clue under the door."
   },
   {
-   "id": "s13",
-   "dil": "tr",
-   "metin": "Bir dahaki sefere ipucu ararken, Theseus'un ipini hatırla.",
-   "okunus": "Bir dahaki sefere ipucu ararken, Tezeus'un ipini hatırla."
-  },
-  {
    "id": "s14",
    "dil": "tr",
    "metin": "Daha fazlası için ingilizcecim.com.",
@@ -82,12 +66,11 @@
  ],
  "bas": 0.4,
  "ara": 0.28,
- "son": 2.4,
+ "son": 2.2,
  "araliklar": {
   "s03": 0.45,
   "s10": 0.5,
   "s12": 0.35,
-  "s13": 0.4,
   "s14": 0.3
  }
 }
