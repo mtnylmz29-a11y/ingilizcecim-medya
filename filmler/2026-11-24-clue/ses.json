@@ -1,0 +1,93 @@
+{
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Bir ipucu bulduğunda, aslında elinde bir iplik yumağı olduğunu biliyor muydun?"
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "İngilizcedeki clue kelimesi, iplik yumağı anlamına gelen eski bir kelimeden doğdu.",
+   "okunus": "İngilizcedeki klu kelimesi, iplik yumağı anlamına gelen eski bir kelimeden doğdu."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Efsaneye göre Girit adasında, içinden kimsenin çıkamadığı dev bir labirent vardı."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Genç kahraman Theseus bu labirente girmek zorundaydı.",
+   "okunus": "Genç kahraman Tezeus bu labirente girmek zorundaydı."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Prenses Ariadne ona kırmızı bir iplik yumağı verdi.",
+   "okunus": "Prenses Aryadne ona kırmızı bir iplik yumağı verdi."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Theseus ipin ucunu kapıya bağladı ve yumağı aça aça ilerledi.",
+   "okunus": "Tezeus ipin ucunu kapıya bağladı ve yumağı aça aça ilerledi."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Koridorlar dolandıkça dolandı, yollar hep çıkmaza girdi."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Ama ip, geldiği yolu her an gösteriyordu."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Theseus ipi izledi ve labirentten çıkış yolunu buldu.",
+   "okunus": "Tezeus ipi izledi ve labirentten çıkış yolunu buldu."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "1590'larda clew kelimesi, yol gösteren şey anlamını da kazandı.",
+   "okunus": "Bin beş yüz doksanlarda klu kelimesi, yol gösteren şey anlamını da kazandı."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Zamanla yazımı clue oldu ve anlamı bugünkü ipucuna dönüştü.",
+   "okunus": "Zamanla yazımı klu oldu ve anlamı bugünkü ipucuna dönüştü."
+  },
+  {
+   "id": "s12",
+   "dil": "en",
+   "metin": "The detective found a clue under the door."
+  },
+  {
+   "id": "s13",
+   "dil": "tr",
+   "metin": "Bir dahaki sefere ipucu ararken, Theseus'un ipini hatırla.",
+   "okunus": "Bir dahaki sefere ipucu ararken, Tezeus'un ipini hatırla."
+  },
+  {
+   "id": "s14",
+   "dil": "tr",
+   "metin": "Daha fazlası için ingilizcecim.com.",
+   "okunus": "Daha fazlası için ingilizcecim nokta kom."
+  }
+ ],
+ "bas": 0.4,
+ "ara": 0.28,
+ "son": 2.4,
+ "araliklar": {
+  "s03": 0.45,
+  "s10": 0.5,
+  "s12": 0.35,
+  "s13": 0.4,
+  "s14": 0.3
+ }
+}
