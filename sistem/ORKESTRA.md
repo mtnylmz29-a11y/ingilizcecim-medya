@@ -2,6 +2,14 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 24 Kasım 2026 — Metin: günde TEK video
+
+- Token tasarrufu: günde **1 video**. Üretim 12:00 (tek görev "Günlük Üretim", model Sonnet), yayın 18:00 (görev "Yayın 18:00 + yorumlar"), 18:45 yayın kontrolü. Denetim Opus ile Denetmen'de.
+- Türler dönüşümlü: bir gün dilbilgisi (`-gonderi`), bir gün Kelimelerin Tarihçesi (`-reels`). Kuyruk kaydında `"onerilen_dilim": "18:00"`.
+- Üretimdeki ayrı alt ajan iç kontrolü kaldırıldı; kontrolü yalnızca Denetmen yapar.
+- 17:30 / 20:30 dilimleri ve Akşam Üretimi görevi kapatıldı. Yedekteki onaylı videolar yalnızca o günün videosu hazır değilse kullanılır.
+- Bu bölüm, aşağıdaki "günde 2 video" kurallarının yerine geçer.
+
 ## GÜNCELLEME 21 Kasım 2026 — İÇERİK UYGUNLUĞU: 18 YAŞ ALTI VE EĞİTİM ORTAMI (Metin; değişmez kural, aşağıdakilerin hepsinden önce gelir)
 - Metin: "Alkol videosu eğitim içeriğine uygun değil. 18 yaş altı ve eğitim ortamına uygun olmayacak kelime ve içeriklerden uzak dur."
 - **Yasak konu/kelime/görsel**: alkol ve içki (şarap, bira, kokteyl, sarhoşluk, meyhane), sigara/tütün/vape, uyuşturucu ve keyif verici maddeler, kumar/bahis, cinsellik ve flört imaları, şiddet/cinayet/suikast/işkence/idam, silah, korku-vahşet, intihar/kendine zarar, küfür ve argo, siyasi/dinî tartışma. Kelimenin **kökeni ya da hikâyesi** bunlardan birine dayanıyorsa da (ör. alcohol, assassin, deadline) kelime seçilmez.
