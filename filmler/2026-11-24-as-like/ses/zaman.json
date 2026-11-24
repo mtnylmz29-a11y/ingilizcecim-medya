@@ -1,0 +1,631 @@
+{
+ "dur": 56.337,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Kaan tahtada ders anlatıyor, peki Kaan öğretmen mi?",
+   "t0": 0.4,
+   "t1": 4.571,
+   "kelimeler": [
+    {
+     "w": "Kan",
+     "t0": 0.4,
+     "t1": 1.48
+    },
+    {
+     "w": "tahtada",
+     "t0": 1.48,
+     "t1": 2.36
+    },
+    {
+     "w": "ders",
+     "t0": 2.36,
+     "t1": 2.76
+    },
+    {
+     "w": "anlatıyor.",
+     "t0": 2.76,
+     "t1": 3.56
+    },
+    {
+     "w": "Peki",
+     "t0": 4.1,
+     "t1": 4.32
+    },
+    {
+     "w": "kan",
+     "t0": 4.32,
+     "t1": 5.06
+    },
+    {
+     "w": "öğretmen",
+     "t0": 5.06,
+     "t1": 5.94
+    },
+    {
+     "w": "mi?",
+     "t0": 5.94,
+     "t1": 6.22
+    }
+   ],
+   "duyulan": "Kan tahtada ders anlatıyor. Peki kan öğretmen mi?"
+  },
+  {
+   "id": "s02",
+   "dil": "en",
+   "metin": "He talks like a teacher.",
+   "t0": 5.021,
+   "t1": 6.952,
+   "kelimeler": [
+    {
+     "w": "He",
+     "t0": 5.021,
+     "t1": 5.561
+    },
+    {
+     "w": "talks",
+     "t0": 5.561,
+     "t1": 5.981
+    },
+    {
+     "w": "like",
+     "t0": 5.981,
+     "t1": 6.521
+    },
+    {
+     "w": "a",
+     "t0": 6.521,
+     "t1": 6.721
+    },
+    {
+     "w": "teacher",
+     "t0": 6.721,
+     "t1": 7.141
+    }
+   ],
+   "duyulan": "He talks like a teacher"
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Like, gibi demek; Kaan öğretmen değil, sadece öğretmen gibi konuşuyor.",
+   "t0": 7.252,
+   "t1": 13.053,
+   "kelimeler": [
+    {
+     "w": "Like",
+     "t0": 7.252,
+     "t1": 8.112
+    },
+    {
+     "w": "gibi",
+     "t0": 8.112,
+     "t1": 8.792
+    },
+    {
+     "w": "demek",
+     "t0": 8.792,
+     "t1": 9.352
+    },
+    {
+     "w": "Kan",
+     "t0": 9.352,
+     "t1": 10.492
+    },
+    {
+     "w": "öğretmen",
+     "t0": 10.492,
+     "t1": 11.592
+    },
+    {
+     "w": "değil",
+     "t0": 11.592,
+     "t1": 12.012
+    },
+    {
+     "w": "Sadece",
+     "t0": 12.012,
+     "t1": 13.192
+    },
+    {
+     "w": "öğretmen",
+     "t0": 13.192,
+     "t1": 14.172
+    },
+    {
+     "w": "gibi",
+     "t0": 14.172,
+     "t1": 14.432
+    },
+    {
+     "w": "konuşuyor",
+     "t0": 14.432,
+     "t1": 15.292
+    }
+   ],
+   "duyulan": "Like gibi demek Kan öğretmen değil Sadece öğretmen gibi konuşuyor"
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "İşte Selin Hoca geldi, o gerçekten öğretmen.",
+   "t0": 13.553,
+   "t1": 17.073,
+   "kelimeler": [
+    {
+     "w": "İşte",
+     "t0": 13.552,
+     "t1": 14.272
+    },
+    {
+     "w": "Selin",
+     "t0": 14.272,
+     "t1": 14.812
+    },
+    {
+     "w": "Orca",
+     "t0": 14.812,
+     "t1": 15.152
+    },
+    {
+     "w": "geldi.",
+     "t0": 15.152,
+     "t1": 15.712
+    },
+    {
+     "w": "O",
+     "t0": 16.212,
+     "t1": 16.412
+    },
+    {
+     "w": "gerçekten",
+     "t0": 16.412,
+     "t1": 17.092
+    },
+    {
+     "w": "öğretman.",
+     "t0": 17.092,
+     "t1": 18.032
+    }
+   ],
+   "duyulan": "İşte Selin Orca geldi. O gerçekten öğretman."
+  },
+  {
+   "id": "s05",
+   "dil": "en",
+   "metin": "As a teacher, I see this every day.",
+   "t0": 17.573,
+   "t1": 20.294,
+   "kelimeler": [
+    {
+     "w": "As",
+     "t0": 17.573,
+     "t1": 18.213
+    },
+    {
+     "w": "a",
+     "t0": 18.213,
+     "t1": 18.393
+    },
+    {
+     "w": "teacher,",
+     "t0": 18.393,
+     "t1": 18.813
+    },
+    {
+     "w": "I",
+     "t0": 19.193,
+     "t1": 19.293
+    },
+    {
+     "w": "see",
+     "t0": 19.293,
+     "t1": 19.573
+    },
+    {
+     "w": "this",
+     "t0": 19.573,
+     "t1": 19.873
+    },
+    {
+     "w": "every",
+     "t0": 19.873,
+     "t1": 20.413
+    },
+    {
+     "w": "day.",
+     "t0": 20.413,
+     "t1": 20.853
+    }
+   ],
+   "duyulan": "As a teacher, I see this every day."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "As ve ardından bir isim, olarak ya da sıfatıyla demek, yani gerçek rol.",
+   "t0": 20.594,
+   "t1": 25.954,
+   "kelimeler": [
+    {
+     "w": "Ez",
+     "t0": 20.594,
+     "t1": 21.374
+    },
+    {
+     "w": "ve",
+     "t0": 21.374,
+     "t1": 21.674
+    },
+    {
+     "w": "ardından",
+     "t0": 21.674,
+     "t1": 22.534
+    },
+    {
+     "w": "bir",
+     "t0": 22.534,
+     "t1": 22.854
+    },
+    {
+     "w": "isim",
+     "t0": 22.854,
+     "t1": 23.474
+    },
+    {
+     "w": "olarak",
+     "t0": 23.474,
+     "t1": 24.174
+    },
+    {
+     "w": "ya",
+     "t0": 24.174,
+     "t1": 24.614
+    },
+    {
+     "w": "da",
+     "t0": 24.614,
+     "t1": 24.814
+    },
+    {
+     "w": "sıfatıyla",
+     "t0": 24.814,
+     "t1": 25.694
+    },
+    {
+     "w": "demek",
+     "t0": 25.694,
+     "t1": 26.174
+    },
+    {
+     "w": "yani",
+     "t0": 26.174,
+     "t1": 26.654
+    },
+    {
+     "w": "gerçek",
+     "t0": 26.654,
+     "t1": 27.234
+    },
+    {
+     "w": "rol",
+     "t0": 27.234,
+     "t1": 27.754
+    }
+   ],
+   "duyulan": "Ez ve ardından bir isim olarak ya da sıfatıyla demek yani gerçek rol"
+  },
+  {
+   "id": "s07",
+   "dil": "en",
+   "metin": "As a child, I loved drawing.",
+   "t0": 26.554,
+   "t1": 29.435,
+   "kelimeler": [
+    {
+     "w": "As",
+     "t0": 26.554,
+     "t1": 27.254
+    },
+    {
+     "w": "a",
+     "t0": 27.254,
+     "t1": 27.414
+    },
+    {
+     "w": "child,",
+     "t0": 27.414,
+     "t1": 27.974
+    },
+    {
+     "w": "I",
+     "t0": 28.254,
+     "t1": 28.574
+    },
+    {
+     "w": "loved",
+     "t0": 28.574,
+     "t1": 29.234
+    },
+    {
+     "w": "drawing.",
+     "t0": 29.234,
+     "t1": 29.954
+    }
+   ],
+   "duyulan": "As a child, I loved drawing."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "As a child, çocukken demek.",
+   "t0": 29.735,
+   "t1": 32.575,
+   "kelimeler": [
+    {
+     "w": "Is",
+     "t0": 29.735,
+     "t1": 30.335
+    },
+    {
+     "w": "it",
+     "t0": 30.335,
+     "t1": 30.555
+    },
+    {
+     "w": "a",
+     "t0": 30.555,
+     "t1": 30.695
+    },
+    {
+     "w": "child?",
+     "t0": 30.695,
+     "t1": 31.375
+    },
+    {
+     "w": "Çocuk",
+     "t0": 31.755,
+     "t1": 32.375
+    },
+    {
+     "w": "yandımek.",
+     "t0": 32.375,
+     "t1": 33.095
+    }
+   ],
+   "duyulan": "Is it a child? Çocuk yandımek."
+  },
+  {
+   "id": "s09",
+   "dil": "en",
+   "metin": "Stop acting like a child!",
+   "t0": 33.075,
+   "t1": 35.596,
+   "kelimeler": [
+    {
+     "w": "Stop",
+     "t0": 33.075,
+     "t1": 33.855
+    },
+    {
+     "w": "acting",
+     "t0": 33.855,
+     "t1": 34.575
+    },
+    {
+     "w": "like",
+     "t0": 34.575,
+     "t1": 34.955
+    },
+    {
+     "w": "a",
+     "t0": 34.955,
+     "t1": 35.135
+    },
+    {
+     "w": "child!",
+     "t0": 35.135,
+     "t1": 35.735
+    }
+   ],
+   "duyulan": "Stop acting like a child!"
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Like a child ise çocuk gibi demek.",
+   "t0": 35.896,
+   "t1": 39.057,
+   "kelimeler": [
+    {
+     "w": "Like",
+     "t0": 35.896,
+     "t1": 36.676
+    },
+    {
+     "w": "a",
+     "t0": 36.676,
+     "t1": 36.996
+    },
+    {
+     "w": "child",
+     "t0": 36.996,
+     "t1": 37.516
+    },
+    {
+     "w": "is",
+     "t0": 37.516,
+     "t1": 37.916
+    },
+    {
+     "w": "a",
+     "t0": 37.916,
+     "t1": 38.176
+    },
+    {
+     "w": "çocuk",
+     "t0": 38.176,
+     "t1": 38.736
+    },
+    {
+     "w": "gibi",
+     "t0": 38.736,
+     "t1": 39.136
+    },
+    {
+     "w": "demek",
+     "t0": 39.136,
+     "t1": 39.576
+    }
+   ],
+   "duyulan": "Like a child is a çocuk gibi demek"
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Arkasından tam bir cümle geliyorsa, resmî dilde as kullanılır.",
+   "t0": 39.657,
+   "t1": 44.817,
+   "kelimeler": [
+    {
+     "w": "Arkasından",
+     "t0": 39.657,
+     "t1": 41.057
+    },
+    {
+     "w": "tam",
+     "t0": 41.057,
+     "t1": 41.537
+    },
+    {
+     "w": "bir",
+     "t0": 41.537,
+     "t1": 41.837
+    },
+    {
+     "w": "cümle",
+     "t0": 41.837,
+     "t1": 42.377
+    },
+    {
+     "w": "geliyorsa",
+     "t0": 42.377,
+     "t1": 43.317
+    },
+    {
+     "w": "resmi",
+     "t0": 43.317,
+     "t1": 44.337
+    },
+    {
+     "w": "dilde",
+     "t0": 44.337,
+     "t1": 44.937
+    },
+    {
+     "w": "ez",
+     "t0": 44.937,
+     "t1": 45.877
+    },
+    {
+     "w": "kullanılır.",
+     "t0": 45.877,
+     "t1": 46.817
+    }
+   ],
+   "duyulan": "Arkasından tam bir cümle geliyorsa resmi dilde ez kullanılır."
+  },
+  {
+   "id": "s12",
+   "dil": "en",
+   "metin": "Do as I say.",
+   "t0": 45.317,
+   "t1": 47.157,
+   "kelimeler": [
+    {
+     "w": "Do",
+     "t0": 45.317,
+     "t1": 46.097
+    },
+    {
+     "w": "as",
+     "t0": 46.097,
+     "t1": 46.597
+    },
+    {
+     "w": "I",
+     "t0": 46.597,
+     "t1": 46.837
+    },
+    {
+     "w": "say.",
+     "t0": 46.837,
+     "t1": 47.297
+    }
+   ],
+   "duyulan": "Do as I say."
+  },
+  {
+   "id": "s13",
+   "dil": "tr",
+   "metin": "Sıra sende, hemşire olarak çalışıyorsa as mı, like mı, yorumlara yaz!",
+   "t0": 47.657,
+   "t1": 53.737,
+   "kelimeler": [
+    {
+     "w": "Sıra",
+     "t0": 47.657,
+     "t1": 48.577
+    },
+    {
+     "w": "sende.",
+     "t0": 48.577,
+     "t1": 49.677
+    },
+    {
+     "w": "Hemşire",
+     "t0": 49.777,
+     "t1": 50.477
+    },
+    {
+     "w": "olarak",
+     "t0": 50.477,
+     "t1": 50.957
+    },
+    {
+     "w": "çalışıyorsa",
+     "t0": 50.957,
+     "t1": 52.217
+    },
+    {
+     "w": "ezmi",
+     "t0": 52.217,
+     "t1": 53.397
+    },
+    {
+     "w": "like",
+     "t0": 53.397,
+     "t1": 54.177
+    },
+    {
+     "w": "mu?",
+     "t0": 54.177,
+     "t1": 54.577
+    },
+    {
+     "w": "Yorumlara",
+     "t0": 55.137,
+     "t1": 55.777
+    },
+    {
+     "w": "yaz.",
+     "t0": 55.777,
+     "t1": 56.197
+    }
+   ],
+   "duyulan": "Sıra sende. Hemşire olarak çalışıyorsa ezmi like mu? Yorumlara yaz."
+  }
+ ],
+ "uyarilar": []
+}
