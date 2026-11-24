@@ -23,6 +23,19 @@ Art arda iki gün aynı stil olmaz. Kuyruk kaydının `stil` alanına aşağıda
 
 3B gerektiren stiller (`claymation`, `3d-animation`, `cgi-motion`, `retro-low-poly`, `explainer-3d`, `anime`) bulutta kodla (three.js ve benzeri) yapılır; ilk kez yapılırken önce tek bir deneme karesi üret ve görüntü kötüyse başka izinli stil seç.
 
+## Stickman için ikinci kütüphane: stickman-video-director (Metin, 24 Kasım 2026)
+
+`stickman` stilinde lemo-opuscar `stick-explainer`'a ek olarak bu kütüphane de kullanılabilir:
+`git clone -q --depth 1 https://github.com/kaomei/stickman-video-director.git ~/smvd` (MIT lisanslı).
+Ajan talimatı: `skills/directing-stickman-videos/SKILL.md`; stil ayrıntıları `references/` altında.
+
+- **Yalnızca B · Code Engine** (yerel render) kullanılır: önerilen B2 (Renkli El Çizimi), B1 (Minimal Çizgi), B5 (Karakterli Anlatım). B6 (Meme) yalnızca yüzler barışçıl kalırsa.
+- **A · Model Engine KULLANILMAZ** (ücretli video üretim modelleri ister; üretim ücretsiz kalacak). Görüntü üreteci ya da ücretli TTS gerektiren adımlar atlanır.
+- Ses yine Gemini **Kore**; kütüphanenin varsayılan sesleri ve müzikleri kullanılmaz (lisansı belirsiz müzik ekleme).
+- Kütüphanedeki örnek karakterler, örnek filmler ve görseller yalnızca referanstır; videoya kopyalanmaz.
+- Yüz ifadeleri bu dosyadaki `stickman` kuralına uyar: barışçıl, sıcak, öfke/alay yok.
+- İlk kullanımda önce kısa bir deneme karesi üret; kurulum ya da render bulutta çalışmazsa lemo-opuscar `stick-explainer` ile devam et, yayın aksamasın. Günlüğe not düş.
+
 ## Liste dışı (kullanılmaz)
 
 | Stil | Neden |
