@@ -19,12 +19,12 @@ Yazı tipi: Patrick Hand (SIL OFL 1.1, fonts/OFL.txt).
 2. İki bin yıl önce Roma'da genç Lucius, bir göreve seçilmek istiyordu.
 3. Bunun için bembeyaz bir toga giymesi gerekiyordu.
 4. Togası büyük ihtimalle tebeşirle parlatılırdı.
-5. Latincede candidus, parlak beyaz demekti.
+5. Latincede candidus, parlak beyaz anlamına geliyordu.
 6. Beyaz togalı adaya da candidatus denirdi.
 7. Rivayete göre bu beyaz, adayın niyetinin temiz olduğunu gösteriyordu.
 8. Kelime 1600'lerde İngilizceye candidate olarak geçti.
 9. (EN) All candidates are required to bring a valid ID card to the examination hall. — Tüm adayların sınav salonuna geçerli bir kimlik kartı getirmesi gerekir.
-10. Yani sınava giren sen de, togasız bir candidate'sin!
+10. Yani sınava giren sen de, togası olmayan bir candidate'sin!
 11. Daha fazlası için ingilizcecim.com.
 
 ## Etimoloji ve kaynaklar

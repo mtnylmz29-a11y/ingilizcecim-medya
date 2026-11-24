@@ -282,7 +282,7 @@ function S_lucius(t, i, dr, df) {
 }
 function S_toga(t, i, dr, df) {
   const C = BG;
-  temple(C, 540, 440, 700, 500, 401, dr);
+  temple(C, 540, 470, 700, 480, 401, dr);
   ground(C, 1080, 470, df, K.stone);
   // tebeşir kasesi
   Pt(C, smooth([[120, 1150], [300, 1150], [270, 1240], [150, 1240]], 3), F(K.terra, 480, { p: 0.8, draw: df }), LO(481, { draw: dr }));
@@ -293,8 +293,8 @@ function S_toga(t, i, dr, df) {
   const shine = t > T0('s05') + 1.8;
   if (dr > 0.3) person(CH, 600, 1220, 1.38, { t, tunic: K.terra, expr: shine ? 'happy' : 'smile', arm: rub ? 'rub' : 'hold', toga: tg, seed: 520 });
   if (shine) for (let k = 0; k < 6; k++) { const ph = (t * 1.1 + k * 0.29) % 1; star4(FX, 600 + Math.cos(k * 1.1) * 260, 820 + Math.sin(k * 2.3) * 300, 14 + 14 * Math.sin(ph * Math.PI), 540 + k, Math.sin(ph * Math.PI), K.white); }
-  if (!KAPAK) Tx(FX, 'toga candida', 540, 320, { size: 84, col: K.violet, seed: 560, reveal: pr(t, T0('s04') + 1.6, T0('s04') + 2.4), stroke: 2 });
-  if (!KAPAK) Tx(FX, '(bembeyaz toga)', 540, 390, { size: 50, seed: 561, reveal: pr(t, T0('s04') + 2.2, T0('s04') + 2.8) });
+  if (!KAPAK) Tx(FX, 'toga candida', 540, 300, { size: 84, col: K.violet, seed: 560, reveal: pr(t, T0('s04') + 1.6, T0('s04') + 2.4), stroke: 2 });
+  if (!KAPAK) Tx(FX, '(bembeyaz toga)', 540, 372, { size: 50, seed: 561, reveal: pr(t, T0('s04') + 2.2, T0('s04') + 2.8) });
 }
 function S_kelime(t, i, dr, df) {
   const C = BG;
