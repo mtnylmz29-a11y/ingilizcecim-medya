@@ -282,7 +282,7 @@ function S_lucius(t, i, dr, df) {
 }
 function S_toga(t, i, dr, df) {
   const C = BG;
-  temple(C, 540, 380, 700, 520, 401, dr);
+  temple(C, 540, 440, 700, 500, 401, dr);
   ground(C, 1080, 470, df, K.stone);
   // tebeşir kasesi
   Pt(C, smooth([[120, 1150], [300, 1150], [270, 1240], [150, 1240]], 3), F(K.terra, 480, { p: 0.8, draw: df }), LO(481, { draw: dr }));
@@ -476,6 +476,8 @@ function frame(t) {
   CAM.x = 540 + lerp(xPrev, SC[i].ox, i ? pu : 1);
   CAM.y = 960; CAM.s = 1;   // sabit ölçek: kâğıt dokusu kareden kareye değişmez (dosya boyutu)
   clearGroup(BG); clearGroup(CH); clearGroup(FR); [WASH, FX, SUBK, SUBT].forEach(clear);
+  // boş tuval yüklenince tarayıcı eski kareyi veriyordu: her katmana köşeye görünmez bir nokta
+  [BG.k, BG.f, BG.l, CH.k, CH.f, CH.l, FR.k, FR.f, FR.l, WASH, FX, SUBK, SUBT].forEach(L => { L.g.save(); L.g.setTransform(1, 0, 0, 1, 0, 0); L.g.globalAlpha = 1; L.g.fillStyle = 'rgba(0,0,0,0.004)'; L.g.fillRect(0, 0, 1, 1); L.g.restore(); });
   const vis = (i && pu < 1) ? [i - 1, i] : [i];
   let washed = false;
   for (const j of vis) {
