@@ -2,6 +2,13 @@
 
 Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bir **KİP** adı verir; sadece o kipin bölümünü ve adı geçen rol dosyalarını oku (token tasarrufu). Kontrol paneli: https://claude.ai/artifact/JBR2MPPkcc1HKeYUFRE6BR
 
+## GÜNCELLEME 25 Kasım 2026 — Metin: yayın 20:30, Türkçe yorum, ekstra video
+
+- Günlük üretim 11:55 (gündüz), günlük yayın **20:30** (Türkiye'de Instagram'ın en aktif saati), 21:13 yayın kontrolü. Üretim kontrolü 16:13 ve 19:13: üretim token/limit yüzünden yarıda kaldıysa token gelince yeniden başlatır. Bu bölüm 24 Kasım'daki 18:00 yayın saatinin yerine geçer.
+- Yorum yanıtları **öncelikle Türkçe**; yorum tamamen İngilizceyse İngilizce.
+- **Ekstra video:** Metin ara sıra fazladan video isteyebilir (sohbette ya da Ofis'ten). Ekstra video günlük düzeni bozmaz: kuyruk id'si `YYYY-MM-DD-ekstra-<kısa-ad>`, dönüşümlü tür sırasını etkilemez, izinli stillerden biriyle üretilir, Denetmen'den geçer ve Metin'in söylediği zamanda (söylemediyse Denetmen'den geçince hemen) yayınlanır. Günlük yayın görevleri `-ekstra` kayıtları seçmez.
+- Modeller: üretim/yayın/kontroller Sonnet, Denetmen Opus. Az token: gereksiz okuma ve deneme yapma.
+
 ## GÜNCELLEME 24 Kasım 2026 — Metin: günde TEK video
 
 - Token tasarrufu: günde **1 video**. Üretim 12:00 (tek görev "Günlük Üretim", model Sonnet), yayın 18:00 (görev "Yayın 18:00 + yorumlar"), 18:45 yayın kontrolü. Denetim Opus ile Denetmen'de.
