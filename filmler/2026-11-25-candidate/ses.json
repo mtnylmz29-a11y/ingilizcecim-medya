@@ -1,18 +1,15 @@
 {"satirlar": [
-{"id": "s01", "dil": "tr", "metin": "Bugün sınava giren herkes bir candidate, ama bu kelime aslında bir renkten doğdu!", "okunus": "Bugün sınava giren herkes bir kendıdeyt, ama bu kelime aslında bir renkten doğdu!"},
-{"id": "s02", "dil": "tr", "metin": "Hikâyemiz iki bin yıl önce, Roma'nın büyük meydanı forumda başlıyor."},
-{"id": "s03", "dil": "tr", "metin": "Genç Lucius, şehirde bir göreve seçilmek istiyordu.", "okunus": "Genç Lukius, şehirde bir göreve seçilmek istiyordu."},
-{"id": "s04", "dil": "tr", "metin": "Bunun için özel bir giysi giymesi gerekiyordu: bembeyaz bir toga."},
-{"id": "s05", "dil": "tr", "metin": "Togası büyük ihtimalle tebeşir tozuyla ovularak parlak beyaza çevrilirdi."},
-{"id": "s06", "dil": "tr", "metin": "Latincede parlak beyaz demek candidus demekti.", "okunus": "Latincede parlak beyaz demek kandidus demekti."},
-{"id": "s07", "dil": "tr", "metin": "Beyaz togalı adaya da candidatus, yani beyazlar giymiş denirdi.", "okunus": "Beyaz togalı adaya da kandidatus, yani beyazlar giymiş denirdi."},
+{"id": "s01", "dil": "tr", "metin": "Sınava giren herkes bir candidate, ama bu kelime bir renkten doğdu!", "okunus": "Sınava giren herkes bir kendıdeyt, ama bu kelime bir renkten doğdu!"},
+{"id": "s03", "dil": "tr", "metin": "İki bin yıl önce Roma'da genç Lucius, bir göreve seçilmek istiyordu.", "okunus": "İki bin yıl önce Roma'da genç Lukius, bir göreve seçilmek istiyordu."},
+{"id": "s04", "dil": "tr", "metin": "Bunun için bembeyaz bir toga giymesi gerekiyordu."},
+{"id": "s05", "dil": "tr", "metin": "Togası büyük ihtimalle tebeşirle parlatılırdı."},
+{"id": "s06", "dil": "tr", "metin": "Latincede candidus, parlak beyaz demekti.", "okunus": "Latincede kandidus, parlak beyaz demekti."},
+{"id": "s07", "dil": "tr", "metin": "Beyaz togalı adaya da candidatus denirdi.", "okunus": "Beyaz togalı adaya da kandidatus denirdi."},
 {"id": "s08", "dil": "tr", "metin": "Rivayete göre bu beyaz, adayın niyetinin temiz olduğunu gösteriyordu."},
-{"id": "s09", "dil": "tr", "metin": "Lucius forumda dolaştı ve herkes onu beyaz togasından hemen tanıdı.", "okunus": "Lukius forumda dolaştı ve herkes onu beyaz togasından hemen tanıdı."},
 {"id": "s10", "dil": "tr", "metin": "Kelime 1600'lerde İngilizceye candidate olarak geçti.", "okunus": "Kelime bin altı yüzlerde İngilizceye kendıdeyt olarak geçti."},
-{"id": "s11", "dil": "tr", "metin": "Bugün bir göreve, bir işe ya da bir sınava aday olan herkese candidate deniyor.", "okunus": "Bugün bir göreve, bir işe ya da bir sınava aday olan herkese kendıdeyt deniyor."},
 {"id": "s12", "dil": "en", "metin": "All candidates are required to bring a valid ID card to the examination hall."},
 {"id": "s13", "dil": "tr", "metin": "Yani sınava giren sen de, togasız bir candidate'sin!", "okunus": "Yani sınava giren sen de, togasız bir kendıdeytsin!"},
 {"id": "s14", "dil": "tr", "metin": "Daha fazlası için ingilizcecim.com.", "okunus": "Daha fazlası için ingilizcecim nokta kom."}
 ],
 "bas": 0.4, "ara": 0.3, "son": 2.2,
-"araliklar": {"s02": 0.45, "s06": 0.4, "s10": 0.5, "s12": 0.4, "s14": 0.3}}
+"araliklar": {"s03": 0.4, "s06": 0.4, "s10": 0.4, "s12": 0.4, "s14": 0.3}}
