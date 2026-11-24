@@ -589,7 +589,7 @@
    "https://www.merriam-webster.com/dictionary/responsible"
   ],
   "onerilen_dilim": "17:30",
-  "durum": "onaylandi",
+  "durum": "yayinlandi",
   "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
@@ -612,7 +612,10 @@
     "zaman": "2026-11-18T21:18+03:00"
    }
   ],
-  "onay": "otomatik (Denetmen, 2026-11-18T21:18+03:00)"
+  "onay": "otomatik (Denetmen, 2026-11-18T21:18+03:00)",
+  "media_id": "18056811491810490",
+  "permalink": "https://www.instagram.com/reel/DgH1J1lkaqO/",
+  "yayin_saati": "2026-11-24T14:18+03:00"
  },
  {
   "id": "2026-11-19-reels",
