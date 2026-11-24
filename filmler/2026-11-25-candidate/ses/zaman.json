@@ -1,0 +1,821 @@
+{
+ "dur": 75.593,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Bugün sınava giren herkes bir candidate, ama bu kelime aslında bir renkten doğdu!",
+   "t0": 0.4,
+   "t1": 6.131,
+   "kelimeler": [
+    {
+     "w": "Bugün",
+     "t0": 0.4,
+     "t1": 1.2
+    },
+    {
+     "w": "sınava",
+     "t0": 1.2,
+     "t1": 2.04
+    },
+    {
+     "w": "giren",
+     "t0": 2.04,
+     "t1": 2.48
+    },
+    {
+     "w": "herkes",
+     "t0": 2.48,
+     "t1": 3.16
+    },
+    {
+     "w": "bir",
+     "t0": 3.16,
+     "t1": 3.72
+    },
+    {
+     "w": "kendideit",
+     "t0": 3.72,
+     "t1": 4.8
+    },
+    {
+     "w": "ama",
+     "t0": 4.8,
+     "t1": 5.52
+    },
+    {
+     "w": "bu",
+     "t0": 5.52,
+     "t1": 5.84
+    },
+    {
+     "w": "kelime",
+     "t0": 5.84,
+     "t1": 6.3
+    },
+    {
+     "w": "aslında",
+     "t0": 6.3,
+     "t1": 6.82
+    },
+    {
+     "w": "bir",
+     "t0": 6.82,
+     "t1": 7.26
+    },
+    {
+     "w": "renkten",
+     "t0": 7.26,
+     "t1": 7.9
+    },
+    {
+     "w": "doğdu.",
+     "t0": 7.9,
+     "t1": 8.48
+    }
+   ],
+   "duyulan": "Bugün sınava giren herkes bir kendideit ama bu kelime aslında bir renkten doğdu."
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "Hikâyemiz iki bin yıl önce, Roma'nın büyük meydanı forumda başlıyor.",
+   "t0": 6.581,
+   "t1": 11.992,
+   "kelimeler": [
+    {
+     "w": "Hikayemiz",
+     "t0": 6.581,
+     "t1": 8.221
+    },
+    {
+     "w": "2000",
+     "t0": 8.221,
+     "t1": 8.841
+    },
+    {
+     "w": "yıl",
+     "t0": 8.841,
+     "t1": 9.461
+    },
+    {
+     "w": "önce",
+     "t0": 9.461,
+     "t1": 9.961
+    },
+    {
+     "w": "Roma",
+     "t0": 9.961,
+     "t1": 10.881
+    },
+    {
+     "w": "'nın",
+     "t0": 10.881,
+     "t1": 11.361
+    },
+    {
+     "w": "büyük",
+     "t0": 11.361,
+     "t1": 11.801
+    },
+    {
+     "w": "meydanı",
+     "t0": 11.801,
+     "t1": 12.641
+    },
+    {
+     "w": "forumda",
+     "t0": 12.641,
+     "t1": 13.481
+    },
+    {
+     "w": "başlıyor.",
+     "t0": 13.481,
+     "t1": 14.241
+    }
+   ],
+   "duyulan": "Hikayemiz 2000 yıl önce Roma 'nın büyük meydanı forumda başlıyor."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Genç Lucius, şehirde bir göreve seçilmek istiyordu.",
+   "t0": 12.292,
+   "t1": 16.183,
+   "kelimeler": [
+    {
+     "w": "Genç",
+     "t0": 12.292,
+     "t1": 13.252
+    },
+    {
+     "w": "Lukyus",
+     "t0": 13.252,
+     "t1": 14.192
+    },
+    {
+     "w": "şehirde",
+     "t0": 14.192,
+     "t1": 15.272
+    },
+    {
+     "w": "bir",
+     "t0": 15.272,
+     "t1": 15.412
+    },
+    {
+     "w": "göreve",
+     "t0": 15.412,
+     "t1": 15.992
+    },
+    {
+     "w": "seçilmek",
+     "t0": 15.992,
+     "t1": 16.832
+    },
+    {
+     "w": "istiyordu.",
+     "t0": 16.832,
+     "t1": 17.772
+    }
+   ],
+   "duyulan": "Genç Lukyus şehirde bir göreve seçilmek istiyordu."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Bunun için özel bir giysi giymesi gerekiyordu: bembeyaz bir toga.",
+   "t0": 16.483,
+   "t1": 21.694,
+   "kelimeler": [
+    {
+     "w": "Bunun",
+     "t0": 16.483,
+     "t1": 17.203
+    },
+    {
+     "w": "için",
+     "t0": 17.203,
+     "t1": 17.783
+    },
+    {
+     "w": "özel",
+     "t0": 17.783,
+     "t1": 18.563
+    },
+    {
+     "w": "bir",
+     "t0": 18.563,
+     "t1": 18.843
+    },
+    {
+     "w": "giysi",
+     "t0": 18.843,
+     "t1": 19.483
+    },
+    {
+     "w": "giymesi",
+     "t0": 19.483,
+     "t1": 20.143
+    },
+    {
+     "w": "gerekiyordu.",
+     "t0": 20.143,
+     "t1": 21.363
+    },
+    {
+     "w": "Bembeyaz",
+     "t0": 21.803,
+     "t1": 22.983
+    },
+    {
+     "w": "bir",
+     "t0": 22.983,
+     "t1": 23.203
+    },
+    {
+     "w": "toga.",
+     "t0": 23.203,
+     "t1": 23.783
+    }
+   ],
+   "duyulan": "Bunun için özel bir giysi giymesi gerekiyordu. Bembeyaz bir toga."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Togası büyük ihtimalle tebeşir tozuyla ovularak parlak beyaza çevrilirdi.",
+   "t0": 21.994,
+   "t1": 27.525,
+   "kelimeler": [
+    {
+     "w": "Togası",
+     "t0": 21.994,
+     "t1": 23.054
+    },
+    {
+     "w": "büyük",
+     "t0": 23.054,
+     "t1": 23.534
+    },
+    {
+     "w": "ihtimalle",
+     "t0": 23.534,
+     "t1": 24.654
+    },
+    {
+     "w": "tebeşir",
+     "t0": 24.654,
+     "t1": 25.734
+    },
+    {
+     "w": "tozuyla",
+     "t0": 25.734,
+     "t1": 26.534
+    },
+    {
+     "w": "ovularak",
+     "t0": 26.534,
+     "t1": 27.554
+    },
+    {
+     "w": "parlak",
+     "t0": 27.554,
+     "t1": 28.334
+    },
+    {
+     "w": "beyaza",
+     "t0": 28.334,
+     "t1": 28.854
+    },
+    {
+     "w": "çevrilirdi.",
+     "t0": 28.854,
+     "t1": 29.794
+    }
+   ],
+   "duyulan": "Togası büyük ihtimalle tebeşir tozuyla ovularak parlak beyaza çevrilirdi."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Latincede parlak beyaz demek candidus demekti.",
+   "t0": 27.925,
+   "t1": 31.576,
+   "kelimeler": [
+    {
+     "w": "Letince'de",
+     "t0": 27.925,
+     "t1": 29.405
+    },
+    {
+     "w": "parlak",
+     "t0": 29.405,
+     "t1": 30.205
+    },
+    {
+     "w": "beyaz",
+     "t0": 30.205,
+     "t1": 30.905
+    },
+    {
+     "w": "kandidus",
+     "t0": 30.905,
+     "t1": 32.045
+    },
+    {
+     "w": "demektir.",
+     "t0": 32.045,
+     "t1": 32.965
+    }
+   ],
+   "duyulan": "Letince'de parlak beyaz kandidus demektir."
+  },
+  {
+   "id": "s07",
+   "dil": "tr",
+   "metin": "Beyaz togalı adaya da candidatus, yani beyazlar giymiş denirdi.",
+   "t0": 31.876,
+   "t1": 37.887,
+   "kelimeler": [
+    {
+     "w": "Beyaz",
+     "t0": 31.876,
+     "t1": 32.996
+    },
+    {
+     "w": "Togalı",
+     "t0": 32.996,
+     "t1": 33.676
+    },
+    {
+     "w": "adaya",
+     "t0": 33.676,
+     "t1": 34.356
+    },
+    {
+     "w": "da",
+     "t0": 34.356,
+     "t1": 34.656
+    },
+    {
+     "w": "Kandida",
+     "t0": 34.656,
+     "t1": 35.976
+    },
+    {
+     "w": "Tuz,",
+     "t0": 35.976,
+     "t1": 36.576
+    },
+    {
+     "w": "yani",
+     "t0": 37.076,
+     "t1": 37.576
+    },
+    {
+     "w": "beyazlar",
+     "t0": 37.576,
+     "t1": 39.016
+    },
+    {
+     "w": "giymiş",
+     "t0": 39.016,
+     "t1": 39.656
+    },
+    {
+     "w": "denirdi.",
+     "t0": 39.656,
+     "t1": 40.256
+    }
+   ],
+   "duyulan": "Beyaz Togalı adaya da Kandida Tuz, yani beyazlar giymiş denirdi."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Rivayete göre bu beyaz, adayın niyetinin temiz olduğunu gösteriyordu.",
+   "t0": 38.187,
+   "t1": 42.998,
+   "kelimeler": [
+    {
+     "w": "Rivayete",
+     "t0": 38.187,
+     "t1": 39.427
+    },
+    {
+     "w": "göre",
+     "t0": 39.427,
+     "t1": 39.767
+    },
+    {
+     "w": "bu",
+     "t0": 39.767,
+     "t1": 40.187
+    },
+    {
+     "w": "beyaz,",
+     "t0": 40.187,
+     "t1": 40.947
+    },
+    {
+     "w": "adağın",
+     "t0": 41.167,
+     "t1": 41.767
+    },
+    {
+     "w": "niyetinin",
+     "t0": 41.767,
+     "t1": 42.547
+    },
+    {
+     "w": "temiz",
+     "t0": 42.547,
+     "t1": 43.167
+    },
+    {
+     "w": "olduğunu",
+     "t0": 43.167,
+     "t1": 43.647
+    },
+    {
+     "w": "gösteriyordu.",
+     "t0": 43.647,
+     "t1": 44.907
+    }
+   ],
+   "duyulan": "Rivayete göre bu beyaz, adağın niyetinin temiz olduğunu gösteriyordu."
+  },
+  {
+   "id": "s09",
+   "dil": "tr",
+   "metin": "Lucius forumda dolaştı ve herkes onu beyaz togasından hemen tanıdı.",
+   "t0": 43.298,
+   "t1": 48.429,
+   "kelimeler": [
+    {
+     "w": "Lukius",
+     "t0": 43.298,
+     "t1": 44.438
+    },
+    {
+     "w": "Forum'da",
+     "t0": 44.438,
+     "t1": 45.238
+    },
+    {
+     "w": "dolaştı",
+     "t0": 45.238,
+     "t1": 46.058
+    },
+    {
+     "w": "ve",
+     "t0": 46.058,
+     "t1": 46.638
+    },
+    {
+     "w": "herkes",
+     "t0": 46.638,
+     "t1": 47.258
+    },
+    {
+     "w": "onu",
+     "t0": 47.258,
+     "t1": 47.798
+    },
+    {
+     "w": "beyaz",
+     "t0": 47.798,
+     "t1": 48.418
+    },
+    {
+     "w": "tokasından",
+     "t0": 48.418,
+     "t1": 49.298
+    },
+    {
+     "w": "hemen",
+     "t0": 49.298,
+     "t1": 49.838
+    },
+    {
+     "w": "tanıdı.",
+     "t0": 49.838,
+     "t1": 50.598
+    }
+   ],
+   "duyulan": "Lukius Forum'da dolaştı ve herkes onu beyaz tokasından hemen tanıdı."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Kelime 1600'lerde İngilizceye candidate olarak geçti.",
+   "t0": 48.929,
+   "t1": 53.94,
+   "kelimeler": [
+    {
+     "w": "Kelime",
+     "t0": 48.929,
+     "t1": 50.029
+    },
+    {
+     "w": "1600",
+     "t0": 50.029,
+     "t1": 50.929
+    },
+    {
+     "w": "'lerde",
+     "t0": 50.929,
+     "t1": 51.909
+    },
+    {
+     "w": "İngilizce",
+     "t0": 51.909,
+     "t1": 53.329
+    },
+    {
+     "w": "'ye",
+     "t0": 53.329,
+     "t1": 53.629
+    },
+    {
+     "w": "kendi",
+     "t0": 53.629,
+     "t1": 54.329
+    },
+    {
+     "w": "deyt",
+     "t0": 54.329,
+     "t1": 54.889
+    },
+    {
+     "w": "olarak",
+     "t0": 54.889,
+     "t1": 55.269
+    },
+    {
+     "w": "geçti.",
+     "t0": 55.269,
+     "t1": 56.089
+    }
+   ],
+   "duyulan": "Kelime 1600 'lerde İngilizce 'ye kendi deyt olarak geçti."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Bugün bir göreve, bir işe ya da bir sınava aday olan herkese candidate deniyor.",
+   "t0": 54.24,
+   "t1": 59.65,
+   "kelimeler": [
+    {
+     "w": "Bugün",
+     "t0": 54.24,
+     "t1": 55.04
+    },
+    {
+     "w": "bir",
+     "t0": 55.04,
+     "t1": 55.38
+    },
+    {
+     "w": "göreve,",
+     "t0": 55.38,
+     "t1": 56.1
+    },
+    {
+     "w": "bir",
+     "t0": 56.5,
+     "t1": 56.6
+    },
+    {
+     "w": "işe",
+     "t0": 56.6,
+     "t1": 57.24
+    },
+    {
+     "w": "ya",
+     "t0": 57.24,
+     "t1": 57.66
+    },
+    {
+     "w": "da",
+     "t0": 57.66,
+     "t1": 57.88
+    },
+    {
+     "w": "bir",
+     "t0": 57.88,
+     "t1": 58.1
+    },
+    {
+     "w": "sınava",
+     "t0": 58.1,
+     "t1": 58.62
+    },
+    {
+     "w": "aday",
+     "t0": 58.62,
+     "t1": 59.08
+    },
+    {
+     "w": "olan",
+     "t0": 59.08,
+     "t1": 59.34
+    },
+    {
+     "w": "herkese",
+     "t0": 59.34,
+     "t1": 60.32
+    },
+    {
+     "w": "kendi",
+     "t0": 60.32,
+     "t1": 60.78
+    },
+    {
+     "w": "deit",
+     "t0": 60.78,
+     "t1": 61.26
+    },
+    {
+     "w": "deniyor.",
+     "t0": 61.26,
+     "t1": 61.82
+    }
+   ],
+   "duyulan": "Bugün bir göreve, bir işe ya da bir sınava aday olan herkese kendi deit deniyor."
+  },
+  {
+   "id": "s12",
+   "dil": "en",
+   "metin": "All candidates are required to bring a valid ID card to the examination hall.",
+   "t0": 60.05,
+   "t1": 64.901,
+   "kelimeler": [
+    {
+     "w": "All",
+     "t0": 60.05,
+     "t1": 60.71
+    },
+    {
+     "w": "candidates",
+     "t0": 60.71,
+     "t1": 61.35
+    },
+    {
+     "w": "are",
+     "t0": 61.35,
+     "t1": 61.85
+    },
+    {
+     "w": "required",
+     "t0": 61.85,
+     "t1": 62.27
+    },
+    {
+     "w": "to",
+     "t0": 62.27,
+     "t1": 62.81
+    },
+    {
+     "w": "bring",
+     "t0": 62.81,
+     "t1": 63.13
+    },
+    {
+     "w": "a",
+     "t0": 63.13,
+     "t1": 63.41
+    },
+    {
+     "w": "valid",
+     "t0": 63.41,
+     "t1": 63.93
+    },
+    {
+     "w": "ID",
+     "t0": 63.93,
+     "t1": 64.41
+    },
+    {
+     "w": "card",
+     "t0": 64.41,
+     "t1": 64.87
+    },
+    {
+     "w": "to",
+     "t0": 64.87,
+     "t1": 65.23
+    },
+    {
+     "w": "the",
+     "t0": 65.23,
+     "t1": 65.39
+    },
+    {
+     "w": "examination",
+     "t0": 65.39,
+     "t1": 65.99
+    },
+    {
+     "w": "hall.",
+     "t0": 65.99,
+     "t1": 66.75
+    }
+   ],
+   "duyulan": "All candidates are required to bring a valid ID card to the examination hall."
+  },
+  {
+   "id": "s13",
+   "dil": "tr",
+   "metin": "Yani sınava giren sen de, togasız bir candidate'sin!",
+   "t0": 65.201,
+   "t1": 69.252,
+   "kelimeler": [
+    {
+     "w": "Yani",
+     "t0": 65.201,
+     "t1": 66.101
+    },
+    {
+     "w": "sınava",
+     "t0": 66.101,
+     "t1": 67.001
+    },
+    {
+     "w": "giren",
+     "t0": 67.001,
+     "t1": 67.461
+    },
+    {
+     "w": "sen",
+     "t0": 67.461,
+     "t1": 67.901
+    },
+    {
+     "w": "ve",
+     "t0": 67.901,
+     "t1": 68.281
+    },
+    {
+     "w": "tokasız",
+     "t0": 68.281,
+     "t1": 69.361
+    },
+    {
+     "w": "bir",
+     "t0": 69.361,
+     "t1": 69.581
+    },
+    {
+     "w": "kandide",
+     "t0": 69.581,
+     "t1": 70.261
+    },
+    {
+     "w": "itsin.",
+     "t0": 70.261,
+     "t1": 70.781
+    }
+   ],
+   "duyulan": "Yani sınava giren sen ve tokasız bir kandide itsin."
+  },
+  {
+   "id": "s14",
+   "dil": "tr",
+   "metin": "Daha fazlası için ingilizcecim.com.",
+   "t0": 69.552,
+   "t1": 73.393,
+   "kelimeler": [
+    {
+     "w": "Daha",
+     "t0": 69.552,
+     "t1": 70.252
+    },
+    {
+     "w": "fazlası",
+     "t0": 70.252,
+     "t1": 71.232
+    },
+    {
+     "w": "için",
+     "t0": 71.232,
+     "t1": 71.632
+    },
+    {
+     "w": "ingilizcecim",
+     "t0": 71.632,
+     "t1": 73.492
+    },
+    {
+     "w": ".com",
+     "t0": 73.492,
+     "t1": 74.632
+    }
+   ],
+   "duyulan": "Daha fazlası için ingilizcecim .com"
+  }
+ ],
+ "uyarilar": []
+}
