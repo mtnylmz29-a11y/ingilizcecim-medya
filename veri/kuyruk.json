@@ -1043,28 +1043,14 @@
    "https://en.wikipedia.org/wiki/Candidate"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde"
- },
- {
-  "id": "2026-11-24-gonderi",
-  "tarih": "2026-11-24",
-  "kademe": "ydt+yds",
-  "sinif": "YDT · YDS",
-  "bicim": "animasyon",
-  "uretim": "bulut (lemo-opuscar, scifi-toon; ses Gemini Kore)",
-  "stil": "scifi-toon",
-  "baslik": "As mı, Like mı?",
-  "aciklama": "Kaan öğretmen gibi konuşuyor ama öğretmen değil: He talks like a teacher. Selin Hoca ise gerçekten öğretmen: As a teacher, I see this every day. Kısaca like + isim = gibi (benzetme), as + isim = olarak (gerçek rol). As a child = çocukken, like a child = çocuk gibi! Sıra sende: She works ___ a nurse. As mı, like mı? Yorumlara yaz 👇\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #aslike #ingilizcedilbilgisi #yks #ingilizceöğren #englishgrammar",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/c978de8bc230e1edf0e44591051191c5c7ac20e1/gunler/2026-11-24/as_like.mp4",
-  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/c978de8bc230e1edf0e44591051191c5c7ac20e1/gunler/2026-11-24/as_like_kareler.jpg",
-  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/c978de8bc230e1edf0e44591051191c5c7ac20e1/gunler/2026-11-24/as_like_kapak.jpg",
-  "film": "filmler/2026-11-24-as-like",
-  "sure_sn": 56.5,
-  "kaynaklar": [
-   "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/like-as",
-   "https://www.oxfordlearnersdictionaries.com/definition/english/as_1"
-  ],
-  "onerilen_dilim": "17:30",
-  "durum": "denetimde"
+  "durum": "duzeltme_istendi",
+  "duzeltme_notu": "[Denetmen] 1. tur. Bilgi (2+ kaynakla doğrulandı), süre 53 sn, 1080×1920, 22 MB, ses_kontrol temiz, kapak iyi. Düzeltilecekler:\n- Harita sahnesi (~31–37 sn, \"Kelime 1600'lerde İngilizceye…\"): Lucius haritanın tam önünde duruyor; saçı \"İngiltere\" etiketini örtüyor, Roma'dan İngiltere'ye giden kırmızı kutu yüzünün üstünden geçiyor. Lucius'u haritanın dışına (ör. sağ alta, küçültülmüş) al ya da haritayı kaydır; etiket ve yol açıkça okunsun. Ardından asama=video ile yeniden render.\n- \"toga candida\" sahnesi (~15–19 sn): \"(bembeyaz toga)\" yazısı tapınağın çatısıyla çakışıyor; yazıyı yukarı al ya da tapınağı aşağı indir.\n- Açıklama: \"Sen hangi sınavın candidate'ısın?\" → \"Sen hangi sınavın candidate'isin?\" (okunuş kendıdeyt, ünlü uyumu ince).\n- Kontrol: Whisper s06'da \"demektir\", s13'te \"tokasız\" duydu; bu iki satırı yeniden dinle, okunuş bozuksa satırı yeniden seslendir.",
+  "denetim_turu": 1,
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "DUZELT",
+   "notlar": "Harita sahnesinde karakter etiketi ve yolu örtüyor; toga candida başlığı çatıyla çakışıyor; açıklamada ek yazımı. Etimoloji (candidus→candidatus, tebeşirle beyazlatılmış toga candida, İngilizceye 17. yy) Merriam-Webster, Wikipedia (Toga) ve Saturday Evening Post ile doğrulandı; 'temiz niyet' rivayet olarak sunulmuş, uygun.",
+   "zaman": "2026-11-24 14:05"
+  }
  }
 ]
