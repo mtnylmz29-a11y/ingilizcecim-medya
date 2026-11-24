@@ -30,7 +30,8 @@ const SC = [
 ];
 const WT = (id, k) => { const l = LN[id]; return l && l.kelimeler && l.kelimeler[k] ? l.kelimeler[k].t0 : T0(id) + 1.5; };
 SC.forEach((c, i) => { c.t = i === 0 ? 0 : (c.w != null ? WT(c.s, c.w) - 0.25 : T0(c.s) - 0.5); c.ox = i * 1400; });
-const PAN = 0.55;
+const PAN = 0.001;   // kesme geçiş (kayan kâğıt dokusu dosyayı şişiriyordu)
+const BOIL_BG = 0;   // sahne sabit; yalnız karakter çizgileri kaynar (dosya boyutu <50 MB)
 function sceneAt(t) { let i = 0; for (let k = 0; k < SC.length; k++) if (t >= SC[k].t) i = k; return i; }
 
 // —— olaylar (efektler) ——
@@ -63,6 +64,7 @@ const LO = (seed, extra = {}) => ({ w: 7, seed, col: K.ink, ...extra });
 // ———————————— karakter: Lucius / Elif ————————————
 // ayak ortası (x,y), s ölçek; o: tunic, toga (0–1 boyanma), expr, arm (down|wave|point|rub|write|hold), hair (curly|long), step, seed, flip, look
 function person(C, x, y, s, op) {
+  const bAmp = BOIL.amp; BOIL.amp = 0.45;
   const sd = op.seed || 300, k = op.flip ? -1 : 1, t = op.t || 0;
   const q = pts => pts.map(([a, b]) => [x + a * s * k, y + b * s]);
   const P = (pts, fo, lo, opt) => Pt(C, q(pts), fo, lo, opt);
@@ -111,6 +113,7 @@ function person(C, x, y, s, op) {
   P(ellipse(hand[0], hand[1], 20, 18, 16), F(K.peach, sd + 24, { p: 0.55 }), LO(sd + 25, { w: 5 }));
   if (a === 'rub') { P(rect(hand[0] - 16, hand[1] - 34, hand[0] + 16, hand[1] - 12), { col: K.white, p: 1, gap: 4, w: 6, seed: sd + 26 }, LO(sd + 27, { w: 4 })); }
   if (a === 'write') L([[hand[0] - 4, hand[1] - 10], [hand[0] + 30, hand[1] - 64]], LO(sd + 28, { w: 8, col: K.gold }));
+  BOIL.amp = bAmp;
   return { hand: q([hand])[0] };
 }
 function head(C, q, s, op, sd) {
@@ -466,14 +469,12 @@ function kapakTitle() {
 
 // —— kare ——
 function frame(t) {
-  BOIL.step = Math.floor(t * 12 + 1e-6);
+  BOIL.step = Math.floor(t * 6 + 1e-6);
   const i = sceneAt(t);
   const pu = eio(pr(t, SC[i].t, SC[i].t + PAN));
   const xPrev = i ? SC[i - 1].ox : 0;
   CAM.x = 540 + lerp(xPrev, SC[i].ox, i ? pu : 1);
-  CAM.y = 960; CAM.s = 1 + 0.03 * pr(t, SC[i].t, (SC[i + 1] ? SC[i + 1].t : window.DUR));
-  if (i && pu < 1) CAM.s = 1;
-  BOIL.amp = 1;
+  CAM.y = 960; CAM.s = 1;   // sabit ölçek: kâğıt dokusu kareden kareye değişmez (dosya boyutu)
   clearGroup(BG); clearGroup(CH); clearGroup(FR); [WASH, FX, SUBK, SUBT].forEach(clear);
   const vis = (i && pu < 1) ? [i - 1, i] : [i];
   let washed = false;
@@ -481,21 +482,21 @@ function frame(t) {
     OFF = SC[j].ox;
     const st = SC[j].t + (j === i && i ? 0.05 : 0);
     const dr = j === 0 ? pr(t, 0.0, 0.7) : pr(t, st, st + 0.6), df = j === 0 ? pr(t, 0.3, 1.2) : pr(t, st + 0.25, st + 1.0);
-    DRAW[SC[j].ad](t, j, j < i ? 1 : dr, j < i ? 1 : df);
+    BOIL.amp = BOIL_BG; DRAW[SC[j].ad](t, j, j < i ? 1 : dr, j < i ? 1 : df);
     washed = washScene(t, j) || washed;
   }
   OFF = 0;
+  BOIL.amp = 0;
   if (KAPAK) kapakTitle(); else subtitles(t);
   comp.paperCam(CAM.x * 0.6, CAM.y * 0.6, CAM.s / 0.6);
   comp.begin();
   comp.group(BG);
-  const go = [hash(BOIL.step) * 300, hash(BOIL.step + 7) * 300];
-  comp.group(CH, { goff: go });
-  comp.group(FR, { goff: go });
+  comp.group(CH);
+  comp.group(FR);
   if (washed) comp.wash(WASH.c, { color: WASH_GOLD });
-  comp.crayon(FX.c, { goff: go });
+  comp.crayon(FX.c);
   comp.knock(SUBK.c); comp.crayon(SUBT.c);
-  comp.finish({ vig: 0.26 });
+  comp.finish({ vig: 0.26, emb: 0.3 });
 }
 window.render = frame;
 window.READY = true;

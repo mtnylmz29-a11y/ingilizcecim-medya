@@ -81,7 +81,7 @@ function ribbon(g, P, Wd, k) {
 export function fill(L, poly, o = {}) {
   const g = L.g;
   const col = o.col || '#f6c945', p = o.p ?? 0.62, seed = o.seed ?? 1, boil = o.boil ?? 1;
-  const st = BOIL.step, ba = BOIL.amp * boil;
+  const ba = BOIL.amp * boil, st = ba >= 0.5 ? BOIL.step : 0;   // ingilizcecim: zayıf kaynamada dolgu sabit (dosya boyutu)
   const ang = (o.ang ?? 0.62) + (hash(seed + st * 1.9) - .5) * 0.035 * ba;
   const gap = ws(o.gap ?? 10.5), w = ws(o.w ?? 11), over = ws(o.over ?? 7);
   const draw = o.draw ?? 1; if (draw <= 0) return;
