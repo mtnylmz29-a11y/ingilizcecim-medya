@@ -1,0 +1,19 @@
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Kaan tahtada ders anlatıyor, peki Kaan öğretmen mi?"},
+  {"id": "s02", "dil": "en", "metin": "He talks like a teacher."},
+  {"id": "s03", "dil": "tr", "metin": "Like, gibi demek; Kaan öğretmen değil, sadece öğretmen gibi konuşuyor.", "okunus": "Layk, gibi demek; Kaan öğretmen değil, sadece öğretmen gibi konuşuyor."},
+  {"id": "s04", "dil": "tr", "metin": "İşte Selin Hoca geldi, o gerçekten öğretmen."},
+  {"id": "s05", "dil": "en", "metin": "As a teacher, I see this every day."},
+  {"id": "s06", "dil": "tr", "metin": "As ve ardından bir isim, olarak ya da sıfatıyla demek, yani gerçek rol.", "okunus": "Ez ve ardından bir isim, olarak ya da sıfatıyla demek, yani gerçek rol."},
+  {"id": "s07", "dil": "en", "metin": "As a child, I loved drawing."},
+  {"id": "s08", "dil": "tr", "metin": "As a child, çocukken demek.", "okunus": "Ez e çayld, çocukken demek."},
+  {"id": "s09", "dil": "en", "metin": "Stop acting like a child!"},
+  {"id": "s10", "dil": "tr", "metin": "Like a child ise çocuk gibi demek.", "okunus": "Layk e çayld ise çocuk gibi demek."},
+  {"id": "s11", "dil": "tr", "metin": "Arkasından tam bir cümle geliyorsa, resmî dilde as kullanılır.", "okunus": "Arkasından tam bir cümle geliyorsa, resmî dilde ez kullanılır."},
+  {"id": "s12", "dil": "en", "metin": "Do as I say."},
+  {"id": "s13", "dil": "tr", "metin": "Sıra sende, hemşire olarak çalışıyorsa as mı, like mı, yorumlara yaz!", "okunus": "Sıra sende, hemşire olarak çalışıyorsa ez mi, layk mı, yorumlara yaz!"}
+ ],
+ "bas": 0.4, "ara": 0.3, "son": 2.6,
+ "araliklar": {"s02": 0.45, "s04": 0.5, "s05": 0.5, "s07": 0.6, "s09": 0.5, "s11": 0.6, "s12": 0.5, "s13": 0.5}
+}
