@@ -1052,5 +1052,35 @@
    "notlar": "Harita sahnesinde karakter etiketi ve yolu örtüyor; toga candida başlığı çatıyla çakışıyor; açıklamada ek yazımı. Etimoloji (candidus→candidatus, tebeşirle beyazlatılmış toga candida, İngilizceye 17. yy) Merriam-Webster, Wikipedia (Toga) ve Saturday Evening Post ile doğrulandı; 'temiz niyet' rivayet olarak sunulmuş, uygun.",
    "zaman": "2026-11-24 14:05"
   }
+ },
+ {
+  "id": "2026-11-24-gonderi",
+  "tarih": "2026-11-24",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, scifi-toon; ses Gemini Kore)",
+  "stil": "scifi-toon",
+  "baslik": "As mı, Like mı?",
+  "aciklama": "Kaan öğretmen gibi konuşuyor ama öğretmen değil: He talks like a teacher. Selin Hoca ise gerçekten öğretmen: As a teacher, I see this every day. Kısaca like + isim = gibi (benzetme), as + isim = olarak (gerçek rol). As a child = çocukken, like a child = çocuk gibi! Sıra sende: She works ___ a nurse. As mı, like mı? Yorumlara yaz 👇\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #aslike #ingilizcedilbilgisi #yks #ingilizceöğren #englishgrammar",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/c978de8bc230e1edf0e44591051191c5c7ac20e1/gunler/2026-11-24/as_like.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/c978de8bc230e1edf0e44591051191c5c7ac20e1/gunler/2026-11-24/as_like_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/c978de8bc230e1edf0e44591051191c5c7ac20e1/gunler/2026-11-24/as_like_kapak.jpg",
+  "film": "filmler/2026-11-24-as-like",
+  "sure_sn": 56.5,
+  "kaynaklar": [
+   "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/like-as",
+   "https://www.oxfordlearnersdictionaries.com/definition/english/as_1"
+  ],
+  "onerilen_dilim": "17:30",
+  "durum": "duzeltme_istendi",
+  "denetim_turu": 1,
+  "duzeltme_notu": "[Denetmen] 1) Başlık/kart yazılarında Lilita One'da bulunmayan Ğ ve İ harfleri serif yedek yazı tipiyle çıkıyor (ör. 'Kaan öğretmen mi?', 'ÖĞRENCİ' ve 'ÖĞRETMEN' damgaları, 'Gerçek öğretmen geldi!'). 42aecfb'deki Fredoka 700 düzeltmesi henüz render edilmedi: Lemo render asama=video ile yeniden render et; kapak da yeniden çıksın; mp4/kareler/kapak adreslerini yeni sha ile güncelle. 2) s08 ('As a child, çocukken demek.') için Whisper 'Is it a child? Çocuk yandımek' duymuş: sesi dinleyerek kontrol et, 'çocukken demek' bozuksa yalnızca bu satırı yeniden üret (asama=hepsi). Diğer her şey uygun.",
+  "denetim": {
+   "denetci": "Denetmen",
+   "sonuc": "DUZELT",
+   "zaman": "2026-11-24 14:14",
+   "notlar": "1. tur: mp4 1080×1920, 24 fps, H.264+AAC, 56,5 sn, 14,0 MB, −14 LUFS; ses_kontrol.py temiz (13 satır); ses Gemini Kore. 12+ kare incelendi: scifi-toon, Kaan + Selin Hoca + öğrenciler, mimik, sınıf/anı odası/mor sınıf gibi ≥6 sahne, kelime kelime altyazı, kanca ilk 3 sn, kapanış ingilizcecim.com — görsel zenginlik uygun. Dilbilgisi (like + isim = benzetme; as + isim = gerçek rol/sıfatıyla; as a child = çocukken; as + cümle resmî, like + cümle günlük) British Council 'Using as and like' ve Oxford Learner's 'as' ile doğrulandı; örnek cümleler doğru; soru 'She works ___ a nurse' → as. Kapak 1080×1920: Kaan + Selin Hoca, 'DİLBİLGİSİ · YDT / YDS' + 'AS mı, LIKE mı?' ortadaki 1080×1350 alanda, okunaklı. Sorun: Ğ/İ yedek serif yazı tipi (yukarıdaki düzeltme notu). Not: kayıt 14:04:56'daki eşzamanlı kuyruk yazımında (a9f0102) silinmişti; Denetmen geri ekledi."
+  }
  }
 ]
