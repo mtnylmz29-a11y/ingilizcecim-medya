@@ -8,7 +8,7 @@ Art arda iki gün aynı stil olmaz. Kuyruk kaydının `stil` alanına aşağıda
 
 | Stil | Nasıl görünür |
 |---|---|
-| `stickman` | Kalın siyah çizgili, büyük yuvarlak renkli kafalı çöp adamlar; abartılı yüz ifadeleri (şaşkın göz, açık ağız); sade, açık renkli sınıf/ev/kafe arka planları; komik, kısa diyalog. (Örnek hissi: Instagram "RedStick". Onların kırmızı karakterini kopyalama; kendi karakterimizi kullan.) |
+| `stickman` | **Metin'in favorisi (ilk referans resmi, RedStick hissi).** lemo-opuscar kütüphanesindeki `stick-explainer` stilini temel al (styles/stick-explainer/STYLE.md ve demosu). Kalın siyah çizgili ince gövde, büyük yuvarlak renkli kafa (kendi rengimiz: lacivert #13235B ya da mercan #FF5A4E; RedStick'in kırmızı karakteri kopyalanmaz); sade, açık renkli sınıf/ev/kafe arka planları; diyalogla komik ama kısa sahneler. **Yüz ifadeleri barışçıl ve sıcak olmalı:** gülümseme, meraklı/şaşkın ama tatlı bakış, hafif kaş kaldırma. Öfkeli, bağıran, kaşları çatık, dişleri görünen ya da alaycı/kötü niyetli yüz YOK; şaşkınlık bile yumuşak (küçük 'o' ağız). Karakterler birbirine nazik davranır. |
 | `cartoon` | Yumuşak, yuvarlak hatlı sevimli çizgi film; sıcak ışık (lamba ışığı, gölge), pastel/toprak renkler, tüylü sevimli hayvan ya da karakterler; ortada tek kalın beyaz altyazı kelimesi. |
 | `flat-vector` | Kalın koyu dış çizgili düz vektör; büyük gözlü sevimli karakterler (kask, yelek gibi detaylar); turuncu/sarı sıcak gökyüzü, şantiye/şehir gibi sahneler; üstte koyu bantta büyük harfli başlık, nesnelerin üstünde krem etiket balonları, altta krem kutuda altyazı. |
 | `explainer-3d` | Koyu lacivert zeminli 3B anlatım: sarı numara rozeti + kalın başlık, telefon/kasa gibi canlanan nesneler, 1-2-3 adım çipleri. |
