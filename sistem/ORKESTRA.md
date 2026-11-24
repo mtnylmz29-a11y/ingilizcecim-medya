@@ -8,6 +8,7 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 - Türler dönüşümlü: bir gün dilbilgisi (`-gonderi`), bir gün Kelimelerin Tarihçesi (`-reels`). Kuyruk kaydında `"onerilen_dilim": "18:00"`.
 - Üretimdeki ayrı alt ajan iç kontrolü kaldırıldı; kontrolü yalnızca Denetmen yapar.
 - 17:30 / 20:30 dilimleri ve Akşam Üretimi görevi kapatıldı. Yedekteki onaylı videolar yalnızca o günün videosu hazır değilse kullanılır.
+- **Stil listesi:** videolar yalnızca `sistem/STILLER.md`'deki izinli stillerden üretilir; listede olmayan stil Denetmen'den KALIR (DUZELT). Liste YEREL_URETIM.md'deki stil seçeneklerinin yerine geçer.
 - Bu bölüm, aşağıdaki "günde 2 video" kurallarının yerine geçer.
 
 ## GÜNCELLEME 21 Kasım 2026 — İÇERİK UYGUNLUĞU: 18 YAŞ ALTI VE EĞİTİM ORTAMI (Metin; değişmez kural, aşağıdakilerin hepsinden önce gelir)
