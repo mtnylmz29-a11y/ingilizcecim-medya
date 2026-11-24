@@ -1020,5 +1020,29 @@
    "zaman": "2026-11-22T20:30+03:00",
    "notlar": "1. tur: mp4 1080×1920, 24 fps, H.264+AAC, 58,9 sn, 12,9 MB. ses_kontrol.py: temiz (11 satır); satır sonlarında patlama yok (son 600 ms düzgün sönüyor); ses Gemini Kore (ticari lisans). 20 kare incelendi: pixel-rpg, dedektif Deniz + Theseus + Ariadne + 1590'lar yazarı karakterleri, mimikli diyalog kutusu portresi, 10+ farklı sahne (gece odası, çanta menüsü, Girit haritası, labirent kapısı, saray, labirent içi, top-down labirent, sepya 1590'lar İngiltere, yazım değişimi, örnek cümle, kayıt ekranı); kanca ilk 3 sn'de, kırmızı iplik baştan sona bağlayıcı, kapanış ingilizcecim.com. Altyazı kelime kelime, 'clue/clew' vurgulu; Türkçe/İngilizce yazım temiz ('The detective found a clue under the door.' doğru). Etimoloji doğrulandı (etymonline clue/clew, Mental Floss, Saturday Evening Post, wordhistories): OE cliewen/cleowen 'iplik yumağı' → clew; 1590'lar 'that which points the way' Theseus–Ariadne ipliğinden; clue yazımı sonradan yerleşti; mit 'Efsaneye göre' ile verilmiş. İçerik uygunluğu: Minotor/şiddet yok. Kapak 1080×1920: saray sahnesi, Ariadne + Theseus + kırmızı yumak; 'KELİMELERİN TARİHÇESİ / Clue / iplik yumağından ipucuna' başlığı y≈310–660, ortadaki 1080×1350 alanda, okunaklı. Küçük not (engel değil): sahne etiket şeritleri y≈220–260 ile üst 250 px sınırına değiyor; kapağın alt yarısı düz zemin."
   }
+ },
+ {
+  "id": "2026-11-25-reels",
+  "tarih": "2026-11-25",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, crayon-book; ses Gemini Kore)",
+  "film": "filmler/2026-11-25-candidate",
+  "stil": "crayon-book",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Candidate",
+  "aciklama": "Sınava giren herkes bir candidate, peki bu kelimenin bir renkten doğduğunu biliyor muydun? Latince candidus \"parlak beyaz\" demekti; Roma'da bir göreve aday olanlar bembeyaz bir toga (toga candida) giyer, bu yüzden onlara candidatus, yani \"beyazlar giymiş\" denirdi. Rivayete göre beyaz, adayın niyetinin temiz olduğunu gösteriyordu; kelime 1600'lerde candidate olarak İngilizceye geçti. Sen hangi sınavın candidate'ısın?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #candidate #ingilizcekelime #ingilizceöğren #latince",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym_kapak.jpg",
+  "sure_sn": 53.0,
+  "kaynaklar": [
+   "https://www.etymonline.com/word/candidate",
+   "https://www.merriam-webster.com/word-of-the-day/candidate-2020-11-03",
+   "https://en.wikipedia.org/wiki/Candidate"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]

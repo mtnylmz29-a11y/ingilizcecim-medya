@@ -271,11 +271,41 @@
   },
   {
     "kelime": "candidate",
-    "durum": "bekliyor",
+    "durum": "uretildi",
     "zemin_onerisi": "roma",
     "kesin": "Latince candidatus 'beyazlar giymiş' < candidus 'parlak beyaz'. Roma'da makam adayları tebeşirle beyazlatılmış toga (toga candida) giyerdi. İngilizcede 1600'ler.",
     "rivayet": "Beyazın 'dürüstlük' simgesi olduğu yorumu kesin değil.",
-    "gorsel_oneri": "Köken: forum zemini, toga_candida; dekor tebesir + kursu; 'parilti' beyaz togada; candidus = parlak beyaz. Beyazın dürüstlük simgesi olduğu yorumu için damga KESİN DEĞİL. Değişim: Latince candidatus → İngilizce 1600'ler; son durak sehir + oy_sandigi. tema altin, stil isik, muzik neseli."
+    "gorsel_oneri": "Köken: forum zemini, toga_candida; dekor tebesir + kursu; 'parilti' beyaz togada; candidus = parlak beyaz. Beyazın dürüstlük simgesi olduğu yorumu için damga KESİN DEĞİL. Değişim: Latince candidatus → İngilizce 1600'ler; son durak sehir + oy_sandigi. tema altin, stil isik, muzik neseli.",
+    "uretim_tarihi": "2026-11-25",
+    "uretim": "bulut",
+    "kaynaklar": [
+      "https://www.etymonline.com/word/candidate",
+      "https://www.merriam-webster.com/word-of-the-day/candidate-2020-11-03"
+    ],
+    "gorsel": {
+      "tema": "crayon-book",
+      "stil": "crayon-book",
+      "muzik": "yumusak",
+      "zeminler": [
+        "sinav-salonu",
+        "roma-forumu",
+        "sutunlar",
+        "tapinak",
+        "tas-tablet",
+        "harita",
+        "defter",
+        "kapanis"
+      ],
+      "olaylar": [
+        "beyaz-mum-boya",
+        "suluboya-gecisi",
+        "tebesir-ovma",
+        "damga",
+        "dusunce-balonu",
+        "kitap-yolculugu"
+      ],
+      "harita": true
+    }
   },
   {
     "kelime": "panic",
