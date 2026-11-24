@@ -8,7 +8,7 @@ function screenRect(col, a = 1) { g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlph
 init(document.getElementById('c'));
 const KAPAK = /kapak=1/.test(location.search);
 let HIDE = false;
-const TF = `'Lilita One'`, SF = `'Fredoka'`;
+const TF = `'Fredoka'`, SF = `'Fredoka'`;   // Lilita One'da Ğ/İ yok: başlıklar da Fredoka 700
 let Z = null; const L = {};
 const T0 = id => L[id].t0, T1 = id => L[id].t1;
 const on12 = t => Math.floor(t * 12) / 12;
@@ -164,7 +164,7 @@ function board(x, y, w, h, lines = [], k = 1) {
   if (HIDE && !KAPAK) return;
   lines.forEach(([s, c, sz, dy], i) => { if (k <= i / Math.max(1, lines.length) ) return; chalkTxt(s, x + w / 2, y + (dy ?? (h * (i + 1) / (lines.length + 1))), sz || 54, c || P.chalk); });
 }
-function chalkTxt(s, x, y, size, col) { const [a, b] = [x, y]; g.save(); const m = cur(); g.setTransform(m[0], m[1], m[2], m[3], m[4], m[5]); g.font = `${size}px ${TF}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = col; g.globalAlpha = .92; g.fillText(s, a, b); g.restore(); }
+function chalkTxt(s, x, y, size, col) { const [a, b] = [x, y]; g.save(); const m = cur(); g.setTransform(m[0], m[1], m[2], m[3], m[4], m[5]); g.font = `700 ${size}px ${TF}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = col; g.globalAlpha = .92; g.fillText(s, a, b); g.restore(); }
 import { getM } from './toon.js';
 const cur = () => getM();
 function clock(x, y, t) { shape(ell(x, y, 60, 60, 30), { fill: P.white, lw: 6 }); stroke([[x, y], [x, y - 40]], 6); const a = t * .5; stroke([[x, y], [x + Math.cos(a) * 34, y + Math.sin(a) * 34]], 5); dot(x, y, 7); }
@@ -197,13 +197,13 @@ function memory(t) {   // pembe anı odası: küçük masa + resim kâğıdı
 }
 
 // ---------- screen cards ----------
-function txt(s, x, y, size, col, { font = TF, wt = '', align = 'center', ow = 0, oc = INK } = {}) {
+function txt(s, x, y, size, col, { font = TF, wt = '700', align = 'center', ow = 0, oc = INK } = {}) {
   if (HIDE) return;
   g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.font = `${wt ? wt + ' ' : ''}${size}px ${font}`; g.textAlign = align; g.textBaseline = 'middle';
   if (ow) { g.lineWidth = ow; g.lineJoin = 'round'; g.strokeStyle = oc; g.strokeText(s, x, y); }
   g.fillStyle = col; g.fillText(s, x, y); g.restore();
 }
-function tw(s, size, font = TF, wt = '') { g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.font = `${wt ? wt + ' ' : ''}${size}px ${font}`; const w = g.measureText(s).width; g.restore(); return w; }
+function tw(s, size, font = TF, wt = '700') { g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.font = `${wt ? wt + ' ' : ''}${size}px ${font}`; const w = g.measureText(s).width; g.restore(); return w; }
 function panel(x, y, w, h, fill = '#fff8e8', k = 1) { if (k <= 0 || HIDE) return; push(); translate(x + w / 2, y + h / 2); scale(back(k, .5)); shape(rr(-w / 2, -h / 2, w, h, 30), { fill, lw: 7 }); pop(); }
 function chips(items, y, t0, t) {
   if (HIDE) return;
@@ -227,7 +227,7 @@ function sentence(parts, y, size, k = 1, { mark = null } = {}) {
   if (mark === 'bad') { stroke([[x + 36, y - 20], [x + 76, y + 20]], 11, { line: P.bad }); stroke([[x + 76, y - 20], [x + 36, y + 20]], 11, { line: P.bad }); }
 }
 function note(s, y, col, k = 1, size = 46) { if (k <= 0) return; const w = tw(s, size, SF, 600); panel(W / 2 - 20 - w / 2 - 34, y - size * .9, w + 68, size * 1.8, col, k); if (k > .6) txt(s, W / 2 - 20, y + 2, size, INK, { font: SF, wt: 600 }); }
-function stamp(s, x, y, k, col = P.bad, size = 80) { if (k <= 0 || HIDE) return; const sc = back(k, .6); g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.translate(x, y); g.rotate(-.16); g.scale(sc, sc); g.font = `${size}px ${TF}`; const w = g.measureText(s).width; g.lineWidth = 9; g.strokeStyle = col; g.beginPath(); g.roundRect(-w / 2 - 28, -size * .7, w + 56, size * 1.4, 16); g.stroke(); g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = col; g.fillText(s, 0, 6); g.restore(); }
+function stamp(s, x, y, k, col = P.bad, size = 80) { if (k <= 0 || HIDE) return; const sc = back(k, .6); g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.translate(x, y); g.rotate(-.16); g.scale(sc, sc); g.font = `700 ${size}px ${TF}`; const w = g.measureText(s).width; g.lineWidth = 9; g.strokeStyle = col; g.beginPath(); g.roundRect(-w / 2 - 28, -size * .7, w + 56, size * 1.4, 16); g.stroke(); g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = col; g.fillText(s, 0, 6); g.restore(); }
 function bigQ(x, y, t, k) { if (k <= 0) return; txt('?', x, y + wob(on12(t), 1) * 8, Math.max(1, 140 * back(k, .6)), P.white, { ow: 16 }); }
 
 // ---------- subtitles ----------
@@ -401,7 +401,7 @@ function coverScene(t) {   // kapak: Kaan "like a teacher" + Selin Hoca "as a te
 
 (async () => {
   Z = await (await fetch('ses/zaman.json')).json(); Z.satirlar.forEach(l => L[l.id] = l);
-  await Promise.all([document.fonts.load(`64px ${TF}`, 'ğşİıçüöÜÇŞĞ'), document.fonts.load(`700 52px ${SF}`, 'ğşİıçüöÜÇŞĞ'), document.fonts.load(`600 46px ${SF}`, 'ğşİıçüöÜÇŞĞ')]);
+  await Promise.all([document.fonts.load(`700 64px ${TF}`, 'ğşİıçüöÜÇŞĞ'), document.fonts.load(`700 52px ${SF}`, 'ğşİıçüöÜÇŞĞ'), document.fonts.load(`600 46px ${SF}`, 'ğşİıçüöÜÇŞĞ')]);
   await document.fonts.ready;
   buildScenes();
   const endT = T1('s13') + .6;
