@@ -1076,13 +1076,13 @@
    "https://www.oxfordlearnersdictionaries.com/definition/english/as_1"
   ],
   "onerilen_dilim": "17:30",
-  "durum": "denetimde",
-  "denetim_turu": 1,
+  "durum": "duzeltme_istendi",
+  "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
    "sonuc": "DUZELT",
-   "zaman": "2026-11-24 14:14",
-   "notlar": "1. tur: mp4 1080×1920, 24 fps, H.264+AAC, 56,5 sn, 14,0 MB, −14 LUFS; ses_kontrol.py temiz (13 satır); ses Gemini Kore. 12+ kare incelendi: scifi-toon, Kaan + Selin Hoca + öğrenciler, mimik, sınıf/anı odası/mor sınıf gibi ≥6 sahne, kelime kelime altyazı, kanca ilk 3 sn, kapanış ingilizcecim.com — görsel zenginlik uygun. Dilbilgisi (like + isim = benzetme; as + isim = gerçek rol/sıfatıyla; as a child = çocukken; as + cümle resmî, like + cümle günlük) British Council 'Using as and like' ve Oxford Learner's 'as' ile doğrulandı; örnek cümleler doğru; soru 'She works ___ a nurse' → as. Kapak 1080×1920: Kaan + Selin Hoca, 'DİLBİLGİSİ · YDT / YDS' + 'AS mı, LIKE mı?' ortadaki 1080×1350 alanda, okunaklı. Sorun: Ğ/İ yedek serif yazı tipi (yukarıdaki düzeltme notu). Not: kayıt 14:04:56'daki eşzamanlı kuyruk yazımında (a9f0102) silinmişti; Denetmen geri ekledi."
+   "zaman": "2026-11-24 15:21",
+   "notlar": "2. tur: mp4 1080×1920, 24 fps, H.264+AAC, 57,0 sn, 14,2 MB; ses_kontrol.py temiz (13 satır); ses Gemini Kore. 15 kare incelendi: Kaan + Selin Hoca + öğrenciler, sınıf/anı/mor sınıf/kapanış ≥6 sahne, kelime kelime altyazı, kanca ilk 3 sn, kapanış ingilizcecim.com. Başlık kartları ('Kaan öğretmen mi?', 'Gerçek öğretmen geldi!') Fredoka ile düzelmiş. Kalan sorun: 'ÖĞRENCİ'/'ÖĞRETMEN' damgalarında Ğ ve İ serif yedek yazı tipi. Dilbilgisi (like + isim = benzetme; as + isim = gerçek rol; as a child = çocukken; as + cümle resmî) British Council 'Using as and like' ve Perfect English Grammar 'As and like' ile doğrulandı; soru 'She works ___ a nurse' → as. Kapak 1080×1920, Kaan + Selin Hoca, 'AS mı, LIKE mı?' ortadaki 1080×1350 alanda okunaklı, DİLBİLGİSİ'ndeki İ doğru."
   },
   "duzeltme_gecmisi": [
    {
@@ -1090,6 +1090,7 @@
     "uygulandi": "2026-11-24T12:18:14Z",
     "yapilan": "Lemo render asama=hepsi: Fredoka 700 başlık düzeltmesi render edildi, kapak yeniden çıktı; s08 \"Yani as a child, çocukken demek.\" olarak yeniden seslendirildi (Whisper: \"Yani, as a child çocuk gen demek\"); ses_kontrol temiz."
    }
-  ]
+  ],
+  "duzeltme_notu": "[Denetmen] 1) Damgalardaki büyük Ğ ve İ hâlâ serif yedek yazı tipiyle çıkıyor: 'ÖĞRENCİ' (s03, ~11 sn) ve 'ÖĞRETMEN' (s05, ~19 sn). main.js stamp() Fredoka 700 kullanıyor ama yüklenen Fredoka alt kümesinde U+011E (Ğ) ve U+0130 (İ) yok gibi; küçük harfli ğ sorunsuz. Çözüm: damgaları 'Öğrenci' / 'Öğretmen' gibi büyük Ğ/İ içermeyen yazımla yaz ya da bu harfleri içeren yazı tipini yükle (document.fonts.load ile 'Ğİ' örneği kontrol et), sonra asama=video ile yeniden render et; mp4/kareler/kapak adreslerini yeni sha ile güncelle. 2) s08 Whisper 'çocuk gen demek' duymuş: dinleyerek 'çocukken' net mi kontrol et; bozuksa yalnızca s08'i yeniden üret (asama=hepsi). Diğer her şey (başlık kartları artık Fredoka ile doğru, dilbilgisi, süre, boyut, ses_kontrol, kapak) uygun."
  }
 ]
