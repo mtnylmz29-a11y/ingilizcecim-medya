@@ -1063,8 +1063,8 @@
   "duzeltme_gecmisi": [
    {
     "not": "[Denetmen] 1. tur. Bilgi (2+ kaynakla doğrulandı), süre 53 sn, 1080×1920, 22 MB, ses_kontrol temiz, kapak iyi. Düzeltilecekler:\n- Harita sahnesi (~31–37 sn, \"Kelime 1600'lerde İngilizceye…\"): Lucius haritanın tam önünde duruyor; saçı \"İngiltere\" etiketini örtüyor, Roma'dan İngiltere'ye giden kırmızı kutu yüzünün üstünden geçiyor. Lucius'u haritanın dışına (ör. sağ alta, küçültülmüş) al ya da haritayı kaydır; etiket ve yol açıkça okunsun. Ardından asama=video ile yeniden render.\n- \"toga candida\" sahnesi (~15–19 sn): \"(bembeyaz toga)\" yazısı tapınağın çatısıyla çakışıyor; yazıyı yukarı al ya da tapınağı aşağı indir.\n- Açıklama: \"Sen hangi sınavın candidate'ısın?\" → \"Sen hangi sınavın candidate'isin?\" (okunuş kendıdeyt, ünlü uyumu ince).\n- Kontrol: Whisper s06'da \"demektir\", s13'te \"tokasız\" duydu; bu iki satırı yeniden dinle, okunuş bozuksa satırı yeniden seslendir.",
-    "uygulandi": "2026-11-25T17:59:07Z",
-    "yapilan": "Açıklama: candidate'isin yazımı düzeltildi. Harita sahnesinde (S_yolculuk) karakter yok, toga başlığı çatının üstünde (kareler tablosu kontrol edildi); s06/s13 70dd498'de yeniden seslendirilmişti, mevcut mp4 o sürümden. Video değişmedi."
+    "uygulandi": "2026-11-25T17:59:53Z",
+    "yapilan": "Açıklama: candidate'isin. Harita sahnesinde karakter yok, toga başlığı çatının üstünde (kareler kontrol edildi); s06/s13 70dd498'de yeniden seslendirilmişti. Video değişmedi."
    }
   ]
  },
@@ -1104,8 +1104,8 @@
    },
    {
     "not": "[Denetmen] 1) Damgalardaki büyük Ğ ve İ hâlâ serif yedek yazı tipiyle çıkıyor: 'ÖĞRENCİ' (s03, ~11 sn) ve 'ÖĞRETMEN' (s05, ~19 sn). main.js stamp() Fredoka 700 kullanıyor ama yüklenen Fredoka alt kümesinde U+011E (Ğ) ve U+0130 (İ) yok gibi; küçük harfli ğ sorunsuz. Çözüm: damgaları 'Öğrenci' / 'Öğretmen' gibi büyük Ğ/İ içermeyen yazımla yaz ya da bu harfleri içeren yazı tipini yükle (document.fonts.load ile 'Ğİ' örneği kontrol et), sonra asama=video ile yeniden render et; mp4/kareler/kapak adreslerini yeni sha ile güncelle. 2) s08 Whisper 'çocuk gen demek' duymuş: dinleyerek 'çocukken' net mi kontrol et; bozuksa yalnızca s08'i yeniden üret (asama=hepsi). Diğer her şey (başlık kartları artık Fredoka ile doğru, dilbilgisi, süre, boyut, ses_kontrol, kapak) uygun.",
-    "uygulandi": "2026-11-25T17:59:07Z",
-    "yapilan": "Damgalar 'Öğrenci'/'Öğretmen' yazımına çevrildi (büyük Ğ/İ yok); s08 okunuşu 'çocuk ken' yapıldı, Whisper artık 'çocukken' duyuyor; Lemo render asama=hepsi (bcca223)."
+    "uygulandi": "2026-11-25T17:59:53Z",
+    "yapilan": "Damgalar 'Öğrenci'/'Öğretmen'; s08 okunuşu düzeltildi (Whisper 'çocukken' duyuyor); Lemo render hepsi (bcca223)."
    }
   ]
  },
@@ -1140,8 +1140,8 @@
   "duzeltme_gecmisi": [
    {
     "not": "[Denetmen] 1) Kapanış (≈47–52 sn): 'ingilizcecim.com' rozeti iki karakterin yüzlerinin/gözlerinin üstüne biniyor; rozeti boş bir alana (soru balonu ile şıklar arasına ya da karakterlerin altındaki zemine, alt 380 px güvenli alanının dışında) taşı ya da karakterleri aşağı/yana kaydır, yüzler açık kalsın. 2) (küçük) ≈25–31 sn bölünmüş sahnede kırmızı 'by → future perfect' damgası Mira'nın kafasının üstüne biniyor; damgayı biraz yukarı (BİTMİŞ ile kafa arasına) al. 3) asama=video ile yeniden render et (ses temiz, ses_kontrol temiz; ses değişmesin), mp4/kareler/kapak adreslerini yeni sha ile güncelle. 4) Metin alanı: 25 Kasım güncellemesine göre günlük yayın 20:30; onerilen_dilim '18:00' → '20:30' yap. Diğer her şey uygun: bilgi doğru (British Council, Cambridge), 1080×1920, 51,98 sn, 8,4 MB, karakterli 6+ sahne, kapak iyi.",
-    "uygulandi": "2026-11-25T17:59:07Z",
-    "yapilan": "Kapanış rozeti zemine (y≈1385–1515) taşındı, 'by → future perfect' damgası yukarı alındı, onerilen_dilim 20:30; asama=video (b0490bf), ses değişmedi."
+    "uygulandi": "2026-11-25T17:59:53Z",
+    "yapilan": "Kapanış rozeti zemine taşındı, damga yukarı alındı, dilim 20:30; asama=video (b0490bf)."
    }
   ]
  }
