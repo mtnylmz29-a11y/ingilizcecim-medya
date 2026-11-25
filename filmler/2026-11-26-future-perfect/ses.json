@@ -1,0 +1,15 @@
+{
+ "satirlar": [
+  {"id": "s01", "dil": "tr", "metin": "Yarın saat beşte iş sürüyor mu olacak, yoksa bitmiş mi olacak?"},
+  {"id": "s02", "dil": "en", "metin": "This time tomorrow, I will be taking the exam."},
+  {"id": "s03", "dil": "tr", "metin": "Will be, fiil artı ing: gelecekte belli bir anda sürmekte olan iş.", "okunus": "Vil bi, fiil artı ing: gelecekte belli bir anda sürmekte olan iş."},
+  {"id": "s04", "dil": "en", "metin": "By the time you arrive, we will have finished dinner."},
+  {"id": "s05", "dil": "tr", "metin": "Will have ve üçüncü hâl: gelecekte bir ana kadar tamamlanmış iş.", "okunus": "Vil hev ve üçüncü hâl: gelecekte bir ana kadar tamamlanmış iş."},
+  {"id": "s06", "dil": "tr", "metin": "By ya da by the time görürsen, çoğu zaman future perfect seç.", "okunus": "Bay ya da bay dı taym görürsen, çoğu zaman fyuçır pörfekt seç."},
+  {"id": "s07", "dil": "tr", "metin": "Bir tuzak daha: by the time'dan sonra will gelmez, geniş zaman gelir.", "okunus": "Bir tuzak daha: bay dı taym'dan sonra vil gelmez, geniş zaman gelir."},
+  {"id": "s08", "dil": "en", "metin": "By the time the bus comes, I will have left."},
+  {"id": "s09", "dil": "tr", "metin": "Sıra sende: yarın öğlene kadar projemi bitirmiş olacağım."},
+  {"id": "s10", "dil": "en", "metin": "Will finish, or will have finished?", "okunus": "Vil finish, or vil hev finished?"}
+ ],
+ "bas": 0.6, "ara": 0.35, "son": 2.8
+}
