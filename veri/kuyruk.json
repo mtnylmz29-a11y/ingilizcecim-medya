@@ -1095,5 +1095,27 @@
    }
   ],
   "duzeltme_notu": "[Denetmen] 1) Damgalardaki büyük Ğ ve İ hâlâ serif yedek yazı tipiyle çıkıyor: 'ÖĞRENCİ' (s03, ~11 sn) ve 'ÖĞRETMEN' (s05, ~19 sn). main.js stamp() Fredoka 700 kullanıyor ama yüklenen Fredoka alt kümesinde U+011E (Ğ) ve U+0130 (İ) yok gibi; küçük harfli ğ sorunsuz. Çözüm: damgaları 'Öğrenci' / 'Öğretmen' gibi büyük Ğ/İ içermeyen yazımla yaz ya da bu harfleri içeren yazı tipini yükle (document.fonts.load ile 'Ğİ' örneği kontrol et), sonra asama=video ile yeniden render et; mp4/kareler/kapak adreslerini yeni sha ile güncelle. 2) s08 Whisper 'çocuk gen demek' duymuş: dinleyerek 'çocukken' net mi kontrol et; bozuksa yalnızca s08'i yeniden üret (asama=hepsi). Diğer her şey (başlık kartları artık Fredoka ile doğru, dilbilgisi, süre, boyut, ses_kontrol, kapak) uygun."
+ },
+ {
+  "id": "2026-11-26-gonderi",
+  "tarih": "2026-11-26",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, buyuk-kafa-flat; ses Gemini Kore)",
+  "film": "filmler/2026-11-26-future-perfect",
+  "stil": "buyuk-kafa-flat",
+  "baslik": "Future Perfect mi, Future Continuous mu?",
+  "aciklama": "Yarın saat 17:00'de iş sürüyor mu olacak, bitmiş mi? Sürüyorsa will be + V-ing: This time tomorrow, I will be taking the exam. Bir ana kadar bitmişse will have + V3: By the time you arrive, we will have finished dinner. Tuzak: by the time'dan sonra will gelmez, geniş zaman gelir (By the time you arrive). Sıra sende: By noon tomorrow, I ___ my project. Will finish mi, will have finished mi? Yorumlara yaz 👇\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #dilbilgisi #futureperfect #futurecontinuous #englishgrammar #ingilizcedilbilgisi #ydtingilizce",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/7373d0a721e50e83d61e2e7a43a4392ad2be8378/gunler/2026-11-26/future_perfect.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/7373d0a721e50e83d61e2e7a43a4392ad2be8378/gunler/2026-11-26/future_perfect_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/7373d0a721e50e83d61e2e7a43a4392ad2be8378/gunler/2026-11-26/future_perfect_kapak.jpg",
+  "sure_sn": 51.98,
+  "kaynaklar": [
+   "https://learnenglish.britishcouncil.org/grammar/b1-b2/future-continuous-future-perfect",
+   "https://dictionary.cambridge.org/grammar/british-grammar/future-perfect-simple"
+  ],
+  "onerilen_dilim": "18:00",
+  "durum": "denetimde"
  }
 ]
