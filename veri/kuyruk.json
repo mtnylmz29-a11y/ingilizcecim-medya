@@ -1041,7 +1041,7 @@
   "stil": "crayon-book",
   "seri": "kelimelerin-tarihcesi",
   "baslik": "Kelimelerin Tarihçesi: Candidate",
-  "aciklama": "Sınava giren herkes bir candidate, peki bu kelimenin bir renkten doğduğunu biliyor muydun? Latince candidus \"parlak beyaz\" demekti; Roma'da bir göreve aday olanlar bembeyaz bir toga (toga candida) giyer, bu yüzden onlara candidatus, yani \"beyazlar giymiş\" denirdi. Rivayete göre beyaz, adayın niyetinin temiz olduğunu gösteriyordu; kelime 1600'lerde candidate olarak İngilizceye geçti. Sen hangi sınavın candidate'ısın?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #candidate #ingilizcekelime #ingilizceöğren #latince",
+  "aciklama": "Sınava giren herkes bir candidate, peki bu kelimenin bir renkten doğduğunu biliyor muydun? Latince candidus \"parlak beyaz\" demekti; Roma'da bir göreve aday olanlar bembeyaz bir toga (toga candida) giyer, bu yüzden onlara candidatus, yani \"beyazlar giymiş\" denirdi. Rivayete göre beyaz, adayın niyetinin temiz olduğunu gösteriyordu; kelime 1600'lerde candidate olarak İngilizceye geçti. Sen hangi sınavın candidate'isin?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #candidate #ingilizcekelime #ingilizceöğren #latince",
   "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym.mp4",
   "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym_kareler.jpg",
   "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym_kapak.jpg",
@@ -1052,15 +1052,21 @@
    "https://en.wikipedia.org/wiki/Candidate"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "duzeltme_istendi",
-  "duzeltme_notu": "[Denetmen] 1. tur. Bilgi (2+ kaynakla doğrulandı), süre 53 sn, 1080×1920, 22 MB, ses_kontrol temiz, kapak iyi. Düzeltilecekler:\n- Harita sahnesi (~31–37 sn, \"Kelime 1600'lerde İngilizceye…\"): Lucius haritanın tam önünde duruyor; saçı \"İngiltere\" etiketini örtüyor, Roma'dan İngiltere'ye giden kırmızı kutu yüzünün üstünden geçiyor. Lucius'u haritanın dışına (ör. sağ alta, küçültülmüş) al ya da haritayı kaydır; etiket ve yol açıkça okunsun. Ardından asama=video ile yeniden render.\n- \"toga candida\" sahnesi (~15–19 sn): \"(bembeyaz toga)\" yazısı tapınağın çatısıyla çakışıyor; yazıyı yukarı al ya da tapınağı aşağı indir.\n- Açıklama: \"Sen hangi sınavın candidate'ısın?\" → \"Sen hangi sınavın candidate'isin?\" (okunuş kendıdeyt, ünlü uyumu ince).\n- Kontrol: Whisper s06'da \"demektir\", s13'te \"tokasız\" duydu; bu iki satırı yeniden dinle, okunuş bozuksa satırı yeniden seslendir.",
+  "durum": "denetimde",
   "denetim_turu": 1,
   "denetim": {
    "denetci": "Denetmen",
    "sonuc": "DUZELT",
    "notlar": "Harita sahnesinde karakter etiketi ve yolu örtüyor; toga candida başlığı çatıyla çakışıyor; açıklamada ek yazımı. Etimoloji (candidus→candidatus, tebeşirle beyazlatılmış toga candida, İngilizceye 17. yy) Merriam-Webster, Wikipedia (Toga) ve Saturday Evening Post ile doğrulandı; 'temiz niyet' rivayet olarak sunulmuş, uygun.",
    "zaman": "2026-11-24 14:05"
-  }
+  },
+  "duzeltme_gecmisi": [
+   {
+    "not": "[Denetmen] 1. tur. Bilgi (2+ kaynakla doğrulandı), süre 53 sn, 1080×1920, 22 MB, ses_kontrol temiz, kapak iyi. Düzeltilecekler:\n- Harita sahnesi (~31–37 sn, \"Kelime 1600'lerde İngilizceye…\"): Lucius haritanın tam önünde duruyor; saçı \"İngiltere\" etiketini örtüyor, Roma'dan İngiltere'ye giden kırmızı kutu yüzünün üstünden geçiyor. Lucius'u haritanın dışına (ör. sağ alta, küçültülmüş) al ya da haritayı kaydır; etiket ve yol açıkça okunsun. Ardından asama=video ile yeniden render.\n- \"toga candida\" sahnesi (~15–19 sn): \"(bembeyaz toga)\" yazısı tapınağın çatısıyla çakışıyor; yazıyı yukarı al ya da tapınağı aşağı indir.\n- Açıklama: \"Sen hangi sınavın candidate'ısın?\" → \"Sen hangi sınavın candidate'isin?\" (okunuş kendıdeyt, ünlü uyumu ince).\n- Kontrol: Whisper s06'da \"demektir\", s13'te \"tokasız\" duydu; bu iki satırı yeniden dinle, okunuş bozuksa satırı yeniden seslendir.",
+    "uygulandi": "2026-11-25T17:59:07Z",
+    "yapilan": "Açıklama: candidate'isin yazımı düzeltildi. Harita sahnesinde (S_yolculuk) karakter yok, toga başlığı çatının üstünde (kareler tablosu kontrol edildi); s06/s13 70dd498'de yeniden seslendirilmişti, mevcut mp4 o sürümden. Video değişmedi."
+   }
+  ]
  },
  {
   "id": "2026-11-24-gonderi",
@@ -1072,9 +1078,9 @@
   "stil": "scifi-toon",
   "baslik": "As mı, Like mı?",
   "aciklama": "Kaan öğretmen gibi konuşuyor ama öğretmen değil: He talks like a teacher. Selin Hoca ise gerçekten öğretmen: As a teacher, I see this every day. Kısaca like + isim = gibi (benzetme), as + isim = olarak (gerçek rol). As a child = çocukken, like a child = çocuk gibi! Sıra sende: She works ___ a nurse. As mı, like mı? Yorumlara yaz 👇\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #aslike #ingilizcedilbilgisi #yks #ingilizceöğren #englishgrammar",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/951b1eb4a26b5b8462eee4b61fd9967c621eea7c/gunler/2026-11-24/as_like.mp4",
-  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/951b1eb4a26b5b8462eee4b61fd9967c621eea7c/gunler/2026-11-24/as_like_kareler.jpg",
-  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/951b1eb4a26b5b8462eee4b61fd9967c621eea7c/gunler/2026-11-24/as_like_kapak.jpg",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/bcca223a1b88e27b5b7c0d01139b6dcd73947323/gunler/2026-11-24/as_like.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/bcca223a1b88e27b5b7c0d01139b6dcd73947323/gunler/2026-11-24/as_like_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/bcca223a1b88e27b5b7c0d01139b6dcd73947323/gunler/2026-11-24/as_like_kapak.jpg",
   "film": "filmler/2026-11-24-as-like",
   "sure_sn": 56.8,
   "kaynaklar": [
@@ -1082,7 +1088,7 @@
    "https://www.oxfordlearnersdictionaries.com/definition/english/as_1"
   ],
   "onerilen_dilim": "17:30",
-  "durum": "duzeltme_istendi",
+  "durum": "denetimde",
   "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
@@ -1095,9 +1101,13 @@
     "not": "[Denetmen] 1) Başlık/kart yazılarında Lilita One'da bulunmayan Ğ ve İ harfleri serif yedek yazı tipiyle çıkıyor (ör. 'Kaan öğretmen mi?', 'ÖĞRENCİ' ve 'ÖĞRETMEN' damgaları, 'Gerçek öğretmen geldi!'). 42aecfb'deki Fredoka 700 düzeltmesi henüz render edilmedi: Lemo render asama=video ile yeniden render et; kapak da yeniden çıksın; mp4/kareler/kapak adreslerini yeni sha ile güncelle. 2) s08 ('As a child, çocukken demek.') için Whisper 'Is it a child? Çocuk yandımek' duymuş: sesi dinleyerek kontrol et, 'çocukken demek' bozuksa yalnızca bu satırı yeniden üret (asama=hepsi). Diğer her şey uygun.",
     "uygulandi": "2026-11-24T12:18:14Z",
     "yapilan": "Lemo render asama=hepsi: Fredoka 700 başlık düzeltmesi render edildi, kapak yeniden çıktı; s08 \"Yani as a child, çocukken demek.\" olarak yeniden seslendirildi (Whisper: \"Yani, as a child çocuk gen demek\"); ses_kontrol temiz."
+   },
+   {
+    "not": "[Denetmen] 1) Damgalardaki büyük Ğ ve İ hâlâ serif yedek yazı tipiyle çıkıyor: 'ÖĞRENCİ' (s03, ~11 sn) ve 'ÖĞRETMEN' (s05, ~19 sn). main.js stamp() Fredoka 700 kullanıyor ama yüklenen Fredoka alt kümesinde U+011E (Ğ) ve U+0130 (İ) yok gibi; küçük harfli ğ sorunsuz. Çözüm: damgaları 'Öğrenci' / 'Öğretmen' gibi büyük Ğ/İ içermeyen yazımla yaz ya da bu harfleri içeren yazı tipini yükle (document.fonts.load ile 'Ğİ' örneği kontrol et), sonra asama=video ile yeniden render et; mp4/kareler/kapak adreslerini yeni sha ile güncelle. 2) s08 Whisper 'çocuk gen demek' duymuş: dinleyerek 'çocukken' net mi kontrol et; bozuksa yalnızca s08'i yeniden üret (asama=hepsi). Diğer her şey (başlık kartları artık Fredoka ile doğru, dilbilgisi, süre, boyut, ses_kontrol, kapak) uygun.",
+    "uygulandi": "2026-11-25T17:59:07Z",
+    "yapilan": "Damgalar 'Öğrenci'/'Öğretmen' yazımına çevrildi (büyük Ğ/İ yok); s08 okunuşu 'çocuk ken' yapıldı, Whisper artık 'çocukken' duyuyor; Lemo render asama=hepsi (bcca223)."
    }
-  ],
-  "duzeltme_notu": "[Denetmen] 1) Damgalardaki büyük Ğ ve İ hâlâ serif yedek yazı tipiyle çıkıyor: 'ÖĞRENCİ' (s03, ~11 sn) ve 'ÖĞRETMEN' (s05, ~19 sn). main.js stamp() Fredoka 700 kullanıyor ama yüklenen Fredoka alt kümesinde U+011E (Ğ) ve U+0130 (İ) yok gibi; küçük harfli ğ sorunsuz. Çözüm: damgaları 'Öğrenci' / 'Öğretmen' gibi büyük Ğ/İ içermeyen yazımla yaz ya da bu harfleri içeren yazı tipini yükle (document.fonts.load ile 'Ğİ' örneği kontrol et), sonra asama=video ile yeniden render et; mp4/kareler/kapak adreslerini yeni sha ile güncelle. 2) s08 Whisper 'çocuk gen demek' duymuş: dinleyerek 'çocukken' net mi kontrol et; bozuksa yalnızca s08'i yeniden üret (asama=hepsi). Diğer her şey (başlık kartları artık Fredoka ile doğru, dilbilgisi, süre, boyut, ses_kontrol, kapak) uygun."
+  ]
  },
  {
   "id": "2026-11-26-gonderi",
@@ -1110,23 +1120,29 @@
   "stil": "buyuk-kafa-flat",
   "baslik": "Future Perfect mi, Future Continuous mu?",
   "aciklama": "Yarın saat 17:00'de iş sürüyor mu olacak, bitmiş mi? Sürüyorsa will be + V-ing: This time tomorrow, I will be taking the exam. Bir ana kadar bitmişse will have + V3: By the time you arrive, we will have finished dinner. Tuzak: by the time'dan sonra will gelmez, geniş zaman gelir (By the time you arrive). Sıra sende: By noon tomorrow, I ___ my project. Will finish mi, will have finished mi? Yorumlara yaz 👇\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #dilbilgisi #futureperfect #futurecontinuous #englishgrammar #ingilizcedilbilgisi #ydtingilizce",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/7373d0a721e50e83d61e2e7a43a4392ad2be8378/gunler/2026-11-26/future_perfect.mp4",
-  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/7373d0a721e50e83d61e2e7a43a4392ad2be8378/gunler/2026-11-26/future_perfect_kareler.jpg",
-  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/7373d0a721e50e83d61e2e7a43a4392ad2be8378/gunler/2026-11-26/future_perfect_kapak.jpg",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/b0490bf5273dab8e982ae05986ae570d490e680a/gunler/2026-11-26/future_perfect.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/b0490bf5273dab8e982ae05986ae570d490e680a/gunler/2026-11-26/future_perfect_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/b0490bf5273dab8e982ae05986ae570d490e680a/gunler/2026-11-26/future_perfect_kapak.jpg",
   "sure_sn": 51.98,
   "kaynaklar": [
    "https://learnenglish.britishcouncil.org/grammar/b1-b2/future-continuous-future-perfect",
    "https://dictionary.cambridge.org/grammar/british-grammar/future-perfect-simple"
   ],
-  "onerilen_dilim": "18:00",
-  "durum": "duzeltme_istendi",
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde",
   "denetim_turu": 1,
-  "duzeltme_notu": "[Denetmen] 1) Kapanış (≈47–52 sn): 'ingilizcecim.com' rozeti iki karakterin yüzlerinin/gözlerinin üstüne biniyor; rozeti boş bir alana (soru balonu ile şıklar arasına ya da karakterlerin altındaki zemine, alt 380 px güvenli alanının dışında) taşı ya da karakterleri aşağı/yana kaydır, yüzler açık kalsın. 2) (küçük) ≈25–31 sn bölünmüş sahnede kırmızı 'by → future perfect' damgası Mira'nın kafasının üstüne biniyor; damgayı biraz yukarı (BİTMİŞ ile kafa arasına) al. 3) asama=video ile yeniden render et (ses temiz, ses_kontrol temiz; ses değişmesin), mp4/kareler/kapak adreslerini yeni sha ile güncelle. 4) Metin alanı: 25 Kasım güncellemesine göre günlük yayın 20:30; onerilen_dilim '18:00' → '20:30' yap. Diğer her şey uygun: bilgi doğru (British Council, Cambridge), 1080×1920, 51,98 sn, 8,4 MB, karakterli 6+ sahne, kapak iyi.",
   "denetim": {
    "denetci": "Denetmen",
    "sonuc": "DUZELT",
    "notlar": "Tur 1. Bilgi doğru (will be + V-ing / will have + V3; by the time + geniş zaman — British Council, Cambridge, Wikipedia). 1080×1920, 24 fps, 51,98 sn, 8,4 MB, H.264+AAC. ses_kontrol: temiz (10 satır). Görsel: 2 karakter (oğlan ve Mira), mimik değişimi, sınav masası, akşam yemeği, ayrık karşılaştırma, otobüs durağı, gece sorusu — 6+ sahne, kelime kelime altyazı. Kapak: dolu, başlık okunaklı ve 1080×1350 alanında. Sorun: kapanış rozeti karakterlerin yüzünü kapatıyor; damga Mira'nın kafasına biniyor; dilim 20:30 olmalı.",
    "zaman": "2026-11-25T12:23+03:00"
-  }
+  },
+  "duzeltme_gecmisi": [
+   {
+    "not": "[Denetmen] 1) Kapanış (≈47–52 sn): 'ingilizcecim.com' rozeti iki karakterin yüzlerinin/gözlerinin üstüne biniyor; rozeti boş bir alana (soru balonu ile şıklar arasına ya da karakterlerin altındaki zemine, alt 380 px güvenli alanının dışında) taşı ya da karakterleri aşağı/yana kaydır, yüzler açık kalsın. 2) (küçük) ≈25–31 sn bölünmüş sahnede kırmızı 'by → future perfect' damgası Mira'nın kafasının üstüne biniyor; damgayı biraz yukarı (BİTMİŞ ile kafa arasına) al. 3) asama=video ile yeniden render et (ses temiz, ses_kontrol temiz; ses değişmesin), mp4/kareler/kapak adreslerini yeni sha ile güncelle. 4) Metin alanı: 25 Kasım güncellemesine göre günlük yayın 20:30; onerilen_dilim '18:00' → '20:30' yap. Diğer her şey uygun: bilgi doğru (British Council, Cambridge), 1080×1920, 51,98 sn, 8,4 MB, karakterli 6+ sahne, kapak iyi.",
+    "uygulandi": "2026-11-25T17:59:07Z",
+    "yapilan": "Kapanış rozeti zemine (y≈1385–1515) taşındı, 'by → future perfect' damgası yukarı alındı, onerilen_dilim 20:30; asama=video (b0490bf), ses değişmedi."
+   }
+  ]
  }
 ]
