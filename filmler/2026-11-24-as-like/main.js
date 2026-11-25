@@ -292,7 +292,7 @@ function sLike(t, s0) {   // s02–s03: "He talks like a teacher." — like = gi
     const s1 = T0('s03') - .1;
     chips([{ s: 'like', c: P.like }, { s: 'isim', c: '#fff8e8' }], 470, s1, t);
     note('= gibi (benzetme)', 590, '#ffe2c8', seg(t, s1 + .9, s1 + 1.2), 50);
-    stamp('ÖĞRENCİ', 250, 1120, seg(t, T0('s03') + 1.6, T0('s03') + 1.9), P.bad, 74);
+    stamp('Öğrenci', 250, 1120, seg(t, T0('s03') + 1.6, T0('s03') + 1.9), P.bad, 74);
   }
 }
 function sAs(t, s0) {   // s04–s06: kapı açılır, Selin Hoca girer; "As a teacher, I see this every day."
@@ -312,7 +312,7 @@ function sAs(t, s0) {   // s04–s06: kapı açılır, Selin Hoca girer; "As a t
     chips([{ s: 'as', c: P.as }, { s: 'isim', c: '#fff8e8' }], 470, s1, t);
     note('= olarak, sıfatıyla (gerçek rol)', 590, '#d9f3ff', seg(t, s1 + .9, s1 + 1.2), 46);
   }
-  if (ph >= 2 && !HIDE) { stamp('ÖĞRETMEN', 740, 1150, seg(t, T0('s05') + .3, T0('s05') + .6), P.ok, 64); }
+  if (ph >= 2 && !HIDE) { stamp('Öğretmen', 740, 1150, seg(t, T0('s05') + .3, T0('s05') + .6), P.ok, 64); }
 }
 function sChild(t, s0) {   // s07–s08: anı (küçük Selin resim yapıyor) · s09–s10: Kaan sıranın üstünde zıplıyor
   const ph = t < T0('s09') - .15 ? 1 : 2;

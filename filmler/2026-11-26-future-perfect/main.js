@@ -226,7 +226,7 @@ function sCompare(t, s0) {   // s06: ikiye bölünmüş ekran
   if (t > s0 + .7) { txt('by / by the time', 810, 480, 36, INK, { wt: '600' }); txt('by then', 810, 525, 36, INK, { wt: '600' }); }
   txt('BİTMİŞ', 810, 700, 70, P.white, { ow: 14 });
   person(810, GY, .85, t, MIR, { look: [-.4, 0], happy: true, armL: 'up', armR: 'down', face: -1 });
-  if (hot > 0) { stamp('by → future perfect', 810, 880, hot, '#ff4d5e', 44); }
+  if (hot > 0) { stamp('by → future perfect', 810, 795, hot, '#ff4d5e', 44); }
   panel(500, 760, 80, 80, P.acc, k); if (k > .6) txt('VS', 540, 800, 36, INK);
 }
 function sTrap(t, s0) {   // s07–s08: by the time'dan sonra will yok
@@ -254,7 +254,7 @@ function sEnd(t, s0) {   // s09–s10: soru + ingilizcecim.com
   if (k1 > 0) { panel(90, 640, 400, 110, P.blue, k1); if (k1 > .6) txt('will finish', 290, 696, 50, INK); }
   if (k2 > 0) { panel(560, 640, 440, 110, P.ok, k2); if (k2 > .6) txt('will have finished', 780, 696, 46, INK); }
   const e = seg(t, T1('s10') + .2, T1('s10') + .6);
-  if (e > 0) { panel(130, 860, 780, 140, '#1d1430', e); if (e > .6) txt('ingilizcecim.com', 520, 934, 80, P.acc); }
+  if (e > 0) { panel(130, 1385, 780, 130, '#1d1430', e); if (e > .6) txt('ingilizcecim.com', 520, 1455, 80, P.acc); }
 }
 let SC = [];
 function buildScenes() { SC = [[sHook, 0], [sExam, T0('s02') - .25], [sDinner, T0('s04') - .3], [sCompare, T0('s06') - .3], [sTrap, T0('s07') - .3], [sEnd, T0('s09') - .25]]; }
