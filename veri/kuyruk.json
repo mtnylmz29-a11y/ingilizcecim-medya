@@ -1052,13 +1052,13 @@
    "https://en.wikipedia.org/wiki/Candidate"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde",
-  "denetim_turu": 1,
+  "durum": "duzeltme_istendi",
+  "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
    "sonuc": "DUZELT",
-   "notlar": "Harita sahnesinde karakter etiketi ve yolu örtüyor; toga candida başlığı çatıyla çakışıyor; açıklamada ek yazımı. Etimoloji (candidus→candidatus, tebeşirle beyazlatılmış toga candida, İngilizceye 17. yy) Merriam-Webster, Wikipedia (Toga) ve Saturday Evening Post ile doğrulandı; 'temiz niyet' rivayet olarak sunulmuş, uygun.",
-   "zaman": "2026-11-24 14:05"
+   "zaman": "2026-11-25 21:04",
+   "notlar": "Tur 2: harita sahnesinde Lucius haritayı/İngiltere etiketini kapatıyor (video yeniden render edilmemiş); '(bembeyaz toga)' çatıyla çakışıyor; stil adı crayon-book → storybook. Bilgi, ses, süre, boyut, kapak uygun."
   },
   "duzeltme_gecmisi": [
    {
@@ -1066,7 +1066,8 @@
     "uygulandi": "2026-11-25T17:59:53Z",
     "yapilan": "Açıklama: candidate'isin. Harita sahnesinde karakter yok, toga başlığı çatının üstünde (kareler kontrol edildi); s06/s13 70dd498'de yeniden seslendirilmişti. Video değişmedi."
    }
-  ]
+  ],
+  "duzeltme_notu": "[Denetmen] 2. tur (952791a ile aynı mp4 — video yeniden render edilmemiş). Bilgi doğru (candidus→candidatus, toga candida, İngilizceye 1600'ler; Merriam-Webster, Wikipedia, Saturday Evening Post), 53 sn, 1080×1920, 22 MB, ses_kontrol temiz (11 satır), kapak iyi. Düzeltilecekler:\n- Harita sahnesi (~31–37 sn, 'Kelime 1600'lerde İngilizceye…'): 1. turdaki düzeltme notunda 'S_yolculuk'ta karakter yok' denmiş ama mp4'te Lucius hâlâ haritanın tam ortasında, toga ile Avrupa'nın çoğunu, kafasıyla İngiltere etiketinin yanını ve kırmızı kutunun yolunu kapatıyor (34. sn karesine bakın). Lucius'u haritanın dışına (sağ alta, küçültülmüş) al ya da bu sahnede gizle; harita, 'İngiltere' etiketi ve Roma→İngiltere yolu açık kalsın.\n- 'toga candida' sahnesi (~15–19 sn): '(bembeyaz toga)' alt yazısı tapınağın çatı tepesine biniyor; yazıyı ~60 px yukarı al ya da tapınağı aşağı indir.\n- Stil adı: 'crayon-book' sistem/STILLER.md izinli listesinde yok; görünüm 'storybook' (pastel boya resimli kitap) ile aynı. Kuyrukta stil alanını 'storybook' yap (görüntü değişmesin).\n- Sonra asama=video ile yeniden render et (ses değişmesin), mp4/kareler/kapak adreslerini YENİ sha ile güncelle ve 34. sn karesini kontrol ederek teslim et."
  },
  {
   "id": "2026-11-24-gonderi",
@@ -1088,13 +1089,13 @@
    "https://www.oxfordlearnersdictionaries.com/definition/english/as_1"
   ],
   "onerilen_dilim": "17:30",
-  "durum": "denetimde",
+  "durum": "onaylandi",
   "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
-   "sonuc": "DUZELT",
-   "zaman": "2026-11-24 15:21",
-   "notlar": "2. tur: mp4 1080×1920, 24 fps, H.264+AAC, 57,0 sn, 14,2 MB; ses_kontrol.py temiz (13 satır); ses Gemini Kore. 15 kare incelendi: Kaan + Selin Hoca + öğrenciler, sınıf/anı/mor sınıf/kapanış ≥6 sahne, kelime kelime altyazı, kanca ilk 3 sn, kapanış ingilizcecim.com. Başlık kartları ('Kaan öğretmen mi?', 'Gerçek öğretmen geldi!') Fredoka ile düzelmiş. Kalan sorun: 'ÖĞRENCİ'/'ÖĞRETMEN' damgalarında Ğ ve İ serif yedek yazı tipi. Dilbilgisi (like + isim = benzetme; as + isim = gerçek rol; as a child = çocukken; as + cümle resmî) British Council 'Using as and like' ve Perfect English Grammar 'As and like' ile doğrulandı; soru 'She works ___ a nurse' → as. Kapak 1080×1920, Kaan + Selin Hoca, 'AS mı, LIKE mı?' ortadaki 1080×1350 alanda okunaklı, DİLBİLGİSİ'ndeki İ doğru."
+   "sonuc": "GECTI",
+   "zaman": "2026-11-25 21:04",
+   "notlar": "3. bakış (bcca223): önceki tüm maddeler kapandı. Damgalar 'Öğrenci'/'Öğretmen' Fredoka ile düzgün; başlık kartları doğru. mp4 1080×1920, 24 fps, H.264+AAC, 57,6 sn, 14,3 MB; ses_kontrol temiz (13 satır). 16 kare: Kaan + Selin Hoca + öğrenciler, sarı sınıf / turkuaz sınıf / pembe anı / mor sınıf / kapanış (≥5 sahne), kelime kelime altyazı, kapanış ingilizcecim.com. Dilbilgisi (like + isim = benzetme, as + isim = gerçek rol, as a child = çocukken, as + cümle resmî) British Council 'Using as and like' ve Quillbot 'Like or As' ile doğrulandı; cevap 'as'. Kapak dolu, 'AS mı, LIKE mı?' ortadaki 1080×1350 alanda okunaklı. Stil scifi-toon izinli."
   },
   "duzeltme_gecmisi": [
    {
@@ -1107,7 +1108,8 @@
     "uygulandi": "2026-11-25T17:59:53Z",
     "yapilan": "Damgalar 'Öğrenci'/'Öğretmen'; s08 okunuşu düzeltildi (Whisper 'çocukken' duyuyor); Lemo render hepsi (bcca223)."
    }
-  ]
+  ],
+  "onay": "otomatik (Denetmen, 2026-11-25 21:04)"
  },
  {
   "id": "2026-11-26-gonderi",
@@ -1129,13 +1131,13 @@
    "https://dictionary.cambridge.org/grammar/british-grammar/future-perfect-simple"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde",
+  "durum": "onaylandi",
   "denetim_turu": 1,
   "denetim": {
    "denetci": "Denetmen",
-   "sonuc": "DUZELT",
-   "notlar": "Tur 1. Bilgi doğru (will be + V-ing / will have + V3; by the time + geniş zaman — British Council, Cambridge, Wikipedia). 1080×1920, 24 fps, 51,98 sn, 8,4 MB, H.264+AAC. ses_kontrol: temiz (10 satır). Görsel: 2 karakter (oğlan ve Mira), mimik değişimi, sınav masası, akşam yemeği, ayrık karşılaştırma, otobüs durağı, gece sorusu — 6+ sahne, kelime kelime altyazı. Kapak: dolu, başlık okunaklı ve 1080×1350 alanında. Sorun: kapanış rozeti karakterlerin yüzünü kapatıyor; damga Mira'nın kafasına biniyor; dilim 20:30 olmalı.",
-   "zaman": "2026-11-25T12:23+03:00"
+   "sonuc": "GECTI",
+   "zaman": "2026-11-25 21:04",
+   "notlar": "Tur 2 (b0490bf): kapanış rozeti artık zeminde, iki karakterin yüzü açık; 'by → future perfect' damgası Mira'nın kafasının üstünde, çakışma yok; onerilen_dilim 20:30. 1080×1920, 24 fps, 51,98 sn, 8,4 MB; ses_kontrol temiz (10 satır). 16 kare: oğlan + Mira, gökyüzü/sınav masası/akşam yemeği/bölünmüş karşılaştırma/otobüs durağı/gece sorusu (6 sahne), kelime kelime altyazı. Bilgi (will be + V-ing sürüyor, will have + V3 bitmiş, by the time + geniş zaman) British Council 'Future continuous and future perfect' ve Cambridge ile doğrulandı. Kapak dolu, 'SÜRÜYOR mu? BİTMİŞ mi?' 1080×1350 alanda okunaklı. Stil buyuk-kafa-flat izinli."
   },
   "duzeltme_gecmisi": [
    {
@@ -1143,6 +1145,7 @@
     "uygulandi": "2026-11-25T17:59:53Z",
     "yapilan": "Kapanış rozeti zemine taşındı, damga yukarı alındı, dilim 20:30; asama=video (b0490bf)."
    }
-  ]
+  ],
+  "onay": "otomatik (Denetmen, 2026-11-25 21:04)"
  }
 ]
