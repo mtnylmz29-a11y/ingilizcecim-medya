@@ -7,6 +7,7 @@ Bu dosya her zamanlanmış görevin ilk okuduğu talimattır. Görevin istemi bi
 - Günlük üretim 11:55 (gündüz), günlük yayın **20:30** (Türkiye'de Instagram'ın en aktif saati), 21:13 yayın kontrolü. Üretim kontrolü 16:13 ve 19:13: üretim token/limit yüzünden yarıda kaldıysa token gelince yeniden başlatır. Bu bölüm 24 Kasım'daki 18:00 yayın saatinin yerine geçer.
 - Yorum yanıtları **öncelikle Türkçe**; yorum tamamen İngilizceyse İngilizce.
 - **Ekstra video:** Metin ara sıra fazladan video isteyebilir (sohbette ya da Ofis'ten). Ekstra video günlük düzeni bozmaz: kuyruk id'si `YYYY-MM-DD-ekstra-<kısa-ad>`, dönüşümlü tür sırasını etkilemez, izinli stillerden biriyle üretilir, Denetmen'den geçer ve Metin'in söylediği zamanda (söylemediyse Denetmen'den geçince hemen) yayınlanır. Günlük yayın görevleri `-ekstra` kayıtları seçmez.
+- **Ses yedeği (Metin, 25 Kasım):** Ana ses Gemini "Kore". Gemini kotası dolarsa ElevenLabs (Metin'in ücretsiz hesabı, ayda 10.000 kredi; Flash/Turbo modeli) ile seslendirilir; açıklamaya "🔊 Ses: ElevenLabs" eklenir (ücretsiz plan atıf kuralı). O da olmazsa seslendirmesiz sınav sorusu videosu. Gemini kotası dolmadan ElevenLabs kullanılmaz.
 - Modeller: üretim/yayın/kontroller Sonnet, Denetmen Opus. Az token: gereksiz okuma ve deneme yapma.
 
 ## GÜNCELLEME 24 Kasım 2026 — Metin: günde TEK video
