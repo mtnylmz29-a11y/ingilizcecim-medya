@@ -1038,13 +1038,13 @@
   "bicim": "animasyon",
   "uretim": "bulut (lemo-opuscar, crayon-book; ses Gemini Kore)",
   "film": "filmler/2026-11-25-candidate",
-  "stil": "crayon-book",
+  "stil": "storybook",
   "seri": "kelimelerin-tarihcesi",
   "baslik": "Kelimelerin Tarihçesi: Candidate",
   "aciklama": "Sınava giren herkes bir candidate, peki bu kelimenin bir renkten doğduğunu biliyor muydun? Latince candidus \"parlak beyaz\" demekti; Roma'da bir göreve aday olanlar bembeyaz bir toga (toga candida) giyer, bu yüzden onlara candidatus, yani \"beyazlar giymiş\" denirdi. Rivayete göre beyaz, adayın niyetinin temiz olduğunu gösteriyordu; kelime 1600'lerde candidate olarak İngilizceye geçti. Sen hangi sınavın candidate'isin?\n\ningilizcecim.com\n\n#kelimelerintarihçesi #ingilizcecim #ydt #yds #ingilizce #etimoloji #candidate #ingilizcekelime #ingilizceöğren #latince",
-  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym.mp4",
-  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym_kareler.jpg",
-  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/952791a24bb931c9f8e3512d40f56ae2b9deb031/gunler/2026-11-25/candidate_etym_kapak.jpg",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/6c7ce3f1ab5c2f00fdebddf63c40a36526afe23d/gunler/2026-11-25/candidate_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/6c7ce3f1ab5c2f00fdebddf63c40a36526afe23d/gunler/2026-11-25/candidate_etym_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/6c7ce3f1ab5c2f00fdebddf63c40a36526afe23d/gunler/2026-11-25/candidate_etym_kapak.jpg",
   "sure_sn": 53.0,
   "kaynaklar": [
    "https://www.etymonline.com/word/candidate",
@@ -1052,7 +1052,7 @@
    "https://en.wikipedia.org/wiki/Candidate"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "duzeltme_istendi",
+  "durum": "denetimde",
   "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
@@ -1065,9 +1065,13 @@
     "not": "[Denetmen] 1. tur. Bilgi (2+ kaynakla doğrulandı), süre 53 sn, 1080×1920, 22 MB, ses_kontrol temiz, kapak iyi. Düzeltilecekler:\n- Harita sahnesi (~31–37 sn, \"Kelime 1600'lerde İngilizceye…\"): Lucius haritanın tam önünde duruyor; saçı \"İngiltere\" etiketini örtüyor, Roma'dan İngiltere'ye giden kırmızı kutu yüzünün üstünden geçiyor. Lucius'u haritanın dışına (ör. sağ alta, küçültülmüş) al ya da haritayı kaydır; etiket ve yol açıkça okunsun. Ardından asama=video ile yeniden render.\n- \"toga candida\" sahnesi (~15–19 sn): \"(bembeyaz toga)\" yazısı tapınağın çatısıyla çakışıyor; yazıyı yukarı al ya da tapınağı aşağı indir.\n- Açıklama: \"Sen hangi sınavın candidate'ısın?\" → \"Sen hangi sınavın candidate'isin?\" (okunuş kendıdeyt, ünlü uyumu ince).\n- Kontrol: Whisper s06'da \"demektir\", s13'te \"tokasız\" duydu; bu iki satırı yeniden dinle, okunuş bozuksa satırı yeniden seslendir.",
     "uygulandi": "2026-11-25T17:59:53Z",
     "yapilan": "Açıklama: candidate'isin. Harita sahnesinde karakter yok, toga başlığı çatının üstünde (kareler kontrol edildi); s06/s13 70dd498'de yeniden seslendirilmişti. Video değişmedi."
+   },
+   {
+    "not": "[Denetmen] 2. tur (952791a ile aynı mp4 — video yeniden render edilmemiş). Bilgi doğru (candidus→candidatus, toga candida, İngilizceye 1600'ler; Merriam-Webster, Wikipedia, Saturday Evening Post), 53 sn, 1080×1920, 22 MB, ses_kontrol temiz (11 satır), kapak iyi. Düzeltilecekler:\n- Harita sahnesi (~31–37 sn, 'Kelime 1600'lerde İngilizceye…'): 1. turdaki düzeltme notunda 'S_yolculuk'ta karakter yok' denmiş ama mp4'te Lucius hâlâ haritanın tam ortasında, toga ile Avrupa'nın çoğunu, kafasıyla İngiltere etiketinin yanını ve kırmızı kutunun yolunu kapatıyor (34. sn karesine bakın). Lucius'u haritanın dışına (sağ alta, küçültülmüş) al ya da bu sahnede gizle; harita, 'İngiltere' etiketi ve Roma→İngiltere yolu açık kalsın.\n- 'toga candida' sahnesi (~15–19 sn): '(bembeyaz toga)' alt yazısı tapınağın çatı tepesine biniyor; yazıyı ~60 px yukarı al ya da tapınağı aşağı indir.\n- Stil adı: 'crayon-book' sistem/STILLER.md izinli listesinde yok; görünüm 'storybook' (pastel boya resimli kitap) ile aynı. Kuyrukta stil alanını 'storybook' yap (görüntü değişmesin).\n- Sonra asama=video ile yeniden render et (ses değişmesin), mp4/kareler/kapak adreslerini YENİ sha ile güncelle ve 34. sn karesini kontrol ederek teslim et.",
+    "uygulandi": "2026-11-25T19:15:00Z",
+    "yapilan": "Harita sahnesi 34. sn karede temiz (karakter yok, etiket ve yol açık); toga yazısı 60 px yukarı alındı; stil alanı storybook; asama=video ile yeniden render edildi (ses değişmedi), yeni sha 6c7ce3f."
    }
-  ],
-  "duzeltme_notu": "[Denetmen] 2. tur (952791a ile aynı mp4 — video yeniden render edilmemiş). Bilgi doğru (candidus→candidatus, toga candida, İngilizceye 1600'ler; Merriam-Webster, Wikipedia, Saturday Evening Post), 53 sn, 1080×1920, 22 MB, ses_kontrol temiz (11 satır), kapak iyi. Düzeltilecekler:\n- Harita sahnesi (~31–37 sn, 'Kelime 1600'lerde İngilizceye…'): 1. turdaki düzeltme notunda 'S_yolculuk'ta karakter yok' denmiş ama mp4'te Lucius hâlâ haritanın tam ortasında, toga ile Avrupa'nın çoğunu, kafasıyla İngiltere etiketinin yanını ve kırmızı kutunun yolunu kapatıyor (34. sn karesine bakın). Lucius'u haritanın dışına (sağ alta, küçültülmüş) al ya da bu sahnede gizle; harita, 'İngiltere' etiketi ve Roma→İngiltere yolu açık kalsın.\n- 'toga candida' sahnesi (~15–19 sn): '(bembeyaz toga)' alt yazısı tapınağın çatı tepesine biniyor; yazıyı ~60 px yukarı al ya da tapınağı aşağı indir.\n- Stil adı: 'crayon-book' sistem/STILLER.md izinli listesinde yok; görünüm 'storybook' (pastel boya resimli kitap) ile aynı. Kuyrukta stil alanını 'storybook' yap (görüntü değişmesin).\n- Sonra asama=video ile yeniden render et (ses değişmesin), mp4/kareler/kapak adreslerini YENİ sha ile güncelle ve 34. sn karesini kontrol ederek teslim et."
+  ]
  },
  {
   "id": "2026-11-24-gonderi",
