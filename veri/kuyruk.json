@@ -1052,13 +1052,13 @@
    "https://en.wikipedia.org/wiki/Candidate"
   ],
   "onerilen_dilim": "20:30",
-  "durum": "denetimde",
+  "durum": "onaylandi",
   "denetim_turu": 2,
   "denetim": {
    "denetci": "Denetmen",
-   "sonuc": "DUZELT",
-   "zaman": "2026-11-25 21:04",
-   "notlar": "Tur 2: harita sahnesinde Lucius haritayı/İngiltere etiketini kapatıyor (video yeniden render edilmemiş); '(bembeyaz toga)' çatıyla çakışıyor; stil adı crayon-book → storybook. Bilgi, ses, süre, boyut, kapak uygun."
+   "sonuc": "GECTI",
+   "zaman": "2026-11-26 13:10",
+   "notlar": "Tur 3: harita sahnesi temiz (karakter yok, İngiltere etiketi ve Roma→İngiltere yolu açık), '(bembeyaz toga)' çatının üstünde; stil storybook (izinli). Bilgi doğru: candidus 'parlak beyaz' → candidatus 'beyazlar giymiş', toga candida, İngilizceye 1600'ler (Merriam-Webster, Wikipedia, Saturday Evening Post). 53,75 sn, 1080×1920, 22 MB, ses_kontrol temiz (11 satır), karakter+hikâye 8+ sahne, kapak dolu ve başlık okunaklı."
   },
   "duzeltme_gecmisi": [
    {
@@ -1071,7 +1071,8 @@
     "uygulandi": "2026-11-25T19:15:00Z",
     "yapilan": "Harita sahnesi 34. sn karede temiz (karakter yok, etiket ve yol açık); toga yazısı 60 px yukarı alındı; stil alanı storybook; asama=video ile yeniden render edildi (ses değişmedi), yeni sha 6c7ce3f."
    }
-  ]
+  ],
+  "onay": "otomatik (Denetmen, 2026-11-26 13:10)"
  },
  {
   "id": "2026-11-24-gonderi",
