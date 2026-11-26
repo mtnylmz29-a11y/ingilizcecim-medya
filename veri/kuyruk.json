@@ -1152,5 +1152,28 @@
    }
   ],
   "onay": "otomatik (Denetmen, 2026-11-25 21:04)"
+ },
+ {
+  "id": "2026-11-27-reels",
+  "tarih": "2026-11-27",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, storybook; ses Gemini Kore)",
+  "film": "filmler/2026-11-27-panic",
+  "stil": "storybook",
+  "seri": "kelimelerin-tarihcesi",
+  "baslik": "Kelimelerin Tarihçesi: Panic",
+  "aciklama": "Sınavda panic yaşadın mı? Bu kelime, Yunan mitolojisinde kırların tanrısı Pan'dan geliyor. Efsaneye göre Pan'ın ansızın çıkardığı sesler sürüleri ürkütürdü; Yunancada panikos 'Pan'a ait' demekti, kelime Fransızcadan geçerek 1600 civarında İngilizceye girdi. Bir dahaki sınavda panic yaparsan Pan'ın koyunlarını hatırla ve derin bir nefes al! Sen bu kelimeyi daha önce biliyor muydun?\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #kelimelerintarihçesi #etimoloji #panic #ingilizcekelimeler #yks #ingilizceöğreniyorum",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/27fee175027a6033cdff823debdb984d721235be/gunler/2026-11-27/panic_etym.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/27fee175027a6033cdff823debdb984d721235be/gunler/2026-11-27/panic_etym_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/27fee175027a6033cdff823debdb984d721235be/gunler/2026-11-27/panic_etym_kapak.jpg",
+  "sure_sn": 59.25,
+  "kaynaklar": [
+   "https://www.etymonline.com/word/panic",
+   "https://www.merriam-webster.com/wordplay/the-mythological-origin-of-panic"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]

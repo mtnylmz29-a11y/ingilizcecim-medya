@@ -309,7 +309,7 @@
   },
   {
     "kelime": "panic",
-    "durum": "bekliyor",
+    "durum": "uretildi",
     "zemin_onerisi": "yunan",
     "kesin": "Yunanca panikos 'Pan'a ait' < Pan, kırların ve çobanların tanrısı; Fransızca panique üzerinden İngilizcede 1600'ler (önce sıfat, 'panic fear'), ad olarak 1700'ler.",
     "rivayet": "Pan'ın ıssız yerlerde ani sesleriyle sürüleri ve yolcuları korkuttuğu anlatısı mitolojidir: 'efsaneye göre' diye anlat.",
@@ -317,7 +317,9 @@
     "kaynaklar": [
       "https://www.etymonline.com/word/panic",
       "https://www.merriam-webster.com/wordplay/the-mythological-origin-of-panic"
-    ]
+    ],
+    "tarih": "2026-11-27",
+    "uretim": "bulut"
   },
   {
     "kelime": "deadline",
