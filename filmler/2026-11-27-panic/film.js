@@ -233,7 +233,7 @@ function pan(C, x, y, s, sd, t, op = {}) {
   P(tube([[-56, -362], [-92, -300], [-86, -220]], 30, 26), F(K.peach, sd + 13, { p: 0.5 }), LO(sd + 14, { w: 6 }));
   P(tube([[58, -362], [96, -410], hand], 30, 26), F(K.peach, sd + 15, { p: 0.5 }), LO(sd + 16, { w: 6 }));
   const cy = -470;
-  [-1, 1].forEach((d, i) => P(smooth([[d * 34, cy - 40], [d * 70, cy - 90], [d * 52, cy - 150], [d * 24, cy - 96]], 3), F(K.ochre, sd + 17 + i, { p: 0.8 }), LO(sd + 19 + i, { w: 5 })));
+  [-1, 1].forEach((d, i) => P(smooth([[d * 32, cy - 46], [d * 64, cy - 62], [d * 76, cy - 100], [d * 54, cy - 84], [d * 30, cy - 66]], 3), F(K.ochre, sd + 17 + i, { p: 0.8 }), LO(sd + 19 + i, { w: 5 })));
   P(smooth([[-34, cy + 40], [0, cy + 108], [34, cy + 40]], 3), F(K.brown, sd + 21, { p: 0.9, ang: 1.3 }), LO(sd + 22, { w: 5 }));
   P(ellipse(0, cy, 58, 56, 36), F(K.peach, sd + 23, { p: 0.5 }), LO(sd + 24));
   P(smooth([[-58, cy - 8], [-40, cy - 50], [0, cy - 62], [40, cy - 50], [58, cy - 8], [30, cy - 30], [-30, cy - 30]], 4), F(K.brown, sd + 25, { p: 0.9, ang: 1.1 }), null);
