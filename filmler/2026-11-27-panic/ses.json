@@ -1,0 +1,15 @@
+{"satirlar": [
+{"id": "s01", "dil": "tr", "metin": "Sınavda hiç panic yaşadın mı? Bu kelime bir tanrının adından geliyor!", "okunus": "Sınavda hiç panik yaşadın mı? Bu kelime bir tanrının adından geliyor!"},
+{"id": "s03", "dil": "tr", "metin": "Çok eski zamanlarda Yunanistan'da, Arkadya dağlarında çobanlar sürülerini güderdi."},
+{"id": "s04", "dil": "tr", "metin": "Orada kırların tanrısı Pan yaşardı, yarı insan, yarı keçi."},
+{"id": "s05", "dil": "tr", "metin": "Efsaneye göre, Pan çalılıkların ardından ansızın bağırır, sürüyü ürkütürdü."},
+{"id": "s06", "dil": "tr", "metin": "Koyunlar korkuyla dört bir yana kaçışırdı."},
+{"id": "s07", "dil": "tr", "metin": "Yunancada Pan'a ait olan şeye panikos denirdi."},
+{"id": "s08", "dil": "tr", "metin": "Yani panikos, Pan'ın yarattığı ani korku demekti."},
+{"id": "s09", "dil": "tr", "metin": "Kelime Fransızcadan geçerek 1600 civarında İngilizceye girdi.", "okunus": "Kelime Fransızcadan geçerek bin altı yüz civarında İngilizceye girdi."},
+{"id": "s10", "dil": "en", "metin": "Many students panic when they see a long reading passage in the exam."},
+{"id": "s11", "dil": "tr", "metin": "Bir dahaki sınavda panic yaparsan, Pan'ın koyunlarını hatırla ve derin bir nefes al!", "okunus": "Bir dahaki sınavda panik yaparsan, Pan'ın koyunlarını hatırla ve derin bir nefes al!"},
+{"id": "s12", "dil": "tr", "metin": "Daha fazlası için ingilizcecim.com.", "okunus": "Daha fazlası için ingilizcecim nokta kom."}
+],
+"bas": 0.4, "ara": 0.3, "son": 2.2,
+"araliklar": {"s03": 0.4, "s07": 0.4, "s09": 0.4, "s10": 0.4, "s12": 0.3}}
