@@ -190,17 +190,17 @@ function sFew(t, s0) {
   backdrop(WORLD.class, () => { shape(rr(80, 880, 920, 22, 10), { fill: '#c98a4e', lw: 6 }); });
   pop();
   kids(780, 10, pass, t, tp);
-  txt(`10 öğrenciden ${pass}'${ph === 1 ? 'si' : 'ü'} geçti`, 540, 880, 44, P.white, { ow: 11 });
-  person(250, GY, .85, t, DEN, { look: [.5, .3], op: talk(t, ['s02', 's03']) * .6, sm: ph === 1 ? -.9 : .8, brow: ph === 1 ? .8 : 0, armL: 'down', armR: 'down', happy: ph === 2 && t > T0('s05') });
-  person(830, GY, .85, t, MIR, { look: [-.5, .2], op: talk(t, ['s04', 's05']) * .6, sm: ph === 1 ? .1 : 1, brow: 0, face: -1, armL: ph === 2 ? 'up' : 'down', armR: 'down', jump: ph === 2 ? Math.max(0, Math.sin(t * 9)) * 8 : 0 });
+  txt(`10 öğrenciden ${pass}'${ph === 1 ? 'si' : 'ü'} geçti`, 540, 860, 44, P.white, { ow: 11 });
+  person(250, GY, .72, t, DEN, { look: [.5, .3], op: talk(t, ['s02', 's03']) * .6, sm: ph === 1 ? -.9 : .8, brow: ph === 1 ? -.6 : 0, armL: 'down', armR: 'down', happy: ph === 2 && t > T0('s05') });
+  person(830, GY, .72, t, MIR, { look: [-.5, .2], op: talk(t, ['s04', 's05']) * .6, sm: ph === 1 ? .1 : 1, brow: 0, face: -1, armL: ph === 2 ? 'up' : 'down', armR: 'down', jump: ph === 2 ? Math.max(0, Math.sin(t * 9)) * 8 : 0 });
   if (ph === 1) {
     sent([[['Few', P.acc], [' students', P.white]], [['passed the exam.', P.white]]], 300, 56, seg(t, T0('s02') - .1, T0('s02') + .25));
-    note('çok az → YETERSİZ', 1010, '#ffd0d6', seg(t, T0('s03') + .3, T0('s03') + .6), 48);
-    stamp('olumsuz', 820, 1130, seg(t, T0('s03') + 1.4, T0('s03') + 1.7), P.bad, 54);
+    note('çok az → YETERSİZ', 945, '#ffd0d6', seg(t, T0('s03') + .3, T0('s03') + .6), 48);
+    stamp('olumsuz', 540, 1090, seg(t, T0('s03') + 1.4, T0('s03') + 1.7), P.bad, 54);
   } else {
     sent([[['A few', P.acc], [' students', P.white]], [['passed the exam.', P.white]]], 300, 56, seg(t, T0('s04') - .1, T0('s04') + .25));
-    note('az ama VAR → yeterli', 1010, '#d6f7de', seg(t, T0('s05') + .3, T0('s05') + .6), 48);
-    stamp('olumlu', 260, 1130, seg(t, T0('s05') + 1.2, T0('s05') + 1.5), P.ok, 54);
+    note('az ama VAR → yeterli', 945, '#d6f7de', seg(t, T0('s05') + .3, T0('s05') + .6), 48);
+    stamp('olumlu', 540, 1090, seg(t, T0('s05') + 1.2, T0('s05') + 1.5), P.ok, 54);
   }
 }
 function sCompare(t, s0) {
@@ -223,7 +223,7 @@ function sCompare(t, s0) {
 }
 function sNum(t, s0) {
   push(); cam(540, 960, 1.0);
-  backdrop(WORLD.dusk, () => { shape(ell(880, 1000, 90, 90, 30), { fill: '#ffd7a0', lw: 7 }); cloud(250, 930, 1); });
+  backdrop(WORLD.dusk, () => { cloud(170, 560, 1); cloud(930, 520, .9); });
   pop();
   person(200, GY, .7, t, DEN, { look: [.5, -.2], op: talk(t, ['s08', 's09']) * .6, armL: 'down', armR: 'point', brow: -.3 });
   person(880, GY, .7, t, MIR, { look: [-.5, -.2], op: talk(t, ['s10']) * .6, face: -1, armL: 'up', armR: 'down', brow: .3 });
@@ -272,7 +272,7 @@ function coverScene(t) {
   g.setTransform(1, 0, 0, 1, 0, 0); g.fillStyle = '#ffc552'; g.fillRect(0, 0, 540, H); g.fillStyle = '#6fcdb6'; g.fillRect(540, 0, 540, H);
   g.fillStyle = '#e8a93a'; g.fillRect(0, GY, 540, H - GY); g.fillStyle = '#4fb59b'; g.fillRect(540, GY, 540, H - GY);
   stroke([[540, 0], [540, H]], 12);
-  person(270, GY, .9, t, DEN, { look: [.4, .5], op: .1, sm: -.9, brow: .8, armL: 'down', armR: 'down' });
+  person(270, GY, .9, t, DEN, { look: [.4, .5], op: .1, sm: -.9, brow: -.6, armL: 'down', armR: 'down' });
   person(810, GY, .9, t, MIR, { look: [-.4, 0], happy: true, armL: 'up', armR: 'down', face: -1 });
   panel(60, 300, 960, 90, '#1d1430', 1); txt('DİLBİLGİSİ · YDT / YDS', 540, 346, 48, P.acc);
   g.fillStyle = 'rgba(29,20,48,.88)'; g.beginPath(); g.roundRect(40, 410, 1000, 270, 36); g.fill();
