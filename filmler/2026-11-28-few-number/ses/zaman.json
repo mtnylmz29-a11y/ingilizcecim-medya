@@ -1,0 +1,566 @@
+{
+ "dur": 52.74,
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Az kişi mi geçti, birkaç kişi mi geçti? Bir a harfi bütün anlamı değiştirir.",
+   "t0": 0.6,
+   "t1": 6.771,
+   "kelimeler": [
+    {
+     "w": "Az",
+     "t0": 0.6,
+     "t1": 1.3
+    },
+    {
+     "w": "kişi",
+     "t0": 1.3,
+     "t1": 1.64
+    },
+    {
+     "w": "mi",
+     "t0": 1.64,
+     "t1": 1.96
+    },
+    {
+     "w": "geçti?",
+     "t0": 1.96,
+     "t1": 2.64
+    },
+    {
+     "w": "Birkaç",
+     "t0": 3.1,
+     "t1": 3.8
+    },
+    {
+     "w": "kişi",
+     "t0": 3.8,
+     "t1": 4.06
+    },
+    {
+     "w": "mi",
+     "t0": 4.06,
+     "t1": 4.3
+    },
+    {
+     "w": "geçti?",
+     "t0": 4.3,
+     "t1": 4.94
+    },
+    {
+     "w": "Bir",
+     "t0": 5.78,
+     "t1": 6.02
+    },
+    {
+     "w": "A",
+     "t0": 6.02,
+     "t1": 6.62
+    },
+    {
+     "w": "harfi",
+     "t0": 6.62,
+     "t1": 7.36
+    },
+    {
+     "w": "bütün",
+     "t0": 7.36,
+     "t1": 7.86
+    },
+    {
+     "w": "anlamı",
+     "t0": 7.86,
+     "t1": 8.58
+    },
+    {
+     "w": "değiştirir.",
+     "t0": 8.58,
+     "t1": 9.42
+    }
+   ],
+   "duyulan": "Az kişi mi geçti? Birkaç kişi mi geçti? Bir A harfi bütün anlamı değiştirir."
+  },
+  {
+   "id": "s02",
+   "dil": "en",
+   "metin": "Few students passed the exam.",
+   "t0": 7.121,
+   "t1": 9.812,
+   "kelimeler": [
+    {
+     "w": "Few",
+     "t0": 7.121,
+     "t1": 7.941
+    },
+    {
+     "w": "students",
+     "t0": 7.941,
+     "t1": 8.701
+    },
+    {
+     "w": "passed",
+     "t0": 8.701,
+     "t1": 9.401
+    },
+    {
+     "w": "the",
+     "t0": 9.401,
+     "t1": 9.841
+    },
+    {
+     "w": "exam.",
+     "t0": 9.841,
+     "t1": 10.401
+    }
+   ],
+   "duyulan": "Few students passed the exam."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Few, a'sız: çok az, yetersiz. Olumsuz anlam.",
+   "t0": 10.162,
+   "t1": 15.213,
+   "kelimeler": [
+    {
+     "w": "few,",
+     "t0": 10.162,
+     "t1": 11.002
+    },
+    {
+     "w": "oysiz,",
+     "t0": 11.362,
+     "t1": 12.682
+    },
+    {
+     "w": "çok",
+     "t0": 13.202,
+     "t1": 13.442
+    },
+    {
+     "w": "az,",
+     "t0": 13.442,
+     "t1": 13.862
+    },
+    {
+     "w": "yetersiz,",
+     "t0": 14.382,
+     "t1": 15.522
+    },
+    {
+     "w": "olumsuz",
+     "t0": 15.942,
+     "t1": 16.682
+    },
+    {
+     "w": "anlam.",
+     "t0": 16.682,
+     "t1": 17.102
+    }
+   ],
+   "duyulan": "few, oysiz, çok az, yetersiz, olumsuz anlam."
+  },
+  {
+   "id": "s04",
+   "dil": "en",
+   "metin": "A few students passed the exam.",
+   "t0": 15.563,
+   "t1": 18.294,
+   "kelimeler": [
+    {
+     "w": "A",
+     "t0": 15.563,
+     "t1": 16.163
+    },
+    {
+     "w": "few",
+     "t0": 16.163,
+     "t1": 16.583
+    },
+    {
+     "w": "students",
+     "t0": 16.583,
+     "t1": 17.303
+    },
+    {
+     "w": "passed",
+     "t0": 17.303,
+     "t1": 18.003
+    },
+    {
+     "w": "the",
+     "t0": 18.003,
+     "t1": 18.403
+    },
+    {
+     "w": "exam.",
+     "t0": 18.403,
+     "t1": 18.963
+    }
+   ],
+   "duyulan": "A few students passed the exam."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "A few: az ama var. Olumlu anlam.",
+   "t0": 18.644,
+   "t1": 22.215,
+   "kelimeler": [
+    {
+     "w": "Eyvü,",
+     "t0": 18.644,
+     "t1": 20.004
+    },
+    {
+     "w": "o",
+     "t0": 20.364,
+     "t1": 20.904
+    },
+    {
+     "w": "zaman",
+     "t0": 20.904,
+     "t1": 21.224
+    },
+    {
+     "w": "var,",
+     "t0": 21.224,
+     "t1": 21.804
+    },
+    {
+     "w": "olumlu",
+     "t0": 22.524,
+     "t1": 23.044
+    },
+    {
+     "w": "anlarım.",
+     "t0": 23.044,
+     "t1": 23.604
+    }
+   ],
+   "duyulan": "Eyvü, o zaman var, olumlu anlarım."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Sayılabilen isimle few, sayılamayanla little. Para sayılamaz: a little money.",
+   "t0": 22.565,
+   "t1": 29.616,
+   "kelimeler": [
+    {
+     "w": "Sayılabilen",
+     "t0": 22.565,
+     "t1": 24.125
+    },
+    {
+     "w": "isimle",
+     "t0": 24.125,
+     "t1": 24.905
+    },
+    {
+     "w": "few,",
+     "t0": 24.905,
+     "t1": 25.425
+    },
+    {
+     "w": "sayılamayanlar",
+     "t0": 25.985,
+     "t1": 27.625
+    },
+    {
+     "w": "little,",
+     "t0": 27.625,
+     "t1": 28.125
+    },
+    {
+     "w": "para",
+     "t0": 29.005,
+     "t1": 29.585
+    },
+    {
+     "w": "sayılamaz,",
+     "t0": 29.585,
+     "t1": 30.845
+    },
+    {
+     "w": "a",
+     "t0": 31.325,
+     "t1": 31.365
+    },
+    {
+     "w": "little",
+     "t0": 31.365,
+     "t1": 31.905
+    },
+    {
+     "w": "money.",
+     "t0": 31.905,
+     "t1": 32.565
+    }
+   ],
+   "duyulan": "Sayılabilen isimle few, sayılamayanlar little, para sayılamaz, a little money."
+  },
+  {
+   "id": "s07",
+   "dil": "en",
+   "metin": "We have a little money and a few ideas.",
+   "t0": 29.966,
+   "t1": 33.297,
+   "kelimeler": [
+    {
+     "w": "We",
+     "t0": 29.966,
+     "t1": 30.646
+    },
+    {
+     "w": "have",
+     "t0": 30.646,
+     "t1": 31.066
+    },
+    {
+     "w": "a",
+     "t0": 31.066,
+     "t1": 31.306
+    },
+    {
+     "w": "little",
+     "t0": 31.306,
+     "t1": 31.626
+    },
+    {
+     "w": "money",
+     "t0": 31.626,
+     "t1": 32.106
+    },
+    {
+     "w": "and",
+     "t0": 32.106,
+     "t1": 33.186
+    },
+    {
+     "w": "a",
+     "t0": 33.186,
+     "t1": 33.466
+    },
+    {
+     "w": "few",
+     "t0": 33.466,
+     "t1": 33.666
+    },
+    {
+     "w": "ideas.",
+     "t0": 33.666,
+     "t1": 34.186
+    }
+   ],
+   "duyulan": "We have a little money and a few ideas."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Tuzak: the number of tekil fiil alır, a number of çoğul fiil.",
+   "t0": 33.647,
+   "t1": 38.658,
+   "kelimeler": [
+    {
+     "w": "Tuzak,",
+     "t0": 33.647,
+     "t1": 34.667
+    },
+    {
+     "w": "the",
+     "t0": 35.207,
+     "t1": 35.327
+    },
+    {
+     "w": "number",
+     "t0": 35.327,
+     "t1": 35.827
+    },
+    {
+     "w": "of",
+     "t0": 35.827,
+     "t1": 36.267
+    },
+    {
+     "w": "tekil",
+     "t0": 36.267,
+     "t1": 36.827
+    },
+    {
+     "w": "fiil",
+     "t0": 36.827,
+     "t1": 37.367
+    },
+    {
+     "w": "alır,",
+     "t0": 37.367,
+     "t1": 38.287
+    },
+    {
+     "w": "a",
+     "t0": 38.407,
+     "t1": 38.607
+    },
+    {
+     "w": "number",
+     "t0": 38.607,
+     "t1": 39.087
+    },
+    {
+     "w": "of",
+     "t0": 39.087,
+     "t1": 39.627
+    },
+    {
+     "w": "çol",
+     "t0": 39.627,
+     "t1": 40.187
+    },
+    {
+     "w": "fiil.",
+     "t0": 40.187,
+     "t1": 40.867
+    }
+   ],
+   "duyulan": "Tuzak, the number of tekil fiil alır, a number of çol fiil."
+  },
+  {
+   "id": "s09",
+   "dil": "en",
+   "metin": "The number of applicants has increased.",
+   "t0": 39.008,
+   "t1": 42.019,
+   "kelimeler": [
+    {
+     "w": "The",
+     "t0": 39.008,
+     "t1": 39.768
+    },
+    {
+     "w": "number",
+     "t0": 39.768,
+     "t1": 40.248
+    },
+    {
+     "w": "of",
+     "t0": 40.248,
+     "t1": 40.548
+    },
+    {
+     "w": "applicants",
+     "t0": 40.548,
+     "t1": 41.268
+    },
+    {
+     "w": "has",
+     "t0": 41.268,
+     "t1": 41.888
+    },
+    {
+     "w": "increased.",
+     "t0": 41.888,
+     "t1": 42.528
+    }
+   ],
+   "duyulan": "The number of applicants has increased."
+  },
+  {
+   "id": "s10",
+   "dil": "en",
+   "metin": "A number of applicants have complained.",
+   "t0": 42.369,
+   "t1": 44.859,
+   "kelimeler": [
+    {
+     "w": "A",
+     "t0": 42.369,
+     "t1": 42.948
+    },
+    {
+     "w": "number",
+     "t0": 42.948,
+     "t1": 43.408
+    },
+    {
+     "w": "of",
+     "t0": 43.408,
+     "t1": 43.668
+    },
+    {
+     "w": "applicants",
+     "t0": 43.668,
+     "t1": 44.348
+    },
+    {
+     "w": "have",
+     "t0": 44.348,
+     "t1": 44.768
+    },
+    {
+     "w": "complained.",
+     "t0": 44.768,
+     "t1": 45.329
+    }
+   ],
+   "duyulan": "A number of applicants have complained."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Sıra sende: a number of students, is mi, are mı?",
+   "t0": 45.209,
+   "t1": 49.94,
+   "kelimeler": [
+    {
+     "w": "Sıra",
+     "t0": 45.209,
+     "t1": 46.069
+    },
+    {
+     "w": "sende",
+     "t0": 46.069,
+     "t1": 47.229
+    },
+    {
+     "w": "a",
+     "t0": 47.229,
+     "t1": 47.669
+    },
+    {
+     "w": "number",
+     "t0": 47.669,
+     "t1": 48.329
+    },
+    {
+     "w": "of",
+     "t0": 48.329,
+     "t1": 48.709
+    },
+    {
+     "w": "students",
+     "t0": 48.709,
+     "t1": 49.409
+    },
+    {
+     "w": "is",
+     "t0": 49.409,
+     "t1": 50.369
+    },
+    {
+     "w": "me",
+     "t0": 50.369,
+     "t1": 50.709
+    },
+    {
+     "w": "arm.",
+     "t0": 50.709,
+     "t1": 51.629
+    }
+   ],
+   "duyulan": "Sıra sende a number of students is me arm."
+  }
+ ],
+ "uyarilar": []
+}
