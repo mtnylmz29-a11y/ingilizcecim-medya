@@ -1185,5 +1185,29 @@
    "notlar": "1080x1920, 59,25 sn, 20,2 MB, h264+aac; ses_kontrol temiz (11 satır), ses seviyesi normal (ort. -17 dB). Stil storybook (izinli). Etimoloji doğru: Yunanca panikos 'Pan'a ait' → Fransızca panique → İngilizce c.1600 (etymonline, Merriam-Webster, Mental Floss). Altyazı ve Türkçe/İngilizce yazım doğru; örnek cümle doğal. 13 kare incelendi: kız öğrenci + Pan + çoban/koyunlar, 8+ sahne (sınıf, Arkadya, Pan, çalılık, Yunanca kutu, harita, örnek cümle, kapanış). Kapak Pan sahnesi, başlık okunaklı ve ortadaki alanda. Küçük not (DUZELT gerektirmez): kapakta sahnenin 'PAN' başlığı seri etiketinin hemen üstünde kalıyor; 53. sn'de 'Derin bir nefes al!' pencere çiziminin üstüne biniyor ama okunaklı.",
    "zaman": "2026-11-26 14:49 (TR)"
   }
+ },
+ {
+  "id": "2026-11-28-gonderi",
+  "tarih": "2026-11-28",
+  "kademe": "ydt+yds",
+  "sinif": "YDT · YDS",
+  "bicim": "animasyon",
+  "uretim": "bulut (lemo-opuscar, buyuk-kafa-flat; ses Gemini Kore)",
+  "film": "filmler/2026-11-28-few-number",
+  "stil": "buyuk-kafa-flat",
+  "baslik": "Few mi, A Few mi? (+ the number of / a number of)",
+  "aciklama": "Tek bir 'a' anlamı değiştirir! Few students passed = çok az, yetersiz (olumsuz). A few students passed = az ama var (olumlu). Sayılabilen isimle few / a few, sayılamayan isimle little / a little: We have a little money and a few ideas. Tuzak: The number of applicants has increased (tekil fiil), A number of applicants have complained (çoğul fiil). Sıra sende: A number of students ___ absent today. Is mi, are mı? Yorumlara yaz 👇\n\ningilizcecim.com\n\n#ingilizce #ydt #yds #ingilizcecim #dilbilgisi #few #afew #englishgrammar #ingilizcedilbilgisi #ydtingilizce",
+  "mp4": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e33197f7d9f4e2bcd4db2c390c7137bcfd440232/gunler/2026-11-28/few_number.mp4",
+  "kareler": "https://github.com/mtnylmz29-a11y/ingilizcecim-medya/blob/e33197f7d9f4e2bcd4db2c390c7137bcfd440232/gunler/2026-11-28/few_number_kareler.jpg",
+  "kapak": "https://raw.githubusercontent.com/mtnylmz29-a11y/ingilizcecim-medya/e33197f7d9f4e2bcd4db2c390c7137bcfd440232/gunler/2026-11-28/few_number_kapak.jpg",
+  "sure_sn": 52.94,
+  "kaynaklar": [
+   "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/quantifiers-few-a-few-little-a-bit",
+   "https://www.oxfordlearnersdictionaries.com/grammar/online-grammar/quantifiers-a-few-a-little-a-lot-lots",
+   "https://www.oxfordlearnersdictionaries.com/definition/english/number_1",
+   "https://www.grammarbook.com/blog/numbers/tackling-more-tricky-word-choices-another-look-at-number-is-and-number-are/"
+  ],
+  "onerilen_dilim": "20:30",
+  "durum": "denetimde"
  }
 ]
