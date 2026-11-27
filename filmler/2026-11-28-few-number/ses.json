@@ -1,0 +1,68 @@
+{
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Az kişi mi geçti, birkaç kişi mi geçti? Bir a harfi bütün anlamı değiştirir."
+  },
+  {
+   "id": "s02",
+   "dil": "en",
+   "metin": "Few students passed the exam.",
+   "okunus": "Fyu students passed the exam."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Few, a'sız: çok az, yetersiz. Olumsuz anlam.",
+   "okunus": "Fyu, a'sız: çok az, yetersiz. Olumsuz anlam."
+  },
+  {
+   "id": "s04",
+   "dil": "en",
+   "metin": "A few students passed the exam."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "A few: az ama var. Olumlu anlam.",
+   "okunus": "Ey fyu: az ama var. Olumlu anlam."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Sayılabilen isimle few, sayılamayanla little. Para sayılamaz: a little money.",
+   "okunus": "Sayılabilen isimle fyu, sayılamayanla litıl. Para sayılamaz: ey litıl mani."
+  },
+  {
+   "id": "s07",
+   "dil": "en",
+   "metin": "We have a little money and a few ideas."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "Tuzak: the number of tekil fiil alır, a number of çoğul fiil.",
+   "okunus": "Tuzak: dı nambır ov tekil fiil alır, ey nambır ov çoğul fiil."
+  },
+  {
+   "id": "s09",
+   "dil": "en",
+   "metin": "The number of applicants has increased."
+  },
+  {
+   "id": "s10",
+   "dil": "en",
+   "metin": "A number of applicants have complained."
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Sıra sende: a number of students, is mi, are mı?",
+   "okunus": "Sıra sende: ey nambır ov stüdınts, iz mi, ar mı?"
+  }
+ ],
+ "bas": 0.6,
+ "ara": 0.35,
+ "son": 2.8
+}
