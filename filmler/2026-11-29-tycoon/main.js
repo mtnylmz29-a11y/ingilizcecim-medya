@@ -57,7 +57,7 @@ function person(x, y, s, t, pal, o = {}) {
   shape(ell(0, -366, 158, 150, 40), { fill: pal.hair, lw: 6 });
   shape(ell(0, -318, 146, 134, 44), { fill: pal.skin, lw: 6 });
   shape(spline([[-146, -368], [-100, -420], [0, -440], [100, -420], [146, -368], [90, -382], [0, -392], [-90, -382]]), { fill: pal.hair, lw: 5 });
-  hat(pal.hat, pal);
+  push(); translate(0, pal.hat === 'topknot' ? 8 : 42); hat(pal.hat, pal); pop();
   const blink = (t % 3.1) > 2.98;
   for (const ex of [-56, 56]) {
     if (blink || o.closed) { stroke(arc(ex, -312, 26, 12, Math.PI * .1, Math.PI * .9, 12), 6); continue; }
@@ -241,7 +241,7 @@ function sEnd(t, s0) {
   label('şogun', 200, 880, 44, P.cream, seg(t, s0 + .8, s0 + 1.1)); label('başkan', 540, 880, 44, P.cream, seg(t, s0 + 1.2, s0 + 1.5)); label('patron', 880, 880, 44, P.cream, seg(t, s0 + 1.6, s0 + 1.9));
   title('TYCOON', seg(t, s0 + .1, s0 + .4));
   const e = seg(t, T1('s10') + .2, T1('s10') + .6);
-  if (e > 0) { panel(130, 1000, 820, 130, P.navy, e); if (e > .6) txt('ingilizcecim.com', 540, 1070, 84, P.gold); }
+  if (e > 0) { panel(130, 520, 820, 130, P.navy, e); if (e > .6) txt('ingilizcecim.com', 540, 590, 84, P.gold); }
 }
 let SC = [];
 function buildScenes() { SC = [[sHook, 0], [sJapan, T0('s02') - .25], [sRoute, T0('s05') - .3], [sUsa, T0('s06') - .3], [sBiz, T0('s08') - .3], [sEx, T0('s09') - .3], [sEnd, T0('s10') - .25]]; }
@@ -272,7 +272,7 @@ function coverScene(t) {
   person(290, GY + 40, .9, t, SHO, { look: [.4, -.1], happy: true, armL: 'down', armR: 'point' });
   person(800, GY + 40, .9, t, BIZ, { look: [-.4, -.1], face: -1, happy: true, armL: 'down', armR: 'wave' });
   coin(540, GY - 120, 1.4);
-  label('taikun → tycoon', 540, 960, 60, P.cream, 1);
+  label('taikun → tycoon', 540, 1490, 60, P.cream, 1);
 }
 (async () => {
   Z = await (await fetch('ses/zaman.json')).json(); Z.satirlar.forEach(l => L[l.id] = l);
