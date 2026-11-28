@@ -20,3 +20,5 @@
 7. Telif ve çocuk güvenliği. **18 yaş altı/eğitim uygunluğu** (ORKESTRA 21 Kasım): alkol, tütün, madde, kumar, cinsellik, şiddet, silah, korku, küfür yok — kelimenin kökeni dahil. Takılan içerik KALDI.
 8. Video için en az 3 kareye bakar (kapak, ortadaki bir dönüşüm, kapanış): yazı okunuyor mu, vurgu doğru kelimede mi, kapak ilk 1 saniyede konuyu söylüyor mu.
 **Çıktı**: Her paylaşım için ONAY ya da DÜZELTME (soru no, mevcut → önerilen). Zorunlu düzeltme ile küçük öneriyi ayırır. Dosyaları kendisi değiştirmez.
+
+**Tek konu kontrolü** (Metin, 28 Kasım 2026): Her video ve gönderi yalnızca TEK konu/kalıp işlemelidir. Birbirine benzeyen iki ayrı kalıp (örn. 'a few' ile 'a large number of') aynı içerikte varsa içerik İçerik Yazarı'na geri gönderilir; bu, 2 tur sınırına dahildir.
