@@ -1,19 +1,75 @@
 {
-"satirlar": [
-{"id": "s01", "dil": "tr", "metin": "Tycoon, yani büyük iş insanı. Bu kelime bir Japon şogunundan geliyor!", "okunus": "Taykun, yani büyük iş insanı. Bu kelime bir Japon şogunundan geliyor!"},
-{"id": "s02", "dil": "tr", "metin": "1850'lerde Japonya'yı şogun yönetirdi, yani ülkenin en güçlü komutanı.", "okunus": "Bin sekiz yüz elli'li yıllarda Japonya'yı şogun yönetirdi, yani ülkenin en güçlü komutanı."},
-{"id": "s03", "dil": "tr", "metin": "Yabancı gemiler limana gelince, şogun kendini taikun diye tanıttı.", "okunus": "Yabancı gemiler limana gelince, şogun kendini taykun diye tanıttı."},
-{"id": "s04", "dil": "tr", "metin": "Japoncada taikun, büyük efendi demektir; kökü Çinceden gelir.", "okunus": "Japoncada taykun, büyük efendi demektir; kökü Çinceden gelir."},
-{"id": "s05", "dil": "tr", "metin": "Kelime gemilerle Amerika'ya taşındı ve 1857'de İngilizceye girdi.", "okunus": "Kelime gemilerle Amerika'ya taşındı ve bin sekiz yüz elli yedi'de İngilizceye girdi."},
-{"id": "s06", "dil": "tr", "metin": "Sonra ilginç bir şey oldu: Başkan Lincoln'ün yardımcıları ona şakayla the Tycoon dedi.", "okunus": "Sonra ilginç bir şey oldu: Başkan Lincoln'ün yardımcıları ona şakayla the taykun dedi."},
-{"id": "s07", "dil": "tr", "metin": "Yani kelime önce bir şogunun, sonra bir başkanın lakabı oldu.", "okunus": "Yani kelime önce bir şogunun, sonra bir başkanın lakabı oldu."},
-{"id": "s08", "dil": "tr", "metin": "1920'lerden sonra anlam yine değişti: iş dünyasının güçlü patronlarına tycoon denmeye başlandı.", "okunus": "Bin dokuz yüz yirmi'lerden sonra anlam yine değişti: iş dünyasının güçlü patronlarına taykun denmeye başlandı."},
-{"id": "s09", "dil": "en", "metin": "The shipping tycoon donated millions to build a new library for the city."},
-{"id": "s10", "dil": "tr", "metin": "Bir dahaki sefere tycoon kelimesini görünce Japon şogununu hatırla!", "okunus": "Bir dahaki sefere taykun kelimesini görünce Japon şogununu hatırla!"},
-{"id": "s11", "dil": "tr", "metin": "Daha fazlası için ingilizcecim.com.", "okunus": "Daha fazlası için ingilizcecim nokta kom."}
-],
-"bas": 0.4,
-"ara": 0.25,
-"son": 1.0,
-"araliklar": {"s03": 0.4, "s05": 0.4, "s06": 0.4, "s08": 0.4, "s09": 0.5, "s10": 0.4, "s11": 0.3}
+ "satirlar": [
+  {
+   "id": "s01",
+   "dil": "tr",
+   "metin": "Tycoon, yani büyük iş insanı. Bu kelime bir Japon şogunundan geliyor!",
+   "okunus": "Taykun, yani büyük iş insanı. Bu kelime bir Japon şogunundan geliyor!"
+  },
+  {
+   "id": "s02",
+   "dil": "tr",
+   "metin": "1850'lerde Japonya'yı şogun yönetirdi.",
+   "okunus": "Bin sekiz yüz elli'li yıllarda Japonya'yı şogun yönetirdi."
+  },
+  {
+   "id": "s03",
+   "dil": "tr",
+   "metin": "Şogun, yabancılara kendini taikun diye tanıttı.",
+   "okunus": "Şogun, yabancılara kendini taykun diye tanıttı."
+  },
+  {
+   "id": "s04",
+   "dil": "tr",
+   "metin": "Japoncada taikun, büyük efendi demektir; kökü Çinceden gelir.",
+   "okunus": "Japoncada taykun, büyük efendi demektir; kökü Çinceden gelir."
+  },
+  {
+   "id": "s05",
+   "dil": "tr",
+   "metin": "Kelime gemilerle Amerika'ya taşındı ve 1857'de İngilizceye girdi.",
+   "okunus": "Kelime gemilerle Amerika'ya taşındı ve bin sekiz yüz elli yedi'de İngilizceye girdi."
+  },
+  {
+   "id": "s06",
+   "dil": "tr",
+   "metin": "Başkan Lincoln'ün yardımcıları ona şakayla the Tycoon dedi.",
+   "okunus": "Başkan Lincoln'ün yardımcıları ona şakayla the taykun dedi."
+  },
+  {
+   "id": "s08",
+   "dil": "tr",
+   "metin": "1920'lerden sonra iş dünyasının güçlü patronlarına tycoon denmeye başlandı.",
+   "okunus": "Bin dokuz yüz yirmi'lerden sonra iş dünyasının güçlü patronlarına taykun denmeye başlandı."
+  },
+  {
+   "id": "s09",
+   "dil": "en",
+   "metin": "The shipping tycoon donated millions to build a new library for the city."
+  },
+  {
+   "id": "s10",
+   "dil": "tr",
+   "metin": "Tycoon'u görünce Japon şogununu hatırla!",
+   "okunus": "Taykun'u görünce Japon şogununu hatırla!"
+  },
+  {
+   "id": "s11",
+   "dil": "tr",
+   "metin": "Daha fazlası için ingilizcecim.com.",
+   "okunus": "Daha fazlası için ingilizcecim nokta kom."
+  }
+ ],
+ "bas": 0.4,
+ "ara": 0.25,
+ "son": 1.0,
+ "araliklar": {
+  "s03": 0.4,
+  "s05": 0.4,
+  "s06": 0.4,
+  "s08": 0.4,
+  "s09": 0.5,
+  "s10": 0.4,
+  "s11": 0.3
+ }
 }
