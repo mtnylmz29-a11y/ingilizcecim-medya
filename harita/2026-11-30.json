@@ -3,118 +3,6 @@
   "olusturma": "2026-11-28",
   "konular": [
     {
-      "tur": "grammar",
-      "baslik": "Olumsuz zarflarla devrik yapı (Not only / Hardly / No sooner / Rarely / Little)",
-      "hedef": "ikisi",
-      "ozet": "Olumsuz ya da kısıtlayıcı bir zarf cümlenin başına gelirse yardımcı fiil özneden önce gelir (devrik yapı). Eşleşmeler sabittir: Hardly/Scarcely ... when; No sooner ... than; Not only ... but also.",
-      "ornekler": [
-        "Not only did she pass the exam, but she also got the highest score.",
-        "Hardly had we arrived when it started to rain.",
-        "No sooner had he left than the phone rang.",
-        "Rarely do students finish the test early."
-      ],
-      "kaynak": "Sık hata: 'Not only she passed...' (devrik yok), 'No sooner ... when' (doğrusu than), 'Hardly ... than' (doğrusu when)."
-    },
-    {
-      "tur": "grammar",
-      "baslik": "If'siz koşul cümleleri: Had / Were / Should ile devrik yapı",
-      "hedef": "ikisi",
-      "ozet": "If atılırsa yardımcı fiil başa gelir: Type 3 → Had + özne + V3; Type 2 → Were + özne; Type 1 (resmi) → Should + özne + fiil.",
-      "ornekler": [
-        "Had I known about the traffic, I would have left earlier.",
-        "Were she here, she would help us.",
-        "Should you need any help, please call me."
-      ],
-      "kaynak": "Sık hata: 'Had I would known' (would eklenmez); 'Were she to be' yerine 'Was she here' kullanmak."
-    },
-    {
-      "tur": "ayrim",
-      "baslik": "although / though / even though / despite / in spite of",
-      "hedef": "ikisi",
-      "ozet": "Although, though ve even though ardından tam cümle (özne + fiil) alır. Despite ve in spite of ardından isim ya da V-ing alır. 'Despite the fact that' ardından yine tam cümle gelir.",
-      "ornekler": [
-        "Although he was tired, he kept studying.",
-        "Despite being tired, he kept studying.",
-        "In spite of the rain, we went out.",
-        "Despite the fact that it was raining, we went out."
-      ],
-      "kaynak": "Sık hata: 'Despite he was tired' ve 'In spite of he was tired'; 'Despite of' (of fazlalığı)."
-    },
-    {
-      "tur": "ayrim",
-      "baslik": "used to / be used to / get used to",
-      "hedef": "ikisi",
-      "ozet": "used to + V1: geçmişteki alışkanlık, artık yapılmıyor. be/get used to + isim ya da V-ing: bir şeye alışkın olmak / alışmak.",
-      "ornekler": [
-        "I used to play football when I was a child.",
-        "She is used to getting up early.",
-        "He is getting used to living in a big city."
-      ],
-      "kaynak": "Sık hata: 'I am used to play' (V-ing gerekir); 'I used to going' (V1 gerekir)."
-    },
-    {
-      "tur": "ayrim",
-      "baslik": "Sıfat cümleciklerinde which / that (virgüllü ve virgülsüz)",
-      "hedef": "ikisi",
-      "ozet": "Tanımlayıcı (defining) cümlecikte which ya da that kullanılabilir. Ek bilgi veren virgüllü (non-defining) cümlecikte that kullanılmaz, which gerekir. Preposition'dan hemen sonra that gelmez: in which, with whom.",
-      "ornekler": [
-        "The book that I bought yesterday is very useful.",
-        "My laptop, which I bought last year, stopped working.",
-        "This is the house in which he was born."
-      ],
-      "kaynak": "Sık hata: 'My laptop, that I bought last year, ...' ve 'the house in that he was born'."
-    },
-    {
-      "tur": "tuzak",
-      "baslik": "Bağlaç tuzağı: however / nevertheless / whereas / moreover / otherwise",
-      "hedef": "ikisi",
-      "ozet": "Boşluk doldurma ve cümle tamamlamada önce iki cümle arasındaki ilişkiyi belirle: zıtlık (however, nevertheless, whereas, but), ek bilgi (moreover, in addition, besides), sonuç (therefore, consequently), aksi halde (otherwise, or else). Şıkları sırayla değil, ilişkiye göre ele.",
-      "ornekler": [
-        "He studied hard; nevertheless, he failed the exam. (zıtlık)",
-        "Ali is very outgoing, whereas his brother is rather shy. (karşılaştırma/zıtlık)",
-        "You must hurry; otherwise, you will miss the bus. (aksi halde)"
-      ],
-      "kaynak": "Tuzak: aynı anlamlı gibi duran 'therefore' ile 'however' aynı boşluğa şık olarak konur; ilişki yönünü kontrol et."
-    },
-    {
-      "tur": "tuzak",
-      "baslik": "Preposition kalıpları ve neden–sonuç yönü: result in / result from",
-      "hedef": "ikisi",
-      "ozet": "result in = sonuçlanmak, yol açmak (ardından sonuç gelir). result from = ... yüzünden olmak (ardından neden gelir). Aynı mantık: lead to (sonuç), be due to / stem from (neden).",
-      "ornekler": [
-        "Carelessness resulted in the accident.",
-        "The accident resulted from carelessness.",
-        "Heavy rain led to flooding in the region."
-      ],
-      "kaynak": "Tuzak: şıklarda in ve from birlikte verilir; cümlede önce gelenin neden mi sonuç mu olduğuna bak."
-    },
-    {
-      "tur": "kok",
-      "baslik": "Latince kökler: dict, spect, port",
-      "hedef": "ikisi",
-      "ozet": "dict = söylemek (predict, contradict, verdict); spect/spec = bakmak (inspect, spectator, perspective); port = taşımak (import, export, transport). Kökü bilmek yeni kelimenin anlamını tahmin ettirir.",
-      "ornekler": [
-        "predict: önceden söylemek → tahmin etmek",
-        "inspect: içine bakmak → denetlemek",
-        "export: dışarı taşımak → ihraç etmek"
-      ],
-      "kaynak": "Kaynak: genel İngilizce etimoloji bilgisi; sınav kelimelerini köklerle ilişkilendirmek için kullan."
-    },
-    {
-      "tur": "kok",
-      "baslik": "Olumsuzluk önekleri: un- / in- / im- / il- / ir- / dis- / mis-",
-      "hedef": "ikisi",
-      "ozet": "Önek, kökün ilk harfine göre seçilir: im- (b, m, p önünde), il- (l önünde), ir- (r önünde); un- ve in- sıfatlarda yaygın; dis- ve mis- fiil ve isimlerde.",
-      "ornekler": [
-        "possible → impossible",
-        "legal → illegal",
-        "regular → irregular",
-        "responsible → irresponsible",
-        "agree → disagree; understand → misunderstand"
-      ],
-      "kaynak": "Sık hata: 'unpossible', 'inlegal', 'imregular' gibi uydurma biçimler."
-    },
-    {
       "tur": "kelime",
       "baslik": "Collocation: make / take / pay / draw ile kalıplar",
       "hedef": "ikisi",
@@ -125,7 +13,8 @@
         "Please pay attention to the instructions.",
         "We can draw a conclusion from these results."
       ],
-      "kaynak": "Sık hata: 'do progress', 'make attention', 'take a conclusion'."
+      "kaynak": "Sık hata: 'do progress', 'make attention', 'take a conclusion'.",
+      "oncelik": 1
     },
     {
       "tur": "kelime",
@@ -139,7 +28,129 @@
         "The match was called off because of the storm.",
         "He turned down the job offer."
       ],
-      "kaynak": ""
+      "kaynak": "",
+      "oncelik": 2
+    },
+    {
+      "tur": "tuzak",
+      "baslik": "Bağlaç tuzağı: however / nevertheless / whereas / moreover / otherwise",
+      "hedef": "ikisi",
+      "ozet": "Boşluk doldurma ve cümle tamamlamada önce iki cümle arasındaki ilişkiyi belirle: zıtlık (however, nevertheless, whereas, but), ek bilgi (moreover, in addition, besides), sonuç (therefore, consequently), aksi halde (otherwise, or else). Şıkları sırayla değil, ilişkiye göre ele.",
+      "ornekler": [
+        "He studied hard; nevertheless, he failed the exam. (zıtlık)",
+        "Ali is very outgoing, whereas his brother is rather shy. (karşılaştırma/zıtlık)",
+        "You must hurry; otherwise, you will miss the bus. (aksi halde)"
+      ],
+      "kaynak": "Tuzak: aynı anlamlı gibi duran 'therefore' ile 'however' aynı boşluğa şık olarak konur; ilişki yönünü kontrol et.",
+      "oncelik": 3
+    },
+    {
+      "tur": "grammar",
+      "baslik": "Olumsuz zarflarla devrik yapı (Not only / Hardly / No sooner / Rarely / Little)",
+      "hedef": "ikisi",
+      "ozet": "Olumsuz ya da kısıtlayıcı bir zarf cümlenin başına gelirse yardımcı fiil özneden önce gelir (devrik yapı). Eşleşmeler sabittir: Hardly/Scarcely ... when; No sooner ... than; Not only ... but also.",
+      "ornekler": [
+        "Not only did she pass the exam, but she also got the highest score.",
+        "Hardly had we arrived when it started to rain.",
+        "No sooner had he left than the phone rang.",
+        "Rarely do students finish the test early."
+      ],
+      "kaynak": "Sık hata: 'Not only she passed...' (devrik yok), 'No sooner ... when' (doğrusu than), 'Hardly ... than' (doğrusu when).",
+      "oncelik": 4
+    },
+    {
+      "tur": "grammar",
+      "baslik": "If'siz koşul cümleleri: Had / Were / Should ile devrik yapı",
+      "hedef": "ikisi",
+      "ozet": "If atılırsa yardımcı fiil başa gelir: Type 3 → Had + özne + V3; Type 2 → Were + özne; Type 1 (resmi) → Should + özne + fiil.",
+      "ornekler": [
+        "Had I known about the traffic, I would have left earlier.",
+        "Were she here, she would help us.",
+        "Should you need any help, please call me."
+      ],
+      "kaynak": "Sık hata: 'Had I would known' (would eklenmez); 'Were she to be' yerine 'Was she here' kullanmak.",
+      "oncelik": 5
+    },
+    {
+      "tur": "ayrim",
+      "baslik": "used to / be used to / get used to",
+      "hedef": "ikisi",
+      "ozet": "used to + V1: geçmişteki alışkanlık, artık yapılmıyor. be/get used to + isim ya da V-ing: bir şeye alışkın olmak / alışmak.",
+      "ornekler": [
+        "I used to play football when I was a child.",
+        "She is used to getting up early.",
+        "He is getting used to living in a big city."
+      ],
+      "kaynak": "Sık hata: 'I am used to play' (V-ing gerekir); 'I used to going' (V1 gerekir).",
+      "oncelik": 6
+    },
+    {
+      "tur": "ayrim",
+      "baslik": "although / though / even though / despite / in spite of",
+      "hedef": "ikisi",
+      "ozet": "Although, though ve even though ardından tam cümle (özne + fiil) alır. Despite ve in spite of ardından isim ya da V-ing alır. 'Despite the fact that' ardından yine tam cümle gelir.",
+      "ornekler": [
+        "Although he was tired, he kept studying.",
+        "Despite being tired, he kept studying.",
+        "In spite of the rain, we went out.",
+        "Despite the fact that it was raining, we went out."
+      ],
+      "kaynak": "Sık hata: 'Despite he was tired' ve 'In spite of he was tired'; 'Despite of' (of fazlalığı).",
+      "oncelik": 7
+    },
+    {
+      "tur": "ayrim",
+      "baslik": "Sıfat cümleciklerinde which / that (virgüllü ve virgülsüz)",
+      "hedef": "ikisi",
+      "ozet": "Tanımlayıcı (defining) cümlecikte which ya da that kullanılabilir. Ek bilgi veren virgüllü (non-defining) cümlecikte that kullanılmaz, which gerekir. Preposition'dan hemen sonra that gelmez: in which, with whom.",
+      "ornekler": [
+        "The book that I bought yesterday is very useful.",
+        "My laptop, which I bought last year, stopped working.",
+        "This is the house in which he was born."
+      ],
+      "kaynak": "Sık hata: 'My laptop, that I bought last year, ...' ve 'the house in that he was born'.",
+      "oncelik": 8
+    },
+    {
+      "tur": "tuzak",
+      "baslik": "Preposition kalıpları ve neden–sonuç yönü: result in / result from",
+      "hedef": "ikisi",
+      "ozet": "result in = sonuçlanmak, yol açmak (ardından sonuç gelir). result from = ... yüzünden olmak (ardından neden gelir). Aynı mantık: lead to (sonuç), be due to / stem from (neden).",
+      "ornekler": [
+        "Carelessness resulted in the accident.",
+        "The accident resulted from carelessness.",
+        "Heavy rain led to flooding in the region."
+      ],
+      "kaynak": "Tuzak: şıklarda in ve from birlikte verilir; cümlede önce gelenin neden mi sonuç mu olduğuna bak.",
+      "oncelik": 9
+    },
+    {
+      "tur": "kok",
+      "baslik": "Latince kökler: dict, spect, port",
+      "hedef": "ikisi",
+      "ozet": "dict = söylemek (predict, contradict, verdict); spect/spec = bakmak (inspect, spectator, perspective); port = taşımak (import, export, transport). Kökü bilmek yeni kelimenin anlamını tahmin ettirir.",
+      "ornekler": [
+        "predict: önceden söylemek → tahmin etmek",
+        "inspect: içine bakmak → denetlemek",
+        "export: dışarı taşımak → ihraç etmek"
+      ],
+      "kaynak": "Kaynak: genel İngilizce etimoloji bilgisi; sınav kelimelerini köklerle ilişkilendirmek için kullan.",
+      "oncelik": 10
+    },
+    {
+      "tur": "kok",
+      "baslik": "Olumsuzluk önekleri: un- / in- / im- / il- / ir- / dis- / mis-",
+      "hedef": "ikisi",
+      "ozet": "Önek, kökün ilk harfine göre seçilir: im- (b, m, p önünde), il- (l önünde), ir- (r önünde); un- ve in- sıfatlarda yaygın; dis- ve mis- fiil ve isimlerde.",
+      "ornekler": [
+        "possible → impossible",
+        "legal → illegal",
+        "regular → irregular",
+        "responsible → irresponsible",
+        "agree → disagree; understand → misunderstand"
+      ],
+      "kaynak": "Sık hata: 'unpossible', 'inlegal', 'imregular' gibi uydurma biçimler.",
+      "oncelik": 11
     },
     {
       "tur": "kelime",
@@ -151,7 +162,8 @@
         "Attendance is mandatory, whereas the extra workshop is optional.",
         "Regular reading can enhance your vocabulary."
       ],
-      "kaynak": ""
+      "kaynak": "",
+      "oncelik": 12
     },
     {
       "tur": "istatistik",
@@ -162,7 +174,8 @@
         "Soru başına ortalama süre: 120 dk / 80 soru = 1,5 dk",
         "Tarih ve saat: 21.06.2026, 15.45 (ÖSYM takvimi, 3. oturum)"
       ],
-      "kaynak": "ÖSYM takvimi: https://www.osym.gov.tr/TR,8797/takvim.html · Hürriyet: https://www.hurriyet.com.tr/haberleri/ydt · Milliyet: https://www.milliyet.com.tr/galeri/yks-ydt-2026-ne-zaman-saat-kacta-yks-dil-sinavi-kacta-basliyor-kacta-bitiyor-osym-ydt-oturum-saati-ve-sureleri-7609172"
+      "kaynak": "ÖSYM takvimi: https://www.osym.gov.tr/TR,8797/takvim.html · Hürriyet: https://www.hurriyet.com.tr/haberleri/ydt · Milliyet: https://www.milliyet.com.tr/galeri/yks-ydt-2026-ne-zaman-saat-kacta-yks-dil-sinavi-kacta-basliyor-kacta-bitiyor-osym-ydt-oturum-saati-ve-sureleri-7609172",
+      "oncelik": 13
     },
     {
       "tur": "istatistik",
@@ -174,7 +187,9 @@
         "YDS/2: 22.11.2026 (geçti)",
         "e-YDS 2026/12 İngilizce: 19.12.2026"
       ],
-      "kaynak": "ÖSYM takvimi: https://www.osym.gov.tr/TR,8797/takvim.html · Habertürk: https://www.haberturk.com/yds-2026-basvuru-tarihi-yds-basvurulari-ne-zaman-basliyor-yds-sinavi-ne-zaman-3896980"
+      "kaynak": "ÖSYM takvimi: https://www.osym.gov.tr/TR,8797/takvim.html · Habertürk: https://www.haberturk.com/yds-2026-basvuru-tarihi-yds-basvurulari-ne-zaman-basliyor-yds-sinavi-ne-zaman-3896980",
+      "oncelik": 14
     }
-  ]
+  ],
+  "oncelik_notu": "Metin'in sıralaması (28 Kasım 2026): konular oncelik alanına göre işlenir; her video tek konu."
 }
