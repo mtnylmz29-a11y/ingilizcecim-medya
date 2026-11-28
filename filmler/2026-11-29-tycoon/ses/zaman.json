@@ -1,5 +1,5 @@
 {
- "dur": 67.14,
+ "dur": 52.138,
  "satirlar": [
   {
    "id": "s01",
@@ -15,7 +15,7 @@
     },
     {
      "w": "yani",
-     "t0": 1.66,
+     "t0": 1.64,
      "t1": 2.16
     },
     {
@@ -31,7 +31,7 @@
     {
      "w": "insanı,",
      "t0": 3.24,
-     "t1": 4.3
+     "t1": 4.18
     },
     {
      "w": "bu",
@@ -51,11 +51,11 @@
     {
      "w": "Japon",
      "t0": 5.98,
-     "t1": 6.6
+     "t1": 6.58
     },
     {
      "w": "şogunundan",
-     "t0": 6.6,
+     "t0": 6.58,
      "t1": 7.72
     },
     {
@@ -69,234 +69,194 @@
   {
    "id": "s02",
    "dil": "tr",
-   "metin": "1850'lerde Japonya'yı şogun yönetirdi, yani ülkenin en güçlü komutanı.",
+   "metin": "1850'lerde Japonya'yı şogun yönetirdi.",
    "t0": 6.261,
-   "t1": 13.072,
+   "t1": 10.832,
    "kelimeler": [
     {
      "w": "1850",
      "t0": 6.261,
-     "t1": 8.121
+     "t1": 8.201
     },
     {
      "w": "'li",
-     "t0": 8.121,
-     "t1": 8.421
+     "t0": 8.201,
+     "t1": 8.461
     },
     {
      "w": "yıllarda",
-     "t0": 8.421,
+     "t0": 8.461,
      "t1": 9.261
     },
     {
      "w": "Japonya",
      "t0": 9.261,
-     "t1": 10.281
+     "t1": 10.561
     },
     {
      "w": "'yı",
-     "t0": 10.281,
-     "t1": 10.661
+     "t0": 10.561,
+     "t1": 11.001
     },
     {
      "w": "Shogun",
-     "t0": 10.661,
-     "t1": 11.361
+     "t0": 11.001,
+     "t1": 11.681
     },
     {
      "w": "yönetirdi.",
-     "t0": 11.361,
-     "t1": 12.261
-    },
-    {
-     "w": "Yani",
-     "t0": 12.641,
-     "t1": 13.121
-    },
-    {
-     "w": "ülkenin",
-     "t0": 13.121,
-     "t1": 14.201
-    },
-    {
-     "w": "en",
-     "t0": 14.201,
-     "t1": 14.541
-    },
-    {
-     "w": "güçlü",
-     "t0": 14.541,
-     "t1": 15.241
-    },
-    {
-     "w": "komutanı.",
-     "t0": 15.241,
-     "t1": 16.101
+     "t0": 11.681,
+     "t1": 12.601
     }
    ],
-   "duyulan": "1850 'li yıllarda Japonya 'yı Shogun yönetirdi. Yani ülkenin en güçlü komutanı."
+   "duyulan": "1850 'li yıllarda Japonya 'yı Shogun yönetirdi."
   },
   {
    "id": "s03",
    "dil": "tr",
-   "metin": "Yabancı gemiler limana gelince, şogun kendini taikun diye tanıttı.",
-   "t0": 13.472,
-   "t1": 18.723,
+   "metin": "Şogun, yabancılara kendini taikun diye tanıttı.",
+   "t0": 11.232,
+   "t1": 15.203,
    "kelimeler": [
     {
-     "w": "Yabancı",
-     "t0": 13.472,
-     "t1": 14.652
+     "w": "Şogun,",
+     "t0": 11.232,
+     "t1": 12.432
     },
     {
-     "w": "gemiler",
-     "t0": 14.652,
-     "t1": 15.352
-    },
-    {
-     "w": "limana",
-     "t0": 15.352,
-     "t1": 16.192
-    },
-    {
-     "w": "gelince",
-     "t0": 16.192,
-     "t1": 16.952
-    },
-    {
-     "w": "Şogun",
-     "t0": 16.952,
-     "t1": 18.132
+     "w": "yabancılara",
+     "t0": 12.712,
+     "t1": 13.852
     },
     {
      "w": "kendini",
-     "t0": 18.132,
-     "t1": 18.952
+     "t0": 13.852,
+     "t1": 14.672
     },
     {
-     "w": "Taycum",
-     "t0": 18.952,
-     "t1": 19.852
+     "w": "Taykun",
+     "t0": 14.672,
+     "t1": 15.512
     },
     {
      "w": "diye",
-     "t0": 19.852,
-     "t1": 20.112
+     "t0": 15.512,
+     "t1": 15.952
     },
     {
      "w": "tanıttı.",
-     "t0": 20.112,
-     "t1": 20.972
+     "t0": 15.952,
+     "t1": 16.812
     }
    ],
-   "duyulan": "Yabancı gemiler limana gelince Şogun kendini Taycum diye tanıttı."
+   "duyulan": "Şogun, yabancılara kendini Taykun diye tanıttı."
   },
   {
    "id": "s04",
    "dil": "tr",
    "metin": "Japoncada taikun, büyük efendi demektir; kökü Çinceden gelir.",
-   "t0": 18.973,
-   "t1": 23.784,
+   "t0": 15.453,
+   "t1": 20.264,
    "kelimeler": [
     {
      "w": "Japonca'da",
-     "t0": 18.973,
-     "t1": 20.453
+     "t0": 15.453,
+     "t1": 16.933
     },
     {
-     "w": "Taykul",
-     "t0": 20.453,
-     "t1": 21.273
+     "w": "Taykul,",
+     "t0": 16.933,
+     "t1": 17.753
     },
     {
      "w": "büyük",
-     "t0": 21.273,
-     "t1": 21.873
+     "t0": 18.013,
+     "t1": 18.393
     },
     {
      "w": "efendi",
-     "t0": 21.873,
-     "t1": 22.653
+     "t0": 18.393,
+     "t1": 19.133
     },
     {
      "w": "demektir.",
-     "t0": 22.653,
-     "t1": 23.453
+     "t0": 19.133,
+     "t1": 19.933
     },
     {
      "w": "Kökü",
-     "t0": 23.773,
-     "t1": 24.373
+     "t0": 20.253,
+     "t1": 20.833
     },
     {
      "w": "Çince'den",
-     "t0": 24.373,
-     "t1": 25.293
+     "t0": 20.833,
+     "t1": 21.773
     },
     {
      "w": "gelir.",
-     "t0": 25.293,
-     "t1": 25.533
+     "t0": 21.773,
+     "t1": 22.013
     }
    ],
-   "duyulan": "Japonca'da Taykul büyük efendi demektir. Kökü Çince'den gelir."
+   "duyulan": "Japonca'da Taykul, büyük efendi demektir. Kökü Çince'den gelir."
   },
   {
    "id": "s05",
    "dil": "tr",
    "metin": "Kelime gemilerle Amerika'ya taşındı ve 1857'de İngilizceye girdi.",
-   "t0": 24.184,
-   "t1": 30.475,
+   "t0": 20.664,
+   "t1": 26.955,
    "kelimeler": [
     {
      "w": "Kelime",
-     "t0": 24.184,
-     "t1": 25.244
+     "t0": 20.664,
+     "t1": 21.724
     },
     {
      "w": "gemilerle",
-     "t0": 25.244,
-     "t1": 26.544
+     "t0": 21.724,
+     "t1": 23.024
     },
     {
      "w": "Amerika",
-     "t0": 26.544,
-     "t1": 27.044
+     "t0": 23.024,
+     "t1": 23.524
     },
     {
      "w": "'ya",
-     "t0": 27.044,
-     "t1": 27.464
+     "t0": 23.524,
+     "t1": 23.944
     },
     {
      "w": "taşındı",
-     "t0": 27.464,
-     "t1": 28.724
+     "t0": 23.944,
+     "t1": 25.224
     },
     {
      "w": "ve",
-     "t0": 28.724,
-     "t1": 29.064
+     "t0": 25.224,
+     "t1": 25.544
     },
     {
      "w": "1857'de",
-     "t0": 29.064,
-     "t1": 31.344
+     "t0": 25.544,
+     "t1": 27.824
     },
     {
      "w": "İngilizce",
-     "t0": 31.344,
-     "t1": 32.504
+     "t0": 27.824,
+     "t1": 29.004
     },
     {
      "w": "'ye",
-     "t0": 32.504,
-     "t1": 32.664
+     "t0": 29.004,
+     "t1": 29.144
     },
     {
      "w": "girdi.",
-     "t0": 32.664,
-     "t1": 33.104
+     "t0": 29.144,
+     "t1": 29.584
     }
    ],
    "duyulan": "Kelime gemilerle Amerika 'ya taşındı ve 1857'de İngilizce 'ye girdi."
@@ -304,289 +264,189 @@
   {
    "id": "s06",
    "dil": "tr",
-   "metin": "Sonra ilginç bir şey oldu: Başkan Lincoln'ün yardımcıları ona şakayla the Tycoon dedi.",
-   "t0": 30.875,
-   "t1": 37.446,
+   "metin": "Başkan Lincoln'ün yardımcıları ona şakayla the Tycoon dedi.",
+   "t0": 27.355,
+   "t1": 32.366,
    "kelimeler": [
     {
-     "w": "Sonra",
-     "t0": 30.875,
-     "t1": 31.915
-    },
-    {
-     "w": "ilginç",
-     "t0": 31.915,
-     "t1": 32.995
-    },
-    {
-     "w": "bir",
-     "t0": 32.995,
-     "t1": 33.115
-    },
-    {
-     "w": "şey",
-     "t0": 33.115,
-     "t1": 33.375
-    },
-    {
-     "w": "oldu.",
-     "t0": 33.375,
-     "t1": 33.735
-    },
-    {
      "w": "Başkan",
-     "t0": 34.575,
-     "t1": 35.155
+     "t0": 27.355,
+     "t1": 28.535
     },
     {
      "w": "Lincoln",
-     "t0": 35.155,
-     "t1": 35.595
+     "t0": 28.535,
+     "t1": 29.055
     },
     {
      "w": "'ın",
-     "t0": 35.595,
-     "t1": 36.095
+     "t0": 29.055,
+     "t1": 29.435
     },
     {
      "w": "yardımcıları",
-     "t0": 36.095,
-     "t1": 37.195
+     "t0": 29.435,
+     "t1": 30.635
     },
     {
      "w": "ona",
-     "t0": 37.195,
-     "t1": 37.655
+     "t0": 30.635,
+     "t1": 31.155
     },
     {
      "w": "şakayla",
-     "t0": 37.655,
-     "t1": 38.635
+     "t0": 31.155,
+     "t1": 32.275
     },
     {
      "w": "The",
-     "t0": 38.635,
-     "t1": 39.175
+     "t0": 32.275,
+     "t1": 32.695
     },
     {
      "w": "Tycoon",
-     "t0": 39.175,
-     "t1": 39.895
+     "t0": 32.695,
+     "t1": 33.475
     },
     {
      "w": "dedi.",
-     "t0": 39.895,
-     "t1": 40.195
+     "t0": 33.475,
+     "t1": 34.135
     }
    ],
-   "duyulan": "Sonra ilginç bir şey oldu. Başkan Lincoln 'ın yardımcıları ona şakayla The Tycoon dedi."
-  },
-  {
-   "id": "s07",
-   "dil": "tr",
-   "metin": "Yani kelime önce bir şogunun, sonra bir başkanın lakabı oldu.",
-   "t0": 37.696,
-   "t1": 42.227,
-   "kelimeler": [
-    {
-     "w": "Yani",
-     "t0": 37.696,
-     "t1": 38.696
-    },
-    {
-     "w": "kelime",
-     "t0": 38.696,
-     "t1": 39.556
-    },
-    {
-     "w": "önce",
-     "t0": 39.556,
-     "t1": 40.016
-    },
-    {
-     "w": "bir",
-     "t0": 40.016,
-     "t1": 40.336
-    },
-    {
-     "w": "şogunun,",
-     "t0": 40.336,
-     "t1": 41.116
-    },
-    {
-     "w": "sonra",
-     "t0": 41.436,
-     "t1": 41.896
-    },
-    {
-     "w": "bir",
-     "t0": 41.896,
-     "t1": 42.216
-    },
-    {
-     "w": "başkanın",
-     "t0": 42.216,
-     "t1": 42.996
-    },
-    {
-     "w": "lakabı",
-     "t0": 42.996,
-     "t1": 43.776
-    },
-    {
-     "w": "oldu.",
-     "t0": 43.776,
-     "t1": 44.056
-    }
-   ],
-   "duyulan": "Yani kelime önce bir şogunun, sonra bir başkanın lakabı oldu."
+   "duyulan": "Başkan Lincoln 'ın yardımcıları ona şakayla The Tycoon dedi."
   },
   {
    "id": "s08",
    "dil": "tr",
-   "metin": "1920'lerden sonra anlam yine değişti: iş dünyasının güçlü patronlarına tycoon denmeye başlandı.",
-   "t0": 42.627,
-   "t1": 50.598,
+   "metin": "1920'lerden sonra iş dünyasının güçlü patronlarına tycoon denmeye başlandı.",
+   "t0": 32.766,
+   "t1": 37.896,
    "kelimeler": [
     {
      "w": "1920",
-     "t0": 42.627,
-     "t1": 43.687
+     "t0": 32.766,
+     "t1": 33.266
     },
     {
      "w": "'lerden",
-     "t0": 43.687,
-     "t1": 45.407
+     "t0": 33.266,
+     "t1": 34.506
     },
     {
      "w": "sonra",
-     "t0": 45.407,
-     "t1": 45.887
+     "t0": 34.506,
+     "t1": 34.846
     },
     {
-     "w": "anlam",
-     "t0": 45.887,
-     "t1": 46.687
-    },
-    {
-     "w": "yine",
-     "t0": 46.687,
-     "t1": 47.167
-    },
-    {
-     "w": "değişti.",
-     "t0": 47.167,
-     "t1": 48.087
-    },
-    {
-     "w": "İş",
-     "t0": 48.627,
-     "t1": 48.927
+     "w": "iş",
+     "t0": 34.846,
+     "t1": 35.386
     },
     {
      "w": "dünyasının",
-     "t0": 48.927,
-     "t1": 49.987
+     "t0": 35.386,
+     "t1": 36.206
     },
     {
      "w": "güçlü",
-     "t0": 49.987,
-     "t1": 50.647
+     "t0": 36.206,
+     "t1": 36.746
     },
     {
      "w": "patronlarına",
-     "t0": 50.647,
-     "t1": 51.867
+     "t0": 36.746,
+     "t1": 37.686
     },
     {
-     "w": "Taycun",
-     "t0": 51.867,
-     "t1": 52.707
+     "w": "Taykun",
+     "t0": 37.686,
+     "t1": 38.426
     },
     {
      "w": "denmeye",
-     "t0": 52.707,
-     "t1": 53.267
+     "t0": 38.426,
+     "t1": 39.006
     },
     {
      "w": "başlandı.",
-     "t0": 53.267,
-     "t1": 54.267
+     "t0": 39.006,
+     "t1": 39.906
     }
    ],
-   "duyulan": "1920 'lerden sonra anlam yine değişti. İş dünyasının güçlü patronlarına Taycun denmeye başlandı."
+   "duyulan": "1920 'lerden sonra iş dünyasının güçlü patronlarına Taykun denmeye başlandı."
   },
   {
    "id": "s09",
    "dil": "en",
    "metin": "The shipping tycoon donated millions to build a new library for the city.",
-   "t0": 51.098,
-   "t1": 56.349,
+   "t0": 38.396,
+   "t1": 43.647,
    "kelimeler": [
     {
      "w": "The",
-     "t0": 51.098,
-     "t1": 51.758
+     "t0": 38.396,
+     "t1": 39.056
     },
     {
      "w": "shipping",
-     "t0": 51.758,
-     "t1": 52.258
+     "t0": 39.056,
+     "t1": 39.556
     },
     {
      "w": "tycoon",
-     "t0": 52.258,
-     "t1": 53.138
+     "t0": 39.556,
+     "t1": 40.436
     },
     {
      "w": "donated",
-     "t0": 53.138,
-     "t1": 53.998
+     "t0": 40.436,
+     "t1": 41.296
     },
     {
      "w": "millions",
-     "t0": 53.998,
-     "t1": 55.098
+     "t0": 41.296,
+     "t1": 42.396
     },
     {
      "w": "to",
-     "t0": 55.098,
-     "t1": 55.738
+     "t0": 42.396,
+     "t1": 43.036
     },
     {
      "w": "build",
-     "t0": 55.738,
-     "t1": 56.018
+     "t0": 43.036,
+     "t1": 43.316
     },
     {
      "w": "a",
-     "t0": 56.018,
-     "t1": 56.278
+     "t0": 43.316,
+     "t1": 43.576
     },
     {
      "w": "new",
-     "t0": 56.278,
-     "t1": 56.558
+     "t0": 43.576,
+     "t1": 43.856
     },
     {
      "w": "library",
-     "t0": 56.558,
-     "t1": 57.198
+     "t0": 43.856,
+     "t1": 44.496
     },
     {
      "w": "for",
-     "t0": 57.198,
-     "t1": 57.798
+     "t0": 44.496,
+     "t1": 45.096
     },
     {
      "w": "the",
-     "t0": 57.798,
-     "t1": 57.978
+     "t0": 45.096,
+     "t1": 45.276
     },
     {
      "w": "city.",
-     "t0": 57.978,
-     "t1": 58.318
+     "t0": 45.276,
+     "t1": 45.616
     }
    ],
    "duyulan": "The shipping tycoon donated millions to build a new library for the city."
@@ -594,89 +454,74 @@
   {
    "id": "s10",
    "dil": "tr",
-   "metin": "Bir dahaki sefere tycoon kelimesini görünce Japon şogununu hatırla!",
-   "t0": 56.749,
-   "t1": 62.0,
+   "metin": "Tycoon'u görünce Japon şogununu hatırla!",
+   "t0": 44.047,
+   "t1": 46.998,
    "kelimeler": [
     {
-     "w": "Bir",
-     "t0": 56.749,
-     "t1": 57.409
-    },
-    {
-     "w": "dahaki",
-     "t0": 57.409,
-     "t1": 57.969
-    },
-    {
-     "w": "sefere",
-     "t0": 57.969,
-     "t1": 58.729
-    },
-    {
      "w": "Taykun",
-     "t0": 58.729,
-     "t1": 59.769
+     "t0": 44.047,
+     "t1": 44.687
     },
     {
-     "w": "kelimesini",
-     "t0": 59.769,
-     "t1": 60.829
+     "w": "'u",
+     "t0": 44.687,
+     "t1": 44.847
     },
     {
-     "w": "görünce,",
-     "t0": 60.829,
-     "t1": 61.609
+     "w": "görünce",
+     "t0": 44.847,
+     "t1": 45.527
     },
     {
      "w": "Japon",
-     "t0": 62.109,
-     "t1": 62.549
+     "t0": 45.527,
+     "t1": 46.027
     },
     {
-     "w": "şogununu",
-     "t0": 62.549,
-     "t1": 63.449
+     "w": "şogunu",
+     "t0": 46.027,
+     "t1": 46.847
     },
     {
      "w": "hatırla.",
-     "t0": 63.449,
-     "t1": 64.209
+     "t0": 46.847,
+     "t1": 47.767
     }
    ],
-   "duyulan": "Bir dahaki sefere Taykun kelimesini görünce, Japon şogununu hatırla."
+   "duyulan": "Taykun 'u görünce Japon şogunu hatırla."
   },
   {
    "id": "s11",
    "dil": "tr",
    "metin": "Daha fazlası için ingilizcecim.com.",
-   "t0": 62.3,
-   "t1": 66.14,
+   "t0": 47.298,
+   "t1": 51.138,
    "kelimeler": [
     {
      "w": "Daha",
-     "t0": 62.3,
-     "t1": 63.0
+     "t0": 47.298,
+     "t1": 47.998
     },
     {
      "w": "fazlası",
-     "t0": 63.0,
-     "t1": 63.98
+     "t0": 47.998,
+     "t1": 48.978
     },
     {
      "w": "için",
-     "t0": 63.98,
-     "t1": 64.38
+     "t0": 48.978,
+     "t1": 49.358
     },
     {
      "w": "ingilizcecim",
-     "t0": 64.38,
-     "t1": 66.24
+     "t0": 49.358,
+     "t1": 51.238
     },
     {
      "w": ".com",
-     "t0": 66.24,
-     "t1": 67.38
+     "t0": 51.238,
+     "t1": 52.378
     }
    ],
    "duyulan": "Daha fazlası için ingilizcecim .com"
