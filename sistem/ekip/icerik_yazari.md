@@ -17,3 +17,5 @@
 - Açıklama ve örnek cevap hiçbir sorunun doğru cevabını ele vermez.
 - Açıklama: kısa Türkçe giriş, etkileşim sorusu, `ingilizcecim.com`, en fazla 15 etiket, en fazla 2.200 karakter.
 - İçerik dosyasında `tema`: "ydt" (bordo-krem), `grade`: "YDT · YDS" ya da yalnız biri.
+
+**Tek konu kuralı** (Metin, 28 Kasım 2026): Her video (Reels) ve her gönderi YALNIZCA TEK bir konu/kalıp işler. Birbirine benzeyen iki ayrı kalıp (örn. 'a few' ile 'a large number of') aynı videoda birlikte yer almaz; her biri ayrı bir videonun konusu olur. Editör bu kuralı kontrol listesine ekler: videoda birden fazla konu varsa içerik geri gönderilir.
